@@ -840,6 +840,674 @@
   "testo": "L'obelisco di Psammetico II davanti all'ingresso, portato da Eliopoli da Augusto e usato come gnomone della sua meridiana in Campo Marzio."
  },
  {
+  "id": "poi-57-nome",
+  "testo": "Studio medico"
+ },
+ {
+  "id": "poi-57-intro",
+  "testo": "ambulatorio"
+ },
+ {
+  "id": "poi-57-scheda",
+  "testo": "Studio medico, su Via James Joyce."
+ },
+ {
+  "id": "poi-58-nome",
+  "testo": "Attraversamento di Via Francesco Sapori"
+ },
+ {
+  "id": "poi-58-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-58-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-59-nome",
+  "testo": "Attraversamento di Via Francesco Sapori"
+ },
+ {
+  "id": "poi-59-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-59-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-60-nome",
+  "testo": "Attraversamento di Via Francesco Sapori"
+ },
+ {
+  "id": "poi-60-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-60-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-61-nome",
+  "testo": "Attraversamento di Via Francesco Sapori"
+ },
+ {
+  "id": "poi-61-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-61-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-62-nome",
+  "testo": "Attraversamento di Via Francesco Sapori"
+ },
+ {
+  "id": "poi-62-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-62-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-63-nome",
+  "testo": "Fermata Sapori"
+ },
+ {
+  "id": "poi-63-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-63-scheda",
+  "testo": "Fermata dell'autobus Sapori. È un palo sul marciapiede, senza pensilina."
+ },
+ {
+  "id": "poi-64-nome",
+  "testo": "Attraversamento di Via Francesco Sapori"
+ },
+ {
+  "id": "poi-64-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-64-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-65-nome",
+  "testo": "Attraversamento di Via Francesco Sapori"
+ },
+ {
+  "id": "poi-65-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-65-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-66-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-66-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-66-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-67-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-67-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-67-scheda",
+  "testo": "Attraversamento con semaforo. Sono segnate le strisce. Il bordo del marciapiede ha il percorso tattile."
+ },
+ {
+  "id": "poi-68-nome",
+  "testo": "Fermata Laurentina/Silone"
+ },
+ {
+  "id": "poi-68-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-68-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Silone. Ha la pensilina e la panchina."
+ },
+ {
+  "id": "poi-69-nome",
+  "testo": "Supermercato Ipercarni"
+ },
+ {
+  "id": "poi-69-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-69-scheda",
+  "testo": "Supermercato Ipercarni, su Via Laurentina."
+ },
+ {
+  "id": "poi-70-nome",
+  "testo": "Ristorante"
+ },
+ {
+  "id": "poi-70-intro",
+  "testo": "ristorante"
+ },
+ {
+  "id": "poi-70-scheda",
+  "testo": "Ristorante, su Via Laurentina."
+ },
+ {
+  "id": "poi-71-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-71-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-71-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-72-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-72-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-72-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-73-nome",
+  "testo": "Fermata Esercito/Cecchignola"
+ },
+ {
+  "id": "poi-73-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-73-scheda",
+  "testo": "Fermata dell'autobus Esercito/Cecchignola. È un palo sul marciapiede, senza pensilina."
+ },
+ {
+  "id": "poi-74-nome",
+  "testo": "Fermata Laurentina/Cecchignola"
+ },
+ {
+  "id": "poi-74-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-74-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Cecchignola. È un palo sul marciapiede, senza pensilina."
+ },
+ {
+  "id": "poi-75-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-75-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-75-scheda",
+  "testo": "Attraversamento con semaforo. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-76-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-76-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-76-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-77-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-77-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-77-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-78-nome",
+  "testo": "Fermata Laurentina/Cecchignola"
+ },
+ {
+  "id": "poi-78-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-78-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Cecchignola. È un palo sul marciapiede, senza pensilina."
+ },
+ {
+  "id": "poi-79-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-79-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-79-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-80-nome",
+  "testo": "Fermata Laurentina/Cecchignola"
+ },
+ {
+  "id": "poi-80-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-80-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Cecchignola. Ha la pensilina e la panchina."
+ },
+ {
+  "id": "poi-81-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-81-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-81-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-82-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-82-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-82-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-83-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-83-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-83-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-84-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-84-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-84-scheda",
+  "testo": "Attraversamento con semaforo. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-85-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-85-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-85-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-86-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-86-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-86-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-87-nome",
+  "testo": "Distributore di benzina"
+ },
+ {
+  "id": "poi-87-intro",
+  "testo": "distributore"
+ },
+ {
+  "id": "poi-87-scheda",
+  "testo": "Distributore di benzina, su Via Laurentina."
+ },
+ {
+  "id": "poi-88-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-88-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-88-scheda",
+  "testo": "Attraversamento con semaforo. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-89-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-89-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-89-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-90-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-90-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-90-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-91-nome",
+  "testo": "Fermata Laurentina/Umanesimo"
+ },
+ {
+  "id": "poi-91-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-91-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Umanesimo. Ha la pensilina e la panchina."
+ },
+ {
+  "id": "poi-92-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-92-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-92-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-93-nome",
+  "testo": "Fermata Laurentina/Umanesimo"
+ },
+ {
+  "id": "poi-93-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-93-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Umanesimo. Ha la pensilina e la panchina."
+ },
+ {
+  "id": "poi-94-nome",
+  "testo": "Ottica Ottica Pavese"
+ },
+ {
+  "id": "poi-94-intro",
+  "testo": "ottico"
+ },
+ {
+  "id": "poi-94-scheda",
+  "testo": "Ottica Ottica Pavese, su Via Laurentina."
+ },
+ {
+  "id": "poi-95-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-95-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-95-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-96-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-96-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-96-scheda",
+  "testo": "Attraversamento con semaforo. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-97-nome",
+  "testo": "Bar Zara"
+ },
+ {
+  "id": "poi-97-intro",
+  "testo": "bar"
+ },
+ {
+  "id": "poi-97-scheda",
+  "testo": "Bar Zara, su Via Laurentina."
+ },
+ {
+  "id": "poi-98-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-98-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-98-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-99-nome",
+  "testo": "Edicola"
+ },
+ {
+  "id": "poi-99-intro",
+  "testo": "edicola"
+ },
+ {
+  "id": "poi-99-scheda",
+  "testo": "Edicola, su Via Laurentina."
+ },
+ {
+  "id": "poi-100-nome",
+  "testo": "Fermata Laurentina/Sommozzatori"
+ },
+ {
+  "id": "poi-100-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-100-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Sommozzatori. Ha la pensilina e la panchina. Il marciapiede qui ha il percorso tattile."
+ },
+ {
+  "id": "poi-101-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-101-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-101-scheda",
+  "testo": "Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato."
+ },
+ {
+  "id": "poi-102-nome",
+  "testo": "Fermata Laurentina/Sommozzatori"
+ },
+ {
+  "id": "poi-102-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-102-scheda",
+  "testo": "Fermata dell'autobus Laurentina/Sommozzatori. È un palo sul marciapiede, senza pensilina. Il marciapiede qui ha il percorso tattile."
+ },
+ {
+  "id": "poi-103-nome",
+  "testo": "Attraversamento di Via Laurentina"
+ },
+ {
+  "id": "poi-103-intro",
+  "testo": "attraversamento"
+ },
+ {
+  "id": "poi-103-scheda",
+  "testo": "Attraversamento con semaforo. Il semaforo non ha il segnale acustico. Sono segnate le strisce. Il bordo del marciapiede ha il percorso tattile."
+ },
+ {
+  "id": "poi-104-nome",
+  "testo": "Bar Moreschi"
+ },
+ {
+  "id": "poi-104-intro",
+  "testo": "bar"
+ },
+ {
+  "id": "poi-104-scheda",
+  "testo": "Bar Moreschi, su Via Laurentina."
+ },
+ {
+  "id": "poi-105-nome",
+  "testo": "Negozio di ferramenta e fai da te"
+ },
+ {
+  "id": "poi-105-intro",
+  "testo": "ferramenta"
+ },
+ {
+  "id": "poi-105-scheda",
+  "testo": "Negozio di ferramenta e fai da te, su Via dei Corazzieri."
+ },
+ {
+  "id": "poi-106-nome",
+  "testo": "Abbazia delle Tre Fontane"
+ },
+ {
+  "id": "poi-106-intro",
+  "testo": "abbazia del VIII sec. / 1221"
+ },
+ {
+  "id": "poi-106-scheda",
+  "testo": "Il complesso delle Tre Fontane: tre chiese dentro un parco di eucalipti, nel luogo dove la tradizione colloca il martirio di san Paolo. L'abbazia è dei cistercensi, che qui bonificarono la zona paludosa; il silenzio, a pochi passi dalla Laurentina, è la cosa che colpisce di più."
+ },
+ {
+  "id": "poi-106-dentro",
+  "testo": "La chiesa dei Santi Vincenzo e Anastasio, austera e spoglia, e la cappella rotonda di Santa Maria Scala Coeli."
+ },
+ {
+  "id": "poi-107-nome",
+  "testo": "Laghetto dell'EUR"
+ },
+ {
+  "id": "poi-107-intro",
+  "testo": "lago e parco del anni Sessanta"
+ },
+ {
+  "id": "poi-107-scheda",
+  "testo": "Il lago artificiale del parco centrale dell'EUR, lungo quasi mezzo chilometro: intorno corre un anello pianeggiante molto usato da chi cammina e corre. Sulla sponda ci sono i ciliegi giapponesi donati da Tokyo, che fioriscono a primavera."
+ },
+ {
+  "id": "poi-107-dentro",
+  "testo": "La passeggiata ad anello intorno all'acqua e la cascata artificiale sul lato del Palazzo dello Sport."
+ },
+ {
+  "id": "poi-108-nome",
+  "testo": "Palazzo dello Sport, il PalaEur"
+ },
+ {
+  "id": "poi-108-intro",
+  "testo": "palazzetto del 1960"
+ },
+ {
+  "id": "poi-108-scheda",
+  "testo": "Costruito da Pier Luigi Nervi con Marcello Piacentini per le Olimpiadi di Roma del 1960: una cupola di cemento armato di cento metri di diametro, retta da nervature a raggiera. È il palazzo dei concerti e del basket."
+ },
+ {
+  "id": "poi-108-dentro",
+  "testo": "La cupola nervata vista da sotto il portico, e l'anello di vetrate che la solleva da terra."
+ },
+ {
+  "id": "poi-109-nome",
+  "testo": "Palazzo della Civiltà Italiana"
+ },
+ {
+  "id": "poi-109-intro",
+  "testo": "palazzo del 1938-1943"
+ },
+ {
+  "id": "poi-109-scheda",
+  "testo": "Il Colosseo Quadrato: un cubo di travertino con sei ordini di archi su ogni lato, progettato da Guerrini, La Padula e Romano per l'Esposizione del 1942, che la guerra impedì. È il simbolo dell'EUR."
+ },
+ {
+  "id": "poi-109-dentro",
+  "testo": "Le ventotto statue alla base e il gioco degli archi, nove per nove su ciascun lato."
+ },
+ {
+  "id": "poi-110-nome",
+  "testo": "Basilica dei Santi Pietro e Paolo"
+ },
+ {
+  "id": "poi-110-intro",
+  "testo": "basilica del 1938-1955"
+ },
+ {
+  "id": "poi-110-scheda",
+  "testo": "La chiesa dell'EUR, sul punto più alto del quartiere: una grande cupola su pianta a croce greca, visibile da lontano lungo tutta la via Cristoforo Colombo."
+ },
+ {
+  "id": "poi-110-dentro",
+  "testo": "La scalinata d'ingresso e le porte di bronzo con le storie di Pietro e Paolo."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -870,6 +1538,10 @@
  {
   "id": "percorso-roma-rev",
   "testo": "Roma — da Palazzo Chigi al Colosseo"
+ },
+ {
+  "id": "percorso-laurentina",
+  "testo": "Laurentina → via dei Corazzieri 47, a piedi"
  },
  {
   "id": "dir-dritto-davanti",
@@ -906,6 +1578,78 @@
  {
   "id": "m-passi",
   "testo": "a pochi passi"
+ },
+ {
+  "id": "dl-100",
+  "testo": "a 100 metri"
+ },
+ {
+  "id": "dl-200",
+  "testo": "a 200 metri"
+ },
+ {
+  "id": "dl-300",
+  "testo": "a 300 metri"
+ },
+ {
+  "id": "dl-400",
+  "testo": "a 400 metri"
+ },
+ {
+  "id": "dl-500",
+  "testo": "a 500 metri"
+ },
+ {
+  "id": "dl-600",
+  "testo": "a 600 metri"
+ },
+ {
+  "id": "dl-700",
+  "testo": "a 700 metri"
+ },
+ {
+  "id": "dl-800",
+  "testo": "a 800 metri"
+ },
+ {
+  "id": "dl-900",
+  "testo": "a 900 metri"
+ },
+ {
+  "id": "dl-1000",
+  "testo": "a un chilometro"
+ },
+ {
+  "id": "dl-1500",
+  "testo": "a un chilometro e mezzo"
+ },
+ {
+  "id": "dl-2000",
+  "testo": "a due chilometri"
+ },
+ {
+  "id": "dl-2500",
+  "testo": "a due chilometri e mezzo"
+ },
+ {
+  "id": "dl-3000",
+  "testo": "a tre chilometri"
+ },
+ {
+  "id": "dl-3500",
+  "testo": "a tre chilometri e mezzo"
+ },
+ {
+  "id": "dl-4000",
+  "testo": "a quattro chilometri"
+ },
+ {
+  "id": "dl-4500",
+  "testo": "a quattro chilometri e mezzo"
+ },
+ {
+  "id": "dl-5000",
+  "testo": "a cinque chilometri"
  },
  {
   "id": "m-10",

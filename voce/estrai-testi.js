@@ -41,6 +41,14 @@ ROUTES.forEach((r) => agg('percorso-' + r.id, r.n));
  'alle tue spalle'].forEach((t) => agg('dir-' + t.replace(/ /g, '-'), t));
 
 agg('m-passi', 'a pochi passi');
+
+// distanze larghe, per i riferimenti lontani
+for (let v = 100; v <= 900; v += 100) agg('dl-' + v, 'a ' + v + ' metri');
+for (let v = 1000; v <= 5000; v += 500) {
+  const k = Math.floor(v / 1000), mezzo = (v % 1000) >= 500;
+  const nome = ['', 'un', 'due', 'tre', 'quattro', 'cinque'][k] || k;
+  agg('dl-' + v, 'a ' + nome + ' chilometr' + (k === 1 ? 'o' : 'i') + (mezzo ? ' e mezzo' : ''));
+}
 for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
 
 [['chiedi', 'Vuoi approfondire, o andiamo avanti?'],

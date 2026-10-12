@@ -6,6 +6,7 @@
 <title>Urbea — la città si racconta</title>
 <meta name="description" content="Cammina e la città ti racconta cosa hai intorno: da che parte, a quanti metri, e cosa c'è da vedere.">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="mappa/leaflet.css">
 <meta name="theme-color" content="#15161A">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -50,7 +51,12 @@
   body[data-voice="1"] .btn-install{padding:20px 16px;font-size:20px}
   body[data-voice="1"] .choice .btn{padding:22px 10px;font-size:20px}
 
-  canvas#plan{width:100%;height:240px;display:block;background:var(--surface);
+  #mappa{width:100%;height:340px;border:1px solid var(--wire);border-radius:14px;overflow:hidden;background:#0E1013;z-index:0}
+  #mappa .leaflet-control-attribution{font-size:9px;background:rgba(14,16,19,.7);color:#8A9199}
+  #mappa .leaflet-control-attribution a{color:#9fb6c4}
+  .eti{font:600 11px ui-sans-serif,system-ui,sans-serif;color:#E8E7E3;text-shadow:0 1px 3px #000}
+  body[data-voice="1"] #mappa{display:none}
+  canvas#plan{width:100%;height:300px;display:block;background:var(--surface);
     border:1px solid var(--wire);border-radius:16px;touch-action:none}
 
   .strip{position:relative;height:74px;overflow:hidden;background:#0E1013;border:1px solid var(--wire);border-radius:14px}
@@ -129,7 +135,8 @@
 
   <div class="status" id="status">in attesa</div>
 
-  <canvas id="plan" aria-label="Mappa dei luoghi intorno a te"></canvas>
+  <div id="mappa" aria-label="Mappa: strade, edifici e servizi intorno a te"></div>
+  <canvas id="plan" hidden aria-hidden="true"></canvas>
   <div class="strip" id="strip"><div class="ahead"></div></div>
 
   <select id="route" aria-label="Itinerario"></select>
@@ -142,6 +149,7 @@
   <p class="note">Torre del Greco · 36 luoghi. Coordinate approssimate, da correggere sul posto.</p>
 </main>
 
+<script src="mappa/leaflet.js"></script>
 <script>
 (function(){
   "use strict";
@@ -302,7 +310,173 @@
      d:"Il portico è fatto con sedici colonne ioniche vere, prelevate dagli scavi della città etrusca di Veio.",i:""},
     {n:"Palazzo Montecitorio",lat:41.90060,lon:12.47860,t:"palazzo",y:"1653 / 1918",k:2,v:0,
      d:"Bernini lo progettò per i Ludovisi, Carlo Fontana lo finì, e nel 1918 Ernesto Basile gli aggiunse l'aula parlamentare in stile liberty sul retro. La facciata berniniana è leggermente convessa, come se il palazzo si piegasse verso la piazza.",
-     i:"L'obelisco di Psammetico II davanti all'ingresso, portato da Eliopoli da Augusto e usato come gnomone della sua meridiana in Campo Marzio."}
+     i:"L'obelisco di Psammetico II davanti all'ingresso, portato da Eliopoli da Augusto e usato come gnomone della sua meridiana in Campo Marzio."},
+
+    /* ---------------- ROMA EUR — Laurentina → via dei Corazzieri (percorso di servizio) ---------------- */
+    {n:"Studio medico",lat:41.8096802,lon:12.4816136,t:"ambulatorio",y:"",k:0,v:1,
+     d:"Studio medico, su Via James Joyce.",
+     i:""},
+    {n:"Attraversamento di Via Francesco Sapori",lat:41.80888,lon:12.48244,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Francesco Sapori",lat:41.80927,lon:12.4823,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Francesco Sapori",lat:41.80984,lon:12.48289,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Francesco Sapori",lat:41.81025,lon:12.48335,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Francesco Sapori",lat:41.81104,lon:12.48406,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Fermata Sapori",lat:41.81084,lon:12.48398,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Sapori. È un palo sul marciapiede, senza pensilina.",
+     i:""},
+    {n:"Attraversamento di Via Francesco Sapori",lat:41.81181,lon:12.48484,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Francesco Sapori",lat:41.81189,lon:12.48567,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81258,lon:12.48524,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81302,lon:12.48584,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Sono segnate le strisce. Il bordo del marciapiede ha il percorso tattile.",
+     i:""},
+    {n:"Fermata Laurentina/Silone",lat:41.81294,lon:12.48602,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Silone. Ha la pensilina e la panchina.",
+     i:""},
+    {n:"Supermercato Ipercarni",lat:41.8132953,lon:12.4863815,t:"supermercato",y:"",k:0,v:1,
+     d:"Supermercato Ipercarni, su Via Laurentina.",
+     i:""},
+    {n:"Ristorante",lat:41.8132892,lon:12.4860131,t:"ristorante",y:"",k:0,v:1,
+     d:"Ristorante, su Via Laurentina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81331,lon:12.48566,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81347,lon:12.48632,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Fermata Esercito/Cecchignola",lat:41.81361,lon:12.48603,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Esercito/Cecchignola. È un palo sul marciapiede, senza pensilina.",
+     i:""},
+    {n:"Fermata Laurentina/Cecchignola",lat:41.81374,lon:12.48515,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Cecchignola. È un palo sul marciapiede, senza pensilina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81409,lon:12.48521,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81462,lon:12.48488,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81463,lon:12.48454,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Fermata Laurentina/Cecchignola",lat:41.815,lon:12.48486,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Cecchignola. È un palo sul marciapiede, senza pensilina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81521,lon:12.4846,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Fermata Laurentina/Cecchignola",lat:41.8153,lon:12.48451,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Cecchignola. Ha la pensilina e la panchina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81566,lon:12.48458,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81594,lon:12.48417,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81696,lon:12.48346,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.8174,lon:12.48332,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81768,lon:12.48336,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81751,lon:12.48297,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Distributore di benzina",lat:41.8183061,lon:12.4828803,t:"distributore",y:"",k:0,v:1,
+     d:"Distributore di benzina, su Via Laurentina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81893,lon:12.48207,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81925,lon:12.48171,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.8191,lon:12.48155,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Fermata Laurentina/Umanesimo",lat:41.81939,lon:12.48162,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Umanesimo. Ha la pensilina e la panchina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.81966,lon:12.48141,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Fermata Laurentina/Umanesimo",lat:41.81989,lon:12.48124,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Umanesimo. Ha la pensilina e la panchina.",
+     i:""},
+    {n:"Ottica Ottica Pavese",lat:41.820209,lon:12.4818748,t:"ottico",y:"",k:0,v:1,
+     d:"Ottica Ottica Pavese, su Via Laurentina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.82018,lon:12.48123,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.82036,lon:12.48113,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Bar Zara",lat:41.8204763,lon:12.4817657,t:"bar",y:"",k:0,v:1,
+     d:"Bar Zara, su Via Laurentina.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.82087,lon:12.48114,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Edicola",lat:41.8210429,lon:12.481096,t:"edicola",y:"",k:0,v:1,
+     d:"Edicola, su Via Laurentina.",
+     i:""},
+    {n:"Fermata Laurentina/Sommozzatori",lat:41.8216,lon:12.48036,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Sommozzatori. Ha la pensilina e la panchina. Il marciapiede qui ha il percorso tattile.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.82183,lon:12.48042,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento senza semaforo: non c'è il rosso che ferma le auto. Sono segnate le strisce. Il percorso tattile non risulta segnalato.",
+     i:""},
+    {n:"Fermata Laurentina/Sommozzatori",lat:41.82222,lon:12.48015,t:"fermata",y:"",k:0,v:1,
+     d:"Fermata dell'autobus Laurentina/Sommozzatori. È un palo sul marciapiede, senza pensilina. Il marciapiede qui ha il percorso tattile.",
+     i:""},
+    {n:"Attraversamento di Via Laurentina",lat:41.82236,lon:12.4798,t:"attraversamento",y:"",k:0,v:1,
+     d:"Attraversamento con semaforo. Il semaforo non ha il segnale acustico. Sono segnate le strisce. Il bordo del marciapiede ha il percorso tattile.",
+     i:""},
+    {n:"Bar Moreschi",lat:41.8224214,lon:12.480049,t:"bar",y:"",k:0,v:1,
+     d:"Bar Moreschi, su Via Laurentina.",
+     i:""},
+    {n:"Negozio di ferramenta e fai da te",lat:41.8225699,lon:12.4801493,t:"ferramenta",y:"",k:0,v:1,
+     d:"Negozio di ferramenta e fai da te, su Via dei Corazzieri.",
+     i:""},
+
+    /* ---- riferimenti lontani: si annunciano per dare il senso del quartiere ---- */
+    {n:"Abbazia delle Tre Fontane",lat:41.83482,lon:12.48374,t:"abbazia",y:"VIII sec. / 1221",k:0,v:1,f:1,
+     d:"Il complesso delle Tre Fontane: tre chiese dentro un parco di eucalipti, nel luogo dove la tradizione colloca il martirio di san Paolo. L'abbazia è dei cistercensi, che qui bonificarono la zona paludosa; il silenzio, a pochi passi dalla Laurentina, è la cosa che colpisce di più.",
+     i:"La chiesa dei Santi Vincenzo e Anastasio, austera e spoglia, e la cappella rotonda di Santa Maria Scala Coeli."},
+    {n:"Laghetto dell'EUR",lat:41.82859,lon:12.46664,t:"lago e parco",y:"anni Sessanta",k:0,v:1,f:1,
+     d:"Il lago artificiale del parco centrale dell'EUR, lungo quasi mezzo chilometro: intorno corre un anello pianeggiante molto usato da chi cammina e corre. Sulla sponda ci sono i ciliegi giapponesi donati da Tokyo, che fioriscono a primavera.",
+     i:"La passeggiata ad anello intorno all'acqua e la cascata artificiale sul lato del Palazzo dello Sport."},
+    {n:"Palazzo dello Sport, il PalaEur",lat:41.82526,lon:12.46658,t:"palazzetto",y:"1960",k:0,v:1,f:1,
+     d:"Costruito da Pier Luigi Nervi con Marcello Piacentini per le Olimpiadi di Roma del 1960: una cupola di cemento armato di cento metri di diametro, retta da nervature a raggiera. È il palazzo dei concerti e del basket.",
+     i:"La cupola nervata vista da sotto il portico, e l'anello di vetrate che la solleva da terra."},
+    {n:"Palazzo della Civiltà Italiana",lat:41.83671,lon:12.46512,t:"palazzo",y:"1938-1943",k:0,v:1,f:1,
+     d:"Il Colosseo Quadrato: un cubo di travertino con sei ordini di archi su ogni lato, progettato da Guerrini, La Padula e Romano per l'Esposizione del 1942, che la guerra impedì. È il simbolo dell'EUR.",
+     i:"Le ventotto statue alla base e il gioco degli archi, nove per nove su ciascun lato."},
+    {n:"Basilica dei Santi Pietro e Paolo",lat:41.8337,lon:12.45931,t:"basilica",y:"1938-1955",k:0,v:1,f:1,
+     d:"La chiesa dell'EUR, sul punto più alto del quartiere: una grande cupola su pianta a croce greca, visibile da lontano lungo tutta la via Cristoforo Colombo.",
+     i:"La scalinata d'ingresso e le porte di bronzo con le storie di Pietro e Paolo."}
   ];
 
   var STREETS=[
@@ -341,7 +515,9 @@
      p:[[41.90090,12.47950],[41.90030,12.47960],[41.89960,12.47990],[41.89880,12.48040],
         [41.89800,12.48090],[41.89720,12.48150],[41.89660,12.48230],[41.89600,12.48360],
         [41.89530,12.48470],[41.89440,12.48600],[41.89330,12.48720],[41.89230,12.48800],
-        [41.89100,12.48930],[41.88960,12.49050],[41.89021,12.49223],[41.89060,12.49260]]}
+        [41.89100,12.48930],[41.88960,12.49050],[41.89021,12.49223],[41.89060,12.49260]]},
+    {id:"laurentina",n:"Laurentina → via dei Corazzieri 47, a piedi",
+     p:[[41.80956, 12.48155], [41.80923, 12.48223], [41.80932, 12.4823], [41.80935, 12.48237], [41.80948, 12.4825], [41.80982, 12.48292], [41.80989, 12.48316], [41.81023, 12.48341], [41.81092, 12.48421], [41.81185, 12.48502], [41.81219, 12.48524], [41.81234, 12.48527], [41.81248, 12.48526], [41.81265, 12.48529], [41.81284, 12.48546], [41.8129, 12.48563], [41.81295, 12.48579], [41.81303, 12.48589], [41.81319, 12.48596], [41.81374, 12.48548], [41.81404, 12.48525], [41.81427, 12.48511], [41.81462, 12.48493], [41.81528, 12.48465], [41.81565, 12.4845], [41.81625, 12.48423], [41.81641, 12.48413], [41.81699, 12.48373], [41.81746, 12.48337], [41.81786, 12.48302], [41.81874, 12.48226], [41.81935, 12.48176], [41.81954, 12.48166], [41.81991, 12.48146], [41.82026, 12.48129], [41.82057, 12.48119], [41.82083, 12.48105], [41.82134, 12.48073], [41.82189, 12.48036], [41.82241, 12.47987], [41.82251, 12.47988], [41.823, 12.4812]]}
   ];
 
   var R=6371000,D2R=Math.PI/180;
@@ -473,7 +649,7 @@
   }
 
   function around(){
-    return POI.map(function(p){
+    return POI.filter(function(p){return !p.f;}).map(function(p){
       return {p:p,m:dist(S.lat,S.lon,p.lat,p.lon),rel:norm(bear(S.lat,S.lon,p.lat,p.lon)-S.hd)};
     }).filter(function(o){return o.m<S.radius;}).sort(function(a,b){return a.m-b.m;});
   }
@@ -481,13 +657,25 @@
   function drawStrip(items){
     Array.prototype.slice.call(strip.querySelectorAll('.pin')).forEach(function(e){e.remove();});
     var w=strip.clientWidth;
-    items.filter(function(o){return Math.abs(o.rel)<=88;}).slice(0,6).forEach(function(o){
+    // a schermo spento, o con la pagina nascosta, le misure sono zero:
+    // senza questa uscita i pin finiscono tutti nello stesso punto e il
+    // calcolo delle sovrapposizioni gira a vuoto, piantando la pagina
+    if(!w)return;
+    var righe=[];
+    items.filter(function(o){return Math.abs(o.rel)<=88;}).slice(0,4).forEach(function(o){
       var d=document.createElement('div');
       d.className='pin'+(o.m<80?' near':'');
-      d.style.left=((0.5+(o.rel/88)*0.45)*w)+'px';
-      var dep=Math.min(1,o.m/S.radius);
-      d.style.top=(8+dep*26)+'px'; d.style.opacity=String(1-dep*0.5);
-      var b=document.createElement('b');b.textContent=o.p.n;
+      var x=(0.5+(o.rel/88)*0.42)*w;
+      d.style.left=Math.min(Math.max(x,6),w-6)+'px';
+      var dep=Math.min(1,o.m/S.radius), y=6+dep*22;
+      var giri=0;
+      for(var t=0;t<righe.length&&giri<24;t++){
+        if(Math.abs(righe[t][1]-y)<17&&Math.abs(righe[t][0]-x)<110){ y=righe[t][1]+17; t=-1; giri++; }
+      }
+      if(y>44)return;
+      righe.push([x,y]);
+      d.style.top=y+'px'; d.style.opacity=String(1-dep*0.45);
+      var b=document.createElement('b');b.textContent=o.p.n.length>22?o.p.n.slice(0,21)+'…':o.p.n;
       var s=document.createElement('span');s.textContent=Math.round(o.m)+' m';
       d.appendChild(b);d.appendChild(s);strip.appendChild(d);
     });
@@ -506,7 +694,13 @@
     g.strokeStyle='#30343A';g.lineWidth=1;
     [S.radius/2,S.radius].forEach(function(rad){g.beginPath();g.arc(cx,cy,rad*sc,0,Math.PI*2);g.stroke();});
     g.strokeStyle='#2B3036';g.lineWidth=6;g.lineCap='round';g.lineJoin='round';
-    STREETS.forEach(function(st){g.beginPath();
+    // solo le strade che stanno davvero intorno: disegnare quelle di un'altra
+    // città significa chiedere al canvas linee lunghe chilometri di pixel, e si pianta
+    STREETS.forEach(function(st){
+      var dentro=false;
+      for(var k=0;k<st.length;k++){ if(dist(S.lat,S.lon,st[k][0],st[k][1])<2500){dentro=true;break;} }
+      if(!dentro)return;
+      g.beginPath();
       st.forEach(function(pt,k){var q=project(pt[0],pt[1],cx,cy,sc);
         if(k===0)g.moveTo(q[0],q[1]);else g.lineTo(q[0],q[1]);});g.stroke();});
     if(S.sim){
@@ -522,6 +716,31 @@
       g.strokeStyle='rgba(79,175,196,.35)';g.lineWidth=1;
       g.beginPath();g.arc(cx,cy,Math.max(6,S.acc*sc),0,Math.PI*2);g.stroke();
     }
+    // i tre piu vicini scritti sulla mappa, senza sovrapporsi
+    var usate=[];
+    items.slice(0,3).forEach(function(o){
+      var q=project(o.p.lat,o.p.lon,cx,cy,sc);
+      if(q[0]<4||q[0]>w-4||q[1]<4||q[1]>h-4)return;
+      var testo=o.p.n.length>26?o.p.n.slice(0,25)+'…':o.p.n;
+      g.font='500 12px ui-sans-serif,system-ui,sans-serif';
+      var lw=g.measureText(testo).width, x=Math.min(Math.max(q[0]+9,4),w-lw-6), y=q[1]-7;
+      var giri=0;
+      for(var t=0;t<usate.length&&giri<24;t++){ if(Math.abs(usate[t]-y)<15){ y=usate[t]+15; t=-1; giri++; } }
+      if(y>h-6)return;
+      usate.push(y);
+      g.fillStyle='rgba(14,16,19,.82)';
+      g.fillRect(x-4,y-11,lw+8,16);
+      g.fillStyle='#D8DADD';
+      g.fillText(testo,x,y);
+    });
+
+    // quanto vale il cerchio, e dove sta il nord
+    g.font='500 11px ui-monospace,monospace';g.fillStyle='#6D737A';
+    g.fillText(Math.round(S.radius/2)+' m', cx+4, cy-S.radius*sc/2-4);
+    var an=-S.hd*D2R, rr=Math.min(w,h)*0.44;
+    g.fillStyle='#8A9199';g.font='600 12px ui-sans-serif,system-ui,sans-serif';
+    g.fillText('N', cx+Math.sin(an)*rr-4, cy-Math.cos(an)*rr+4);
+
     g.fillStyle='#E8E7E3';
     g.beginPath();g.moveTo(cx,cy-10);g.lineTo(cx+6.5,cy+7);g.lineTo(cx,cy+3.5);g.lineTo(cx-6.5,cy+7);g.closePath();g.fill();
   }
@@ -539,7 +758,7 @@
       dr.textContent=side(o.rel)+' · '+Math.round(o.m)+' m';
       s.appendChild(dr);d.appendChild(s);
       var det=document.createElement('div');det.className='detail';
-      var meta=document.createElement('div');meta.className='meta';meta.textContent=o.p.t.toUpperCase()+' · '+o.p.y;
+      var meta=document.createElement('div');meta.className='meta';meta.textContent=o.p.t.toUpperCase()+(o.p.y?' · '+o.p.y:'');
       var txt=document.createElement('div');txt.textContent=o.p.d;
       det.appendChild(meta);det.appendChild(txt);
       if(o.p.i){var ins=document.createElement('div');ins.className='inside';
@@ -560,11 +779,42 @@
     clearTimeout(pendingTimer);
   }
 
+  function passoLargo(m){
+    if(m<1000)return Math.max(100,Math.round(m/100)*100);
+    return Math.round(m/500)*500;
+  }
+  function distanzaLarga(m){
+    var v=passoLargo(m);
+    if(v<1000)return 'a '+v+' metri';
+    var k=Math.floor(v/1000), mezzo=(v%1000)>=500;
+    var nome=['','un','due','tre','quattro','cinque'][k]||k;
+    return 'a '+nome+' chilometr'+(k===1?'o':'i')+(mezzo?' e mezzo':'');
+  }
+  function dlId(m){return 'dl-'+passoLargo(m);}
+  function narraLontani(){
+    if(pending||!S.voice)return false;
+    var c=POI.filter(function(p){return p.f&&!S.said[p.n];}).map(function(p){
+      return {p:p,m:dist(S.lat,S.lon,p.lat,p.lon),rel:norm(bear(S.lat,S.lon,p.lat,p.lon)-S.hd)};
+    }).filter(function(o){return o.m<2600;}).sort(function(a,b){return a.m-b.m;});
+    if(!c.length)return false;
+    var o=c[0];
+    S.said[o.p.n]=1;
+    var head=side(o.rel)+', '+distanzaLarga(o.m);
+    whereEl.textContent=head;
+    whatEl.textContent=o.p.n;
+    bodyEl.className='body';
+    bodyEl.textContent=o.p.d;
+    var sp=head+', '+o.p.n+'. '+o.p.d;
+    liveEl.textContent=sp;
+    dire([dirId(o.rel),dlId(o.m),poiId(o.p)+'-nome',poiId(o.p)+'-scheda'],sp);
+    return true;
+  }
+
   function narrate(items){
     if(pending)return;
     var reach=S.voice?110:190, spread=S.voice?150:110;
     var c=items.filter(function(o){return Math.abs(o.rel)<spread&&o.m<reach&&!S.said[o.p.n];});
-    if(!c.length)return;
+    if(!c.length){narraLontani();return;}
     var o=c[0];
     S.said[o.p.n]=1;
     pending=o;
@@ -573,10 +823,10 @@
     whereEl.textContent=head;
     whatEl.textContent=o.p.n;
     bodyEl.className='body idle';
-    bodyEl.textContent=o.p.t+' · '+o.p.y+' — vuoi saperne di più?';
+    bodyEl.textContent=o.p.t+(o.p.y?' · '+o.p.y:'')+' — vuoi saperne di più?';
     choiceEl.hidden=false;
 
-    var sp=head+', '+o.p.n+'. '+o.p.t+' del '+o.p.y+'. Vuoi approfondire, o andiamo avanti?';
+    var sp=head+', '+o.p.n+'. '+o.p.t+(o.p.y?' del '+o.p.y:'')+'. Vuoi approfondire, o andiamo avanti?';
     liveEl.textContent=sp;
     earcon(o.rel,o.m,o.p.k);
     if(S.voice)setTimeout(function(){
@@ -617,8 +867,11 @@
   el('more').addEventListener('click',function(){audio();deepen();});
   el('skip').addEventListener('click',function(){audio();skipOn();});
 
+  var ultimoDisegno=0;
   function render(){var items=around();
-    if(!S.voice){drawStrip(items);drawPlan(items);}
+    if(document.hidden){drawList(items);narrate(items);return;}
+    if(!S.voice){drawStrip(items);muoviMappa();
+      if(Date.now()-ultimoDisegno>4000){ultimoDisegno=Date.now();disegnaMappa();}}
     drawList(items);narrate(items);}
 
   /* ---------- posizione reale ---------- */
@@ -722,9 +975,57 @@
     }
   });
 
+  /* ---------- la mappa vera: strade ed edifici da OpenStreetMap ---------- */
+  var mappa=null, segno=null, tracciato=null, segni=[], seguiMappa=true;
+  function avviaMappa(){
+    if(mappa||typeof L==='undefined')return;
+    mappa=L.map('mappa',{zoomControl:true,attributionControl:true}).setView([S.lat,S.lon],17);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      maxZoom:19, attribution:'© OpenStreetMap'
+    }).addTo(mappa);
+    segno=L.circleMarker([S.lat,S.lon],{radius:7,color:'#fff',weight:2,fillColor:'#4FAFC4',fillOpacity:1}).addTo(mappa);
+    mappa.on('dragstart',function(){seguiMappa=false;});
+    disegnaMappa();
+  }
+  function coloreDi(p){
+    if(p.f)return '#9B7BD4';
+    if(p.t==='attraversamento')return '#E0B33C';
+    if(p.t==='fermata')return '#4FAFC4';
+    if(p.y)return '#E8703F';
+    return '#7E8B96';
+  }
+  function disegnaMappa(){
+    if(!mappa)return;
+    segni.forEach(function(m){mappa.removeLayer(m);});segni=[];
+    POI.forEach(function(p){
+      if(dist(S.lat,S.lon,p.lat,p.lon)>1400)return;
+      var m=L.circleMarker([p.lat,p.lon],{radius:p.y?6:5,weight:1.5,color:'#0E1013',
+        fillColor:coloreDi(p),fillOpacity:.95}).addTo(mappa);
+      m.bindTooltip(p.n,{direction:'top',className:'eti'});
+      m.bindPopup('<b>'+p.n+'</b><br>'+(p.t||'')+(p.y?' · '+p.y:'')+'<br>'+(p.d||'').slice(0,180));
+      segni.push(m);
+    });
+    if(tracciato){mappa.removeLayer(tracciato);tracciato=null;}
+    if(S.route&&S.route.p){
+      tracciato=L.polyline(S.route.p,{color:'#4FAFC4',weight:4,opacity:.65}).addTo(mappa);
+      segni.push(tracciato);
+    }
+  }
+  function muoviMappa(){
+    if(!mappa)return;
+    segno.setLatLng([S.lat,S.lon]);
+    if(!seguiMappa)return;
+    var c=mappa.getCenter();
+    // un salto lungo (cambio di città) non si fa scorrendo: si ricentra e basta
+    if(dist(S.lat,S.lon,c.lat,c.lng)>500){mappa.setView([S.lat,S.lon],mappa.getZoom(),{animate:false});disegnaMappa();}
+    else mappa.panTo([S.lat,S.lon],{animate:true,duration:.4});
+  }
+
+
   if('serviceWorker' in navigator){
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').catch(function(){});
+    try{avviaMappa();}catch(e){}
 
   /* ---------- l'icona sul telefono, con un tasto solo ---------- */
   (function(){

@@ -1,12 +1,16 @@
 /* Urbea — service worker: la città resta nel telefono */
-const CACHE = 'urbea-v3';
+const CACHE = 'urbea-v4';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './voce/silenzio.m4a'
+  './voce/silenzio.m4a',
+  './mappa/leaflet.js',
+  './mappa/leaflet.css',
+  './mappa/images/marker-icon.png',
+  './mappa/images/marker-shadow.png'
 ];
 
 // la voce incisa: si scarica in sottofondo, senza far aspettare l'avvio
