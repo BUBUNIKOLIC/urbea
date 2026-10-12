@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Urbea — la città si racconta</title>
+<meta name="description" content="Cammina e la città ti racconta cosa hai intorno: da che parte, a quanti metri, e cosa c'è da vedere.">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#15161A">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Urbea">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  :root{
+    --bg:#15161A; --surface:#1E2024; --surface-2:#24272C;
+    --ink:#E8E7E3; --muted:#969A9F; --wire:#30343A;
+    --lava:#E8703F; --mare:#4FAFC4; --oro:#DFB454;
+    --fs:17px; color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Source Sans 3",system-ui,-apple-system,sans-serif;
+    font-size:var(--fs); line-height:1.5;
+    padding:calc(env(safe-area-inset-top,0px) + 14px) 16px calc(env(safe-area-inset-bottom,0px) + 24px);
+    -webkit-text-size-adjust:100%;
+  }
+  .app{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+
+  header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .wordmark{font-family:"Bodoni Moda",Georgia,serif;font-weight:700;font-size:30px;line-height:1}
+  .claim{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+  .say{background:var(--surface);border:1px solid var(--wire);border-radius:16px;padding:16px 18px;
+    display:flex;flex-direction:column;gap:7px;min-height:150px;justify-content:center}
+  .say .where{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);font-weight:500}
+  .say .what{font-family:"Bodoni Moda",Georgia,serif;font-size:26px;line-height:1.14;font-weight:700}
+  .say .body{font-size:16px}
+  .say .idle{color:var(--muted);font-style:italic}
+  .choice{display:flex;gap:8px;margin-top:4px}
+  .choice .btn{flex:1 1 50%;padding:14px 10px;min-width:0}
+  .btn-yes{background:var(--oro);border-color:var(--oro);color:#241C08}
+  body[data-voice="1"] .choice .btn{padding:22px 10px;font-size:20px}
+
+  canvas#plan{width:100%;height:240px;display:block;background:var(--surface);
+    border:1px solid var(--wire);border-radius:16px;touch-action:none}
+
+  .strip{position:relative;height:74px;overflow:hidden;background:#0E1013;border:1px solid var(--wire);border-radius:14px}
+  .strip .ahead{position:absolute;top:0;bottom:0;left:50%;width:1px;background:rgba(255,255,255,.3)}
+  .pin{position:absolute;transform:translateX(-50%);text-align:center;white-space:nowrap;transition:left .3s linear,top .3s linear,opacity .3s linear}
+  .pin b{display:block;font-size:12px;font-weight:600;color:#fff}
+  .pin span{display:block;font-family:"IBM Plex Mono",monospace;font-size:9px;color:rgba(255,255,255,.65)}
+  .pin.near b{color:var(--oro)}
+
+  .controls{display:flex;gap:8px;flex-wrap:wrap}
+  .btn{font:inherit;color:inherit;border:1px solid var(--wire);background:var(--surface-2);
+    border-radius:12px;padding:15px 16px;font-weight:600;cursor:pointer;flex:1 1 44%;min-width:130px;
+    -webkit-tap-highlight-color:transparent}
+  .btn:active{transform:translateY(1px)}
+  .btn-go{background:var(--mare);border-color:var(--mare);color:#07262C;flex-basis:100%}
+  .btn[aria-pressed="true"]{background:var(--mare);border-color:var(--mare);color:#07262C}
+  select{font:inherit;color:inherit;background:var(--surface-2);border:1px solid var(--wire);
+    border-radius:12px;padding:13px 12px;width:100%;font-weight:600}
+
+  h2.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:500;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);margin:4px 0 8px;display:flex;justify-content:space-between;gap:10px}
+  .list{display:flex;flex-direction:column;gap:8px}
+  details.item{background:var(--surface);border:1px solid var(--wire);border-radius:12px;overflow:hidden}
+  details.item>summary{padding:13px 15px;cursor:pointer;display:flex;gap:10px;align-items:baseline;list-style:none}
+  details.item>summary::-webkit-details-marker{display:none}
+  .nm{font-weight:600;flex:1;min-width:0}
+  .item.t3 .nm{font-weight:400;color:var(--muted)}
+  .dir{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .item[data-close="1"]{box-shadow:inset 3px 0 0 var(--oro)}
+  .lavabadge{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--lava);border:1px solid var(--lava);border-radius:4px;padding:1px 5px}
+  .detail{padding:13px 15px 15px;border-top:1px solid var(--wire)}
+  .meta{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);margin-bottom:8px}
+  .inside{margin-top:10px;background:var(--surface-2);border-radius:10px;padding:12px;border-left:3px solid var(--mare)}
+  .inside b{display:block;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--mare);margin-bottom:5px}
+
+  body[data-voice="1"]{--fs:20px}
+  body[data-voice="1"] canvas#plan,body[data-voice="1"] .strip{display:none}
+  body[data-voice="1"] .say{border-width:2px;border-color:var(--mare)}
+  body[data-voice="1"] .say .what{font-size:32px}
+  body[data-voice="1"] .btn{padding:20px 16px;font-size:19px}
+
+  .status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-align:center}
+  .note{color:var(--muted);font-size:13px;margin:0}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  :focus-visible{outline:3px solid var(--mare);outline-offset:2px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="app">
+  <header>
+    <div class="wordmark">Urbea</div>
+    <div class="claim">la città si racconta</div>
+  </header>
+
+  <section class="say">
+    <div class="where" id="where">non avviato</div>
+    <div class="what" id="what">Premi Avvia</div>
+    <div class="body idle" id="body">Ti serve il GPS e la bussola del telefono. Scegli l'itinerario qui sotto: c'è Torre del Greco e c'è Roma, dal Colosseo a Palazzo Chigi e viceversa.</div>
+    <div class="choice" id="choice" hidden>
+      <button class="btn btn-yes" id="more">Approfondisci</button>
+      <button class="btn" id="skip">Vai oltre</button>
+    </div>
+  </section>
+
+  <div class="sr" id="live" role="status" aria-live="polite"></div>
+
+  <section class="controls">
+    <button class="btn btn-go" id="start">Avvia</button>
+    <button class="btn" id="voice" aria-pressed="false">Modalità voce</button>
+    <button class="btn" id="sim" aria-pressed="false">Simula</button>
+  </section>
+
+  <div class="status" id="status">in attesa</div>
+
+  <canvas id="plan" aria-label="Mappa dei luoghi intorno a te"></canvas>
+  <div class="strip" id="strip"><div class="ahead"></div></div>
+
+  <select id="route" aria-label="Itinerario"></select>
+
+  <section>
+    <h2 class="eyebrow"><span>Intorno a te</span><span id="count"></span></h2>
+    <div class="list" id="list"></div>
+  </section>
+
+  <p class="note">Torre del Greco · 36 luoghi. Coordinate approssimate, da correggere sul posto.</p>
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  var POI=[
+    {n:"Basilica di Santa Croce",lat:40.78706,lon:14.36831,t:"basilica",y:"XVI sec. / 1796-1827",k:1,v:1,
+     d:"La chiesa madre della città e il più grande edificio di culto dell'area vesuviana. Il 15 giugno 1794 la colata scese fino al mare attraverso l'abitato, abbatté la chiesa e sommerse il primo livello del campanile, che ancora oggi affonda nella lava. La ricostruzione fu organizzata dal viceparroco Vincenzo Romano, oggi santo.",
+     i:"L'orologio del campanile, fermo alle tre del mattino: l'ora in cui la lava arrivò. L'ipogeo e i cunicoli scavati nella lava del 1794 sotto il pavimento. L'urna di san Vincenzo Romano."},
+    {n:"Palazzo Baronale, oggi Municipio",lat:40.78668,lon:14.36569,t:"palazzo",y:"nucleo del XVI sec.",k:1,v:0,
+     d:"Il palazzo dei baroni che tennero il feudo della Torre. Dopo il riscatto del 1699, quando i torresi pagarono di tasca propria la libertà dal regime feudale, divenne la casa comunale.",
+     i:"Il gonfalone con il motto Post fata resurgo e lo stemma civico con la torre, le otto stelle e la fenice."},
+    {n:"Chiesa di Maria SS. Assunta",lat:40.78634,lon:14.36712,t:"chiesa",y:"XVII sec.",k:1,v:1,
+     d:"Nel vecchio Borgo, nella zona detta La Ripa. È il luogo che racconta meglio la sepoltura del centro storico: la colata del 1794, spessa una decina di metri, passò proprio di qui scendendo al mare, e la chiesa seicentesca restò sotto.",
+     i:"L'ipogeo con quattro fosse carnarie e due ossari. Il soffitto dei cunicoli è il deposito del 1794, il pavimento in alcuni tratti è l'antica strada che portava alla spiaggia."},
+    {n:"Chiesa del SS. Sacramento e San Michele Arcangelo",lat:40.78859,lon:14.36718,t:"chiesa",y:"1683",k:1,v:1,
+     d:"La lava del 1794 la seppellì a metà altezza: le monache fuggirono a Napoli e non tornarono mai, e la chiesa fu riaperta ricavando l'ingresso nel finestrone superiore. Da qui il suo aspetto schiacciato, affondato di un piano nel banco lavico.",
+     i:"La chiesa inferiore sepolta dalla lava, con il pavimento in riggiole settecentesche e una Madonna in gloria attribuita a Paolo De Matteis. L'Ipogeo delle Anime."},
+    {n:"Chiesa di Santa Maria del Principio",lat:40.78956,lon:14.36469,t:"chiesa",y:"XI sec. / primi '800",k:1,v:1,
+     d:"Il più antico luogo di culto della città: un'edicola con la Madonna orante esisteva intorno all'anno Mille. La lava del 1794 la ricoprì interamente, e nell'agosto 1795 gli scavi riportarono alla luce l'edicola intatta.",
+     i:"La cappella inferiore sepolta dalla lava, con l'affresco medievale della Madonna. Il pavimento in riggiole maiolicate con motivi di vite."},
+    {n:"Chiesa di Santa Maria di Costantinopoli",lat:40.78673,lon:14.36690,t:"chiesa",y:"XVII sec. / 1700",k:1,v:0,
+     d:"Cappella dei Carafa, poi del Pio Monte dei Marinai, la confraternita degli armatori di coralline fondata nel 1615. Più arretrata rispetto alla colata, fu una delle poche risparmiate nel 1794.",
+     i:"L'altare maggiore in marmi commessi attribuito ai Vaccaro, con la statua lignea della Madonna che stringe un ramo di corallo. Le acquasantiere scolpite con pescatori e barche."},
+    {n:"Chiesa di Santa Maria delle Grazie",lat:40.78931,lon:14.36656,t:"chiesa",y:"fine XVI sec.",k:2,v:1,
+     d:"Nel 1794 la colata alzò il livello del suolo di circa sei metri, seppellendo il portale: il finestrone del secondo ordine fu trasformato nell'attuale ingresso.",
+     i:"Gli affreschi di Raffaele Sammarco del 1930. Nel chiostro, il ciclo settecentesco sulla vita di san Francesco, non accessibile."},
+    {n:"Monastero degli Zoccolanti",lat:40.78948,lon:14.36690,t:"convento",y:"1578",k:2,v:1,
+     d:"Fondato per i Francescani Osservanti su una collina sul mare. Nel 1794 la colata lo circondò e alzò il livello stradale di sei metri seppellendo l'ingresso originale, ancora visibile. Oggi è chiuso e in abbandono.",
+     i:"Nel chiostro, ventisette pannelli affrescati con la vita di san Francesco, attribuiti ad Angelo Mozzillo. Il pozzo in pietra lavica."},
+    {n:"Chiesa di Santa Maria del Carmine",lat:40.78506,lon:14.37294,t:"chiesa",y:"1565",k:1,v:1,
+     d:"Sfiorata dalla lava del 1737 e quasi indenne nel 1794: per questo, distrutta Santa Croce, fece da chiesa parrocchiale. Il convento annesso divenne nel 1878 la scuola di incisione del corallo.",
+     i:"Il blocco di lava del 1737 che ostruisce ancora una delle porte, segnalato da una lapide: la testimonianza più diretta in città del rapporto fra culto e vulcano."},
+    {n:"Museo del Corallo e Istituto d'Arte Degni",lat:40.78520,lon:14.37330,t:"museo",y:"scuola dal 1878",k:1,v:0,
+     d:"Il cuore della capitale mondiale del corallo. La scuola fu istituita per decreto regio nel 1878, fra le più antiche d'Italia. Ha sede nel convento barocco del Carmine, uno dei pochi edifici sopravvissuti alle eruzioni del 1737 e del 1794.",
+     i:"I lavori di scuola trapanese in corallo di Sciacca del Settecento. L'Adorazione dei Magi del 1939 in madreperla e conchiglia. Il mosaico di pinna nobilis."},
+    {n:"Chiesa di Santa Maria del Pianto",lat:40.78491,lon:14.37359,t:"chiesa",y:"1664 / 1742",k:2,v:1,
+     d:"Costruita sopra la fossa comune che raccolse i circa millecinquecento torresi morti nella peste del 1656.",
+     i:"San Rocco che intercede per gli appestati torresi, opera vicina al quadro della peste di Luca Giordano. La scala a doppia rampa."},
+    {n:"Chiesa di Santa Maria di Portosalvo",lat:40.78544,lon:14.36356,t:"chiesa",y:"1801",k:1,v:0,
+     d:"La chiesa della gente di mare, affacciata sulla spiaggia. Costruita pochi anni dopo la colata del 1794 che aveva ridisegnato tutto il fronte a mare.",
+     i:"La Madonna col Bambino con il Vesuvio e i velieri sul fondo, firmata Domenico Lettieri 1700. Il mosaico in riggiole della Madonna Stella Maris in facciata."},
+    {n:"Porto del Corallo",lat:40.78580,lon:14.36154,t:"porto",y:"flotta dal XVII sec.",k:1,v:0,
+     d:"Da qui partiva la flotta che ha fatto di Torre del Greco la capitale mondiale del corallo: dopo il riscatto del 1699 i torresi armarono oltre duecento barche che raccoglievano corallo da Sciacca alla Sardegna fino alle coste d'Africa.",
+     i:"Il molo di levante detto la Scarpetta col fanale verde, il molo di ponente col fanale rosso. La spiaggia del Fronte con i cantieri più antichi."},
+    {n:"Contrada Calastro",lat:40.78551,lon:14.36002,t:"contrada",y:"antica",k:3,v:0,
+     d:"La contrada a ponente del porto, dove sono rimasti i cantieri navali storici e i vecchi stabilimenti sulla scogliera lavica.",i:""},
+    {n:"Chiesa di San Pietro a Calastro",lat:40.79117,lon:14.35829,t:"cappella",y:"attestata nel 1019",k:3,v:0,
+     d:"La testimonianza più antica documentata del cristianesimo torrese: atti del 1019, 1036 e 1042 citano una chiesa sulla costa del Calastro.",i:""},
+    {n:"Palazzo Vallelonga",lat:40.79177,lon:14.36439,t:"palazzo",y:"fine XVII sec. / 1843",k:1,v:0,
+     d:"Costruito dal marchese di Vallelonga trasformando vecchi casali in residenza estiva. La ricostruzione del 1843 ne fece uno degli edifici più importanti del Miglio d'Oro. Dal 1982 è della Banca di Credito Popolare, fondata in città nel 1888 col denaro degli artigiani e dei pescatori di corallo.",
+     i:"Le sale di rappresentanza affrescate e i terrazzi aperti sul Vesuvio e sul mare."},
+    {n:"Villa comunale Ciaravolo",lat:40.78997,lon:14.36547,t:"giardino",y:"XIX-XX sec.",k:3,v:0,
+     d:"Il giardino pubblico storico, sul corso Vittorio Emanuele, cioè sul tracciato dell'antica Strada Regia.",i:""},
+    {n:"Chiesa di Santa Teresa",lat:40.79149,lon:14.36459,t:"chiesa",y:"1686",k:2,v:0,
+     d:"Nacque come ex voto dopo l'eruzione del 1631. Sopravvisse indenne alla lava del 1794 ma fu devastata dal bombardamento del 13 settembre 1943: è il caso torrese in cui la guerra, non il vulcano, ha cancellato il patrimonio.",i:""},
+    {n:"Chiesa di Santa Maria del Popolo",lat:40.79344,lon:14.36231,t:"chiesa",y:"1570 / 1950",k:2,v:0,
+     d:"Chiesa dell'ospedale sulla Strada Regia. Distrutta in un solo bombardamento il 13 settembre 1943 e ricostruita con cupola e campanile coronato da cupolino in maiolica.",
+     i:"La Madonna del Popolo salvata dalle macerie. La lapide coi nomi dei 186 cittadini uccisi nel 1943."},
+    {n:"Chiesa della SS. Annunziata ai Cappuccini",lat:40.78824,lon:14.37063,t:"convento",y:"1568",k:1,v:0,
+     d:"Una delle prime fondazioni cappuccine del Sud, su un poggio circondato da un burrone: quella posizione la salvò due volte, nel 1631 e nel 1794, quando la lava si limitò a colmare il burrone attorno.",
+     i:"La sacrestia superiore rivestita di boiserie in radica di noce, 1762. L'Annunziata in terracotta robbiana in facciata di Antonio Mennella. L'organo settecentesco a 350 canne."},
+    {n:"Chiesa di San Giuseppe alle Paludi",lat:40.78331,lon:14.36919,t:"chiesa",y:"1674",k:2,v:0,
+     d:"Cappella gentilizia dentro una masseria: uno dei rari casi torresi di luogo di culto rurale giunto intatto attraverso le eruzioni che cancellarono il centro.",
+     i:"La mensa d'altare con lo stemma Brancaccio. Una grande tela napoletana del Seicento con Santa Candida."},
+    {n:"Villa romana di Sora",lat:40.77828,lon:14.37469,t:"archeologia",y:"I sec. d.C.",k:1,v:0,
+     d:"La grande villa marittima romana, sepolta dall'eruzione del 79 d.C. Si articolava su tre livelli: il superiore crollò, l'inferiore resta interrato, si visita l'intermedio. Ricorda che questa costa era abitata molto prima della città del corallo.",
+     i:"Il piano intermedio con gli ambienti conservati, e a cinquanta metri le terme romane."},
+    {n:"Terme romane",lat:40.77824,lon:14.37546,t:"archeologia",y:"I sec. d.C.",k:2,v:0,
+     d:"Complesso termale pertinente all'insediamento di Sora, con le strutture di riscaldamento e le vasche di una residenza di lusso affacciata sul mare.",i:""},
+    {n:"Chiesa e convento di Sant'Antonio di Padova",lat:40.78164,lon:14.38173,t:"chiesa",y:"1925-1952",k:2,v:0,
+     d:"Neoromanica, in una zona che la lava risparmiò. Nel 1949 la cupola ottagonale fu rivestita con tredicimila piastrelle colorate, diventando uno dei profili più riconoscibili della città.",
+     i:"In sacrestia un Crocifisso attribuito a Paolo De Matteis. La statua di Sant'Antonio di Antonio Mennella."},
+    {n:"Villa del Cardinale",lat:40.78390,lon:14.37850,t:"villa",y:"XVIII sec.",k:3,v:0,
+     d:"Una delle tre ville settecentesche più importanti della città. Conserva un salone affrescato, e dietro resta uno dei pochi lembi di bosco storico del versante.",i:""},
+    {n:"Museo del Corallo, collezione Liverino",lat:40.80357,lon:14.38514,t:"museo",y:"dal XVI sec.",k:2,v:0,
+     d:"Raccolta privata di Basilio Liverino: oltre tremila pezzi dal Cinquecento in poi. È il contraltare del museo della scuola — non la didattica ma il collezionismo e il commercio.",
+     i:"I cammei e le incisioni storiche, i coralli giapponesi e mediterranei a confronto. Visita su appuntamento."},
+    {n:"Villa delle Ginestre",lat:40.77744,lon:14.41436,t:"villa",y:"fine XVIII sec.",k:1,v:0,
+     d:"La casa in cui Giacomo Leopardi passò gli ultimi mesi della sua vita, fra il 1836 e il 1837: qui scrisse La ginestra e Il tramonto della luna, e da quel canto la villa prende il nome.",
+     i:"La stanza del poeta. Il portico dorico del 1907 con la terrazza sul golfo. La meridiana col motto Sine sole sileo."},
+    {n:"Camaldoli della Torre",lat:40.78259,lon:14.41388,t:"contrada",y:"collina storica",k:2,v:0,
+     d:"La collina è il paesaggio in cui Leopardi ambientò La ginestra: terrazze di vigna e di ginestre sui campi di lava, con il golfo che si apre sotto.",i:""},
+    {n:"San Michele al Colle Sant'Alfonso",lat:40.78045,lon:14.40435,t:"santuario",y:"1741",k:1,v:0,
+     d:"I Camaldolesi vi si insediarono fra il 1577 e il 1602. Nel 1741 la vecchia chiesa fu sostituita dall'attuale, con limpida facciata barocca bianca. Dal 1954 è dei Redentoristi.",
+     i:"L'altare settecentesco con stucchi e marmi, la sacrestia col coro ligneo intarsiato. Dalla terrazza, una delle vedute più celebri del golfo."},
+    {n:"Chiesa di Santa Maria La Bruna",lat:40.76769,lon:14.40431,t:"chiesa",y:"1556 / 1621",k:2,v:0,
+     d:"L'eruzione del 1631 ne distrusse metà, ma l'immagine della Vergine si salvò perché collocata in alto sulla parete: i contadini sgombrarono le macerie e rialzarono i muri.",
+     i:"L'immagine dipinta di Maria Santissima La Bruna. L'organo del 1825 sulla cantoria."},
+    {n:"Villa Macrina, biblioteca comunale",lat:40.76986,lon:14.40580,t:"villa",y:"XVIII sec.",k:3,v:0,
+     d:"Villa settecentesca sulla via Nazionale. Dopo il restauro ospita la Biblioteca comunale Enzo Aprea e un parco aperto alla città.",i:""},
+    {n:"Villa Prota",lat:40.76211,lon:14.42351,t:"villa",y:"XVIII sec.",k:3,v:0,
+     d:"In questa fascia alta le ville sopravvissero quasi tutte, mentre il centro marinaro veniva sepolto e ricostruito: per capire com'era Torre del Greco prima del 1794 è qui che bisogna salire.",i:""},
+    {n:"Santuario del Buon Consiglio",lat:40.76531,lon:14.41706,t:"santuario",y:"1902 / 1954",k:3,v:0,
+     d:"L'opera assistenziale di don Raffaele Scauda per l'infanzia abbandonata, distrutta dai bombardamenti del 1943 e ricostruita.",i:""},
+    {n:"Bocche eruttive del 1794",lat:40.81125,lon:14.39889,t:"vulcano",y:"15-16 giugno 1794",k:1,v:1,
+     d:"Qui si aprirono nella notte fra il 15 e il 16 giugno 1794 le bocche da cui scese la colata che seppellì il centro storico sotto una decina di metri di lava e arrivò fino al mare. È l'evento che ha dato alla città il suo motto: Post fata resurgo.",
+     i:"I conetti di scoria allineati sulla frattura eruttiva e il tracciato della colata, che si segue a vista fino ai tetti del centro."},
+    {n:"Bocche del 1861",lat:40.80821,lon:14.39723,t:"vulcano",y:"dicembre 1861",k:2,v:1,
+     d:"Si aprirono dentro l'abitato alto: il suolo si sollevò di un metro e mezzo e molti edifici crollarono. La tradizione racconta che la colata si fermò davanti alla statua dell'Immacolata, e dal 1862 i torresi la portano ogni anno in processione su un carro sorretto da cento uomini.",i:""},
+    {n:"Piazzale Seggiovia",lat:40.81982,lon:14.41259,t:"belvedere",y:"XX sec.",k:3,v:0,
+     d:"Il punto di accesso al vulcano dal versante torrese, ai piedi del Colle Umberto.",i:""},
+
+    /* ---------------- ROMA ---------------- */
+    {n:"Colosseo",lat:41.89021,lon:12.49223,t:"anfiteatro",y:"72-80 d.C.",k:1,v:0,
+     d:"L'Anfiteatro Flavio fu costruito da Vespasiano e inaugurato da Tito nell'80 con cento giorni di spettacoli. Sta nella conca dove Nerone aveva scavato il lago della Domus Aurea: costruirlo lì fu un gesto politico: i Flavi restituivano al popolo il terreno che l'imperatore si era preso. Le arcate salgono in tre ordini — dorico, ionico, corinzio — e sopra il muro attico reggeva i pali del velario, manovrato dai marinai della flotta di Miseno.",
+     i:"I fori quadrati sulle pietre: sono i buchi lasciati dalle grappe di bronzo asportate nel Medioevo. Il taglio verticale sul fianco verso il Celio, dove il crollo del terremoto del 1349 ha sezionato l'edificio come un disegno. Gli ipogei dell'arena, con i montacarichi delle belve."},
+    {n:"Arco di Costantino",lat:41.88940,lon:12.49060,t:"arco",y:"315 d.C.",k:1,v:0,
+     d:"Eretto dal Senato per la vittoria su Massenzio al Ponte Milvio. È un collage deliberato: i tondi sono di età adrianea, i pannelli di Marco Aurelio, le statue dei Daci di Traiano, e solo i fregi stretti e sgraziati sono del quarto secolo. Per secoli quella differenza di qualità fu letta come decadenza; oggi si legge come una scelta — Costantino si fa legittimare dai buoni imperatori del passato.",
+     i:"Confronta l'altezza dei due fregi: sopra le figure classiche, sotto quelle tozze e frontali del IV secolo. È il punto in cui si vede l'arte antica cambiare lingua."},
+    {n:"Tempio di Venere e Roma",lat:41.89060,lon:12.48860,t:"tempio",y:"135 d.C.",k:2,v:0,
+     d:"Il più grande tempio della città antica, progettato dall'imperatore Adriano in persona. Due celle addossate schiena contro schiena, una per Venere e una per Roma, con un gioco di parole: Roma scritta al contrario fa Amor.",
+     i:"Le absidi a semicupola con i cassettoni, l'unica parte rimasta in piedi, e la vista sul Colosseo da sopra."},
+    {n:"Basilica di Massenzio",lat:41.89213,lon:12.48800,t:"basilica",y:"308-312 d.C.",k:1,v:0,
+     d:"Cominciata da Massenzio e finita da Costantino dopo averlo sconfitto. Le tre volte a botte rimaste sono un terzo dell'edificio: la navata centrale, crollata nel terremoto del 1349, era più alta. Bramante e Michelangelo la studiarono per San Pietro, e per secoli fu il modello di come si copre uno spazio enorme senza colonne.",
+     i:"I cassettoni delle volte, ancora nitidi a trenta metri d'altezza. La misura dello spazio vuoto: è quella che Michelangelo aveva in testa."},
+    {n:"Foro Romano",lat:41.89250,lon:12.48530,t:"archeologia",y:"VII sec. a.C. — V d.C.",k:1,v:0,
+     d:"Nato come palude drenata fra i colli, divenne per mille anni la piazza del mondo: tribunali, templi, il Senato, i rostri da cui si parlava al popolo. Nel Medioevo ci pascolavano le vacche e si chiamava Campo Vaccino; gli scavi lo hanno riportato alla quota antica, otto metri sotto la città moderna.",
+     i:"La Curia Iulia, l'aula del Senato, intatta perché trasformata in chiesa. L'arco di Settimio Severo. La basilica Emilia, con le monete fuse nel pavimento dall'incendio del 410."},
+    {n:"Foro di Nerva e le Colonnacce",lat:41.89365,lon:12.48780,t:"archeologia",y:"97 d.C.",k:2,v:0,
+     d:"Stretto fra il Foro di Augusto e il Tempio della Pace, è il più angusto dei fori imperiali, costruito in uno spazio di risulta. I romani lo chiamavano Foro Transitorio perché ci si passava e basta.",
+     i:"Le due colonne superstiti del portico, dette le Colonnacce, con il rilievo di Minerva e la trabeazione sporgente: barocco ante litteram, scolpito a quaranta metri dalla strada."},
+    {n:"Foro di Augusto",lat:41.89400,lon:12.48680,t:"archeologia",y:"2 a.C.",k:2,v:0,
+     d:"Augusto lo costruì con il bottino di Filippi, per il voto fatto a Marte Ultore, il vendicatore di Cesare. Il muro altissimo in peperino che lo chiude verso la Suburra non era decorazione: serviva da taglia­fuoco contro gli incendi del quartiere popolare alle spalle.",
+     i:"I tre gradini e le colonne del tempio di Marte Ultore. Il muro di recinzione alto trenta metri, che è la cosa più impressionante del complesso."},
+    {n:"Colonna Traiana",lat:41.89580,lon:12.48450,t:"colonna",y:"113 d.C.",k:1,v:0,
+     d:"Trenta metri di marmo con un fregio continuo che si avvolge per duecento metri e racconta le due guerre daciche in più di duemila figure. Alla base è sepolto Traiano stesso. L'altezza della colonna misura esattamente la quantità di collina che fu sbancata per costruire il foro: è un monumento che misura il proprio scavo.",
+     i:"Le prime spire, le uniche leggibili da terra: il Danubio come divinità fluviale che guarda passare l'esercito. In cima, dal 1587, c'è san Pietro al posto di Traiano."},
+    {n:"Mercati di Traiano",lat:41.89565,lon:12.48590,t:"archeologia",y:"110 d.C.",k:2,v:0,
+     d:"L'emiciclo su più livelli addossato al taglio del Quirinale, attribuito ad Apollodoro di Damasco. Non erano mercati nel senso moderno ma uffici e botteghe dell'amministrazione imperiale: un edificio multipiano in laterizio che anticipa di milleottocento anni il concetto di centro direzionale.",
+     i:"La Via Biberatica, la strada interna lastricata che attraversa l'edificio. La Grande Aula con le volte a crociera."},
+    {n:"Vittoriano",lat:41.89470,lon:12.48330,t:"monumento",y:"1885-1935",k:1,v:0,
+     d:"Il monumento a Vittorio Emanuele II di Giuseppe Sacconi, costruito sventrando il fianco del Campidoglio e demolendo un intero quartiere medievale. I romani lo chiamano la macchina da scrivere. Il marmo è botticino di Brescia, scelto bianchissimo apposta per staccare dal travertino romano: è un monumento che voleva dichiararsi estraneo.",
+     i:"La tomba del Milite Ignoto, dal 1921. Le quadrighe in bronzo in cima. Dalla terrazza, la miglior veduta sui Fori — che è anche l'unico punto di Roma da cui non si vede il Vittoriano."},
+    {n:"Palazzo Venezia",lat:41.89630,lon:12.48180,t:"palazzo",y:"1455-1467",k:1,v:0,
+     d:"Il primo grande palazzo rinascimentale di Roma, costruito per il cardinale Pietro Barbo, poi papa Paolo II, usando travertino cavato dal Colosseo. Dal balcone centrale Mussolini parlava alla folla di piazza Venezia, e per vent'anni la luce accesa nella sua stanza servì a far credere che lavorasse di notte.",
+     i:"Il giardino segreto con il viridarium e la loggia. Il Museo con le terrecotte del Bernini e la Doppia ritratto di Giorgione."},
+    {n:"Basilica di San Marco",lat:41.89600,lon:12.48150,t:"chiesa",y:"336 / XV sec.",k:2,v:0,
+     d:"Una delle chiese più antiche di Roma, fondata da papa Marco e rifatta da Paolo II insieme al suo palazzo. Il portico rinascimentale è attribuito a Leon Battista Alberti o a Giuliano da Maiano.",
+     i:"Il mosaico absidale del IX secolo con Cristo e papa Gregorio IV che offre la chiesa, col nimbo quadrato dei viventi. Il soffitto a cassettoni quattrocentesco."},
+    {n:"Palazzo Doria Pamphilj",lat:41.89710,lon:12.48130,t:"palazzo",y:"XV-XVIII sec.",k:1,v:0,
+     d:"Uno dei pochi grandi palazzi romani ancora abitato dalla famiglia che lo possiede, con una quadreria rimasta al suo posto e disposta come nel Settecento, quadro sopra quadro fino al soffitto.",
+     i:"Il ritratto di Innocenzo X di Velázquez, 1650, nel suo gabinetto: il papa lo trovò troppo vero. Il Riposo durante la fuga in Egitto e la Maddalena di Caravaggio. La galleria degli specchi."},
+    {n:"Tempio di Adriano",lat:41.89930,lon:12.47900,t:"tempio",y:"145 d.C.",k:2,v:0,
+     d:"Undici colonne corinzie alte quindici metri, inglobate nella facciata della ex Borsa di piazza di Pietra. Il tempio fu dedicato ad Adriano divinizzato dal figlio adottivo Antonino Pio; la parete di celle che si vede dietro le colonne è la cella antica, riusata come muro di un palazzo.",
+     i:"Il livello della strada antica, quattro metri sotto la piazza. Le colonne che entrano dentro l'edificio moderno, esempio perfetto di come Roma non demolisce ma incorpora."},
+    {n:"Sant'Ignazio di Loyola",lat:41.89900,lon:12.47850,t:"chiesa",y:"1626-1650",k:1,v:0,
+     d:"La chiesa dei gesuiti dedicata al loro fondatore. I soldi per la cupola non arrivarono mai, e padre Andrea Pozzo la dipinse: dal disco di marmo giallo sul pavimento della navata l'illusione è perfetta, e spostandosi di qualche passo crolla visibilmente.",
+     i:"La finta cupola di Andrea Pozzo, 1685. La volta con la Gloria di sant'Ignazio, dove l'architettura dipinta prosegue quella vera senza che si veda la giunzione: il punto esatto da cui guardarla è segnato a terra."},
+    {n:"Galleria Alberto Sordi",lat:41.90000,lon:12.47980,t:"galleria",y:"1914-1922",k:3,v:0,
+     d:"Galleria Colonna, in stile liberty, con la vetrata a Y e i mosaici pavimentali. Intitolata a Sordi dopo la sua morte.",i:""},
+    {n:"Colonna di Marco Aurelio",lat:41.90030,lon:12.47960,t:"colonna",y:"180-193 d.C.",k:1,v:0,
+     d:"Costruita sul modello della Colonna Traiana per le guerre contro Quadi e Marcomanni, ma il rilievo è diverso: figure più alte, scavate più a fondo, teste sproporzionate perché si leggano da terra. È il momento in cui l'arte romana smette di imitare la realtà e comincia a comunicare.",
+     i:"La scena del Miracolo della pioggia, con il dio della pioggia a braccia aperte e l'acqua che scorre dalle sue braccia sui soldati assetati: una delle immagini più strane dell'arte antica."},
+    {n:"Palazzo Chigi",lat:41.90090,lon:12.47950,t:"palazzo",y:"1562-1580",k:1,v:0,
+     d:"Cominciato dagli Aldobrandini su progetto di Matteo Bartolani, comprato nel 1659 dai Chigi di Alessandro VII, che chiamarono Felice Della Greca e Carlo Maderno a completarlo. Dal 1961 è la sede del Presidente del Consiglio: il balcone su piazza Colonna è quello delle dichiarazioni dopo i Consigli dei ministri.",
+     i:"Il cortile a due ordini di logge. La facciata su via del Corso, più sobria di quella sulla piazza: i Chigi volevano essere visti dalla piazza, non dalla strada."},
+    {n:"Palazzo Wedekind",lat:41.90020,lon:12.47930,t:"palazzo",y:"1838",k:3,v:0,
+     d:"Il portico è fatto con sedici colonne ioniche vere, prelevate dagli scavi della città etrusca di Veio.",i:""},
+    {n:"Palazzo Montecitorio",lat:41.90060,lon:12.47860,t:"palazzo",y:"1653 / 1918",k:2,v:0,
+     d:"Bernini lo progettò per i Ludovisi, Carlo Fontana lo finì, e nel 1918 Ernesto Basile gli aggiunse l'aula parlamentare in stile liberty sul retro. La facciata berniniana è leggermente convessa, come se il palazzo si piegasse verso la piazza.",
+     i:"L'obelisco di Psammetico II davanti all'ingresso, portato da Eliopoli da Augusto e usato come gnomone della sua meridiana in Campo Marzio."}
+  ];
+
+  var STREETS=[
+    [[40.79450,14.36120],[40.79180,14.36440],[40.78990,14.36560],[40.78860,14.36700],[40.78700,14.36900],[40.78540,14.37260]],
+    [[40.78540,14.37260],[40.78300,14.37700],[40.78180,14.38150],[40.77900,14.39000],[40.77000,14.40500],[40.76400,14.41800]],
+    [[40.78700,14.36750],[40.78660,14.36600],[40.78620,14.36450]],
+    [[40.78620,14.36450],[40.78560,14.36360],[40.78580,14.36160]],
+    [[40.78580,14.36160],[40.78560,14.36000],[40.78760,14.35860],[40.79110,14.35830]],
+    [[40.78180,14.38150],[40.78120,14.39300],[40.78060,14.40430],[40.77760,14.41430]],
+    [[40.79000,14.37400],[40.80000,14.38600],[40.80830,14.39720],[40.81120,14.39890],[40.81980,14.41260]],
+    /* Roma */
+    [[41.88960,12.49050],[41.89100,12.48930],[41.89230,12.48800],[41.89440,12.48600],[41.89530,12.48470],[41.89600,12.48360]],
+    [[41.89600,12.48360],[41.89660,12.48230],[41.89720,12.48150],[41.89880,12.48040],[41.90030,12.47960],[41.90160,12.47900]],
+    [[41.89930,12.47900],[41.89900,12.47850],[41.90060,12.47860]]
+  ];
+
+  var ROUTES=[
+    {id:"lava",n:"Il centro sepolto — la lava del 1794",
+     p:[[40.78706,14.36831],[40.78660,14.36720],[40.78634,14.36712],[40.78720,14.36700],[40.78859,14.36718],[40.78931,14.36656],[40.78956,14.36469]]},
+    {id:"corallo",n:"Il porto, il corallo e la gente di mare",
+     p:[[40.78580,14.36154],[40.78551,14.36002],[40.78580,14.36160],[40.78544,14.36356],[40.78620,14.36450],[40.78673,14.36690],[40.78668,14.36569]]},
+    {id:"carmine",n:"Dal Carmine alla scuola del corallo",
+     p:[[40.78706,14.36831],[40.78700,14.36900],[40.78540,14.37260],[40.78506,14.37294],[40.78520,14.37330],[40.78491,14.37359]]},
+    {id:"leopardi",n:"Leopardi, i Camaldoli e la ginestra",
+     p:[[40.78045,14.40435],[40.78259,14.41388],[40.77744,14.41436],[40.77000,14.40500],[40.76986,14.40580],[40.76769,14.40431]]},
+    {id:"romana",n:"La Torre romana: Sora e le terme",
+     p:[[40.78331,14.36919],[40.78000,14.37200],[40.77828,14.37469],[40.77824,14.37546],[40.78164,14.38173]]},
+    {id:"vulcano",n:"Dove si aprì la terra: le bocche del 1794",
+     p:[[40.79344,14.36231],[40.80000,14.38600],[40.80821,14.39723],[40.81125,14.39889],[40.81982,14.41259]]},
+    {id:"roma",n:"Roma — dal Colosseo a Palazzo Chigi",
+     p:[[41.89060,12.49260],[41.89021,12.49223],[41.88960,12.49050],[41.89100,12.48930],
+        [41.89230,12.48800],[41.89330,12.48720],[41.89440,12.48600],[41.89530,12.48470],
+        [41.89600,12.48360],[41.89660,12.48230],[41.89720,12.48150],[41.89800,12.48090],
+        [41.89880,12.48040],[41.89960,12.47990],[41.90030,12.47960],[41.90090,12.47950]]},
+    {id:"roma-rev",n:"Roma — da Palazzo Chigi al Colosseo",
+     p:[[41.90090,12.47950],[41.90030,12.47960],[41.89960,12.47990],[41.89880,12.48040],
+        [41.89800,12.48090],[41.89720,12.48150],[41.89660,12.48230],[41.89600,12.48360],
+        [41.89530,12.48470],[41.89440,12.48600],[41.89330,12.48720],[41.89230,12.48800],
+        [41.89100,12.48930],[41.88960,12.49050],[41.89021,12.49223],[41.89060,12.49260]]}
+  ];
+
+  var R=6371000,D2R=Math.PI/180;
+  function dist(a1,o1,a2,o2){var p1=a1*D2R,p2=a2*D2R,dp=(a2-a1)*D2R,dl=(o2-o1)*D2R;
+    var x=Math.sin(dp/2)*Math.sin(dp/2)+Math.cos(p1)*Math.cos(p2)*Math.sin(dl/2)*Math.sin(dl/2);
+    return 2*R*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));}
+  function bear(a1,o1,a2,o2){var p1=a1*D2R,p2=a2*D2R,dl=(o2-o1)*D2R;
+    var y=Math.sin(dl)*Math.cos(p2),x=Math.cos(p1)*Math.sin(p2)-Math.sin(p1)*Math.cos(p2)*Math.cos(dl);
+    return (Math.atan2(y,x)/D2R+360)%360;}
+  function norm(d){return (d+540)%360-180;}
+  function side(r){var a=Math.abs(r);
+    if(a<18)return "dritto davanti";
+    if(a<70)return r>0?"sulla destra":"sulla sinistra";
+    if(a<115)return r>0?"proprio a destra":"proprio a sinistra";
+    if(a<155)return r>0?"indietro a destra":"indietro a sinistra";
+    return "alle tue spalle";}
+  function metres(m){return m<25?"a pochi passi":"a "+(Math.round(m/10)*10)+" metri";}
+
+  var S={lat:40.78706,lon:14.36831,hd:300,live:false,sim:false,voice:false,
+         route:ROUTES[0],seg:0,frac:0,said:{},radius:400,acc:null};
+
+  var el=function(id){return document.getElementById(id);};
+  var strip=el('strip'),listEl=el('list'),plan=el('plan'),g=plan.getContext('2d'),
+      whereEl=el('where'),whatEl=el('what'),bodyEl=el('body'),countEl=el('count'),
+      liveEl=el('live'),statusEl=el('status');
+
+  var sel=el('route');
+  ROUTES.forEach(function(r){var o=document.createElement('option');o.value=r.id;o.textContent=r.n;sel.appendChild(o);});
+  sel.addEventListener('change',function(){
+    S.route=ROUTES.filter(function(r){return r.id===sel.value;})[0];
+    S.seg=0;S.frac=0;S.said={};
+    var p=S.route.p[0];
+    if(!S.live){S.lat=p[0];S.lon=p[1];S.hd=bear(p[0],p[1],S.route.p[1][0],S.route.p[1][1]);}
+    render();
+  });
+
+  /* ---------- illustrazioni sonore: un segnale spaziale prima della voce ---------- */
+  var ac=null;
+  function audio(){ if(!ac){ try{ ac=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} }
+    if(ac&&ac.state==='suspended')ac.resume(); return ac; }
+  function earcon(rel,m,tier){
+    var a=audio(); if(!a)return;
+    var t=a.currentTime;
+    var pan=Math.max(-1,Math.min(1,Math.sin(rel*D2R)));
+    var near=Math.max(0,Math.min(1,1-m/300));
+    var base=tier===3?330:(tier===2?392:440);
+    var notes=tier===1?[base,base*1.5]:[base];
+    notes.forEach(function(f,k){
+      var o=a.createOscillator(),gn=a.createGain();
+      o.type='sine'; o.frequency.value=f*(0.9+near*0.25);
+      var node=gn;
+      if(a.createStereoPanner){var p=a.createStereoPanner();p.pan.value=pan;gn.connect(p);p.connect(a.destination);}
+      else gn.connect(a.destination);
+      o.connect(gn);
+      var t0=t+k*0.13;
+      gn.gain.setValueAtTime(0,t0);
+      gn.gain.linearRampToValueAtTime(0.09+near*0.07,t0+0.02);
+      gn.gain.exponentialRampToValueAtTime(0.0008,t0+0.34);
+      o.start(t0); o.stop(t0+0.36);
+    });
+  }
+
+  function speak(text){
+    try{
+      if(!window.speechSynthesis)return;
+      window.speechSynthesis.cancel();
+      var u=new SpeechSynthesisUtterance(text);
+      u.lang='it-IT'; u.rate=0.98;
+      var vs=window.speechSynthesis.getVoices().filter(function(v){return /it[-_]IT/i.test(v.lang);});
+      if(vs.length)u.voice=vs[0];
+      window.speechSynthesis.speak(u);
+    }catch(e){}
+  }
+
+  /* ---------- voce incisa: clip m4a, con ripiego sulla voce di sistema ---------- */
+  var CLIP='voce/clip/it/', inCorso=null;
+  /* ---------- la radio: tiene viva la pagina a schermo spento ----------
+     Android congela una pagina nascosta, ma non una che sta suonando.
+     Teniamo in loop un file muto e diciamo al sistema che siamo un
+     lettore: così la guida continua a seguire la posizione in tasca.
+     È un ripiego da prototipo: l'app nativa non ne ha bisogno. */
+  var radio=null;
+  function accendiRadio(){
+    if(radio)return;
+    try{
+      radio=new Audio('voce/silenzio.m4a');
+      radio.loop=true; radio.preload='auto';
+      var pr=radio.play();
+      if(pr&&pr.catch)pr.catch(function(){radio=null;});
+      if('mediaSession' in navigator){
+        navigator.mediaSession.metadata=new MediaMetadata({
+          title:'Guida in corso', artist:'Urbea', album:'La città si racconta',
+          artwork:[{src:'icons/icon-192.png',sizes:'192x192',type:'image/png'},
+                   {src:'icons/icon-512.png',sizes:'512x512',type:'image/png'}]
+        });
+        try{
+          navigator.mediaSession.setActionHandler('play',function(){});
+          navigator.mediaSession.setActionHandler('pause',function(){});
+        }catch(e){}
+      }
+    }catch(e){radio=null;}
+  }
+  function spegniRadio(){
+    if(!radio)return;
+    try{radio.pause();}catch(e){}
+    radio=null;
+    if('mediaSession' in navigator)try{navigator.mediaSession.metadata=null;}catch(e){}
+  }
+
+  function poiId(p){var n=POI.indexOf(p)+1;return 'poi-'+(n<10?'0'+n:''+n);}
+  function dirId(r){return 'dir-'+side(r).replace(/ /g,'-');}
+  function metriId(m){return m<25?'m-passi':'m-'+(Math.round(m/10)*10);}
+  function dire(ids,testo){
+    try{
+      if(window.speechSynthesis)window.speechSynthesis.cancel();
+      if(inCorso){try{inCorso.pause();}catch(e){} inCorso=null;}
+      var i=0,fallita=false;
+      (function next(){
+        if(fallita)return;
+        if(i>=ids.length){inCorso=null;return;}
+        var a=new Audio(CLIP+ids[i++]+'.m4a');
+        inCorso=a;
+        a.onended=next;
+        a.onerror=function(){ if(!fallita){fallita=true;inCorso=null;speak(testo);} };
+        var pr=a.play();
+        if(pr&&pr.catch)pr.catch(function(){ if(!fallita){fallita=true;inCorso=null;speak(testo);} });
+      })();
+    }catch(e){ speak(testo); }
+  }
+
+  function around(){
+    return POI.map(function(p){
+      return {p:p,m:dist(S.lat,S.lon,p.lat,p.lon),rel:norm(bear(S.lat,S.lon,p.lat,p.lon)-S.hd)};
+    }).filter(function(o){return o.m<S.radius;}).sort(function(a,b){return a.m-b.m;});
+  }
+
+  function drawStrip(items){
+    Array.prototype.slice.call(strip.querySelectorAll('.pin')).forEach(function(e){e.remove();});
+    var w=strip.clientWidth;
+    items.filter(function(o){return Math.abs(o.rel)<=88;}).slice(0,6).forEach(function(o){
+      var d=document.createElement('div');
+      d.className='pin'+(o.m<80?' near':'');
+      d.style.left=((0.5+(o.rel/88)*0.45)*w)+'px';
+      var dep=Math.min(1,o.m/S.radius);
+      d.style.top=(8+dep*26)+'px'; d.style.opacity=String(1-dep*0.5);
+      var b=document.createElement('b');b.textContent=o.p.n;
+      var s=document.createElement('span');s.textContent=Math.round(o.m)+' m';
+      d.appendChild(b);d.appendChild(s);strip.appendChild(d);
+    });
+  }
+
+  function project(lat,lon,cx,cy,sc){
+    var dn=(lat-S.lat)*110540,de=(lon-S.lon)*111320*Math.cos(S.lat*D2R),a=-S.hd*D2R;
+    return [cx+(de*Math.cos(a)-dn*Math.sin(a))*sc, cy-(de*Math.sin(a)+dn*Math.cos(a))*sc];
+  }
+  function drawPlan(items){
+    var r=plan.getBoundingClientRect(),dpr=Math.min(window.devicePixelRatio||1,2);
+    plan.width=Math.round(r.width*dpr);plan.height=Math.round(r.height*dpr);
+    g.setTransform(dpr,0,0,dpr,0,0);
+    var w=r.width,h=r.height,cx=w/2,cy=h*0.6,sc=Math.min(w,h)*0.44/S.radius;
+    g.clearRect(0,0,w,h);
+    g.strokeStyle='#30343A';g.lineWidth=1;
+    [S.radius/2,S.radius].forEach(function(rad){g.beginPath();g.arc(cx,cy,rad*sc,0,Math.PI*2);g.stroke();});
+    g.strokeStyle='#2B3036';g.lineWidth=6;g.lineCap='round';g.lineJoin='round';
+    STREETS.forEach(function(st){g.beginPath();
+      st.forEach(function(pt,k){var q=project(pt[0],pt[1],cx,cy,sc);
+        if(k===0)g.moveTo(q[0],q[1]);else g.lineTo(q[0],q[1]);});g.stroke();});
+    if(S.sim){
+      g.strokeStyle='#4FAFC4';g.globalAlpha=.4;g.lineWidth=2;g.beginPath();
+      S.route.p.forEach(function(pt,k){var q=project(pt[0],pt[1],cx,cy,sc);
+        if(k===0)g.moveTo(q[0],q[1]);else g.lineTo(q[0],q[1]);});
+      g.stroke();g.globalAlpha=1;
+    }
+    items.forEach(function(o){var q=project(o.p.lat,o.p.lon,cx,cy,sc);
+      g.fillStyle=o.p.v?'#E8703F':(o.m<80?'#DFB454':'#969A9F');
+      g.beginPath();g.arc(q[0],q[1],o.p.k===3?2.6:(o.m<80?5:3.5),0,Math.PI*2);g.fill();});
+    if(S.acc){
+      g.strokeStyle='rgba(79,175,196,.35)';g.lineWidth=1;
+      g.beginPath();g.arc(cx,cy,Math.max(6,S.acc*sc),0,Math.PI*2);g.stroke();
+    }
+    g.fillStyle='#E8E7E3';
+    g.beginPath();g.moveTo(cx,cy-10);g.lineTo(cx+6.5,cy+7);g.lineTo(cx,cy+3.5);g.lineTo(cx-6.5,cy+7);g.closePath();g.fill();
+  }
+
+  function drawList(items){
+    listEl.textContent='';
+    countEl.textContent=items.length+' entro '+S.radius+' m';
+    items.slice(0,8).forEach(function(o){
+      var d=document.createElement('details');d.className='item'+(o.p.k===3?' t3':'');
+      if(o.m<80)d.dataset.close='1';
+      var s=document.createElement('summary');
+      var nm=document.createElement('span');nm.className='nm';nm.textContent=o.p.n;s.appendChild(nm);
+      if(o.p.v){var lb=document.createElement('span');lb.className='lavabadge';lb.textContent='lava';s.appendChild(lb);}
+      var dr=document.createElement('span');dr.className='dir';
+      dr.textContent=side(o.rel)+' · '+Math.round(o.m)+' m';
+      s.appendChild(dr);d.appendChild(s);
+      var det=document.createElement('div');det.className='detail';
+      var meta=document.createElement('div');meta.className='meta';meta.textContent=o.p.t.toUpperCase()+' · '+o.p.y;
+      var txt=document.createElement('div');txt.textContent=o.p.d;
+      det.appendChild(meta);det.appendChild(txt);
+      if(o.p.i){var ins=document.createElement('div');ins.className='inside';
+        var b=document.createElement('b');b.textContent='Cosa vedere';
+        var t=document.createElement('div');t.textContent=o.p.i;
+        ins.appendChild(b);ins.appendChild(t);det.appendChild(ins);}
+      d.appendChild(det);listEl.appendChild(d);
+    });
+  }
+
+  /* ---------- annuncio breve, poi la scelta ---------- */
+  var pending=null, pendingTimer=0;
+  var choiceEl=el('choice');
+
+  function closeChoice(){
+    pending=null;
+    choiceEl.hidden=true;
+    clearTimeout(pendingTimer);
+  }
+
+  function narrate(items){
+    if(pending)return;
+    var reach=S.voice?110:190, spread=S.voice?150:110;
+    var c=items.filter(function(o){return Math.abs(o.rel)<spread&&o.m<reach&&!S.said[o.p.n];});
+    if(!c.length)return;
+    var o=c[0];
+    S.said[o.p.n]=1;
+    pending=o;
+
+    var head=side(o.rel)+', '+metres(o.m);
+    whereEl.textContent=head;
+    whatEl.textContent=o.p.n;
+    bodyEl.className='body idle';
+    bodyEl.textContent=o.p.t+' · '+o.p.y+' — vuoi saperne di più?';
+    choiceEl.hidden=false;
+
+    var sp=head+', '+o.p.n+'. '+o.p.t+' del '+o.p.y+'. Vuoi approfondire, o andiamo avanti?';
+    liveEl.textContent=sp;
+    earcon(o.rel,o.m,o.p.k);
+    if(S.voice)setTimeout(function(){
+      dire([dirId(o.rel),metriId(o.m),poiId(o.p)+'-nome',poiId(o.p)+'-intro','frase-chiedi'],sp);
+    },430);
+
+    // se nessuno risponde, si prosegue da soli: non si resta piantati camminando
+    pendingTimer=setTimeout(function(){ if(pending===o)closeChoice(); },26000);
+  }
+
+  function deepen(){
+    if(!pending)return;
+    var o=pending;
+    clearTimeout(pendingTimer);
+    choiceEl.hidden=true;
+    bodyEl.className='body';
+    bodyEl.textContent=o.p.d + (o.p.i ? '  Cosa vedere: '+o.p.i : '');
+    var sp=o.p.d + (o.p.i ? ' Cosa vedere: '+o.p.i : '');
+    liveEl.textContent=sp;
+    if(S.voice){
+      var ids=[poiId(o.p)+'-scheda'];
+      if(o.p.i)ids=ids.concat(['frase-cosa-vedere',poiId(o.p)+'-dentro']);
+      dire(ids,sp);
+    }
+    pending=null;
+  }
+
+  function skipOn(){
+    if(!pending)return;
+    var o=pending;
+    closeChoice();
+    bodyEl.className='body idle';
+    bodyEl.textContent='Andiamo avanti.';
+    if(S.voice)dire(['frase-avanti'],'Andiamo avanti.');
+    render();
+  }
+
+  el('more').addEventListener('click',function(){audio();deepen();});
+  el('skip').addEventListener('click',function(){audio();skipOn();});
+
+  function render(){var items=around();
+    if(!S.voice){drawStrip(items);drawPlan(items);}
+    drawList(items);narrate(items);}
+
+  /* ---------- posizione reale ---------- */
+  var watchId=null,wakeLock=null;
+  function startLive(){
+    if(!navigator.geolocation){statusEl.textContent='GPS non disponibile in questo browser';return;}
+    statusEl.textContent='cerco la posizione…';
+    accendiRadio();
+    watchId=navigator.geolocation.watchPosition(function(pos){
+      S.live=true;S.sim=false;
+      S.lat=pos.coords.latitude;S.lon=pos.coords.longitude;
+      S.acc=pos.coords.accuracy||null;
+      if(typeof pos.coords.heading==='number'&&!isNaN(pos.coords.heading)&&pos.coords.speed>0.4)S.hd=pos.coords.heading;
+      statusEl.textContent='posizione attiva · precisione '+Math.round(S.acc||0)+' m';
+      render();
+    },function(err){
+      statusEl.textContent='posizione negata o non disponibile — usa Simula';
+    },{enableHighAccuracy:true,maximumAge:2000,timeout:15000});
+
+    if(window.DeviceOrientationEvent&&typeof DeviceOrientationEvent.requestPermission==='function'){
+      DeviceOrientationEvent.requestPermission().then(function(r){
+        if(r==='granted')bindOrientation();
+      }).catch(function(){});
+    } else bindOrientation();
+
+    if('wakeLock' in navigator){
+      navigator.wakeLock.request('screen').then(function(l){wakeLock=l;}).catch(function(){});
+    }
+    audio();
+  }
+  function bindOrientation(){
+    window.addEventListener('deviceorientationabsolute',onOrient,true);
+    window.addEventListener('deviceorientation',onOrient,true);
+  }
+  var lastOrient=0;
+  function onOrient(e){
+    var h=null;
+    if(typeof e.webkitCompassHeading==='number')h=e.webkitCompassHeading;
+    else if(e.absolute&&typeof e.alpha==='number')h=360-e.alpha;
+    if(h===null||isNaN(h))return;
+    S.hd=h;
+    var now=Date.now();
+    if(now-lastOrient>250){lastOrient=now;render();}
+  }
+
+  /* ---------- passeggiata simulata ---------- */
+  var simTimer=0;
+  function advance(step){
+    var p=S.route.p,guard=0;
+    while(guard++<80){
+      if(S.seg>=p.length-1)return false;
+      var a=p[S.seg],b=p[S.seg+1],L=dist(a[0],a[1],b[0],b[1]),rest=(1-S.frac)*L;
+      if(L<1){S.seg++;S.frac=0;continue;}
+      if(step<rest){S.frac+=step/L;break;}
+      step-=rest;S.seg++;S.frac=0;
+    }
+    var a2=p[Math.min(S.seg,p.length-2)],b2=p[Math.min(S.seg+1,p.length-1)];
+    S.lat=a2[0]+(b2[0]-a2[0])*S.frac;S.lon=a2[1]+(b2[1]-a2[1])*S.frac;
+    S.hd=bear(a2[0],a2[1],b2[0],b2[1]);
+    return true;
+  }
+
+  el('start').addEventListener('click',function(){
+    audio();
+    if(S.live){
+      if(watchId!==null)navigator.geolocation.clearWatch(watchId);
+      watchId=null;S.live=false;this.textContent='Avvia';statusEl.textContent='fermo';
+    } else { this.textContent='Ferma'; startLive(); }
+  });
+
+  el('sim').addEventListener('click',function(){
+    S.sim=!S.sim;this.setAttribute('aria-pressed',S.sim?'true':'false');
+    audio();
+    if(S.sim){
+      S.said={};S.seg=0;S.frac=0;
+      var p=S.route.p;S.lat=p[0][0];S.lon=p[0][1];S.hd=bear(p[0][0],p[0][1],p[1][0],p[1][1]);
+      statusEl.textContent='passeggiata simulata';
+      simTimer=setInterval(function(){
+        if(!advance(11)){clearInterval(simTimer);S.sim=false;
+          el('sim').setAttribute('aria-pressed','false');statusEl.textContent='fine percorso';return;}
+        render();
+      },1300);
+    } else { clearInterval(simTimer); statusEl.textContent=S.live?'posizione attiva':'fermo'; }
+    render();
+  });
+
+  el('voice').addEventListener('click',function(){
+    S.voice=!S.voice;
+    this.setAttribute('aria-pressed',S.voice?'true':'false');
+    document.body.dataset.voice=S.voice?'1':'0';
+    audio();
+    if(S.voice){S.said={};accendiRadio();dire(['frase-voce-attiva'],'Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri.');}
+    else{ spegniRadio(); if(inCorso){try{inCorso.pause();}catch(e){} inCorso=null;} if(window.speechSynthesis)window.speechSynthesis.cancel(); }
+    render();
+  });
+
+  window.addEventListener('resize',render);
+  document.addEventListener('visibilitychange',function(){
+    if(!document.hidden&&wakeLock===null&&S.live&&'wakeLock' in navigator){
+      navigator.wakeLock.request('screen').then(function(l){wakeLock=l;}).catch(function(){});
+    }
+  });
+
+  if('serviceWorker' in navigator){
+    window.addEventListener('load',function(){
+      navigator.serviceWorker.register('sw.js').catch(function(){});
+    });
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

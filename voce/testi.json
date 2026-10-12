@@ -1,0 +1,1126 @@
+[
+ {
+  "id": "poi-01-nome",
+  "testo": "Basilica di Santa Croce"
+ },
+ {
+  "id": "poi-01-intro",
+  "testo": "basilica del XVI sec. / 1796-1827"
+ },
+ {
+  "id": "poi-01-scheda",
+  "testo": "La chiesa madre della città e il più grande edificio di culto dell'area vesuviana. Il 15 giugno 1794 la colata scese fino al mare attraverso l'abitato, abbatté la chiesa e sommerse il primo livello del campanile, che ancora oggi affonda nella lava. La ricostruzione fu organizzata dal viceparroco Vincenzo Romano, oggi santo."
+ },
+ {
+  "id": "poi-01-dentro",
+  "testo": "L'orologio del campanile, fermo alle tre del mattino: l'ora in cui la lava arrivò. L'ipogeo e i cunicoli scavati nella lava del 1794 sotto il pavimento. L'urna di san Vincenzo Romano."
+ },
+ {
+  "id": "poi-02-nome",
+  "testo": "Palazzo Baronale, oggi Municipio"
+ },
+ {
+  "id": "poi-02-intro",
+  "testo": "palazzo del nucleo del XVI sec."
+ },
+ {
+  "id": "poi-02-scheda",
+  "testo": "Il palazzo dei baroni che tennero il feudo della Torre. Dopo il riscatto del 1699, quando i torresi pagarono di tasca propria la libertà dal regime feudale, divenne la casa comunale."
+ },
+ {
+  "id": "poi-02-dentro",
+  "testo": "Il gonfalone con il motto Post fata resurgo e lo stemma civico con la torre, le otto stelle e la fenice."
+ },
+ {
+  "id": "poi-03-nome",
+  "testo": "Chiesa di Maria SS. Assunta"
+ },
+ {
+  "id": "poi-03-intro",
+  "testo": "chiesa del XVII sec."
+ },
+ {
+  "id": "poi-03-scheda",
+  "testo": "Nel vecchio Borgo, nella zona detta La Ripa. È il luogo che racconta meglio la sepoltura del centro storico: la colata del 1794, spessa una decina di metri, passò proprio di qui scendendo al mare, e la chiesa seicentesca restò sotto."
+ },
+ {
+  "id": "poi-03-dentro",
+  "testo": "L'ipogeo con quattro fosse carnarie e due ossari. Il soffitto dei cunicoli è il deposito del 1794, il pavimento in alcuni tratti è l'antica strada che portava alla spiaggia."
+ },
+ {
+  "id": "poi-04-nome",
+  "testo": "Chiesa del SS. Sacramento e San Michele Arcangelo"
+ },
+ {
+  "id": "poi-04-intro",
+  "testo": "chiesa del 1683"
+ },
+ {
+  "id": "poi-04-scheda",
+  "testo": "La lava del 1794 la seppellì a metà altezza: le monache fuggirono a Napoli e non tornarono mai, e la chiesa fu riaperta ricavando l'ingresso nel finestrone superiore. Da qui il suo aspetto schiacciato, affondato di un piano nel banco lavico."
+ },
+ {
+  "id": "poi-04-dentro",
+  "testo": "La chiesa inferiore sepolta dalla lava, con il pavimento in riggiole settecentesche e una Madonna in gloria attribuita a Paolo De Matteis. L'Ipogeo delle Anime."
+ },
+ {
+  "id": "poi-05-nome",
+  "testo": "Chiesa di Santa Maria del Principio"
+ },
+ {
+  "id": "poi-05-intro",
+  "testo": "chiesa del XI sec. / primi '800"
+ },
+ {
+  "id": "poi-05-scheda",
+  "testo": "Il più antico luogo di culto della città: un'edicola con la Madonna orante esisteva intorno all'anno Mille. La lava del 1794 la ricoprì interamente, e nell'agosto 1795 gli scavi riportarono alla luce l'edicola intatta."
+ },
+ {
+  "id": "poi-05-dentro",
+  "testo": "La cappella inferiore sepolta dalla lava, con l'affresco medievale della Madonna. Il pavimento in riggiole maiolicate con motivi di vite."
+ },
+ {
+  "id": "poi-06-nome",
+  "testo": "Chiesa di Santa Maria di Costantinopoli"
+ },
+ {
+  "id": "poi-06-intro",
+  "testo": "chiesa del XVII sec. / 1700"
+ },
+ {
+  "id": "poi-06-scheda",
+  "testo": "Cappella dei Carafa, poi del Pio Monte dei Marinai, la confraternita degli armatori di coralline fondata nel 1615. Più arretrata rispetto alla colata, fu una delle poche risparmiate nel 1794."
+ },
+ {
+  "id": "poi-06-dentro",
+  "testo": "L'altare maggiore in marmi commessi attribuito ai Vaccaro, con la statua lignea della Madonna che stringe un ramo di corallo. Le acquasantiere scolpite con pescatori e barche."
+ },
+ {
+  "id": "poi-07-nome",
+  "testo": "Chiesa di Santa Maria delle Grazie"
+ },
+ {
+  "id": "poi-07-intro",
+  "testo": "chiesa del fine XVI sec."
+ },
+ {
+  "id": "poi-07-scheda",
+  "testo": "Nel 1794 la colata alzò il livello del suolo di circa sei metri, seppellendo il portale: il finestrone del secondo ordine fu trasformato nell'attuale ingresso."
+ },
+ {
+  "id": "poi-07-dentro",
+  "testo": "Gli affreschi di Raffaele Sammarco del 1930. Nel chiostro, il ciclo settecentesco sulla vita di san Francesco, non accessibile."
+ },
+ {
+  "id": "poi-08-nome",
+  "testo": "Monastero degli Zoccolanti"
+ },
+ {
+  "id": "poi-08-intro",
+  "testo": "convento del 1578"
+ },
+ {
+  "id": "poi-08-scheda",
+  "testo": "Fondato per i Francescani Osservanti su una collina sul mare. Nel 1794 la colata lo circondò e alzò il livello stradale di sei metri seppellendo l'ingresso originale, ancora visibile. Oggi è chiuso e in abbandono."
+ },
+ {
+  "id": "poi-08-dentro",
+  "testo": "Nel chiostro, ventisette pannelli affrescati con la vita di san Francesco, attribuiti ad Angelo Mozzillo. Il pozzo in pietra lavica."
+ },
+ {
+  "id": "poi-09-nome",
+  "testo": "Chiesa di Santa Maria del Carmine"
+ },
+ {
+  "id": "poi-09-intro",
+  "testo": "chiesa del 1565"
+ },
+ {
+  "id": "poi-09-scheda",
+  "testo": "Sfiorata dalla lava del 1737 e quasi indenne nel 1794: per questo, distrutta Santa Croce, fece da chiesa parrocchiale. Il convento annesso divenne nel 1878 la scuola di incisione del corallo."
+ },
+ {
+  "id": "poi-09-dentro",
+  "testo": "Il blocco di lava del 1737 che ostruisce ancora una delle porte, segnalato da una lapide: la testimonianza più diretta in città del rapporto fra culto e vulcano."
+ },
+ {
+  "id": "poi-10-nome",
+  "testo": "Museo del Corallo e Istituto d'Arte Degni"
+ },
+ {
+  "id": "poi-10-intro",
+  "testo": "museo del scuola dal 1878"
+ },
+ {
+  "id": "poi-10-scheda",
+  "testo": "Il cuore della capitale mondiale del corallo. La scuola fu istituita per decreto regio nel 1878, fra le più antiche d'Italia. Ha sede nel convento barocco del Carmine, uno dei pochi edifici sopravvissuti alle eruzioni del 1737 e del 1794."
+ },
+ {
+  "id": "poi-10-dentro",
+  "testo": "I lavori di scuola trapanese in corallo di Sciacca del Settecento. L'Adorazione dei Magi del 1939 in madreperla e conchiglia. Il mosaico di pinna nobilis."
+ },
+ {
+  "id": "poi-11-nome",
+  "testo": "Chiesa di Santa Maria del Pianto"
+ },
+ {
+  "id": "poi-11-intro",
+  "testo": "chiesa del 1664 / 1742"
+ },
+ {
+  "id": "poi-11-scheda",
+  "testo": "Costruita sopra la fossa comune che raccolse i circa millecinquecento torresi morti nella peste del 1656."
+ },
+ {
+  "id": "poi-11-dentro",
+  "testo": "San Rocco che intercede per gli appestati torresi, opera vicina al quadro della peste di Luca Giordano. La scala a doppia rampa."
+ },
+ {
+  "id": "poi-12-nome",
+  "testo": "Chiesa di Santa Maria di Portosalvo"
+ },
+ {
+  "id": "poi-12-intro",
+  "testo": "chiesa del 1801"
+ },
+ {
+  "id": "poi-12-scheda",
+  "testo": "La chiesa della gente di mare, affacciata sulla spiaggia. Costruita pochi anni dopo la colata del 1794 che aveva ridisegnato tutto il fronte a mare."
+ },
+ {
+  "id": "poi-12-dentro",
+  "testo": "La Madonna col Bambino con il Vesuvio e i velieri sul fondo, firmata Domenico Lettieri 1700. Il mosaico in riggiole della Madonna Stella Maris in facciata."
+ },
+ {
+  "id": "poi-13-nome",
+  "testo": "Porto del Corallo"
+ },
+ {
+  "id": "poi-13-intro",
+  "testo": "porto del flotta dal XVII sec."
+ },
+ {
+  "id": "poi-13-scheda",
+  "testo": "Da qui partiva la flotta che ha fatto di Torre del Greco la capitale mondiale del corallo: dopo il riscatto del 1699 i torresi armarono oltre duecento barche che raccoglievano corallo da Sciacca alla Sardegna fino alle coste d'Africa."
+ },
+ {
+  "id": "poi-13-dentro",
+  "testo": "Il molo di levante detto la Scarpetta col fanale verde, il molo di ponente col fanale rosso. La spiaggia del Fronte con i cantieri più antichi."
+ },
+ {
+  "id": "poi-14-nome",
+  "testo": "Contrada Calastro"
+ },
+ {
+  "id": "poi-14-intro",
+  "testo": "contrada del antica"
+ },
+ {
+  "id": "poi-14-scheda",
+  "testo": "La contrada a ponente del porto, dove sono rimasti i cantieri navali storici e i vecchi stabilimenti sulla scogliera lavica."
+ },
+ {
+  "id": "poi-15-nome",
+  "testo": "Chiesa di San Pietro a Calastro"
+ },
+ {
+  "id": "poi-15-intro",
+  "testo": "cappella del attestata nel 1019"
+ },
+ {
+  "id": "poi-15-scheda",
+  "testo": "La testimonianza più antica documentata del cristianesimo torrese: atti del 1019, 1036 e 1042 citano una chiesa sulla costa del Calastro."
+ },
+ {
+  "id": "poi-16-nome",
+  "testo": "Palazzo Vallelonga"
+ },
+ {
+  "id": "poi-16-intro",
+  "testo": "palazzo del fine XVII sec. / 1843"
+ },
+ {
+  "id": "poi-16-scheda",
+  "testo": "Costruito dal marchese di Vallelonga trasformando vecchi casali in residenza estiva. La ricostruzione del 1843 ne fece uno degli edifici più importanti del Miglio d'Oro. Dal 1982 è della Banca di Credito Popolare, fondata in città nel 1888 col denaro degli artigiani e dei pescatori di corallo."
+ },
+ {
+  "id": "poi-16-dentro",
+  "testo": "Le sale di rappresentanza affrescate e i terrazzi aperti sul Vesuvio e sul mare."
+ },
+ {
+  "id": "poi-17-nome",
+  "testo": "Villa comunale Ciaravolo"
+ },
+ {
+  "id": "poi-17-intro",
+  "testo": "giardino del XIX-XX sec."
+ },
+ {
+  "id": "poi-17-scheda",
+  "testo": "Il giardino pubblico storico, sul corso Vittorio Emanuele, cioè sul tracciato dell'antica Strada Regia."
+ },
+ {
+  "id": "poi-18-nome",
+  "testo": "Chiesa di Santa Teresa"
+ },
+ {
+  "id": "poi-18-intro",
+  "testo": "chiesa del 1686"
+ },
+ {
+  "id": "poi-18-scheda",
+  "testo": "Nacque come ex voto dopo l'eruzione del 1631. Sopravvisse indenne alla lava del 1794 ma fu devastata dal bombardamento del 13 settembre 1943: è il caso torrese in cui la guerra, non il vulcano, ha cancellato il patrimonio."
+ },
+ {
+  "id": "poi-19-nome",
+  "testo": "Chiesa di Santa Maria del Popolo"
+ },
+ {
+  "id": "poi-19-intro",
+  "testo": "chiesa del 1570 / 1950"
+ },
+ {
+  "id": "poi-19-scheda",
+  "testo": "Chiesa dell'ospedale sulla Strada Regia. Distrutta in un solo bombardamento il 13 settembre 1943 e ricostruita con cupola e campanile coronato da cupolino in maiolica."
+ },
+ {
+  "id": "poi-19-dentro",
+  "testo": "La Madonna del Popolo salvata dalle macerie. La lapide coi nomi dei 186 cittadini uccisi nel 1943."
+ },
+ {
+  "id": "poi-20-nome",
+  "testo": "Chiesa della SS. Annunziata ai Cappuccini"
+ },
+ {
+  "id": "poi-20-intro",
+  "testo": "convento del 1568"
+ },
+ {
+  "id": "poi-20-scheda",
+  "testo": "Una delle prime fondazioni cappuccine del Sud, su un poggio circondato da un burrone: quella posizione la salvò due volte, nel 1631 e nel 1794, quando la lava si limitò a colmare il burrone attorno."
+ },
+ {
+  "id": "poi-20-dentro",
+  "testo": "La sacrestia superiore rivestita di boiserie in radica di noce, 1762. L'Annunziata in terracotta robbiana in facciata di Antonio Mennella. L'organo settecentesco a 350 canne."
+ },
+ {
+  "id": "poi-21-nome",
+  "testo": "Chiesa di San Giuseppe alle Paludi"
+ },
+ {
+  "id": "poi-21-intro",
+  "testo": "chiesa del 1674"
+ },
+ {
+  "id": "poi-21-scheda",
+  "testo": "Cappella gentilizia dentro una masseria: uno dei rari casi torresi di luogo di culto rurale giunto intatto attraverso le eruzioni che cancellarono il centro."
+ },
+ {
+  "id": "poi-21-dentro",
+  "testo": "La mensa d'altare con lo stemma Brancaccio. Una grande tela napoletana del Seicento con Santa Candida."
+ },
+ {
+  "id": "poi-22-nome",
+  "testo": "Villa romana di Sora"
+ },
+ {
+  "id": "poi-22-intro",
+  "testo": "archeologia del I sec. d.C."
+ },
+ {
+  "id": "poi-22-scheda",
+  "testo": "La grande villa marittima romana, sepolta dall'eruzione del 79 d.C. Si articolava su tre livelli: il superiore crollò, l'inferiore resta interrato, si visita l'intermedio. Ricorda che questa costa era abitata molto prima della città del corallo."
+ },
+ {
+  "id": "poi-22-dentro",
+  "testo": "Il piano intermedio con gli ambienti conservati, e a cinquanta metri le terme romane."
+ },
+ {
+  "id": "poi-23-nome",
+  "testo": "Terme romane"
+ },
+ {
+  "id": "poi-23-intro",
+  "testo": "archeologia del I sec. d.C."
+ },
+ {
+  "id": "poi-23-scheda",
+  "testo": "Complesso termale pertinente all'insediamento di Sora, con le strutture di riscaldamento e le vasche di una residenza di lusso affacciata sul mare."
+ },
+ {
+  "id": "poi-24-nome",
+  "testo": "Chiesa e convento di Sant'Antonio di Padova"
+ },
+ {
+  "id": "poi-24-intro",
+  "testo": "chiesa del 1925-1952"
+ },
+ {
+  "id": "poi-24-scheda",
+  "testo": "Neoromanica, in una zona che la lava risparmiò. Nel 1949 la cupola ottagonale fu rivestita con tredicimila piastrelle colorate, diventando uno dei profili più riconoscibili della città."
+ },
+ {
+  "id": "poi-24-dentro",
+  "testo": "In sacrestia un Crocifisso attribuito a Paolo De Matteis. La statua di Sant'Antonio di Antonio Mennella."
+ },
+ {
+  "id": "poi-25-nome",
+  "testo": "Villa del Cardinale"
+ },
+ {
+  "id": "poi-25-intro",
+  "testo": "villa del XVIII sec."
+ },
+ {
+  "id": "poi-25-scheda",
+  "testo": "Una delle tre ville settecentesche più importanti della città. Conserva un salone affrescato, e dietro resta uno dei pochi lembi di bosco storico del versante."
+ },
+ {
+  "id": "poi-26-nome",
+  "testo": "Museo del Corallo, collezione Liverino"
+ },
+ {
+  "id": "poi-26-intro",
+  "testo": "museo del dal XVI sec."
+ },
+ {
+  "id": "poi-26-scheda",
+  "testo": "Raccolta privata di Basilio Liverino: oltre tremila pezzi dal Cinquecento in poi. È il contraltare del museo della scuola — non la didattica ma il collezionismo e il commercio."
+ },
+ {
+  "id": "poi-26-dentro",
+  "testo": "I cammei e le incisioni storiche, i coralli giapponesi e mediterranei a confronto. Visita su appuntamento."
+ },
+ {
+  "id": "poi-27-nome",
+  "testo": "Villa delle Ginestre"
+ },
+ {
+  "id": "poi-27-intro",
+  "testo": "villa del fine XVIII sec."
+ },
+ {
+  "id": "poi-27-scheda",
+  "testo": "La casa in cui Giacomo Leopardi passò gli ultimi mesi della sua vita, fra il 1836 e il 1837: qui scrisse La ginestra e Il tramonto della luna, e da quel canto la villa prende il nome."
+ },
+ {
+  "id": "poi-27-dentro",
+  "testo": "La stanza del poeta. Il portico dorico del 1907 con la terrazza sul golfo. La meridiana col motto Sine sole sileo."
+ },
+ {
+  "id": "poi-28-nome",
+  "testo": "Camaldoli della Torre"
+ },
+ {
+  "id": "poi-28-intro",
+  "testo": "contrada del collina storica"
+ },
+ {
+  "id": "poi-28-scheda",
+  "testo": "La collina è il paesaggio in cui Leopardi ambientò La ginestra: terrazze di vigna e di ginestre sui campi di lava, con il golfo che si apre sotto."
+ },
+ {
+  "id": "poi-29-nome",
+  "testo": "San Michele al Colle Sant'Alfonso"
+ },
+ {
+  "id": "poi-29-intro",
+  "testo": "santuario del 1741"
+ },
+ {
+  "id": "poi-29-scheda",
+  "testo": "I Camaldolesi vi si insediarono fra il 1577 e il 1602. Nel 1741 la vecchia chiesa fu sostituita dall'attuale, con limpida facciata barocca bianca. Dal 1954 è dei Redentoristi."
+ },
+ {
+  "id": "poi-29-dentro",
+  "testo": "L'altare settecentesco con stucchi e marmi, la sacrestia col coro ligneo intarsiato. Dalla terrazza, una delle vedute più celebri del golfo."
+ },
+ {
+  "id": "poi-30-nome",
+  "testo": "Chiesa di Santa Maria La Bruna"
+ },
+ {
+  "id": "poi-30-intro",
+  "testo": "chiesa del 1556 / 1621"
+ },
+ {
+  "id": "poi-30-scheda",
+  "testo": "L'eruzione del 1631 ne distrusse metà, ma l'immagine della Vergine si salvò perché collocata in alto sulla parete: i contadini sgombrarono le macerie e rialzarono i muri."
+ },
+ {
+  "id": "poi-30-dentro",
+  "testo": "L'immagine dipinta di Maria Santissima La Bruna. L'organo del 1825 sulla cantoria."
+ },
+ {
+  "id": "poi-31-nome",
+  "testo": "Villa Macrina, biblioteca comunale"
+ },
+ {
+  "id": "poi-31-intro",
+  "testo": "villa del XVIII sec."
+ },
+ {
+  "id": "poi-31-scheda",
+  "testo": "Villa settecentesca sulla via Nazionale. Dopo il restauro ospita la Biblioteca comunale Enzo Aprea e un parco aperto alla città."
+ },
+ {
+  "id": "poi-32-nome",
+  "testo": "Villa Prota"
+ },
+ {
+  "id": "poi-32-intro",
+  "testo": "villa del XVIII sec."
+ },
+ {
+  "id": "poi-32-scheda",
+  "testo": "In questa fascia alta le ville sopravvissero quasi tutte, mentre il centro marinaro veniva sepolto e ricostruito: per capire com'era Torre del Greco prima del 1794 è qui che bisogna salire."
+ },
+ {
+  "id": "poi-33-nome",
+  "testo": "Santuario del Buon Consiglio"
+ },
+ {
+  "id": "poi-33-intro",
+  "testo": "santuario del 1902 / 1954"
+ },
+ {
+  "id": "poi-33-scheda",
+  "testo": "L'opera assistenziale di don Raffaele Scauda per l'infanzia abbandonata, distrutta dai bombardamenti del 1943 e ricostruita."
+ },
+ {
+  "id": "poi-34-nome",
+  "testo": "Bocche eruttive del 1794"
+ },
+ {
+  "id": "poi-34-intro",
+  "testo": "vulcano del 15-16 giugno 1794"
+ },
+ {
+  "id": "poi-34-scheda",
+  "testo": "Qui si aprirono nella notte fra il 15 e il 16 giugno 1794 le bocche da cui scese la colata che seppellì il centro storico sotto una decina di metri di lava e arrivò fino al mare. È l'evento che ha dato alla città il suo motto: Post fata resurgo."
+ },
+ {
+  "id": "poi-34-dentro",
+  "testo": "I conetti di scoria allineati sulla frattura eruttiva e il tracciato della colata, che si segue a vista fino ai tetti del centro."
+ },
+ {
+  "id": "poi-35-nome",
+  "testo": "Bocche del 1861"
+ },
+ {
+  "id": "poi-35-intro",
+  "testo": "vulcano del dicembre 1861"
+ },
+ {
+  "id": "poi-35-scheda",
+  "testo": "Si aprirono dentro l'abitato alto: il suolo si sollevò di un metro e mezzo e molti edifici crollarono. La tradizione racconta che la colata si fermò davanti alla statua dell'Immacolata, e dal 1862 i torresi la portano ogni anno in processione su un carro sorretto da cento uomini."
+ },
+ {
+  "id": "poi-36-nome",
+  "testo": "Piazzale Seggiovia"
+ },
+ {
+  "id": "poi-36-intro",
+  "testo": "belvedere del XX sec."
+ },
+ {
+  "id": "poi-36-scheda",
+  "testo": "Il punto di accesso al vulcano dal versante torrese, ai piedi del Colle Umberto."
+ },
+ {
+  "id": "poi-37-nome",
+  "testo": "Colosseo"
+ },
+ {
+  "id": "poi-37-intro",
+  "testo": "anfiteatro del 72-80 d.C."
+ },
+ {
+  "id": "poi-37-scheda",
+  "testo": "L'Anfiteatro Flavio fu costruito da Vespasiano e inaugurato da Tito nell'80 con cento giorni di spettacoli. Sta nella conca dove Nerone aveva scavato il lago della Domus Aurea: costruirlo lì fu un gesto politico: i Flavi restituivano al popolo il terreno che l'imperatore si era preso. Le arcate salgono in tre ordini — dorico, ionico, corinzio — e sopra il muro attico reggeva i pali del velario, manovrato dai marinai della flotta di Miseno."
+ },
+ {
+  "id": "poi-37-dentro",
+  "testo": "I fori quadrati sulle pietre: sono i buchi lasciati dalle grappe di bronzo asportate nel Medioevo. Il taglio verticale sul fianco verso il Celio, dove il crollo del terremoto del 1349 ha sezionato l'edificio come un disegno. Gli ipogei dell'arena, con i montacarichi delle belve."
+ },
+ {
+  "id": "poi-38-nome",
+  "testo": "Arco di Costantino"
+ },
+ {
+  "id": "poi-38-intro",
+  "testo": "arco del 315 d.C."
+ },
+ {
+  "id": "poi-38-scheda",
+  "testo": "Eretto dal Senato per la vittoria su Massenzio al Ponte Milvio. È un collage deliberato: i tondi sono di età adrianea, i pannelli di Marco Aurelio, le statue dei Daci di Traiano, e solo i fregi stretti e sgraziati sono del quarto secolo. Per secoli quella differenza di qualità fu letta come decadenza; oggi si legge come una scelta — Costantino si fa legittimare dai buoni imperatori del passato."
+ },
+ {
+  "id": "poi-38-dentro",
+  "testo": "Confronta l'altezza dei due fregi: sopra le figure classiche, sotto quelle tozze e frontali del IV secolo. È il punto in cui si vede l'arte antica cambiare lingua."
+ },
+ {
+  "id": "poi-39-nome",
+  "testo": "Tempio di Venere e Roma"
+ },
+ {
+  "id": "poi-39-intro",
+  "testo": "tempio del 135 d.C."
+ },
+ {
+  "id": "poi-39-scheda",
+  "testo": "Il più grande tempio della città antica, progettato dall'imperatore Adriano in persona. Due celle addossate schiena contro schiena, una per Venere e una per Roma, con un gioco di parole: Roma scritta al contrario fa Amor."
+ },
+ {
+  "id": "poi-39-dentro",
+  "testo": "Le absidi a semicupola con i cassettoni, l'unica parte rimasta in piedi, e la vista sul Colosseo da sopra."
+ },
+ {
+  "id": "poi-40-nome",
+  "testo": "Basilica di Massenzio"
+ },
+ {
+  "id": "poi-40-intro",
+  "testo": "basilica del 308-312 d.C."
+ },
+ {
+  "id": "poi-40-scheda",
+  "testo": "Cominciata da Massenzio e finita da Costantino dopo averlo sconfitto. Le tre volte a botte rimaste sono un terzo dell'edificio: la navata centrale, crollata nel terremoto del 1349, era più alta. Bramante e Michelangelo la studiarono per San Pietro, e per secoli fu il modello di come si copre uno spazio enorme senza colonne."
+ },
+ {
+  "id": "poi-40-dentro",
+  "testo": "I cassettoni delle volte, ancora nitidi a trenta metri d'altezza. La misura dello spazio vuoto: è quella che Michelangelo aveva in testa."
+ },
+ {
+  "id": "poi-41-nome",
+  "testo": "Foro Romano"
+ },
+ {
+  "id": "poi-41-intro",
+  "testo": "archeologia del VII sec. a.C. — V d.C."
+ },
+ {
+  "id": "poi-41-scheda",
+  "testo": "Nato come palude drenata fra i colli, divenne per mille anni la piazza del mondo: tribunali, templi, il Senato, i rostri da cui si parlava al popolo. Nel Medioevo ci pascolavano le vacche e si chiamava Campo Vaccino; gli scavi lo hanno riportato alla quota antica, otto metri sotto la città moderna."
+ },
+ {
+  "id": "poi-41-dentro",
+  "testo": "La Curia Iulia, l'aula del Senato, intatta perché trasformata in chiesa. L'arco di Settimio Severo. La basilica Emilia, con le monete fuse nel pavimento dall'incendio del 410."
+ },
+ {
+  "id": "poi-42-nome",
+  "testo": "Foro di Nerva e le Colonnacce"
+ },
+ {
+  "id": "poi-42-intro",
+  "testo": "archeologia del 97 d.C."
+ },
+ {
+  "id": "poi-42-scheda",
+  "testo": "Stretto fra il Foro di Augusto e il Tempio della Pace, è il più angusto dei fori imperiali, costruito in uno spazio di risulta. I romani lo chiamavano Foro Transitorio perché ci si passava e basta."
+ },
+ {
+  "id": "poi-42-dentro",
+  "testo": "Le due colonne superstiti del portico, dette le Colonnacce, con il rilievo di Minerva e la trabeazione sporgente: barocco ante litteram, scolpito a quaranta metri dalla strada."
+ },
+ {
+  "id": "poi-43-nome",
+  "testo": "Foro di Augusto"
+ },
+ {
+  "id": "poi-43-intro",
+  "testo": "archeologia del 2 a.C."
+ },
+ {
+  "id": "poi-43-scheda",
+  "testo": "Augusto lo costruì con il bottino di Filippi, per il voto fatto a Marte Ultore, il vendicatore di Cesare. Il muro altissimo in peperino che lo chiude verso la Suburra non era decorazione: serviva da taglia­fuoco contro gli incendi del quartiere popolare alle spalle."
+ },
+ {
+  "id": "poi-43-dentro",
+  "testo": "I tre gradini e le colonne del tempio di Marte Ultore. Il muro di recinzione alto trenta metri, che è la cosa più impressionante del complesso."
+ },
+ {
+  "id": "poi-44-nome",
+  "testo": "Colonna Traiana"
+ },
+ {
+  "id": "poi-44-intro",
+  "testo": "colonna del 113 d.C."
+ },
+ {
+  "id": "poi-44-scheda",
+  "testo": "Trenta metri di marmo con un fregio continuo che si avvolge per duecento metri e racconta le due guerre daciche in più di duemila figure. Alla base è sepolto Traiano stesso. L'altezza della colonna misura esattamente la quantità di collina che fu sbancata per costruire il foro: è un monumento che misura il proprio scavo."
+ },
+ {
+  "id": "poi-44-dentro",
+  "testo": "Le prime spire, le uniche leggibili da terra: il Danubio come divinità fluviale che guarda passare l'esercito. In cima, dal 1587, c'è san Pietro al posto di Traiano."
+ },
+ {
+  "id": "poi-45-nome",
+  "testo": "Mercati di Traiano"
+ },
+ {
+  "id": "poi-45-intro",
+  "testo": "archeologia del 110 d.C."
+ },
+ {
+  "id": "poi-45-scheda",
+  "testo": "L'emiciclo su più livelli addossato al taglio del Quirinale, attribuito ad Apollodoro di Damasco. Non erano mercati nel senso moderno ma uffici e botteghe dell'amministrazione imperiale: un edificio multipiano in laterizio che anticipa di milleottocento anni il concetto di centro direzionale."
+ },
+ {
+  "id": "poi-45-dentro",
+  "testo": "La Via Biberatica, la strada interna lastricata che attraversa l'edificio. La Grande Aula con le volte a crociera."
+ },
+ {
+  "id": "poi-46-nome",
+  "testo": "Vittoriano"
+ },
+ {
+  "id": "poi-46-intro",
+  "testo": "monumento del 1885-1935"
+ },
+ {
+  "id": "poi-46-scheda",
+  "testo": "Il monumento a Vittorio Emanuele II di Giuseppe Sacconi, costruito sventrando il fianco del Campidoglio e demolendo un intero quartiere medievale. I romani lo chiamano la macchina da scrivere. Il marmo è botticino di Brescia, scelto bianchissimo apposta per staccare dal travertino romano: è un monumento che voleva dichiararsi estraneo."
+ },
+ {
+  "id": "poi-46-dentro",
+  "testo": "La tomba del Milite Ignoto, dal 1921. Le quadrighe in bronzo in cima. Dalla terrazza, la miglior veduta sui Fori — che è anche l'unico punto di Roma da cui non si vede il Vittoriano."
+ },
+ {
+  "id": "poi-47-nome",
+  "testo": "Palazzo Venezia"
+ },
+ {
+  "id": "poi-47-intro",
+  "testo": "palazzo del 1455-1467"
+ },
+ {
+  "id": "poi-47-scheda",
+  "testo": "Il primo grande palazzo rinascimentale di Roma, costruito per il cardinale Pietro Barbo, poi papa Paolo II, usando travertino cavato dal Colosseo. Dal balcone centrale Mussolini parlava alla folla di piazza Venezia, e per vent'anni la luce accesa nella sua stanza servì a far credere che lavorasse di notte."
+ },
+ {
+  "id": "poi-47-dentro",
+  "testo": "Il giardino segreto con il viridarium e la loggia. Il Museo con le terrecotte del Bernini e la Doppia ritratto di Giorgione."
+ },
+ {
+  "id": "poi-48-nome",
+  "testo": "Basilica di San Marco"
+ },
+ {
+  "id": "poi-48-intro",
+  "testo": "chiesa del 336 / XV sec."
+ },
+ {
+  "id": "poi-48-scheda",
+  "testo": "Una delle chiese più antiche di Roma, fondata da papa Marco e rifatta da Paolo II insieme al suo palazzo. Il portico rinascimentale è attribuito a Leon Battista Alberti o a Giuliano da Maiano."
+ },
+ {
+  "id": "poi-48-dentro",
+  "testo": "Il mosaico absidale del IX secolo con Cristo e papa Gregorio IV che offre la chiesa, col nimbo quadrato dei viventi. Il soffitto a cassettoni quattrocentesco."
+ },
+ {
+  "id": "poi-49-nome",
+  "testo": "Palazzo Doria Pamphilj"
+ },
+ {
+  "id": "poi-49-intro",
+  "testo": "palazzo del XV-XVIII sec."
+ },
+ {
+  "id": "poi-49-scheda",
+  "testo": "Uno dei pochi grandi palazzi romani ancora abitato dalla famiglia che lo possiede, con una quadreria rimasta al suo posto e disposta come nel Settecento, quadro sopra quadro fino al soffitto."
+ },
+ {
+  "id": "poi-49-dentro",
+  "testo": "Il ritratto di Innocenzo X di Velázquez, 1650, nel suo gabinetto: il papa lo trovò troppo vero. Il Riposo durante la fuga in Egitto e la Maddalena di Caravaggio. La galleria degli specchi."
+ },
+ {
+  "id": "poi-50-nome",
+  "testo": "Tempio di Adriano"
+ },
+ {
+  "id": "poi-50-intro",
+  "testo": "tempio del 145 d.C."
+ },
+ {
+  "id": "poi-50-scheda",
+  "testo": "Undici colonne corinzie alte quindici metri, inglobate nella facciata della ex Borsa di piazza di Pietra. Il tempio fu dedicato ad Adriano divinizzato dal figlio adottivo Antonino Pio; la parete di celle che si vede dietro le colonne è la cella antica, riusata come muro di un palazzo."
+ },
+ {
+  "id": "poi-50-dentro",
+  "testo": "Il livello della strada antica, quattro metri sotto la piazza. Le colonne che entrano dentro l'edificio moderno, esempio perfetto di come Roma non demolisce ma incorpora."
+ },
+ {
+  "id": "poi-51-nome",
+  "testo": "Sant'Ignazio di Loyola"
+ },
+ {
+  "id": "poi-51-intro",
+  "testo": "chiesa del 1626-1650"
+ },
+ {
+  "id": "poi-51-scheda",
+  "testo": "La chiesa dei gesuiti dedicata al loro fondatore. I soldi per la cupola non arrivarono mai, e padre Andrea Pozzo la dipinse: dal disco di marmo giallo sul pavimento della navata l'illusione è perfetta, e spostandosi di qualche passo crolla visibilmente."
+ },
+ {
+  "id": "poi-51-dentro",
+  "testo": "La finta cupola di Andrea Pozzo, 1685. La volta con la Gloria di sant'Ignazio, dove l'architettura dipinta prosegue quella vera senza che si veda la giunzione: il punto esatto da cui guardarla è segnato a terra."
+ },
+ {
+  "id": "poi-52-nome",
+  "testo": "Galleria Alberto Sordi"
+ },
+ {
+  "id": "poi-52-intro",
+  "testo": "galleria del 1914-1922"
+ },
+ {
+  "id": "poi-52-scheda",
+  "testo": "Galleria Colonna, in stile liberty, con la vetrata a Y e i mosaici pavimentali. Intitolata a Sordi dopo la sua morte."
+ },
+ {
+  "id": "poi-53-nome",
+  "testo": "Colonna di Marco Aurelio"
+ },
+ {
+  "id": "poi-53-intro",
+  "testo": "colonna del 180-193 d.C."
+ },
+ {
+  "id": "poi-53-scheda",
+  "testo": "Costruita sul modello della Colonna Traiana per le guerre contro Quadi e Marcomanni, ma il rilievo è diverso: figure più alte, scavate più a fondo, teste sproporzionate perché si leggano da terra. È il momento in cui l'arte romana smette di imitare la realtà e comincia a comunicare."
+ },
+ {
+  "id": "poi-53-dentro",
+  "testo": "La scena del Miracolo della pioggia, con il dio della pioggia a braccia aperte e l'acqua che scorre dalle sue braccia sui soldati assetati: una delle immagini più strane dell'arte antica."
+ },
+ {
+  "id": "poi-54-nome",
+  "testo": "Palazzo Chigi"
+ },
+ {
+  "id": "poi-54-intro",
+  "testo": "palazzo del 1562-1580"
+ },
+ {
+  "id": "poi-54-scheda",
+  "testo": "Cominciato dagli Aldobrandini su progetto di Matteo Bartolani, comprato nel 1659 dai Chigi di Alessandro VII, che chiamarono Felice Della Greca e Carlo Maderno a completarlo. Dal 1961 è la sede del Presidente del Consiglio: il balcone su piazza Colonna è quello delle dichiarazioni dopo i Consigli dei ministri."
+ },
+ {
+  "id": "poi-54-dentro",
+  "testo": "Il cortile a due ordini di logge. La facciata su via del Corso, più sobria di quella sulla piazza: i Chigi volevano essere visti dalla piazza, non dalla strada."
+ },
+ {
+  "id": "poi-55-nome",
+  "testo": "Palazzo Wedekind"
+ },
+ {
+  "id": "poi-55-intro",
+  "testo": "palazzo del 1838"
+ },
+ {
+  "id": "poi-55-scheda",
+  "testo": "Il portico è fatto con sedici colonne ioniche vere, prelevate dagli scavi della città etrusca di Veio."
+ },
+ {
+  "id": "poi-56-nome",
+  "testo": "Palazzo Montecitorio"
+ },
+ {
+  "id": "poi-56-intro",
+  "testo": "palazzo del 1653 / 1918"
+ },
+ {
+  "id": "poi-56-scheda",
+  "testo": "Bernini lo progettò per i Ludovisi, Carlo Fontana lo finì, e nel 1918 Ernesto Basile gli aggiunse l'aula parlamentare in stile liberty sul retro. La facciata berniniana è leggermente convessa, come se il palazzo si piegasse verso la piazza."
+ },
+ {
+  "id": "poi-56-dentro",
+  "testo": "L'obelisco di Psammetico II davanti all'ingresso, portato da Eliopoli da Augusto e usato come gnomone della sua meridiana in Campo Marzio."
+ },
+ {
+  "id": "percorso-lava",
+  "testo": "Il centro sepolto — la lava del 1794"
+ },
+ {
+  "id": "percorso-corallo",
+  "testo": "Il porto, il corallo e la gente di mare"
+ },
+ {
+  "id": "percorso-carmine",
+  "testo": "Dal Carmine alla scuola del corallo"
+ },
+ {
+  "id": "percorso-leopardi",
+  "testo": "Leopardi, i Camaldoli e la ginestra"
+ },
+ {
+  "id": "percorso-romana",
+  "testo": "La Torre romana: Sora e le terme"
+ },
+ {
+  "id": "percorso-vulcano",
+  "testo": "Dove si aprì la terra: le bocche del 1794"
+ },
+ {
+  "id": "percorso-roma",
+  "testo": "Roma — dal Colosseo a Palazzo Chigi"
+ },
+ {
+  "id": "percorso-roma-rev",
+  "testo": "Roma — da Palazzo Chigi al Colosseo"
+ },
+ {
+  "id": "dir-dritto-davanti",
+  "testo": "dritto davanti"
+ },
+ {
+  "id": "dir-sulla-destra",
+  "testo": "sulla destra"
+ },
+ {
+  "id": "dir-sulla-sinistra",
+  "testo": "sulla sinistra"
+ },
+ {
+  "id": "dir-proprio-a-destra",
+  "testo": "proprio a destra"
+ },
+ {
+  "id": "dir-proprio-a-sinistra",
+  "testo": "proprio a sinistra"
+ },
+ {
+  "id": "dir-indietro-a-destra",
+  "testo": "indietro a destra"
+ },
+ {
+  "id": "dir-indietro-a-sinistra",
+  "testo": "indietro a sinistra"
+ },
+ {
+  "id": "dir-alle-tue-spalle",
+  "testo": "alle tue spalle"
+ },
+ {
+  "id": "m-passi",
+  "testo": "a pochi passi"
+ },
+ {
+  "id": "m-10",
+  "testo": "a 10 metri"
+ },
+ {
+  "id": "m-20",
+  "testo": "a 20 metri"
+ },
+ {
+  "id": "m-30",
+  "testo": "a 30 metri"
+ },
+ {
+  "id": "m-40",
+  "testo": "a 40 metri"
+ },
+ {
+  "id": "m-50",
+  "testo": "a 50 metri"
+ },
+ {
+  "id": "m-60",
+  "testo": "a 60 metri"
+ },
+ {
+  "id": "m-70",
+  "testo": "a 70 metri"
+ },
+ {
+  "id": "m-80",
+  "testo": "a 80 metri"
+ },
+ {
+  "id": "m-90",
+  "testo": "a 90 metri"
+ },
+ {
+  "id": "m-100",
+  "testo": "a 100 metri"
+ },
+ {
+  "id": "m-110",
+  "testo": "a 110 metri"
+ },
+ {
+  "id": "m-120",
+  "testo": "a 120 metri"
+ },
+ {
+  "id": "m-130",
+  "testo": "a 130 metri"
+ },
+ {
+  "id": "m-140",
+  "testo": "a 140 metri"
+ },
+ {
+  "id": "m-150",
+  "testo": "a 150 metri"
+ },
+ {
+  "id": "m-160",
+  "testo": "a 160 metri"
+ },
+ {
+  "id": "m-170",
+  "testo": "a 170 metri"
+ },
+ {
+  "id": "m-180",
+  "testo": "a 180 metri"
+ },
+ {
+  "id": "m-190",
+  "testo": "a 190 metri"
+ },
+ {
+  "id": "m-200",
+  "testo": "a 200 metri"
+ },
+ {
+  "id": "m-210",
+  "testo": "a 210 metri"
+ },
+ {
+  "id": "m-220",
+  "testo": "a 220 metri"
+ },
+ {
+  "id": "m-230",
+  "testo": "a 230 metri"
+ },
+ {
+  "id": "m-240",
+  "testo": "a 240 metri"
+ },
+ {
+  "id": "m-250",
+  "testo": "a 250 metri"
+ },
+ {
+  "id": "m-260",
+  "testo": "a 260 metri"
+ },
+ {
+  "id": "m-270",
+  "testo": "a 270 metri"
+ },
+ {
+  "id": "m-280",
+  "testo": "a 280 metri"
+ },
+ {
+  "id": "m-290",
+  "testo": "a 290 metri"
+ },
+ {
+  "id": "m-300",
+  "testo": "a 300 metri"
+ },
+ {
+  "id": "m-310",
+  "testo": "a 310 metri"
+ },
+ {
+  "id": "m-320",
+  "testo": "a 320 metri"
+ },
+ {
+  "id": "m-330",
+  "testo": "a 330 metri"
+ },
+ {
+  "id": "m-340",
+  "testo": "a 340 metri"
+ },
+ {
+  "id": "m-350",
+  "testo": "a 350 metri"
+ },
+ {
+  "id": "m-360",
+  "testo": "a 360 metri"
+ },
+ {
+  "id": "m-370",
+  "testo": "a 370 metri"
+ },
+ {
+  "id": "m-380",
+  "testo": "a 380 metri"
+ },
+ {
+  "id": "m-390",
+  "testo": "a 390 metri"
+ },
+ {
+  "id": "m-400",
+  "testo": "a 400 metri"
+ },
+ {
+  "id": "m-410",
+  "testo": "a 410 metri"
+ },
+ {
+  "id": "m-420",
+  "testo": "a 420 metri"
+ },
+ {
+  "id": "m-430",
+  "testo": "a 430 metri"
+ },
+ {
+  "id": "m-440",
+  "testo": "a 440 metri"
+ },
+ {
+  "id": "m-450",
+  "testo": "a 450 metri"
+ },
+ {
+  "id": "m-460",
+  "testo": "a 460 metri"
+ },
+ {
+  "id": "m-470",
+  "testo": "a 470 metri"
+ },
+ {
+  "id": "m-480",
+  "testo": "a 480 metri"
+ },
+ {
+  "id": "m-490",
+  "testo": "a 490 metri"
+ },
+ {
+  "id": "m-500",
+  "testo": "a 500 metri"
+ },
+ {
+  "id": "frase-chiedi",
+  "testo": "Vuoi approfondire, o andiamo avanti?"
+ },
+ {
+  "id": "frase-cosa-vedere",
+  "testo": "Cosa vedere:"
+ },
+ {
+  "id": "frase-avanti",
+  "testo": "Andiamo avanti."
+ },
+ {
+  "id": "frase-voce-attiva",
+  "testo": "Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri."
+ }
+]
