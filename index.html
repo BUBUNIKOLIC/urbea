@@ -46,6 +46,8 @@
   .choice{display:flex;gap:8px;margin-top:4px}
   .choice .btn{flex:1 1 50%;padding:14px 10px;min-width:0}
   .btn-yes{background:var(--oro);border-color:var(--oro);color:#241C08}
+  .btn-install{width:100%;margin-bottom:10px;background:#2f6f4f;border-color:#3f8c66;color:#eaf6ef;font-weight:600}
+  body[data-voice="1"] .btn-install{padding:20px 16px;font-size:20px}
   body[data-voice="1"] .choice .btn{padding:22px 10px;font-size:20px}
 
   canvas#plan{width:100%;height:240px;display:block;background:var(--surface);
@@ -119,6 +121,7 @@
   <div class="sr" id="live" role="status" aria-live="polite"></div>
 
   <section class="controls">
+    <button class="btn btn-install" id="install" hidden>Metti l'icona sul telefono</button>
     <button class="btn btn-go" id="start">Avvia</button>
     <button class="btn" id="voice" aria-pressed="false">Modalità voce</button>
     <button class="btn" id="sim" aria-pressed="false">Simula</button>
@@ -722,6 +725,22 @@
   if('serviceWorker' in navigator){
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').catch(function(){});
+
+  /* ---------- l'icona sul telefono, con un tasto solo ---------- */
+  (function(){
+    var bott=el('install'), invito=null;
+    if(!bott)return;
+    window.addEventListener('beforeinstallprompt',function(e){
+      e.preventDefault(); invito=e; bott.hidden=false;
+    });
+    bott.addEventListener('click',function(){
+      if(!invito)return;
+      invito.prompt();
+      invito.userChoice.then(function(){ invito=null; bott.hidden=true; });
+    });
+    window.addEventListener('appinstalled',function(){ invito=null; bott.hidden=true; });
+    if(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches)bott.hidden=true;
+  })();
     });
   }
 
