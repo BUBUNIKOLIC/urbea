@@ -1,5 +1,5 @@
 /* Urbea — service worker: la città resta nel telefono */
-const CACHE = 'urbea-v2';
+const CACHE = 'urbea-v3';
 const ASSETS = [
   './',
   './index.html',
@@ -42,6 +42,20 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
+
+  // la pagina: prima la rete, così le correzioni arrivano subito;
+  // se la rete non c'è, quella salvata (la guida deve funzionare offline)
+  if (e.request.mode === 'navigate') {
+    e.respondWith(
+      fetch(e.request).then(res => {
+        const copy = res.clone();
+        caches.open(CACHE).then(c => c.put(e.request, copy)).catch(() => {});
+        return res;
+      }).catch(() => caches.match('./index.html').then(h => h || caches.match('./')))
+    );
+    return;
+  }
+
   e.respondWith(
     caches.match(e.request).then(hit => {
       if (hit) return hit;
