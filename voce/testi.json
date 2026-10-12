@@ -1508,6 +1508,170 @@
   "testo": "La scalinata d'ingresso e le porte di bronzo con le storie di Pietro e Paolo."
  },
  {
+  "id": "poi-111-nome",
+  "testo": "Castello Pandone"
+ },
+ {
+  "id": "poi-111-intro",
+  "testo": "castello e museo nazionale del XV-XVI sec."
+ },
+ {
+  "id": "poi-111-scheda",
+  "testo": "Il castello domina Venafro dall'alto: nato come fortezza, fu trasformato in dimora signorile da Enrico Pandone, signore della città dal 1514 al 1528, che gli diede una loggia di gusto bramantesco. Oggi è il Museo nazionale del Molise."
+ },
+ {
+  "id": "poi-111-dentro",
+  "testo": "I cavalli di Enrico Pandone: ritratti a grandezza naturale sulle pareti del piano nobile, dipinti su intonaco modellato a rilievo, così che il cavallo esce dal muro. E la collezione Giuliani di disegni e stampe."
+ },
+ {
+  "id": "poi-112-nome",
+  "testo": "Chiesa dell'Annunziata"
+ },
+ {
+  "id": "poi-112-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-112-scheda",
+  "testo": "Una delle chiese del centro storico, sulla salita che porta al castello."
+ },
+ {
+  "id": "poi-113-nome",
+  "testo": "Palazzo Caracciolo"
+ },
+ {
+  "id": "poi-113-intro",
+  "testo": "palazzo"
+ },
+ {
+  "id": "poi-113-scheda",
+  "testo": "Palazzo nobiliare affacciato su piazza Cimorelli, il cuore civile del centro storico."
+ },
+ {
+  "id": "poi-114-nome",
+  "testo": "Municipio di Venafro"
+ },
+ {
+  "id": "poi-114-intro",
+  "testo": "municipio"
+ },
+ {
+  "id": "poi-114-scheda",
+  "testo": "La casa comunale, in piazza Cimorelli."
+ },
+ {
+  "id": "poi-115-nome",
+  "testo": "Piazza Vittorio Veneto"
+ },
+ {
+  "id": "poi-115-intro",
+  "testo": "piazza"
+ },
+ {
+  "id": "poi-115-scheda",
+  "testo": "La piazza principale, punto di ritrovo e di passaggio del centro."
+ },
+ {
+  "id": "poi-116-nome",
+  "testo": "Chiesa del Cristo"
+ },
+ {
+  "id": "poi-116-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-116-scheda",
+  "testo": "Chiesa del centro storico, su via Cavour."
+ },
+ {
+  "id": "poi-117-nome",
+  "testo": "Museo archeologico di Venafro"
+ },
+ {
+  "id": "poi-117-intro",
+  "testo": "museo"
+ },
+ {
+  "id": "poi-117-scheda",
+  "testo": "Raccoglie quello che resta di Venafrum, la città romana: iscrizioni, sculture e materiali degli scavi. Sta in strada Garibaldi, nell'antico convento di Santa Chiara."
+ },
+ {
+  "id": "poi-118-nome",
+  "testo": "Chiesa di San Francesco"
+ },
+ {
+  "id": "poi-118-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-118-scheda",
+  "testo": "Chiesa conventuale nella parte bassa del centro storico, su via De Amicis."
+ },
+ {
+  "id": "poi-119-nome",
+  "testo": "Teatro romano"
+ },
+ {
+  "id": "poi-119-intro",
+  "testo": "teatro romano del età romana"
+ },
+ {
+  "id": "poi-119-scheda",
+  "testo": "Il teatro della città romana, riportato alla luce dagli scavi: se ne riconosce la cavea addossata al pendio. Sta su via Mura Ciclopiche, ai margini dell'abitato antico."
+ },
+ {
+  "id": "poi-120-nome",
+  "testo": "Cattedrale di Santa Maria Assunta"
+ },
+ {
+  "id": "poi-120-intro",
+  "testo": "cattedrale"
+ },
+ {
+  "id": "poi-120-scheda",
+  "testo": "La cattedrale sorge fuori dalla cinta delle mura, in pianura, lontana dal nucleo arroccato: è il segno di una città che in epoca cristiana scese verso il piano."
+ },
+ {
+  "id": "poi-121-nome",
+  "testo": "Anfiteatro romano, il Verlasce"
+ },
+ {
+  "id": "poi-121-intro",
+  "testo": "anfiteatro romano del età romana"
+ },
+ {
+  "id": "poi-121-scheda",
+  "testo": "L'anfiteatro di Venafrum non è una rovina da visitare: è diventato un quartiere. Le case si sono appoggiate agli archi e hanno preso la forma dell'arena, così che dall'alto si legge ancora l'ovale perfetto. Lo chiamano il Verlasce."
+ },
+ {
+  "id": "poi-121-dentro",
+  "testo": "Il giro delle case lungo l'ellisse: camminando intorno si percorre il contorno dell'anfiteatro."
+ },
+ {
+  "id": "poi-122-nome",
+  "testo": "Mura ciclopiche"
+ },
+ {
+  "id": "poi-122-intro",
+  "testo": "mura preromane"
+ },
+ {
+  "id": "poi-122-scheda",
+  "testo": "I blocchi poligonali delle mura più antiche, messi in opera senza malta, incastrati l'uno nell'altro: sono il segno della città prima dei romani."
+ },
+ {
+  "id": "poi-123-nome",
+  "testo": "Farmacia Santa Daria"
+ },
+ {
+  "id": "poi-123-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-123-scheda",
+  "testo": "Farmacia, su via Campania."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -1542,6 +1706,10 @@
  {
   "id": "percorso-laurentina",
   "testo": "Laurentina → via dei Corazzieri 47, a piedi"
+ },
+ {
+  "id": "percorso-venafro",
+  "testo": "Venafro — il centro storico a piedi"
  },
  {
   "id": "dir-dritto-davanti",
