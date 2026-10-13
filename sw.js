@@ -1,11 +1,12 @@
 /* Urbea — service worker: la città resta nel telefono */
-const CACHE = 'urbea-v4';
+const CACHE = 'urbea-v5';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png',
+  './icons/icon-maskable.png',
   './voce/silenzio.m4a',
   './mappa/leaflet.js',
   './mappa/leaflet.css',
