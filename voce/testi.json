@@ -4360,6 +4360,730 @@
   "testo": "La prima mostra d'acqua papale moderna: un arco di trionfo a tre fornici con il Mosè al centro, criticatissimo appena fu scoperto. Segna l'arrivo dell'acquedotto Felice e la rinascita dei quartieri alti."
  },
  {
+  "id": "poi-319-nome",
+  "testo": "Fontana dei Quattro Fiumi"
+ },
+ {
+  "id": "poi-319-intro",
+  "testo": "fontana del 1648-1651"
+ },
+ {
+  "id": "poi-319-scheda",
+  "testo": "Bernini scavò la scogliera sotto l'obelisco: il masso è traforato, e la guglia egizia sembra stare in equilibrio sul vuoto. I quattro fiumi — Nilo, Danubio, Gange, Rio della Plata — sono i quattro continenti allora conosciuti, e il Nilo si copre il capo perché le sue sorgenti erano ignote."
+ },
+ {
+  "id": "poi-319-dentro",
+  "testo": "Guarda sotto il masso: si vede da parte a parte. È quello il gesto, non le statue."
+ },
+ {
+  "id": "poi-320-nome",
+  "testo": "Fontana del Moro"
+ },
+ {
+  "id": "poi-320-intro",
+  "testo": "fontana del 1575, statue del 1653"
+ },
+ {
+  "id": "poi-320-scheda",
+  "testo": "La vasca è cinquecentesca, di Giacomo della Porta; il moro al centro che lotta con un delfino lo disegnò Bernini quasi ottant'anni dopo. Le statue che si vedono sono copie: gli originali stanno a Villa Borghese."
+ },
+ {
+  "id": "poi-321-nome",
+  "testo": "Fontana del Nettuno a Navona"
+ },
+ {
+  "id": "poi-321-intro",
+  "testo": "fontana del vasca del 1574, statue del 1878"
+ },
+ {
+  "id": "poi-321-scheda",
+  "testo": "Per tre secoli fu solo una vasca vuota: le statue di Nettuno che lotta con la piovra furono aggiunte nell'Ottocento per fare simmetria con la fontana del Moro all'altro capo della piazza."
+ },
+ {
+  "id": "poi-322-nome",
+  "testo": "Fontana della Barcaccia"
+ },
+ {
+  "id": "poi-322-intro",
+  "testo": "fontana del 1627-1629"
+ },
+ {
+  "id": "poi-322-scheda",
+  "testo": "Una barca che affonda, scolpita a filo del selciato: la forma nasce da un problema tecnico, perché l'acqua Vergine qui arriva con poca pressione e non poteva zampillare in alto. Il difetto è diventato il disegno."
+ },
+ {
+  "id": "poi-322-dentro",
+  "testo": "L'acqua esce dai bordi e dal sole di prua: la barca sembra imbarcare acqua."
+ },
+ {
+  "id": "poi-323-nome",
+  "testo": "Fontana del Tritone"
+ },
+ {
+  "id": "poi-323-intro",
+  "testo": "fontana del 1642-1643"
+ },
+ {
+  "id": "poi-323-scheda",
+  "testo": "Quattro delfini reggono una conchiglia aperta, e sopra sta il tritone che soffia nella buccina da cui esce il getto. È la prima fontana romana pensata per essere girata intorno, senza un fondale alle spalle."
+ },
+ {
+  "id": "poi-324-nome",
+  "testo": "Fontana delle Api"
+ },
+ {
+  "id": "poi-324-intro",
+  "testo": "fontanella del 1644"
+ },
+ {
+  "id": "poi-324-scheda",
+  "testo": "Una conchiglia aperta con tre api dei Barberini che bevono sul bordo: era un abbeveratoio per i cavalli, posato all'angolo della strada. Bernini che lavora in piccolo."
+ },
+ {
+  "id": "poi-325-nome",
+  "testo": "Fontana di Santa Maria in Trastevere"
+ },
+ {
+  "id": "poi-325-intro",
+  "testo": "fontana del origini medievali"
+ },
+ {
+  "id": "poi-325-scheda",
+  "testo": "È forse la fontana più antica di Roma ancora in funzione: rifatta più volte, da ultimo da Carlo Fontana, con le quattro conchiglie sul bordo della vasca. La piazza le è cresciuta attorno."
+ },
+ {
+  "id": "poi-326-nome",
+  "testo": "Marforio"
+ },
+ {
+  "id": "poi-326-intro",
+  "testo": "statua parlante del I sec. d.C."
+ },
+ {
+  "id": "poi-326-scheda",
+  "testo": "Un dio fluviale colossale sdraiato, oggi nel cortile dei Musei Capitolini. Era la statua che rispondeva a Pasquino: le pasquinate erano dialoghi fra i due."
+ },
+ {
+  "id": "poi-327-nome",
+  "testo": "Il Babuino"
+ },
+ {
+  "id": "poi-327-intro",
+  "testo": "statua parlante del 1576"
+ },
+ {
+  "id": "poi-327-scheda",
+  "testo": "Un Sileno sdraiato sopra una vasca, così consumato e brutto che i romani lo chiamarono babbuino e diedero il nome alla strada. Terza voce di Roma dopo Pasquino e Marforio."
+ },
+ {
+  "id": "poi-328-nome",
+  "testo": "Fontana della Terrina"
+ },
+ {
+  "id": "poi-328-intro",
+  "testo": "fontana del 1590"
+ },
+ {
+  "id": "poi-328-scheda",
+  "testo": "Una vasca ovale con il coperchio: fu coperta perché ci buttavano dentro i rifiuti, e il coperchio le ha dato il nome di zuppiera. Stava a Campo de' Fiori, fu spostata qui davanti alla Chiesa Nuova."
+ },
+ {
+  "id": "poi-329-nome",
+  "testo": "Fontana dei Tritoni"
+ },
+ {
+  "id": "poi-329-intro",
+  "testo": "fontana del 1715"
+ },
+ {
+  "id": "poi-329-scheda",
+  "testo": "Due tritoni inginocchiati che reggono la conchiglia, in piazza Bocca della Verità: è l'ultima fontana romana prima che il barocco finisse."
+ },
+ {
+  "id": "poi-330-nome",
+  "testo": "Fontana del Prigione"
+ },
+ {
+  "id": "poi-330-intro",
+  "testo": "fontana del fine Cinquecento"
+ },
+ {
+  "id": "poi-330-scheda",
+  "testo": "Una mostra d'acqua piccola con la statua del prigioniero nella nicchia: è stata smontata e rimontata due volte in punti diversi della città."
+ },
+ {
+  "id": "poi-331-nome",
+  "testo": "Fontana della Botte"
+ },
+ {
+  "id": "poi-331-intro",
+  "testo": "fontanella del 1927"
+ },
+ {
+  "id": "poi-331-scheda",
+  "testo": "Una botte di vino fra due misure da osteria: è la fontanella rionale di Trastevere, e dice il mestiere del quartiere."
+ },
+ {
+  "id": "poi-332-nome",
+  "testo": "Fontana della Pigna"
+ },
+ {
+  "id": "poi-332-intro",
+  "testo": "fontanella del 1927"
+ },
+ {
+  "id": "poi-332-scheda",
+  "testo": "Una pigna di travertino sopra la vasca: è l'insegna del rione Pigna, che prende il nome dalla pigna di bronzo romana oggi in Vaticano."
+ },
+ {
+  "id": "poi-333-nome",
+  "testo": "Fontana dei Dioscuri"
+ },
+ {
+  "id": "poi-333-intro",
+  "testo": "fontana e obelisco del 1818"
+ },
+ {
+  "id": "poi-333-scheda",
+  "testo": "Sulla piazza del Quirinale: l'obelisco del mausoleo di Augusto messo in mezzo ai due colossi di Castore e Polluce con i cavalli, e sotto una vasca di granito presa dal Foro Romano. Tre pezzi antichi diversi montati insieme nell'Ottocento."
+ },
+ {
+  "id": "poi-334-nome",
+  "testo": "Fontana del Porto di Ripetta"
+ },
+ {
+  "id": "poi-334-intro",
+  "testo": "fontana del 1704"
+ },
+ {
+  "id": "poi-334-scheda",
+  "testo": "Quello che resta del porto fluviale di Ripetta, smontato quando costruirono i muraglioni del Tevere: la fontana fu rimessa qui vicino, e segna il punto dove le barche scaricavano il vino e la legna."
+ },
+ {
+  "id": "poi-335-nome",
+  "testo": "Ponte Sisto"
+ },
+ {
+  "id": "poi-335-intro",
+  "testo": "ponte del 1473-1479"
+ },
+ {
+  "id": "poi-335-scheda",
+  "testo": "Quattro arcate su piloni romani riusati, e in mezzo al pilone centrale l'occhialone: un foro circolare che serve a far passare l'acqua quando il fiume cresce, e a dire quando è il momento di scappare."
+ },
+ {
+  "id": "poi-335-dentro",
+  "testo": "L'occhialone: se l'acqua lo tocca, la piena è vicina."
+ },
+ {
+  "id": "poi-336-nome",
+  "testo": "Ponte Rotto"
+ },
+ {
+  "id": "poi-336-intro",
+  "testo": "rudere di ponte del 142 a.C."
+ },
+ {
+  "id": "poi-336-scheda",
+  "testo": "Un'arcata sola in mezzo al fiume: è quel che resta del ponte Emilio, il primo ponte di pietra di Roma, portato via dalle piene e ricostruito tante volte finché nel 1598 lo lasciarono andare."
+ },
+ {
+  "id": "poi-337-nome",
+  "testo": "Ponte Fabricio"
+ },
+ {
+  "id": "poi-337-intro",
+  "testo": "ponte del 62 a.C."
+ },
+ {
+  "id": "poi-337-scheda",
+  "testo": "Il ponte più antico di Roma ancora in uso, e quasi tutto originale: due grandi arcate di tufo e travertino, con l'arco piccolo al centro del pilone per lo sfogo delle piene. Le erme a quattro teste sui parapetti gli danno l'altro nome, ponte dei Quattro Capi."
+ },
+ {
+  "id": "poi-338-nome",
+  "testo": "Ponte Cestio"
+ },
+ {
+  "id": "poi-338-intro",
+  "testo": "ponte del I sec. a.C."
+ },
+ {
+  "id": "poi-338-scheda",
+  "testo": "L'altro ponte dell'Isola, verso Trastevere: ricostruito nell'Ottocento riusando i materiali antichi quando si alzarono i muraglioni."
+ },
+ {
+  "id": "poi-339-nome",
+  "testo": "Porta Settimiana"
+ },
+ {
+  "id": "poi-339-intro",
+  "testo": "porta del 1498"
+ },
+ {
+  "id": "poi-339-scheda",
+  "testo": "La porta che apre su via della Lungara: fu rifatta da Alessandro VI con la merlatura che si vede, su un passaggio delle mura aureliane."
+ },
+ {
+  "id": "poi-340-nome",
+  "testo": "Villa Borghese"
+ },
+ {
+  "id": "poi-340-intro",
+  "testo": "parco del dal 1605"
+ },
+ {
+  "id": "poi-340-scheda",
+  "testo": "Il parco nato come villa suburbana dei Borghese e diventato pubblico nell'Ottocento: dentro ci sono la Galleria, il laghetto col tempietto di Esculapio e il belvedere del Pincio sopra piazza del Popolo."
+ },
+ {
+  "id": "poi-341-nome",
+  "testo": "Il Lungotevere e i muraglioni"
+ },
+ {
+  "id": "poi-341-intro",
+  "testo": "argini del 1876-1926"
+ },
+ {
+  "id": "poi-341-scheda",
+  "testo": "Dopo la piena del 1870 il Tevere fu chiuso fra muraglioni alti dodici metri: la città perse i porti, i mulini e il rapporto con l'acqua, ma smise di allagarsi. È la ferita e la cura insieme."
+ },
+ {
+  "id": "poi-341-dentro",
+  "testo": "Dall'alto si vedono gli sbocchi delle fogne antiche e, sotto ponte Sisto, i resti delle banchine."
+ },
+ {
+  "id": "poi-342-nome",
+  "testo": "Fontana degli Artisti"
+ },
+ {
+  "id": "poi-342-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-342-scheda",
+  "testo": "Fontana degli Artisti, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-343-nome",
+  "testo": "Fontana delle Palle di Cannone"
+ },
+ {
+  "id": "poi-343-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-343-scheda",
+  "testo": "Fontana delle Palle di Cannone, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-344-nome",
+  "testo": "Font Ludovisi"
+ },
+ {
+  "id": "poi-344-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-344-scheda",
+  "testo": "Font Ludovisi, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-345-nome",
+  "testo": "Fontana del Bottino"
+ },
+ {
+  "id": "poi-345-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-345-scheda",
+  "testo": "Fontana del Bottino, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-346-nome",
+  "testo": "Fontana del Dolmen"
+ },
+ {
+  "id": "poi-346-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-346-scheda",
+  "testo": "Fontana del Dolmen, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-347-nome",
+  "testo": "Fontana Rustica"
+ },
+ {
+  "id": "poi-347-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-347-scheda",
+  "testo": "Fontana Rustica, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-348-nome",
+  "testo": "Fontana della Ciociara"
+ },
+ {
+  "id": "poi-348-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-348-scheda",
+  "testo": "Fontana della Ciociara, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-349-nome",
+  "testo": "Fontana del Tirreno"
+ },
+ {
+  "id": "poi-349-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-349-scheda",
+  "testo": "Fontana del Tirreno, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-350-nome",
+  "testo": "Fontana della Galera"
+ },
+ {
+  "id": "poi-350-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-350-scheda",
+  "testo": "Fontana della Galera, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-351-nome",
+  "testo": "Fontana di piazza dell'Aracoeli"
+ },
+ {
+  "id": "poi-351-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-351-scheda",
+  "testo": "Fontana di piazza dell'Aracoeli, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-352-nome",
+  "testo": "Fontana di piazza delle Cinque Scole"
+ },
+ {
+  "id": "poi-352-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-352-scheda",
+  "testo": "Fontana di piazza delle Cinque Scole, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-353-nome",
+  "testo": "Fontana del Trullo"
+ },
+ {
+  "id": "poi-353-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-353-scheda",
+  "testo": "Fontana del Trullo, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-354-nome",
+  "testo": "Ninfeo degli Specchi"
+ },
+ {
+  "id": "poi-354-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-354-scheda",
+  "testo": "Ninfeo degli Specchi, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-355-nome",
+  "testo": "Fontana della Madonna dei Monti"
+ },
+ {
+  "id": "poi-355-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-355-scheda",
+  "testo": "Fontana della Madonna dei Monti, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-356-nome",
+  "testo": "Fontana del Mosè"
+ },
+ {
+  "id": "poi-356-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-356-scheda",
+  "testo": "Fontana del Mosè, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-357-nome",
+  "testo": "La Fontana del Nettuno"
+ },
+ {
+  "id": "poi-357-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-357-scheda",
+  "testo": "La Fontana del Nettuno, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-358-nome",
+  "testo": "Santi Vincenzo e Anastasio a Fontana di Trevi"
+ },
+ {
+  "id": "poi-358-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-358-scheda",
+  "testo": "Santi Vincenzo e Anastasio a Fontana di Trevi, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-359-nome",
+  "testo": "Fontana di piazza colonna"
+ },
+ {
+  "id": "poi-359-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-359-scheda",
+  "testo": "Fontana di piazza colonna, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-360-nome",
+  "testo": "Fontana di piazza Mastai"
+ },
+ {
+  "id": "poi-360-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-360-scheda",
+  "testo": "Fontana di piazza Mastai, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-361-nome",
+  "testo": "Fontana degli undici zampilli"
+ },
+ {
+  "id": "poi-361-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-361-scheda",
+  "testo": "Fontana degli undici zampilli, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-362-nome",
+  "testo": "Fontana delle Cariatidi"
+ },
+ {
+  "id": "poi-362-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-362-scheda",
+  "testo": "Fontana delle Cariatidi, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-363-nome",
+  "testo": "Fontana di Maderno"
+ },
+ {
+  "id": "poi-363-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-363-scheda",
+  "testo": "Fontana di Maderno, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-364-nome",
+  "testo": "Fontana di Bernini"
+ },
+ {
+  "id": "poi-364-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-364-scheda",
+  "testo": "Fontana di Bernini, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-365-nome",
+  "testo": "Fontana del Tritone di palazzo Margherita"
+ },
+ {
+  "id": "poi-365-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-365-scheda",
+  "testo": "Fontana del Tritone di palazzo Margherita, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-366-nome",
+  "testo": "Fontana di piazza San Simeone"
+ },
+ {
+  "id": "poi-366-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-366-scheda",
+  "testo": "Fontana di piazza San Simeone, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-367-nome",
+  "testo": "Fontana della Vasca"
+ },
+ {
+  "id": "poi-367-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-367-scheda",
+  "testo": "Fontana della Vasca, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-368-nome",
+  "testo": "Fontana Martinucci"
+ },
+ {
+  "id": "poi-368-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-368-scheda",
+  "testo": "Fontana Martinucci, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-369-nome",
+  "testo": "Fontana delle Bagnanti"
+ },
+ {
+  "id": "poi-369-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-369-scheda",
+  "testo": "Fontana delle Bagnanti, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-370-nome",
+  "testo": "Fontana della Caserma degli Svizzeri"
+ },
+ {
+  "id": "poi-370-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-370-scheda",
+  "testo": "Fontana della Caserma degli Svizzeri, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-371-nome",
+  "testo": "Fontana di piazza del Viminale"
+ },
+ {
+  "id": "poi-371-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-371-scheda",
+  "testo": "Fontana di piazza del Viminale, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-372-nome",
+  "testo": "Fontana di Corot"
+ },
+ {
+  "id": "poi-372-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-372-scheda",
+  "testo": "Fontana di Corot, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-373-nome",
+  "testo": "Fontana di Lungotevere Aventino"
+ },
+ {
+  "id": "poi-373-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-373-scheda",
+  "testo": "Fontana di Lungotevere Aventino, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-374-nome",
+  "testo": "Fontana di Palazzo Taverna"
+ },
+ {
+  "id": "poi-374-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-374-scheda",
+  "testo": "Fontana di Palazzo Taverna, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-375-nome",
+  "testo": "Torlonia"
+ },
+ {
+  "id": "poi-375-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-375-scheda",
+  "testo": "Torlonia, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-376-nome",
+  "testo": "Fermi fountain"
+ },
+ {
+  "id": "poi-376-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-376-scheda",
+  "testo": "Fermi fountain, una delle fontane del centro di Roma."
+ },
+ {
+  "id": "poi-377-nome",
+  "testo": "Giuseppe Gioachino Belli"
+ },
+ {
+  "id": "poi-377-intro",
+  "testo": "fontana"
+ },
+ {
+  "id": "poi-377-scheda",
+  "testo": "Giuseppe Gioachino Belli, una delle fontane del centro di Roma."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
