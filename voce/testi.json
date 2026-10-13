@@ -13,7 +13,7 @@
  },
  {
   "id": "poi-01-dentro",
-  "testo": "L'orologio del campanile, fermo alle tre del mattino: l'ora in cui la lava arrivò. L'ipogeo e i cunicoli scavati nella lava del 1794 sotto il pavimento. L'urna di san Vincenzo Romano."
+  "testo": "L'orologio del campanile, fermo alle tre del mattino: l'ora in cui la lava arrivò. L'ipogeo e i cunicoli scavati nella lava del 1794 sotto il pavimento. L'urna di san Vincenzo Romano. L'interno è a stucchi bianchi; sotto la chiesa si visitano gli ambienti sepolti dalla lava. Basilica minore dal 1957: conserva le spoglie di san Vincenzo Romano, che ne fu parroco dal 1799 al 1831 e ne guidò la ricostruzione."
  },
  {
   "id": "poi-02-nome",
@@ -149,15 +149,15 @@
  },
  {
   "id": "poi-10-intro",
-  "testo": "museo del scuola dal 1878"
+  "testo": "museo e scuola del convento di fine Seicento, museo dal 1933"
  },
  {
   "id": "poi-10-scheda",
-  "testo": "Il cuore della capitale mondiale del corallo. La scuola fu istituita per decreto regio nel 1878, fra le più antiche d'Italia. Ha sede nel convento barocco del Carmine, uno dei pochi edifici sopravvissuti alle eruzioni del 1737 e del 1794."
+  "testo": "Il museo sta nell'antico convento annesso alla chiesa del Carmine, un edificio barocco ricostruito alla fine del Seicento dopo l'eruzione del 1631. La scuola per la lavorazione del corallo nacque con regio decreto il 23 giugno 1878 e dal 1887 allargò l'insegnamento ai cammei su conchiglia, alla tartaruga, all'avorio, alla madreperla e alla pietra lavica. Il museo fu inaugurato nel 1933."
  },
  {
   "id": "poi-10-dentro",
-  "testo": "I lavori di scuola trapanese in corallo di Sciacca del Settecento. L'Adorazione dei Magi del 1939 in madreperla e conchiglia. Il mosaico di pinna nobilis."
+  "testo": "Incisioni su corallo, su lava, su conchiglia rosa e tigrata, su madreperla e avorio: il repertorio di una città che vive di questo mestiere."
  },
  {
   "id": "poi-11-nome",
@@ -397,15 +397,15 @@
  },
  {
   "id": "poi-27-intro",
-  "testo": "villa del fine XVIII sec."
+  "testo": "villa vesuviana del impianto seicentesco, portico del primo Novecento"
  },
  {
   "id": "poi-27-scheda",
-  "testo": "La casa in cui Giacomo Leopardi passò gli ultimi mesi della sua vita, fra il 1836 e il 1837: qui scrisse La ginestra e Il tramonto della luna, e da quel canto la villa prende il nome."
+  "testo": "Nata come semplice fabbricato a pianta quadrata, la villa cambiò faccia all'inizio del Novecento con l'aggiunta di un ampio portico neoclassico su tre lati, che apre la casa verso il golfo e il Vesuvio. In facciata resta leggibile la meridiana con il motto «Sine sole sileo», senza sole taccio. Qui Giacomo Leopardi fu ospite dei Ferrigni dal 1836, scappando dal colera, e scrisse La Ginestra."
  },
  {
   "id": "poi-27-dentro",
-  "testo": "La stanza del poeta. Il portico dorico del 1907 con la terrazza sul golfo. La meridiana col motto Sine sole sileo."
+  "testo": "La stanza del poeta, con gli arredi restaurati come li vide lui, e il portico che inquadra il vulcano."
  },
  {
   "id": "poi-28-nome",
