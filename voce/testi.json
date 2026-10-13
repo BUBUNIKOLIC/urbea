@@ -3128,6 +3128,142 @@
   "testo": "Il portone è incorniciato da colonne di granito rosso prese da edifici antichi; sopra, il balcone con lo stemma dei Farnese è il primo balcone monumentale di un palazzo romano, aggiunto da Michelangelo."
  },
  {
+  "id": "poi-232-nome",
+  "testo": "Palazzo Zuccari, la casa dei mostri"
+ },
+ {
+  "id": "poi-232-intro",
+  "testo": "dettaglio di strada del 1592"
+ },
+ {
+  "id": "poi-232-scheda",
+  "testo": "Il pittore Federico Zuccari si costruì la casa e ne fece la finestra e la porta a forma di bocca: lo stipite è un mascherone spalancato e si entra passandoci dentro. È uno scherzo manierista preso sul serio, l'architettura che diventa figura. Oggi è la Biblioteca Hertziana, l'istituto di storia dell'arte."
+ },
+ {
+  "id": "poi-232-dentro",
+  "testo": "Il portale-bocca su via Gregoriana e la finestra gemella accanto."
+ },
+ {
+  "id": "poi-233-nome",
+  "testo": "Arco del Passetto Farnese"
+ },
+ {
+  "id": "poi-233-intro",
+  "testo": "dettaglio di strada del 1603"
+ },
+ {
+  "id": "poi-233-scheda",
+  "testo": "L'arco che scavalca via Giulia doveva essere il primo pezzo di un ponte: i Farnese volevano collegare il palazzo alla Farnesina dall'altra parte del Tevere, su disegno di Michelangelo. Il ponte non si fece mai, e l'arco è rimasto lì, coperto d'edera, come il frammento di un'idea."
+ },
+ {
+  "id": "poi-234-nome",
+  "testo": "La gatta di via della Gatta"
+ },
+ {
+  "id": "poi-234-intro",
+  "testo": "dettaglio di strada"
+ },
+ {
+  "id": "poi-234-scheda",
+  "testo": "Su un cornicione di Palazzo Grazioli sta una gatta di marmo antica, probabilmente egizia, rimessa lì come decorazione. Guarda in giù, e dà il nome alla strada: un pezzo di statua riusato che diventa toponimo."
+ },
+ {
+  "id": "poi-235-nome",
+  "testo": "Madama Lucrezia"
+ },
+ {
+  "id": "poi-235-intro",
+  "testo": "statua parlante"
+ },
+ {
+  "id": "poi-235-scheda",
+  "testo": "Un busto colossale di marmo, probabilmente una sacerdotessa di Iside, appoggiato all'angolo di piazza San Marco. È una delle statue parlanti: ci si attaccavano i biglietti di protesta."
+ },
+ {
+  "id": "poi-236-nome",
+  "testo": "L'Abate Luigi"
+ },
+ {
+  "id": "poi-236-intro",
+  "testo": "statua parlante"
+ },
+ {
+  "id": "poi-236-scheda",
+  "testo": "Statua romana togata, senza testa per lunghi periodi — gliela rubavano — messa al fianco di Sant'Andrea della Valle. L'altra voce di Roma insieme a Pasquino."
+ },
+ {
+  "id": "poi-237-nome",
+  "testo": "La Porta Magica"
+ },
+ {
+  "id": "poi-237-intro",
+  "testo": "dettaglio di strada del 1680 circa"
+ },
+ {
+  "id": "poi-237-scheda",
+  "testo": "L'unico monumento alchemico di Roma: una porta isolata, coperta di simboli e iscrizioni ermetiche, che stava nella villa del marchese Palombara e oggi è rimontata nei giardini di piazza Vittorio. Non porta da nessuna parte: è un testo da leggere, non un passaggio."
+ },
+ {
+  "id": "poi-238-nome",
+  "testo": "Casa dei Cavalieri di Rodi"
+ },
+ {
+  "id": "poi-238-intro",
+  "testo": "loggia del XV sec."
+ },
+ {
+  "id": "poi-238-scheda",
+  "testo": "Una loggia quattrocentesca a cinque arcate affacciata sul Foro di Augusto: l'edificio medievale e rinascimentale si è posato sulle strutture romane e le ha usate come fondazione."
+ },
+ {
+  "id": "poi-239-nome",
+  "testo": "Arco degli Acetari"
+ },
+ {
+  "id": "poi-239-intro",
+  "testo": "dettaglio di strada"
+ },
+ {
+  "id": "poi-239-scheda",
+  "testo": "Si passa sotto un arco basso in via del Pellegrino e si finisce in un cortile medievale con le scale esterne, i ballatoi e i mattoni a vista: un pezzo di città del Quattrocento rimasto incastrato dietro Campo de' Fiori."
+ },
+ {
+  "id": "poi-240-nome",
+  "testo": "Fontana del Facchino"
+ },
+ {
+  "id": "poi-240-intro",
+  "testo": "fontanella del XVI sec."
+ },
+ {
+  "id": "poi-240-scheda",
+  "testo": "Un portatore d'acqua di pietra, con la botte in braccio, incassato nel muro di via Lata: l'acqua esce dal cocchiume. Era l'insegna di un mestiere che a Roma esisteva davvero, prima che l'acqua arrivasse nelle case."
+ },
+ {
+  "id": "poi-241-nome",
+  "testo": "Fontana dei Libri"
+ },
+ {
+  "id": "poi-241-intro",
+  "testo": "fontanella del 1927"
+ },
+ {
+  "id": "poi-241-scheda",
+  "testo": "In via degli Staderari, quattro libri di marmo aperti con la testa di cervo in mezzo: è una fontana rionale, fatta per dire dove si sta — i libri sono lo studio, il cervo è lo stemma del rione Sant'Eustachio."
+ },
+ {
+  "id": "poi-242-nome",
+  "testo": "Le Quattro Fontane"
+ },
+ {
+  "id": "poi-242-intro",
+  "testo": "fontane d'angolo del 1588-1593"
+ },
+ {
+  "id": "poi-242-scheda",
+  "testo": "Quattro fontane agli angoli smussati di un incrocio, una per cantonata: il Tevere, l'Aniene, la Diana e la Giunone. Il punto esiste per la vista: da qui si vedono in asse tre obelischi, a Trinità dei Monti, al Quirinale e a Santa Maria Maggiore. È urbanistica fatta con lo sguardo."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
