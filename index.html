@@ -3272,7 +3272,7 @@
     whereEl.textContent='RICHIESTA DI AIUTO';
     whatEl.textContent='Vienimi a prendere';
     bodyEl.className='body'; bodyEl.textContent=testo;
-    dire(['frase-vengo-a-prenderti'],'Sto preparando il messaggio: tocca Invia per mandarlo.');
+    dire(['frase-vengo-a-prenderti'],'Sto preparando il messaggio: tocca Invia per mandarlo. Se preferisci, dimmi: chiama.');
     var tel=soccorso&&soccorso.tel?soccorso.tel:'';
     // su Android il messaggio si apre già scritto: resta da toccare Invia
     var url='sms:'+tel+(/Android/i.test(navigator.userAgent)?'?':'&')+'body='+encodeURIComponent(testo);
@@ -3321,8 +3321,18 @@
         }
       }
     }
-    if(ha('vienimi a prendere','vieni a prendermi','ho bisogno di aiuto','chiama aiuto','mi sono perso','mi sono persa','aiutami')){
+    if(ha('vienimi a prendere','vieni a prendermi','ho bisogno di aiuto','chiama aiuto','mi sono perso',
+          'mi sono persa','aiutami','aiuto','sos','emergenza','ho paura','non mi sento sicura','non mi sento sicuro')){
       return vienimiAPrendere();
+    }
+    if(ha('chiama','telefona')){
+      if(soccorso&&soccorso.tel){
+        dire(['frase-chiamo'],'Chiamo adesso.');
+        setTimeout(function(){ try{ location.href='tel:'+soccorso.tel; }catch(e){} },900);
+        return true;
+      }
+      dire(['frase-nessun-numero'],'Non ho un numero da chiamare: va registrato prima.');
+      return true;
     }
     if(ha('portami a casa','voglio andare a casa','andiamo a casa','casa mia','torniamo a casa','voglio tornare a casa')){
       return portamiACasa();
@@ -3355,7 +3365,7 @@
       dire(['frase-testo-grande'],'Ho ingrandito il testo.');
       return true;
     }
-    if(ha('aiuto','comandi','che posso dire')){
+    if(ha('comandi','che posso dire','cosa posso dire','istruzioni','che si dice')){
       dire(['frase-aiuto'],'Puoi dire: approfondisci, avanti, ripeti, dove sono, oppure ferma.');
       return true;
     }

@@ -55,7 +55,9 @@ for (let v = 1000; v <= 5000; v += 500) {
 }
 for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
 
-[['vengo-a-prenderti', 'Sto preparando il messaggio: tocca Invia per mandarlo.'],
+[['vengo-a-prenderti', 'Sto preparando il messaggio: tocca Invia per mandarlo. Se preferisci, dimmi: chiama.'],
+ ['chiamo', 'Chiamo adesso.'],
+ ['nessun-numero', 'Non ho un numero da chiamare: va registrato prima.'],
  ['casa-segnata', 'Ho segnato casa qui. Quando vuoi tornare, dimmi: portami a casa.'],
  ['casa-non-segnata', "Non so dove sia casa. Quando ci sei, tocca «Segna casa qui»."],
  ['casa-senza-posizione', 'Prima devo sapere dove sei: premi Avvia.'],
