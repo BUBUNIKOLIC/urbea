@@ -237,15 +237,15 @@
  },
  {
   "id": "poi-16-intro",
-  "testo": "palazzo del fine XVII sec. / 1843"
+  "testo": "palazzo del anni 1690 / restauro 1843"
  },
  {
   "id": "poi-16-scheda",
-  "testo": "Costruito dal marchese di Vallelonga trasformando vecchi casali in residenza estiva. La ricostruzione del 1843 ne fece uno degli edifici più importanti del Miglio d'Oro. Dal 1982 è della Banca di Credito Popolare, fondata in città nel 1888 col denaro degli artigiani e dei pescatori di corallo."
+  "testo": "Lo fece costruire negli anni Novanta del Seicento il marchese di Vallelonga, che qui aveva il feudo. All'inizio del Settecento i fabbricati rustici dell'azienda agricola furono trasformati in residenza di villeggiatura: il corpo principale prese le sale di rappresentanza affrescate del piano nobile. Il terremoto del 1794 lo danneggiò gravemente; il restauro fu affidato nel 1843 a Camillo Napoleone Sasso."
  },
  {
   "id": "poi-16-dentro",
-  "testo": "Le sale di rappresentanza affrescate e i terrazzi aperti sul Vesuvio e sul mare."
+  "testo": "Le sale affrescate del piano nobile, e il modo in cui si legge ancora il passaggio da masseria a villa."
  },
  {
   "id": "poi-17-nome",
@@ -1517,11 +1517,11 @@
  },
  {
   "id": "poi-111-scheda",
-  "testo": "Il castello domina Venafro dall'alto: nato come fortezza, fu trasformato in dimora signorile da Enrico Pandone, signore della città dal 1514 al 1528, che gli diede una loggia di gusto bramantesco. Oggi è il Museo nazionale del Molise."
+  "testo": "Nato come fortezza sul colle, fu trasformato in dimora signorile da Enrico Pandone, signore di Venafro dal 1514 al 1528: la loggia di gusto bramantesco addolcisce il fronte militare, e le sale del piano nobile diventano stanze di rappresentanza. Oggi è il Museo nazionale del Molise."
  },
  {
   "id": "poi-111-dentro",
-  "testo": "I cavalli di Enrico Pandone: ritratti a grandezza naturale sulle pareti del piano nobile, dipinti su intonaco modellato a rilievo, così che il cavallo esce dal muro. E la collezione Giuliani di disegni e stampe."
+  "testo": "I cavalli di Enrico Pandone: ritratti a grandezza naturale, dipinti su intonaco modellato a rilievo, così che l'animale esce dal muro. E la collezione Giuliani di disegni e stampe."
  },
  {
   "id": "poi-112-nome",
@@ -1529,11 +1529,15 @@
  },
  {
   "id": "poi-112-intro",
-  "testo": "chiesa"
+  "testo": "chiesa del rifatta dopo il 1349, interni del 1757"
  },
  {
   "id": "poi-112-scheda",
-  "testo": "Una delle chiese del centro storico, sulla salita che porta al castello."
+  "testo": "La facciata ha un timpano curvo e un portale centrale fiancheggiato da due fusti di colonne romane di reimpiego, presi da un edificio antico che stava qui. La chiesa esisteva prima della metà del Trecento, fu rifatta dopo il terremoto del 1349 e portata a termine entro il 1387 da una confraternita di disciplinati."
+ },
+ {
+  "id": "poi-112-dentro",
+  "testo": "Gli stucchi del 1757 e gli affreschi della navata; e i cicli di affreschi fra fine Trecento e inizio Quattrocento, rimasti sotto l'intonaco fino a pochi decenni fa, con il Giudizio universale sulla parete d'ingresso."
  },
  {
   "id": "poi-113-nome",
@@ -1577,11 +1581,11 @@
  },
  {
   "id": "poi-116-intro",
-  "testo": "chiesa"
+  "testo": "chiesa del 1545"
  },
  {
   "id": "poi-116-scheda",
-  "testo": "Chiesa del centro storico, su via Cavour."
+  "testo": "Costruita nel 1545 dalla confraternita che teneva l'ospizio dei malati. L'ingresso è scenografico: una scalinata con balaustra solleva la facciata sulla piazza. Dentro è a navata unica, con decorazione barocca."
  },
  {
   "id": "poi-117-nome",
@@ -1589,11 +1593,15 @@
  },
  {
   "id": "poi-117-intro",
-  "testo": "museo"
+  "testo": "museo, nell'ex convento di Santa Chiara"
  },
  {
   "id": "poi-117-scheda",
-  "testo": "Raccoglie quello che resta di Venafrum, la città romana: iscrizioni, sculture e materiali degli scavi. Sta in strada Garibaldi, nell'antico convento di Santa Chiara."
+  "testo": "Il museo sta dentro il convento di Santa Chiara e tiene insieme quello che resta di Venafrum: iscrizioni, sculture e materiali degli scavi, dal teatro all'anfiteatro."
+ },
+ {
+  "id": "poi-117-dentro",
+  "testo": "La Tavola Acquaria, la lastra di bronzo con il provvedimento di Augusto sull'acquedotto della città."
  },
  {
   "id": "poi-118-nome",
@@ -1613,11 +1621,15 @@
  },
  {
   "id": "poi-119-intro",
-  "testo": "teatro romano del età romana"
+  "testo": "teatro romano del età augustea"
  },
  {
   "id": "poi-119-scheda",
-  "testo": "Il teatro della città romana, riportato alla luce dagli scavi: se ne riconosce la cavea addossata al pendio. Sta su via Mura Ciclopiche, ai margini dell'abitato antico."
+  "testo": "Il teatro è di età augustea, costruito in opus reticulatum: la cavea non poggia su sostruzioni ma è addossata al pendio del Monte Santa Croce, come nei teatri greci scavati nella roccia. La fronte scenica misurava una sessantina di metri e lo spazio reggeva più di tremila spettatori."
+ },
+ {
+  "id": "poi-119-dentro",
+  "testo": "Il reticolo regolare dei paramenti murari e il modo in cui la gradinata sfrutta la collina."
  },
  {
   "id": "poi-120-nome",
@@ -1625,11 +1637,15 @@
  },
  {
   "id": "poi-120-intro",
-  "testo": "cattedrale"
+  "testo": "cattedrale del XI sec. / rifacimenti barocchi"
  },
  {
   "id": "poi-120-scheda",
-  "testo": "La cattedrale sorge fuori dalla cinta delle mura, in pianura, lontana dal nucleo arroccato: è il segno di una città che in epoca cristiana scese verso il piano."
+  "testo": "Sta in piano, fuori dalla cinta delle mura: la chiesa grande di Venafro è anche una delle più grandi del Molise. L'impianto è quello ricostruito nella seconda metà dell'XI secolo dal vescovo Pietro da Ravenna, ma i terremoti del 1349 e del 1456 e i restauri successivi hanno rifatto più volte la facciata, che oggi si legge con difficoltà. Fra la fine del Seicento e il Settecento l'interno fu rivestito in forme barocche, e la chiesa fu consacrata nel 1764."
+ },
+ {
+  "id": "poi-120-dentro",
+  "testo": "I tre portali scolpiti della facciata, l'unica decorazione esterna rimasta, e le due mensole intagliate ai lati della bifora del campanile, di fattura duecentesca."
  },
  {
   "id": "poi-121-nome",
@@ -1637,15 +1653,15 @@
  },
  {
   "id": "poi-121-intro",
-  "testo": "anfiteatro romano del età romana"
+  "testo": "anfiteatro romano del I sec. d.C."
  },
  {
   "id": "poi-121-scheda",
-  "testo": "L'anfiteatro di Venafrum non è una rovina da visitare: è diventato un quartiere. Le case si sono appoggiate agli archi e hanno preso la forma dell'arena, così che dall'alto si legge ancora l'ovale perfetto. Lo chiamano il Verlasce."
+  "testo": "L'anfiteatro non è una rovina da visitare: è diventato un quartiere. Costruito nel I secolo fuori dalle mura, misura circa 110 metri per 85 e poteva tenere fino a quindicimila persone. Le case medievali e seicentesche si sono appoggiate agli archi e ne hanno preso la forma, così che l'ellisse si legge ancora, perfetta, nel disegno degli isolati."
  },
  {
   "id": "poi-121-dentro",
-  "testo": "Il giro delle case lungo l'ellisse: camminando intorno si percorre il contorno dell'anfiteatro."
+  "testo": "Il giro delle case lungo l'ovale: camminandoci intorno si percorre il contorno dell'arena."
  },
  {
   "id": "poi-122-nome",
@@ -1653,11 +1669,11 @@
  },
  {
   "id": "poi-122-intro",
-  "testo": "mura preromane"
+  "testo": "mura"
  },
  {
   "id": "poi-122-scheda",
-  "testo": "I blocchi poligonali delle mura più antiche, messi in opera senza malta, incastrati l'uno nell'altro: sono il segno della città prima dei romani."
+  "testo": "Blocchi poligonali posati senza malta, incastrati l'uno nell'altro: è la tecnica più antica della zona. La cinta della città romana invece è in opera incerta, e un'iscrizione ricorda C. Aclutius Gallus, il magistrato straordinario incaricato di costruirla intorno al 40 avanti Cristo."
  },
  {
   "id": "poi-123-nome",
@@ -2169,11 +2185,11 @@
  },
  {
   "id": "poi-165-intro",
-  "testo": "chiesa"
+  "testo": "chiesa del 1722"
  },
  {
   "id": "poi-165-scheda",
-  "testo": "Chiesa del centro storico di Venafro, affacciata sulla piazza."
+  "testo": "Fu costruita nel 1722 appena fuori dalla porta del mercato, perché i mercanti potessero pregare senza entrare in città. La facciata è alta, divisa in tre ordini, e porta un orologio; la pianta è a croce greca. Chiusa dopo il terremoto del 1984, ha riaperto nel 1994."
  },
  {
   "id": "poi-166-nome",
