@@ -69,15 +69,15 @@
  },
  {
   "id": "poi-05-intro",
-  "testo": "chiesa del XI sec. / primi '800"
+  "testo": "chiesa del origini intorno all'anno Mille"
  },
  {
   "id": "poi-05-scheda",
-  "testo": "Il più antico luogo di culto della città: un'edicola con la Madonna orante esisteva intorno all'anno Mille. La lava del 1794 la ricoprì interamente, e nell'agosto 1795 gli scavi riportarono alla luce l'edicola intatta."
+  "testo": "Il più antico luogo di culto della città. La lava del 1794 la ricoprì interamente e ne risparmiò l'altare con l'edicola votiva, che riemerse intatta dalle macerie; la ricostruzione fu voluta da san Vincenzo Romano, come aveva già fatto per Santa Croce. Gli scavi hanno restituito frammenti di colonne e parti dei pavimenti in maiolica di scuola napoletana."
  },
  {
   "id": "poi-05-dentro",
-  "testo": "La cappella inferiore sepolta dalla lava, con l'affresco medievale della Madonna. Il pavimento in riggiole maiolicate con motivi di vite."
+  "testo": "L'edicola con l'affresco della Madonna salvata dalla colata, i pezzi di colonne e il pavimento maiolicato. Era sosta obbligata per le gestanti e per i marinai, che venivano a ringraziare dopo lo sbarco."
  },
  {
   "id": "poi-06-nome",
@@ -117,15 +117,11 @@
  },
  {
   "id": "poi-08-intro",
-  "testo": "convento del 1578"
+  "testo": "convento del 1587"
  },
  {
   "id": "poi-08-scheda",
-  "testo": "Fondato per i Francescani Osservanti su una collina sul mare. Nel 1794 la colata lo circondò e alzò il livello stradale di sei metri seppellendo l'ingresso originale, ancora visibile. Oggi è chiuso e in abbandono."
- },
- {
-  "id": "poi-08-dentro",
-  "testo": "Nel chiostro, ventisette pannelli affrescati con la vita di san Francesco, attribuiti ad Angelo Mozzillo. Il pozzo in pietra lavica."
+  "testo": "Il convento dei Frati Minori Osservanti, detti gli Zoccolanti, fondato nel 1587: uno dei complessi conventuali più importanti di tutta la costa vesuviana."
  },
  {
   "id": "poi-09-nome",
@@ -165,15 +161,11 @@
  },
  {
   "id": "poi-11-intro",
-  "testo": "chiesa del 1664 / 1742"
+  "testo": "chiesa"
  },
  {
   "id": "poi-11-scheda",
-  "testo": "Costruita sopra la fossa comune che raccolse i circa millecinquecento torresi morti nella peste del 1656."
- },
- {
-  "id": "poi-11-dentro",
-  "testo": "San Rocco che intercede per gli appestati torresi, opera vicina al quadro della peste di Luca Giordano. La scala a doppia rampa."
+  "testo": "Sta su via Purgatorio e fa parte del complesso monumentale del convento dei Carmelitani Scalzi: lo stesso che oggi ospita il museo del corallo e l'istituto d'arte."
  },
  {
   "id": "poi-12-nome",
