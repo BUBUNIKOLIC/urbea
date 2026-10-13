@@ -8932,6 +8932,14 @@
   "testo": "a 500 metri"
  },
  {
+  "id": "frase-non-capito",
+  "testo": "Non ho capito. Prova con: approfondisci, avanti, dove sono."
+ },
+ {
+  "id": "frase-niente-microfono",
+  "testo": "Questo telefono non capisce i comandi a voce."
+ },
+ {
   "id": "frase-cerco",
   "testo": "Cerco l'indirizzo, un momento."
  },

@@ -55,7 +55,9 @@ for (let v = 1000; v <= 5000; v += 500) {
 }
 for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
 
-[['cerco', "Cerco l'indirizzo, un momento."],
+[['non-capito', 'Non ho capito. Prova con: approfondisci, avanti, dove sono.'],
+ ['niente-microfono', 'Questo telefono non capisce i comandi a voce.'],
+ ['cerco', "Cerco l'indirizzo, un momento."],
  ['indirizzo-non-trovato', "Questo indirizzo non l'ho trovato."],
  ['niente-partenza', 'Non ho segnato un punto di partenza.'],
  ['ti-porto-a', 'Ti porto a'],

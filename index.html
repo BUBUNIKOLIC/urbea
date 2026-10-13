@@ -330,6 +330,11 @@
   body[data-testo="enorme"] .choice .btn{font-size:21px;flex-basis:100%}
   body[data-testo="enorme"] .controls .btn{flex-basis:100%}
   #testo-piu{flex:0 0 auto}
+  .btn-parla{flex-basis:100%;background:linear-gradient(180deg,rgba(91,227,255,.22),rgba(91,227,255,.08));
+    border-color:rgba(91,227,255,.6);color:#CFF6FF;font-size:20px}
+  .btn-parla[hidden]{display:none}
+  .btn-parla.ascolta{background:linear-gradient(180deg,#5BE3FF,#2FB7D6);color:#042027;
+    box-shadow:0 0 26px rgba(91,227,255,.45)}
 
   .status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-align:center}
   .note{color:var(--muted);font-size:13px;margin:0}
@@ -391,6 +396,7 @@
     <button class="btn" id="voice" aria-pressed="false">Modalità voce</button>
     <button class="btn" id="sim" aria-pressed="false">Simula</button>
     <button class="btn" id="testo-piu" aria-label="Ingrandisci il testo">A+</button>
+    <button class="btn btn-parla" id="parla" hidden aria-label="Parla: dimmi un comando">🎙 Parla</button>
   </section>
 
   <div class="status" id="status">in attesa</div>
@@ -2973,8 +2979,9 @@
     this.setAttribute('aria-pressed',S.voice?'true':'false');
     document.body.dataset.voice=S.voice?'1':'0';
     audio();
-    if(S.voice){S.said={};accendiRadio();avviaAscolto();dire(['frase-voce-attiva'],'Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri.');}
-    else{ spegniRadio(); fermaAscolto(); if(inCorso){try{inCorso.pause();}catch(e){} inCorso=null;} if(window.speechSynthesis)window.speechSynthesis.cancel(); }
+    if(S.voice){S.said={};accendiRadio();avviaAscolto();
+      var bp=el('parla'); if(bp)bp.hidden=false;dire(['frase-voce-attiva'],'Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri.');}
+    else{ spegniRadio(); fermaAscolto(); var bp2=el('parla'); if(bp2)bp2.hidden=true; if(inCorso){try{inCorso.pause();}catch(e){} inCorso=null;} if(window.speechSynthesis)window.speechSynthesis.cancel(); }
     render();
   });
 
@@ -3287,9 +3294,43 @@
     }
     return false;
   }
+  function chiediMicrofono(){
+    // su Android il riconoscimento non parte se il permesso non è stato dato:
+    // si apre e si chiude subito uno stream, così il telefono lo chiede davvero
+    try{
+      if(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia){
+        navigator.mediaDevices.getUserMedia({audio:true}).then(function(st){
+          st.getTracks().forEach(function(t){t.stop();});
+        }).catch(function(){});
+      }
+    }catch(e){}
+  }
+  function ascoltaUnaVolta(){
+    var R=window.SpeechRecognition||window.webkitSpeechRecognition;
+    var b=el('parla');
+    if(!R){ dire(['frase-niente-microfono'],'Questo telefono non capisce i comandi a voce.'); return; }
+    try{
+      if(ascolto){ try{ascoltoAcceso=false;ascolto.stop();}catch(e){} ascolto=null; }
+      var r=new R();
+      r.lang='it-IT'; r.continuous=false; r.interimResults=false; r.maxAlternatives=3;
+      if(b){b.classList.add('ascolta');b.textContent='🎙 Ti ascolto…';}
+      r.onresult=function(e){
+        for(var i=0;i<e.results.length;i++){
+          var res=e.results[i];
+          for(var k=0;k<res.length;k++){ if(eseguiComando(res[k].transcript))return; }
+        }
+        dire(['frase-non-capito'],'Non ho capito. Prova con: approfondisci, avanti, dove sono.');
+      };
+      r.onerror=function(){ if(b){b.classList.remove('ascolta');b.textContent='🎙 Parla';} };
+      r.onend=function(){ if(b){b.classList.remove('ascolta');b.textContent='🎙 Parla';} ascolto=null; if(ascoltoAcceso)avviaAscolto(); };
+      r.start();
+      ascolto=r;
+    }catch(e){ if(b){b.classList.remove('ascolta');b.textContent='🎙 Parla';} }
+  }
   function avviaAscolto(){
     var R=window.SpeechRecognition||window.webkitSpeechRecognition;
     if(!R)return false;
+    chiediMicrofono();
     if(ascolto)return true;
     try{
       ascolto=new R();
@@ -3460,6 +3501,8 @@
     misuraTesto(MISURE.indexOf(salvata)>=0?salvata:'normale');
     var b=el('testo-piu');
     if(b)b.addEventListener('click',function(){audio();testoPiuGrande();});
+    var bp=el('parla');
+    if(bp)bp.addEventListener('click',function(){audio();ascoltaUnaVolta();});
   })();
 
   /* ---------- l'icona sul telefono, con un tasto solo ---------- */
