@@ -2384,6 +2384,370 @@
   "testo": "Una struttura fortificata isolata, restaurata di recente: faceva parte del sistema di difesa che proteggeva Venafro."
  },
  {
+  "id": "poi-182-nome",
+  "testo": "Pantheon"
+ },
+ {
+  "id": "poi-182-intro",
+  "testo": "tempio, poi chiesa del 118-125 d.C."
+ },
+ {
+  "id": "poi-182-scheda",
+  "testo": "La cupola più grande mai costruita in calcestruzzo non armato: 43,30 metri di diametro, esattamente quanto l'altezza dell'edificio, così che dentro ci starebbe una sfera perfetta. Il calcestruzzo si alleggerisce salendo — scaglie di travertino in basso, pomice in alto — e lo spessore si assottiglia dai sei metri dell'imposta al metro e mezzo del bordo. L'oculo di nove metri è aperto: non è un difetto, è il modo in cui la cupola si scarica."
+ },
+ {
+  "id": "poi-182-dentro",
+  "testo": "I cassettoni a cinque ordini che rimpiccioliscono verso l'alto, il pavimento leggermente convesso con i fori di scolo sotto l'oculo, e il pronao con le sedici colonne monolitiche di granito."
+ },
+ {
+  "id": "poi-183-nome",
+  "testo": "Fontana di Trevi"
+ },
+ {
+  "id": "poi-183-intro",
+  "testo": "fontana del 1732-1762"
+ },
+ {
+  "id": "poi-183-scheda",
+  "testo": "Non è una fontana appoggiata a una piazza: è la facciata di Palazzo Poli trasformata in scenografia. Nicola Salvi incastrò l'arco di trionfo centrale nel corpo del palazzo e lo fece sfociare in una scogliera di travertino, così che l'acqua sembri uscire dalla roccia e non dall'architettura. È il punto d'arrivo dell'acquedotto Vergine, l'unico antico ancora in funzione."
+ },
+ {
+  "id": "poi-183-dentro",
+  "testo": "Oceano sul carro a conchiglia tirato da cavalli marini, uno quieto e uno inquieto; e le due statue laterali, Salubrità e Abbondanza."
+ },
+ {
+  "id": "poi-184-nome",
+  "testo": "Piazza Navona"
+ },
+ {
+  "id": "poi-184-intro",
+  "testo": "piazza del forma dello stadio del 86 d.C."
+ },
+ {
+  "id": "poi-184-scheda",
+  "testo": "La forma allungata con un lato curvo non è un'invenzione barocca: è la pianta dello stadio di Domiziano, su cui le case si sono costruite sopra conservandone il perimetro. Il barocco ci ha messo le tre fontane e la chiesa di Borromini, ma il disegno dello spazio è quello della pista."
+ },
+ {
+  "id": "poi-184-dentro",
+  "testo": "La Fontana dei Quattro Fiumi del Bernini con l'obelisco, la Fontana del Moro e quella del Nettuno ai due capi; e la facciata concava di Sant'Agnese in Agone."
+ },
+ {
+  "id": "poi-185-nome",
+  "testo": "Castel Sant'Angelo"
+ },
+ {
+  "id": "poi-185-intro",
+  "testo": "mausoleo, poi fortezza del 139 d.C."
+ },
+ {
+  "id": "poi-185-scheda",
+  "testo": "Nato come mausoleo di Adriano: un tamburo cilindrico di 64 metri di diametro su basamento quadrato, rivestito in travertino e sormontato da un tumulo di terra alberato. Da fortezza papale gli furono aggiunti i bastioni a stella e il passetto che lo collega al Vaticano; la rampa elicoidale originale sale ancora dentro il cilindro."
+ },
+ {
+  "id": "poi-185-dentro",
+  "testo": "La rampa elicoidale romana, i camminamenti sui bastioni e l'angelo di bronzo in cima."
+ },
+ {
+  "id": "poi-186-nome",
+  "testo": "Piazza del Campidoglio"
+ },
+ {
+  "id": "poi-186-intro",
+  "testo": "piazza del disegno di Michelangelo, 1536"
+ },
+ {
+  "id": "poi-186-scheda",
+  "testo": "Michelangelo risolse una piazza storta facendone una trapezoidale: i due palazzi laterali divergono, e la prospettiva corregge l'inganno facendola sembrare rettangolare. La pavimentazione è un ovale con la stella a dodici punte, bombato al centro; la cordonata sale con gradini bassissimi, fatti per i cavalli."
+ },
+ {
+  "id": "poi-186-dentro",
+  "testo": "Il disegno stellato del pavimento, la copia della statua equestre di Marco Aurelio al centro, e la cordonata."
+ },
+ {
+  "id": "poi-187-nome",
+  "testo": "Scalinata di Trinità dei Monti"
+ },
+ {
+  "id": "poi-187-intro",
+  "testo": "scalinata del 1723-1726"
+ },
+ {
+  "id": "poi-187-scheda",
+  "testo": "Centotrentacinque gradini che non salgono dritti: Francesco De Sanctis li fa aprire e chiudere a ventaglio in tre rampe, con terrazze e balaustre, per raccordare la piazza bassa alla chiesa in alto. È architettura fatta di soli gradini."
+ },
+ {
+  "id": "poi-187-dentro",
+  "testo": "La Barcaccia in basso, attribuita ai Bernini, costruita a filo di terra perché lì l'acqua arrivava con poca pressione."
+ },
+ {
+  "id": "poi-188-nome",
+  "testo": "Piazza del Popolo"
+ },
+ {
+  "id": "poi-188-intro",
+  "testo": "piazza del sistemata nel 1811-1822"
+ },
+ {
+  "id": "poi-188-scheda",
+  "testo": "Giuseppe Valadier la rifece ellittica, con due emicicli e le rampe che salgono al Pincio: una piazza pensata come ingresso monumentale alla città per chi arrivava da nord. Al centro l'obelisco Flaminio, portato da Augusto dall'Egitto."
+ },
+ {
+  "id": "poi-188-dentro",
+  "testo": "Le due chiese gemelle all'imbocco del Tridente, che gemelle non sono: una ha la cupola tonda, l'altra ovale, per adattarsi ai lotti diversi."
+ },
+ {
+  "id": "poi-189-nome",
+  "testo": "Ara Pacis Augustae"
+ },
+ {
+  "id": "poi-189-intro",
+  "testo": "altare del 13-9 a.C."
+ },
+ {
+  "id": "poi-189-scheda",
+  "testo": "Un recinto marmoreo quadrato attorno all'altare, con due ingressi e i fianchi coperti di rilievi: in basso i girali d'acanto, in alto la processione della famiglia di Augusto. Oggi sta dentro la teca di Richard Meier, del 2006."
+ },
+ {
+  "id": "poi-189-dentro",
+  "testo": "La processione scolpita, dove si riconoscono i personaggi uno per uno, e il fregio dei girali con gli animali nascosti."
+ },
+ {
+  "id": "poi-190-nome",
+  "testo": "Mausoleo di Augusto"
+ },
+ {
+  "id": "poi-190-intro",
+  "testo": "mausoleo del 28 a.C."
+ },
+ {
+  "id": "poi-190-scheda",
+  "testo": "Il più grande sepolcro circolare del mondo antico: 87 metri di diametro, anelli concentrici di muri in travertino e cementizio che reggevano un tumulo di terra piantato a cipressi. Nei secoli è stato fortezza, giardino, arena e sala da concerti; il restauro recente lo ha riaperto."
+ },
+ {
+  "id": "poi-191-nome",
+  "testo": "Palazzo Farnese"
+ },
+ {
+  "id": "poi-191-intro",
+  "testo": "palazzo del 1515-1589"
+ },
+ {
+  "id": "poi-191-scheda",
+  "testo": "Il palazzo rinascimentale per eccellenza: Antonio da Sangallo il Giovane imposta il blocco e il cortile, Michelangelo aggiunge il cornicione aggettante e il secondo ordine del cortile, Giacomo della Porta chiude sul retro. Le finestre del piano nobile sono alternate a timpani triangolari e curvi."
+ },
+ {
+  "id": "poi-191-dentro",
+  "testo": "Il cornicione di Michelangelo, che sporge quanto basta a disegnare l'ombra sul fronte; e la Galleria dei Carracci, dentro."
+ },
+ {
+  "id": "poi-192-nome",
+  "testo": "Campo de' Fiori"
+ },
+ {
+  "id": "poi-192-intro",
+  "testo": "piazza"
+ },
+ {
+  "id": "poi-192-scheda",
+  "testo": "L'unica piazza del centro senza una chiesa affacciata: era ed è piazza di mercato, chiusa da case basse e botteghe. Al centro il monumento a Giordano Bruno, nel punto del rogo del 1600."
+ },
+ {
+  "id": "poi-193-nome",
+  "testo": "Largo di Torre Argentina"
+ },
+ {
+  "id": "poi-193-intro",
+  "testo": "area archeologica del templi del III-II sec. a.C."
+ },
+ {
+  "id": "poi-193-scheda",
+  "testo": "Quattro templi repubblicani, i più antichi di Roma rimasti in piedi, affiorati con gli sventramenti degli anni Venti sei metri sotto il livello della città moderna: la misura di quanto Roma si è alzata su sé stessa. Dietro, la Curia di Pompeo, dove fu ucciso Cesare."
+ },
+ {
+  "id": "poi-193-dentro",
+  "testo": "Il dislivello fra il piano antico e la strada di oggi, che si vede da qualunque lato della piazza."
+ },
+ {
+  "id": "poi-194-nome",
+  "testo": "Chiesa del Gesù"
+ },
+ {
+  "id": "poi-194-intro",
+  "testo": "chiesa del 1568-1584"
+ },
+ {
+  "id": "poi-194-scheda",
+  "testo": "La chiesa che ha fatto scuola a mezza Europa: navata unica larghissima senza colonne, cappelle laterali al posto delle navate, cupola sull'incrocio. Serviva a far vedere e sentire la predica da ogni punto. La facciata del Della Porta, con le volute che raccordano i due ordini, è il modello di cento facciate barocche."
+ },
+ {
+  "id": "poi-194-dentro",
+  "testo": "La volta affrescata dal Baciccio, dove le figure escono dalla cornice e si proiettano sullo stucco: pittura e architettura che si confondono."
+ },
+ {
+  "id": "poi-195-nome",
+  "testo": "Basilica di Santa Maria sopra Minerva"
+ },
+ {
+  "id": "poi-195-intro",
+  "testo": "chiesa del dal 1280"
+ },
+ {
+  "id": "poi-195-scheda",
+  "testo": "L'unica chiesa gotica di Roma: volte a crociera e archi acuti, cosa rarissima in una città che il gotico lo ha sempre tenuto fuori. Il blu stellato delle volte è un rifacimento ottocentesco."
+ },
+ {
+  "id": "poi-195-dentro",
+  "testo": "Il Cristo portacroce di Michelangelo, e fuori l'elefantino del Bernini che regge l'obelisco."
+ },
+ {
+  "id": "poi-196-nome",
+  "testo": "Basilica di Sant'Andrea della Valle"
+ },
+ {
+  "id": "poi-196-intro",
+  "testo": "chiesa del 1591-1650"
+ },
+ {
+  "id": "poi-196-scheda",
+  "testo": "Ha la seconda cupola più alta di Roma dopo San Pietro, impostata su un tamburo altissimo che la fa vedere da lontano. La facciata di Carlo Rainaldi gioca su un solo ordine gigante di colonne."
+ },
+ {
+  "id": "poi-197-nome",
+  "testo": "Santa Maria in Aracoeli"
+ },
+ {
+  "id": "poi-197-intro",
+  "testo": "chiesa del XIII sec."
+ },
+ {
+  "id": "poi-197-scheda",
+  "testo": "Ci si arriva con una scalinata di centoventiquattro gradini ripidissimi, costruita nel 1348 come ex voto per la peste. Dentro, ventidue colonne antiche di spoglio, tutte diverse fra loro, prese dagli edifici romani."
+ },
+ {
+  "id": "poi-197-dentro",
+  "testo": "Le colonne spaiate e il soffitto a cassettoni dorato."
+ },
+ {
+  "id": "poi-198-nome",
+  "testo": "Santa Maria in Cosmedin"
+ },
+ {
+  "id": "poi-198-intro",
+  "testo": "chiesa del VIII sec."
+ },
+ {
+  "id": "poi-198-scheda",
+  "testo": "Chiesa medievale a tre navate su colonne antiche, con il campanile romanico a sette ordini di bifore, uno dei più belli di Roma. Il pavimento è cosmatesco, a tarsie di marmo."
+ },
+ {
+  "id": "poi-198-dentro",
+  "testo": "Sotto il portico, la Bocca della Verità: un tombino romano di epoca imperiale, con il volto di una divinità fluviale."
+ },
+ {
+  "id": "poi-199-nome",
+  "testo": "Teatro di Marcello"
+ },
+ {
+  "id": "poi-199-intro",
+  "testo": "teatro romano del 13 a.C."
+ },
+ {
+  "id": "poi-199-scheda",
+  "testo": "Il modello di tutti i teatri romani, Colosseo compreso: due ordini di arcate, dorico sotto e ionico sopra, con i pilastri che reggono e le semicolonne che decorano. Nel Cinquecento i Savelli ci costruirono sopra un palazzo, che sta ancora lì: l'antico fa da basamento all'abitato."
+ },
+ {
+  "id": "poi-199-dentro",
+  "testo": "Il salto fra le arcate romane e le finestre rinascimentali che ci poggiano sopra."
+ },
+ {
+  "id": "poi-200-nome",
+  "testo": "Portico d'Ottavia"
+ },
+ {
+  "id": "poi-200-intro",
+  "testo": "portico romano del 23 a.C."
+ },
+ {
+  "id": "poi-200-scheda",
+  "testo": "Quel che resta del grande quadriportico che racchiudeva due templi: il propileo con le colonne corinzie e l'arco medievale che taglia il frontone. Da qui comincia il Ghetto."
+ },
+ {
+  "id": "poi-201-nome",
+  "testo": "Isola Tiberina"
+ },
+ {
+  "id": "poi-201-intro",
+  "testo": "isola del ponti del I sec. a.C."
+ },
+ {
+  "id": "poi-201-scheda",
+  "testo": "L'isola fu rivestita in travertino a forma di nave, con la prua verso valle: ne resta un tratto di murata. La collegano il ponte Fabricio del 62 avanti Cristo, ancora quello originale, e il ponte Cestio."
+ },
+ {
+  "id": "poi-201-dentro",
+  "testo": "Il ponte Fabricio, il più antico di Roma ancora in uso."
+ },
+ {
+  "id": "poi-202-nome",
+  "testo": "Palazzo del Quirinale"
+ },
+ {
+  "id": "poi-202-intro",
+  "testo": "palazzo del dal 1583"
+ },
+ {
+  "id": "poi-202-scheda",
+  "testo": "Nato come residenza estiva dei papi sul colle più alto, cresciuto per aggiunte: la manica lunga che corre per oltre trecento metri lungo la via è un muro di facciata senza quasi profondità, fatto per chiudere il giardino."
+ },
+ {
+  "id": "poi-202-dentro",
+  "testo": "La facciata principale col portale di Carlo Maderno e la torre dei venti."
+ },
+ {
+  "id": "poi-203-nome",
+  "testo": "Galleria Spada"
+ },
+ {
+  "id": "poi-203-intro",
+  "testo": "palazzo e galleria del 1540, prospettiva del 1653"
+ },
+ {
+  "id": "poi-203-scheda",
+  "testo": "Dentro il cortile c'è il colonnato di Borromini: sembra lungo quasi quaranta metri e ne misura otto. Le colonne rimpiccioliscono, il pavimento sale, la volta scende, e la statua in fondo — che pare a grandezza d'uomo — è alta sessanta centimetri."
+ },
+ {
+  "id": "poi-203-dentro",
+  "testo": "La prospettiva solida del Borromini: va guardata dal punto giusto, e poi percorsa."
+ },
+ {
+  "id": "poi-204-nome",
+  "testo": "Statua parlante di Pasquino"
+ },
+ {
+  "id": "poi-204-intro",
+  "testo": "statua del III sec. a.C."
+ },
+ {
+  "id": "poi-204-scheda",
+  "testo": "Un torso ellenistico consumato, forse Menelao con il corpo di Patroclo, messo all'angolo del palazzo. Da cinque secoli ci si attaccano i biglietti contro i potenti: le pasquinate."
+ },
+ {
+  "id": "poi-205-nome",
+  "testo": "Basilica di San Pietro in Vincoli"
+ },
+ {
+  "id": "poi-205-intro",
+  "testo": "chiesa del V sec."
+ },
+ {
+  "id": "poi-205-scheda",
+  "testo": "Impianto paleocristiano a tre navate su venti colonne doriche antiche, sotto un soffitto a cassettoni settecentesco."
+ },
+ {
+  "id": "poi-205-dentro",
+  "testo": "Il Mosè di Michelangelo, parte del monumento funebre di Giulio II."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -2422,6 +2786,22 @@
  {
   "id": "percorso-venafro",
   "testo": "Venafro — il centro storico a piedi"
+ },
+ {
+  "id": "percorso-roma-antica",
+  "testo": "Roma antica — Campidoglio, Fori, Colosseo"
+ },
+ {
+  "id": "percorso-roma-barocca",
+  "testo": "Roma barocca — Trevi, Pantheon, Navona"
+ },
+ {
+  "id": "percorso-roma-tevere",
+  "testo": "Roma sul Tevere — Castel Sant'Angelo, Ghetto, Isola Tiberina"
+ },
+ {
+  "id": "percorso-roma-tridente",
+  "testo": "Roma — il Tridente: Popolo, Spagna, Ara Pacis"
  },
  {
   "id": "dir-dritto-davanti",
