@@ -120,6 +120,69 @@
   body[data-voice="1"] .say .what{font-size:32px}
   body[data-voice="1"] .btn{padding:20px 16px;font-size:19px}
 
+
+  /* ---------- ritocco grafico: più aria, meno riquadri ---------- */
+  :root{ --bordo:14px; --ombra:0 1px 0 rgba(255,255,255,.03), 0 8px 24px rgba(0,0,0,.35); }
+  body{ background:
+      radial-gradient(1200px 600px at 50% -10%, #1C2026 0%, transparent 60%),
+      var(--bg); }
+  .app{gap:18px}
+  header{align-items:center;justify-content:center;gap:12px;padding:2px 0 2px}
+  .wordmark{font-size:34px;letter-spacing:.01em}
+  .claim{font-size:9.5px;letter-spacing:.2em}
+
+  /* la scheda che parla */
+  .say{border-radius:20px;padding:22px 22px 20px;gap:10px;min-height:170px;box-shadow:var(--ombra);
+    background:linear-gradient(180deg,#20232A 0%,#1A1D22 100%)}
+  .say .where{font-size:10.5px;letter-spacing:.18em;color:var(--oro)}
+  .say .what{font-size:30px;letter-spacing:.005em}
+  .say .body{font-size:16.5px;color:#D7D6D2}
+  .say .idle{font-style:normal;color:var(--muted)}
+  .choice{gap:10px;margin-top:8px}
+  .choice .btn{border-radius:14px;padding:15px 10px}
+
+  /* i tasti */
+  .controls{gap:10px}
+  .btn{border-radius:14px;padding:16px;box-shadow:var(--ombra);transition:background .15s,border-color .15s}
+  .btn-go{font-size:18px;letter-spacing:.01em;box-shadow:0 8px 24px rgba(79,175,196,.18)}
+  .btn:hover{border-color:#3d434b}
+  select{border-radius:14px;padding:15px 13px;box-shadow:var(--ombra)}
+
+  /* la mappa */
+  #mappa{height:380px;border-radius:20px;box-shadow:var(--ombra)}
+  #mappa .leaflet-control-zoom a{background:#1C1E23;color:#E8E7E3;border-color:#30343A}
+  #mappa .leaflet-control-zoom a:hover{background:#262A31}
+
+  /* la striscia dei luoghi davanti */
+  .strip{height:66px;border-radius:16px;background:
+    linear-gradient(180deg,#0E1013 0%,#121419 100%)}
+  .pin b{font-size:11.5px}
+
+  /* l'elenco */
+  h2.eyebrow{letter-spacing:.2em;margin:10px 0 2px}
+  .list{gap:10px}
+  details.item{border-radius:16px;box-shadow:var(--ombra);background:linear-gradient(180deg,#1F2228 0%,#1A1D22 100%)}
+  details.item>summary{padding:15px 17px}
+  details.item[open]{border-color:#3a4049}
+  .detail{padding:14px 17px 18px}
+  .inside{border-radius:12px;padding:13px 14px}
+
+  /* in modalità voce tutto si ingrandisce e si semplifica */
+  body[data-voice="1"] .say{padding:26px 24px;border-radius:24px}
+  body[data-voice="1"] .say .what{font-size:34px;line-height:1.1}
+  body[data-voice="1"] .choice .btn{border-radius:18px}
+
+  /* la schermata d'ingresso */
+  #porta{background:
+      radial-gradient(900px 500px at 50% 0%, #1E242B 0%, transparent 60%),
+      var(--bg); gap:16px}
+  .porta-testa{padding:10px 0 6px}
+  .porta-scelta{border-radius:24px;box-shadow:var(--ombra);transition:transform .12s,border-color .15s}
+  .porta-scelta:active{transform:scale(.99)}
+  .porta-voce{background:linear-gradient(180deg,#1A3540 0%,#16272F 100%)}
+  .porta-occhi{background:linear-gradient(180deg,#24272C 0%,#1C1F24 100%)}
+  .porta-scelta b{letter-spacing:.005em}
+
   .status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-align:center}
   .note{color:var(--muted);font-size:13px;margin:0}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
