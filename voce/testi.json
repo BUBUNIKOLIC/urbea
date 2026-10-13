@@ -73,11 +73,11 @@
  },
  {
   "id": "poi-05-scheda",
-  "testo": "Il più antico luogo di culto della città. La lava del 1794 la ricoprì interamente e ne risparmiò l'altare con l'edicola votiva, che riemerse intatta dalle macerie; la ricostruzione fu voluta da san Vincenzo Romano, come aveva già fatto per Santa Croce. Gli scavi hanno restituito frammenti di colonne e parti dei pavimenti in maiolica di scuola napoletana."
+  "testo": "I torresi la chiamano Sant'Anna. È il più antico luogo di culto della città e sta incassata nella roccia lavica: la colata del 1794 la ricoprì e ne risparmiò l'altare con l'edicola votiva, riemersa intatta; la ricostruzione fu voluta da san Vincenzo Romano. Negli scavi sono tornati frammenti di colonne e pezzi del pavimento in maiolica di scuola napoletana."
  },
  {
   "id": "poi-05-dentro",
-  "testo": "L'edicola con l'affresco della Madonna salvata dalla colata, i pezzi di colonne e il pavimento maiolicato. Era sosta obbligata per le gestanti e per i marinai, che venivano a ringraziare dopo lo sbarco."
+  "testo": "L'edicola salvata dalla lava, e accanto alla statua l'ampolla che raccolse il liquido quando, nel 1861, sembrò piangere. Era sosta obbligata per i marinai di ritorno e per le gestanti, che ancora oggi vengono il 26 luglio."
  },
  {
   "id": "poi-06-nome",
@@ -161,11 +161,15 @@
  },
  {
   "id": "poi-11-intro",
-  "testo": "chiesa"
+  "testo": "chiesa del 1664, rialzata dopo il 1737"
  },
  {
   "id": "poi-11-scheda",
-  "testo": "Sta su via Purgatorio e fa parte del complesso monumentale del convento dei Carmelitani Scalzi: lo stesso che oggi ospita il museo del corallo e l'istituto d'arte."
+  "testo": "In facciata si legge Santa Maria del Pianto al Purgatorio, ma per gli storici è la chiesa della peste: sta sopra la fossa comune dell'epidemia di fine Seicento, scavata nel vallone dietro il convento dei Carmelitani, quello che oggi ospita il museo del corallo. Consacrata nel 1664 come Santa Maria del Suffragio, fu resa inagibile dalla lava del 1737 e ricostruita sopra i resti, a un livello più alto."
+ },
+ {
+  "id": "poi-11-dentro",
+  "testo": "La grande scala a doppia rampa di piperno che collega il livello vecchio e quello nuovo: è lì che si misura di quanto la lava ha alzato la città."
  },
  {
   "id": "poi-12-nome",
@@ -257,11 +261,11 @@
  },
  {
   "id": "poi-18-intro",
-  "testo": "chiesa del 1686"
+  "testo": "chiesa e convento del 1680"
  },
  {
   "id": "poi-18-scheda",
-  "testo": "Nacque come ex voto dopo l'eruzione del 1631. Sopravvisse indenne alla lava del 1794 ma fu devastata dal bombardamento del 13 settembre 1943: è il caso torrese in cui la guerra, non il vulcano, ha cancellato il patrimonio."
+  "testo": "La chiesa dei Carmelitani Scalzi, sul corso. Dopo la soppressione dei beni ecclesiastici del 1867 restò abbandonata una ventina d'anni, poi i Carmelitani la riebbero e la restaurarono; i bombardamenti del 1943 la danneggiarono gravemente, e il convento fu ricostruito in forme moderne."
  },
  {
   "id": "poi-19-nome",
@@ -2321,11 +2325,15 @@
  },
  {
   "id": "poi-176-intro",
-  "testo": "chiesa"
+  "testo": "cappella del 1669"
  },
  {
   "id": "poi-176-scheda",
-  "testo": "Chiesa di San Biagio, ai margini occidentali della città."
+  "testo": "Nel 1669 il regio consigliere Antonio Fiorillo chiese alla curia di Napoli di poter costruire una cappella sul suo fondo, a Calastro, per sé e per chi abitava lì intorno. La facciata è di pietra lavica; dentro ci sono due altari, uno della Madonna delle Grazie e uno più piccolo di san Biagio, e la sagrestia."
+ },
+ {
+  "id": "poi-176-dentro",
+  "testo": "Si apre il 3 febbraio, per la festa: si va a farsi toccare la gola con l'olio benedetto."
  },
  {
   "id": "poi-177-nome",
@@ -5666,6 +5674,14 @@
  {
   "id": "m-500",
   "testo": "a 500 metri"
+ },
+ {
+  "id": "frase-aiuto",
+  "testo": "Puoi dire: approfondisci, avanti, ripeti, dove sono, oppure ferma."
+ },
+ {
+  "id": "frase-niente-intorno",
+  "testo": "Qui intorno non ho niente da dirti."
  },
  {
   "id": "frase-chiedi",
