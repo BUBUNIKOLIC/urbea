@@ -1537,11 +1537,15 @@
  },
  {
   "id": "poi-113-intro",
-  "testo": "palazzo"
+  "testo": "palazzo e torre difensiva del nucleo medievale"
  },
  {
   "id": "poi-113-scheda",
-  "testo": "Palazzo nobiliare affacciato su piazza Cimorelli, il cuore civile del centro storico."
+  "testo": "Non è solo un palazzo nobiliare: è la Torre del Mercato, una struttura difensiva con massicci merli medievali che sorvegliava la porta orientale di Venafro. Affaccia su piazza Cimorelli, il cuore civile del centro storico."
+ },
+ {
+  "id": "poi-113-dentro",
+  "testo": "I merli e la mole della torre, che si legge ancora sotto il palazzo."
  },
  {
   "id": "poi-114-nome",
@@ -1573,11 +1577,11 @@
  },
  {
   "id": "poi-116-intro",
-  "testo": "chiesa del 1545"
+  "testo": "chiesa del 1545, ampliata nel 1650"
  },
  {
   "id": "poi-116-scheda",
-  "testo": "Costruita nel 1545 dalla confraternita che teneva l'ospizio dei malati. L'ingresso è scenografico: una scalinata con balaustra solleva la facciata sulla piazza. Dentro è a navata unica, con decorazione barocca."
+  "testo": "Costruita nel 1545 dalla confraternita che teneva l'ospizio dei malati e ampliata nel 1650. L'ingresso è scenografico: una scalinata con balaustra solleva la facciata sulla piazza. Dentro è a navata unica, con decorazione barocca."
  },
  {
   "id": "poi-117-nome",
@@ -1585,11 +1589,11 @@
  },
  {
   "id": "poi-117-intro",
-  "testo": "museo, nell'ex convento di Santa Chiara"
+  "testo": "museo, nel monastero di Santa Chiara del monastero del Seicento"
  },
  {
   "id": "poi-117-scheda",
-  "testo": "Il museo sta dentro il convento di Santa Chiara e tiene insieme quello che resta di Venafrum: iscrizioni, sculture e materiali degli scavi, dal teatro all'anfiteatro."
+  "testo": "Il museo sta dentro il monastero seicentesco di Santa Chiara, nel centro storico, e tiene insieme quello che resta di Venafrum: materiali dalla preistoria al medioevo, dal teatro e dall'anfiteatro. Ha riaperto nel 1998 con un allestimento nuovo, che fa vedere anche il monastero restaurato."
  },
  {
   "id": "poi-117-dentro",
@@ -2189,11 +2193,11 @@
  },
  {
   "id": "poi-166-intro",
-  "testo": "chiesa"
+  "testo": "chiesa del 1583"
  },
  {
   "id": "poi-166-scheda",
-  "testo": "Chiesa nella parte bassa del centro di Venafro."
+  "testo": "Progettata nel 1583 da Baldassarre Lombardo e portata a termine, nella struttura, da Beltrame Lombardo."
  },
  {
   "id": "poi-167-nome",
@@ -2326,6 +2330,58 @@
  {
   "id": "poi-177-scheda",
   "testo": "La chiesa dell'ordine dei carmelitani scalzi."
+ },
+ {
+  "id": "poi-178-nome",
+  "testo": "Basilica dei Santi Nicandro, Marciano e Daria"
+ },
+ {
+  "id": "poi-178-intro",
+  "testo": "basilica del XIV sec., campanile del 1949"
+ },
+ {
+  "id": "poi-178-scheda",
+  "testo": "La basilica dei patroni di Venafro, trecentesca, a due navate; il campanile che si vede oggi è del 1949."
+ },
+ {
+  "id": "poi-178-dentro",
+  "testo": "I cicli di affreschi ottocenteschi lungo una delle due navate."
+ },
+ {
+  "id": "poi-179-nome",
+  "testo": "Chiesa dei Santi Martino e Nicola"
+ },
+ {
+  "id": "poi-179-intro",
+  "testo": "chiesa del intorno al 1200"
+ },
+ {
+  "id": "poi-179-scheda",
+  "testo": "Costruita intorno al 1200, in parte con materiali presi da edifici antichi. Ai lati del portale due nicchie reggono le figure di san Martino e san Nicola. I danni del novembre 1943 la chiusero, e chiusa è rimasta."
+ },
+ {
+  "id": "poi-180-nome",
+  "testo": "Palazzina Liberty"
+ },
+ {
+  "id": "poi-180-intro",
+  "testo": "palazzina liberty del primo Novecento"
+ },
+ {
+  "id": "poi-180-scheda",
+  "testo": "Un edificio del primo Novecento nato per far funzionare la città: era la centrale idroelettrica che dava corrente a Venafro, poi diventò un cinema. Lo stile liberty, raro da queste parti, si riconosce nelle linee della facciata."
+ },
+ {
+  "id": "poi-181-nome",
+  "testo": "La Torricella"
+ },
+ {
+  "id": "poi-181-intro",
+  "testo": "torre fortificata"
+ },
+ {
+  "id": "poi-181-scheda",
+  "testo": "Una struttura fortificata isolata, restaurata di recente: faceva parte del sistema di difesa che proteggeva Venafro."
  },
  {
   "id": "percorso-lava",
