@@ -3240,12 +3240,44 @@
     casa={lat:S.lat,lon:S.lon,n:'casa'};
     try{ localStorage.setItem('urbea-casa',JSON.stringify(casa)); }catch(e){}
     leggiCasa();
+    leggiSoccorso();
     statusEl.textContent='casa segnata qui';
     dire(['frase-casa-segnata'],'Ho segnato casa qui. Quando vuoi tornare, dimmi: portami a casa.');
   }
   function portamiACasa(){
     if(!casa){ dire(['frase-casa-non-segnata'],'Non so dove sia casa. Quando ci sei, tocca «Segna casa qui».'); return true; }
     return portamiAlPunto(casa.lat,casa.lon,'casa');
+  }
+
+
+  /* ---------- «vienimi a prendere» ----------
+     Non è sorveglianza: è la persona che chiede aiuto. Si registra una
+     volta il numero di chi deve venire, e il comando prepara il messaggio
+     con la posizione e il collegamento alla mappa. Niente server. */
+  var soccorso=null;
+  function leggiSoccorso(){
+    try{ var g=localStorage.getItem('urbea-soccorso'); soccorso=g?JSON.parse(g):null; }catch(e){ soccorso=null; }
+  }
+  function segnaSoccorso(numero,nome){
+    soccorso={n:(nome||'').trim(),tel:(numero||'').replace(/[^+0-9]/g,'')};
+    try{ localStorage.setItem('urbea-soccorso',JSON.stringify(soccorso)); }catch(e){}
+  }
+  function vienimiAPrendere(){
+    if(!S.pronto){ dire(['frase-casa-senza-posizione'],'Prima devo sapere dove sei: premi Avvia.'); return true; }
+    var dove='https://www.openstreetmap.org/?mlat='+S.lat.toFixed(5)+'&mlon='+S.lon.toFixed(5)+'#map=18/'+S.lat.toFixed(5)+'/'+S.lon.toFixed(5);
+    var vicino=around()[0];
+    var rif=vicino? (' Sono vicino a '+vicino.p.n+'.') : '';
+    var testo='Ho bisogno che tu venga a prendermi.'+rif+' Sono qui: '+dove;
+    liveEl.textContent=testo;
+    whereEl.textContent='RICHIESTA DI AIUTO';
+    whatEl.textContent='Vienimi a prendere';
+    bodyEl.className='body'; bodyEl.textContent=testo;
+    dire(['frase-vengo-a-prenderti'],'Sto preparando il messaggio: tocca Invia per mandarlo.');
+    var tel=soccorso&&soccorso.tel?soccorso.tel:'';
+    // su Android il messaggio si apre già scritto: resta da toccare Invia
+    var url='sms:'+tel+(/Android/i.test(navigator.userAgent)?'?':'&')+'body='+encodeURIComponent(testo);
+    setTimeout(function(){ try{ location.href=url; }catch(e){} },1200);
+    return true;
   }
 
   /* ---------- i comandi a voce: l'app si guida parlando ----------
@@ -3288,6 +3320,9 @@
           return portamiA(tipo);
         }
       }
+    }
+    if(ha('vienimi a prendere','vieni a prendermi','ho bisogno di aiuto','chiama aiuto','mi sono perso','mi sono persa','aiutami')){
+      return vienimiAPrendere();
     }
     if(ha('portami a casa','voglio andare a casa','andiamo a casa','casa mia','torniamo a casa','voglio tornare a casa')){
       return portamiACasa();
