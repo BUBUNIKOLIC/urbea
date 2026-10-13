@@ -2748,6 +2748,386 @@
   "testo": "Il Mosè di Michelangelo, parte del monumento funebre di Giulio II."
  },
  {
+  "id": "poi-206-nome",
+  "testo": "Basilica di San Pietro in Vaticano"
+ },
+ {
+  "id": "poi-206-intro",
+  "testo": "basilica del 1506-1626"
+ },
+ {
+  "id": "poi-206-scheda",
+  "testo": "La cupola di Michelangelo è il pezzo che tiene tutto: 42 metri di diametro, doppia calotta, sedici costoloni che scaricano sul tamburo cerchiato di colonne binate. Sotto, la navata di Carlo Maderno allungò la pianta centrale in croce latina, e la facciata, larga più che alta, nasconde in parte la cupola a chi arriva da vicino."
+ },
+ {
+  "id": "poi-206-dentro",
+  "testo": "Il baldacchino del Bernini sul sepolcro, venti metri di bronzo su colonne tortili; e il colonnato ellittico della piazza, quattro file di colonne che da due punti del pavimento si allineano in una sola."
+ },
+ {
+  "id": "poi-207-nome",
+  "testo": "Basilica di Santa Maria Maggiore"
+ },
+ {
+  "id": "poi-207-intro",
+  "testo": "basilica del V sec."
+ },
+ {
+  "id": "poi-207-scheda",
+  "testo": "L'impianto paleocristiano è rimasto: navata lunga su quaranta colonne ioniche antiche, con la trabeazione continua e non gli archi. Il soffitto a cassettoni è quattrocentesco, il campanile romanico è il più alto di Roma, settantacinque metri."
+ },
+ {
+  "id": "poi-207-dentro",
+  "testo": "I mosaici del V secolo nella navata e sull'arco trionfale, e il pavimento cosmatesco."
+ },
+ {
+  "id": "poi-208-nome",
+  "testo": "Basilica di San Giovanni in Laterano"
+ },
+ {
+  "id": "poi-208-intro",
+  "testo": "basilica del IV sec., rifatta nel 1650"
+ },
+ {
+  "id": "poi-208-scheda",
+  "testo": "La cattedrale di Roma. Borromini la rifece dentro nel 1650 senza demolirla: inglobò le colonne antiche in grandi pilastri, aprendo le nicchie dove stanno gli apostoli. La facciata di Alessandro Galilei, del 1735, è un portico a ordine gigante con l'attico e le statue in cima."
+ },
+ {
+  "id": "poi-208-dentro",
+  "testo": "Il baldacchino gotico sull'altare papale e il chiostro cosmatesco, con le colonnine tortili a mosaico."
+ },
+ {
+  "id": "poi-209-nome",
+  "testo": "Basilica di San Clemente"
+ },
+ {
+  "id": "poi-209-intro",
+  "testo": "basilica del XII sec. su chiesa del IV"
+ },
+ {
+  "id": "poi-209-scheda",
+  "testo": "Tre città una sopra l'altra: la basilica medievale in alto, sotto la chiesa paleocristiana del IV secolo, e sotto ancora un edificio romano con il mitreo. Si scende di piano in piano e si sente l'acqua di un canale antico che scorre ancora."
+ },
+ {
+  "id": "poi-209-dentro",
+  "testo": "Il mosaico absidale con la croce da cui si dipartono i girali d'acanto, e il recinto del coro con le transenne."
+ },
+ {
+  "id": "poi-210-nome",
+  "testo": "Chiesa di San Luigi dei Francesi"
+ },
+ {
+  "id": "poi-210-intro",
+  "testo": "chiesa del 1518-1589"
+ },
+ {
+  "id": "poi-210-scheda",
+  "testo": "Facciata rinascimentale a due ordini di Giacomo della Porta, misurata e piatta; l'interno a tre navate è stato rivestito di marmi nel Settecento."
+ },
+ {
+  "id": "poi-210-dentro",
+  "testo": "I tre Caravaggio della cappella Contarelli: la Vocazione, l'Ispirazione e il Martirio di san Matteo."
+ },
+ {
+  "id": "poi-211-nome",
+  "testo": "Sant'Ivo alla Sapienza"
+ },
+ {
+  "id": "poi-211-intro",
+  "testo": "chiesa del 1642-1660"
+ },
+ {
+  "id": "poi-211-scheda",
+  "testo": "La pianta è una stella a sei punte ottenuta da due triangoli intrecciati, e la cupola segue quella forma fino alla lanterna, dove Borromini avvita una spirale che sale all'aperto: un unico motivo geometrico portato dal pavimento alla cima."
+ },
+ {
+  "id": "poi-211-dentro",
+  "testo": "La lanterna a spirale, visibile dal cortile della Sapienza; e il modo in cui la parete non ha mai un angolo retto."
+ },
+ {
+  "id": "poi-212-nome",
+  "testo": "Sant'Agnese in Agone"
+ },
+ {
+  "id": "poi-212-intro",
+  "testo": "chiesa del 1652-1672"
+ },
+ {
+  "id": "poi-212-scheda",
+  "testo": "Borromini arretrò la facciata in una curva concava per dare spazio alla cupola, che altrimenti sarebbe sparita a chi guarda dalla piazza: i due campanili laterali la incorniciano. È il modo barocco di trattare una facciata come un fatto urbano, non come un muro."
+ },
+ {
+  "id": "poi-213-nome",
+  "testo": "San Carlo alle Quattro Fontane"
+ },
+ {
+  "id": "poi-213-intro",
+  "testo": "chiesa del 1638-1667"
+ },
+ {
+  "id": "poi-213-scheda",
+  "testo": "Il capolavoro dello spazio piccolo: una navata ovale ottenuta da curve che si rincorrono, con le colonne che reggono una trabeazione ondulata. La cupola a cassettoni di forme diverse — croci, ottagoni, esagoni — rimpicciolisce verso l'alto e fa sembrare la chiesa molto più grande di com'è."
+ },
+ {
+  "id": "poi-213-dentro",
+  "testo": "La facciata, l'ultima cosa che Borromini disegnò: concava, convessa, concava."
+ },
+ {
+  "id": "poi-214-nome",
+  "testo": "Sant'Andrea al Quirinale"
+ },
+ {
+  "id": "poi-214-intro",
+  "testo": "chiesa del 1658-1670"
+ },
+ {
+  "id": "poi-214-scheda",
+  "testo": "Bernini risolve un lotto largo e poco profondo girando l'ovale: l'asse maggiore è trasversale, così entrando si è già al centro. Il portico curvo sporge in avanti come un invito, e la luce scende dalla lanterna sull'altare."
+ },
+ {
+  "id": "poi-214-dentro",
+  "testo": "Il contrasto fra i marmi scuri della parete e lo stucco bianco e oro della cupola."
+ },
+ {
+  "id": "poi-215-nome",
+  "testo": "Santa Maria della Vittoria"
+ },
+ {
+  "id": "poi-215-intro",
+  "testo": "chiesa del 1608-1620"
+ },
+ {
+  "id": "poi-215-scheda",
+  "testo": "Navata unica barocca, tutta marmi policromi e stucchi dorati, costruita per fare da scena a una sola cosa: la cappella Cornaro."
+ },
+ {
+  "id": "poi-215-dentro",
+  "testo": "L'Estasi di santa Teresa del Bernini, con i palchi laterali dove i committenti assistono alla scena come a teatro."
+ },
+ {
+  "id": "poi-216-nome",
+  "testo": "Santa Maria del Popolo"
+ },
+ {
+  "id": "poi-216-intro",
+  "testo": "chiesa del 1472-1477"
+ },
+ {
+  "id": "poi-216-scheda",
+  "testo": "Una delle prime chiese rinascimentali di Roma, poi ritoccata dal Bernini. Vale per quello che contiene: la cappella Chigi disegnata da Raffaello, a pianta centrale con la cupola a mosaico."
+ },
+ {
+  "id": "poi-216-dentro",
+  "testo": "I due Caravaggio della cappella Cerasi: la Conversione di san Paolo e la Crocifissione di san Pietro."
+ },
+ {
+  "id": "poi-217-nome",
+  "testo": "Santa Maria della Pace"
+ },
+ {
+  "id": "poi-217-intro",
+  "testo": "chiesa del chiostro 1500, facciata 1656"
+ },
+ {
+  "id": "poi-217-scheda",
+  "testo": "Pietro da Cortona non rifece solo la chiesa: demolì le case davanti per crearle una piazzetta, e le mise un portico semicircolare che sporge nello spazio. Il chiostro, del Bramante, è il primo esempio romano di ordini sovrapposti all'antica."
+ },
+ {
+  "id": "poi-217-dentro",
+  "testo": "Le Sibille di Raffaello sopra l'arco della prima cappella."
+ },
+ {
+  "id": "poi-218-nome",
+  "testo": "Tempietto del Bramante"
+ },
+ {
+  "id": "poi-218-intro",
+  "testo": "tempietto del 1502"
+ },
+ {
+  "id": "poi-218-scheda",
+  "testo": "Sedici colonne doriche di granito attorno a una cella circolare, trabeazione con metope e triglifi, cupola emisferica: in pochi metri il Bramante rifà un tempio antico e fonda l'architettura del Rinascimento maturo. Doveva stare al centro di un cortile circolare, mai costruito."
+ },
+ {
+  "id": "poi-219-nome",
+  "testo": "Basilica di Santa Maria in Trastevere"
+ },
+ {
+  "id": "poi-219-intro",
+  "testo": "basilica del XII sec."
+ },
+ {
+  "id": "poi-219-scheda",
+  "testo": "Ventidue colonne antiche di spoglio, tutte diverse, reggono la navata; il campanile romanico porta un mosaico sotto la cuspide. La facciata ha il mosaico con le vergini, e sotto il portico stanno i frammenti antichi raccolti nei secoli."
+ },
+ {
+  "id": "poi-219-dentro",
+  "testo": "I mosaici absidali di Pietro Cavallini con le storie della Vergine."
+ },
+ {
+  "id": "poi-220-nome",
+  "testo": "Palazzo Barberini"
+ },
+ {
+  "id": "poi-220-intro",
+  "testo": "palazzo del 1627-1633"
+ },
+ {
+  "id": "poi-220-scheda",
+  "testo": "Non è un blocco chiuso attorno al cortile come i palazzi del Cinquecento: ha la pianta a H, con le ali aperte verso il giardino, e un fronte a tre ordini di arcate. Ci lavorarono i tre maggiori: Maderno imposta, Bernini fa lo scalone quadrato, Borromini la scala ovale a colonne binate e le finestre dell'ultimo piano."
+ },
+ {
+  "id": "poi-220-dentro",
+  "testo": "Le finestre superiori di Borromini, costruite in prospettiva: la cornice si stringe andando dentro, così il muro sembra più spesso di com'è."
+ },
+ {
+  "id": "poi-221-nome",
+  "testo": "Palazzo di Propaganda Fide"
+ },
+ {
+  "id": "poi-221-intro",
+  "testo": "palazzo del facciata del 1662"
+ },
+ {
+  "id": "poi-221-scheda",
+  "testo": "La facciata di Borromini su via di Propaganda è lunga e strettissima, incastrata fra le case: lui la fa muovere, alternando campate concave e convesse sotto un ordine gigante di lesene, perché da sotto non si può prendere le distanze. È architettura pensata per chi passa rasente al muro."
+ },
+ {
+  "id": "poi-221-dentro",
+  "testo": "Le cornici delle finestre, ognuna diversa, e la curva che si sente camminando lungo il fronte."
+ },
+ {
+  "id": "poi-222-nome",
+  "testo": "Palazzo Madama"
+ },
+ {
+  "id": "poi-222-intro",
+  "testo": "palazzo del facciata del 1649"
+ },
+ {
+  "id": "poi-222-scheda",
+  "testo": "Oggi è il Senato. La facciata seicentesca è tutta in orizzontale: il cornicione con i mascheroni e i candelabri conclude il fronte in modo pesante, e sotto il portale sta la guardia."
+ },
+ {
+  "id": "poi-223-nome",
+  "testo": "Palazzo della Consulta"
+ },
+ {
+  "id": "poi-223-intro",
+  "testo": "palazzo del 1732-1737"
+ },
+ {
+  "id": "poi-223-scheda",
+  "testo": "Di Ferdinando Fuga, sulla piazza del Quirinale: due ordini, portale centrale col balcone e lo stemma, e l'attico con i trofei. Oggi è la Corte costituzionale."
+ },
+ {
+  "id": "poi-224-nome",
+  "testo": "Palazzo Spada"
+ },
+ {
+  "id": "poi-224-intro",
+  "testo": "palazzo del 1540"
+ },
+ {
+  "id": "poi-224-scheda",
+  "testo": "La facciata è un repertorio di stucchi: otto nicchie con le statue di romani illustri, e fra le finestre del piano nobile una decorazione fittissima a grottesche. È uno dei pochi palazzi romani con il fronte interamente modellato."
+ },
+ {
+  "id": "poi-224-dentro",
+  "testo": "Nel cortile, la prospettiva solida di Borromini: otto metri che ne sembrano quaranta."
+ },
+ {
+  "id": "poi-225-nome",
+  "testo": "Piazza Venezia"
+ },
+ {
+  "id": "poi-225-intro",
+  "testo": "piazza"
+ },
+ {
+  "id": "poi-225-scheda",
+  "testo": "È il nodo dove si incontrano la Roma dei papi e quella dei Savoia: da un lato il palazzo quattrocentesco con la torre, dall'altro il bianco del Vittoriano, e in mezzo il traffico che gira."
+ },
+ {
+  "id": "poi-225-dentro",
+  "testo": "Il balcone di Palazzo Venezia, quello dei discorsi di Mussolini, che sporge sulla piazza."
+ },
+ {
+  "id": "poi-226-nome",
+  "testo": "Piazza della Rotonda"
+ },
+ {
+  "id": "poi-226-intro",
+  "testo": "piazza"
+ },
+ {
+  "id": "poi-226-scheda",
+  "testo": "La piazza esiste per il Pantheon e lo guarda: il livello antico sta tre metri più in basso, e il portico si legge come un fondale. Al centro la fontana di Giacomo della Porta con l'obelisco egizio sopra."
+ },
+ {
+  "id": "poi-227-nome",
+  "testo": "Piazza Sant'Ignazio"
+ },
+ {
+  "id": "poi-227-intro",
+  "testo": "piazza del 1727-1728"
+ },
+ {
+  "id": "poi-227-scheda",
+  "testo": "Filippo Raguzzini disegnò le case, non solo lo spazio: le palazzine curve sembrano quinte di teatro disposte attorno a un piccolo invaso, con le facciate che si rincorrono. È il rococò romano in cinque edifici."
+ },
+ {
+  "id": "poi-228-nome",
+  "testo": "Piazza Farnese"
+ },
+ {
+  "id": "poi-228-intro",
+  "testo": "piazza"
+ },
+ {
+  "id": "poi-228-scheda",
+  "testo": "La piazza fu fatta per il palazzo, non il contrario: lo spazio è tenuto libero davanti alla facciata perché la si possa guardare intera. Le due vasche delle fontane sono bagni di granito presi dalle terme di Caracalla."
+ },
+ {
+  "id": "poi-229-nome",
+  "testo": "Piazza Barberini"
+ },
+ {
+  "id": "poi-229-intro",
+  "testo": "piazza"
+ },
+ {
+  "id": "poi-229-scheda",
+  "testo": "Al centro il Tritone del Bernini: quattro delfini reggono una conchiglia aperta su cui sta il tritone che soffia nella buccina, e l'acqua esce da lì. È la prima fontana romana pensata per essere girata intorno, senza una facciata di fondo."
+ },
+ {
+  "id": "poi-229-dentro",
+  "testo": "Poco più su, all'angolo di via Veneto, la Fontana delle Api, sempre del Bernini."
+ },
+ {
+  "id": "poi-230-nome",
+  "testo": "Fontana del Mascherone"
+ },
+ {
+  "id": "poi-230-intro",
+  "testo": "dettaglio di strada"
+ },
+ {
+  "id": "poi-230-scheda",
+  "testo": "In via Giulia, un mascherone di marmo antico incastrato nel muro versa l'acqua in una vasca di granito: pezzi di epoche diverse rimessi insieme, come succede dappertutto a Roma."
+ },
+ {
+  "id": "poi-231-nome",
+  "testo": "Il portale di Palazzo Farnese"
+ },
+ {
+  "id": "poi-231-intro",
+  "testo": "dettaglio di strada"
+ },
+ {
+  "id": "poi-231-scheda",
+  "testo": "Il portone è incorniciato da colonne di granito rosso prese da edifici antichi; sopra, il balcone con lo stemma dei Farnese è il primo balcone monumentale di un palazzo romano, aggiunto da Michelangelo."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -2802,6 +3182,22 @@
  {
   "id": "percorso-roma-tridente",
   "testo": "Roma — il Tridente: Popolo, Spagna, Ara Pacis"
+ },
+ {
+  "id": "percorso-roma-chiese",
+  "testo": "Roma — le grandi chiese: Quirinale, Trevi, Pantheon"
+ },
+ {
+  "id": "percorso-roma-vaticano",
+  "testo": "Roma — da San Pietro a Castel Sant'Angelo"
+ },
+ {
+  "id": "percorso-roma-trastevere",
+  "testo": "Roma — Trastevere e il Gianicolo"
+ },
+ {
+  "id": "percorso-bernini-borromini",
+  "testo": "Roma — Bernini contro Borromini"
  },
  {
   "id": "dir-dritto-davanti",
