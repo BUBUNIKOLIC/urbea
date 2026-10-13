@@ -3844,6 +3844,150 @@
   "testo": "Gli archi romani che spuntano dentro i cortili, usati come muri di casa."
  },
  {
+  "id": "poi-282-nome",
+  "testo": "Basilica di San Paolo fuori le mura"
+ },
+ {
+  "id": "poi-282-intro",
+  "testo": "basilica del IV sec., ricostruita dopo il 1823"
+ },
+ {
+  "id": "poi-282-scheda",
+  "testo": "L'incendio del 1823 la distrusse, e fu rifatta uguale: ottanta colonne di granito in quattro file, soffitto a cassettoni, e sopra gli archi la fila dei medaglioni con tutti i papi, da Pietro a oggi. L'effetto è quello di una basilica paleocristiana costruita con mezzi dell'Ottocento."
+ },
+ {
+  "id": "poi-282-dentro",
+  "testo": "Il chiostro cosmatesco, scampato all'incendio, con le colonnine tortili intarsiate a mosaico; e il candelabro per il cero pasquale del XII secolo."
+ },
+ {
+  "id": "poi-283-nome",
+  "testo": "Via Appia Antica"
+ },
+ {
+  "id": "poi-283-intro",
+  "testo": "strada romana del 312 a.C."
+ },
+ {
+  "id": "poi-283-scheda",
+  "testo": "La regina delle strade: basolato di selce, i blocchi poligonali incastrati senza malta e consumati dai carri, con i solchi delle ruote ancora visibili. Ai lati corrono i sepolcri, perché la legge vietava di seppellire dentro le mura."
+ },
+ {
+  "id": "poi-283-dentro",
+  "testo": "I solchi delle ruote nel basolato e i monumenti funerari in fila, uno dopo l'altro."
+ },
+ {
+  "id": "poi-284-nome",
+  "testo": "Terme di Traiano"
+ },
+ {
+  "id": "poi-284-intro",
+  "testo": "terme romane del 109 d.C."
+ },
+ {
+  "id": "poi-284-scheda",
+  "testo": "Costruite sopra la Domus Aurea, riempita di terra per farne le fondazioni: è il motivo per cui la casa di Nerone si è conservata. Restano le esedre e i muri in laterizio dentro il parco del Colle Oppio."
+ },
+ {
+  "id": "poi-285-nome",
+  "testo": "Mura Aureliane a Porta San Sebastiano"
+ },
+ {
+  "id": "poi-285-intro",
+  "testo": "mura del 271-275 d.C."
+ },
+ {
+  "id": "poi-285-scheda",
+  "testo": "Diciannove chilometri di cinta in laterizio con le torri ogni trenta metri, alzate in fretta quando l'impero cominciò ad avere paura. Qui la porta è la più monumentale rimasta, con le due torri semicircolari su basamento di marmo."
+ },
+ {
+  "id": "poi-285-dentro",
+  "testo": "Il camminamento di ronda dentro lo spessore del muro, che si percorre."
+ },
+ {
+  "id": "poi-286-nome",
+  "testo": "Porta Maggiore"
+ },
+ {
+  "id": "poi-286-intro",
+  "testo": "porta e acquedotto del 52 d.C."
+ },
+ {
+  "id": "poi-286-scheda",
+  "testo": "Non è una porta: è il punto dove due acquedotti scavalcano le strade, e Claudio ne fece un monumento lasciando il travertino grezzo, appena sbozzato, attorno alle colonne lisce. Il bugnato rustico nasce qui."
+ },
+ {
+  "id": "poi-286-dentro",
+  "testo": "Sopra, i canali dei due acquedotti sovrapposti; accanto, il sepolcro del fornaio Eurisace con i fori circolari delle madie."
+ },
+ {
+  "id": "poi-287-nome",
+  "testo": "Santa Maria degli Angeli e dei Martiri"
+ },
+ {
+  "id": "poi-287-intro",
+  "testo": "basilica del 1562"
+ },
+ {
+  "id": "poi-287-scheda",
+  "testo": "È l'aula centrale delle terme di Diocleziano, trasformata in chiesa da Michelangelo senza rifarla: le otto colonne di granito rosso sono romane, le volte a crociera sono quelle delle terme. Si entra dentro un edificio antico ancora in piedi."
+ },
+ {
+  "id": "poi-287-dentro",
+  "testo": "La meridiana a pavimento del 1702, con il foro nella parete da cui entra il raggio a mezzogiorno."
+ },
+ {
+  "id": "poi-288-nome",
+  "testo": "Quartiere Coppedè"
+ },
+ {
+  "id": "poi-288-intro",
+  "testo": "quartiere del 1913-1927"
+ },
+ {
+  "id": "poi-288-scheda",
+  "testo": "Gino Coppedè mise insieme medioevo, barocco, liberty e decorazione greca in diciotto palazzine attorno a una piazza: l'arco d'ingresso con il lampadario di ferro, il palazzo del Ragno, le Villini delle Fate. È architettura da raccontare camminando, perché non c'è un solo pezzo uguale a un altro."
+ },
+ {
+  "id": "poi-288-dentro",
+  "testo": "L'arco d'ingresso da via Dora e la fontana delle Rane al centro della piazza."
+ },
+ {
+  "id": "poi-289-nome",
+  "testo": "Ponte Milvio"
+ },
+ {
+  "id": "poi-289-intro",
+  "testo": "ponte del 109 a.C."
+ },
+ {
+  "id": "poi-289-scheda",
+  "testo": "Quattro arcate romane in travertino ancora in opera, con i rifacimenti papali ai due capi: la torretta d'ingresso è del Valadier. Da qui passavano la via Flaminia e chiunque arrivasse a Roma da nord."
+ },
+ {
+  "id": "poi-290-nome",
+  "testo": "Palazzo delle Esposizioni"
+ },
+ {
+  "id": "poi-290-intro",
+  "testo": "palazzo del 1883"
+ },
+ {
+  "id": "poi-290-scheda",
+  "testo": "Pio Piacentini lo fece come un tempio laico sulla via Nazionale: scalinata, pronao a colonne corinzie e arco centrale. Era il primo edificio in Italia pensato solo per le mostre."
+ },
+ {
+  "id": "poi-291-nome",
+  "testo": "San Giovanni a Porta Latina"
+ },
+ {
+  "id": "poi-291-intro",
+  "testo": "basilica del V sec."
+ },
+ {
+  "id": "poi-291-scheda",
+  "testo": "Tre navate su colonne antiche tutte diverse, abside con le finestre di selenite, campanile romanico e davanti un cedro vecchissimo. Dentro, un ciclo di affreschi del XII secolo copre le pareti della navata."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
