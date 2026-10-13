@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Urbea — installa la guida</title>
+<link rel="icon" href="icons/icon-192.png">
+<style>
+  :root{--bg:#15161A;--surface:#1C1E23;--surface-2:#23262C;--wire:#30343A;
+        --ink:#E8E7E3;--muted:#8A9199;--acqua:#4FAFC4}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+  main{max-width:600px;margin:0 auto;padding:28px 18px 60px}
+  h1{font-family:Georgia,serif;font-size:34px;margin:0 0 4px}
+  .claim{color:var(--muted);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:26px}
+  .carta{background:var(--surface);border:1px solid var(--wire);border-radius:18px;padding:20px;margin-bottom:16px}
+  .carta h2{margin:0 0 6px;font-size:22px}
+  .carta p{margin:0 0 14px;color:var(--muted);font-size:15px}
+  a.bottone{display:block;text-align:center;text-decoration:none;background:var(--acqua);color:#0E1013;
+    font-weight:700;font-size:19px;padding:17px;border-radius:14px;margin:4px 0 12px}
+  a.secondo{background:var(--surface-2);color:var(--ink);border:1px solid var(--wire);font-weight:600}
+  ol{margin:0;padding-left:20px;color:var(--ink);font-size:15px}
+  ol li{margin-bottom:7px}
+  .nota{font-size:13.5px;color:var(--muted);margin-top:12px}
+  .evidenza{border-color:var(--acqua)}
+  .link{font-family:ui-monospace,monospace;font-size:13px;color:var(--acqua);word-break:break-all}
+</style>
+</head>
+<body>
+<main>
+  <h1>Urbea</h1>
+  <div class="claim">la città si racconta</div>
+
+  <div class="carta" id="c-android">
+    <h2>Android</h2>
+    <p>Scarica l'app e installala: un file solo, poco più di un megabyte.</p>
+    <a class="bottone" href="Urbea.apk" download>Scarica Urbea per Android</a>
+    <ol>
+      <li>Tocca il tasto qui sopra: il telefono scarica <b>Urbea.apk</b>.</li>
+      <li>Apri il file scaricato (lo trovi nelle notifiche o in «Download»).</li>
+      <li>Android chiede di <b>consentire l'installazione</b> da questa origine: accetta.</li>
+      <li>Tocca <b>Installa</b>. L'icona compare fra le app.</li>
+    </ol>
+    <p class="nota">L'avviso «app non dal Play Store» è normale per le prove e non significa che ci sia qualcosa di pericoloso.</p>
+  </div>
+
+  <div class="carta" id="c-iphone">
+    <h2>iPhone e iPad</h2>
+    <p>Su iPhone non servono file da scaricare: l'app si aggiunge dal browser.</p>
+    <a class="bottone secondo" href="./">Apri Urbea in Safari</a>
+    <ol>
+      <li>Apri il link qui sopra <b>con Safari</b> (non da dentro WhatsApp).</li>
+      <li>Tocca il tasto <b>Condividi</b>, il quadrato con la freccia in alto.</li>
+      <li>Scorri e scegli <b>Aggiungi a schermata Home</b>.</li>
+      <li>Tocca <b>Aggiungi</b>: l'icona compare come un'app.</li>
+    </ol>
+  </div>
+
+  <div class="carta">
+    <h2>Oppure senza installare niente</h2>
+    <p>Funziona uguale aprendo il link, su qualsiasi telefono.</p>
+    <a class="bottone secondo" href="./">Apri la guida</a>
+    <div class="link">bubunikolic.github.io/urbea/</div>
+  </div>
+</main>
+<script>
+  // il sistema che hai in mano va in cima, l'altro resta sotto
+  var ios=/iPhone|iPad|iPod/i.test(navigator.userAgent);
+  var android=/Android/i.test(navigator.userAgent);
+  var a=document.getElementById('c-android'), i=document.getElementById('c-iphone');
+  if(ios){ i.parentNode.insertBefore(i,a); i.classList.add('evidenza'); }
+  else if(android){ a.classList.add('evidenza'); }
+</script>
+</body>
+</html>
