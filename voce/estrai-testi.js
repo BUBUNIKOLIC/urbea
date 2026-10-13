@@ -51,7 +51,8 @@ for (let v = 1000; v <= 5000; v += 500) {
 }
 for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
 
-[['non-coperta', 'Qui la guida non arriva ancora: per ora racconta Roma, Napoli, Torre del Greco e Venafro. Puoi sceglierne una e ascoltarla da casa.'],
+[['testo-grande', 'Ho ingrandito il testo.'],
+ ['non-coperta', 'Qui la guida non arriva ancora: per ora racconta Roma, Napoli, Torre del Greco e Venafro. Puoi sceglierne una e ascoltarla da casa.'],
  ['lungo', 'Il percorso è lungo'],
  ['comincia-a', 'e comincia a'],
  ['come-cammini', 'Vuoi camminare libero, o seguire un percorso?'],

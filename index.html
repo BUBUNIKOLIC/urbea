@@ -247,6 +247,32 @@
   .porta-occhi{background:linear-gradient(180deg, rgba(255,255,255,.055) 0%, rgba(11,13,16,.6) 100%)}
   .porta-scelta{backdrop-filter:blur(8px)}
 
+
+  /* ---------- misura del testo: normale, grande, grandissima ---------- */
+  body[data-testo="grande"]{--fs:22px}
+  body[data-testo="grande"] .say .what{font-size:38px;line-height:1.08}
+  body[data-testo="grande"] .say .body{font-size:22px}
+  body[data-testo="grande"] .say .where{font-size:13px}
+  body[data-testo="grande"] .btn{font-size:21px;padding:20px 16px}
+  body[data-testo="grande"] .nm,body[data-testo="grande"] select{font-size:20px}
+  body[data-testo="grande"] .dir{font-size:14px}
+
+  body[data-testo="enorme"]{--fs:26px}
+  body[data-testo="enorme"] .say{padding:26px 22px}
+  body[data-testo="enorme"] .say .what{font-size:46px;line-height:1.05}
+  body[data-testo="enorme"] .say .body{font-size:26px}
+  body[data-testo="enorme"] .say .where{font-size:15px;letter-spacing:.12em}
+  body[data-testo="enorme"] .btn{font-size:25px;padding:24px 16px}
+  body[data-testo="enorme"] .nm,body[data-testo="enorme"] select{font-size:24px}
+  body[data-testo="enorme"] .dir{font-size:17px}
+  body[data-testo="enorme"] .claim,body[data-testo="enorme"] h2.eyebrow{font-size:12px}
+
+  /* in modalità voce si parte già grandi */
+  body[data-voice="1"]{--fs:22px}
+  body[data-voice="1"] .say .what{font-size:38px}
+
+  #testo-piu{flex:0 0 auto;min-width:0;padding:16px 18px;font-weight:700;letter-spacing:.02em}
+
   .status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-align:center}
   .note{color:var(--muted);font-size:13px;margin:0}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
@@ -306,6 +332,7 @@
     <button class="btn btn-go" id="start">Avvia</button>
     <button class="btn" id="voice" aria-pressed="false">Modalità voce</button>
     <button class="btn" id="sim" aria-pressed="false">Simula</button>
+    <button class="btn" id="testo-piu" aria-label="Ingrandisci il testo">A+</button>
   </section>
 
   <div class="status" id="status">in attesa</div>
@@ -3016,6 +3043,11 @@
       dire([dirId(o.rel),metriId(o.m),poiId(o.p)+'-nome'],sp);
       return true;
     }
+    if(ha('ingrandisci','piu grande','caratteri grandi','non ci vedo','testo grande')){
+      testoPiuGrande();
+      dire(['frase-testo-grande'],'Ho ingrandito il testo.');
+      return true;
+    }
     if(ha('aiuto','comandi','che posso dire')){
       dire(['frase-aiuto'],'Puoi dire: approfondisci, avanti, ripeti, dove sono, oppure ferma.');
       return true;
@@ -3176,6 +3208,29 @@
       sel.value=v; sel.dispatchEvent(new Event('change',{bubbles:true}));
       entra(S.modoVoce);
     });
+  })();
+
+
+  /* ---------- la misura del testo ---------- */
+  var MISURE=['normale','grande','enorme'];
+  function misuraTesto(m){
+    document.body.dataset.testo=m;
+    try{localStorage.setItem('urbea-testo',m);}catch(e){}
+    var b=el('testo-piu');
+    if(b)b.textContent = m==='normale'?'A+' : (m==='grande'?'A++':'A');
+    if(mappa)setTimeout(function(){try{mappa.invalidateSize();}catch(e){}},150);
+  }
+  function testoPiuGrande(){
+    var ora=document.body.dataset.testo||'normale';
+    var i=MISURE.indexOf(ora);
+    misuraTesto(MISURE[(i+1)%MISURE.length]);
+  }
+  (function(){
+    var salvata=null;
+    try{salvata=localStorage.getItem('urbea-testo');}catch(e){}
+    misuraTesto(MISURE.indexOf(salvata)>=0?salvata:'normale');
+    var b=el('testo-piu');
+    if(b)b.addEventListener('click',function(){audio();testoPiuGrande();});
   })();
 
   /* ---------- l'icona sul telefono, con un tasto solo ---------- */
