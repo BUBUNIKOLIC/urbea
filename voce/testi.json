@@ -5676,6 +5676,10 @@
   "testo": "a 500 metri"
  },
  {
+  "id": "frase-non-coperta",
+  "testo": "Qui la guida non arriva ancora: per ora racconta Roma, Napoli, Torre del Greco e Venafro. Puoi sceglierne una e ascoltarla da casa."
+ },
+ {
   "id": "frase-lungo",
   "testo": "Il percorso è lungo"
  },

@@ -57,7 +57,8 @@
   #porta[hidden]{display:none}
   #porta-modo{display:flex;flex-direction:column;gap:14px;flex:1}
   #porta-modo[hidden]{display:none}
-  #porta-elenco{padding:14px;font-size:17px;border-radius:12px}
+  #porta-elenco,#porta-citta{padding:14px;font-size:17px;border-radius:12px}
+  #porta-citta[hidden]{display:none}
   #porta-via{font-size:20px;padding:18px}
   .porta-testa{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;justify-content:center;padding:6px 0 2px}
   .porta-scelta{flex:1;display:flex;flex-direction:column;justify-content:center;gap:10px;
@@ -149,6 +150,7 @@
       <b>Segui un percorso</b>
       <span>Un itinerario già pronto, da capo a fondo.</span>
     </button>
+    <select id="porta-citta" aria-label="In quale città ti trovi" hidden></select>
     <select id="porta-elenco" aria-label="Quale percorso" hidden></select>
     <button class="btn btn-go" id="porta-via" hidden>Comincia</button>
   </div>
@@ -1839,6 +1841,8 @@
       S.acc=pos.coords.accuracy||null;
       if(typeof pos.coords.heading==='number'&&!isNaN(pos.coords.heading)&&pos.coords.speed>0.4)S.hd=pos.coords.heading;
       statusEl.textContent='posizione attiva · precisione '+Math.round(S.acc||0)+' m';
+      if(mappa&&!seguiMappa===false){} 
+      if(mappa&&mappa.getZoom()<14){ mappa.setView([S.lat,S.lon],17,{animate:false}); disegnaMappa(); }
       render();
     },function(err){
       statusEl.textContent='posizione negata o non disponibile — usa Simula';
@@ -1934,6 +1938,13 @@
      posizione e si mette sulla città in cui ti trovi, scegliendo il
      percorso che ti passa più vicino. Se la posizione non arriva,
      resta in attesa e non annuncia niente. */
+  var CITTA=[
+    {id:'roma',   n:'Roma',            lat:41.89550,lon:12.48230},
+    {id:'napoli', n:'Napoli',          lat:40.84800,lon:14.25700},
+    {id:'torre',  n:'Torre del Greco', lat:40.78700,lon:14.36830},
+    {id:'venafro',n:'Venafro',         lat:41.48600,lon:14.04500}
+  ];
+
   function lunghezzaPercorso(r){
     if(r._km!=null)return r._km;
     var tot=0;
@@ -1974,6 +1985,31 @@
     });
     if(S.route)sel.value=S.route.id;
   }
+  function vaiInCitta(c){
+    S.lat=c.lat; S.lon=c.lon; S.pronto=false; S.acc=null;
+    var v=percorsoPiuVicino();
+    if(v.r){ S.route=v.r; S.seg=0; S.frac=0; }
+    ordinaPercorsi();
+    if(mappa){ mappa.setView([S.lat,S.lon],15,{animate:false}); disegnaMappa(); }
+    statusEl.textContent='sei su '+c.n+' — premi Avvia quando sei in strada, o Simula per provare';
+    render();
+  }
+  function chiediCitta(){
+    var sel=el('porta-citta');
+    if(!sel||!el('porta').hidden===false){}
+    if(!sel)return;
+    if(!sel.options.length){
+      CITTA.forEach(function(c){
+        var o=document.createElement('option'); o.value=c.id; o.textContent=c.n; sel.appendChild(o);
+      });
+      sel.addEventListener('change',function(){
+        var c=CITTA.filter(function(x){return x.id===sel.value;})[0];
+        if(c)vaiInCitta(c);
+      });
+    }
+    sel.hidden=false;
+    if(!el('porta').hidden){ el('porta-via').hidden=false; }
+  }
   function dovesiamo(){
     if(!navigator.geolocation)return;
     statusEl.textContent='cerco dove ti trovi…';
@@ -1983,13 +2019,29 @@
       var v=percorsoPiuVicino();
       if(v.r){ S.route=v.r; S.seg=0; S.frac=0; }
       ordinaPercorsi();
-      if(mappa){ mappa.setView([S.lat,S.lon],16,{animate:false}); disegnaMappa(); }
+      if(mappa){ mappa.setView([S.lat,S.lon],17,{animate:false}); disegnaMappa(); }
+      if(segno)segno.setLatLng([S.lat,S.lon]);
+      // fuori dalle città raccontate glielo si dice, e si offre di sceglierne una
+      var citta=CITTA.map(function(c){return {c:c,d:dist(S.lat,S.lon,c.lat,c.lon)};})
+                     .sort(function(a,b){return a.d-b.d;})[0];
+      if(citta.d>12000){
+        S.pronto=false;
+        var fuori='Qui la guida non arriva ancora: per ora racconta Roma, Napoli, Torre del Greco e Venafro. '+
+                  'La più vicina è '+citta.c.n+', a '+inCifre(citta.d)+'.';
+        statusEl.textContent='zona non coperta — la più vicina è '+citta.c.n+', a '+Math.round(citta.d/1000)+' km';
+        liveEl.textContent=fuori;
+        if(S.voice)dire(['frase-non-coperta'],fuori);
+        chiediCitta();
+        render();
+        return;
+      }
       statusEl.textContent = v.d<1500
         ? 'sei vicino a: '+v.r.n
         : 'posizione trovata — il percorso più vicino è a '+Math.round(v.d/1000)+' km';
       render();
     },function(){
-      statusEl.textContent='posizione non disponibile — scegli un percorso e premi Simula';
+      statusEl.textContent='posizione non disponibile — dimmi tu dove sei';
+      chiediCitta();
     },{enableHighAccuracy:false,maximumAge:60000,timeout:12000});
   }
 
@@ -2066,7 +2118,9 @@
   var mappa=null, segno=null, tracciato=null, segni=[], seguiMappa=true;
   function avviaMappa(){
     if(mappa||typeof L==='undefined')return;
-    mappa=L.map('mappa',{zoomControl:true,attributionControl:true}).setView([S.lat,S.lon],17);
+    // finché non si sa dove sei, la mappa sta larga: non si parte da una città a caso
+    mappa=L.map('mappa',{zoomControl:true,attributionControl:true})
+      .setView(S.pronto?[S.lat,S.lon]:[41.6,13.3], S.pronto?17:7);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom:19, attribution:'© OpenStreetMap'
     }).addTo(mappa);
