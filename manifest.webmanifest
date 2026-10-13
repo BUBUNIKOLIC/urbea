@@ -1,7 +1,7 @@
 {
   "name": "Urbea — la città si racconta",
   "short_name": "Urbea",
-  "description": "Italia, museo in movimento: cammini e la città ti racconta cosa hai intorno, a voce.",
+  "description": "Italia: tu al centro, un museo intorno a te. Cammini e la città ti racconta cosa hai vicino, a voce.",
   "lang": "it",
   "start_url": "./index.html",
   "scope": "./",
