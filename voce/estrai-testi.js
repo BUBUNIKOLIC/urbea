@@ -51,7 +51,8 @@ for (let v = 1000; v <= 5000; v += 500) {
 }
 for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
 
-[['aiuto', 'Puoi dire: approfondisci, avanti, ripeti, dove sono, oppure ferma.'],
+[['come-cammini', 'Vuoi camminare libero, o seguire un percorso?'],
+ ['aiuto', 'Puoi dire: approfondisci, avanti, ripeti, dove sono, oppure ferma.'],
  ['niente-intorno', 'Qui intorno non ho niente da dirti.'],
  ['chiedi', 'Vuoi approfondire, o andiamo avanti?'],
  ['cosa-vedere', 'Cosa vedere:'],

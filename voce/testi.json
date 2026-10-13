@@ -5676,6 +5676,10 @@
   "testo": "a 500 metri"
  },
  {
+  "id": "frase-come-cammini",
+  "testo": "Vuoi camminare libero, o seguire un percorso?"
+ },
+ {
   "id": "frase-aiuto",
   "testo": "Puoi dire: approfondisci, avanti, ripeti, dove sono, oppure ferma."
  },
