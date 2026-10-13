@@ -2624,7 +2624,12 @@
   function dirId(r){return 'dir-'+side(r).replace(/ /g,'-');}
   function cardId(p){return 'card-'+cardinale(p.lat,p.lon).replace(/ /g,'-');}
   function metriId(m){return m<25?'m-passi':'m-'+(Math.round(m/10)*10);}
-  function dire(ids,testo){
+  // una cosa per volta: se sta già parlando, il nuovo annuncio aspetta il suo
+  // turno invece di tagliare quello in corso. Era questo che faceva sembrare
+  // la voce «a singhiozzo» quando i luoghi sono vicini fra loro.
+  var inCoda=null;
+  function dire(ids,testo,urgente){
+    if(staParlando && !urgente){ inCoda={ids:ids,testo:testo}; return; }
     ultimaFrase={ids:ids,testo:testo};
     staParlando=true;
     try{
@@ -2633,11 +2638,15 @@
       var i=0,fallita=false;
       (function next(){
         if(fallita)return;
-        if(i>=ids.length){inCorso=null;setTimeout(function(){staParlando=false;},350);return;}
+        if(i>=ids.length){inCorso=null;setTimeout(function(){
+          staParlando=false;
+          if(inCoda){ var c=inCoda; inCoda=null; dire(c.ids,c.testo); }
+        },350);return;}
         var a=new Audio(CLIP+ids[i++]+'.m4a');
         inCorso=a;
         a.onended=next;
-        a.onerror=function(){ if(!fallita){fallita=true;inCorso=null;staParlando=false;speak(testo);} };
+        a.onerror=function(){ if(!fallita){fallita=true;inCorso=null;staParlando=false;speak(testo);
+          if(inCoda){ var c=inCoda; inCoda=null; setTimeout(function(){dire(c.ids,c.testo);},400); } } };
         var pr=a.play();
         if(pr&&pr.catch)pr.catch(function(){ if(!fallita){fallita=true;inCorso=null;speak(testo);} });
       })();
