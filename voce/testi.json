@@ -8628,6 +8628,38 @@
   "testo": "a pochi passi"
  },
  {
+  "id": "card-a-nord",
+  "testo": "a nord"
+ },
+ {
+  "id": "card-a-nord-est",
+  "testo": "a nord-est"
+ },
+ {
+  "id": "card-a-est",
+  "testo": "a est"
+ },
+ {
+  "id": "card-a-sud-est",
+  "testo": "a sud-est"
+ },
+ {
+  "id": "card-a-sud",
+  "testo": "a sud"
+ },
+ {
+  "id": "card-a-sud-ovest",
+  "testo": "a sud-ovest"
+ },
+ {
+  "id": "card-a-ovest",
+  "testo": "a ovest"
+ },
+ {
+  "id": "card-a-nord-ovest",
+  "testo": "a nord-ovest"
+ },
+ {
   "id": "dl-100",
   "testo": "a 100 metri"
  },

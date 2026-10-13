@@ -2482,6 +2482,15 @@
     var y=Math.sin(dl)*Math.cos(p2),x=Math.cos(p1)*Math.sin(p2)-Math.sin(p1)*Math.cos(p2)*Math.cos(dl);
     return (Math.atan2(y,x)/D2R+360)%360;}
   function norm(d){return (d+540)%360-180;}
+  var CARDINALI=['a nord','a nord-est','a est','a sud-est','a sud','a sud-ovest','a ovest','a nord-ovest'];
+  function versoAffidabile(){
+    // vale per un minuto dall'ultima conferma della bussola o del cammino
+    return S.sim || (S.versoBuono && (Date.now()-S.versoBuono)<60000);
+  }
+  function cardinale(lat,lon){
+    var b=bear(S.lat,S.lon,lat,lon);
+    return CARDINALI[Math.round(((b%360)+360)%360/45)%8];
+  }
   function side(r){var a=Math.abs(r);
     if(a<18)return "dritto davanti";
     if(a<70)return r>0?"sulla destra":"sulla sinistra";
@@ -2492,7 +2501,7 @@
 
   var S={lat:40.78706,lon:14.36831,hd:300,live:false,sim:false,voice:false,
          route:ROUTES[0],seg:0,frac:0,said:{},radius:400,acc:null,pronto:false,
-         libero:false,modoVoce:false,racconta:'tutto'};
+         libero:false,modoVoce:false,racconta:'tutto',versoBuono:0,ultimaPos:null};
 
   var el=function(id){return document.getElementById(id);};
   var strip=el('strip'),listEl=el('list'),plan=el('plan'),g=plan.getContext('2d'),
@@ -2591,6 +2600,7 @@
 
   function poiId(p){var n=POI.indexOf(p)+1;return 'poi-'+(n<10?'0'+n:''+n);}
   function dirId(r){return 'dir-'+side(r).replace(/ /g,'-');}
+  function cardId(p){return 'card-'+cardinale(p.lat,p.lon).replace(/ /g,'-');}
   function metriId(m){return m<25?'m-passi':'m-'+(Math.round(m/10)*10);}
   function dire(ids,testo){
     ultimaFrase={ids:ids,testo:testo};
@@ -2794,7 +2804,7 @@
     S.said[o.p.n]=1;
     pending=o;
 
-    var head=side(o.rel)+', '+metres(o.m);
+    var head=(versoAffidabile()?side(o.rel):cardinale(o.p.lat,o.p.lon))+', '+metres(o.m);
     whereEl.textContent=head;
     whatEl.textContent=o.p.n;
     bodyEl.className='body idle';
@@ -2805,7 +2815,7 @@
     liveEl.textContent=sp;
     earcon(o.rel,o.m,o.p.k);
     if(S.voice)setTimeout(function(){
-      dire([dirId(o.rel),metriId(o.m),poiId(o.p)+'-nome',poiId(o.p)+'-intro','frase-chiedi'],sp);
+      dire([versoAffidabile()?dirId(o.rel):cardId(o.p),metriId(o.m),poiId(o.p)+'-nome',poiId(o.p)+'-intro','frase-chiedi'],sp);
     },430);
 
     // se nessuno risponde, si prosegue da soli: non si resta piantati camminando
@@ -2871,7 +2881,18 @@
       S.live=true;S.sim=false;S.pronto=true;
       S.lat=pos.coords.latitude;S.lon=pos.coords.longitude;
       S.acc=pos.coords.accuracy||null;
-      if(typeof pos.coords.heading==='number'&&!isNaN(pos.coords.heading)&&pos.coords.speed>0.4)S.hd=pos.coords.heading;
+      // da dove sei girato: prima la bussola del telefono, poi il verso del
+      // cammino (due posizioni di seguito). Senza nessuno dei due, destra e
+      // sinistra non hanno senso: si dicono i punti cardinali.
+      var daGps=(typeof pos.coords.heading==='number'&&!isNaN(pos.coords.heading)&&pos.coords.speed>0.4);
+      if(daGps){ S.hd=pos.coords.heading; S.versoBuono=Date.now(); }
+      else if(S.ultimaPos){
+        var passo=dist(S.ultimaPos.lat,S.ultimaPos.lon,S.lat,S.lon);
+        if(passo>8){ S.hd=bear(S.ultimaPos.lat,S.ultimaPos.lon,S.lat,S.lon); S.versoBuono=Date.now(); }
+      }
+      if(!S.ultimaPos || dist(S.ultimaPos.lat,S.ultimaPos.lon,S.lat,S.lon)>8){
+        S.ultimaPos={lat:S.lat,lon:S.lon};
+      }
       statusEl.textContent='posizione attiva · precisione '+Math.round(S.acc||0)+' m';
       if(mappa&&!seguiMappa===false){} 
       if(mappa&&mappa.getZoom()<14){ mappa.setView([S.lat,S.lon],16,{animate:false}); disegnaMappa(); }
@@ -2901,7 +2922,7 @@
     if(typeof e.webkitCompassHeading==='number')h=e.webkitCompassHeading;
     else if(e.absolute&&typeof e.alpha==='number')h=360-e.alpha;
     if(h===null||isNaN(h))return;
-    S.hd=h;
+    S.hd=h; S.versoBuono=Date.now();
     var now=Date.now();
     if(now-lastOrient>250){lastOrient=now;render();}
   }
@@ -3171,7 +3192,8 @@
     if(!meta)return;
     var d=dist(S.lat,S.lon,meta.lat,meta.lon);
     var rel=norm(bear(S.lat,S.lon,meta.lat,meta.lon)-S.hd);
-    whereEl.textContent=side(rel)+', '+metres(d);
+    var versoTesto=versoAffidabile()?side(rel):cardinale(meta.lat,meta.lon);
+    whereEl.textContent=versoTesto+', '+metres(d);
     whatEl.textContent='→ '+meta.n;
     if(d<22){
       var fine='Sei arrivato: '+meta.n+'.';
@@ -3183,9 +3205,9 @@
     // si parla quando ci si è spostati di venti metri, e non più di una volta ogni otto secondi
     if(Math.abs(metaUltimaDist-d)<20 || ora-metaUltimo<8000)return;
     metaUltimo=ora; metaUltimaDist=d;
-    var sp=side(rel)+', '+metres(d)+'.';
+    var sp=versoTesto+', '+metres(d)+'.';
     liveEl.textContent=sp;
-    dire([dirId(rel),metriId(d)],sp);
+    dire([versoAffidabile()?dirId(rel):('card-'+cardinale(meta.lat,meta.lon).replace(/ /g,'-')),metriId(d)],sp);
   }
 
   /* ---------- i comandi a voce: l'app si guida parlando ----------

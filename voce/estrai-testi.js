@@ -42,6 +42,10 @@ ROUTES.forEach((r) => agg('percorso-' + r.id, r.n));
 
 agg('m-passi', 'a pochi passi');
 
+// i punti cardinali, per quando la bussola non dice da che parte sei girato
+['a nord','a nord-est','a est','a sud-est','a sud','a sud-ovest','a ovest','a nord-ovest']
+  .forEach((t) => agg('card-' + t.replace(/ /g, '-'), t));
+
 // distanze larghe, per i riferimenti lontani
 for (let v = 100; v <= 900; v += 100) agg('dl-' + v, 'a ' + v + ' metri');
 for (let v = 1000; v <= 5000; v += 500) {
