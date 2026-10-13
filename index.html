@@ -273,6 +273,54 @@
 
   #testo-piu{flex:0 0 auto;min-width:0;padding:16px 18px;font-weight:700;letter-spacing:.02em}
 
+
+  /* ---------- armonia: luce più calda, meno spigoli ---------- */
+  :root{
+    --ambra:#E7B96B;
+    --bordo-morbido:22px;
+  }
+  body{
+    background:
+      linear-gradient(rgba(91,227,255,.018) 1px, transparent 1px) 0 0/100% 4px,
+      radial-gradient(1100px 620px at 50% -12%, rgba(91,227,255,.11) 0%, transparent 60%),
+      radial-gradient(800px 500px at 90% 110%, rgba(231,185,107,.06) 0%, transparent 60%),
+      #0C0E12;
+  }
+  .app{gap:20px}
+  header{gap:14px}
+  .wordmark{text-shadow:0 0 22px rgba(91,227,255,.22), 0 0 50px rgba(231,185,107,.10)}
+
+  .say{
+    border-radius:26px; padding:26px 24px 22px;
+    background-image:
+      linear-gradient(180deg, rgba(91,227,255,.08) 0%, rgba(12,14,18,0) 46%),
+      linear-gradient(0deg, rgba(231,185,107,.05) 0%, rgba(12,14,18,0) 28%);
+  }
+  .say::before{background:linear-gradient(90deg, transparent, rgba(91,227,255,.9), rgba(231,185,107,.55), transparent)}
+  .say .where{color:var(--ambra);text-shadow:0 0 14px rgba(231,185,107,.35)}
+  .say .what{letter-spacing:.004em;line-height:1.1}
+  .say .body{line-height:1.55;color:#DCDBD6}
+
+  .btn{border-radius:18px;transition:transform .12s ease, box-shadow .2s ease, background .2s ease}
+  .btn:active{transform:translateY(1px) scale(.995)}
+  .choice .btn{border-radius:18px}
+  .btn-yes{background:linear-gradient(180deg,#E7B96B 0%,#C9973F 100%);border-color:#F0CE91;color:#2A1D06}
+  #testo-piu{background:rgba(231,185,107,.10);border-color:rgba(231,185,107,.35);color:var(--ambra)}
+
+  select{border-radius:18px}
+  details.item{border-radius:20px}
+  details.item>summary{padding:16px 18px}
+  .item[data-close="1"]{box-shadow:inset 3px 0 0 var(--ambra), 0 0 22px rgba(231,185,107,.10)}
+  .inside{border-left-color:var(--ambra)}
+  .inside b{color:var(--ambra)}
+  #mappa{border-radius:24px}
+  .strip{border-radius:20px}
+  .porta-scelta{border-radius:28px}
+  .porta-voce{box-shadow:0 0 44px rgba(91,227,255,.14), 0 0 0 1px rgba(91,227,255,.20) inset}
+  .porta-occhi{box-shadow:0 0 36px rgba(231,185,107,.08), 0 0 0 1px rgba(255,255,255,.06) inset}
+  .porta-occhi b{color:#F2E7D2}
+  h2.eyebrow{color:var(--ambra);opacity:.75}
+
   .status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-align:center}
   .note{color:var(--muted);font-size:13px;margin:0}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
