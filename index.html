@@ -183,6 +183,70 @@
   .porta-occhi{background:linear-gradient(180deg,#24272C 0%,#1C1F24 100%)}
   .porta-scelta b{letter-spacing:.005em}
 
+
+  /* ---------- aspetto strumentale: pannelli di vetro, luce fredda ---------- */
+  :root{ --neon:#5BE3FF; --neon-soft:rgba(91,227,255,.16); --vetro:rgba(28,32,38,.72); }
+  body{
+    background:
+      linear-gradient(rgba(91,227,255,.025) 1px, transparent 1px) 0 0/100% 3px,
+      radial-gradient(900px 520px at 50% -8%, rgba(91,227,255,.10) 0%, transparent 62%),
+      #0B0D10;
+  }
+  .wordmark{text-shadow:0 0 18px rgba(91,227,255,.25)}
+  .claim{color:var(--neon);opacity:.75}
+
+  .say, details.item, .strip, #mappa, select, .btn{
+    background-color:var(--vetro);
+    -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.07);
+  }
+  .say{
+    background-image:linear-gradient(180deg, rgba(91,227,255,.07) 0%, rgba(11,13,16,0) 42%);
+    box-shadow:0 0 0 1px rgba(91,227,255,.10) inset, 0 18px 40px rgba(0,0,0,.45);
+    position:relative; overflow:hidden;
+  }
+  .say::before{
+    content:''; position:absolute; left:0; right:0; top:0; height:2px;
+    background:linear-gradient(90deg, transparent, var(--neon), transparent);
+    opacity:.65;
+  }
+  .say .where{color:var(--neon);text-shadow:0 0 12px rgba(91,227,255,.45)}
+  .say .what{text-shadow:0 1px 0 rgba(0,0,0,.5)}
+
+  .btn{letter-spacing:.02em}
+  .btn-go{
+    background:linear-gradient(180deg,#5BE3FF 0%,#2FB7D6 100%);
+    border-color:#7cf0ff; color:#042027;
+    box-shadow:0 0 24px rgba(91,227,255,.30), 0 1px 0 rgba(255,255,255,.35) inset;
+  }
+  .btn[aria-pressed="true"]{
+    background:linear-gradient(180deg,rgba(91,227,255,.22) 0%,rgba(91,227,255,.10) 100%);
+    border-color:var(--neon); color:var(--neon);
+    box-shadow:0 0 18px rgba(91,227,255,.22) inset;
+  }
+  .btn:focus-visible,.porta-scelta:focus-visible{outline:2px solid var(--neon);outline-offset:3px}
+
+  h2.eyebrow{color:var(--neon);opacity:.8}
+  .dir,.meta,.status{color:#93A1AC}
+  .status{letter-spacing:.08em}
+  .item[data-close="1"]{box-shadow:inset 3px 0 0 var(--neon), 0 0 22px rgba(91,227,255,.10)}
+  .inside{border-left-color:var(--neon)}
+  .inside b{color:var(--neon)}
+
+  #mappa{box-shadow:0 0 0 1px rgba(91,227,255,.12), 0 18px 40px rgba(0,0,0,.5)}
+  .io-sono{filter:drop-shadow(0 0 10px rgba(91,227,255,.9))}
+  @keyframes battito{0%{opacity:.85;transform:scale(1)}50%{opacity:.45;transform:scale(1.5)}100%{opacity:0;transform:scale(2.1)}}
+  .alone{animation:battito 2.4s infinite ease-out;transform-origin:center}
+
+  .porta-voce{
+    background:linear-gradient(180deg, rgba(91,227,255,.18) 0%, rgba(11,13,16,.6) 100%);
+    border-color:rgba(91,227,255,.55);
+    box-shadow:0 0 36px rgba(91,227,255,.16), 0 0 0 1px rgba(91,227,255,.18) inset;
+  }
+  .porta-voce b{color:#CFF6FF;text-shadow:0 0 18px rgba(91,227,255,.45)}
+  .porta-occhi{background:linear-gradient(180deg, rgba(255,255,255,.055) 0%, rgba(11,13,16,.6) 100%)}
+  .porta-scelta{backdrop-filter:blur(8px)}
+
   .status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-align:center}
   .note{color:var(--muted);font-size:13px;margin:0}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
@@ -2192,7 +2256,7 @@
   }
 
   /* ---------- la mappa vera: strade ed edifici da OpenStreetMap ---------- */
-  var mappa=null, segno=null, tracciato=null, segni=[], seguiMappa=true;
+  var mappa=null, segno=null, alone=null, tracciato=null, segni=[], seguiMappa=true;
   function avviaMappa(){
     if(mappa||typeof L==='undefined')return;
     // finché non si sa dove sei, la mappa sta larga: non si parte da una città a caso
@@ -2201,7 +2265,10 @@
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom:19, attribution:'© OpenStreetMap'
     }).addTo(mappa);
-    segno=L.circleMarker([S.lat,S.lon],{radius:7,color:'#fff',weight:2,fillColor:'#4FAFC4',fillOpacity:1}).addTo(mappa);
+    alone=L.circleMarker([S.lat,S.lon],{radius:16,color:'#5BE3FF',weight:1,opacity:.5,
+      fillColor:'#5BE3FF',fillOpacity:.12,className:'alone',interactive:false}).addTo(mappa);
+    segno=L.circleMarker([S.lat,S.lon],{radius:7,color:'#fff',weight:2,fillColor:'#5BE3FF',
+      fillOpacity:1,className:'io-sono'}).addTo(mappa);
     mappa.on('dragstart',function(){seguiMappa=false;});
     disegnaMappa();
     // Leaflet misura il contenitore quando nasce: se cambia (porta che si
@@ -2244,6 +2311,7 @@
   function muoviMappa(){
     if(!mappa)return;
     segno.setLatLng([S.lat,S.lon]);
+    if(alone)alone.setLatLng([S.lat,S.lon]);
     if(!seguiMappa)return;
     var c=mappa.getCenter();
     // un salto lungo (cambio di città) non si fa scorrendo: si ricentra e basta
