@@ -4088,6 +4088,278 @@
   "testo": "Supermercato EuroSpin."
  },
  {
+  "id": "poi-300-nome",
+  "testo": "Fontana delle Tartarughe"
+ },
+ {
+  "id": "poi-300-intro",
+  "testo": "fontana del 1581-1588"
+ },
+ {
+  "id": "poi-300-scheda",
+  "testo": "Quattro giovani di bronzo appoggiati ai delfini reggono con la mano alzata il bordo della vasca superiore: le tartarughe che si arrampicano furono aggiunte quasi un secolo dopo, e chiudono il movimento verso l'alto. È la fontana più misurata di Roma, e sta in una piazzetta minima."
+ },
+ {
+  "id": "poi-300-dentro",
+  "testo": "Il gesto delle mani: senza le tartarughe i ragazzi spingevano a vuoto."
+ },
+ {
+  "id": "poi-301-nome",
+  "testo": "Palazzo Altemps"
+ },
+ {
+  "id": "poi-301-intro",
+  "testo": "palazzo e museo del dal 1477"
+ },
+ {
+  "id": "poi-301-scheda",
+  "testo": "Cortile rinascimentale a due logge sovrapposte, con il belvedere a merli sul tetto. Oggi tiene le collezioni di scultura antica dei Ludovisi: le statue stanno nelle sale affrescate, non in vetrine."
+ },
+ {
+  "id": "poi-301-dentro",
+  "testo": "Il Trono Ludovisi e il Galata suicida."
+ },
+ {
+  "id": "poi-302-nome",
+  "testo": "Palazzo della Cancelleria"
+ },
+ {
+  "id": "poi-302-intro",
+  "testo": "palazzo del 1489-1513"
+ },
+ {
+  "id": "poi-302-scheda",
+  "testo": "Il primo palazzo pienamente rinascimentale di Roma: fronte lunghissimo in travertino — preso dal Colosseo — con il paramento a bugne piatte e le finestre ritmate da lesene. Il cortile a due ordini di arcate su colonne di granito antico è attribuito al Bramante."
+ },
+ {
+  "id": "poi-302-dentro",
+  "testo": "Il cortile e la facciata: guarda come il muro si piega agli angoli, appena ingrossato, per reggere lo sguardo."
+ },
+ {
+  "id": "poi-303-nome",
+  "testo": "Palazzo Massimo alle Colonne"
+ },
+ {
+  "id": "poi-303-intro",
+  "testo": "palazzo del 1532-1536"
+ },
+ {
+  "id": "poi-303-scheda",
+  "testo": "Baldassarre Peruzzi lo costruì sul sedime curvo dell'antico teatro di Domiziano, e invece di raddrizzare la facciata la fece seguire la curva della strada: il portico a colonne doriche segue la piega. È il palazzo che insegna a trattare la facciata come un fatto urbano."
+ },
+ {
+  "id": "poi-303-dentro",
+  "testo": "La curva del fronte e il portico d'ingresso incassato."
+ },
+ {
+  "id": "poi-304-nome",
+  "testo": "Palazzo Mattei di Giove"
+ },
+ {
+  "id": "poi-304-intro",
+  "testo": "palazzo del 1598-1617"
+ },
+ {
+  "id": "poi-304-scheda",
+  "testo": "Carlo Maderno riempì il cortile di rilievi antichi: busti, sarcofagi e fregi murati nelle pareti come in un museo all'aperto. Si entra liberamente dall'androne, ed è una delle cose più belle e meno note del centro."
+ },
+ {
+  "id": "poi-304-dentro",
+  "testo": "Le pareti del cortile e lo scalone, tappezzati di marmi romani."
+ },
+ {
+  "id": "poi-305-nome",
+  "testo": "Palazzo Falconieri"
+ },
+ {
+  "id": "poi-305-intro",
+  "testo": "palazzo del rifatto dal 1646"
+ },
+ {
+  "id": "poi-305-scheda",
+  "testo": "Borromini lo rifece su via Giulia e in cima ci mise la loggia belvedere a tre arcate, verso il Tevere; agli angoli della facciata, le due erme con la testa di falco — mezze donne e mezzo rapace — sono il suo scherzo araldico."
+ },
+ {
+  "id": "poi-305-dentro",
+  "testo": "Le erme-falco sugli spigoli, viste dalla strada."
+ },
+ {
+  "id": "poi-306-nome",
+  "testo": "Casa dei Crescenzi"
+ },
+ {
+  "id": "poi-306-intro",
+  "testo": "casa medievale del XI-XII sec."
+ },
+ {
+  "id": "poi-306-scheda",
+  "testo": "Una casa-torre medievale costruita rimontando pezzi antichi: cornici, capitelli e fregi romani murati nella facciata di mattoni, in bella vista. Chi la fece voleva dichiarare la discendenza dall'antica Roma usando i suoi pezzi."
+ },
+ {
+  "id": "poi-306-dentro",
+  "testo": "I frammenti romani incastrati nel muro, messi in ordine come un collage."
+ },
+ {
+  "id": "poi-307-nome",
+  "testo": "Torre delle Milizie"
+ },
+ {
+  "id": "poi-307-intro",
+  "testo": "torre del XIII sec."
+ },
+ {
+  "id": "poi-307-scheda",
+  "testo": "Il torrione di mattoni che sovrasta i Mercati di Traiano pende visibilmente: un cedimento del terreno la inclinò nel Trecento. Era la torre di una famiglia baronale, uno dei pochi pezzi di Roma medievale rimasti in piedi."
+ },
+ {
+  "id": "poi-308-nome",
+  "testo": "Santi Luca e Martina"
+ },
+ {
+  "id": "poi-308-intro",
+  "testo": "chiesa del 1635-1664"
+ },
+ {
+  "id": "poi-308-scheda",
+  "testo": "Pietro da Cortona la rifece per sé e ci sperimentò una facciata leggermente convessa, che spinge in fuori: la chiesa è a croce greca su due livelli, uno sopra l'altro. È uno dei punti dove nasce il barocco romano."
+ },
+ {
+  "id": "poi-309-nome",
+  "testo": "Basilica di Sant'Agostino"
+ },
+ {
+  "id": "poi-309-intro",
+  "testo": "basilica del 1479-1483"
+ },
+ {
+  "id": "poi-309-scheda",
+  "testo": "Una delle prime facciate rinascimentali di Roma, in travertino del Colosseo, con le grandi volute laterali che raccordano i due ordini: un'invenzione che poi farà il giro d'Europa."
+ },
+ {
+  "id": "poi-309-dentro",
+  "testo": "La Madonna dei Pellegrini di Caravaggio, con i piedi sporchi dei devoti in primo piano; e il profeta Isaia di Raffaello sul terzo pilastro."
+ },
+ {
+  "id": "poi-310-nome",
+  "testo": "Basilica di Sant'Andrea delle Fratte"
+ },
+ {
+  "id": "poi-310-intro",
+  "testo": "chiesa del campanile e tiburio del 1653-1665"
+ },
+ {
+  "id": "poi-310-scheda",
+  "testo": "La chiesa è ordinaria, ma dietro, dove la strada si stringe, Borromini alzò il campanile e il tiburio: tamburo curvo con colonne angolari, e sopra una corona di volute e teste d'angelo che regge una guglia. Si vede solo girando l'angolo."
+ },
+ {
+  "id": "poi-310-dentro",
+  "testo": "Gli angeli del Bernini ai lati dell'altare, fatti per ponte Sant'Angelo e mai messi fuori."
+ },
+ {
+  "id": "poi-311-nome",
+  "testo": "Tempio di Portuno"
+ },
+ {
+  "id": "poi-311-intro",
+  "testo": "tempio romano del I sec. a.C."
+ },
+ {
+  "id": "poi-311-scheda",
+  "testo": "Il tempio romano meglio conservato della città: pianta rettangolare su podio, quattro colonne ioniche sul fronte e le altre addossate al muro della cella, perché il tempio sembri circondato da colonne senza esserlo davvero."
+ },
+ {
+  "id": "poi-312-nome",
+  "testo": "Tempio di Ercole Vincitore"
+ },
+ {
+  "id": "poi-312-intro",
+  "testo": "tempio romano del fine II sec. a.C."
+ },
+ {
+  "id": "poi-312-scheda",
+  "testo": "Rotondo, venti colonne corinzie di marmo greco attorno alla cella: è il più antico edificio in marmo rimasto a Roma. Si è salvato perché per secoli fu una chiesa."
+ },
+ {
+  "id": "poi-313-nome",
+  "testo": "Arco di Giano"
+ },
+ {
+  "id": "poi-313-intro",
+  "testo": "arco quadrifronte del IV sec. d.C."
+ },
+ {
+  "id": "poi-313-scheda",
+  "testo": "Un arco a quattro fronti, costruito all'incrocio del Foro Boario per fare ombra ai mercanti: non è un arco di trionfo, è una copertura. Le nicchie sui pilastri erano piene di statue."
+ },
+ {
+  "id": "poi-314-nome",
+  "testo": "Basilica di Santa Cecilia in Trastevere"
+ },
+ {
+  "id": "poi-314-intro",
+  "testo": "basilica del IX sec., facciata del 1725"
+ },
+ {
+  "id": "poi-314-scheda",
+  "testo": "Si entra da un cortile con la vasca antica al centro: la chiesa sta in fondo, dietro il portico settecentesco. Sotto il pavimento si cammina nelle case romane su cui fu costruita."
+ },
+ {
+  "id": "poi-314-dentro",
+  "testo": "Il Giudizio universale di Pietro Cavallini nel coro delle monache, e la statua distesa di Maderno sotto l'altare."
+ },
+ {
+  "id": "poi-315-nome",
+  "testo": "Basilica di San Bartolomeo all'Isola"
+ },
+ {
+  "id": "poi-315-intro",
+  "testo": "basilica del X sec."
+ },
+ {
+  "id": "poi-315-scheda",
+  "testo": "Sta dove c'era il tempio di Esculapio, il dio della medicina: il luogo è stato di cura per duemila anni, e accanto c'è ancora l'ospedale. Nel mezzo della scalinata dell'altare c'è una vera da pozzo scolpita, sul punto di una sorgente antica."
+ },
+ {
+  "id": "poi-316-nome",
+  "testo": "Chiesa di San Nicola in Carcere"
+ },
+ {
+  "id": "poi-316-intro",
+  "testo": "chiesa del XI sec. su tre templi"
+ },
+ {
+  "id": "poi-316-scheda",
+  "testo": "La chiesa ha mangiato tre templi repubblicani affiancati: le colonne di due di essi sono inglobate nei muri laterali e si vedono dalla strada, mezze dentro e mezze fuori. Sotto si cammina fra i podi."
+ },
+ {
+  "id": "poi-316-dentro",
+  "testo": "Il fianco su via del Teatro di Marcello: le colonne scanalate che escono dal muro della chiesa."
+ },
+ {
+  "id": "poi-317-nome",
+  "testo": "Chiesa di Sant'Eligio degli Orefici"
+ },
+ {
+  "id": "poi-317-intro",
+  "testo": "chiesa del dal 1509"
+ },
+ {
+  "id": "poi-317-scheda",
+  "testo": "Piccola chiesa a croce greca con la cupola su tamburo, disegnata da Raffaello per la corporazione degli orefici: pianta centrale pura, senza decorazione, il contrario del barocco che verrà."
+ },
+ {
+  "id": "poi-318-nome",
+  "testo": "Fontana dell'Acqua Felice, il Mosè"
+ },
+ {
+  "id": "poi-318-intro",
+  "testo": "mostra d'acqua del 1585-1588"
+ },
+ {
+  "id": "poi-318-scheda",
+  "testo": "La prima mostra d'acqua papale moderna: un arco di trionfo a tre fornici con il Mosè al centro, criticatissimo appena fu scoperto. Segna l'arrivo dell'acquedotto Felice e la rinascita dei quartieri alti."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -4182,6 +4454,14 @@
  {
   "id": "percorso-napoli-greca",
   "testo": "Napoli — la città sotto: teatro romano, San Lorenzo, Museo"
+ },
+ {
+  "id": "percorso-roma-foro-boario",
+  "testo": "Roma — il Foro Boario e il Ghetto: i templi, l'Isola, le Tartarughe"
+ },
+ {
+  "id": "percorso-roma-via-giulia",
+  "testo": "Roma — via Giulia e il Rinascimento: Cancelleria, Farnese, Falconieri"
  },
  {
   "id": "dir-dritto-davanti",
