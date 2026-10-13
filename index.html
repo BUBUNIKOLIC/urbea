@@ -321,6 +321,16 @@
   .porta-occhi b{color:#F2E7D2}
   h2.eyebrow{color:var(--ambra);opacity:.75}
 
+
+  /* i tasti non devono mai tagliare la parola: il testo va a capo e si adatta */
+  .btn{white-space:normal;overflow-wrap:anywhere;line-height:1.2;text-align:center}
+  .choice{flex-wrap:wrap}
+  .choice .btn{flex:1 1 46%;min-width:140px}
+  body[data-testo="grande"] .choice .btn{font-size:19px}
+  body[data-testo="enorme"] .choice .btn{font-size:21px;flex-basis:100%}
+  body[data-testo="enorme"] .controls .btn{flex-basis:100%}
+  #testo-piu{flex:0 0 auto}
+
   .status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-align:center}
   .note{color:var(--muted);font-size:13px;margin:0}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
