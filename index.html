@@ -1856,7 +1856,7 @@
       if(typeof pos.coords.heading==='number'&&!isNaN(pos.coords.heading)&&pos.coords.speed>0.4)S.hd=pos.coords.heading;
       statusEl.textContent='posizione attiva · precisione '+Math.round(S.acc||0)+' m';
       if(mappa&&!seguiMappa===false){} 
-      if(mappa&&mappa.getZoom()<14){ mappa.setView([S.lat,S.lon],17,{animate:false}); disegnaMappa(); }
+      if(mappa&&mappa.getZoom()<14){ mappa.setView([S.lat,S.lon],16,{animate:false}); disegnaMappa(); }
       render();
     },function(err){
       statusEl.textContent='posizione negata o non disponibile — usa Simula';
@@ -2033,7 +2033,7 @@
       var v=percorsoPiuVicino();
       if(v.r){ S.route=v.r; S.seg=0; S.frac=0; }
       ordinaPercorsi();
-      if(mappa){ mappa.setView([S.lat,S.lon],17,{animate:false}); disegnaMappa(); }
+      if(mappa){ mappa.setView([S.lat,S.lon],16,{animate:false}); disegnaMappa(); }
       if(segno)segno.setLatLng([S.lat,S.lon]);
       // fuori dalle città raccontate glielo si dice, e si offre di sceglierne una
       var citta=CITTA.map(function(c){return {c:c,d:dist(S.lat,S.lon,c.lat,c.lon)};})
@@ -2134,7 +2134,7 @@
     if(mappa||typeof L==='undefined')return;
     // finché non si sa dove sei, la mappa sta larga: non si parte da una città a caso
     mappa=L.map('mappa',{zoomControl:true,attributionControl:true})
-      .setView(S.pronto?[S.lat,S.lon]:[41.6,13.3], S.pronto?17:7);
+      .setView(S.pronto?[S.lat,S.lon]:[41.6,13.3], S.pronto?16:7);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
       maxZoom:19, attribution:'© OpenStreetMap'
     }).addTo(mappa);
