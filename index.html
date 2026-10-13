@@ -2518,8 +2518,10 @@
     return "alle tue spalle";}
   function metres(m){return m<25?"a pochi passi":"a "+(Math.round(m/10)*10)+" metri";}
 
-  var S={lat:40.78706,lon:14.36831,hd:300,live:false,sim:false,voice:false,
-         route:ROUTES[0],seg:0,frac:0,said:{},radius:400,acc:null,pronto:false,
+  // nessuna città di partenza: finché non si sa dove sei, l'app non è da
+  // nessuna parte — se no in cima compare sempre la stessa città
+  var S={lat:42.5,lon:12.5,hd:0,live:false,sim:false,voice:false,
+         route:null,seg:0,frac:0,said:{},radius:400,acc:null,pronto:false,
          libero:false,modoVoce:false,racconta:'tutto',versoBuono:0,ultimaPos:null};
 
   var el=function(id){return document.getElementById(id);};
@@ -2531,6 +2533,7 @@
   ROUTES.forEach(function(r){var o=document.createElement('option');o.value=r.id;o.textContent=r.n;sel.appendChild(o);});
   sel.addEventListener('change',function(){
     S.route=ROUTES.filter(function(r){return r.id===sel.value;})[0];
+    if(!S.route)return;
     S.seg=0;S.frac=0;S.said={};
     if(S.route){
       var km=lunghezzaPercorso(S.route), partenza=dist(S.lat,S.lon,S.route.p[0][0],S.route.p[0][1]);
@@ -2975,6 +2978,12 @@
     S.sim=!S.sim;this.setAttribute('aria-pressed',S.sim?'true':'false');
     audio();
     if(S.sim){
+      if(!S.route){
+        S.sim=false; this.setAttribute('aria-pressed','false');
+        statusEl.textContent='scegli prima un percorso qui sotto';
+        dire(['frase-scegli-percorso'],'Scegli prima un percorso.');
+        return;
+      }
       S.said={};S.seg=0;S.frac=0;S.pronto=true;
       var p=S.route.p;S.lat=p[0][0];S.lon=p[0][1];S.hd=bear(p[0][0],p[0][1],p[1][0],p[1][1]);
       statusEl.textContent='passeggiata simulata';
@@ -3044,11 +3053,12 @@
   }
   function ordinaPercorsi(){
     var sel=el('route');
-    var ord=ROUTES.map(function(r){
+    var ord=(S.pronto?ROUTES:ROUTES.slice()).map(function(r){
       var dmin=Infinity;
       r.p.forEach(function(pt){var d=dist(S.lat,S.lon,pt[0],pt[1]); if(d<dmin)dmin=d;});
       return {r:r,d:dmin};
-    }).sort(function(a,b){return a.d-b.d;});
+    });
+    if(S.pronto)ord.sort(function(a,b){return a.d-b.d;});
     sel.textContent='';
     ord.forEach(function(o){
       var op=document.createElement('option');
@@ -3056,10 +3066,13 @@
       var partenza=dist(S.lat,S.lon,o.r.p[0][0],o.r.p[0][1]);
       op.textContent=(o.r.tema?'['+o.r.tema+'] ':'')+o.r.n
         +' — '+inCifre(lunghezzaPercorso(o.r))
-        +', parte a '+inCifre(partenza)+' da te';
+        +(S.pronto?(', parte a '+inCifre(partenza)+' da te'):'');
       sel.appendChild(op);
     });
     if(S.route)sel.value=S.route.id;
+    else { var vuota=document.createElement('option');
+           vuota.value=''; vuota.textContent='— scegli un percorso —';
+           sel.insertBefore(vuota,sel.firstChild); sel.value=''; }
   }
   function vaiInCitta(c){
     S.lat=c.lat; S.lon=c.lon; S.pronto=false; S.acc=null;
