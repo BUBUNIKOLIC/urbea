@@ -5676,6 +5676,14 @@
   "testo": "a 500 metri"
  },
  {
+  "id": "frase-lungo",
+  "testo": "Il percorso è lungo"
+ },
+ {
+  "id": "frase-comincia-a",
+  "testo": "e comincia a"
+ },
+ {
   "id": "frase-come-cammini",
   "testo": "Vuoi camminare libero, o seguire un percorso?"
  },

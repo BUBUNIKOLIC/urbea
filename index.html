@@ -1493,6 +1493,13 @@
   sel.addEventListener('change',function(){
     S.route=ROUTES.filter(function(r){return r.id===sel.value;})[0];
     S.seg=0;S.frac=0;S.said={};
+    if(S.route){
+      var km=lunghezzaPercorso(S.route), partenza=dist(S.lat,S.lon,S.route.p[0][0],S.route.p[0][1]);
+      var frase=S.route.n+'. Lungo '+inCifre(km)+', comincia a '+inCifre(partenza)+' da te.';
+      liveEl.textContent=frase;
+      statusEl.textContent='lungo '+inCifre(km)+' · inizio a '+inCifre(partenza);
+      if(S.voice)dire(['percorso-'+S.route.id,'frase-lungo',dlId(km),'frase-comincia-a',dlId(partenza)],frase);
+    }
     var p=S.route.p[0];
     if(!S.live){S.lat=p[0];S.lon=p[1];S.hd=bear(p[0],p[1],S.route.p[1][0],S.route.p[1][1]);}
     render();
@@ -1927,6 +1934,17 @@
      posizione e si mette sulla città in cui ti trovi, scegliendo il
      percorso che ti passa più vicino. Se la posizione non arriva,
      resta in attesa e non annuncia niente. */
+  function lunghezzaPercorso(r){
+    if(r._km!=null)return r._km;
+    var tot=0;
+    for(var i=1;i<r.p.length;i++) tot+=dist(r.p[i-1][0],r.p[i-1][1],r.p[i][0],r.p[i][1]);
+    r._km=tot;
+    return tot;
+  }
+  function inCifre(m){
+    if(m<1000)return Math.round(m/10)*10+' metri';
+    return (Math.round(m/100)/10).toString().replace('.',',')+' chilometri';
+  }
   function percorsoPiuVicino(){
     var mig=null, dmin=Infinity;
     ROUTES.forEach(function(r){
@@ -1948,7 +1966,10 @@
     ord.forEach(function(o){
       var op=document.createElement('option');
       op.value=o.r.id;
-      op.textContent=(o.r.tema?'['+o.r.tema+'] ':'')+o.r.n + (o.d>3000 ? ' — a '+Math.round(o.d/1000)+' km' : '');
+      var partenza=dist(S.lat,S.lon,o.r.p[0][0],o.r.p[0][1]);
+      op.textContent=(o.r.tema?'['+o.r.tema+'] ':'')+o.r.n
+        +' — '+inCifre(lunghezzaPercorso(o.r))
+        +', parte a '+inCifre(partenza)+' da te';
       sel.appendChild(op);
     });
     if(S.route)sel.value=S.route.id;
