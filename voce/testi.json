@@ -53,15 +53,15 @@
  },
  {
   "id": "poi-04-intro",
-  "testo": "chiesa del 1683"
+  "testo": "chiesa e ipogeo del convento 1696-1706, chiesa 1727"
  },
  {
   "id": "poi-04-scheda",
-  "testo": "La lava del 1794 la seppellì a metà altezza: le monache fuggirono a Napoli e non tornarono mai, e la chiesa fu riaperta ricavando l'ingresso nel finestrone superiore. Da qui il suo aspetto schiacciato, affondato di un piano nel banco lavico."
+  "testo": "Il convento fu costruito fra il 1696 e il 1706 e la chiesa consacrata nel 1727. La lava del 1794 la seppellì quasi del tutto: nel 1804 ne fu costruita una nuova sopra la vecchia, seguendo la pianta dei muri che ancora si vedevano. Da qui l'aspetto schiacciato, con l'ingresso ricavato in alto."
  },
  {
   "id": "poi-04-dentro",
-  "testo": "La chiesa inferiore sepolta dalla lava, con il pavimento in riggiole settecentesche e una Madonna in gloria attribuita a Paolo De Matteis. L'Ipogeo delle Anime."
+  "testo": "L'ipogeo: la chiesa inferiore sepolta, con il pavimento in riggiole settecentesche e una Madonna in gloria attribuita a Paolo De Matteis."
  },
  {
   "id": "poi-05-nome",
@@ -2249,11 +2249,11 @@
  },
  {
   "id": "poi-170-intro",
-  "testo": "torre"
+  "testo": "torre costiera del epoca vicereale"
  },
  {
   "id": "poi-170-scheda",
-  "testo": "Una delle torri costiere di Torre del Greco, verso il mare."
+  "testo": "La fece costruire l'Università torrese dentro il piano difensivo del viceré de Ribera: nel Cinquecento tutta la costa del Regno fu dotata di torri per avvistare le incursioni turche e dare l'allarme. Erano costruzioni tozze su base a tronco di piramide, buone per vedere lontano e resistere a un colpo di mano, non a un assedio."
  },
  {
   "id": "poi-171-nome",
