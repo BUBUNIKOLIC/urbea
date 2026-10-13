@@ -389,8 +389,8 @@
 
   <section class="say">
     <div class="where" id="where">non avviato</div>
-    <div class="what" id="what">Premi Avvia</div>
-    <div class="body idle" id="body">Ti serve il GPS e la bussola del telefono. Scegli l'itinerario qui sotto: c'è Torre del Greco e c'è Roma, dal Colosseo a Palazzo Chigi e viceversa.</div>
+    <div class="what" id="what">In attesa</div>
+    <div class="body idle" id="body">Cerco dove sei. Poi ti dico cosa hai intorno: Roma, Napoli, Torre del Greco, Venafro, Parma, Spoleto.</div>
     <div class="choice" id="choice" hidden>
       <button class="btn btn-yes" id="more">Approfondisci</button>
       <button class="btn" id="skip">Vai oltre</button>
@@ -2873,7 +2873,7 @@
 
   var ultimoDisegno=0;
   function mostraAttesa(items){
-    if(pending)return;
+    if(pending||!S.pronto)return;   // senza posizione non si nomina nessun luogo
     if(whatEl.textContent&&whatEl.textContent!=='Premi Avvia'&&whatEl.textContent!=='In attesa')return;
     if(!items.length)return;
     var o=items[0];
