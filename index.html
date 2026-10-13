@@ -2183,6 +2183,12 @@
     function entra(modoVoce){
       porta.hidden=true;
       audio();
+      // chi guarda vuole la mappa davanti agli occhi, non in fondo alla pagina
+      if(!modoVoce){
+        var m=el('mappa'), say=document.querySelector('.say');
+        if(m&&say&&say.parentNode)say.parentNode.insertBefore(m,say);
+        setTimeout(function(){ if(mappa)mappa.invalidateSize(); },200);
+      }
       try{localStorage.setItem('urbea-modo',modoVoce?'voce':'occhi');}catch(e){}
       if(modoVoce&&!S.voice)el('voice').click();
       try{dovesiamo();}catch(e){}
