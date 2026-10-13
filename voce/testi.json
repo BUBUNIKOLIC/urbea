@@ -3588,6 +3588,262 @@
   "testo": "L'orologio fermo alle tre del mattino, l'ora in cui la lava arrivò."
  },
  {
+  "id": "poi-265-nome",
+  "testo": "Duomo di Napoli"
+ },
+ {
+  "id": "poi-265-intro",
+  "testo": "cattedrale del dal 1294"
+ },
+ {
+  "id": "poi-265-scheda",
+  "testo": "Impianto gotico angioino, rimaneggiato dopo i terremoti e chiuso da una facciata neogotica di fine Ottocento. Dentro, le colonne di granito antico sono di spoglio, prese dagli edifici greco-romani: la cattedrale sta sopra la città antica e la usa come cava."
+ },
+ {
+  "id": "poi-265-dentro",
+  "testo": "La cappella del Tesoro di San Gennaro, chiesa dentro la chiesa, con la cupola affrescata dal Domenichino e il Lanfranco; e la basilica paleocristiana di Santa Restituta, inglobata nella navata sinistra."
+ },
+ {
+  "id": "poi-266-nome",
+  "testo": "Cappella Sansevero"
+ },
+ {
+  "id": "poi-266-intro",
+  "testo": "cappella del rifatta nel Settecento"
+ },
+ {
+  "id": "poi-266-scheda",
+  "testo": "Raimondo di Sangro, principe di Sansevero, la trasformò in una macchina di significati: ogni statua è una virtù, e il pavimento labirintico — oggi perduto, se ne vede un pezzo — chiudeva il discorso. È un edificio pensato come un libro da percorrere."
+ },
+ {
+  "id": "poi-266-dentro",
+  "testo": "Il Cristo velato di Giuseppe Sanmartino: il velo è scolpito nello stesso blocco di marmo del corpo. E il Disinganno, con la rete di marmo che si sfila dall'uomo."
+ },
+ {
+  "id": "poi-267-nome",
+  "testo": "Chiesa del Gesù Nuovo"
+ },
+ {
+  "id": "poi-267-intro",
+  "testo": "chiesa del 1584-1601"
+ },
+ {
+  "id": "poi-267-scheda",
+  "testo": "La facciata non è una facciata di chiesa: è il fronte del palazzo Sanseverino del Quattrocento, lasciato in piedi quando dietro costruirono la chiesa. Le bugne di piperno a punta di diamante coprono tutto il muro, e su molte sono incisi segni che qualcuno legge come note musicali."
+ },
+ {
+  "id": "poi-267-dentro",
+  "testo": "Le bugne a punta di diamante e i segni incisi; dentro, lo spazio a croce greca tutto rivestito di marmi."
+ },
+ {
+  "id": "poi-268-nome",
+  "testo": "Basilica di San Domenico Maggiore"
+ },
+ {
+  "id": "poi-268-intro",
+  "testo": "basilica del 1283-1324"
+ },
+ {
+  "id": "poi-268-scheda",
+  "testo": "Gotica angioina, ma entra dalla parte sbagliata: l'ingresso dalla piazza è l'abside, perché la chiesa fu costruita girata rispetto alla città che poi le è cresciuta attorno. Dentro, le arcate a sesto acuto sono state mascherate da stucchi barocchi e riportate in luce a tratti."
+ },
+ {
+  "id": "poi-268-dentro",
+  "testo": "I quarantacinque sepolcri aragonesi nella sagrestia, appoggiati in alto su una balconata."
+ },
+ {
+  "id": "poi-269-nome",
+  "testo": "Basilica di San Lorenzo Maggiore"
+ },
+ {
+  "id": "poi-269-intro",
+  "testo": "basilica e scavi del 1270-1324"
+ },
+ {
+  "id": "poi-269-scheda",
+  "testo": "L'abside è il pezzo di gotico francese più puro del Sud: deambulatorio con nove cappelle radiali, archi acuti e costoloni, costruito da maestranze d'oltralpe. Sotto il chiostro si scende nel mercato romano, con le botteghe e la strada lastricata."
+ },
+ {
+  "id": "poi-269-dentro",
+  "testo": "Il deambulatorio, e sotto il macellum romano con le celle dei banchi."
+ },
+ {
+  "id": "poi-270-nome",
+  "testo": "Pio Monte della Misericordia"
+ },
+ {
+  "id": "poi-270-intro",
+  "testo": "chiesa e quadreria del 1658-1678"
+ },
+ {
+  "id": "poi-270-scheda",
+  "testo": "Chiesa a pianta ottagonale, pensata perché dall'ingresso si veda subito l'altare: fu costruita attorno al quadro che ci sta sopra."
+ },
+ {
+  "id": "poi-270-dentro",
+  "testo": "Le Sette opere di Misericordia di Caravaggio, ancora nel posto per cui furono dipinte."
+ },
+ {
+  "id": "poi-271-nome",
+  "testo": "Castel Nuovo, il Maschio Angioino"
+ },
+ {
+  "id": "poi-271-intro",
+  "testo": "castello del 1279-1282"
+ },
+ {
+  "id": "poi-271-scheda",
+  "testo": "Cinque torri cilindriche di tufo con le cortine fra l'una e l'altra. Fra le due torri d'ingresso sta incastrato l'arco di trionfo in marmo bianco del 1453-1471, fatto per l'entrata di Alfonso d'Aragona: due ordini sovrapposti di colonne corinzie, come un arco romano messo dentro una fortezza."
+ },
+ {
+  "id": "poi-271-dentro",
+  "testo": "Il contrasto fra il tufo scuro delle torri e il marmo bianco dell'arco; e dentro, la Sala dei Baroni con la volta a ombrello su archi incrociati."
+ },
+ {
+  "id": "poi-272-nome",
+  "testo": "Castel dell'Ovo"
+ },
+ {
+  "id": "poi-272-intro",
+  "testo": "castello del XII sec. su villa romana"
+ },
+ {
+  "id": "poi-272-scheda",
+  "testo": "Il castello sta sull'isolotto di tufo di Megaride, dove c'era la villa di Lucullo: le murature si sono sovrapposte per mille anni sulle precedenti, e si riconoscono i corsi diversi. Il ponte lo lega alla città."
+ },
+ {
+  "id": "poi-273-nome",
+  "testo": "Certosa di San Martino"
+ },
+ {
+  "id": "poi-273-intro",
+  "testo": "certosa del 1325, rifatta nel Seicento"
+ },
+ {
+  "id": "poi-273-scheda",
+  "testo": "Fondata nel Trecento e rifatta da Cosimo Fanzago, che qui fa la cosa più napoletana che esista: il chiostro grande, con il porticato di marmo bianco e il recinto del cimitero dei monaci con i teschi scolpiti sulla balaustra. Dal belvedere si vede tutto il golfo."
+ },
+ {
+  "id": "poi-273-dentro",
+  "testo": "Il chiostro del Fanzago e i marmi commessi della chiesa, intarsiati come tappeti."
+ },
+ {
+  "id": "poi-274-nome",
+  "testo": "Galleria Umberto I"
+ },
+ {
+  "id": "poi-274-intro",
+  "testo": "galleria del 1887-1890"
+ },
+ {
+  "id": "poi-274-scheda",
+  "testo": "Croce di bracci coperta da volte di ferro e vetro, con la cupola alta cinquantasette metri sull'incrocio: è la risposta napoletana alla galleria di Milano, costruita nel risanamento dopo il colera."
+ },
+ {
+  "id": "poi-274-dentro",
+  "testo": "Il pavimento a mosaico con i segni dello zodiaco sotto la cupola."
+ },
+ {
+  "id": "poi-275-nome",
+  "testo": "Palazzo Reale"
+ },
+ {
+  "id": "poi-275-intro",
+  "testo": "palazzo del dal 1600"
+ },
+ {
+  "id": "poi-275-scheda",
+  "testo": "Domenico Fontana disegnò il fronte lunghissimo sulla piazza, scandito da arcate e lesene. Nelle nicchie del piano terra stanno le statue degli otto re di Napoli, messe lì nel 1888: una dinastia per nicchia."
+ },
+ {
+  "id": "poi-275-dentro",
+  "testo": "Lo scalone d'onore in marmi bianchi e grigi, aperto su due rampe."
+ },
+ {
+  "id": "poi-276-nome",
+  "testo": "Museo Archeologico Nazionale"
+ },
+ {
+  "id": "poi-276-intro",
+  "testo": "museo del edificio del 1585"
+ },
+ {
+  "id": "poi-276-scheda",
+  "testo": "Nato come cavallerizza e poi università, l'edificio fu adattato a museo per raccogliere la collezione Farnese e i materiali di Pompei ed Ercolano. È il luogo dove si capisce cosa c'era dentro le case sepolte."
+ },
+ {
+  "id": "poi-276-dentro",
+  "testo": "Il Toro Farnese, scolpito da un solo blocco di marmo, e i mosaici della Casa del Fauno con la battaglia di Alessandro."
+ },
+ {
+  "id": "poi-277-nome",
+  "testo": "Piazza del Plebiscito"
+ },
+ {
+  "id": "poi-277-intro",
+  "testo": "piazza del 1809-1846"
+ },
+ {
+  "id": "poi-277-scheda",
+  "testo": "Un emiciclo di colonne doriche chiude la piazza davanti al palazzo: la chiesa di San Francesco di Paola, al centro, è un Pantheon rifatto, con la cupola su tamburo e il pronao a colonne. Il disegno nasce francese, sotto Murat, e viene finito dai Borbone."
+ },
+ {
+  "id": "poi-277-dentro",
+  "testo": "Il colonnato curvo e il modo in cui inquadra la facciata del Palazzo Reale dall'altro lato."
+ },
+ {
+  "id": "poi-278-nome",
+  "testo": "Teatro di San Carlo"
+ },
+ {
+  "id": "poi-278-intro",
+  "testo": "teatro del 1737"
+ },
+ {
+  "id": "poi-278-scheda",
+  "testo": "Il più antico teatro d'opera d'Europa ancora in attività, costruito in otto mesi. La sala a ferro di cavallo con sei ordini di palchi è il modello del teatro all'italiana."
+ },
+ {
+  "id": "poi-279-nome",
+  "testo": "Guglia di San Gennaro"
+ },
+ {
+  "id": "poi-279-intro",
+  "testo": "guglia del 1636-1660"
+ },
+ {
+  "id": "poi-279-scheda",
+  "testo": "Le guglie napoletane sono macchine di festa diventate pietra: altari processionali di legno e cartapesta, rifatti in marmo perché restassero. Questa fu eretta per il voto a san Gennaro dopo l'eruzione del 1631."
+ },
+ {
+  "id": "poi-280-nome",
+  "testo": "Statua del dio Nilo"
+ },
+ {
+  "id": "poi-280-intro",
+  "testo": "statua antica del età romana"
+ },
+ {
+  "id": "poi-280-scheda",
+  "testo": "Un dio fluviale sdraiato, scolpito dagli alessandrini che abitavano questo quartiere. Perso per secoli e ritrovato senza testa, i napoletani lo chiamavano «il corpo di Napoli»; la testa gli fu rifatta nel Seicento."
+ },
+ {
+  "id": "poi-281-nome",
+  "testo": "Teatro romano di Neapolis"
+ },
+ {
+  "id": "poi-281-intro",
+  "testo": "teatro romano del I sec. d.C."
+ },
+ {
+  "id": "poi-281-scheda",
+  "testo": "Il teatro dove cantò Nerone non è scomparso: è dentro le case di vico Cinquesanti. I muri dei palazzi poggiano sulle gradinate e i corridoi anulari sono diventati cantine e androni; si entra da un portone e ci si trova nella cavea."
+ },
+ {
+  "id": "poi-281-dentro",
+  "testo": "Gli archi romani che spuntano dentro i cortili, usati come muri di casa."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -3670,6 +3926,18 @@
  {
   "id": "percorso-roma-esquilino",
   "testo": "Roma — l'Esquilino: Santa Maria Maggiore, Santa Prassede, le Terme"
+ },
+ {
+  "id": "percorso-napoli-spaccanapoli",
+  "testo": "Napoli — Spaccanapoli: dal Gesù Nuovo al Duomo"
+ },
+ {
+  "id": "percorso-napoli-reale",
+  "testo": "Napoli — la città dei re: Plebiscito, San Carlo, Maschio Angioino"
+ },
+ {
+  "id": "percorso-napoli-greca",
+  "testo": "Napoli — la città sotto: teatro romano, San Lorenzo, Museo"
  },
  {
   "id": "dir-dritto-davanti",
