@@ -425,7 +425,7 @@
     <div class="list" id="list"></div>
   </section>
 
-  <p class="note">Torre del Greco · 36 luoghi. Coordinate approssimate, da correggere sul posto.</p>
+  <p class="note">Roma · Napoli · Torre del Greco · Venafro · Parma · Spoleto</p>
 </main>
 
 <script src="mappa/leaflet.js"></script>
@@ -3490,15 +3490,25 @@
     if(ascolto){ try{ascolto.stop();}catch(e){} ascolto=null; }
   }
 
+  // dentro l'app i collegamenti non devono portare fuori: la finestra si
+  // chiuderebbe e sembrerebbe che l'app sia uscita
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href]');
+    if(!a)return;
+    var h=a.getAttribute('href')||'';
+    if(/^(https?:)?\/\//.test(h) && h.indexOf(location.host)<0){ e.preventDefault(); }
+  },true);
+
   /* ---------- la mappa vera: strade ed edifici da OpenStreetMap ---------- */
   var mappa=null, segno=null, alone=null, tracciato=null, segni=[], seguiMappa=true;
   function avviaMappa(){
     if(mappa||typeof L==='undefined')return;
     // finché non si sa dove sei, la mappa sta larga: non si parte da una città a caso
-    mappa=L.map('mappa',{zoomControl:true,attributionControl:true})
-      .setView(S.pronto?[S.lat,S.lon]:[41.6,13.3], S.pronto?16:7);
+    mappa=L.map('mappa',{zoomControl:true,attributionControl:true});
+    mappa.attributionControl.setPrefix('');
+    mappa.setView(S.pronto?[S.lat,S.lon]:[41.6,13.3], S.pronto?16:7);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
-      maxZoom:19, attribution:'© OpenStreetMap'
+      maxZoom:19, attribution:'mappa © OpenStreetMap'
     }).addTo(mappa);
     alone=L.circleMarker([S.lat,S.lon],{radius:16,color:'#5BE3FF',weight:1,opacity:.5,
       fillColor:'#5BE3FF',fillOpacity:.12,className:'alone',interactive:false}).addTo(mappa);
