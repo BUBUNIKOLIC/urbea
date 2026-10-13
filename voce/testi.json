@@ -7616,6 +7616,870 @@
   "testo": "Teatro Regio."
  },
  {
+  "id": "poi-583-nome",
+  "testo": "Duomo di Spoleto"
+ },
+ {
+  "id": "poi-583-intro",
+  "testo": "cattedrale del XII sec., portico del 1491"
+ },
+ {
+  "id": "poi-583-scheda",
+  "testo": "La facciata romanica è chiusa davanti da un portico rinascimentale a cinque arcate, aggiunto nel 1491: due epoche appoggiate l'una all'altra senza nascondersi. In alto il mosaico dorato del 1207, firmato dal maestro Solsterno, con il Cristo benedicente fra la Vergine e san Giovanni. Il campanile è fatto di pezzi romani di spoglio."
+ },
+ {
+  "id": "poi-583-dentro",
+  "testo": "L'abside affrescata da Filippo Lippi con le Storie della Vergine, l'ultima opera sua: morì a Spoleto nel 1469 e la tomba è nel transetto, disegnata dal figlio Filippino."
+ },
+ {
+  "id": "poi-584-nome",
+  "testo": "Rocca Albornoziana"
+ },
+ {
+  "id": "poi-584-intro",
+  "testo": "fortezza del 1359-1370"
+ },
+ {
+  "id": "poi-584-scheda",
+  "testo": "La costruì Matteo Gattapone per il cardinale Albornoz: un rettangolo con sei torri attorno a due cortili, quello delle Armi per i soldati e quello d'Onore per il governatore. Dal 1817 al 1982 è stata carcere, e questo l'ha conservata intera."
+ },
+ {
+  "id": "poi-584-dentro",
+  "testo": "Il Cortile d'Onore con le logge affrescate, e dal camminamento la vista su tutta la valle."
+ },
+ {
+  "id": "poi-585-nome",
+  "testo": "Ponte delle Torri"
+ },
+ {
+  "id": "poi-585-intro",
+  "testo": "ponte-acquedotto del XIII-XIV sec."
+ },
+ {
+  "id": "poi-585-scheda",
+  "testo": "Ottanta metri d'altezza e dieci arcate ogivali a scavalcare il Tessino: è insieme ponte e acquedotto, costruito forse su strutture romane. Attribuito al Gattapone, collega la Rocca al Monteluco. Goethe venne qui e scrisse che era architettura che serve, non che decora."
+ },
+ {
+  "id": "poi-585-dentro",
+  "testo": "Le due torri alle estremità, da cui prende il nome, e il condotto dell'acqua che corre dentro la struttura."
+ },
+ {
+  "id": "poi-586-nome",
+  "testo": "Arco di Druso e Germanico"
+ },
+ {
+  "id": "poi-586-intro",
+  "testo": "arco romano del 23 d.C."
+ },
+ {
+  "id": "poi-586-scheda",
+  "testo": "L'arco che segnava l'ingresso al foro della Spoletium romana, dedicato ai figli di Tiberio. Il piano antico sta quattro metri sotto quello di oggi: si vede la città che si è alzata su sé stessa."
+ },
+ {
+  "id": "poi-587-nome",
+  "testo": "Teatro romano"
+ },
+ {
+  "id": "poi-587-intro",
+  "testo": "teatro romano del I sec. d.C."
+ },
+ {
+  "id": "poi-587-scheda",
+  "testo": "Riportato alla luce nel Novecento sotto le case: la cavea è stata ricostruita, l'orchestra conserva ancora il pavimento in opus sectile di marmi colorati. Si usa ancora, d'estate, per il Festival."
+ },
+ {
+  "id": "poi-588-nome",
+  "testo": "Basilica di San Salvatore"
+ },
+ {
+  "id": "poi-588-intro",
+  "testo": "basilica del IV-V sec."
+ },
+ {
+  "id": "poi-588-scheda",
+  "testo": "Una delle chiese paleocristiane più antiche rimaste in piedi, patrimonio Unesco fra i Longobardi in Italia. La facciata ha tre portali e tre finestre con cornici scolpite prese da edifici romani, e dentro le colonne di spoglio reggono una trabeazione classica: una chiesa cristiana costruita con il vocabolario dei templi."
+ },
+ {
+  "id": "poi-588-dentro",
+  "testo": "Il presbiterio con le colonne e la trabeazione antica rimontate, e le cornici di marmo riusate nella facciata."
+ },
+ {
+  "id": "poi-589-nome",
+  "testo": "Chiesa di Sant'Eufemia"
+ },
+ {
+  "id": "poi-589-intro",
+  "testo": "chiesa del XII sec."
+ },
+ {
+  "id": "poi-589-scheda",
+  "testo": "Romanica, dentro il cortile del palazzo arcivescovile: tre navate su colonne diverse l'una dall'altra, tutte di recupero. L'unica cosa rara è il matroneo, la galleria sopra le navate laterali per le donne — in Umbria non ce ne sono altri."
+ },
+ {
+  "id": "poi-589-dentro",
+  "testo": "Il matroneo, e i capitelli: ognuno è diverso, nessuno è stato fatto per questa chiesa."
+ },
+ {
+  "id": "poi-590-nome",
+  "testo": "Basilica di San Ponziano"
+ },
+ {
+  "id": "poi-590-intro",
+  "testo": "basilica del XII sec."
+ },
+ {
+  "id": "poi-590-scheda",
+  "testo": "Fuori le mura, sul luogo della sepoltura del patrono. La facciata romanica è semplice, con il rosone e due leoni; sotto c'è la cripta, con le colonne romane di spoglio e gli affreschi."
+ },
+ {
+  "id": "poi-591-nome",
+  "testo": "Casa romana"
+ },
+ {
+  "id": "poi-591-intro",
+  "testo": "casa romana del I sec. d.C."
+ },
+ {
+  "id": "poi-591-scheda",
+  "testo": "Una domus con l'atrio tuscanico, l'impluvio di marmo al centro e i pavimenti a mosaico bianco e nero: la casa di una famiglia ricca, forse quella di Vespasia Polla, madre di Vespasiano. Sta sotto il palazzo comunale, cinque metri sotto la strada."
+ },
+ {
+  "id": "poi-591-dentro",
+  "testo": "I mosaici geometrici e l'impluvio: si cammina sul piano di casa di duemila anni fa."
+ },
+ {
+  "id": "poi-592-nome",
+  "testo": "Palazzo Comunale"
+ },
+ {
+  "id": "poi-592-intro",
+  "testo": "palazzo del dal XIII sec."
+ },
+ {
+  "id": "poi-592-scheda",
+  "testo": "Il municipio, rifatto alla fine del Settecento, con la torre medievale rimasta. Sotto ci sta la casa romana, e dentro la Pinacoteca."
+ },
+ {
+  "id": "poi-593-nome",
+  "testo": "Anfiteatro romano"
+ },
+ {
+  "id": "poi-593-intro",
+  "testo": "anfiteatro romano del II sec. d.C."
+ },
+ {
+  "id": "poi-593-scheda",
+  "testo": "Uno dei più grandi dell'Umbria, inglobato nelle costruzioni successive: le arcate si riconoscono nei muri dei fabbricati militari e del monastero che ci si sono appoggiati sopra."
+ },
+ {
+  "id": "poi-594-nome",
+  "testo": "Torre dell'Olio"
+ },
+ {
+  "id": "poi-594-intro",
+  "testo": "torre del XIII sec."
+ },
+ {
+  "id": "poi-594-scheda",
+  "testo": "Quarantacinque metri, una delle torri gentilizie rimaste: il nome viene dall'olio bollente che si rovesciava dalle caditoie su chi tentava di forzare la porta sottostante, Porta Fuga."
+ },
+ {
+  "id": "poi-595-nome",
+  "testo": "Teatro Nuovo Gian Carlo Menotti"
+ },
+ {
+  "id": "poi-595-intro",
+  "testo": "teatro del 1864"
+ },
+ {
+  "id": "poi-595-scheda",
+  "testo": "Il teatro all'italiana della città, quattro ordini di palchi; dal 1958 è la sala principale del Festival dei Due Mondi, che Menotti fondò qui."
+ },
+ {
+  "id": "poi-596-nome",
+  "testo": "Stazione Spoleto"
+ },
+ {
+  "id": "poi-596-intro",
+  "testo": "stazione"
+ },
+ {
+  "id": "poi-596-scheda",
+  "testo": "Stazione Spoleto."
+ },
+ {
+  "id": "poi-597-nome",
+  "testo": "Farmacia Premiata farmacia Amici"
+ },
+ {
+  "id": "poi-597-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-597-scheda",
+  "testo": "Farmacia Premiata farmacia Amici."
+ },
+ {
+  "id": "poi-598-nome",
+  "testo": "Banca Intesa Sanpaolo"
+ },
+ {
+  "id": "poi-598-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-598-scheda",
+  "testo": "Banca Intesa Sanpaolo."
+ },
+ {
+  "id": "poi-599-nome",
+  "testo": "Supermercato Conad"
+ },
+ {
+  "id": "poi-599-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-599-scheda",
+  "testo": "Supermercato Conad."
+ },
+ {
+  "id": "poi-600-nome",
+  "testo": "Banca BNL"
+ },
+ {
+  "id": "poi-600-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-600-scheda",
+  "testo": "Banca BNL."
+ },
+ {
+  "id": "poi-601-nome",
+  "testo": "Biblioteca comunale Giosuè Carducci"
+ },
+ {
+  "id": "poi-601-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-601-scheda",
+  "testo": "Biblioteca comunale Giosuè Carducci."
+ },
+ {
+  "id": "poi-602-nome",
+  "testo": "Farmacia Betti dr. Vito"
+ },
+ {
+  "id": "poi-602-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-602-scheda",
+  "testo": "Farmacia Betti dr. Vito."
+ },
+ {
+  "id": "poi-603-nome",
+  "testo": "Teatro delle 6 Luca Ronconi"
+ },
+ {
+  "id": "poi-603-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-603-scheda",
+  "testo": "Teatro delle 6 Luca Ronconi."
+ },
+ {
+  "id": "poi-604-nome",
+  "testo": "Teatro Cantiere Oberdan"
+ },
+ {
+  "id": "poi-604-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-604-scheda",
+  "testo": "Teatro Cantiere Oberdan."
+ },
+ {
+  "id": "poi-605-nome",
+  "testo": "Teatro di Villa Redenta"
+ },
+ {
+  "id": "poi-605-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-605-scheda",
+  "testo": "Teatro di Villa Redenta."
+ },
+ {
+  "id": "poi-606-nome",
+  "testo": "Fermata Piazza Vittoria"
+ },
+ {
+  "id": "poi-606-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-606-scheda",
+  "testo": "Fermata Piazza Vittoria."
+ },
+ {
+  "id": "poi-607-nome",
+  "testo": "Alimentari Gennari"
+ },
+ {
+  "id": "poi-607-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-607-scheda",
+  "testo": "Alimentari Gennari."
+ },
+ {
+  "id": "poi-608-nome",
+  "testo": "Alimentari Halal"
+ },
+ {
+  "id": "poi-608-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-608-scheda",
+  "testo": "Alimentari Halal."
+ },
+ {
+  "id": "poi-609-nome",
+  "testo": "Banca Crédit Agricole"
+ },
+ {
+  "id": "poi-609-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-609-scheda",
+  "testo": "Banca Crédit Agricole."
+ },
+ {
+  "id": "poi-610-nome",
+  "testo": "Banca Unipol"
+ },
+ {
+  "id": "poi-610-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-610-scheda",
+  "testo": "Banca Unipol."
+ },
+ {
+  "id": "poi-611-nome",
+  "testo": "Banca Bper Banca"
+ },
+ {
+  "id": "poi-611-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-611-scheda",
+  "testo": "Banca Bper Banca."
+ },
+ {
+  "id": "poi-612-nome",
+  "testo": "Supermercato Despar"
+ },
+ {
+  "id": "poi-612-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-612-scheda",
+  "testo": "Supermercato Despar."
+ },
+ {
+  "id": "poi-613-nome",
+  "testo": "Supermercato Tigre"
+ },
+ {
+  "id": "poi-613-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-613-scheda",
+  "testo": "Supermercato Tigre."
+ },
+ {
+  "id": "poi-614-nome",
+  "testo": "Supermercato Coop"
+ },
+ {
+  "id": "poi-614-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-614-scheda",
+  "testo": "Supermercato Coop."
+ },
+ {
+  "id": "poi-615-nome",
+  "testo": "Biblioteca Archivio di Stato"
+ },
+ {
+  "id": "poi-615-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-615-scheda",
+  "testo": "Biblioteca Archivio di Stato."
+ },
+ {
+  "id": "poi-616-nome",
+  "testo": "Ufficio postale Spoleto 1"
+ },
+ {
+  "id": "poi-616-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-616-scheda",
+  "testo": "Ufficio postale Spoleto 1."
+ },
+ {
+  "id": "poi-617-nome",
+  "testo": "Farmacia comunale 1"
+ },
+ {
+  "id": "poi-617-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-617-scheda",
+  "testo": "Farmacia comunale 1."
+ },
+ {
+  "id": "poi-618-nome",
+  "testo": "Farmacia Zingarini"
+ },
+ {
+  "id": "poi-618-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-618-scheda",
+  "testo": "Farmacia Zingarini."
+ },
+ {
+  "id": "poi-619-nome",
+  "testo": "Biblioteca Montagne di libri"
+ },
+ {
+  "id": "poi-619-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-619-scheda",
+  "testo": "Biblioteca Montagne di libri."
+ },
+ {
+  "id": "poi-620-nome",
+  "testo": "Alimentari I Frutti di Spoleto"
+ },
+ {
+  "id": "poi-620-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-620-scheda",
+  "testo": "Alimentari I Frutti di Spoleto."
+ },
+ {
+  "id": "poi-621-nome",
+  "testo": "Banca Monte dei Paschi di Siena"
+ },
+ {
+  "id": "poi-621-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-621-scheda",
+  "testo": "Banca Monte dei Paschi di Siena."
+ },
+ {
+  "id": "poi-622-nome",
+  "testo": "Banca di credito cooperativo"
+ },
+ {
+  "id": "poi-622-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-622-scheda",
+  "testo": "Banca di credito cooperativo."
+ },
+ {
+  "id": "poi-623-nome",
+  "testo": "Ufficio postale Mail Express"
+ },
+ {
+  "id": "poi-623-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-623-scheda",
+  "testo": "Ufficio postale Mail Express."
+ },
+ {
+  "id": "poi-624-nome",
+  "testo": "Biblioteca Carandente"
+ },
+ {
+  "id": "poi-624-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-624-scheda",
+  "testo": "Biblioteca Carandente."
+ },
+ {
+  "id": "poi-625-nome",
+  "testo": "Banca Banco Desio"
+ },
+ {
+  "id": "poi-625-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-625-scheda",
+  "testo": "Banca Banco Desio."
+ },
+ {
+  "id": "poi-626-nome",
+  "testo": "Biblioteca Opera biblio"
+ },
+ {
+  "id": "poi-626-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-626-scheda",
+  "testo": "Biblioteca Opera biblio."
+ },
+ {
+  "id": "poi-627-nome",
+  "testo": "Supermercato MD"
+ },
+ {
+  "id": "poi-627-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-627-scheda",
+  "testo": "Supermercato MD."
+ },
+ {
+  "id": "poi-628-nome",
+  "testo": "Teatro Caio Melisso"
+ },
+ {
+  "id": "poi-628-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-628-scheda",
+  "testo": "Teatro Caio Melisso."
+ },
+ {
+  "id": "poi-629-nome",
+  "testo": "Alimentari Salumeria"
+ },
+ {
+  "id": "poi-629-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-629-scheda",
+  "testo": "Alimentari Salumeria."
+ },
+ {
+  "id": "poi-630-nome",
+  "testo": "Farmacia Marchese"
+ },
+ {
+  "id": "poi-630-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-630-scheda",
+  "testo": "Farmacia Marchese."
+ },
+ {
+  "id": "poi-631-nome",
+  "testo": "Macelleria Burganti"
+ },
+ {
+  "id": "poi-631-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-631-scheda",
+  "testo": "Macelleria Burganti."
+ },
+ {
+  "id": "poi-632-nome",
+  "testo": "Teatro Auditorium della Stella"
+ },
+ {
+  "id": "poi-632-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-632-scheda",
+  "testo": "Teatro Auditorium della Stella."
+ },
+ {
+  "id": "poi-633-nome",
+  "testo": "Alimentari Ali Market"
+ },
+ {
+  "id": "poi-633-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-633-scheda",
+  "testo": "Alimentari Ali Market."
+ },
+ {
+  "id": "poi-634-nome",
+  "testo": "Teatro Chiesa di san Simone"
+ },
+ {
+  "id": "poi-634-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-634-scheda",
+  "testo": "Teatro Chiesa di san Simone."
+ },
+ {
+  "id": "poi-635-nome",
+  "testo": "Farmacia Scoccianti"
+ },
+ {
+  "id": "poi-635-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-635-scheda",
+  "testo": "Farmacia Scoccianti."
+ },
+ {
+  "id": "poi-636-nome",
+  "testo": "Chiesa di San Pietro extra moenia"
+ },
+ {
+  "id": "poi-636-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-636-scheda",
+  "testo": "Chiesa di San Pietro extra moenia, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-637-nome",
+  "testo": "Chiesa di San Domenico"
+ },
+ {
+  "id": "poi-637-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-637-scheda",
+  "testo": "Chiesa di San Domenico, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-638-nome",
+  "testo": "Basilica di San Gregorio Maggiore"
+ },
+ {
+  "id": "poi-638-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-638-scheda",
+  "testo": "Basilica di San Gregorio Maggiore, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-639-nome",
+  "testo": "Chiesa di San Filippo Neri"
+ },
+ {
+  "id": "poi-639-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-639-scheda",
+  "testo": "Chiesa di San Filippo Neri, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-640-nome",
+  "testo": "Chiesa Madonna di Loreto"
+ },
+ {
+  "id": "poi-640-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-640-scheda",
+  "testo": "Chiesa Madonna di Loreto, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-641-nome",
+  "testo": "San Paolo \"inter vineas\""
+ },
+ {
+  "id": "poi-641-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-641-scheda",
+  "testo": "San Paolo \"inter vineas\", nel centro di Spoleto."
+ },
+ {
+  "id": "poi-642-nome",
+  "testo": "San Giuliano"
+ },
+ {
+  "id": "poi-642-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-642-scheda",
+  "testo": "San Giuliano, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-643-nome",
+  "testo": "Chiesa di Santa Rita"
+ },
+ {
+  "id": "poi-643-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-643-scheda",
+  "testo": "Chiesa di Santa Rita, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-644-nome",
+  "testo": "San Giuseppe"
+ },
+ {
+  "id": "poi-644-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-644-scheda",
+  "testo": "San Giuseppe, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-645-nome",
+  "testo": "Santa Maria delle Grazie"
+ },
+ {
+  "id": "poi-645-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-645-scheda",
+  "testo": "Santa Maria delle Grazie, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-646-nome",
+  "testo": "San Rocco"
+ },
+ {
+  "id": "poi-646-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-646-scheda",
+  "testo": "San Rocco, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-647-nome",
+  "testo": "San Giovanni Battista"
+ },
+ {
+  "id": "poi-647-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-647-scheda",
+  "testo": "San Giovanni Battista, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-648-nome",
+  "testo": "Chiesa di Sant'Aló"
+ },
+ {
+  "id": "poi-648-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-648-scheda",
+  "testo": "Chiesa di Sant'Aló, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-649-nome",
+  "testo": "Chiesa della Beata vergine Maria immacolata di Lourdes"
+ },
+ {
+  "id": "poi-649-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-649-scheda",
+  "testo": "Chiesa della Beata vergine Maria immacolata di Lourdes, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-650-nome",
+  "testo": "Chiesa Cappella di S. Caterina"
+ },
+ {
+  "id": "poi-650-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-650-scheda",
+  "testo": "Chiesa Cappella di S. Caterina, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-651-nome",
+  "testo": "Sant'Omobono"
+ },
+ {
+  "id": "poi-651-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-651-scheda",
+  "testo": "Sant'Omobono, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-652-nome",
+  "testo": "Chiesa di Santa Maria delle Grazie"
+ },
+ {
+  "id": "poi-652-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-652-scheda",
+  "testo": "Chiesa di Santa Maria delle Grazie, nel centro di Spoleto."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -7722,6 +8586,10 @@
  {
   "id": "percorso-parma-centro",
   "testo": "Parma — il centro: Duomo, Battistero, Steccata, Pilotta"
+ },
+ {
+  "id": "percorso-spoleto-centro",
+  "testo": "Spoleto — dalla città romana alla Rocca"
  },
  {
   "id": "dir-dritto-davanti",
