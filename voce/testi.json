@@ -5264,6 +5264,2358 @@
   "testo": "Una via interamente coperta, lunga appena cinque metri, che collega via delle Vergini con via Silvano: un passaggio sotto le case, di quelli che nei centri antichi si aprivano quando una famiglia costruiva sopra la strada."
  },
  {
+  "id": "poi-390-nome",
+  "testo": "Battistero di Parma"
+ },
+ {
+  "id": "poi-390-intro",
+  "testo": "battistero del 1196-1270"
+ },
+ {
+  "id": "poi-390-scheda",
+  "testo": "Un ottagono di marmo rosa di Verona alto trentasei metri, chiuso e compatto fuori, con quattro ordini di logge sovrapposte che alleggeriscono il muro. Benedetto Antelami lo cominciò nel 1196: è il punto esatto in cui il romanico passa al gotico, e si vede nel passaggio dagli archi tondi in basso a quelli acuti in alto."
+ },
+ {
+  "id": "poi-390-dentro",
+  "testo": "I portali scolpiti dall'Antelami e, dentro, i sedici spicchi della cupola dipinti come un cielo: il ciclo dei mesi e delle stagioni."
+ },
+ {
+  "id": "poi-391-nome",
+  "testo": "Cattedrale di Santa Maria Assunta"
+ },
+ {
+  "id": "poi-391-intro",
+  "testo": "cattedrale del 1059-1074"
+ },
+ {
+  "id": "poi-391-scheda",
+  "testo": "Romanica, in arenaria, con la facciata a capanna percorsa da tre ordini di logge e il protiro su leoni stilofori. Il campanile gotico, più tardo, non ha mai avuto il gemello previsto dall'altro lato."
+ },
+ {
+  "id": "poi-391-dentro",
+  "testo": "La cupola affrescata dal Correggio con l'Assunzione: una spirale di corpi che sale verso la luce, dipinta nel 1526. E la Deposizione dell'Antelami, nel transetto."
+ },
+ {
+  "id": "poi-392-nome",
+  "testo": "Chiesa di San Giovanni Evangelista"
+ },
+ {
+  "id": "poi-392-intro",
+  "testo": "chiesa e monastero del 1498-1510"
+ },
+ {
+  "id": "poi-392-scheda",
+  "testo": "Dietro il Duomo, la chiesa benedettina con la facciata barocca aggiunta dopo. Dentro c'è l'altra cupola del Correggio, la Visione di san Giovanni a Patmos, e nei catini del coro le prove giovanili del Parmigianino."
+ },
+ {
+  "id": "poi-392-dentro",
+  "testo": "La spezieria del convento, l'Antica Spezieria di San Giovanni: scaffali, mortai e vasi rimasti come erano, una farmacia del Cinquecento intatta."
+ },
+ {
+  "id": "poi-393-nome",
+  "testo": "Basilica di Santa Maria della Steccata"
+ },
+ {
+  "id": "poi-393-intro",
+  "testo": "basilica del 1521-1539"
+ },
+ {
+  "id": "poi-393-scheda",
+  "testo": "Pianta a croce greca con quattro absidi e la cupola al centro: è l'edificio rinascimentale più puro di Parma, costruito sul modello bramantesco. Sotto, la cripta dei duchi Farnese e Borbone."
+ },
+ {
+  "id": "poi-393-dentro",
+  "testo": "Gli affreschi del Parmigianino sull'arco presbiteriale, con le Vergini sagge e stolte: lavorò così lentamente che finì in tribunale."
+ },
+ {
+  "id": "poi-394-nome",
+  "testo": "Camera di San Paolo"
+ },
+ {
+  "id": "poi-394-intro",
+  "testo": "camera dipinta del 1519"
+ },
+ {
+  "id": "poi-394-scheda",
+  "testo": "La stanza della badessa Giovanna da Piacenza, dipinta dal Correggio: la volta a ombrello diventa un pergolato di canne, con sedici ovali che si aprono sul cielo e putti che giocano fra i rami. L'architettura sparisce sotto la pittura."
+ },
+ {
+  "id": "poi-394-dentro",
+  "testo": "Il camino con Diana cacciatrice e il modo in cui le vele dipinte annullano la volta reale."
+ },
+ {
+  "id": "poi-395-nome",
+  "testo": "Complesso della Pilotta"
+ },
+ {
+  "id": "poi-395-intro",
+  "testo": "palazzo del dal 1583"
+ },
+ {
+  "id": "poi-395-scheda",
+  "testo": "Un enorme blocco di mattoni rimasto incompiuto, costruito dai Farnese attorno a cortili aperti: doveva essere la reggia, è rimasto un contenitore. Oggi tiene insieme Galleria Nazionale, Biblioteca Palatina, Museo Archeologico e il Teatro Farnese."
+ },
+ {
+  "id": "poi-395-dentro",
+  "testo": "La mole grezza senza rivestimento: si legge la costruzione, mattone su mattone."
+ },
+ {
+  "id": "poi-396-nome",
+  "testo": "Teatro Farnese"
+ },
+ {
+  "id": "poi-396-intro",
+  "testo": "teatro del 1618"
+ },
+ {
+  "id": "poi-396-scheda",
+  "testo": "Costruito tutto in legno dentro una sala d'armi: gradinate a ferro di cavallo, una scena profondissima e la prima torre scenica con macchine per i cambi a vista. Bombardato nel 1944 e rifatto con i pezzi recuperati, resta a legno nudo, senza dipinture: così si vede come era fatto."
+ },
+ {
+  "id": "poi-396-dentro",
+  "testo": "La struttura portante e il boccascena: è il nonno di tutti i teatri all'italiana."
+ },
+ {
+  "id": "poi-397-nome",
+  "testo": "Teatro Regio"
+ },
+ {
+  "id": "poi-397-intro",
+  "testo": "teatro d'opera del 1821-1829"
+ },
+ {
+  "id": "poi-397-scheda",
+  "testo": "Facciata neoclassica a dieci lesene e portico a cinque arcate, voluta da Maria Luigia. Dentro, quattro ordini di palchi e il loggione più temuto d'Italia."
+ },
+ {
+  "id": "poi-398-nome",
+  "testo": "Galleria Nazionale"
+ },
+ {
+  "id": "poi-398-intro",
+  "testo": "museo del nella Pilotta"
+ },
+ {
+  "id": "poi-398-scheda",
+  "testo": "Dentro la Pilotta: la raccolta dei Farnese e dei Borbone, da Correggio e Parmigianino ai fiamminghi, allestita fra le strutture di mattoni lasciate a vista."
+ },
+ {
+  "id": "poi-399-nome",
+  "testo": "Museo Archeologico Nazionale"
+ },
+ {
+  "id": "poi-399-intro",
+  "testo": "museo del 1760"
+ },
+ {
+  "id": "poi-399-scheda",
+  "testo": "Nato per accogliere i materiali di Veleia, la città romana scavata sui monti piacentini: nacque come museo dei Borbone di Parma."
+ },
+ {
+  "id": "poi-399-dentro",
+  "testo": "La Tabula Alimentaria di Traiano, la più grande iscrizione bronzea romana conosciuta."
+ },
+ {
+  "id": "poi-400-nome",
+  "testo": "Antica Spezieria di San Giovanni"
+ },
+ {
+  "id": "poi-400-intro",
+  "testo": "spezieria del dal XIII sec."
+ },
+ {
+  "id": "poi-400-scheda",
+  "testo": "La farmacia dei benedettini, aperta al pubblico fino all'Ottocento: quattro sale con gli scaffali di noce, i vasi di maiolica e i mortai ancora al loro posto."
+ },
+ {
+  "id": "poi-401-nome",
+  "testo": "Palazzo del Governatore"
+ },
+ {
+  "id": "poi-401-intro",
+  "testo": "palazzo del facciata del 1760"
+ },
+ {
+  "id": "poi-401-scheda",
+  "testo": "Sulla piazza Garibaldi: la torre con l'orologio e la meridiana, e il fronte neoclassico rifatto dal Petitot, che unificò edifici diversi dietro una sola facciata."
+ },
+ {
+  "id": "poi-402-nome",
+  "testo": "Parco Ducale"
+ },
+ {
+  "id": "poi-402-intro",
+  "testo": "parco del 1561"
+ },
+ {
+  "id": "poi-402-scheda",
+  "testo": "Il giardino del palazzo ducale, disegnato all'italiana e poi rifatto alla francese dal Petitot: viali che convergono, il laghetto e il Palazzetto Eucherio Sanvitale."
+ },
+ {
+  "id": "poi-403-nome",
+  "testo": "Ponte romano"
+ },
+ {
+  "id": "poi-403-intro",
+  "testo": "resti romani del II sec. a.C."
+ },
+ {
+  "id": "poi-403-scheda",
+  "testo": "Sotto il livello della strada, in una cripta visitabile, ci sono le arcate del ponte romano sulla via Emilia: il torrente Parma allora passava di lì, e poi si è spostato."
+ },
+ {
+  "id": "poi-404-nome",
+  "testo": "Cittadella"
+ },
+ {
+  "id": "poi-404-intro",
+  "testo": "fortezza del 1591-1596"
+ },
+ {
+  "id": "poi-404-scheda",
+  "testo": "Una fortezza a stella con cinque bastioni, costruita dai Farnese e mai usata per combattere: oggi è il parco dove i parmigiani corrono. Resta il portale monumentale d'ingresso."
+ },
+ {
+  "id": "poi-405-nome",
+  "testo": "Casa della Musica"
+ },
+ {
+  "id": "poi-405-intro",
+  "testo": "museo del palazzo Cusani"
+ },
+ {
+  "id": "poi-405-scheda",
+  "testo": "Dentro un palazzo cinquecentesco, il museo dell'opera e l'archivio del Teatro Regio: Parma è città di Verdi e di Toscanini, e qui se ne tiene la memoria."
+ },
+ {
+  "id": "poi-406-nome",
+  "testo": "Castello dei Burattini"
+ },
+ {
+  "id": "poi-406-intro",
+  "testo": "museo"
+ },
+ {
+  "id": "poi-406-scheda",
+  "testo": "La collezione di Giordano Ferrari: burattini, marionette, fondali e copioni di una tradizione che a Parma è mestiere serio."
+ },
+ {
+  "id": "poi-407-nome",
+  "testo": "Chiesa di San Francesco del Prato"
+ },
+ {
+  "id": "poi-407-intro",
+  "testo": "chiesa del XIII-XIV sec."
+ },
+ {
+  "id": "poi-407-scheda",
+  "testo": "Gotica, a tre navate, con il grande rosone in facciata. Per due secoli fu carcere: le celle erano state costruite dentro le navate, e solo il restauro recente le ha tolte restituendo lo spazio."
+ },
+ {
+  "id": "poi-407-dentro",
+  "testo": "Il rosone e, nelle murature, i segni delle strutture carcerarie rimosse."
+ },
+ {
+  "id": "poi-408-nome",
+  "testo": "Farmacia Mentana"
+ },
+ {
+  "id": "poi-408-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-408-scheda",
+  "testo": "Farmacia Mentana."
+ },
+ {
+  "id": "poi-409-nome",
+  "testo": "Farmacia Nazionale"
+ },
+ {
+  "id": "poi-409-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-409-scheda",
+  "testo": "Farmacia Nazionale."
+ },
+ {
+  "id": "poi-410-nome",
+  "testo": "Supermercato PENNY"
+ },
+ {
+  "id": "poi-410-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-410-scheda",
+  "testo": "Supermercato PENNY."
+ },
+ {
+  "id": "poi-411-nome",
+  "testo": "Farmacia Santa Fara"
+ },
+ {
+  "id": "poi-411-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-411-scheda",
+  "testo": "Farmacia Santa Fara."
+ },
+ {
+  "id": "poi-412-nome",
+  "testo": "Supermercato In's Mercato"
+ },
+ {
+  "id": "poi-412-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-412-scheda",
+  "testo": "Supermercato In's Mercato."
+ },
+ {
+  "id": "poi-413-nome",
+  "testo": "Fermata via Toscana"
+ },
+ {
+  "id": "poi-413-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-413-scheda",
+  "testo": "Fermata via Toscana."
+ },
+ {
+  "id": "poi-414-nome",
+  "testo": "Fermata Barriera Saffi piazzale Allende"
+ },
+ {
+  "id": "poi-414-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-414-scheda",
+  "testo": "Fermata Barriera Saffi piazzale Allende."
+ },
+ {
+  "id": "poi-415-nome",
+  "testo": "Fermata Viale Mentana Barriera Garibaldi"
+ },
+ {
+  "id": "poi-415-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-415-scheda",
+  "testo": "Fermata Viale Mentana Barriera Garibaldi."
+ },
+ {
+  "id": "poi-416-nome",
+  "testo": "Supermercato Unes"
+ },
+ {
+  "id": "poi-416-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-416-scheda",
+  "testo": "Supermercato Unes."
+ },
+ {
+  "id": "poi-417-nome",
+  "testo": "Fermata Viale San Michele"
+ },
+ {
+  "id": "poi-417-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-417-scheda",
+  "testo": "Fermata Viale San Michele."
+ },
+ {
+  "id": "poi-418-nome",
+  "testo": "Fermata via Trento - Madonnina"
+ },
+ {
+  "id": "poi-418-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-418-scheda",
+  "testo": "Fermata via Trento - Madonnina."
+ },
+ {
+  "id": "poi-419-nome",
+  "testo": "Farmacia San Martino"
+ },
+ {
+  "id": "poi-419-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-419-scheda",
+  "testo": "Farmacia San Martino."
+ },
+ {
+  "id": "poi-420-nome",
+  "testo": "Supermercato Dìmeglio"
+ },
+ {
+  "id": "poi-420-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-420-scheda",
+  "testo": "Supermercato Dìmeglio."
+ },
+ {
+  "id": "poi-421-nome",
+  "testo": "Banca Credem"
+ },
+ {
+  "id": "poi-421-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-421-scheda",
+  "testo": "Banca Credem."
+ },
+ {
+  "id": "poi-422-nome",
+  "testo": "Fermata via Trento - Stazione"
+ },
+ {
+  "id": "poi-422-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-422-scheda",
+  "testo": "Fermata via Trento - Stazione."
+ },
+ {
+  "id": "poi-423-nome",
+  "testo": "Alimentari Antichi Sapori Campani"
+ },
+ {
+  "id": "poi-423-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-423-scheda",
+  "testo": "Alimentari Antichi Sapori Campani."
+ },
+ {
+  "id": "poi-424-nome",
+  "testo": "Farmacia Bottego"
+ },
+ {
+  "id": "poi-424-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-424-scheda",
+  "testo": "Farmacia Bottego."
+ },
+ {
+  "id": "poi-425-nome",
+  "testo": "Fermata viale Toschi via Bettoli"
+ },
+ {
+  "id": "poi-425-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-425-scheda",
+  "testo": "Fermata viale Toschi via Bettoli."
+ },
+ {
+  "id": "poi-426-nome",
+  "testo": "Panificio Castagnoli"
+ },
+ {
+  "id": "poi-426-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-426-scheda",
+  "testo": "Panificio Castagnoli."
+ },
+ {
+  "id": "poi-427-nome",
+  "testo": "Panificio Forno Trieste"
+ },
+ {
+  "id": "poi-427-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-427-scheda",
+  "testo": "Panificio Forno Trieste."
+ },
+ {
+  "id": "poi-428-nome",
+  "testo": "Fermata Via Piacenza Efsa"
+ },
+ {
+  "id": "poi-428-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-428-scheda",
+  "testo": "Fermata Via Piacenza Efsa."
+ },
+ {
+  "id": "poi-429-nome",
+  "testo": "Banca BPER Banca"
+ },
+ {
+  "id": "poi-429-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-429-scheda",
+  "testo": "Banca BPER Banca."
+ },
+ {
+  "id": "poi-430-nome",
+  "testo": "Fermata via Trento \"Borsari\""
+ },
+ {
+  "id": "poi-430-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-430-scheda",
+  "testo": "Fermata via Trento \"Borsari\"."
+ },
+ {
+  "id": "poi-431-nome",
+  "testo": "Banca Cassa Padana"
+ },
+ {
+  "id": "poi-431-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-431-scheda",
+  "testo": "Banca Cassa Padana."
+ },
+ {
+  "id": "poi-432-nome",
+  "testo": "Fermata Strada Garibaldi"
+ },
+ {
+  "id": "poi-432-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-432-scheda",
+  "testo": "Fermata Strada Garibaldi."
+ },
+ {
+  "id": "poi-433-nome",
+  "testo": "Fermata Municipio"
+ },
+ {
+  "id": "poi-433-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-433-scheda",
+  "testo": "Fermata Municipio."
+ },
+ {
+  "id": "poi-434-nome",
+  "testo": "Fermata Prefettura"
+ },
+ {
+  "id": "poi-434-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-434-scheda",
+  "testo": "Fermata Prefettura."
+ },
+ {
+  "id": "poi-435-nome",
+  "testo": "Fermata Stazione FS"
+ },
+ {
+  "id": "poi-435-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-435-scheda",
+  "testo": "Fermata Stazione FS."
+ },
+ {
+  "id": "poi-436-nome",
+  "testo": "Fermata Oratorio dei Rossi"
+ },
+ {
+  "id": "poi-436-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-436-scheda",
+  "testo": "Fermata Oratorio dei Rossi."
+ },
+ {
+  "id": "poi-437-nome",
+  "testo": "Fermata Strada Mazzini"
+ },
+ {
+  "id": "poi-437-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-437-scheda",
+  "testo": "Fermata Strada Mazzini."
+ },
+ {
+  "id": "poi-438-nome",
+  "testo": "Fermata Piazza Corridoni"
+ },
+ {
+  "id": "poi-438-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-438-scheda",
+  "testo": "Fermata Piazza Corridoni."
+ },
+ {
+  "id": "poi-439-nome",
+  "testo": "Fermata Via Bixio"
+ },
+ {
+  "id": "poi-439-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-439-scheda",
+  "testo": "Fermata Via Bixio."
+ },
+ {
+  "id": "poi-440-nome",
+  "testo": "Supermercato Conad City"
+ },
+ {
+  "id": "poi-440-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-440-scheda",
+  "testo": "Supermercato Conad City."
+ },
+ {
+  "id": "poi-441-nome",
+  "testo": "Farmacia Guareschi"
+ },
+ {
+  "id": "poi-441-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-441-scheda",
+  "testo": "Farmacia Guareschi."
+ },
+ {
+  "id": "poi-442-nome",
+  "testo": "Banca Credit Agricole"
+ },
+ {
+  "id": "poi-442-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-442-scheda",
+  "testo": "Banca Credit Agricole."
+ },
+ {
+  "id": "poi-443-nome",
+  "testo": "Banca Crédit Agricole"
+ },
+ {
+  "id": "poi-443-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-443-scheda",
+  "testo": "Banca Crédit Agricole."
+ },
+ {
+  "id": "poi-444-nome",
+  "testo": "Panificio Panetteria dei Borghi"
+ },
+ {
+  "id": "poi-444-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-444-scheda",
+  "testo": "Panificio Panetteria dei Borghi."
+ },
+ {
+  "id": "poi-445-nome",
+  "testo": "Macelleria Carne Equina"
+ },
+ {
+  "id": "poi-445-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-445-scheda",
+  "testo": "Macelleria Carne Equina."
+ },
+ {
+  "id": "poi-446-nome",
+  "testo": "Panificio Profumo di Pane"
+ },
+ {
+  "id": "poi-446-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-446-scheda",
+  "testo": "Panificio Profumo di Pane."
+ },
+ {
+  "id": "poi-447-nome",
+  "testo": "Banca BCC Credito Padano"
+ },
+ {
+  "id": "poi-447-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-447-scheda",
+  "testo": "Banca BCC Credito Padano."
+ },
+ {
+  "id": "poi-448-nome",
+  "testo": "Macelleria Spaggiari Arnaldo"
+ },
+ {
+  "id": "poi-448-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-448-scheda",
+  "testo": "Macelleria Spaggiari Arnaldo."
+ },
+ {
+  "id": "poi-449-nome",
+  "testo": "Banca Cariparma"
+ },
+ {
+  "id": "poi-449-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-449-scheda",
+  "testo": "Banca Cariparma."
+ },
+ {
+  "id": "poi-450-nome",
+  "testo": "Panificio Giacomazzi"
+ },
+ {
+  "id": "poi-450-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-450-scheda",
+  "testo": "Panificio Giacomazzi."
+ },
+ {
+  "id": "poi-451-nome",
+  "testo": "Alimentari La Drogheria"
+ },
+ {
+  "id": "poi-451-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-451-scheda",
+  "testo": "Alimentari La Drogheria."
+ },
+ {
+  "id": "poi-452-nome",
+  "testo": "Farmacia Allegri"
+ },
+ {
+  "id": "poi-452-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-452-scheda",
+  "testo": "Farmacia Allegri."
+ },
+ {
+  "id": "poi-453-nome",
+  "testo": "Alimentari da Chicca"
+ },
+ {
+  "id": "poi-453-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-453-scheda",
+  "testo": "Alimentari da Chicca."
+ },
+ {
+  "id": "poi-454-nome",
+  "testo": "Banca Popolare di Lodi"
+ },
+ {
+  "id": "poi-454-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-454-scheda",
+  "testo": "Banca Popolare di Lodi."
+ },
+ {
+  "id": "poi-455-nome",
+  "testo": "Alimentari MS minimarket"
+ },
+ {
+  "id": "poi-455-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-455-scheda",
+  "testo": "Alimentari MS minimarket."
+ },
+ {
+  "id": "poi-456-nome",
+  "testo": "Panificio Dolce Salato"
+ },
+ {
+  "id": "poi-456-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-456-scheda",
+  "testo": "Panificio Dolce Salato."
+ },
+ {
+  "id": "poi-457-nome",
+  "testo": "Panificio Barilla"
+ },
+ {
+  "id": "poi-457-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-457-scheda",
+  "testo": "Panificio Barilla."
+ },
+ {
+  "id": "poi-458-nome",
+  "testo": "Alimentari Panetteria del Correggio"
+ },
+ {
+  "id": "poi-458-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-458-scheda",
+  "testo": "Alimentari Panetteria del Correggio."
+ },
+ {
+  "id": "poi-459-nome",
+  "testo": "Panificio Vicomero"
+ },
+ {
+  "id": "poi-459-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-459-scheda",
+  "testo": "Panificio Vicomero."
+ },
+ {
+  "id": "poi-460-nome",
+  "testo": "Farmacia Equì"
+ },
+ {
+  "id": "poi-460-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-460-scheda",
+  "testo": "Farmacia Equì."
+ },
+ {
+  "id": "poi-461-nome",
+  "testo": "Banca Banco BPM"
+ },
+ {
+  "id": "poi-461-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-461-scheda",
+  "testo": "Banca Banco BPM."
+ },
+ {
+  "id": "poi-462-nome",
+  "testo": "Macelleria Cattelani"
+ },
+ {
+  "id": "poi-462-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-462-scheda",
+  "testo": "Macelleria Cattelani."
+ },
+ {
+  "id": "poi-463-nome",
+  "testo": "Supermercato Conad"
+ },
+ {
+  "id": "poi-463-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-463-scheda",
+  "testo": "Supermercato Conad."
+ },
+ {
+  "id": "poi-464-nome",
+  "testo": "Macelleria Olga Macelleria equina"
+ },
+ {
+  "id": "poi-464-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-464-scheda",
+  "testo": "Macelleria Olga Macelleria equina."
+ },
+ {
+  "id": "poi-465-nome",
+  "testo": "Macelleria equina Parizzi"
+ },
+ {
+  "id": "poi-465-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-465-scheda",
+  "testo": "Macelleria equina Parizzi."
+ },
+ {
+  "id": "poi-466-nome",
+  "testo": "Alimentari Crai Supermercato"
+ },
+ {
+  "id": "poi-466-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-466-scheda",
+  "testo": "Alimentari Crai Supermercato."
+ },
+ {
+  "id": "poi-467-nome",
+  "testo": "Panificio Viconero"
+ },
+ {
+  "id": "poi-467-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-467-scheda",
+  "testo": "Panificio Viconero."
+ },
+ {
+  "id": "poi-468-nome",
+  "testo": "Alimentari BM Gastronomia"
+ },
+ {
+  "id": "poi-468-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-468-scheda",
+  "testo": "Alimentari BM Gastronomia."
+ },
+ {
+  "id": "poi-469-nome",
+  "testo": "Alimentari Amici Market"
+ },
+ {
+  "id": "poi-469-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-469-scheda",
+  "testo": "Alimentari Amici Market."
+ },
+ {
+  "id": "poi-470-nome",
+  "testo": "Panificio Il pane più"
+ },
+ {
+  "id": "poi-470-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-470-scheda",
+  "testo": "Panificio Il pane più."
+ },
+ {
+  "id": "poi-471-nome",
+  "testo": "Panificio Panetteria dei borghi"
+ },
+ {
+  "id": "poi-471-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-471-scheda",
+  "testo": "Panificio Panetteria dei borghi."
+ },
+ {
+  "id": "poi-472-nome",
+  "testo": "Alimentari Submarinos"
+ },
+ {
+  "id": "poi-472-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-472-scheda",
+  "testo": "Alimentari Submarinos."
+ },
+ {
+  "id": "poi-473-nome",
+  "testo": "Alimentari Da Rihari"
+ },
+ {
+  "id": "poi-473-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-473-scheda",
+  "testo": "Alimentari Da Rihari."
+ },
+ {
+  "id": "poi-474-nome",
+  "testo": "Banca Monte dei Paschi di Siena"
+ },
+ {
+  "id": "poi-474-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-474-scheda",
+  "testo": "Banca Monte dei Paschi di Siena."
+ },
+ {
+  "id": "poi-475-nome",
+  "testo": "Macelleria Max Carni"
+ },
+ {
+  "id": "poi-475-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-475-scheda",
+  "testo": "Macelleria Max Carni."
+ },
+ {
+  "id": "poi-476-nome",
+  "testo": "Panificio Pane di Corniglio"
+ },
+ {
+  "id": "poi-476-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-476-scheda",
+  "testo": "Panificio Pane di Corniglio."
+ },
+ {
+  "id": "poi-477-nome",
+  "testo": "Panificio Castagnoli"
+ },
+ {
+  "id": "poi-477-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-477-scheda",
+  "testo": "Panificio Castagnoli."
+ },
+ {
+  "id": "poi-478-nome",
+  "testo": "Farmacia Pirani"
+ },
+ {
+  "id": "poi-478-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-478-scheda",
+  "testo": "Farmacia Pirani."
+ },
+ {
+  "id": "poi-479-nome",
+  "testo": "Alimentari Carrefour Express"
+ },
+ {
+  "id": "poi-479-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-479-scheda",
+  "testo": "Alimentari Carrefour Express."
+ },
+ {
+  "id": "poi-480-nome",
+  "testo": "Panificio Panetteria moderna"
+ },
+ {
+  "id": "poi-480-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-480-scheda",
+  "testo": "Panificio Panetteria moderna."
+ },
+ {
+  "id": "poi-481-nome",
+  "testo": "Banca Pitagora finanziamenti"
+ },
+ {
+  "id": "poi-481-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-481-scheda",
+  "testo": "Banca Pitagora finanziamenti."
+ },
+ {
+  "id": "poi-482-nome",
+  "testo": "Alimentari Mucci Giovanni Drogheria"
+ },
+ {
+  "id": "poi-482-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-482-scheda",
+  "testo": "Alimentari Mucci Giovanni Drogheria."
+ },
+ {
+  "id": "poi-483-nome",
+  "testo": "Macelleria La cantina della carne"
+ },
+ {
+  "id": "poi-483-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-483-scheda",
+  "testo": "Macelleria La cantina della carne."
+ },
+ {
+  "id": "poi-484-nome",
+  "testo": "Supermercato Carrefour Express"
+ },
+ {
+  "id": "poi-484-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-484-scheda",
+  "testo": "Supermercato Carrefour Express."
+ },
+ {
+  "id": "poi-485-nome",
+  "testo": "Macelleria Entrecote"
+ },
+ {
+  "id": "poi-485-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-485-scheda",
+  "testo": "Macelleria Entrecote."
+ },
+ {
+  "id": "poi-486-nome",
+  "testo": "Ufficio postale Sailpost - Ag. Parma 2"
+ },
+ {
+  "id": "poi-486-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-486-scheda",
+  "testo": "Ufficio postale Sailpost - Ag. Parma 2."
+ },
+ {
+  "id": "poi-487-nome",
+  "testo": "Ufficio postale Poste"
+ },
+ {
+  "id": "poi-487-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-487-scheda",
+  "testo": "Ufficio postale Poste."
+ },
+ {
+  "id": "poi-488-nome",
+  "testo": "Panificio Panetteria Anna"
+ },
+ {
+  "id": "poi-488-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-488-scheda",
+  "testo": "Panificio Panetteria Anna."
+ },
+ {
+  "id": "poi-489-nome",
+  "testo": "Banca Cassa di Risparmio di Parma e Piacenza"
+ },
+ {
+  "id": "poi-489-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-489-scheda",
+  "testo": "Banca Cassa di Risparmio di Parma e Piacenza."
+ },
+ {
+  "id": "poi-490-nome",
+  "testo": "Banca Mediolanum"
+ },
+ {
+  "id": "poi-490-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-490-scheda",
+  "testo": "Banca Mediolanum."
+ },
+ {
+  "id": "poi-491-nome",
+  "testo": "Panificio Coce"
+ },
+ {
+  "id": "poi-491-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-491-scheda",
+  "testo": "Panificio Coce."
+ },
+ {
+  "id": "poi-492-nome",
+  "testo": "Farmacia XXII luglio"
+ },
+ {
+  "id": "poi-492-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-492-scheda",
+  "testo": "Farmacia XXII luglio."
+ },
+ {
+  "id": "poi-493-nome",
+  "testo": "Macelleria Bancarella della carne"
+ },
+ {
+  "id": "poi-493-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-493-scheda",
+  "testo": "Macelleria Bancarella della carne."
+ },
+ {
+  "id": "poi-494-nome",
+  "testo": "Panificio Panetteria Polizzotto"
+ },
+ {
+  "id": "poi-494-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-494-scheda",
+  "testo": "Panificio Panetteria Polizzotto."
+ },
+ {
+  "id": "poi-495-nome",
+  "testo": "Alimentari Asia & Africa"
+ },
+ {
+  "id": "poi-495-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-495-scheda",
+  "testo": "Alimentari Asia & Africa."
+ },
+ {
+  "id": "poi-496-nome",
+  "testo": "Farmacia Baganza"
+ },
+ {
+  "id": "poi-496-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-496-scheda",
+  "testo": "Farmacia Baganza."
+ },
+ {
+  "id": "poi-497-nome",
+  "testo": "Banca Findomestic"
+ },
+ {
+  "id": "poi-497-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-497-scheda",
+  "testo": "Banca Findomestic."
+ },
+ {
+  "id": "poi-498-nome",
+  "testo": "Farmacia Corradini"
+ },
+ {
+  "id": "poi-498-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-498-scheda",
+  "testo": "Farmacia Corradini."
+ },
+ {
+  "id": "poi-499-nome",
+  "testo": "Banca Intesa Sanpaolo"
+ },
+ {
+  "id": "poi-499-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-499-scheda",
+  "testo": "Banca Intesa Sanpaolo."
+ },
+ {
+  "id": "poi-500-nome",
+  "testo": "Banca Reale"
+ },
+ {
+  "id": "poi-500-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-500-scheda",
+  "testo": "Banca Reale."
+ },
+ {
+  "id": "poi-501-nome",
+  "testo": "Alimentari Mini Mix"
+ },
+ {
+  "id": "poi-501-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-501-scheda",
+  "testo": "Alimentari Mini Mix."
+ },
+ {
+  "id": "poi-502-nome",
+  "testo": "Macelleria da Meryem"
+ },
+ {
+  "id": "poi-502-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-502-scheda",
+  "testo": "Macelleria da Meryem."
+ },
+ {
+  "id": "poi-503-nome",
+  "testo": "Farmacia Gibertini"
+ },
+ {
+  "id": "poi-503-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-503-scheda",
+  "testo": "Farmacia Gibertini."
+ },
+ {
+  "id": "poi-504-nome",
+  "testo": "Banca UniCredit Bank"
+ },
+ {
+  "id": "poi-504-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-504-scheda",
+  "testo": "Banca UniCredit Bank."
+ },
+ {
+  "id": "poi-505-nome",
+  "testo": "Alimentari Hello food store"
+ },
+ {
+  "id": "poi-505-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-505-scheda",
+  "testo": "Alimentari Hello food store."
+ },
+ {
+  "id": "poi-506-nome",
+  "testo": "Ufficio postale Poste italiane"
+ },
+ {
+  "id": "poi-506-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-506-scheda",
+  "testo": "Ufficio postale Poste italiane."
+ },
+ {
+  "id": "poi-507-nome",
+  "testo": "Supermercato Vivo Supermercati"
+ },
+ {
+  "id": "poi-507-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-507-scheda",
+  "testo": "Supermercato Vivo Supermercati."
+ },
+ {
+  "id": "poi-508-nome",
+  "testo": "Banca Cop Service"
+ },
+ {
+  "id": "poi-508-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-508-scheda",
+  "testo": "Banca Cop Service."
+ },
+ {
+  "id": "poi-509-nome",
+  "testo": "Macelleria Beccheria Carducci"
+ },
+ {
+  "id": "poi-509-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-509-scheda",
+  "testo": "Macelleria Beccheria Carducci."
+ },
+ {
+  "id": "poi-510-nome",
+  "testo": "Panificio Alinovi Guido"
+ },
+ {
+  "id": "poi-510-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-510-scheda",
+  "testo": "Panificio Alinovi Guido."
+ },
+ {
+  "id": "poi-511-nome",
+  "testo": "Alimentari Latteria"
+ },
+ {
+  "id": "poi-511-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-511-scheda",
+  "testo": "Alimentari Latteria."
+ },
+ {
+  "id": "poi-512-nome",
+  "testo": "Banca Cassa di risparimo di Ravenna"
+ },
+ {
+  "id": "poi-512-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-512-scheda",
+  "testo": "Banca Cassa di risparimo di Ravenna."
+ },
+ {
+  "id": "poi-513-nome",
+  "testo": "Alimentari Salumeria Gianni"
+ },
+ {
+  "id": "poi-513-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-513-scheda",
+  "testo": "Alimentari Salumeria Gianni."
+ },
+ {
+  "id": "poi-514-nome",
+  "testo": "Panificio Ilari"
+ },
+ {
+  "id": "poi-514-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-514-scheda",
+  "testo": "Panificio Ilari."
+ },
+ {
+  "id": "poi-515-nome",
+  "testo": "Alimentari Minimarket"
+ },
+ {
+  "id": "poi-515-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-515-scheda",
+  "testo": "Alimentari Minimarket."
+ },
+ {
+  "id": "poi-516-nome",
+  "testo": "Panificio Al Panificio Centrale"
+ },
+ {
+  "id": "poi-516-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-516-scheda",
+  "testo": "Panificio Al Panificio Centrale."
+ },
+ {
+  "id": "poi-517-nome",
+  "testo": "Macelleria La cavalleria"
+ },
+ {
+  "id": "poi-517-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-517-scheda",
+  "testo": "Macelleria La cavalleria."
+ },
+ {
+  "id": "poi-518-nome",
+  "testo": "Ufficio postale DHL"
+ },
+ {
+  "id": "poi-518-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-518-scheda",
+  "testo": "Ufficio postale DHL."
+ },
+ {
+  "id": "poi-519-nome",
+  "testo": "Panificio Panetteria Chierici"
+ },
+ {
+  "id": "poi-519-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-519-scheda",
+  "testo": "Panificio Panetteria Chierici."
+ },
+ {
+  "id": "poi-520-nome",
+  "testo": "Farmacia Bixio"
+ },
+ {
+  "id": "poi-520-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-520-scheda",
+  "testo": "Farmacia Bixio."
+ },
+ {
+  "id": "poi-521-nome",
+  "testo": "Alimentari Antica drogheria Farini"
+ },
+ {
+  "id": "poi-521-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-521-scheda",
+  "testo": "Alimentari Antica drogheria Farini."
+ },
+ {
+  "id": "poi-522-nome",
+  "testo": "Farmacia Fornari"
+ },
+ {
+  "id": "poi-522-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-522-scheda",
+  "testo": "Farmacia Fornari."
+ },
+ {
+  "id": "poi-523-nome",
+  "testo": "Alimentari Malik"
+ },
+ {
+  "id": "poi-523-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-523-scheda",
+  "testo": "Alimentari Malik."
+ },
+ {
+  "id": "poi-524-nome",
+  "testo": "Macelleria Carne fresca"
+ },
+ {
+  "id": "poi-524-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-524-scheda",
+  "testo": "Macelleria Carne fresca."
+ },
+ {
+  "id": "poi-525-nome",
+  "testo": "Farmacia Pezzena"
+ },
+ {
+  "id": "poi-525-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-525-scheda",
+  "testo": "Farmacia Pezzena."
+ },
+ {
+  "id": "poi-526-nome",
+  "testo": "Farmacia Parafarmacia Ducale"
+ },
+ {
+  "id": "poi-526-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-526-scheda",
+  "testo": "Farmacia Parafarmacia Ducale."
+ },
+ {
+  "id": "poi-527-nome",
+  "testo": "Macelleria La Bottega del Gusto"
+ },
+ {
+  "id": "poi-527-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-527-scheda",
+  "testo": "Macelleria La Bottega del Gusto."
+ },
+ {
+  "id": "poi-528-nome",
+  "testo": "Panificio Forno Ducale"
+ },
+ {
+  "id": "poi-528-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-528-scheda",
+  "testo": "Panificio Forno Ducale."
+ },
+ {
+  "id": "poi-529-nome",
+  "testo": "Alimentari Super Day"
+ },
+ {
+  "id": "poi-529-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-529-scheda",
+  "testo": "Alimentari Super Day."
+ },
+ {
+  "id": "poi-530-nome",
+  "testo": "Panificio centrale"
+ },
+ {
+  "id": "poi-530-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-530-scheda",
+  "testo": "Panificio centrale."
+ },
+ {
+  "id": "poi-531-nome",
+  "testo": "Panificio Forno D'Azeglio"
+ },
+ {
+  "id": "poi-531-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-531-scheda",
+  "testo": "Panificio Forno D'Azeglio."
+ },
+ {
+  "id": "poi-532-nome",
+  "testo": "Alimentari SPS Market"
+ },
+ {
+  "id": "poi-532-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-532-scheda",
+  "testo": "Alimentari SPS Market."
+ },
+ {
+  "id": "poi-533-nome",
+  "testo": "Panificio Antica forneria Ferrari"
+ },
+ {
+  "id": "poi-533-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-533-scheda",
+  "testo": "Panificio Antica forneria Ferrari."
+ },
+ {
+  "id": "poi-534-nome",
+  "testo": "Alimentari Alimentare Watson"
+ },
+ {
+  "id": "poi-534-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-534-scheda",
+  "testo": "Alimentari Alimentare Watson."
+ },
+ {
+  "id": "poi-535-nome",
+  "testo": "Farmacia Parafarmacia"
+ },
+ {
+  "id": "poi-535-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-535-scheda",
+  "testo": "Farmacia Parafarmacia."
+ },
+ {
+  "id": "poi-536-nome",
+  "testo": "Macelleria Carne equina"
+ },
+ {
+  "id": "poi-536-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-536-scheda",
+  "testo": "Macelleria Carne equina."
+ },
+ {
+  "id": "poi-537-nome",
+  "testo": "Banca Carisbo"
+ },
+ {
+  "id": "poi-537-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-537-scheda",
+  "testo": "Banca Carisbo."
+ },
+ {
+  "id": "poi-538-nome",
+  "testo": "Banca BNL"
+ },
+ {
+  "id": "poi-538-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-538-scheda",
+  "testo": "Banca BNL."
+ },
+ {
+  "id": "poi-539-nome",
+  "testo": "Banca Credemleasing S.p.A"
+ },
+ {
+  "id": "poi-539-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-539-scheda",
+  "testo": "Banca Credemleasing S.p.A."
+ },
+ {
+  "id": "poi-540-nome",
+  "testo": "Macelleria Boni"
+ },
+ {
+  "id": "poi-540-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-540-scheda",
+  "testo": "Macelleria Boni."
+ },
+ {
+  "id": "poi-541-nome",
+  "testo": "Panificio Sapori Nuovi 2"
+ },
+ {
+  "id": "poi-541-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-541-scheda",
+  "testo": "Panificio Sapori Nuovi 2."
+ },
+ {
+  "id": "poi-542-nome",
+  "testo": "Banca Popolare di Sondrio"
+ },
+ {
+  "id": "poi-542-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-542-scheda",
+  "testo": "Banca Popolare di Sondrio."
+ },
+ {
+  "id": "poi-543-nome",
+  "testo": "Fermata Barriera Repubblica"
+ },
+ {
+  "id": "poi-543-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-543-scheda",
+  "testo": "Fermata Barriera Repubblica."
+ },
+ {
+  "id": "poi-544-nome",
+  "testo": "Fermata Via Emilia Est S. Elevata"
+ },
+ {
+  "id": "poi-544-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-544-scheda",
+  "testo": "Fermata Via Emilia Est S. Elevata."
+ },
+ {
+  "id": "poi-545-nome",
+  "testo": "Stazione Parma"
+ },
+ {
+  "id": "poi-545-intro",
+  "testo": "stazione"
+ },
+ {
+  "id": "poi-545-scheda",
+  "testo": "Stazione Parma."
+ },
+ {
+  "id": "poi-546-nome",
+  "testo": "Fermata v.le Berenini - b.ra Farini"
+ },
+ {
+  "id": "poi-546-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-546-scheda",
+  "testo": "Fermata v.le Berenini - b.ra Farini."
+ },
+ {
+  "id": "poi-547-nome",
+  "testo": "Fermata v.le Basetti"
+ },
+ {
+  "id": "poi-547-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-547-scheda",
+  "testo": "Fermata v.le Basetti."
+ },
+ {
+  "id": "poi-548-nome",
+  "testo": "Fermata v.le Toscanini"
+ },
+ {
+  "id": "poi-548-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-548-scheda",
+  "testo": "Fermata v.le Toscanini."
+ },
+ {
+  "id": "poi-549-nome",
+  "testo": "Fermata chiesa dell'Annunziata"
+ },
+ {
+  "id": "poi-549-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-549-scheda",
+  "testo": "Fermata chiesa dell'Annunziata."
+ },
+ {
+  "id": "poi-550-nome",
+  "testo": "Macelleria Biànca & Ròssa"
+ },
+ {
+  "id": "poi-550-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-550-scheda",
+  "testo": "Macelleria Biànca & Ròssa."
+ },
+ {
+  "id": "poi-551-nome",
+  "testo": "Banca CheBanca!"
+ },
+ {
+  "id": "poi-551-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-551-scheda",
+  "testo": "Banca CheBanca!."
+ },
+ {
+  "id": "poi-552-nome",
+  "testo": "Fermata v.le Solferino v. Magenta"
+ },
+ {
+  "id": "poi-552-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-552-scheda",
+  "testo": "Fermata v.le Solferino v. Magenta."
+ },
+ {
+  "id": "poi-553-nome",
+  "testo": "Fermata v. Rustici (v.le Magenta)"
+ },
+ {
+  "id": "poi-553-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-553-scheda",
+  "testo": "Fermata v. Rustici (v.le Magenta)."
+ },
+ {
+  "id": "poi-554-nome",
+  "testo": "Fermata Via Repubblica S. Sepolcro"
+ },
+ {
+  "id": "poi-554-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-554-scheda",
+  "testo": "Fermata Via Repubblica S. Sepolcro."
+ },
+ {
+  "id": "poi-555-nome",
+  "testo": "Fermata Piazza Ghiaia"
+ },
+ {
+  "id": "poi-555-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-555-scheda",
+  "testo": "Fermata Piazza Ghiaia."
+ },
+ {
+  "id": "poi-556-nome",
+  "testo": "Fermata Viale Mentana"
+ },
+ {
+  "id": "poi-556-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-556-scheda",
+  "testo": "Fermata Viale Mentana."
+ },
+ {
+  "id": "poi-557-nome",
+  "testo": "Fermata Piazzale Sicilia"
+ },
+ {
+  "id": "poi-557-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-557-scheda",
+  "testo": "Fermata Piazzale Sicilia."
+ },
+ {
+  "id": "poi-558-nome",
+  "testo": "Fermata via Abruzzi"
+ },
+ {
+  "id": "poi-558-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-558-scheda",
+  "testo": "Fermata via Abruzzi."
+ },
+ {
+  "id": "poi-559-nome",
+  "testo": "Fermata Via Venezia (Via Verona)"
+ },
+ {
+  "id": "poi-559-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-559-scheda",
+  "testo": "Fermata Via Venezia (Via Verona)."
+ },
+ {
+  "id": "poi-560-nome",
+  "testo": "Fermata Via Venezia Via Paradigna"
+ },
+ {
+  "id": "poi-560-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-560-scheda",
+  "testo": "Fermata Via Venezia Via Paradigna."
+ },
+ {
+  "id": "poi-561-nome",
+  "testo": "Fermata Via Venezia Madonnina"
+ },
+ {
+  "id": "poi-561-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-561-scheda",
+  "testo": "Fermata Via Venezia Madonnina."
+ },
+ {
+  "id": "poi-562-nome",
+  "testo": "Fermata Ospedale Vecchio"
+ },
+ {
+  "id": "poi-562-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-562-scheda",
+  "testo": "Fermata Ospedale Vecchio."
+ },
+ {
+  "id": "poi-563-nome",
+  "testo": "Biblioteca di Economia"
+ },
+ {
+  "id": "poi-563-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-563-scheda",
+  "testo": "Biblioteca di Economia."
+ },
+ {
+  "id": "poi-564-nome",
+  "testo": "Biblioteca di Psicologia"
+ },
+ {
+  "id": "poi-564-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-564-scheda",
+  "testo": "Biblioteca di Psicologia."
+ },
+ {
+  "id": "poi-565-nome",
+  "testo": "Biblioteca centrale di Giurisprudenza dell'Università degli studi di Parma"
+ },
+ {
+  "id": "poi-565-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-565-scheda",
+  "testo": "Biblioteca centrale di Giurisprudenza dell'Università degli studi di Parma."
+ },
+ {
+  "id": "poi-566-nome",
+  "testo": "Biblioteca Umanistica dei Paolotti"
+ },
+ {
+  "id": "poi-566-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-566-scheda",
+  "testo": "Biblioteca Umanistica dei Paolotti."
+ },
+ {
+  "id": "poi-567-nome",
+  "testo": "Biblioteca di Lingue e letterature straniere Pier Giorgio Negro dell'Università degli studi di Parma"
+ },
+ {
+  "id": "poi-567-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-567-scheda",
+  "testo": "Biblioteca di Lingue e letterature straniere Pier Giorgio Negro dell'Università degli studi di Parma."
+ },
+ {
+  "id": "poi-568-nome",
+  "testo": "Biblioteca delle Arti e dello Spettacolo"
+ },
+ {
+  "id": "poi-568-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-568-scheda",
+  "testo": "Biblioteca delle Arti e dello Spettacolo."
+ },
+ {
+  "id": "poi-569-nome",
+  "testo": "Supermercato Esselunga"
+ },
+ {
+  "id": "poi-569-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-569-scheda",
+  "testo": "Supermercato Esselunga."
+ },
+ {
+  "id": "poi-570-nome",
+  "testo": "Banca Deutsche Bank"
+ },
+ {
+  "id": "poi-570-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-570-scheda",
+  "testo": "Banca Deutsche Bank."
+ },
+ {
+  "id": "poi-571-nome",
+  "testo": "Banca Mediobanca"
+ },
+ {
+  "id": "poi-571-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-571-scheda",
+  "testo": "Banca Mediobanca."
+ },
+ {
+  "id": "poi-572-nome",
+  "testo": "Banca IBL Banca"
+ },
+ {
+  "id": "poi-572-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-572-scheda",
+  "testo": "Banca IBL Banca."
+ },
+ {
+  "id": "poi-573-nome",
+  "testo": "Banca Valdabbina"
+ },
+ {
+  "id": "poi-573-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-573-scheda",
+  "testo": "Banca Valdabbina."
+ },
+ {
+  "id": "poi-574-nome",
+  "testo": "Ufficio postale poste italiane"
+ },
+ {
+  "id": "poi-574-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-574-scheda",
+  "testo": "Ufficio postale poste italiane."
+ },
+ {
+  "id": "poi-575-nome",
+  "testo": "Farmacia Medi-Market"
+ },
+ {
+  "id": "poi-575-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-575-scheda",
+  "testo": "Farmacia Medi-Market."
+ },
+ {
+  "id": "poi-576-nome",
+  "testo": "Farmacia Maria Luigia"
+ },
+ {
+  "id": "poi-576-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-576-scheda",
+  "testo": "Farmacia Maria Luigia."
+ },
+ {
+  "id": "poi-577-nome",
+  "testo": "Banca Unipol"
+ },
+ {
+  "id": "poi-577-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-577-scheda",
+  "testo": "Banca Unipol."
+ },
+ {
+  "id": "poi-578-nome",
+  "testo": "biblioteca Umberto Balestrazzi"
+ },
+ {
+  "id": "poi-578-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-578-scheda",
+  "testo": "biblioteca Umberto Balestrazzi."
+ },
+ {
+  "id": "poi-579-nome",
+  "testo": "Supermercato Carrefour express"
+ },
+ {
+  "id": "poi-579-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-579-scheda",
+  "testo": "Supermercato Carrefour express."
+ },
+ {
+  "id": "poi-580-nome",
+  "testo": "Banca Pind Parma"
+ },
+ {
+  "id": "poi-580-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-580-scheda",
+  "testo": "Banca Pind Parma."
+ },
+ {
+  "id": "poi-581-nome",
+  "testo": "Biblioteca Guanda"
+ },
+ {
+  "id": "poi-581-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-581-scheda",
+  "testo": "Biblioteca Guanda."
+ },
+ {
+  "id": "poi-582-nome",
+  "testo": "Teatro Regio"
+ },
+ {
+  "id": "poi-582-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-582-scheda",
+  "testo": "Teatro Regio."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -5366,6 +7718,10 @@
  {
   "id": "percorso-roma-via-giulia",
   "testo": "Roma — via Giulia e il Rinascimento: Cancelleria, Farnese, Falconieri"
+ },
+ {
+  "id": "percorso-parma-centro",
+  "testo": "Parma — il centro: Duomo, Battistero, Steccata, Pilotta"
  },
  {
   "id": "dir-dritto-davanti",
