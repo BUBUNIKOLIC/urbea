@@ -1672,6 +1672,654 @@
   "testo": "Farmacia, su via Campania."
  },
  {
+  "id": "poi-124-nome",
+  "testo": "Supermercato Prete"
+ },
+ {
+  "id": "poi-124-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-124-scheda",
+  "testo": "Supermercato Supermercato Prete."
+ },
+ {
+  "id": "poi-125-nome",
+  "testo": "Ufficio postale Poste Italiane"
+ },
+ {
+  "id": "poi-125-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-125-scheda",
+  "testo": "Ufficio postale Poste Italiane."
+ },
+ {
+  "id": "poi-126-nome",
+  "testo": "Distributore Esso"
+ },
+ {
+  "id": "poi-126-intro",
+  "testo": "distributore"
+ },
+ {
+  "id": "poi-126-scheda",
+  "testo": "Distributore Esso."
+ },
+ {
+  "id": "poi-127-nome",
+  "testo": "Distributore Eni Station"
+ },
+ {
+  "id": "poi-127-intro",
+  "testo": "distributore"
+ },
+ {
+  "id": "poi-127-scheda",
+  "testo": "Distributore Eni Station."
+ },
+ {
+  "id": "poi-128-nome",
+  "testo": "Farmacia Sardella"
+ },
+ {
+  "id": "poi-128-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-128-scheda",
+  "testo": "Farmacia Farmacia Sardella."
+ },
+ {
+  "id": "poi-129-nome",
+  "testo": "Farmacia Parafarmacia Salute e Benessere"
+ },
+ {
+  "id": "poi-129-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-129-scheda",
+  "testo": "Farmacia Parafarmacia Salute e Benessere."
+ },
+ {
+  "id": "poi-130-nome",
+  "testo": "Farmacia Del Prete"
+ },
+ {
+  "id": "poi-130-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-130-scheda",
+  "testo": "Farmacia Farmacia Del Prete."
+ },
+ {
+  "id": "poi-131-nome",
+  "testo": "Stazione Venafro"
+ },
+ {
+  "id": "poi-131-intro",
+  "testo": "stazione"
+ },
+ {
+  "id": "poi-131-scheda",
+  "testo": "Stazione ferroviaria."
+ },
+ {
+  "id": "poi-132-nome",
+  "testo": "Supermercato Decò"
+ },
+ {
+  "id": "poi-132-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-132-scheda",
+  "testo": "Supermercato Decò."
+ },
+ {
+  "id": "poi-133-nome",
+  "testo": "Ristorante Rosso"
+ },
+ {
+  "id": "poi-133-intro",
+  "testo": "ristorante"
+ },
+ {
+  "id": "poi-133-scheda",
+  "testo": "Ristorante Rosso."
+ },
+ {
+  "id": "poi-134-nome",
+  "testo": "Bar Passicrate"
+ },
+ {
+  "id": "poi-134-intro",
+  "testo": "bar"
+ },
+ {
+  "id": "poi-134-scheda",
+  "testo": "Bar Bar Passicrate."
+ },
+ {
+  "id": "poi-135-nome",
+  "testo": "Bar Laboratorio Artigianale Le Terrazze"
+ },
+ {
+  "id": "poi-135-intro",
+  "testo": "bar"
+ },
+ {
+  "id": "poi-135-scheda",
+  "testo": "Bar Laboratorio Artigianale Le Terrazze."
+ },
+ {
+  "id": "poi-136-nome",
+  "testo": "Bar Momà"
+ },
+ {
+  "id": "poi-136-intro",
+  "testo": "bar"
+ },
+ {
+  "id": "poi-136-scheda",
+  "testo": "Bar Momà."
+ },
+ {
+  "id": "poi-137-nome",
+  "testo": "Bar L'altro mondo"
+ },
+ {
+  "id": "poi-137-intro",
+  "testo": "bar"
+ },
+ {
+  "id": "poi-137-scheda",
+  "testo": "Bar L'altro mondo."
+ },
+ {
+  "id": "poi-138-nome",
+  "testo": "Scuola Istituto Omnicomprensivo A. Giordano"
+ },
+ {
+  "id": "poi-138-intro",
+  "testo": "scuola"
+ },
+ {
+  "id": "poi-138-scheda",
+  "testo": "Scuola Istituto Omnicomprensivo A. Giordano."
+ },
+ {
+  "id": "poi-139-nome",
+  "testo": "Scuola Liceo Classico A. Giordano"
+ },
+ {
+  "id": "poi-139-intro",
+  "testo": "scuola"
+ },
+ {
+  "id": "poi-139-scheda",
+  "testo": "Scuola Liceo Classico A. Giordano."
+ },
+ {
+  "id": "poi-140-nome",
+  "testo": "Scuola Istituto Comprensivo Giulio Testa"
+ },
+ {
+  "id": "poi-140-intro",
+  "testo": "scuola"
+ },
+ {
+  "id": "poi-140-scheda",
+  "testo": "Scuola Istituto Comprensivo Giulio Testa."
+ },
+ {
+  "id": "poi-141-nome",
+  "testo": "Scuola Media Statale Leopoldo Pilla"
+ },
+ {
+  "id": "poi-141-intro",
+  "testo": "scuola"
+ },
+ {
+  "id": "poi-141-scheda",
+  "testo": "Scuola Scuola Media Statale Leopoldo Pilla."
+ },
+ {
+  "id": "poi-142-nome",
+  "testo": "Stazione Torre del Greco"
+ },
+ {
+  "id": "poi-142-intro",
+  "testo": "stazione"
+ },
+ {
+  "id": "poi-142-scheda",
+  "testo": "Stazione ferroviaria."
+ },
+ {
+  "id": "poi-143-nome",
+  "testo": "Macelleria La nuova Salumeria"
+ },
+ {
+  "id": "poi-143-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-143-scheda",
+  "testo": "Macelleria La nuova Salumeria."
+ },
+ {
+  "id": "poi-144-nome",
+  "testo": "Frutta e verdura L'angolo della frutta"
+ },
+ {
+  "id": "poi-144-intro",
+  "testo": "fruttivendolo"
+ },
+ {
+  "id": "poi-144-scheda",
+  "testo": "Frutta e verdura L'angolo della frutta."
+ },
+ {
+  "id": "poi-145-nome",
+  "testo": "Supermercato Decò"
+ },
+ {
+  "id": "poi-145-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-145-scheda",
+  "testo": "Supermercato Decò."
+ },
+ {
+  "id": "poi-146-nome",
+  "testo": "Supermercato Expert"
+ },
+ {
+  "id": "poi-146-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-146-scheda",
+  "testo": "Supermercato Expert."
+ },
+ {
+  "id": "poi-147-nome",
+  "testo": "Ufficio Postale - Poste Italiane"
+ },
+ {
+  "id": "poi-147-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-147-scheda",
+  "testo": "Ufficio postale Ufficio Postale - Poste Italiane."
+ },
+ {
+  "id": "poi-148-nome",
+  "testo": "Banca di Credito Populare"
+ },
+ {
+  "id": "poi-148-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-148-scheda",
+  "testo": "Banca Banca di Credito Populare."
+ },
+ {
+  "id": "poi-149-nome",
+  "testo": "Abbigliamento Colè Abbigliamento"
+ },
+ {
+  "id": "poi-149-intro",
+  "testo": "abbigliamento"
+ },
+ {
+  "id": "poi-149-scheda",
+  "testo": "Abbigliamento Colè Abbigliamento."
+ },
+ {
+  "id": "poi-150-nome",
+  "testo": "Supermercato Spendibene"
+ },
+ {
+  "id": "poi-150-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-150-scheda",
+  "testo": "Supermercato Spendibene."
+ },
+ {
+  "id": "poi-151-nome",
+  "testo": "Fermata Cozzolino - Osped. Maresca"
+ },
+ {
+  "id": "poi-151-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-151-scheda",
+  "testo": "Fermata dell'autobus Cozzolino - Osped. Maresca."
+ },
+ {
+  "id": "poi-152-nome",
+  "testo": "Fermata Cozzolino - Via Marconi"
+ },
+ {
+  "id": "poi-152-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-152-scheda",
+  "testo": "Fermata dell'autobus Cozzolino - Via Marconi."
+ },
+ {
+  "id": "poi-153-nome",
+  "testo": "Fermata De Nicola"
+ },
+ {
+  "id": "poi-153-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-153-scheda",
+  "testo": "Fermata dell'autobus De Nicola."
+ },
+ {
+  "id": "poi-154-nome",
+  "testo": "Fermata Via Litoranea"
+ },
+ {
+  "id": "poi-154-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-154-scheda",
+  "testo": "Fermata dell'autobus Via Litoranea."
+ },
+ {
+  "id": "poi-155-nome",
+  "testo": "Fermata Via Alcide De Gasperi"
+ },
+ {
+  "id": "poi-155-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-155-scheda",
+  "testo": "Fermata dell'autobus Via Alcide De Gasperi."
+ },
+ {
+  "id": "poi-156-nome",
+  "testo": "Banca Intesa San Paolo"
+ },
+ {
+  "id": "poi-156-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-156-scheda",
+  "testo": "Banca Banca Intesa San Paolo."
+ },
+ {
+  "id": "poi-157-nome",
+  "testo": "Farmacia Farma Shop S.r.l. - La Sanitaria"
+ },
+ {
+  "id": "poi-157-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-157-scheda",
+  "testo": "Farmacia Farma Shop S.r.l. - La Sanitaria."
+ },
+ {
+  "id": "poi-158-nome",
+  "testo": "Supermercato Sole365"
+ },
+ {
+  "id": "poi-158-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-158-scheda",
+  "testo": "Supermercato Sole365."
+ },
+ {
+  "id": "poi-159-nome",
+  "testo": "Fermata Uscita Autostrada Torre del Greco"
+ },
+ {
+  "id": "poi-159-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-159-scheda",
+  "testo": "Fermata dell'autobus Uscita Autostrada Torre del Greco."
+ },
+ {
+  "id": "poi-160-nome",
+  "testo": "Panificio Il Fornaio Brancaccio"
+ },
+ {
+  "id": "poi-160-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-160-scheda",
+  "testo": "Panificio Il Fornaio Brancaccio."
+ },
+ {
+  "id": "poi-161-nome",
+  "testo": "Abbigliamento Dorabella"
+ },
+ {
+  "id": "poi-161-intro",
+  "testo": "abbigliamento"
+ },
+ {
+  "id": "poi-161-scheda",
+  "testo": "Abbigliamento Dorabella."
+ },
+ {
+  "id": "poi-162-nome",
+  "testo": "Stazione Via Sant'Antonio"
+ },
+ {
+  "id": "poi-162-intro",
+  "testo": "stazione"
+ },
+ {
+  "id": "poi-162-scheda",
+  "testo": "Stazione ferroviaria."
+ },
+ {
+  "id": "poi-163-nome",
+  "testo": "Fermata Torre del Greco"
+ },
+ {
+  "id": "poi-163-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-163-scheda",
+  "testo": "Fermata dell'autobus Torre del Greco."
+ },
+ {
+  "id": "poi-164-nome",
+  "testo": "Parrucchiere AMERIGO IL BARBIERE"
+ },
+ {
+  "id": "poi-164-intro",
+  "testo": "parrucchiere"
+ },
+ {
+  "id": "poi-164-scheda",
+  "testo": "Parrucchiere AMERIGO IL BARBIERE."
+ },
+ {
+  "id": "poi-165-nome",
+  "testo": "Chiesa di San Simeone, del Purgatorio"
+ },
+ {
+  "id": "poi-165-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-165-scheda",
+  "testo": "Chiesa del centro storico di Venafro, affacciata sulla piazza."
+ },
+ {
+  "id": "poi-166-nome",
+  "testo": "Chiesa di San Sebastiano"
+ },
+ {
+  "id": "poi-166-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-166-scheda",
+  "testo": "Chiesa nella parte bassa del centro di Venafro."
+ },
+ {
+  "id": "poi-167-nome",
+  "testo": "Chiesa del Carmine"
+ },
+ {
+  "id": "poi-167-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-167-scheda",
+  "testo": "Chiesa del Carmine, vicino alla cattedrale di Venafro."
+ },
+ {
+  "id": "poi-168-nome",
+  "testo": "Cappella di San Donato"
+ },
+ {
+  "id": "poi-168-intro",
+  "testo": "cappella in rovina"
+ },
+ {
+  "id": "poi-168-scheda",
+  "testo": "Quel che resta di una cappella, ai margini dell'abitato di Venafro."
+ },
+ {
+  "id": "poi-169-nome",
+  "testo": "Monumento ai caduti"
+ },
+ {
+  "id": "poi-169-intro",
+  "testo": "monumento"
+ },
+ {
+  "id": "poi-169-scheda",
+  "testo": "Il monumento ai caduti, in piazza."
+ },
+ {
+  "id": "poi-170-nome",
+  "testo": "Torre Bassano"
+ },
+ {
+  "id": "poi-170-intro",
+  "testo": "torre"
+ },
+ {
+  "id": "poi-170-scheda",
+  "testo": "Una delle torri costiere di Torre del Greco, verso il mare."
+ },
+ {
+  "id": "poi-171-nome",
+  "testo": "Villa de Ruggiero"
+ },
+ {
+  "id": "poi-171-intro",
+  "testo": "villa vesuviana"
+ },
+ {
+  "id": "poi-171-scheda",
+  "testo": "Dimora storica del Miglio d'Oro affacciata sul mare: dentro c'è una sala affrescata."
+ },
+ {
+  "id": "poi-172-nome",
+  "testo": "Monumento dell'Epitaffio"
+ },
+ {
+  "id": "poi-172-intro",
+  "testo": "monumento"
+ },
+ {
+  "id": "poi-172-scheda",
+  "testo": "L'Epitaffio, eretto in onore di Filippo IV d'Asburgo: uno dei luoghi storici di Torre del Greco."
+ },
+ {
+  "id": "poi-173-nome",
+  "testo": "Cristo Redentore"
+ },
+ {
+  "id": "poi-173-intro",
+  "testo": "monumento"
+ },
+ {
+  "id": "poi-173-scheda",
+  "testo": "La statua del Cristo Redentore."
+ },
+ {
+  "id": "poi-174-nome",
+  "testo": "Chiesa di Sant'Antonio"
+ },
+ {
+  "id": "poi-174-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-174-scheda",
+  "testo": "Chiesa di Sant'Antonio, verso la zona alta della città."
+ },
+ {
+  "id": "poi-175-nome",
+  "testo": "Chiesa di Sant'Anna"
+ },
+ {
+  "id": "poi-175-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-175-scheda",
+  "testo": "Chiesa di Sant'Anna."
+ },
+ {
+  "id": "poi-176-nome",
+  "testo": "Chiesa di San Biagio"
+ },
+ {
+  "id": "poi-176-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-176-scheda",
+  "testo": "Chiesa di San Biagio, ai margini occidentali della città."
+ },
+ {
+  "id": "poi-177-nome",
+  "testo": "Chiesa dei Carmelitani Scalzi"
+ },
+ {
+  "id": "poi-177-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-177-scheda",
+  "testo": "La chiesa dell'ordine dei carmelitani scalzi."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
