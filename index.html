@@ -2993,7 +2993,8 @@
     document.body.dataset.voice=S.voice?'1':'0';
     audio();
     if(S.voice){S.said={};accendiRadio();avviaAscolto();
-      var bp=el('parla'); if(bp)bp.hidden=false;dire(['frase-voce-attiva'],'Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri.');}
+      var bp=el('parla'); if(bp)bp.hidden=false;
+      if(window.urbeaNativo){ var b2=el('parla'); if(b2)b2.hidden=false; }dire(['frase-voce-attiva'],'Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri.');}
     else{ spegniRadio(); fermaAscolto(); var bp2=el('parla'); if(bp2)bp2.hidden=true; if(inCorso){try{inCorso.pause();}catch(e){} inCorso=null;} if(window.speechSynthesis)window.speechSynthesis.cancel(); }
     render();
   });
@@ -3416,7 +3417,17 @@
       }
     }catch(e){}
   }
+  // dentro il guscio iPhone il riconoscimento lo fa iOS e il testo torna qui
+  window.urbeaComando=function(testo){
+    var b=el('parla'); if(b){b.classList.remove('ascolta');b.textContent='🎙 Parla';}
+    if(!eseguiComando(testo||''))dire(['frase-non-capito'],'Non ho capito. Prova con: approfondisci, avanti, dove sono.');
+  };
   function ascoltaUnaVolta(){
+    if(window.urbeaNativo && window.urbeaAscolta){
+      var bn=el('parla'); if(bn){bn.classList.add('ascolta');bn.textContent='🎙 Ti ascolto…';}
+      try{ window.urbeaAscolta(); }catch(e){}
+      return;
+    }
     var R=window.SpeechRecognition||window.webkitSpeechRecognition;
     var b=el('parla');
     if(!R){ dire(['frase-niente-microfono'],'Questo telefono non capisce i comandi a voce.'); return; }
