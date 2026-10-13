@@ -1,5 +1,5 @@
 /* Urbea — service worker: la città resta nel telefono */
-const CACHE = 'yourbea-v8';
+const CACHE = 'yourbea-v9';
 const ASSETS = [
   './',
   './index.html',
@@ -19,10 +19,17 @@ function scaricaVoce() {
   return fetch('./voce/clip/it/elenco.json')
     .then(r => r.ok ? r.json() : [])
     .then(ids => caches.open(CACHE).then(c => {
+      // prima le frasi di servizio: direzioni, metri, risposte. Sono poche e
+      // servono sempre. Le schede dei luoghi si salvano quando si ascoltano,
+      // se no il telefono scaricherebbe decine di megabyte per niente.
+      const prima = ids.filter(id => !id.startsWith('poi-'));
+      const dopo  = ids.filter(id =>  id.startsWith('poi-'));
+      const coda  = prima.concat(dopo);
+      const soloServizio = prima.length;
       let i = 0;
       const giu = () => {
-        if (i >= ids.length) return;
-        const u = './voce/clip/it/' + ids[i++] + '.m4a';
+        if (i >= soloServizio) return;            // il resto arriva all'uso
+        const u = './voce/clip/it/' + coda[i++] + '.m4a';
         return c.match(u).then(hit => hit ? null : c.add(u)).catch(() => {}).then(giu);
       };
       return giu();
