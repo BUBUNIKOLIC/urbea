@@ -1750,7 +1750,11 @@
     if(pending||!S.voice)return false;
     var c=POI.filter(function(p){return p.f&&!S.said[p.n];}).map(function(p){
       return {p:p,m:dist(S.lat,S.lon,p.lat,p.lon),rel:norm(bear(S.lat,S.lon,p.lat,p.lon)-S.hd)};
-    }).filter(function(o){return o.m<2600;}).sort(function(a,b){return a.m-b.m;});
+    }).filter(function(o){
+      // i riferimenti lontani si dicono solo se li hai davanti e a portata
+      // d'orecchio: niente annunci di cose a tre chilometri alle spalle
+      return o.m<1200 && Math.abs(o.rel)<100;
+    }).sort(function(a,b){return a.m-b.m;});
     if(!c.length)return false;
     var o=c[0];
     S.said[o.p.n]=1;
