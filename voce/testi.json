@@ -8932,6 +8932,30 @@
   "testo": "a 500 metri"
  },
  {
+  "id": "frase-vengo-a-prenderti",
+  "testo": "Sto preparando il messaggio: tocca Invia per mandarlo. Se preferisci, dimmi: chiama."
+ },
+ {
+  "id": "frase-chiamo",
+  "testo": "Chiamo adesso."
+ },
+ {
+  "id": "frase-nessun-numero",
+  "testo": "Non ho un numero da chiamare: va registrato prima."
+ },
+ {
+  "id": "frase-casa-segnata",
+  "testo": "Ho segnato casa qui. Quando vuoi tornare, dimmi: portami a casa."
+ },
+ {
+  "id": "frase-casa-non-segnata",
+  "testo": "Non so dove sia casa. Quando ci sei, tocca «Segna casa qui»."
+ },
+ {
+  "id": "frase-casa-senza-posizione",
+  "testo": "Prima devo sapere dove sei: premi Avvia."
+ },
+ {
   "id": "frase-non-capito",
   "testo": "Non ho capito. Prova con: approfondisci, avanti, dove sono."
  },
