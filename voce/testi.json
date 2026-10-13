@@ -5084,6 +5084,150 @@
   "testo": "Giuseppe Gioachino Belli, una delle fontane del centro di Roma."
  },
  {
+  "id": "poi-378-nome",
+  "testo": "Arco di Settimio Severo"
+ },
+ {
+  "id": "poi-378-intro",
+  "testo": "arco di trionfo del 203 d.C."
+ },
+ {
+  "id": "poi-378-scheda",
+  "testo": "Tre fornici, quello centrale più grande, con le colonne composite staccate dal muro su alti plinti: sopra, i grandi pannelli a rilievo con le campagne contro i Parti, scolpiti come cronache a più piani. L'iscrizione in alto porta i segni della rasura: il nome di Geta fu cancellato dal fratello Caracalla."
+ },
+ {
+  "id": "poi-378-dentro",
+  "testo": "I fori delle lettere di bronzo nell'iscrizione: si legge ancora dove c'era il nome cancellato."
+ },
+ {
+  "id": "poi-379-nome",
+  "testo": "Curia Iulia"
+ },
+ {
+  "id": "poi-379-intro",
+  "testo": "aula del Senato del rifatta nel 283 d.C."
+ },
+ {
+  "id": "poi-379-scheda",
+  "testo": "La sala del Senato: un'aula rettangolare altissima e spoglia, con tre gradinate per lato e il pavimento in opus sectile originale. Si è conservata perché fu trasformata in chiesa."
+ },
+ {
+  "id": "poi-379-dentro",
+  "testo": "Il pavimento a tarsie di marmo, quello vero, e le porte di bronzo (quelle qui sono copie: le originali stanno al Laterano)."
+ },
+ {
+  "id": "poi-380-nome",
+  "testo": "Tempio di Saturno"
+ },
+ {
+  "id": "poi-380-intro",
+  "testo": "tempio romano del 497 a.C., rifatto nel IV sec."
+ },
+ {
+  "id": "poi-380-scheda",
+  "testo": "Otto colonne di granito con la trabeazione: è quello che si vede da piazza del Campidoglio guardando giù. Sotto il podio stava l'erario, la cassa dello Stato romano."
+ },
+ {
+  "id": "poi-381-nome",
+  "testo": "Tempio di Antonino e Faustina"
+ },
+ {
+  "id": "poi-381-intro",
+  "testo": "tempio e chiesa del 141 d.C."
+ },
+ {
+  "id": "poi-381-scheda",
+  "testo": "Dieci colonne corinzie di cipollino alte diciassette metri, e dentro, in alto, la facciata barocca della chiesa di San Lorenzo in Miranda: la chiesa fu costruita dentro il tempio al livello raggiunto dall'interro. Sulle colonne si vedono i solchi delle corde di chi tentò di abbatterle."
+ },
+ {
+  "id": "poi-381-dentro",
+  "testo": "I solchi delle funi sui fusti, a mezza altezza: il tentativo fallito di tirarle giù."
+ },
+ {
+  "id": "poi-382-nome",
+  "testo": "Casa delle Vestali"
+ },
+ {
+  "id": "poi-382-intro",
+  "testo": "casa romana del rifatta nel II sec. d.C."
+ },
+ {
+  "id": "poi-382-scheda",
+  "testo": "Un cortile lungo con le vasche e le statue delle vestali attorno, e sui tre lati gli ambienti su due piani: la casa delle sacerdotesse che custodivano il fuoco di Roma."
+ },
+ {
+  "id": "poi-383-nome",
+  "testo": "Foro di Cesare"
+ },
+ {
+  "id": "poi-383-intro",
+  "testo": "foro del 46 a.C."
+ },
+ {
+  "id": "poi-383-scheda",
+  "testo": "Il primo dei fori imperiali: una piazza porticata con il tempio di Venere Genitrice in fondo, costruita da Cesare comprando e demolendo il quartiere che c'era. Da qui in poi i fori diventano opere di propaganda."
+ },
+ {
+  "id": "poi-384-nome",
+  "testo": "Basilica Giulia"
+ },
+ {
+  "id": "poi-384-intro",
+  "testo": "basilica civile del 54 a.C."
+ },
+ {
+  "id": "poi-384-scheda",
+  "testo": "Era il tribunale: un'aula enorme a cinque navate, oggi ridotta al piano dei pilastri. Sui gradini si vedono incisi i tabulae lusoriae, i giochi a scacchiera che i romani scavavano nel marmo per passare il tempo."
+ },
+ {
+  "id": "poi-384-dentro",
+  "testo": "Cerca le griglie incise sui gradini: sono i tavolieri da gioco."
+ },
+ {
+  "id": "poi-385-nome",
+  "testo": "Musei Vaticani"
+ },
+ {
+  "id": "poi-385-intro",
+  "testo": "musei del dal 1506"
+ },
+ {
+  "id": "poi-385-scheda",
+  "testo": "Sette chilometri di percorso dentro i palazzi papali: si attraversano cortili, gallerie e scale costruite in cinque secoli. L'ingresso attuale è del 1932, con la scala elicoidale doppia di Giuseppe Momo, due rampe che salgono e scendono senza incontrarsi."
+ },
+ {
+  "id": "poi-385-dentro",
+  "testo": "La Galleria delle Carte Geografiche, quaranta mappe d'Italia dipinte nel Cinquecento su centoventi metri di volta."
+ },
+ {
+  "id": "poi-386-nome",
+  "testo": "Cappella Sistina"
+ },
+ {
+  "id": "poi-386-intro",
+  "testo": "cappella del 1475-1481, volta 1508-1512"
+ },
+ {
+  "id": "poi-386-scheda",
+  "testo": "Una scatola rettangolare senza decorazione architettonica, costruita con le proporzioni che la Bibbia dà al tempio di Salomone. Michelangelo ci dipinse sopra un'architettura finta — pilastri, cornici, troni — e dentro quella mise le storie della Genesi."
+ },
+ {
+  "id": "poi-386-dentro",
+  "testo": "Il Giudizio universale sulla parete d'altare, dipinto trent'anni dopo la volta, con l'autoritratto nella pelle scorticata di san Bartolomeo."
+ },
+ {
+  "id": "poi-387-nome",
+  "testo": "Stanze di Raffaello"
+ },
+ {
+  "id": "poi-387-intro",
+  "testo": "appartamento dipinto del 1508-1524"
+ },
+ {
+  "id": "poi-387-scheda",
+  "testo": "Quattro stanze dell'appartamento di Giulio II: Raffaello le dipinse in modo che l'architettura dipinta continuasse quella vera. Nella Scuola di Atene le volte a cassettoni sembrano lo sfondamento della parete."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },

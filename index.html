@@ -1301,6 +1301,38 @@
      i:""},
     {n:"Giuseppe Gioachino Belli",lat:41.89004,lon:12.4745,t:"fontana",y:"",k:1,v:0,
      d:"Giuseppe Gioachino Belli, una delle fontane del centro di Roma.",
+     i:""},
+
+    /* ------- Roma: i Fori nel dettaglio e il Vaticano ------- */
+    {n:"Arco di Settimio Severo",lat:41.89283,lon:12.48474,t:"arco di trionfo",y:"203 d.C.",k:1,v:0,
+     d:"Tre fornici, quello centrale più grande, con le colonne composite staccate dal muro su alti plinti: sopra, i grandi pannelli a rilievo con le campagne contro i Parti, scolpiti come cronache a più piani. L'iscrizione in alto porta i segni della rasura: il nome di Geta fu cancellato dal fratello Caracalla.",
+     i:"I fori delle lettere di bronzo nell'iscrizione: si legge ancora dove c'era il nome cancellato."},
+    {n:"Curia Iulia",lat:41.89296,lon:12.4854,t:"aula del Senato",y:"rifatta nel 283 d.C.",k:1,v:0,
+     d:"La sala del Senato: un'aula rettangolare altissima e spoglia, con tre gradinate per lato e il pavimento in opus sectile originale. Si è conservata perché fu trasformata in chiesa.",
+     i:"Il pavimento a tarsie di marmo, quello vero, e le porte di bronzo (quelle qui sono copie: le originali stanno al Laterano)."},
+    {n:"Tempio di Saturno",lat:41.8924,lon:12.48408,t:"tempio romano",y:"497 a.C., rifatto nel IV sec.",k:1,v:0,
+     d:"Otto colonne di granito con la trabeazione: è quello che si vede da piazza del Campidoglio guardando giù. Sotto il podio stava l'erario, la cassa dello Stato romano.",
+     i:""},
+    {n:"Tempio di Antonino e Faustina",lat:41.8921,lon:12.48667,t:"tempio e chiesa",y:"141 d.C.",k:1,v:0,
+     d:"Dieci colonne corinzie di cipollino alte diciassette metri, e dentro, in alto, la facciata barocca della chiesa di San Lorenzo in Miranda: la chiesa fu costruita dentro il tempio al livello raggiunto dall'interro. Sulle colonne si vedono i solchi delle corde di chi tentò di abbatterle.",
+     i:"I solchi delle funi sui fusti, a mezza altezza: il tentativo fallito di tirarle giù."},
+    {n:"Casa delle Vestali",lat:41.89132,lon:12.48667,t:"casa romana",y:"rifatta nel II sec. d.C.",k:1,v:0,
+     d:"Un cortile lungo con le vasche e le statue delle vestali attorno, e sui tre lati gli ambienti su due piani: la casa delle sacerdotesse che custodivano il fuoco di Roma.",
+     i:""},
+    {n:"Foro di Cesare",lat:41.89369,lon:12.48514,t:"foro",y:"46 a.C.",k:1,v:0,
+     d:"Il primo dei fori imperiali: una piazza porticata con il tempio di Venere Genitrice in fondo, costruita da Cesare comprando e demolendo il quartiere che c'era. Da qui in poi i fori diventano opere di propaganda.",
+     i:""},
+    {n:"Basilica Giulia",lat:41.89197,lon:12.48478,t:"basilica civile",y:"54 a.C.",k:1,v:0,
+     d:"Era il tribunale: un'aula enorme a cinque navate, oggi ridotta al piano dei pilastri. Sui gradini si vedono incisi i tabulae lusoriae, i giochi a scacchiera che i romani scavavano nel marmo per passare il tempo.",
+     i:"Cerca le griglie incise sui gradini: sono i tavolieri da gioco."},
+    {n:"Musei Vaticani",lat:41.90632,lon:12.45348,t:"musei",y:"dal 1506",k:1,v:0,
+     d:"Sette chilometri di percorso dentro i palazzi papali: si attraversano cortili, gallerie e scale costruite in cinque secoli. L'ingresso attuale è del 1932, con la scala elicoidale doppia di Giuseppe Momo, due rampe che salgono e scendono senza incontrarsi.",
+     i:"La Galleria delle Carte Geografiche, quaranta mappe d'Italia dipinte nel Cinquecento su centoventi metri di volta."},
+    {n:"Cappella Sistina",lat:41.90287,lon:12.4545,t:"cappella",y:"1475-1481, volta 1508-1512",k:1,v:0,
+     d:"Una scatola rettangolare senza decorazione architettonica, costruita con le proporzioni che la Bibbia dà al tempio di Salomone. Michelangelo ci dipinse sopra un'architettura finta — pilastri, cornici, troni — e dentro quella mise le storie della Genesi.",
+     i:"Il Giudizio universale sulla parete d'altare, dipinto trent'anni dopo la volta, con l'autoritratto nella pelle scorticata di san Bartolomeo."},
+    {n:"Stanze di Raffaello",lat:41.90392,lon:12.45488,t:"appartamento dipinto",y:"1508-1524",k:1,v:0,
+     d:"Quattro stanze dell'appartamento di Giulio II: Raffaello le dipinse in modo che l'architettura dipinta continuasse quella vera. Nella Scuola di Atene le volte a cassettoni sembrano lo sfondamento della parete.",
      i:""}
   ];
 
@@ -1857,9 +1889,13 @@
     if(!mappa)return;
     segni.forEach(function(m){mappa.removeLayer(m);});segni=[];
     POI.forEach(function(p){
-      if(dist(S.lat,S.lon,p.lat,p.lon)>1400)return;
-      var m=L.circleMarker([p.lat,p.lon],{radius:p.y?6:5,weight:1.5,color:'#0E1013',
-        fillColor:coloreDi(p),fillOpacity:.95}).addTo(mappa);
+      // sulla mappa ci stanno tutte le emergenze della città in cui sei:
+      // i monumenti fino a cinque chilometri, i servizi solo se vicini
+      var d=dist(S.lat,S.lon,p.lat,p.lon);
+      var bene=(p.k===1||p.f||p.y);
+      if(d>(bene?5000:900))return;
+      var m=L.circleMarker([p.lat,p.lon],{radius:bene?(p.y?6:5):4,weight:1.5,color:'#0E1013',
+        fillColor:coloreDi(p),fillOpacity:bene?.95:.7}).addTo(mappa);
       m.bindTooltip(p.n,{direction:'top',className:'eti'});
       m.bindPopup('<b>'+p.n+'</b><br>'+(p.t||'')+(p.y?' · '+p.y:'')+'<br>'+(p.d||'').slice(0,180));
       segni.push(m);
