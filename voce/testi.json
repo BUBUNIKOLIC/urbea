@@ -229,15 +229,15 @@
  },
  {
   "id": "poi-16-intro",
-  "testo": "palazzo del anni 1690 / restauro 1843"
+  "testo": "palazzo del dalla fine del Seicento, rifatto nel 1843"
  },
  {
   "id": "poi-16-scheda",
-  "testo": "Lo fece costruire negli anni Novanta del Seicento il marchese di Vallelonga, che qui aveva il feudo. All'inizio del Settecento i fabbricati rustici dell'azienda agricola furono trasformati in residenza di villeggiatura: il corpo principale prese le sale di rappresentanza affrescate del piano nobile. Il terremoto del 1794 lo danneggiò gravemente; il restauro fu affidato nel 1843 a Camillo Napoleone Sasso."
+  "testo": "Nato come fabbricato rurale del marchese di Vallelonga, fu trasformato in villa agli inizi del Settecento. Dopo i danni, nel 1843 la famiglia affidò il rifacimento a Camillo Napoleone Sasso, che gli diede lo scalone monumentale e il grande salone di rappresentanza. Dal 1982 è della Banca di Credito Popolare, che lo ha restaurato senza alterarne l'impianto."
  },
  {
   "id": "poi-16-dentro",
-  "testo": "Le sale affrescate del piano nobile, e il modo in cui si legge ancora il passaggio da masseria a villa."
+  "testo": "Lo scalone del Sasso e le sale affrescate del piano nobile."
  },
  {
   "id": "poi-17-nome",
@@ -317,15 +317,11 @@
  },
  {
   "id": "poi-22-intro",
-  "testo": "archeologia del I sec. d.C."
+  "testo": "villa romana del I sec. d.C."
  },
  {
   "id": "poi-22-scheda",
-  "testo": "La grande villa marittima romana, sepolta dall'eruzione del 79 d.C. Si articolava su tre livelli: il superiore crollò, l'inferiore resta interrato, si visita l'intermedio. Ricorda che questa costa era abitata molto prima della città del corallo."
- },
- {
-  "id": "poi-22-dentro",
-  "testo": "Il piano intermedio con gli ambienti conservati, e a cinquanta metri le terme romane."
+  "testo": "Si sviluppava su tre piani: l'ultimo crollò con l'eruzione del 79, quello più basso fu sepolto dalla lava, e oggi si vede solo il piano intermedio. È la misura di come il Vesuvio lavora, togliendo sopra e sotto."
  },
  {
   "id": "poi-23-nome",
@@ -361,11 +357,15 @@
  },
  {
   "id": "poi-25-intro",
-  "testo": "villa del XVIII sec."
+  "testo": "villa vesuviana del 1744"
  },
  {
   "id": "poi-25-scheda",
-  "testo": "Una delle tre ville settecentesche più importanti della città. Conserva un salone affrescato, e dietro resta uno dei pochi lembi di bosco storico del versante."
+  "testo": "Costruita nel 1744 su progetto dell'architetto Gennaro De Laurentiis lungo la Strada Regia delle Calabrie, l'attuale via Nazionale, e venduta due anni dopo al cardinale Spinelli; il nome viene dal cardinale Prisco. Il pezzo da guardare è il prospetto: un portale in piperno sormontato dalla balconata maggiore, che fa da cornice a un busto di san Gennaro. La balaustra delle scale è stata rifatta sul disegno originale."
+ },
+ {
+  "id": "poi-25-dentro",
+  "testo": "Il portale di piperno con il balcone sopra; dentro, il salone con gli affreschi settecenteschi di Giuseppe e Gaetano Magri, e il parco sul retro."
  },
  {
   "id": "poi-26-nome",
@@ -389,15 +389,15 @@
  },
  {
   "id": "poi-27-intro",
-  "testo": "villa vesuviana del impianto seicentesco, portico del primo Novecento"
+  "testo": "villa vesuviana del impianto seicentesco, rimaneggiata nel 1907"
  },
  {
   "id": "poi-27-scheda",
-  "testo": "Nata come semplice fabbricato a pianta quadrata, la villa cambiò faccia all'inizio del Novecento con l'aggiunta di un ampio portico neoclassico su tre lati, che apre la casa verso il golfo e il Vesuvio. In facciata resta leggibile la meridiana con il motto «Sine sole sileo», senza sole taccio. Qui Giacomo Leopardi fu ospite dei Ferrigni dal 1836, scappando dal colera, e scrisse La Ginestra."
+  "testo": "Nata come semplice fabbricato a pianta quadrata, nel rimaneggiamento del 1907 le fu aggiunto il colonnato con il terrazzo sopra, che apre la casa verso il golfo e il Vesuvio. In facciata resta leggibile la meridiana con il motto «Sine sole sileo», senza sole taccio. Qui Giacomo Leopardi fu ospite dei Ferrigni dal 1836, scappando dal colera, e scrisse La Ginestra."
  },
  {
   "id": "poi-27-dentro",
-  "testo": "La stanza del poeta, con gli arredi restaurati come li vide lui, e il portico che inquadra il vulcano."
+  "testo": "La stanza del poeta, con gli arredi restaurati come li vide lui, e il colonnato che inquadra il vulcano."
  },
  {
   "id": "poi-28-nome",
@@ -461,11 +461,15 @@
  },
  {
   "id": "poi-32-intro",
-  "testo": "villa del XVIII sec."
+  "testo": "villa vesuviana del 1748"
  },
  {
   "id": "poi-32-scheda",
-  "testo": "In questa fascia alta le ville sopravvissero quasi tutte, mentre il centro marinaro veniva sepolto e ricostruito: per capire com'era Torre del Greco prima del 1794 è qui che bisogna salire."
+  "testo": "Edificata nel 1748 in contrada Leopardi, sul podere Pagliarone, per don Nicola Moscati di Serino marchese di Poppano: la disegnò l'ingegnere Francesco Attanasio, con il capomastro Paolo Marra. Dalla strada si vede quello che conta: il portale monumentale sulla Nazionale e il lungo viale che porta alla villa. Dentro non si entra."
+ },
+ {
+  "id": "poi-32-dentro",
+  "testo": "Il portale e la prospettiva del viale: la villa si mostra a distanza, com'era previsto."
  },
  {
   "id": "poi-33-nome",
@@ -3542,6 +3546,46 @@
  {
   "id": "poi-261-scheda",
   "testo": "È una mostra d'acqua, cioè il punto in cui un acquedotto si mostra alla città: un arco di trionfo a sei colonne di granito prese dal vecchio San Pietro, con l'acqua che cade in una vasca unica, aggiunta dopo. Dal piazzale si vede Roma intera."
+ },
+ {
+  "id": "poi-262-nome",
+  "testo": "Villa Bruno Prota"
+ },
+ {
+  "id": "poi-262-intro",
+  "testo": "villa vesuviana"
+ },
+ {
+  "id": "poi-262-scheda",
+  "testo": "Si riconosce dalla strada per il portale d'ingresso imponente, affiancato da due balconi; da lì parte il viale che porta alla villa e prosegue verso il mare."
+ },
+ {
+  "id": "poi-263-nome",
+  "testo": "Masseria di Donna Chiara"
+ },
+ {
+  "id": "poi-263-intro",
+  "testo": "masseria del primi del Settecento"
+ },
+ {
+  "id": "poi-263-scheda",
+  "testo": "Oggi è un grande rudere in semiabbandono, ma la mole si legge ancora: era una masseria di primo Settecento, con la casa padronale e i fabbricati di lavoro attorno."
+ },
+ {
+  "id": "poi-264-nome",
+  "testo": "Il campanile di Santa Croce"
+ },
+ {
+  "id": "poi-264-intro",
+  "testo": "campanile del barocco"
+ },
+ {
+  "id": "poi-264-scheda",
+  "testo": "Tre ordini sovrapposti in forme barocche. Il primo ordine è sotto terra: la lava del 1794 lo sommerse, e il campanile che si vede comincia dove la colata si è fermata."
+ },
+ {
+  "id": "poi-264-dentro",
+  "testo": "L'orologio fermo alle tre del mattino, l'ora in cui la lava arrivò."
  },
  {
   "id": "percorso-lava",
