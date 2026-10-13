@@ -337,6 +337,10 @@
     border-color:#F0CE91;color:#2A1D06;font-size:21px;font-weight:700;
     box-shadow:0 0 26px rgba(231,185,107,.30)}
   .btn-casa[hidden]{display:none}
+  .btn-sos{flex-basis:100%;background:linear-gradient(180deg,#E05A4B 0%,#B6362A 100%);
+    border-color:#F08274;color:#2A0C08;font-size:21px;font-weight:700;
+    box-shadow:0 0 26px rgba(224,90,75,.32)}
+  body[data-voice="1"] .btn-sos{font-size:26px;padding:24px}
   body[data-voice="1"] .btn-casa{font-size:26px;padding:24px}
   .btn-parla.ascolta{background:linear-gradient(180deg,#5BE3FF,#2FB7D6);color:#042027;
     box-shadow:0 0 26px rgba(91,227,255,.45)}
@@ -404,6 +408,8 @@
     <button class="btn btn-parla" id="parla" hidden aria-label="Parla: dimmi un comando">🎙 Parla</button>
     <button class="btn btn-casa" id="vai-casa" hidden>🏠 Portami a casa</button>
     <button class="btn" id="segna-casa">Segna casa qui</button>
+    <button class="btn btn-sos" id="sos">🆘 Vienimi a prendere</button>
+    <button class="btn" id="chi-chiamare">Chi chiamare</button>
   </section>
 
   <div class="status" id="status">in attesa</div>
@@ -3241,6 +3247,15 @@
     try{ localStorage.setItem('urbea-casa',JSON.stringify(casa)); }catch(e){}
     leggiCasa();
     leggiSoccorso();
+    var bsos=el('sos');
+    if(bsos)bsos.addEventListener('click',function(){
+      audio();
+      if(!soccorso||!soccorso.tel){ chiediChiChiamare(true); return; }
+      vienimiAPrendere();
+    });
+    var bch=el('chi-chiamare');
+    if(bch)bch.addEventListener('click',function(){audio();chiediChiChiamare(false);});
+    aggiornaChiChiamare();
     statusEl.textContent='casa segnata qui';
     dire(['frase-casa-segnata'],'Ho segnato casa qui. Quando vuoi tornare, dimmi: portami a casa.');
   }
@@ -3261,6 +3276,20 @@
   function segnaSoccorso(numero,nome){
     soccorso={n:(nome||'').trim(),tel:(numero||'').replace(/[^+0-9]/g,'')};
     try{ localStorage.setItem('urbea-soccorso',JSON.stringify(soccorso)); }catch(e){}
+  }
+  function aggiornaChiChiamare(){
+    var b=el('chi-chiamare');
+    if(b)b.textContent = (soccorso&&soccorso.tel) ? ('Chiama '+(soccorso.n||'il numero salvato')) : 'Chi chiamare';
+  }
+  function chiediChiChiamare(poiManda){
+    var nome=prompt('Chi deve venire a prenderti? (nome)', soccorso?soccorso.n:'');
+    if(nome===null)return;
+    var tel=prompt('Il suo numero di telefono', soccorso?soccorso.tel:'');
+    if(tel===null)return;
+    segnaSoccorso(tel,nome);
+    aggiornaChiChiamare();
+    statusEl.textContent='chiamerò '+(nome||tel);
+    if(poiManda)vienimiAPrendere();
   }
   function vienimiAPrendere(){
     if(!S.pronto){ dire(['frase-casa-senza-posizione'],'Prima devo sapere dove sei: premi Avvia.'); return true; }
