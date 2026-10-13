@@ -1827,11 +1827,21 @@
   el('skip').addEventListener('click',function(){audio();skipOn();});
 
   var ultimoDisegno=0;
+  function mostraAttesa(items){
+    if(pending)return;
+    if(whatEl.textContent&&whatEl.textContent!=='Premi Avvia'&&whatEl.textContent!=='In attesa')return;
+    if(!items.length)return;
+    var o=items[0];
+    whereEl.textContent=side(o.rel)+', '+metres(o.m);
+    whatEl.textContent=o.p.n;
+    bodyEl.className='body idle';
+    bodyEl.textContent=o.p.t+(o.p.y?' · '+o.p.y:'')+' — cammina, te lo racconto quando ci sei';
+  }
   function render(){var items=around();
     if(document.hidden){drawList(items);narrate(items);return;}
     if(!S.voice){drawStrip(items);muoviMappa();
       if(Date.now()-ultimoDisegno>4000){ultimoDisegno=Date.now();disegnaMappa();}}
-    drawList(items);narrate(items);}
+    drawList(items);narrate(items);mostraAttesa(items);}
 
   /* ---------- posizione reale ---------- */
   var watchId=null,wakeLock=null;
@@ -2131,6 +2141,14 @@
     segno=L.circleMarker([S.lat,S.lon],{radius:7,color:'#fff',weight:2,fillColor:'#4FAFC4',fillOpacity:1}).addTo(mappa);
     mappa.on('dragstart',function(){seguiMappa=false;});
     disegnaMappa();
+    // Leaflet misura il contenitore quando nasce: se cambia (porta che si
+    // chiude, mappa spostata, finestra ridimensionata) va rimisurato, se no
+    // carica le piastrelle di un riquadro che non esiste e resta nero
+    [80,300,900,2000].forEach(function(t){ setTimeout(function(){ try{mappa.invalidateSize();}catch(e){} },t); });
+    window.addEventListener('resize',function(){ try{mappa.invalidateSize();}catch(e){} });
+    if(window.ResizeObserver){
+      try{ new ResizeObserver(function(){ try{mappa.invalidateSize();}catch(e){} }).observe(el('mappa')); }catch(e){}
+    }
   }
   function coloreDi(p){
     if(p.f)return '#9B7BD4';
