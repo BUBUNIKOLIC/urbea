@@ -3264,6 +3264,286 @@
   "testo": "Quattro fontane agli angoli smussati di un incrocio, una per cantonata: il Tevere, l'Aniene, la Diana e la Giunone. Il punto esiste per la vista: da qui si vedono in asse tre obelischi, a Trinità dei Monti, al Quirinale e a Santa Maria Maggiore. È urbanistica fatta con lo sguardo."
  },
  {
+  "id": "poi-243-nome",
+  "testo": "Insula dell'Ara Coeli"
+ },
+ {
+  "id": "poi-243-intro",
+  "testo": "casa romana del II sec. d.C."
+ },
+ {
+  "id": "poi-243-scheda",
+  "testo": "Sotto la scalinata dell'Aracoeli affiora una casa popolare romana di più piani: botteghe al piano strada, poi gli appartamenti che salivano stretti e bui. È la Roma di chi ci abitava, non quella dei templi, ed è l'unica insula rimasta in piedi in città."
+ },
+ {
+  "id": "poi-243-dentro",
+  "testo": "I vani delle botteghe e le finestrelle dei piani alti, sempre più piccole salendo."
+ },
+ {
+  "id": "poi-244-nome",
+  "testo": "Obelisco di Montecitorio"
+ },
+ {
+  "id": "poi-244-intro",
+  "testo": "obelisco e gnomone del X sec. a.C., qui dal 10 a.C."
+ },
+ {
+  "id": "poi-244-scheda",
+  "testo": "Non è solo un obelisco: Augusto lo fece portare da Eliopoli per farne lo gnomone di una meridiana enorme tracciata sul Campo Marzio. L'ombra, al mezzogiorno dell'equinozio, puntava verso l'Ara Pacis. Il pavimento con le linee di bronzo sta ancora sotto le case, otto metri più in basso."
+ },
+ {
+  "id": "poi-244-dentro",
+  "testo": "La sfera di bronzo in cima con il foro: è quella che proietta il punto di luce."
+ },
+ {
+  "id": "poi-245-nome",
+  "testo": "Passetto di Borgo"
+ },
+ {
+  "id": "poi-245-intro",
+  "testo": "camminamento fortificato del 1277"
+ },
+ {
+  "id": "poi-245-scheda",
+  "testo": "Un corridoio murato lungo ottocento metri che corre in alto da San Pietro a Castel Sant'Angelo: via di fuga per il papa, costruita dentro lo spessore delle mura. Si vede dalla strada come un muro cieco con i merli e le feritoie, che scavalca i palazzi."
+ },
+ {
+  "id": "poi-246-nome",
+  "testo": "Le piene del Tevere, alla Minerva"
+ },
+ {
+  "id": "poi-246-intro",
+  "testo": "dettaglio di strada"
+ },
+ {
+  "id": "poi-246-scheda",
+  "testo": "Sul fianco della chiesa, a destra del portale, una serie di lapidi segna il livello raggiunto dalle alluvioni del Tevere, secolo dopo secolo: la più alta è sopra la testa di chi guarda. È il modo più diretto per capire perché Roma si è alzata su sé stessa."
+ },
+ {
+  "id": "poi-246-dentro",
+  "testo": "Cerca le mani scolpite e le date: ogni targa indica con una linea il punto esatto dell'acqua."
+ },
+ {
+  "id": "poi-247-nome",
+  "testo": "Il buco della serratura dell'Aventino"
+ },
+ {
+  "id": "poi-247-intro",
+  "testo": "dettaglio di strada del piazza del 1765"
+ },
+ {
+  "id": "poi-247-scheda",
+  "testo": "La piazza dei Cavalieri di Malta la disegnò Giovanni Battista Piranesi, l'incisore, ed è l'unica architettura che costruì: obelischi, stele e trofei di stucco al posto delle case. Nel portone del priorato c'è il foro della serratura, allineato con un vialetto di siepi che inquadra la cupola di San Pietro a tre chilometri: una prospettiva costruita apposta."
+ },
+ {
+  "id": "poi-247-dentro",
+  "testo": "Guarda prima la piazza, poi il buco: la prospettiva è il seguito di quello che Piranesi ha disegnato sui muri."
+ },
+ {
+  "id": "poi-248-nome",
+  "testo": "Terme di Caracalla"
+ },
+ {
+  "id": "poi-248-intro",
+  "testo": "terme romane del 212-216 d.C."
+ },
+ {
+  "id": "poi-248-scheda",
+  "testo": "Quello che resta sono i muri di sostegno in laterizio, alti venti metri: le volte che reggevano erano a crociera, su luci di trentacinque metri. Sotto il pavimento corre una città di servizio, con i corridoi per la legna e i forni che scaldavano l'acqua. Il rivestimento di marmi e mosaici è stato tutto portato via nei secoli."
+ },
+ {
+  "id": "poi-248-dentro",
+  "testo": "Il calidarium rotondo, i pavimenti a mosaico rimasti e l'altezza delle murature, che da sola fa capire la scala."
+ },
+ {
+  "id": "poi-249-nome",
+  "testo": "Circo Massimo"
+ },
+ {
+  "id": "poi-249-intro",
+  "testo": "circo romano del dal VI sec. a.C."
+ },
+ {
+  "id": "poi-249-scheda",
+  "testo": "Non c'è quasi niente da vedere, ed è proprio questo che lo rende leggibile: la conca erbosa lunga seicento metri fra Palatino e Aventino è la pista, con la spina al centro dove stavano gli obelischi. Teneva più di centocinquantamila persone."
+ },
+ {
+  "id": "poi-250-nome",
+  "testo": "Piramide Cestia"
+ },
+ {
+  "id": "poi-250-intro",
+  "testo": "sepolcro del 18-12 a.C."
+ },
+ {
+  "id": "poi-250-scheda",
+  "testo": "Una piramide vera, alta trentasei metri, rivestita di lastre di marmo di Carrara su un nucleo di cementizio: la tomba di Caio Cestio, costruita quando l'Egitto era appena diventato moda a Roma. Inglobata nelle mura aureliane, si è salvata perché è diventata un bastione."
+ },
+ {
+  "id": "poi-251-nome",
+  "testo": "Cimitero acattolico"
+ },
+ {
+  "id": "poi-251-intro",
+  "testo": "cimitero del dal 1716"
+ },
+ {
+  "id": "poi-251-scheda",
+  "testo": "Il cimitero degli stranieri non cattolici, sotto la piramide: cipressi, lapidi inglesi e tedesche, gatti. Ci sono le tombe di Keats e di Shelley."
+ },
+ {
+  "id": "poi-252-nome",
+  "testo": "Terme di Diocleziano"
+ },
+ {
+  "id": "poi-252-intro",
+  "testo": "terme romane del 298-306 d.C."
+ },
+ {
+  "id": "poi-252-scheda",
+  "testo": "Le più grandi di Roma. L'aula centrale è ancora in piedi perché Michelangelo la trasformò in chiesa, Santa Maria degli Angeli, senza toccarne la struttura: le otto colonne di granito rosso sono quelle romane, le volte a crociante sono le originali. Entrare in chiesa è entrare dentro una sala termale."
+ },
+ {
+  "id": "poi-252-dentro",
+  "testo": "L'altezza delle volte e la meridiana a pavimento, tracciata nel 1702."
+ },
+ {
+  "id": "poi-253-nome",
+  "testo": "Palazzo Massimo alle Terme"
+ },
+ {
+  "id": "poi-253-intro",
+  "testo": "museo del 1883-1887"
+ },
+ {
+  "id": "poi-253-scheda",
+  "testo": "La sede del Museo Nazionale Romano che tiene la pittura antica: gli affreschi della villa di Livia, un giardino dipinto a parete intera, staccati e rimontati in una stanza che ne restituisce la misura."
+ },
+ {
+  "id": "poi-253-dentro",
+  "testo": "Il giardino di Livia: un ambiente senza porte né finestre dipinte, solo verde, uccelli e frutta."
+ },
+ {
+  "id": "poi-254-nome",
+  "testo": "Galleria Borghese"
+ },
+ {
+  "id": "poi-254-intro",
+  "testo": "museo e villa del 1613-1616"
+ },
+ {
+  "id": "poi-254-scheda",
+  "testo": "La villa fu costruita per esporre: le sale sono pensate attorno alle statue, e il Bernini vi lavorò da ragazzo. L'Apollo e Dafne, il Ratto di Proserpina e il David stanno ancora dove dovevano stare, al centro delle stanze, da girarci intorno."
+ },
+ {
+  "id": "poi-254-dentro",
+  "testo": "Le dita di Plutone che affondano nella coscia di Proserpina: marmo che si comporta come carne."
+ },
+ {
+  "id": "poi-255-nome",
+  "testo": "Villa Farnesina"
+ },
+ {
+  "id": "poi-255-intro",
+  "testo": "villa del 1506-1510"
+ },
+ {
+  "id": "poi-255-scheda",
+  "testo": "Baldassarre Peruzzi la disegnò a U, con la loggia aperta sul giardino e il fronte scandito da lesene: una villa suburbana, non un palazzo di città. Dentro, Raffaello e la sua bottega affrescarono la loggia di Amore e Psiche e la Galatea."
+ },
+ {
+  "id": "poi-255-dentro",
+  "testo": "La Sala delle Prospettive, dove Peruzzi dipinge colonne e paesaggi che bucano il muro: da un punto preciso l'illusione è perfetta."
+ },
+ {
+  "id": "poi-256-nome",
+  "testo": "Domus Aurea"
+ },
+ {
+  "id": "poi-256-intro",
+  "testo": "palazzo romano del 64-68 d.C."
+ },
+ {
+  "id": "poi-256-scheda",
+  "testo": "Quel che resta della casa di Nerone, sepolta sotto le terme di Traiano che ci furono costruite sopra. Le volte conservano le decorazioni che nel Rinascimento si scoprirono calandosi dall'alto: le chiamarono grottesche perché quelle stanze sembravano grotte."
+ },
+ {
+  "id": "poi-256-dentro",
+  "testo": "La sala ottagona con l'oculo nella volta, un prototipo di cupola."
+ },
+ {
+  "id": "poi-257-nome",
+  "testo": "Basilica dei Santi Quattro Coronati"
+ },
+ {
+  "id": "poi-257-intro",
+  "testo": "basilica e fortezza del XII sec."
+ },
+ {
+  "id": "poi-257-scheda",
+  "testo": "Non sembra una chiesa: è un complesso fortificato con la torre d'ingresso e due cortili in fila, nato per difendersi. La navata attuale sta dentro una chiesa più grande e bruciata, e si vede dal salto fra le murature."
+ },
+ {
+  "id": "poi-257-dentro",
+  "testo": "L'oratorio di San Silvestro, con il ciclo di affreschi del 1246, e il chiostro cosmatesco."
+ },
+ {
+  "id": "poi-258-nome",
+  "testo": "Basilica di Santo Stefano Rotondo"
+ },
+ {
+  "id": "poi-258-intro",
+  "testo": "basilica del V sec."
+ },
+ {
+  "id": "poi-258-scheda",
+  "testo": "Pianta circolare, la più antica di questo tipo a Roma: due anelli concentrici di colonne antiche, con la luce che scende dall'alto del tamburo centrale. Lo spazio si percorre girando, non camminando in avanti."
+ },
+ {
+  "id": "poi-259-nome",
+  "testo": "Basilica di Santa Sabina"
+ },
+ {
+  "id": "poi-259-intro",
+  "testo": "basilica del 422-432"
+ },
+ {
+  "id": "poi-259-scheda",
+  "testo": "La basilica paleocristiana rimasta più intatta: ventiquattro colonne corinzie scanalate, tutte uguali e tutte antiche, una navata chiara con le finestre a transenna di selenite. Qui si vede com'erano le chiese prima del barocco."
+ },
+ {
+  "id": "poi-259-dentro",
+  "testo": "La porta lignea di cipresso del V secolo, con i pannelli scolpiti: c'è una delle più antiche crocifissioni conosciute."
+ },
+ {
+  "id": "poi-260-nome",
+  "testo": "Basilica di Santa Prassede"
+ },
+ {
+  "id": "poi-260-intro",
+  "testo": "basilica del 817-824"
+ },
+ {
+  "id": "poi-260-scheda",
+  "testo": "Dentro una chiesa semplice si apre la cappella di San Zenone, foderata interamente di mosaici d'oro: i bizantini la chiamavano il giardino del paradiso. È il pezzo più compiuto di arte bizantina a Roma."
+ },
+ {
+  "id": "poi-260-dentro",
+  "testo": "I mosaici dell'arco e dell'abside, e nella cappella la volta con i quattro angeli che reggono il clipeo."
+ },
+ {
+  "id": "poi-261-nome",
+  "testo": "Fontana dell'Acqua Paola, il Fontanone"
+ },
+ {
+  "id": "poi-261-intro",
+  "testo": "mostra d'acqua del 1612"
+ },
+ {
+  "id": "poi-261-scheda",
+  "testo": "È una mostra d'acqua, cioè il punto in cui un acquedotto si mostra alla città: un arco di trionfo a sei colonne di granito prese dal vecchio San Pietro, con l'acqua che cade in una vasca unica, aggiunta dopo. Dal piazzale si vede Roma intera."
+ },
+ {
   "id": "percorso-lava",
   "testo": "Il centro sepolto — la lava del 1794"
  },
@@ -3334,6 +3614,18 @@
  {
   "id": "percorso-bernini-borromini",
   "testo": "Roma — Bernini contro Borromini"
+ },
+ {
+  "id": "percorso-roma-aventino",
+  "testo": "Roma — l'Aventino: Santa Sabina, il buco della serratura, la Piramide"
+ },
+ {
+  "id": "percorso-roma-celio",
+  "testo": "Roma — il Celio: San Clemente, i Quattro Coronati, Santo Stefano"
+ },
+ {
+  "id": "percorso-roma-esquilino",
+  "testo": "Roma — l'Esquilino: Santa Maria Maggiore, Santa Prassede, le Terme"
  },
  {
   "id": "dir-dritto-davanti",
