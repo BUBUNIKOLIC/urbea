@@ -2492,7 +2492,7 @@
 
   var S={lat:40.78706,lon:14.36831,hd:300,live:false,sim:false,voice:false,
          route:ROUTES[0],seg:0,frac:0,said:{},radius:400,acc:null,pronto:false,
-         libero:false,modoVoce:false};
+         libero:false,modoVoce:false,racconta:'tutto'};
 
   var el=function(id){return document.getElementById(id);};
   var strip=el('strip'),listEl=el('list'),plan=el('plan'),g=plan.getContext('2d'),
@@ -2612,8 +2612,15 @@
     }catch(e){ speak(testo); }
   }
 
+  function serveQui(p){
+    // 'tutto' dice anche farmacie e fermate; 'cultura' solo i luoghi raccontati;
+    // 'servizi' solo quelli utili a chi cammina per arrivare da qualche parte
+    if(S.racconta==='cultura')return p.k===1;
+    if(S.racconta==='servizi')return p.k!==1;
+    return true;
+  }
   function around(){
-    return POI.filter(function(p){return !p.f;}).map(function(p){
+    return POI.filter(function(p){return !p.f && serveQui(p);}).map(function(p){
       return {p:p,m:dist(S.lat,S.lon,p.lat,p.lon),rel:norm(bear(S.lat,S.lon,p.lat,p.lon)-S.hd)};
     }).filter(function(o){return o.m<S.radius;}).sort(function(a,b){return a.m-b.m;});
   }
@@ -3101,6 +3108,16 @@
       dire([dirId(o.rel),metriId(o.m),poiId(o.p)+'-nome'],sp);
       return true;
     }
+    if(ha('solo monumenti','solo i monumenti','niente negozi','niente servizi','solo cultura')){
+      S.racconta='cultura'; S.said={};
+      dire(['frase-solo-cultura'],'Va bene: ti dico solo i luoghi da vedere.');
+      render(); return true;
+    }
+    if(ha('anche i servizi','anche i negozi','dimmi tutto','anche le farmacie','tutto')){
+      S.racconta='tutto'; S.said={};
+      dire(['frase-tutto'],'Va bene: ti dico tutto, anche negozi e fermate.');
+      render(); return true;
+    }
     if(ha('ingrandisci','piu grande','caratteri grandi','non ci vedo','testo grande')){
       testoPiuGrande();
       dire(['frase-testo-grande'],'Ho ingrandito il testo.');
@@ -3225,6 +3242,7 @@
     function entra(modoVoce){
       porta.hidden=true;
       audio();
+      S.racconta = modoVoce ? 'tutto' : 'cultura';
       // chi guarda vuole la mappa davanti agli occhi, non in fondo alla pagina
       if(!modoVoce){
         var m=el('mappa'), say=document.querySelector('.say');

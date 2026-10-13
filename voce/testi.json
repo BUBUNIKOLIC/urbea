@@ -8900,6 +8900,14 @@
   "testo": "a 500 metri"
  },
  {
+  "id": "frase-solo-cultura",
+  "testo": "Va bene: ti dico solo i luoghi da vedere."
+ },
+ {
+  "id": "frase-tutto",
+  "testo": "Va bene: ti dico tutto, anche negozi e fermate."
+ },
+ {
   "id": "frase-testo-grande",
   "testo": "Ho ingrandito il testo."
  },
