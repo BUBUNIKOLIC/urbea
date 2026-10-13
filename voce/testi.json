@@ -1509,15 +1509,15 @@
  },
  {
   "id": "poi-111-intro",
-  "testo": "castello e museo nazionale del XV-XVI sec."
+  "testo": "castello e museo nazionale del dal mastio longobardo al 1528"
  },
  {
   "id": "poi-111-scheda",
-  "testo": "Nato come fortezza sul colle, fu trasformato in dimora signorile da Enrico Pandone, signore di Venafro dal 1514 al 1528: la loggia di gusto bramantesco addolcisce il fronte militare, e le sale del piano nobile diventano stanze di rappresentanza. Oggi è il Museo nazionale del Molise."
+  "testo": "Si legge a strati: alla base una fortificazione megalitica, poi il mastio quadrato longobardo, nel Trecento le tre torri circolari e la braga merlata attorno. Nel Quattrocento i Pandone lo trasformano in dimora: Enrico, signore dal 1514 al 1528, aggiunge il giardino all'italiana e il loggiato, e fa dipingere le sale. Oggi è il Museo nazionale del Molise."
  },
  {
   "id": "poi-111-dentro",
-  "testo": "I cavalli di Enrico Pandone: ritratti a grandezza naturale, dipinti su intonaco modellato a rilievo, così che l'animale esce dal muro. E la collezione Giuliani di disegni e stampe."
+  "testo": "I ventisei ritratti di cavalli a leggero rilievo: l'intonaco è modellato sotto il colore, così l'animale esce dal muro. E la collezione Giuliani di disegni e stampe."
  },
  {
   "id": "poi-112-nome",
@@ -1525,15 +1525,15 @@
  },
  {
   "id": "poi-112-intro",
-  "testo": "chiesa del rifatta dopo il 1349, interni del 1757"
+  "testo": "chiesa del Trecento, interni del Settecento"
  },
  {
   "id": "poi-112-scheda",
-  "testo": "La facciata ha un timpano curvo e un portale centrale fiancheggiato da due fusti di colonne romane di reimpiego, presi da un edificio antico che stava qui. La chiesa esisteva prima della metà del Trecento, fu rifatta dopo il terremoto del 1349 e portata a termine entro il 1387 da una confraternita di disciplinati."
+  "testo": "La costruì nel Trecento la confraternita dei Flagellanti. La facciata ha un timpano curvo e un portale fiancheggiato da due fusti di colonne romane di reimpiego; il campanile è di forme barocche con memorie rinascimentali, e la cupola è affrescata. Dentro, navata unica."
  },
  {
   "id": "poi-112-dentro",
-  "testo": "Gli stucchi del 1757 e gli affreschi della navata; e i cicli di affreschi fra fine Trecento e inizio Quattrocento, rimasti sotto l'intonaco fino a pochi decenni fa, con il Giudizio universale sulla parete d'ingresso."
+  "testo": "Gli affreschi di Giacinto Diano e Paolo Sperduti, allievi del Vanvitelli, l'organo del 1784 e, sotto l'intonaco, i cicli tardo-trecenteschi col Giudizio universale sulla parete d'ingresso."
  },
  {
   "id": "poi-113-nome",
@@ -1581,11 +1581,15 @@
  },
  {
   "id": "poi-116-intro",
-  "testo": "chiesa del 1545, ampliata nel 1650"
+  "testo": "chiesa del seconda metà del Cinquecento, ampliata nel Seicento"
  },
  {
   "id": "poi-116-scheda",
-  "testo": "Costruita nel 1545 dalla confraternita che teneva l'ospizio dei malati e ampliata nel 1650. L'ingresso è scenografico: una scalinata con balaustra solleva la facciata sulla piazza. Dentro è a navata unica, con decorazione barocca."
+  "testo": "Detta anche chiesa del Viatico. Costruita nella seconda metà del Cinquecento dalla confraternita che teneva l'ospizio dei malati e ampliata nella seconda metà del Seicento. La scalinata con balaustra solleva la facciata sulla piazza; dentro, navata unica con un finto transetto fatto di stucco, due piccole cupole cieche e il campanile barocco."
+ },
+ {
+  "id": "poi-116-dentro",
+  "testo": "Le statue dei quattro evangelisti e il transetto che non c'è: è disegnato con lo stucco."
  },
  {
   "id": "poi-117-nome",
@@ -1609,11 +1613,11 @@
  },
  {
   "id": "poi-118-intro",
-  "testo": "chiesa"
+  "testo": "chiesa del primo impianto del XIV sec."
  },
  {
   "id": "poi-118-scheda",
-  "testo": "Chiesa conventuale nella parte bassa del centro storico, su via De Amicis."
+  "testo": "Si chiama anche San Giovanni in Platea. L'impianto è trecentesco, l'aspetto barocco: navata unica con altari di marmo e un baldacchino baroccheggiante. Dalla chiesa si scende agli scavi sottostanti."
  },
  {
   "id": "poi-119-nome",
@@ -1625,11 +1629,11 @@
  },
  {
   "id": "poi-119-scheda",
-  "testo": "Il teatro è di età augustea, costruito in opus reticulatum: la cavea non poggia su sostruzioni ma è addossata al pendio del Monte Santa Croce, come nei teatri greci scavati nella roccia. La fronte scenica misurava una sessantina di metri e lo spazio reggeva più di tremila spettatori."
+  "testo": "Di età augustea, in opus reticulatum: la cavea non poggia su sostruzioni ma è addossata al pendio del Monte Santa Croce, come nei teatri greci scavati nella roccia. La fronte scenica misura una sessantina di metri e la gradinata teneva circa tremilacinquecento persone. Accanto c'è l'odeon, la sala coperta per la musica."
  },
  {
   "id": "poi-119-dentro",
-  "testo": "Il reticolo regolare dei paramenti murari e il modo in cui la gradinata sfrutta la collina."
+  "testo": "Il reticolo regolare dei paramenti e il modo in cui la gradinata sfrutta la collina."
  },
  {
   "id": "poi-120-nome",
@@ -1637,15 +1641,15 @@
  },
  {
   "id": "poi-120-intro",
-  "testo": "cattedrale del XI sec. / rifacimenti barocchi"
+  "testo": "concattedrale del origini paleocristiane, impianto gotico"
  },
  {
   "id": "poi-120-scheda",
-  "testo": "Sta in piano, fuori dalla cinta delle mura: la chiesa grande di Venafro è anche una delle più grandi del Molise. L'impianto è quello ricostruito nella seconda metà dell'XI secolo dal vescovo Pietro da Ravenna, ma i terremoti del 1349 e del 1456 e i restauri successivi hanno rifatto più volte la facciata, che oggi si legge con difficoltà. Fra la fine del Seicento e il Settecento l'interno fu rivestito in forme barocche, e la chiesa fu consacrata nel 1764."
+  "testo": "Sta in piano, fuori dalle mura, ed è una delle chiese più grandi del Molise. Le origini risalgono al V secolo, sotto il vescovo Costantino; i terremoti del 1349 e del 1456 e i rifacimenti barocchi la cambiarono più volte, ma i restauri degli anni Sessanta e Settanta le hanno restituito l'aspetto gotico-medievale. L'interno è a tre navate, con opere pittoriche del Trecento."
  },
  {
   "id": "poi-120-dentro",
-  "testo": "I tre portali scolpiti della facciata, l'unica decorazione esterna rimasta, e le due mensole intagliate ai lati della bifora del campanile, di fattura duecentesca."
+  "testo": "I cinque portali della facciata, fra cui la porta santa aperta almeno dal 1500, e il cappellone aggiunto sul finire del Seicento."
  },
  {
   "id": "poi-121-nome",
@@ -2185,11 +2189,11 @@
  },
  {
   "id": "poi-165-intro",
-  "testo": "chiesa del 1722"
+  "testo": "chiesa del XVIII sec."
  },
  {
   "id": "poi-165-scheda",
-  "testo": "Fu costruita nel 1722 appena fuori dalla porta del mercato, perché i mercanti potessero pregare senza entrare in città. La facciata è alta, divisa in tre ordini, e porta un orologio; la pianta è a croce greca. Chiusa dopo il terremoto del 1984, ha riaperto nel 1994."
+  "testo": "Costruita nel Settecento fuori dalla porta del mercato, perché i mercanti potessero pregare senza entrare in città. Facciata barocca alta, divisa in ordini, con l'orologio; la pianta è centrale, con gli stucchi e una piccola cupola decorata."
  },
  {
   "id": "poi-166-nome",
@@ -2341,15 +2345,15 @@
  },
  {
   "id": "poi-178-intro",
-  "testo": "basilica del XIV sec., campanile del 1949"
+  "testo": "basilica del su resti romani, restaurata nel 2001"
  },
  {
   "id": "poi-178-scheda",
-  "testo": "La basilica dei patroni di Venafro, trecentesca, a due navate; il campanile che si vede oggi è del 1949."
+  "testo": "La basilica dei patroni, costruita su strutture romane e restaurata nel 2001. L'interno è a due navate, con la cripta sotto."
  },
  {
   "id": "poi-178-dentro",
-  "testo": "I cicli di affreschi ottocenteschi lungo una delle due navate."
+  "testo": "L'altare ligneo intarsiato e pirografato, le pitture di Amedeo Trivisonno e i portali di bronzo di Alessandro Caetani."
  },
  {
   "id": "poi-179-nome",
@@ -2369,11 +2373,11 @@
  },
  {
   "id": "poi-180-intro",
-  "testo": "palazzina liberty del primo Novecento"
+  "testo": "palazzina liberty del inizi del Novecento"
  },
  {
   "id": "poi-180-scheda",
-  "testo": "Un edificio del primo Novecento nato per far funzionare la città: era la centrale idroelettrica che dava corrente a Venafro, poi diventò un cinema. Lo stile liberty, raro da queste parti, si riconosce nelle linee della facciata."
+  "testo": "La progettò l'ingegner Gioacchino Luigi Mellucci sopra un edificio che c'era già, il Mulino della Corte, diventato centrale idroelettrica: è la casa dell'energia della città, vestita in forme liberty, poi usata come cinema."
  },
  {
   "id": "poi-181-nome",
@@ -2381,11 +2385,11 @@
  },
  {
   "id": "poi-181-intro",
-  "testo": "torre fortificata"
+  "testo": "torre fortificata del origine romana"
  },
  {
   "id": "poi-181-scheda",
-  "testo": "Una struttura fortificata isolata, restaurata di recente: faceva parte del sistema di difesa che proteggeva Venafro."
+  "testo": "Una fortificazione in montagna di origine romana, restaurata: faceva parte del sistema che teneva d'occhio la piana."
  },
  {
   "id": "poi-182-nome",
@@ -3986,6 +3990,102 @@
  {
   "id": "poi-291-scheda",
   "testo": "Tre navate su colonne antiche tutte diverse, abside con le finestre di selenite, campanile romanico e davanti un cedro vecchissimo. Dentro, un ciclo di affreschi del XII secolo copre le pareti della navata."
+ },
+ {
+  "id": "poi-292-nome",
+  "testo": "Museo WinterLine, palazzo De Utris"
+ },
+ {
+  "id": "poi-292-intro",
+  "testo": "museo"
+ },
+ {
+  "id": "poi-292-scheda",
+  "testo": "Dentro un palazzo signorile del centro, il museo racconta la Winter Line: la linea di difesa tedesca che nel 1943 passava di qui, e i mesi in cui Venafro fu prima linea."
+ },
+ {
+  "id": "poi-293-nome",
+  "testo": "Acquedotto romano, il Rivus Venafranus"
+ },
+ {
+  "id": "poi-293-intro",
+  "testo": "acquedotto del età augustea"
+ },
+ {
+  "id": "poi-293-scheda",
+  "testo": "L'acquedotto augusteo portava a Venafrum l'acqua presa dal Volturno. È lo stesso di cui parla la lastra di bronzo conservata al museo, con il provvedimento di Augusto che ne regolava l'uso. I resti si vedono vicino al centro storico."
+ },
+ {
+  "id": "poi-294-nome",
+  "testo": "Villa Maria"
+ },
+ {
+  "id": "poi-294-intro",
+  "testo": "giardini pubblici"
+ },
+ {
+  "id": "poi-294-scheda",
+  "testo": "Il giardino pubblico della città, circa un ettaro con il laghetto e i campi da gioco: è il posto dove Venafro si siede."
+ },
+ {
+  "id": "poi-295-nome",
+  "testo": "Parco regionale dell'olivo"
+ },
+ {
+  "id": "poi-295-intro",
+  "testo": "parco"
+ },
+ {
+  "id": "poi-295-scheda",
+  "testo": "Il primo parco regionale del Molise, fatto per tutelare gli oliveti storici della piana: alberi coltivati da secoli."
+ },
+ {
+  "id": "poi-296-nome",
+  "testo": "Distributore Q8"
+ },
+ {
+  "id": "poi-296-intro",
+  "testo": "distributore"
+ },
+ {
+  "id": "poi-296-scheda",
+  "testo": "Distributore Q8."
+ },
+ {
+  "id": "poi-297-nome",
+  "testo": "Distributore IP"
+ },
+ {
+  "id": "poi-297-intro",
+  "testo": "distributore"
+ },
+ {
+  "id": "poi-297-scheda",
+  "testo": "Distributore IP."
+ },
+ {
+  "id": "poi-298-nome",
+  "testo": "Distributore Scikan"
+ },
+ {
+  "id": "poi-298-intro",
+  "testo": "distributore"
+ },
+ {
+  "id": "poi-298-scheda",
+  "testo": "Distributore Scikan."
+ },
+ {
+  "id": "poi-299-nome",
+  "testo": "Supermercato EuroSpin"
+ },
+ {
+  "id": "poi-299-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-299-scheda",
+  "testo": "Supermercato EuroSpin."
  },
  {
   "id": "percorso-lava",
