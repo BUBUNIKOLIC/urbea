@@ -2237,11 +2237,11 @@
  },
  {
   "id": "poi-169-intro",
-  "testo": "monumento"
+  "testo": "monumento del 1923"
  },
  {
   "id": "poi-169-scheda",
-  "testo": "Il monumento ai caduti, in piazza."
+  "testo": "Inaugurato il 18 novembre 1923, opera dello scultore Torquato Tamagnini, che di monumenti ai caduti ne fece a decine in tutta Italia in quegli anni."
  },
  {
   "id": "poi-170-nome",
@@ -5226,6 +5226,34 @@
  {
   "id": "poi-387-scheda",
   "testo": "Quattro stanze dell'appartamento di Giulio II: Raffaello le dipinse in modo che l'architettura dipinta continuasse quella vera. Nella Scuola di Atene le volte a cassettoni sembrano lo sfondamento della parete."
+ },
+ {
+  "id": "poi-388-nome",
+  "testo": "Cimitero militare francese"
+ },
+ {
+  "id": "poi-388-intro",
+  "testo": "cimitero di guerra del 1944"
+ },
+ {
+  "id": "poi-388-scheda",
+  "testo": "Settantaseimila metri quadrati per i soldati del Corpo di spedizione francese caduti sulla linea invernale: molti venivano dal Nordafrica, e il monumento lo dice: la forma richiama i minareti, e il rivestimento è di piastrelle azzurre. È il pezzo di architettura più inatteso di Venafro."
+ },
+ {
+  "id": "poi-388-dentro",
+  "testo": "Le piastrelle azzurre e il profilo del monumento, che non somiglia a niente altro qui intorno."
+ },
+ {
+  "id": "poi-389-nome",
+  "testo": "La Purtella"
+ },
+ {
+  "id": "poi-389-intro",
+  "testo": "dettaglio di strada"
+ },
+ {
+  "id": "poi-389-scheda",
+  "testo": "Una via interamente coperta, lunga appena cinque metri, che collega via delle Vergini con via Silvano: un passaggio sotto le case, di quelli che nei centri antichi si aprivano quando una famiglia costruiva sopra la strada."
  },
  {
   "id": "percorso-lava",
