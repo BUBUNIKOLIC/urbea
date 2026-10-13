@@ -8900,6 +8900,34 @@
   "testo": "a 500 metri"
  },
  {
+  "id": "frase-cerco",
+  "testo": "Cerco l'indirizzo, un momento."
+ },
+ {
+  "id": "frase-indirizzo-non-trovato",
+  "testo": "Questo indirizzo non l'ho trovato."
+ },
+ {
+  "id": "frase-niente-partenza",
+  "testo": "Non ho segnato un punto di partenza."
+ },
+ {
+  "id": "frase-ti-porto-a",
+  "testo": "Ti porto a"
+ },
+ {
+  "id": "frase-sei-arrivato",
+  "testo": "Sei arrivato:"
+ },
+ {
+  "id": "frase-niente-di-questi",
+  "testo": "Qui vicino non ne trovo."
+ },
+ {
+  "id": "frase-lascio-perdere",
+  "testo": "Va bene, lascio perdere."
+ },
+ {
   "id": "frase-solo-cultura",
   "testo": "Va bene: ti dico solo i luoghi da vedere."
  },

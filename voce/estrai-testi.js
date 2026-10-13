@@ -51,7 +51,14 @@ for (let v = 1000; v <= 5000; v += 500) {
 }
 for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
 
-[['solo-cultura', 'Va bene: ti dico solo i luoghi da vedere.'],
+[['cerco', "Cerco l'indirizzo, un momento."],
+ ['indirizzo-non-trovato', "Questo indirizzo non l'ho trovato."],
+ ['niente-partenza', 'Non ho segnato un punto di partenza.'],
+ ['ti-porto-a', 'Ti porto a'],
+ ['sei-arrivato', 'Sei arrivato:'],
+ ['niente-di-questi', 'Qui vicino non ne trovo.'],
+ ['lascio-perdere', 'Va bene, lascio perdere.'],
+ ['solo-cultura', 'Va bene: ti dico solo i luoghi da vedere.'],
  ['tutto', 'Va bene: ti dico tutto, anche negozi e fermate.'],
  ['testo-grande', 'Ho ingrandito il testo.'],
  ['non-coperta', 'Qui la guida non arriva ancora: per ora racconta Roma, Napoli, Torre del Greco e Venafro. Puoi sceglierne una e ascoltarla da casa.'],

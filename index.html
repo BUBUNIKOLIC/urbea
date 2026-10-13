@@ -2857,7 +2857,8 @@
     if(document.hidden){drawList(items);narrate(items);return;}
     if(!S.voice){drawStrip(items);muoviMappa();
       if(Date.now()-ultimoDisegno>4000){ultimoDisegno=Date.now();disegnaMappa();}}
-    drawList(items);narrate(items);mostraAttesa(items);}
+    drawList(items);
+    if(meta){guidaVersoMeta();}else{narrate(items);mostraAttesa(items);}}
 
   /* ---------- posizione reale ---------- */
   var watchId=null,wakeLock=null;
@@ -2865,6 +2866,7 @@
     if(!navigator.geolocation){statusEl.textContent='GPS non disponibile in questo browser';return;}
     statusEl.textContent='cerco la posizione…';
     accendiRadio();
+    setTimeout(function(){ if(S.pronto&&!partenza)partenza={lat:S.lat,lon:S.lon,n:'il punto di partenza'}; },6000);
     watchId=navigator.geolocation.watchPosition(function(pos){
       S.live=true;S.sim=false;S.pronto=true;
       S.lat=pos.coords.latitude;S.lon=pos.coords.longitude;
@@ -3077,6 +3079,115 @@
     },{enableHighAccuracy:false,maximumAge:60000,timeout:12000});
   }
 
+
+  /* ---------- «portami alla farmacia più vicina» ----------
+     Non serve una mappa stradale: si dice la direzione rispetto a dove
+     si è girati e quanti metri mancano, e lo si ripete mentre si cammina.
+     Chi non vede si orienta così, come con una persona accanto. */
+  var METE={
+    farmacia:['farmacia','farmacie','parafarmacia'],
+    fermata:['fermata','autobus','bus','pullman'],
+    stazione:['stazione','treno'],
+    supermercato:['supermercato','spesa','alimentari','market'],
+    bar:['bar','caffe','caffè'],
+    ristorante:['ristorante','pizzeria','mangiare','trattoria'],
+    panificio:['panificio','pane','forno'],
+    'ufficio postale':['posta','poste','ufficio postale'],
+    banca:['banca','bancomat'],
+    ospedale:['ospedale','pronto soccorso'],
+    municipio:['municipio','comune'],
+    distributore:['distributore','benzina','benzinaio'],
+    chiesa:['chiesa','messa'],
+    museo:['museo']
+  };
+  function piuVicinoDiTipo(tipo){
+    var mig=null,dmin=Infinity;
+    POI.forEach(function(p){
+      if(!p.t)return;
+      var t=(p.t+' '+p.n).toLowerCase();
+      if(t.indexOf(tipo)<0)return;
+      var d=dist(S.lat,S.lon,p.lat,p.lon);
+      if(d<dmin){dmin=d;mig=p;}
+    });
+    return mig?{p:mig,d:dmin}:null;
+  }
+  var meta=null, metaUltimo=0, metaUltimaDist=0, partenza=null;
+  function portamiAlPunto(lat,lon,nome,descrizione){
+    meta={lat:lat,lon:lon,n:nome,d:descrizione||'',t:'meta'};
+    metaUltimo=0; metaUltimaDist=dist(S.lat,S.lon,lat,lon);
+    var rel=norm(bear(S.lat,S.lon,lat,lon)-S.hd);
+    var sp='Ti porto a '+nome+': '+side(rel)+', '+metres(metaUltimaDist)+'.';
+    whereEl.textContent=side(rel)+', '+metres(metaUltimaDist);
+    whatEl.textContent='→ '+nome;
+    bodyEl.className='body'; bodyEl.textContent=descrizione||'';
+    liveEl.textContent=sp;
+    dire(['frase-ti-porto-a',dirId(rel),metriId(metaUltimaDist)],sp);
+    return true;
+  }
+  // un indirizzo detto a voce: prima si cerca fra i luoghi nostri, poi sulla mappa libera
+  function portamiAIndirizzo(testo){
+    var cerca=testo.toLowerCase().trim();
+    if(cerca.length<4)return false;
+    var mig=null,dmin=Infinity;
+    POI.forEach(function(p){
+      if(p.n.toLowerCase().indexOf(cerca)<0)return;
+      var d=dist(S.lat,S.lon,p.lat,p.lon);
+      if(d<dmin){dmin=d;mig=p;}
+    });
+    if(mig){ meta=mig; metaUltimo=0; metaUltimaDist=dmin;
+      var rel=norm(bear(S.lat,S.lon,mig.lat,mig.lon)-S.hd);
+      var sp='Ti porto a '+mig.n+': '+side(rel)+', '+metres(dmin)+'.';
+      liveEl.textContent=sp;
+      dire(['frase-ti-porto-a',poiId(mig)+'-nome',dirId(rel),metriId(dmin)],sp);
+      return true;
+    }
+    dire(['frase-cerco'],'Cerco l\'indirizzo, un momento.');
+    var url='https://nominatim.openstreetmap.org/search?format=json&limit=1&accept-language=it'
+      +'&q='+encodeURIComponent(testo)
+      +'&viewbox='+(S.lon-0.08)+','+(S.lat+0.06)+','+(S.lon+0.08)+','+(S.lat-0.06)+'&bounded=1';
+    fetch(url).then(function(r){return r.json();}).then(function(j){
+      if(!j||!j.length){ dire(['frase-indirizzo-non-trovato'],'Questo indirizzo non l\'ho trovato.'); return; }
+      portamiAlPunto(parseFloat(j[0].lat),parseFloat(j[0].lon),j[0].display_name.split(',').slice(0,2).join(', '));
+    }).catch(function(){ dire(['frase-indirizzo-non-trovato'],'Questo indirizzo non l\'ho trovato.'); });
+    return true;
+  }
+  function portamiA(tipo){
+    var v=piuVicinoDiTipo(tipo);
+    if(!v){
+      dire(['frase-niente-di-questi'],'Qui vicino non ne trovo.');
+      return true;
+    }
+    meta=v.p; metaUltimo=0; metaUltimaDist=v.d;
+    var rel=norm(bear(S.lat,S.lon,meta.lat,meta.lon)-S.hd);
+    var sp='Ti porto a '+meta.n+': '+side(rel)+', '+metres(v.d)+'.';
+    whereEl.textContent=side(rel)+', '+metres(v.d);
+    whatEl.textContent='→ '+meta.n;
+    bodyEl.className='body'; bodyEl.textContent=meta.d||'';
+    liveEl.textContent=sp;
+    dire(['frase-ti-porto-a',poiId(meta)+'-nome',dirId(rel),metriId(v.d)],sp);
+    return true;
+  }
+  function guidaVersoMeta(){
+    if(!meta)return;
+    var d=dist(S.lat,S.lon,meta.lat,meta.lon);
+    var rel=norm(bear(S.lat,S.lon,meta.lat,meta.lon)-S.hd);
+    whereEl.textContent=side(rel)+', '+metres(d);
+    whatEl.textContent='→ '+meta.n;
+    if(d<22){
+      var fine='Sei arrivato: '+meta.n+'.';
+      liveEl.textContent=fine;
+      dire(['frase-sei-arrivato',poiId(meta)+'-nome'],fine);
+      meta=null; return;
+    }
+    var ora=Date.now();
+    // si parla quando ci si è spostati di venti metri, e non più di una volta ogni otto secondi
+    if(Math.abs(metaUltimaDist-d)<20 || ora-metaUltimo<8000)return;
+    metaUltimo=ora; metaUltimaDist=d;
+    var sp=side(rel)+', '+metres(d)+'.';
+    liveEl.textContent=sp;
+    dire([dirId(rel),metriId(d)],sp);
+  }
+
   /* ---------- i comandi a voce: l'app si guida parlando ----------
      Serve a chi non vede e cammina con il telefono in tasca: niente
      da cercare sullo schermo, si dice quello che si vuole.
@@ -3107,6 +3218,26 @@
       liveEl.textContent=sp;
       dire([dirId(o.rel),metriId(o.m),poiId(o.p)+'-nome'],sp);
       return true;
+    }
+    // «portami alla farmacia più vicina», «dov'è la fermata»
+    for(var tipo in METE){
+      var parole=METE[tipo];
+      for(var w=0;w<parole.length;w++){
+        if(t.indexOf(parole[w])>=0 &&
+           (ha('portami','vicina','vicino','dove','trova','cerca','piu vicina','piu vicino','ho bisogno'))){
+          return portamiA(tipo);
+        }
+      }
+    }
+    if(ha('torna indietro','riportami indietro','torna al punto di partenza','riportami alla partenza')){
+      if(partenza){ return portamiAlPunto(partenza.lat,partenza.lon,'il punto di partenza'); }
+      dire(['frase-niente-partenza'],'Non ho segnato un punto di partenza.');
+      return true;
+    }
+    var m=t.match(/(?:portami|accompagnami|voglio andare|andare)\s+(?:in|a|al|alla|allo|ai|alle|verso)\s+(.{3,})/);
+    if(m){ return portamiAIndirizzo(m[1]); }
+    if(ha('lascia perdere','annulla','non importa','basta cosi')){
+      if(meta){ meta=null; dire(['frase-lascio-perdere'],'Va bene, lascio perdere.'); return true; }
     }
     if(ha('solo monumenti','solo i monumenti','niente negozi','niente servizi','solo cultura')){
       S.racconta='cultura'; S.said={};
