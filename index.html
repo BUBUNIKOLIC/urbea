@@ -333,6 +333,11 @@
   .btn-parla{flex-basis:100%;background:linear-gradient(180deg,rgba(91,227,255,.22),rgba(91,227,255,.08));
     border-color:rgba(91,227,255,.6);color:#CFF6FF;font-size:20px}
   .btn-parla[hidden]{display:none}
+  .btn-casa{flex-basis:100%;background:linear-gradient(180deg,#E7B96B 0%,#C9973F 100%);
+    border-color:#F0CE91;color:#2A1D06;font-size:21px;font-weight:700;
+    box-shadow:0 0 26px rgba(231,185,107,.30)}
+  .btn-casa[hidden]{display:none}
+  body[data-voice="1"] .btn-casa{font-size:26px;padding:24px}
   .btn-parla.ascolta{background:linear-gradient(180deg,#5BE3FF,#2FB7D6);color:#042027;
     box-shadow:0 0 26px rgba(91,227,255,.45)}
 
@@ -397,6 +402,8 @@
     <button class="btn" id="sim" aria-pressed="false">Simula</button>
     <button class="btn" id="testo-piu" aria-label="Ingrandisci il testo">A+</button>
     <button class="btn btn-parla" id="parla" hidden aria-label="Parla: dimmi un comando">🎙 Parla</button>
+    <button class="btn btn-casa" id="vai-casa" hidden>🏠 Portami a casa</button>
+    <button class="btn" id="segna-casa">Segna casa qui</button>
   </section>
 
   <div class="status" id="status">in attesa</div>
@@ -3217,6 +3224,30 @@
     dire([versoAffidabile()?dirId(rel):('card-'+cardinale(meta.lat,meta.lon).replace(/ /g,'-')),metriId(d)],sp);
   }
 
+
+  /* ---------- la casa ----------
+     Per chi si perde — e capita a chi ha l'Alzheimer — la cosa che serve
+     davvero è una sola: tornare a casa. L'indirizzo si registra una volta
+     e resta; poi basta un tasto grande, o dire «portami a casa». */
+  var casa=null;
+  function leggiCasa(){
+    try{ var g=localStorage.getItem('urbea-casa'); casa=g?JSON.parse(g):null; }catch(e){ casa=null; }
+    var b=el('vai-casa'); if(b)b.hidden=!casa;
+    var s2=el('segna-casa'); if(s2)s2.textContent=casa?'Cambia casa':'Segna casa qui';
+  }
+  function segnaCasaQui(){
+    if(!S.pronto){ dire(['frase-casa-senza-posizione'],'Prima devo sapere dove sei: premi Avvia.'); return; }
+    casa={lat:S.lat,lon:S.lon,n:'casa'};
+    try{ localStorage.setItem('urbea-casa',JSON.stringify(casa)); }catch(e){}
+    leggiCasa();
+    statusEl.textContent='casa segnata qui';
+    dire(['frase-casa-segnata'],'Ho segnato casa qui. Quando vuoi tornare, dimmi: portami a casa.');
+  }
+  function portamiACasa(){
+    if(!casa){ dire(['frase-casa-non-segnata'],'Non so dove sia casa. Quando ci sei, tocca «Segna casa qui».'); return true; }
+    return portamiAlPunto(casa.lat,casa.lon,'casa');
+  }
+
   /* ---------- i comandi a voce: l'app si guida parlando ----------
      Serve a chi non vede e cammina con il telefono in tasca: niente
      da cercare sullo schermo, si dice quello che si vuole.
@@ -3257,6 +3288,12 @@
           return portamiA(tipo);
         }
       }
+    }
+    if(ha('portami a casa','voglio andare a casa','andiamo a casa','casa mia','torniamo a casa','voglio tornare a casa')){
+      return portamiACasa();
+    }
+    if(ha('segna casa','questa e casa','casa e qui','registra casa')){
+      segnaCasaQui(); return true;
     }
     if(ha('torna indietro','riportami indietro','torna al punto di partenza','riportami alla partenza')){
       if(partenza){ return portamiAlPunto(partenza.lat,partenza.lon,'il punto di partenza'); }
@@ -3503,6 +3540,11 @@
     if(b)b.addEventListener('click',function(){audio();testoPiuGrande();});
     var bp=el('parla');
     if(bp)bp.addEventListener('click',function(){audio();ascoltaUnaVolta();});
+    var bc=el('vai-casa');
+    if(bc)bc.addEventListener('click',function(){audio();portamiACasa();});
+    var bs=el('segna-casa');
+    if(bs)bs.addEventListener('click',function(){audio();segnaCasaQui();});
+    leggiCasa();
   })();
 
   /* ---------- l'icona sul telefono, con un tasto solo ---------- */

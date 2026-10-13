@@ -1,7 +1,7 @@
 #!/bin/bash
 # Genera le clip audio da voce/testi.json usando una voce di sistema del Mac.
 # Uso:  ./genera-voce.sh "Alice (ottimizzata)" it
-set -e
+set -u
 VOCE="${1:?manca il nome della voce — vedi: say -v '?'}"
 LINGUA="${2:-it}"
 QUI="$(cd "$(dirname "$0")" && pwd)"
@@ -14,7 +14,7 @@ const clip=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));
 clip.forEach(c=>console.log(c.id+"\t"+c.testo.replace(/[\t\n\r]+/g," ")));
 ' "$QUI/testi.json" | while IFS=$'\t' read -r id testo; do
   [ -z "$id" ] && continue
-  vecchio=$(cat "$OUT/.testi/$id.txt" 2>/dev/null)
+  vecchio=$(cat "$OUT/.testi/$id.txt" 2>/dev/null || true)
   if [ -f "$OUT/$id.m4a" ] && [ "$vecchio" = "$testo" ]; then continue; fi
   say -v "$VOCE" -o "$OUT/$id.aiff" "$testo"
   ffmpeg -v error -y -i "$OUT/$id.aiff" -c:a aac -b:a 64k "$OUT/$id.m4a"

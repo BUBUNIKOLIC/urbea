@@ -55,7 +55,10 @@ for (let v = 1000; v <= 5000; v += 500) {
 }
 for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
 
-[['non-capito', 'Non ho capito. Prova con: approfondisci, avanti, dove sono.'],
+[['casa-segnata', 'Ho segnato casa qui. Quando vuoi tornare, dimmi: portami a casa.'],
+ ['casa-non-segnata', "Non so dove sia casa. Quando ci sei, tocca «Segna casa qui»."],
+ ['casa-senza-posizione', 'Prima devo sapere dove sei: premi Avvia.'],
+ ['non-capito', 'Non ho capito. Prova con: approfondisci, avanti, dove sono.'],
  ['niente-microfono', 'Questo telefono non capisce i comandi a voce.'],
  ['cerco', "Cerco l'indirizzo, un momento."],
  ['indirizzo-non-trovato', "Questo indirizzo non l'ho trovato."],
