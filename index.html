@@ -4376,8 +4376,8 @@
   }
 
   /* ---------- camminando un cenno, fermandosi il racconto ----------
-     Chi cammina vuole sapere che cosa sta passando; chi si ferma davanti a
-     qualcosa l'ha scelto, e allora si entra nei dettagli. Quanto a fondo
+     Chi cammina vuole sapere che cosa sta passando; chi si ferma dieci
+     secondi davanti a qualcosa l'ha scelto, e allora si entra nei dettagli. Quanto a fondo
      dipende da quanto conta il luogo: i grandi meritano anche il «cosa
      vedere» e l'invito al percorso che passa di li'. */
   var sostaDa=null, livello={};
@@ -4387,7 +4387,7 @@
       sostaDa={lat:S.lat,lon:S.lon,t:Date.now()};
       return;
     }
-    if(Date.now()-sostaDa.t < 18000)return;      // fermo da meno di venti secondi
+    if(Date.now()-sostaDa.t < 10000)return;      // fermo da meno di dieci secondi
     var vicini=around().filter(function(o){
       return o.m<70 && (livello[o.p.n]||0) < quantiLivelli(o.p);
     });
