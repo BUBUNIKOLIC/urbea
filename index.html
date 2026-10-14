@@ -198,6 +198,17 @@
 
 
 
+
+  /* la schermata d'avvio: l'insegna per un attimo, poi si entra */
+  #avvio{position:fixed;inset:0;z-index:200;display:grid;place-items:center;
+    background:radial-gradient(900px 600px at 50% 32%, #1A2029 0%, #090B0E 70%);
+    animation:viaAvvio .5s ease-in 1.25s forwards}
+  #avvio img{width:min(78vw,420px);height:auto;filter:drop-shadow(0 20px 50px rgba(0,0,0,.6));
+    animation:entraAvvio .7s ease-out}
+  @keyframes entraAvvio{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+  @keyframes viaAvvio{to{opacity:0;visibility:hidden}}
+  @media (prefers-reduced-motion:reduce){ #avvio{animation-delay:.4s} }
+
   /* ---------- veste nuova: profondità, gerarchia, meno rumore ---------- */
   :root{
     --oro:#C9A227; --oro-chiaro:#E7C65A; --neon:#5BE3FF;
@@ -527,6 +538,10 @@
 </style>
 </head>
 <body>
+<div id="avvio" aria-hidden="true">
+  <img src="icons/avvio.png" alt="">
+</div>
+
 <div id="porta" role="dialog" aria-label="Scegli come usare la guida">
   <div class="porta-testa">
     <span class="wordmark">Yourbea</span>
@@ -4534,6 +4549,13 @@
   }
 
 
+
+
+  // tolta di mezzo appena finita: se no si prende i tocchi
+  (function(){
+    var a=el('avvio'); if(!a)return;
+    setTimeout(function(){ a.style.display='none'; }, 1900);
+  })();
 
   /* ---------- il tasto dell'aiuto ----------
      Deve funzionare al primo tocco e senza leggere: il 112 riceve la
