@@ -82,7 +82,11 @@ for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
  ['chiedi', 'Vuoi approfondire, o andiamo avanti?'],
  ['cosa-vedere', 'Cosa vedere:'],
  ['avanti', 'Andiamo avanti.'],
- ['voce-attiva', 'Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri.']
+ ['voce-attiva', 'Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri.'],
+ ['parto-libero', 'Comincio col cammino libero. Quando vuoi, dimmi: percorsi.'],
+ ['bentornato', 'Guida vocale attiva. Ti dico quello che passi, da che parte e a quanti metri.'],
+ ['apro-taxi', 'Apro il taxi con la tua posizione. La corsa la confermi tu.'],
+ ['chiamo-112', 'Chiamo il 112.']
 ].forEach(([k, t]) => agg('frase-' + k, t));
 
 fs.writeFileSync(path.join(__dirname, 'testi.json'), JSON.stringify(clip, null, 1), 'utf8');

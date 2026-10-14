@@ -1,1 +1,1 @@
-Attraversamento con semaforo. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato.
+Alice (Enhanced)|Attraversamento con semaforo. A metà c'è un'isola spartitraffico dove ci si può fermare. Sono segnate le strisce. Il percorso tattile non risulta segnalato.

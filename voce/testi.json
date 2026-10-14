@@ -3857,1183 +3857,1307 @@
  },
  {
   "id": "poi-282-nome",
-  "testo": "Basilica di San Paolo fuori le mura"
+  "testo": "Basilica di Santa Chiara"
  },
  {
   "id": "poi-282-intro",
-  "testo": "basilica del IV sec., ricostruita dopo il 1823"
+  "testo": "basilica del 1310-1340"
  },
  {
   "id": "poi-282-scheda",
-  "testo": "L'incendio del 1823 la distrusse, e fu rifatta uguale: ottanta colonne di granito in quattro file, soffitto a cassettoni, e sopra gli archi la fila dei medaglioni con tutti i papi, da Pietro a oggi. L'effetto è quello di una basilica paleocristiana costruita con mezzi dell'Ottocento."
+  "testo": "Gotico angioino portato all'estremo: una navata sola, lunga più di ottanta metri, senza transetto e senza colonne, con i finestroni altissimi e la facciata a capanna preceduta dal portico. Dentro ci fu, dal Settecento, un rivestimento barocco: le bombe del 1943 lo bruciarono, e la ricostruzione del 1953 riportò la chiesa alle pietre nude del Trecento. Il salto si legge ancora nelle pareti."
  },
  {
   "id": "poi-282-dentro",
-  "testo": "Il chiostro cosmatesco, scampato all'incendio, con le colonnine tortili intarsiate a mosaico; e il candelabro per il cero pasquale del XII secolo."
+  "testo": "Il rosone della facciata e il campanile tozzo rimasto incompiuto. Dietro, il chiostro delle Clarisse sistemato da Domenico Antonio Vaccaro nel 1739: pilastri e sedili rivestiti di riggiole dipinte da Donato e Giuseppe Massa, con pergolati, paesaggi e scene di campagna."
  },
  {
   "id": "poi-283-nome",
-  "testo": "Via Appia Antica"
+  "testo": "Basilica di San Paolo Maggiore"
  },
  {
   "id": "poi-283-intro",
-  "testo": "strada romana del 312 a.C."
+  "testo": "basilica del 1583-1603"
  },
  {
   "id": "poi-283-scheda",
-  "testo": "La regina delle strade: basolato di selce, i blocchi poligonali incastrati senza malta e consumati dai carri, con i solchi delle ruote ancora visibili. Ai lati corrono i sepolcri, perché la legge vietava di seppellire dentro le mura."
+  "testo": "La chiesa dei Teatini è costruita sopra il tempio dei Dioscuri, e del tempio restano in piedi due colonne corinzie con i capitelli: stavano nel pronao, e oggi reggono il nulla davanti alla facciata, come due testimoni rimasti sul posto. La scalinata a doppia rampa è di Fra Nuvolo."
  },
  {
   "id": "poi-283-dentro",
-  "testo": "I solchi delle ruote nel basolato e i monumenti funerari in fila, uno dopo l'altro."
+  "testo": "Le due colonne romane in facciata e i frammenti della trabeazione. Dentro, la sacrestia affrescata da Francesco Solimena fra il 1689 e il 1690: una delle stanze più belle del barocco napoletano."
  },
  {
   "id": "poi-284-nome",
-  "testo": "Terme di Traiano"
+  "testo": "Chiesa di San Gregorio Armeno"
  },
  {
   "id": "poi-284-intro",
-  "testo": "terme romane del 109 d.C."
+  "testo": "chiesa e monastero del 1574-1580"
  },
  {
   "id": "poi-284-scheda",
-  "testo": "Costruite sopra la Domus Aurea, riempita di terra per farne le fondazioni: è il motivo per cui la casa di Nerone si è conservata. Restano le esedre e i muri in laterizio dentro il parco del Colle Oppio."
+  "testo": "Il campanile sta a cavallo della strada: un arco che scavalca il vicolo e porta la torre campanaria, perché il monastero stava di là e la chiesa di qua. Dentro è navata unica con cappelle laterali e un soffitto cassettonato tutto dorato, con le tele di Teodoro d'Errico; le monache seguivano la messa dalle cantorie chiuse da gelosie, senza farsi vedere."
+ },
+ {
+  "id": "poi-284-dentro",
+  "testo": "L'arco del campanile sopra la strada dei presepi. Il chiostro con la fontana di marmo e le statue di Cristo e la Samaritana."
  },
  {
   "id": "poi-285-nome",
-  "testo": "Mura Aureliane a Porta San Sebastiano"
+  "testo": "Chiesa dei Girolamini"
  },
  {
   "id": "poi-285-intro",
-  "testo": "mura del 271-275 d.C."
+  "testo": "chiesa del 1592-1619, facciata 1780"
  },
  {
   "id": "poi-285-scheda",
-  "testo": "Diciannove chilometri di cinta in laterizio con le torri ogni trenta metri, alzate in fretta quando l'impero cominciò ad avere paura. Qui la porta è la più monumentale rimasta, con le due torri semicircolari su basamento di marmo."
+  "testo": "La facciata in marmo bianco e piperno è di Ferdinando Fuga, e chiude in modo solenne il decumano maggiore. Dentro, tre navate su colonne di granito e un soffitto a cassettoni; la chiesa dei padri Oratoriani teneva accanto una delle biblioteche più grandi del Sud, con gli scaffali di legno a due ordini e il ballatoio."
  },
  {
   "id": "poi-285-dentro",
-  "testo": "Il camminamento di ronda dentro lo spessore del muro, che si percorre."
+  "testo": "Il contrasto fra il bianco del marmo e il grigio del piperno nella facciata. Il chiostro degli aranci e la quadreria."
  },
  {
   "id": "poi-286-nome",
-  "testo": "Porta Maggiore"
+  "testo": "Santa Maria delle Anime del Purgatorio ad Arco"
  },
  {
   "id": "poi-286-intro",
-  "testo": "porta e acquedotto del 52 d.C."
+  "testo": "chiesa del 1616-1638"
  },
  {
   "id": "poi-286-scheda",
-  "testo": "Non è una porta: è il punto dove due acquedotti scavalcano le strade, e Claudio ne fece un monumento lasciando il travertino grezzo, appena sbozzato, attorno alle colonne lisce. Il bugnato rustico nasce qui."
+  "testo": "Sul sagrato, sulla balaustrata di piperno, stanno teschi di bronzo lucidati da secoli di mani: è la chiesa del culto delle anime pezzentelle, quelle senza nome. La chiesa di sopra è barocca e ordinata; sotto c'è l'ipogeo, dove i napoletani adottavano un cranio e lo curavano in cambio di grazie."
  },
  {
   "id": "poi-286-dentro",
-  "testo": "Sopra, i canali dei due acquedotti sovrapposti; accanto, il sepolcro del fornaio Eurisace con i fori circolari delle madie."
+  "testo": "I teschi di bronzo all'ingresso, e sotto, nell'ipogeo, la capuzzella della Principessa con il velo da sposa."
  },
  {
   "id": "poi-287-nome",
-  "testo": "Santa Maria degli Angeli e dei Martiri"
+  "testo": "Cappella Pontano"
  },
  {
   "id": "poi-287-intro",
-  "testo": "basilica del 1562"
+  "testo": "cappella del 1492"
  },
  {
   "id": "poi-287-scheda",
-  "testo": "È l'aula centrale delle terme di Diocleziano, trasformata in chiesa da Michelangelo senza rifarla: le otto colonne di granito rosso sono romane, le volte a crociera sono quelle delle terme. Si entra dentro un edificio antico ancora in piedi."
+  "testo": "Un tempietto rinascimentale piantato nel mezzo del centro gotico: rettangolo semplice, tetto a due falde, muri lisci di piperno. Giovanni Pontano, l'umanista, la fece costruire per la moglie e per sé, e fece incidere sulle pareti esterne le proprie iscrizioni latine, come se la cappella fosse un libro aperto sulla strada."
  },
  {
   "id": "poi-287-dentro",
-  "testo": "La meridiana a pavimento del 1702, con il foro nella parete da cui entra il raggio a mezzogiorno."
+  "testo": "Le lapidi con le iscrizioni dettate da Pontano, da leggere stando sul marciapiede. Dentro, il pavimento di maioliche del Quattrocento."
  },
  {
   "id": "poi-288-nome",
-  "testo": "Quartiere Coppedè"
+  "testo": "Santa Maria Maggiore alla Pietrasanta"
  },
  {
   "id": "poi-288-intro",
-  "testo": "quartiere del 1913-1927"
+  "testo": "chiesa del campanile XI sec., chiesa 1653-1667"
  },
  {
   "id": "poi-288-scheda",
-  "testo": "Gino Coppedè mise insieme medioevo, barocco, liberty e decorazione greca in diciotto palazzine attorno a una piazza: l'arco d'ingresso con il lampadario di ferro, il palazzo del Ragno, le Villini delle Fate. È architettura da raccontare camminando, perché non c'è un solo pezzo uguale a un altro."
+  "testo": "Il campanile accanto alla chiesa è il più antico di Napoli: mattoni dell'XI secolo con dentro, murati, pezzi di marmo romano presi lì intorno. La chiesa invece è di Cosimo Fanzago, a croce greca con cupola: due architetture lontane seicento anni, una accanto all'altra, che si guardano."
  },
  {
   "id": "poi-288-dentro",
-  "testo": "L'arco d'ingresso da via Dora e la fontana delle Rane al centro della piazza."
+  "testo": "I frammenti romani incastrati nella muratura del campanile, all'altezza degli occhi."
  },
  {
   "id": "poi-289-nome",
-  "testo": "Ponte Milvio"
+  "testo": "Chiesa di San Pietro a Majella"
  },
  {
   "id": "poi-289-intro",
-  "testo": "ponte del 109 a.C."
+  "testo": "chiesa del fine XIII sec."
  },
  {
   "id": "poi-289-scheda",
-  "testo": "Quattro arcate romane in travertino ancora in opera, con i rifacimenti papali ai due capi: la torretta d'ingresso è del Valadier. Da qui passavano la via Flaminia e chiunque arrivasse a Roma da nord."
+  "testo": "Gotica e severa, con la facciata di piperno e il campanile a canna quadrata con le bifore: è una delle poche chiese napoletane che ha tenuto l'impianto medievale senza farsi rifare tutta. Accanto, il convento è diventato il Conservatorio: la musica è dentro lo stesso chiostro dal 1826."
+ },
+ {
+  "id": "poi-289-dentro",
+  "testo": "Il soffitto della navata con le tele di Mattia Preti dedicate a Celestino V."
  },
  {
   "id": "poi-290-nome",
-  "testo": "Palazzo delle Esposizioni"
+  "testo": "Chiesa di Sant'Anna dei Lombardi"
  },
  {
   "id": "poi-290-intro",
-  "testo": "palazzo del 1883"
+  "testo": "chiesa del 1411, rifatta nel Cinquecento"
  },
  {
   "id": "poi-290-scheda",
-  "testo": "Pio Piacentini lo fece come un tempio laico sulla via Nazionale: scalinata, pronao a colonne corinzie e arco centrale. Era il primo edificio in Italia pensato solo per le mostre."
+  "testo": "Qui il Rinascimento toscano arriva a Napoli e ci resta: cappelle intere scolpite da Antonio Rossellino e Benedetto da Maiano, la volta a cassettoni della sacrestia vecchia dipinta da Giorgio Vasari nel 1544. È una chiesa che si visita come una galleria di scultura."
+ },
+ {
+  "id": "poi-290-dentro",
+  "testo": "Il Compianto sul Cristo morto di Guido Mazzoni, 1492: otto figure di terracotta a grandezza naturale, con i volti ritratti dal vero dei personaggi della corte aragonese."
  },
  {
   "id": "poi-291-nome",
-  "testo": "San Giovanni a Porta Latina"
+  "testo": "Santa Maria Donnaregina Vecchia"
  },
  {
   "id": "poi-291-intro",
-  "testo": "basilica del V sec."
+  "testo": "chiesa del 1307-1320"
  },
  {
   "id": "poi-291-scheda",
-  "testo": "Tre navate su colonne antiche tutte diverse, abside con le finestre di selenite, campanile romanico e davanti un cedro vecchissimo. Dentro, un ciclo di affreschi del XII secolo copre le pareti della navata."
+  "testo": "La chiesa delle clarisse ha due piani: sotto la chiesa pubblica, sopra il coro delle monache, una sala grande quanto la navata, retta da un solaio. Da lassù le monache sentivano la messa senza essere viste, e per questo le pareti del coro furono dipinte tutte."
+ },
+ {
+  "id": "poi-291-dentro",
+  "testo": "Il ciclo di affreschi di Pietro Cavallini e bottega, 1308-1309, con il Giudizio universale: pittura romana che arriva a Napoli prima di Giotto. Il sepolcro di Maria d'Ungheria scolpito da Tino di Camaino."
  },
  {
   "id": "poi-292-nome",
-  "testo": "Museo WinterLine, palazzo De Utris"
+  "testo": "Chiesa di San Giovanni a Carbonara"
  },
  {
   "id": "poi-292-intro",
-  "testo": "museo"
+  "testo": "chiesa del 1343, scalinata 1707"
  },
  {
   "id": "poi-292-scheda",
-  "testo": "Dentro un palazzo signorile del centro, il museo racconta la Winter Line: la linea di difesa tedesca che nel 1943 passava di qui, e i mesi in cui Venafro fu prima linea."
+  "testo": "Ci si arriva per una scalinata a doppia rampa curva, disegnata da Ferdinando Sanfelice nel 1707: una scena teatrale davanti a una chiesa gotica. Dentro, dietro l'altare, il monumento funebre di re Ladislao di Durazzo si alza per diciotto metri fino al soffitto, a piani sovrapposti come una facciata."
+ },
+ {
+  "id": "poi-292-dentro",
+  "testo": "Il monumento a Ladislao, e dietro, la cappella Caracciolo del Sole: pianta circolare e pavimento di maioliche del Quattrocento."
  },
  {
   "id": "poi-293-nome",
-  "testo": "Acquedotto romano, il Rivus Venafranus"
+  "testo": "Chiesa di Santa Caterina a Formiello"
  },
  {
   "id": "poi-293-intro",
-  "testo": "acquedotto del età augustea"
+  "testo": "chiesa del 1523-1593"
  },
  {
   "id": "poi-293-scheda",
-  "testo": "L'acquedotto augusteo portava a Venafrum l'acqua presa dal Volturno. È lo stesso di cui parla la lastra di bronzo conservata al museo, con il provvedimento di Augusto che ne regolava l'uso. I resti si vedono vicino al centro storico."
+  "testo": "La prima chiesa di Napoli con la cupola su tamburo, all'uso romano: fuori dalle mura, vicino a Porta Capuana, la fecero i Domenicani quando il Rinascimento stava sostituendo il gotico. Facciata a due ordini, interno a navata unica con cappelle."
+ },
+ {
+  "id": "poi-293-dentro",
+  "testo": "La cupola affrescata da Luigi Garzi e il monumento ai martiri di Otranto."
  },
  {
   "id": "poi-294-nome",
-  "testo": "Villa Maria"
+  "testo": "Castel Capuano"
  },
  {
   "id": "poi-294-intro",
-  "testo": "giardini pubblici"
+  "testo": "castello del 1165, tribunale dal 1540"
  },
  {
   "id": "poi-294-scheda",
-  "testo": "Il giardino pubblico della città, circa un ettaro con il laghetto e i campi da gioco: è il posto dove Venafro si siede."
+  "testo": "Castello normanno all'estremità del decumano maggiore: era la reggia prima del Maschio Angioino. Nel 1540 don Pedro de Toledo ci spostò tutti i tribunali del Regno, e il castello diventò palazzo di giustizia: le finestre furono regolarizzate, le torri smussate, il fossato riempito. Si legge ancora la fortezza sotto il palazzo."
+ },
+ {
+  "id": "poi-294-dentro",
+  "testo": "La facciata su piazza Enrico De Nicola e la Sala dei Busti all'interno."
  },
  {
   "id": "poi-295-nome",
-  "testo": "Parco regionale dell'olivo"
+  "testo": "Porta Capuana"
  },
  {
   "id": "poi-295-intro",
-  "testo": "parco"
+  "testo": "porta urbana del 1484"
  },
  {
   "id": "poi-295-scheda",
-  "testo": "Il primo parco regionale del Molise, fatto per tutelare gli oliveti storici della piana: alberi coltivati da secoli."
+  "testo": "Giuliano da Maiano incastrò un arco di trionfo di marmo bianco fra due torri cilindriche di piperno scuro: le torri si chiamano Onore e Virtù. L'arco è fiorentino, le torri sono aragonesi, e l'accostamento dei due materiali è il modo napoletano di fare il Rinascimento."
+ },
+ {
+  "id": "poi-295-dentro",
+  "testo": "Il fregio scolpito sopra l'arco e lo stacco netto fra il marmo chiaro e la pietra scura."
  },
  {
   "id": "poi-296-nome",
-  "testo": "Distributore Q8"
+  "testo": "Santa Maria la Nova"
  },
  {
   "id": "poi-296-intro",
-  "testo": "distributore"
+  "testo": "chiesa del 1279, rifatta 1596-1599"
  },
  {
   "id": "poi-296-scheda",
-  "testo": "Distributore Q8."
+  "testo": "Facciata rinascimentale a due ordini in piperno e marmo, con le lesene e il timpano: una delle poche a Napoli costruita tutta insieme e rimasta com'era. Dentro, il soffitto a cassettoni dorati con quarantasei tavole dipinte da una squadra di pittori a fine Cinquecento."
+ },
+ {
+  "id": "poi-296-dentro",
+  "testo": "Il soffitto a cassettoni e i due chiostri, con il monumento che la tradizione lega al condottiero Vlad III."
  },
  {
   "id": "poi-297-nome",
-  "testo": "Distributore IP"
+  "testo": "Basilica della Santissima Annunziata Maggiore"
  },
  {
   "id": "poi-297-intro",
-  "testo": "distributore"
+  "testo": "basilica del 1760-1782"
  },
  {
   "id": "poi-297-scheda",
-  "testo": "Distributore IP."
+  "testo": "Luigi Vanvitelli e il figlio Carlo rifecero la chiesa dopo l'incendio del 1757: pianta a croce latina, colonne corinzie, cupola alta e luce bianca dappertutto. È il neoclassico che arriva a Napoli prima che il barocco abbia finito di parlare. Accanto c'era la Casa Santa, l'ospedale dei trovatelli."
+ },
+ {
+  "id": "poi-297-dentro",
+  "testo": "La ruota degli esposti, il cilindro di legno dove si lasciavano i neonati: sta nell'atrio ed è ancora al suo posto."
  },
  {
   "id": "poi-298-nome",
-  "testo": "Distributore Scikan"
+  "testo": "Santa Maria del Carmine Maggiore"
  },
  {
   "id": "poi-298-intro",
-  "testo": "distributore"
+  "testo": "basilica del campanile 1458-1631"
  },
  {
   "id": "poi-298-scheda",
-  "testo": "Distributore Scikan."
+  "testo": "Il campanile è alto settantacinque metri ed è il più alto della città: base quadrata in piperno, poi ottagono, poi la guglia maiolicata di Fra Nuvolo. Si vede da tutto il porto, e per secoli è stato il punto da cui i marinai riconoscevano Napoli dal mare."
+ },
+ {
+  "id": "poi-298-dentro",
+  "testo": "La guglia di maioliche in cima e, dentro, il crocifisso nascosto dietro il tabernacolo sopra l'arco."
  },
  {
   "id": "poi-299-nome",
-  "testo": "Supermercato EuroSpin"
+  "testo": "Piazza Dante"
  },
  {
   "id": "poi-299-intro",
-  "testo": "supermercato"
+  "testo": "piazza del 1757-1765"
  },
  {
   "id": "poi-299-scheda",
-  "testo": "Supermercato EuroSpin."
+  "testo": "Luigi Vanvitelli la disegnò come Foro Carolino: un emiciclo di pietra a due ordini che abbraccia la piazza, con ventisei statue delle virtù del re sul cornicione. Non è una piazza chiusa ma una quinta teatrale: il lato opposto resta aperto sulla città, e l'emiciclo serve a dare ordine al disordine."
+ },
+ {
+  "id": "poi-299-dentro",
+  "testo": "Le ventisei statue sull'attico e il portale centrale con l'orologio, che immette alle scuole."
  },
  {
   "id": "poi-300-nome",
-  "testo": "Fontana delle Tartarughe"
+  "testo": "Port'Alba"
  },
  {
   "id": "poi-300-intro",
-  "testo": "fontana del 1581-1588"
+  "testo": "porta urbana del 1625"
  },
  {
   "id": "poi-300-scheda",
-  "testo": "Quattro giovani di bronzo appoggiati ai delfini reggono con la mano alzata il bordo della vasca superiore: le tartarughe che si arrampicano furono aggiunte quasi un secolo dopo, e chiudono il movimento verso l'alto. È la fontana più misurata di Roma, e sta in una piazzetta minima."
+  "testo": "Una porta aperta nelle mura per comodità, non per difesa: la fece il vicerè duca d'Alba perché la gente del Vomero potesse entrare senza fare il giro. Oggi sotto l'arco ci stanno le bancarelle dei libri usati, e il passaggio è diventato una strada coperta di volumi."
  },
  {
   "id": "poi-300-dentro",
-  "testo": "Il gesto delle mani: senza le tartarughe i ragazzi spingevano a vuoto."
+  "testo": "La statua di San Gaetano sopra l'arco e i banchi di libri sotto."
  },
  {
   "id": "poi-301-nome",
-  "testo": "Palazzo Altemps"
+  "testo": "Piazza Bellini"
  },
  {
   "id": "poi-301-intro",
-  "testo": "palazzo e museo del dal 1477"
+  "testo": "piazza del mura del IV sec. a.C."
  },
  {
   "id": "poi-301-scheda",
-  "testo": "Cortile rinascimentale a due logge sovrapposte, con il belvedere a merli sul tetto. Oggi tiene le collezioni di scultura antica dei Ludovisi: le statue stanno nelle sale affrescate, non in vetrine."
+  "testo": "Nel mezzo della piazza, dentro uno scavo aperto, stanno i blocchi di tufo delle mura greche di Neapolis, del quarto secolo avanti Cristo: grandi parallelepipedi squadrati, messi a secco uno sull'altro. Intorno, i palazzi del Cinque e Seicento stanno sei metri più in alto: si misura a occhio quanto la città si è alzata."
  },
  {
   "id": "poi-301-dentro",
-  "testo": "Il Trono Ludovisi e il Galata suicida."
+  "testo": "I blocchi delle mura greche nello scavo al centro, e il torrione di una delle porte."
  },
  {
   "id": "poi-302-nome",
-  "testo": "Palazzo della Cancelleria"
+  "testo": "Palazzo Zevallos Stigliano"
  },
  {
   "id": "poi-302-intro",
-  "testo": "palazzo del 1489-1513"
+  "testo": "palazzo del 1637-1639"
  },
  {
   "id": "poi-302-scheda",
-  "testo": "Il primo palazzo pienamente rinascimentale di Roma: fronte lunghissimo in travertino — preso dal Colosseo — con il paramento a bugne piatte e le finestre ritmate da lesene. Il cortile a due ordini di arcate su colonne di granito antico è attribuito al Bramante."
+  "testo": "Cosimo Fanzago disegnò il portale e la facciata di piperno su via Toledo; dentro, nell'Ottocento, la banca ci costruì una sala a cupola di vetro e ferro. Oggi è una galleria aperta al pubblico, e il percorso finisce in una stanza sola con un quadro."
  },
  {
   "id": "poi-302-dentro",
-  "testo": "Il cortile e la facciata: guarda come il muro si piega agli angoli, appena ingrossato, per reggere lo sguardo."
+  "testo": "Il Martirio di sant'Orsola, ultimo dipinto di Caravaggio, finito nel maggio 1610 poche settimane prima di morire: la santa guarda in basso la freccia che le è appena entrata nel petto, e dietro di lei un uomo con la bocca aperta è l'autoritratto del pittore."
  },
  {
   "id": "poi-303-nome",
-  "testo": "Palazzo Massimo alle Colonne"
+  "testo": "Palazzo dello Spagnolo"
  },
  {
   "id": "poi-303-intro",
-  "testo": "palazzo del 1532-1536"
+  "testo": "palazzo del 1738"
  },
  {
   "id": "poi-303-scheda",
-  "testo": "Baldassarre Peruzzi lo costruì sul sedime curvo dell'antico teatro di Domiziano, e invece di raddrizzare la facciata la fece seguire la curva della strada: il portico a colonne doriche segue la piega. È il palazzo che insegna a trattare la facciata come un fatto urbano."
+  "testo": "Nel cortile sta la scala a doppia rampa detta ad ali di falco, di Ferdinando Sanfelice: cinque archi per piano, le rampe che si incrociano e si aprono come due ali, tutta la scala messa in mostra invece che nascosta dentro il muro. Il palazzo è privato ma il cortile si attraversa."
  },
  {
   "id": "poi-303-dentro",
-  "testo": "La curva del fronte e il portico d'ingresso incassato."
+  "testo": "La scala vista dal basso, in asse con il portone: è fatta apposta per essere guardata da lì."
  },
  {
   "id": "poi-304-nome",
-  "testo": "Palazzo Mattei di Giove"
+  "testo": "Basilica di Santa Maria della Sanità"
  },
  {
   "id": "poi-304-intro",
-  "testo": "palazzo del 1598-1617"
+  "testo": "basilica del 1602-1613"
  },
  {
   "id": "poi-304-scheda",
-  "testo": "Carlo Maderno riempì il cortile di rilievi antichi: busti, sarcofagi e fregi murati nelle pareti come in un museo all'aperto. Si entra liberamente dall'androne, ed è una delle cose più belle e meno note del centro."
+  "testo": "Fra Nuvolo la costruì a croce greca con cinque navate e una cupola rivestita di maioliche gialle e verdi. L'altare maggiore è rialzato su una doppia scalinata, perché sotto passa la cripta: la chiesa fu messa proprio sopra le catacombe di San Gaudioso, e la scala serve a scendere."
  },
  {
   "id": "poi-304-dentro",
-  "testo": "Le pareti del cortile e lo scalone, tappezzati di marmi romani."
+  "testo": "La cupola di riggiole vista dal ponte della Sanità, e sotto, le catacombe con gli affreschi paleocristiani."
  },
  {
   "id": "poi-305-nome",
-  "testo": "Palazzo Falconieri"
+  "testo": "Basilica di Santa Restituta"
  },
  {
   "id": "poi-305-intro",
-  "testo": "palazzo del rifatto dal 1646"
+  "testo": "basilica paleocristiana del IV sec."
  },
  {
   "id": "poi-305-scheda",
-  "testo": "Borromini lo rifece su via Giulia e in cima ci mise la loggia belvedere a tre arcate, verso il Tevere; agli angoli della facciata, le due erme con la testa di falco — mezze donne e mezzo rapace — sono il suo scherzo araldico."
+  "testo": "Dentro il Duomo, sulla sinistra, si entra in una chiesa più antica di tutto il resto: la basilica paleocristiana del quarto secolo, con le colonne di spoglio. In fondo sta il battistero di San Giovanni in Fonte, il più antico dell'Occidente ancora in piedi: pianta quadrata, cupola, e mosaici del quinto secolo su fondo d'oro."
  },
  {
   "id": "poi-305-dentro",
-  "testo": "Le erme-falco sugli spigoli, viste dalla strada."
+  "testo": "I mosaici del battistero e lo scavo sotto il pavimento, dove si vedono le case greche e romane."
  },
  {
   "id": "poi-306-nome",
-  "testo": "Casa dei Crescenzi"
+  "testo": "Cappella del Tesoro di San Gennaro"
  },
  {
   "id": "poi-306-intro",
-  "testo": "casa medievale del XI-XII sec."
+  "testo": "cappella del 1608-1646"
  },
  {
   "id": "poi-306-scheda",
-  "testo": "Una casa-torre medievale costruita rimontando pezzi antichi: cornici, capitelli e fregi romani murati nella facciata di mattoni, in bella vista. Chi la fece voleva dichiarare la discendenza dall'antica Roma usando i suoi pezzi."
+  "testo": "La città se la costruì da sola, con una deputazione di cittadini laici che ancora oggi ne tiene le chiavi. Pianta a croce greca, marmi policromi dappertutto, e una cancellata di bronzo dorato all'ingresso. Il Domenichino dipinse i pennacchi e la volta; la cupola è di Giovanni Lanfranco."
  },
  {
   "id": "poi-306-dentro",
-  "testo": "I frammenti romani incastrati nel muro, messi in ordine come un collage."
+  "testo": "Le cinquantaquattro statue d'argento dei santi patroni, portate fuori solo nelle processioni, e la cancellata di bronzo del 1668."
  },
  {
   "id": "poi-307-nome",
-  "testo": "Torre delle Milizie"
+  "testo": "Chiesa di San Giorgio Maggiore"
  },
  {
   "id": "poi-307-intro",
-  "testo": "torre del XIII sec."
+  "testo": "chiesa del IV-V sec., rifatta 1640"
  },
  {
   "id": "poi-307-scheda",
-  "testo": "Il torrione di mattoni che sovrasta i Mercati di Traiano pende visibilmente: un cedimento del terreno la inclinò nel Trecento. Era la torre di una famiglia baronale, uno dei pochi pezzi di Roma medievale rimasti in piedi."
+  "testo": "Cosimo Fanzago la rifece tutta, ma lasciò in piedi l'abside paleocristiana con le tre absidiole e le colonne: oggi quell'abside sta all'ingresso, perché la chiesa fu girata di centottanta gradi. Si entra, cioè, dalla parte che in origine era il fondo."
+ },
+ {
+  "id": "poi-307-dentro",
+  "testo": "L'abside del quarto secolo appena dentro il portone, con i capitelli antichi."
  },
  {
   "id": "poi-308-nome",
-  "testo": "Santi Luca e Martina"
+  "testo": "Chiesa dei Santi Apostoli"
  },
  {
   "id": "poi-308-intro",
-  "testo": "chiesa del 1635-1664"
+  "testo": "chiesa del 1610-1649"
  },
  {
   "id": "poi-308-scheda",
-  "testo": "Pietro da Cortona la rifece per sé e ci sperimentò una facciata leggermente convessa, che spinge in fuori: la chiesa è a croce greca su due livelli, uno sopra l'altro. È uno dei punti dove nasce il barocco romano."
+  "testo": "Chiesa dei Teatini, a croce latina con cupola, interamente affrescata da Giovanni Lanfranco fra il 1638 e il 1646: volta, cupola, transetti, tutto dipinto come un cielo unico. È uno dei cicli barocchi più estesi del Sud."
+ },
+ {
+  "id": "poi-308-dentro",
+  "testo": "L'altare della cappella Filomarino, disegnato da Francesco Borromini: è l'unica opera sua a Napoli, e si riconosce dal modo in cui i marmi colorati si incastrano senza una linea sprecata."
  },
  {
   "id": "poi-309-nome",
-  "testo": "Basilica di Sant'Agostino"
+  "testo": "Palazzo Orsini di Gravina"
  },
  {
   "id": "poi-309-intro",
-  "testo": "basilica del 1479-1483"
+  "testo": "palazzo del 1513-1549"
  },
  {
   "id": "poi-309-scheda",
-  "testo": "Una delle prime facciate rinascimentali di Roma, in travertino del Colosseo, con le grandi volute laterali che raccordano i due ordini: un'invenzione che poi farà il giro d'Europa."
+  "testo": "Facciata rinascimentale in bugnato piatto, con le finestre a edicola e il cornicione: è il palazzo toscano trapiantato a Napoli, costruito quando la città era spagnola e guardava ancora a Roma. Oggi ci sta la facoltà di Architettura."
  },
  {
   "id": "poi-309-dentro",
-  "testo": "La Madonna dei Pellegrini di Caravaggio, con i piedi sporchi dei devoti in primo piano; e il profeta Isaia di Raffaello sul terzo pilastro."
+  "testo": "Il bugnato liscio del piano terra e il portale con lo stemma degli Orsini."
  },
  {
   "id": "poi-310-nome",
-  "testo": "Basilica di Sant'Andrea delle Fratte"
+  "testo": "Chiesa di Sant'Eligio Maggiore"
  },
  {
   "id": "poi-310-intro",
-  "testo": "chiesa del campanile e tiburio del 1653-1665"
+  "testo": "chiesa del dal 1270"
  },
  {
   "id": "poi-310-scheda",
-  "testo": "La chiesa è ordinaria, ma dietro, dove la strada si stringe, Borromini alzò il campanile e il tiburio: tamburo curvo con colonne angolari, e sopra una corona di volute e teste d'angelo che regge una guglia. Si vede solo girando l'angolo."
+  "testo": "La prima chiesa che gli Angioini costruirono a Napoli: gotico francese nudo, archi a sesto acuto, pietra a vista. Accanto, l'arco che scavalca il vicolo porta un orologio del Cinquecento con due campane."
  },
  {
   "id": "poi-310-dentro",
-  "testo": "Gli angeli del Bernini ai lati dell'altare, fatti per ponte Sant'Angelo e mai messi fuori."
+  "testo": "L'arco con l'orologio e la torre, e il portale gotico laterale."
  },
  {
   "id": "poi-311-nome",
-  "testo": "Tempio di Portuno"
+  "testo": "Palazzo San Giacomo"
  },
  {
   "id": "poi-311-intro",
-  "testo": "tempio romano del I sec. a.C."
+  "testo": "palazzo del 1816-1825"
  },
  {
   "id": "poi-311-scheda",
-  "testo": "Il tempio romano meglio conservato della città: pianta rettangolare su podio, quattro colonne ioniche sul fronte e le altre addossate al muro della cella, perché il tempio sembri circondato da colonne senza esserlo davvero."
+  "testo": "Il palazzo dei ministeri borbonici, oggi municipio: facciata neoclassica lunghissima su piazza, con il bugnato al piano terra e le colonne ioniche sopra. Fu costruito inglobando la chiesa di San Giacomo degli Spagnoli, che resta incastrata dentro e si vede dal lato di via Toledo."
+ },
+ {
+  "id": "poi-311-dentro",
+  "testo": "La chiesa cinquecentesca inglobata nel fianco del palazzo, con il sepolcro di don Pedro de Toledo."
  },
  {
   "id": "poi-312-nome",
-  "testo": "Tempio di Ercole Vincitore"
+  "testo": "Decumano maggiore, via dei Tribunali"
  },
  {
   "id": "poi-312-intro",
-  "testo": "tempio romano del fine II sec. a.C."
+  "testo": "strada antica del impianto greco, IV sec. a.C."
  },
  {
   "id": "poi-312-scheda",
-  "testo": "Rotondo, venti colonne corinzie di marmo greco attorno alla cella: è il più antico edificio in marmo rimasto a Roma. Si è salvato perché per secoli fu una chiesa."
+  "testo": "È la strada greca che attraversa la città da ovest a est, dritta da duemilaquattrocento anni. Sopra il tracciato antico si sono accumulati chiese, palazzi e botteghe senza mai spostarlo di un metro: la larghezza è quella di Neapolis, e i vicoli che la tagliano a novanta gradi sono i cardini."
+ },
+ {
+  "id": "poi-312-dentro",
+  "testo": "Guardando in su, il modo in cui i palazzi barocchi poggiano sui muri medievali, che poggiano sulle pietre greche."
  },
  {
   "id": "poi-313-nome",
-  "testo": "Arco di Giano"
+  "testo": "Basilica di San Paolo fuori le mura"
  },
  {
   "id": "poi-313-intro",
-  "testo": "arco quadrifronte del IV sec. d.C."
+  "testo": "basilica del IV sec., ricostruita dopo il 1823"
  },
  {
   "id": "poi-313-scheda",
-  "testo": "Un arco a quattro fronti, costruito all'incrocio del Foro Boario per fare ombra ai mercanti: non è un arco di trionfo, è una copertura. Le nicchie sui pilastri erano piene di statue."
+  "testo": "L'incendio del 1823 la distrusse, e fu rifatta uguale: ottanta colonne di granito in quattro file, soffitto a cassettoni, e sopra gli archi la fila dei medaglioni con tutti i papi, da Pietro a oggi. L'effetto è quello di una basilica paleocristiana costruita con mezzi dell'Ottocento."
+ },
+ {
+  "id": "poi-313-dentro",
+  "testo": "Il chiostro cosmatesco, scampato all'incendio, con le colonnine tortili intarsiate a mosaico; e il candelabro per il cero pasquale del XII secolo."
  },
  {
   "id": "poi-314-nome",
-  "testo": "Basilica di Santa Cecilia in Trastevere"
+  "testo": "Via Appia Antica"
  },
  {
   "id": "poi-314-intro",
-  "testo": "basilica del IX sec., facciata del 1725"
+  "testo": "strada romana del 312 a.C."
  },
  {
   "id": "poi-314-scheda",
-  "testo": "Si entra da un cortile con la vasca antica al centro: la chiesa sta in fondo, dietro il portico settecentesco. Sotto il pavimento si cammina nelle case romane su cui fu costruita."
+  "testo": "La regina delle strade: basolato di selce, i blocchi poligonali incastrati senza malta e consumati dai carri, con i solchi delle ruote ancora visibili. Ai lati corrono i sepolcri, perché la legge vietava di seppellire dentro le mura."
  },
  {
   "id": "poi-314-dentro",
-  "testo": "Il Giudizio universale di Pietro Cavallini nel coro delle monache, e la statua distesa di Maderno sotto l'altare."
+  "testo": "I solchi delle ruote nel basolato e i monumenti funerari in fila, uno dopo l'altro."
  },
  {
   "id": "poi-315-nome",
-  "testo": "Basilica di San Bartolomeo all'Isola"
+  "testo": "Terme di Traiano"
  },
  {
   "id": "poi-315-intro",
-  "testo": "basilica del X sec."
+  "testo": "terme romane del 109 d.C."
  },
  {
   "id": "poi-315-scheda",
-  "testo": "Sta dove c'era il tempio di Esculapio, il dio della medicina: il luogo è stato di cura per duemila anni, e accanto c'è ancora l'ospedale. Nel mezzo della scalinata dell'altare c'è una vera da pozzo scolpita, sul punto di una sorgente antica."
+  "testo": "Costruite sopra la Domus Aurea, riempita di terra per farne le fondazioni: è il motivo per cui la casa di Nerone si è conservata. Restano le esedre e i muri in laterizio dentro il parco del Colle Oppio."
  },
  {
   "id": "poi-316-nome",
-  "testo": "Chiesa di San Nicola in Carcere"
+  "testo": "Mura Aureliane a Porta San Sebastiano"
  },
  {
   "id": "poi-316-intro",
-  "testo": "chiesa del XI sec. su tre templi"
+  "testo": "mura del 271-275 d.C."
  },
  {
   "id": "poi-316-scheda",
-  "testo": "La chiesa ha mangiato tre templi repubblicani affiancati: le colonne di due di essi sono inglobate nei muri laterali e si vedono dalla strada, mezze dentro e mezze fuori. Sotto si cammina fra i podi."
+  "testo": "Diciannove chilometri di cinta in laterizio con le torri ogni trenta metri, alzate in fretta quando l'impero cominciò ad avere paura. Qui la porta è la più monumentale rimasta, con le due torri semicircolari su basamento di marmo."
  },
  {
   "id": "poi-316-dentro",
-  "testo": "Il fianco su via del Teatro di Marcello: le colonne scanalate che escono dal muro della chiesa."
+  "testo": "Il camminamento di ronda dentro lo spessore del muro, che si percorre."
  },
  {
   "id": "poi-317-nome",
-  "testo": "Chiesa di Sant'Eligio degli Orefici"
+  "testo": "Porta Maggiore"
  },
  {
   "id": "poi-317-intro",
-  "testo": "chiesa del dal 1509"
+  "testo": "porta e acquedotto del 52 d.C."
  },
  {
   "id": "poi-317-scheda",
-  "testo": "Piccola chiesa a croce greca con la cupola su tamburo, disegnata da Raffaello per la corporazione degli orefici: pianta centrale pura, senza decorazione, il contrario del barocco che verrà."
+  "testo": "Non è una porta: è il punto dove due acquedotti scavalcano le strade, e Claudio ne fece un monumento lasciando il travertino grezzo, appena sbozzato, attorno alle colonne lisce. Il bugnato rustico nasce qui."
+ },
+ {
+  "id": "poi-317-dentro",
+  "testo": "Sopra, i canali dei due acquedotti sovrapposti; accanto, il sepolcro del fornaio Eurisace con i fori circolari delle madie."
  },
  {
   "id": "poi-318-nome",
-  "testo": "Fontana dell'Acqua Felice, il Mosè"
+  "testo": "Santa Maria degli Angeli e dei Martiri"
  },
  {
   "id": "poi-318-intro",
-  "testo": "mostra d'acqua del 1585-1588"
+  "testo": "basilica del 1562"
  },
  {
   "id": "poi-318-scheda",
-  "testo": "La prima mostra d'acqua papale moderna: un arco di trionfo a tre fornici con il Mosè al centro, criticatissimo appena fu scoperto. Segna l'arrivo dell'acquedotto Felice e la rinascita dei quartieri alti."
+  "testo": "È l'aula centrale delle terme di Diocleziano, trasformata in chiesa da Michelangelo senza rifarla: le otto colonne di granito rosso sono romane, le volte a crociera sono quelle delle terme. Si entra dentro un edificio antico ancora in piedi."
+ },
+ {
+  "id": "poi-318-dentro",
+  "testo": "La meridiana a pavimento del 1702, con il foro nella parete da cui entra il raggio a mezzogiorno."
  },
  {
   "id": "poi-319-nome",
-  "testo": "Fontana dei Quattro Fiumi"
+  "testo": "Quartiere Coppedè"
  },
  {
   "id": "poi-319-intro",
-  "testo": "fontana del 1648-1651"
+  "testo": "quartiere del 1913-1927"
  },
  {
   "id": "poi-319-scheda",
-  "testo": "Bernini scavò la scogliera sotto l'obelisco: il masso è traforato, e la guglia egizia sembra stare in equilibrio sul vuoto. I quattro fiumi — Nilo, Danubio, Gange, Rio della Plata — sono i quattro continenti allora conosciuti, e il Nilo si copre il capo perché le sue sorgenti erano ignote."
+  "testo": "Gino Coppedè mise insieme medioevo, barocco, liberty e decorazione greca in diciotto palazzine attorno a una piazza: l'arco d'ingresso con il lampadario di ferro, il palazzo del Ragno, le Villini delle Fate. È architettura da raccontare camminando, perché non c'è un solo pezzo uguale a un altro."
  },
  {
   "id": "poi-319-dentro",
-  "testo": "Guarda sotto il masso: si vede da parte a parte. È quello il gesto, non le statue."
+  "testo": "L'arco d'ingresso da via Dora e la fontana delle Rane al centro della piazza."
  },
  {
   "id": "poi-320-nome",
-  "testo": "Fontana del Moro"
+  "testo": "Ponte Milvio"
  },
  {
   "id": "poi-320-intro",
-  "testo": "fontana del 1575, statue del 1653"
+  "testo": "ponte del 109 a.C."
  },
  {
   "id": "poi-320-scheda",
-  "testo": "La vasca è cinquecentesca, di Giacomo della Porta; il moro al centro che lotta con un delfino lo disegnò Bernini quasi ottant'anni dopo. Le statue che si vedono sono copie: gli originali stanno a Villa Borghese."
+  "testo": "Quattro arcate romane in travertino ancora in opera, con i rifacimenti papali ai due capi: la torretta d'ingresso è del Valadier. Da qui passavano la via Flaminia e chiunque arrivasse a Roma da nord."
  },
  {
   "id": "poi-321-nome",
-  "testo": "Fontana del Nettuno a Navona"
+  "testo": "Palazzo delle Esposizioni"
  },
  {
   "id": "poi-321-intro",
-  "testo": "fontana del vasca del 1574, statue del 1878"
+  "testo": "palazzo del 1883"
  },
  {
   "id": "poi-321-scheda",
-  "testo": "Per tre secoli fu solo una vasca vuota: le statue di Nettuno che lotta con la piovra furono aggiunte nell'Ottocento per fare simmetria con la fontana del Moro all'altro capo della piazza."
+  "testo": "Pio Piacentini lo fece come un tempio laico sulla via Nazionale: scalinata, pronao a colonne corinzie e arco centrale. Era il primo edificio in Italia pensato solo per le mostre."
  },
  {
   "id": "poi-322-nome",
-  "testo": "Fontana della Barcaccia"
+  "testo": "San Giovanni a Porta Latina"
  },
  {
   "id": "poi-322-intro",
-  "testo": "fontana del 1627-1629"
+  "testo": "basilica del V sec."
  },
  {
   "id": "poi-322-scheda",
-  "testo": "Una barca che affonda, scolpita a filo del selciato: la forma nasce da un problema tecnico, perché l'acqua Vergine qui arriva con poca pressione e non poteva zampillare in alto. Il difetto è diventato il disegno."
- },
- {
-  "id": "poi-322-dentro",
-  "testo": "L'acqua esce dai bordi e dal sole di prua: la barca sembra imbarcare acqua."
+  "testo": "Tre navate su colonne antiche tutte diverse, abside con le finestre di selenite, campanile romanico e davanti un cedro vecchissimo. Dentro, un ciclo di affreschi del XII secolo copre le pareti della navata."
  },
  {
   "id": "poi-323-nome",
-  "testo": "Fontana del Tritone"
+  "testo": "Museo WinterLine, palazzo De Utris"
  },
  {
   "id": "poi-323-intro",
-  "testo": "fontana del 1642-1643"
+  "testo": "museo"
  },
  {
   "id": "poi-323-scheda",
-  "testo": "Quattro delfini reggono una conchiglia aperta, e sopra sta il tritone che soffia nella buccina da cui esce il getto. È la prima fontana romana pensata per essere girata intorno, senza un fondale alle spalle."
+  "testo": "Dentro un palazzo signorile del centro, il museo racconta la Winter Line: la linea di difesa tedesca che nel 1943 passava di qui, e i mesi in cui Venafro fu prima linea."
  },
  {
   "id": "poi-324-nome",
-  "testo": "Fontana delle Api"
+  "testo": "Acquedotto romano, il Rivus Venafranus"
  },
  {
   "id": "poi-324-intro",
-  "testo": "fontanella del 1644"
+  "testo": "acquedotto del età augustea"
  },
  {
   "id": "poi-324-scheda",
-  "testo": "Una conchiglia aperta con tre api dei Barberini che bevono sul bordo: era un abbeveratoio per i cavalli, posato all'angolo della strada. Bernini che lavora in piccolo."
+  "testo": "L'acquedotto augusteo portava a Venafrum l'acqua presa dal Volturno. È lo stesso di cui parla la lastra di bronzo conservata al museo, con il provvedimento di Augusto che ne regolava l'uso. I resti si vedono vicino al centro storico."
  },
  {
   "id": "poi-325-nome",
-  "testo": "Fontana di Santa Maria in Trastevere"
+  "testo": "Villa Maria"
  },
  {
   "id": "poi-325-intro",
-  "testo": "fontana del origini medievali"
+  "testo": "giardini pubblici"
  },
  {
   "id": "poi-325-scheda",
-  "testo": "È forse la fontana più antica di Roma ancora in funzione: rifatta più volte, da ultimo da Carlo Fontana, con le quattro conchiglie sul bordo della vasca. La piazza le è cresciuta attorno."
+  "testo": "Il giardino pubblico della città, circa un ettaro con il laghetto e i campi da gioco: è il posto dove Venafro si siede."
  },
  {
   "id": "poi-326-nome",
-  "testo": "Marforio"
+  "testo": "Parco regionale dell'olivo"
  },
  {
   "id": "poi-326-intro",
-  "testo": "statua parlante del I sec. d.C."
+  "testo": "parco"
  },
  {
   "id": "poi-326-scheda",
-  "testo": "Un dio fluviale colossale sdraiato, oggi nel cortile dei Musei Capitolini. Era la statua che rispondeva a Pasquino: le pasquinate erano dialoghi fra i due."
+  "testo": "Il primo parco regionale del Molise, fatto per tutelare gli oliveti storici della piana: alberi coltivati da secoli."
  },
  {
   "id": "poi-327-nome",
-  "testo": "Il Babuino"
+  "testo": "Distributore Q8"
  },
  {
   "id": "poi-327-intro",
-  "testo": "statua parlante del 1576"
+  "testo": "distributore"
  },
  {
   "id": "poi-327-scheda",
-  "testo": "Un Sileno sdraiato sopra una vasca, così consumato e brutto che i romani lo chiamarono babbuino e diedero il nome alla strada. Terza voce di Roma dopo Pasquino e Marforio."
+  "testo": "Distributore Q8."
  },
  {
   "id": "poi-328-nome",
-  "testo": "Fontana della Terrina"
+  "testo": "Distributore IP"
  },
  {
   "id": "poi-328-intro",
-  "testo": "fontana del 1590"
+  "testo": "distributore"
  },
  {
   "id": "poi-328-scheda",
-  "testo": "Una vasca ovale con il coperchio: fu coperta perché ci buttavano dentro i rifiuti, e il coperchio le ha dato il nome di zuppiera. Stava a Campo de' Fiori, fu spostata qui davanti alla Chiesa Nuova."
+  "testo": "Distributore IP."
  },
  {
   "id": "poi-329-nome",
-  "testo": "Fontana dei Tritoni"
+  "testo": "Distributore Scikan"
  },
  {
   "id": "poi-329-intro",
-  "testo": "fontana del 1715"
+  "testo": "distributore"
  },
  {
   "id": "poi-329-scheda",
-  "testo": "Due tritoni inginocchiati che reggono la conchiglia, in piazza Bocca della Verità: è l'ultima fontana romana prima che il barocco finisse."
+  "testo": "Distributore Scikan."
  },
  {
   "id": "poi-330-nome",
-  "testo": "Fontana del Prigione"
+  "testo": "Supermercato EuroSpin"
  },
  {
   "id": "poi-330-intro",
-  "testo": "fontana del fine Cinquecento"
+  "testo": "supermercato"
  },
  {
   "id": "poi-330-scheda",
-  "testo": "Una mostra d'acqua piccola con la statua del prigioniero nella nicchia: è stata smontata e rimontata due volte in punti diversi della città."
+  "testo": "Supermercato EuroSpin."
  },
  {
   "id": "poi-331-nome",
-  "testo": "Fontana della Botte"
+  "testo": "Fontana delle Tartarughe"
  },
  {
   "id": "poi-331-intro",
-  "testo": "fontanella del 1927"
+  "testo": "fontana del 1581-1588"
  },
  {
   "id": "poi-331-scheda",
-  "testo": "Una botte di vino fra due misure da osteria: è la fontanella rionale di Trastevere, e dice il mestiere del quartiere."
+  "testo": "Quattro giovani di bronzo appoggiati ai delfini reggono con la mano alzata il bordo della vasca superiore: le tartarughe che si arrampicano furono aggiunte quasi un secolo dopo, e chiudono il movimento verso l'alto. È la fontana più misurata di Roma, e sta in una piazzetta minima."
+ },
+ {
+  "id": "poi-331-dentro",
+  "testo": "Il gesto delle mani: senza le tartarughe i ragazzi spingevano a vuoto."
  },
  {
   "id": "poi-332-nome",
-  "testo": "Fontana della Pigna"
+  "testo": "Palazzo Altemps"
  },
  {
   "id": "poi-332-intro",
-  "testo": "fontanella del 1927"
+  "testo": "palazzo e museo del dal 1477"
  },
  {
   "id": "poi-332-scheda",
-  "testo": "Una pigna di travertino sopra la vasca: è l'insegna del rione Pigna, che prende il nome dalla pigna di bronzo romana oggi in Vaticano."
+  "testo": "Cortile rinascimentale a due logge sovrapposte, con il belvedere a merli sul tetto. Oggi tiene le collezioni di scultura antica dei Ludovisi: le statue stanno nelle sale affrescate, non in vetrine."
+ },
+ {
+  "id": "poi-332-dentro",
+  "testo": "Il Trono Ludovisi e il Galata suicida."
  },
  {
   "id": "poi-333-nome",
-  "testo": "Fontana dei Dioscuri"
+  "testo": "Palazzo della Cancelleria"
  },
  {
   "id": "poi-333-intro",
-  "testo": "fontana e obelisco del 1818"
+  "testo": "palazzo del 1489-1513"
  },
  {
   "id": "poi-333-scheda",
-  "testo": "Sulla piazza del Quirinale: l'obelisco del mausoleo di Augusto messo in mezzo ai due colossi di Castore e Polluce con i cavalli, e sotto una vasca di granito presa dal Foro Romano. Tre pezzi antichi diversi montati insieme nell'Ottocento."
+  "testo": "Il primo palazzo pienamente rinascimentale di Roma: fronte lunghissimo in travertino — preso dal Colosseo — con il paramento a bugne piatte e le finestre ritmate da lesene. Il cortile a due ordini di arcate su colonne di granito antico è attribuito al Bramante."
+ },
+ {
+  "id": "poi-333-dentro",
+  "testo": "Il cortile e la facciata: guarda come il muro si piega agli angoli, appena ingrossato, per reggere lo sguardo."
  },
  {
   "id": "poi-334-nome",
-  "testo": "Fontana del Porto di Ripetta"
+  "testo": "Palazzo Massimo alle Colonne"
  },
  {
   "id": "poi-334-intro",
-  "testo": "fontana del 1704"
+  "testo": "palazzo del 1532-1536"
  },
  {
   "id": "poi-334-scheda",
-  "testo": "Quello che resta del porto fluviale di Ripetta, smontato quando costruirono i muraglioni del Tevere: la fontana fu rimessa qui vicino, e segna il punto dove le barche scaricavano il vino e la legna."
+  "testo": "Baldassarre Peruzzi lo costruì sul sedime curvo dell'antico teatro di Domiziano, e invece di raddrizzare la facciata la fece seguire la curva della strada: il portico a colonne doriche segue la piega. È il palazzo che insegna a trattare la facciata come un fatto urbano."
+ },
+ {
+  "id": "poi-334-dentro",
+  "testo": "La curva del fronte e il portico d'ingresso incassato."
  },
  {
   "id": "poi-335-nome",
-  "testo": "Ponte Sisto"
+  "testo": "Palazzo Mattei di Giove"
  },
  {
   "id": "poi-335-intro",
-  "testo": "ponte del 1473-1479"
+  "testo": "palazzo del 1598-1617"
  },
  {
   "id": "poi-335-scheda",
-  "testo": "Quattro arcate su piloni romani riusati, e in mezzo al pilone centrale l'occhialone: un foro circolare che serve a far passare l'acqua quando il fiume cresce, e a dire quando è il momento di scappare."
+  "testo": "Carlo Maderno riempì il cortile di rilievi antichi: busti, sarcofagi e fregi murati nelle pareti come in un museo all'aperto. Si entra liberamente dall'androne, ed è una delle cose più belle e meno note del centro."
  },
  {
   "id": "poi-335-dentro",
-  "testo": "L'occhialone: se l'acqua lo tocca, la piena è vicina."
+  "testo": "Le pareti del cortile e lo scalone, tappezzati di marmi romani."
  },
  {
   "id": "poi-336-nome",
-  "testo": "Ponte Rotto"
+  "testo": "Palazzo Falconieri"
  },
  {
   "id": "poi-336-intro",
-  "testo": "rudere di ponte del 142 a.C."
+  "testo": "palazzo del rifatto dal 1646"
  },
  {
   "id": "poi-336-scheda",
-  "testo": "Un'arcata sola in mezzo al fiume: è quel che resta del ponte Emilio, il primo ponte di pietra di Roma, portato via dalle piene e ricostruito tante volte finché nel 1598 lo lasciarono andare."
+  "testo": "Borromini lo rifece su via Giulia e in cima ci mise la loggia belvedere a tre arcate, verso il Tevere; agli angoli della facciata, le due erme con la testa di falco — mezze donne e mezzo rapace — sono il suo scherzo araldico."
+ },
+ {
+  "id": "poi-336-dentro",
+  "testo": "Le erme-falco sugli spigoli, viste dalla strada."
  },
  {
   "id": "poi-337-nome",
-  "testo": "Ponte Fabricio"
+  "testo": "Casa dei Crescenzi"
  },
  {
   "id": "poi-337-intro",
-  "testo": "ponte del 62 a.C."
+  "testo": "casa medievale del XI-XII sec."
  },
  {
   "id": "poi-337-scheda",
-  "testo": "Il ponte più antico di Roma ancora in uso, e quasi tutto originale: due grandi arcate di tufo e travertino, con l'arco piccolo al centro del pilone per lo sfogo delle piene. Le erme a quattro teste sui parapetti gli danno l'altro nome, ponte dei Quattro Capi."
+  "testo": "Una casa-torre medievale costruita rimontando pezzi antichi: cornici, capitelli e fregi romani murati nella facciata di mattoni, in bella vista. Chi la fece voleva dichiarare la discendenza dall'antica Roma usando i suoi pezzi."
+ },
+ {
+  "id": "poi-337-dentro",
+  "testo": "I frammenti romani incastrati nel muro, messi in ordine come un collage."
  },
  {
   "id": "poi-338-nome",
-  "testo": "Ponte Cestio"
+  "testo": "Torre delle Milizie"
  },
  {
   "id": "poi-338-intro",
-  "testo": "ponte del I sec. a.C."
+  "testo": "torre del XIII sec."
  },
  {
   "id": "poi-338-scheda",
-  "testo": "L'altro ponte dell'Isola, verso Trastevere: ricostruito nell'Ottocento riusando i materiali antichi quando si alzarono i muraglioni."
+  "testo": "Il torrione di mattoni che sovrasta i Mercati di Traiano pende visibilmente: un cedimento del terreno la inclinò nel Trecento. Era la torre di una famiglia baronale, uno dei pochi pezzi di Roma medievale rimasti in piedi."
  },
  {
   "id": "poi-339-nome",
-  "testo": "Porta Settimiana"
+  "testo": "Santi Luca e Martina"
  },
  {
   "id": "poi-339-intro",
-  "testo": "porta del 1498"
+  "testo": "chiesa del 1635-1664"
  },
  {
   "id": "poi-339-scheda",
-  "testo": "La porta che apre su via della Lungara: fu rifatta da Alessandro VI con la merlatura che si vede, su un passaggio delle mura aureliane."
+  "testo": "Pietro da Cortona la rifece per sé e ci sperimentò una facciata leggermente convessa, che spinge in fuori: la chiesa è a croce greca su due livelli, uno sopra l'altro. È uno dei punti dove nasce il barocco romano."
  },
  {
   "id": "poi-340-nome",
-  "testo": "Villa Borghese"
+  "testo": "Basilica di Sant'Agostino"
  },
  {
   "id": "poi-340-intro",
-  "testo": "parco del dal 1605"
+  "testo": "basilica del 1479-1483"
  },
  {
   "id": "poi-340-scheda",
-  "testo": "Il parco nato come villa suburbana dei Borghese e diventato pubblico nell'Ottocento: dentro ci sono la Galleria, il laghetto col tempietto di Esculapio e il belvedere del Pincio sopra piazza del Popolo."
+  "testo": "Una delle prime facciate rinascimentali di Roma, in travertino del Colosseo, con le grandi volute laterali che raccordano i due ordini: un'invenzione che poi farà il giro d'Europa."
+ },
+ {
+  "id": "poi-340-dentro",
+  "testo": "La Madonna dei Pellegrini di Caravaggio, con i piedi sporchi dei devoti in primo piano; e il profeta Isaia di Raffaello sul terzo pilastro."
  },
  {
   "id": "poi-341-nome",
-  "testo": "Il Lungotevere e i muraglioni"
+  "testo": "Basilica di Sant'Andrea delle Fratte"
  },
  {
   "id": "poi-341-intro",
-  "testo": "argini del 1876-1926"
+  "testo": "chiesa del campanile e tiburio del 1653-1665"
  },
  {
   "id": "poi-341-scheda",
-  "testo": "Dopo la piena del 1870 il Tevere fu chiuso fra muraglioni alti dodici metri: la città perse i porti, i mulini e il rapporto con l'acqua, ma smise di allagarsi. È la ferita e la cura insieme."
+  "testo": "La chiesa è ordinaria, ma dietro, dove la strada si stringe, Borromini alzò il campanile e il tiburio: tamburo curvo con colonne angolari, e sopra una corona di volute e teste d'angelo che regge una guglia. Si vede solo girando l'angolo."
  },
  {
   "id": "poi-341-dentro",
-  "testo": "Dall'alto si vedono gli sbocchi delle fogne antiche e, sotto ponte Sisto, i resti delle banchine."
+  "testo": "Gli angeli del Bernini ai lati dell'altare, fatti per ponte Sant'Angelo e mai messi fuori."
  },
  {
   "id": "poi-342-nome",
-  "testo": "Fontana degli Artisti"
+  "testo": "Tempio di Portuno"
  },
  {
   "id": "poi-342-intro",
-  "testo": "fontana"
+  "testo": "tempio romano del I sec. a.C."
  },
  {
   "id": "poi-342-scheda",
-  "testo": "Fontana degli Artisti, una delle fontane del centro di Roma."
+  "testo": "Il tempio romano meglio conservato della città: pianta rettangolare su podio, quattro colonne ioniche sul fronte e le altre addossate al muro della cella, perché il tempio sembri circondato da colonne senza esserlo davvero."
  },
  {
   "id": "poi-343-nome",
-  "testo": "Fontana delle Palle di Cannone"
+  "testo": "Tempio di Ercole Vincitore"
  },
  {
   "id": "poi-343-intro",
-  "testo": "fontana"
+  "testo": "tempio romano del fine II sec. a.C."
  },
  {
   "id": "poi-343-scheda",
-  "testo": "Fontana delle Palle di Cannone, una delle fontane del centro di Roma."
+  "testo": "Rotondo, venti colonne corinzie di marmo greco attorno alla cella: è il più antico edificio in marmo rimasto a Roma. Si è salvato perché per secoli fu una chiesa."
  },
  {
   "id": "poi-344-nome",
-  "testo": "Font Ludovisi"
+  "testo": "Arco di Giano"
  },
  {
   "id": "poi-344-intro",
-  "testo": "fontana"
+  "testo": "arco quadrifronte del IV sec. d.C."
  },
  {
   "id": "poi-344-scheda",
-  "testo": "Font Ludovisi, una delle fontane del centro di Roma."
+  "testo": "Un arco a quattro fronti, costruito all'incrocio del Foro Boario per fare ombra ai mercanti: non è un arco di trionfo, è una copertura. Le nicchie sui pilastri erano piene di statue."
  },
  {
   "id": "poi-345-nome",
-  "testo": "Fontana del Bottino"
+  "testo": "Basilica di Santa Cecilia in Trastevere"
  },
  {
   "id": "poi-345-intro",
-  "testo": "fontana"
+  "testo": "basilica del IX sec., facciata del 1725"
  },
  {
   "id": "poi-345-scheda",
-  "testo": "Fontana del Bottino, una delle fontane del centro di Roma."
+  "testo": "Si entra da un cortile con la vasca antica al centro: la chiesa sta in fondo, dietro il portico settecentesco. Sotto il pavimento si cammina nelle case romane su cui fu costruita."
+ },
+ {
+  "id": "poi-345-dentro",
+  "testo": "Il Giudizio universale di Pietro Cavallini nel coro delle monache, e la statua distesa di Maderno sotto l'altare."
  },
  {
   "id": "poi-346-nome",
-  "testo": "Fontana del Dolmen"
+  "testo": "Basilica di San Bartolomeo all'Isola"
  },
  {
   "id": "poi-346-intro",
-  "testo": "fontana"
+  "testo": "basilica del X sec."
  },
  {
   "id": "poi-346-scheda",
-  "testo": "Fontana del Dolmen, una delle fontane del centro di Roma."
+  "testo": "Sta dove c'era il tempio di Esculapio, il dio della medicina: il luogo è stato di cura per duemila anni, e accanto c'è ancora l'ospedale. Nel mezzo della scalinata dell'altare c'è una vera da pozzo scolpita, sul punto di una sorgente antica."
  },
  {
   "id": "poi-347-nome",
-  "testo": "Fontana Rustica"
+  "testo": "Chiesa di San Nicola in Carcere"
  },
  {
   "id": "poi-347-intro",
-  "testo": "fontana"
+  "testo": "chiesa del XI sec. su tre templi"
  },
  {
   "id": "poi-347-scheda",
-  "testo": "Fontana Rustica, una delle fontane del centro di Roma."
+  "testo": "La chiesa ha mangiato tre templi repubblicani affiancati: le colonne di due di essi sono inglobate nei muri laterali e si vedono dalla strada, mezze dentro e mezze fuori. Sotto si cammina fra i podi."
+ },
+ {
+  "id": "poi-347-dentro",
+  "testo": "Il fianco su via del Teatro di Marcello: le colonne scanalate che escono dal muro della chiesa."
  },
  {
   "id": "poi-348-nome",
-  "testo": "Fontana della Ciociara"
+  "testo": "Chiesa di Sant'Eligio degli Orefici"
  },
  {
   "id": "poi-348-intro",
-  "testo": "fontana"
+  "testo": "chiesa del dal 1509"
  },
  {
   "id": "poi-348-scheda",
-  "testo": "Fontana della Ciociara, una delle fontane del centro di Roma."
+  "testo": "Piccola chiesa a croce greca con la cupola su tamburo, disegnata da Raffaello per la corporazione degli orefici: pianta centrale pura, senza decorazione, il contrario del barocco che verrà."
  },
  {
   "id": "poi-349-nome",
-  "testo": "Fontana del Tirreno"
+  "testo": "Fontana dell'Acqua Felice, il Mosè"
  },
  {
   "id": "poi-349-intro",
-  "testo": "fontana"
+  "testo": "mostra d'acqua del 1585-1588"
  },
  {
   "id": "poi-349-scheda",
-  "testo": "Fontana del Tirreno, una delle fontane del centro di Roma."
+  "testo": "La prima mostra d'acqua papale moderna: un arco di trionfo a tre fornici con il Mosè al centro, criticatissimo appena fu scoperto. Segna l'arrivo dell'acquedotto Felice e la rinascita dei quartieri alti."
  },
  {
   "id": "poi-350-nome",
-  "testo": "Fontana della Galera"
+  "testo": "Fontana dei Quattro Fiumi"
  },
  {
   "id": "poi-350-intro",
-  "testo": "fontana"
+  "testo": "fontana del 1648-1651"
  },
  {
   "id": "poi-350-scheda",
-  "testo": "Fontana della Galera, una delle fontane del centro di Roma."
+  "testo": "Bernini scavò la scogliera sotto l'obelisco: il masso è traforato, e la guglia egizia sembra stare in equilibrio sul vuoto. I quattro fiumi — Nilo, Danubio, Gange, Rio della Plata — sono i quattro continenti allora conosciuti, e il Nilo si copre il capo perché le sue sorgenti erano ignote."
+ },
+ {
+  "id": "poi-350-dentro",
+  "testo": "Guarda sotto il masso: si vede da parte a parte. È quello il gesto, non le statue."
  },
  {
   "id": "poi-351-nome",
-  "testo": "Fontana di piazza dell'Aracoeli"
+  "testo": "Fontana del Moro"
  },
  {
   "id": "poi-351-intro",
-  "testo": "fontana"
+  "testo": "fontana del 1575, statue del 1653"
  },
  {
   "id": "poi-351-scheda",
-  "testo": "Fontana di piazza dell'Aracoeli, una delle fontane del centro di Roma."
+  "testo": "La vasca è cinquecentesca, di Giacomo della Porta; il moro al centro che lotta con un delfino lo disegnò Bernini quasi ottant'anni dopo. Le statue che si vedono sono copie: gli originali stanno a Villa Borghese."
  },
  {
   "id": "poi-352-nome",
-  "testo": "Fontana di piazza delle Cinque Scole"
+  "testo": "Fontana del Nettuno a Navona"
  },
  {
   "id": "poi-352-intro",
-  "testo": "fontana"
+  "testo": "fontana del vasca del 1574, statue del 1878"
  },
  {
   "id": "poi-352-scheda",
-  "testo": "Fontana di piazza delle Cinque Scole, una delle fontane del centro di Roma."
+  "testo": "Per tre secoli fu solo una vasca vuota: le statue di Nettuno che lotta con la piovra furono aggiunte nell'Ottocento per fare simmetria con la fontana del Moro all'altro capo della piazza."
  },
  {
   "id": "poi-353-nome",
-  "testo": "Fontana del Trullo"
+  "testo": "Fontana della Barcaccia"
  },
  {
   "id": "poi-353-intro",
-  "testo": "fontana"
+  "testo": "fontana del 1627-1629"
  },
  {
   "id": "poi-353-scheda",
-  "testo": "Fontana del Trullo, una delle fontane del centro di Roma."
+  "testo": "Una barca che affonda, scolpita a filo del selciato: la forma nasce da un problema tecnico, perché l'acqua Vergine qui arriva con poca pressione e non poteva zampillare in alto. Il difetto è diventato il disegno."
+ },
+ {
+  "id": "poi-353-dentro",
+  "testo": "L'acqua esce dai bordi e dal sole di prua: la barca sembra imbarcare acqua."
  },
  {
   "id": "poi-354-nome",
-  "testo": "Ninfeo degli Specchi"
+  "testo": "Fontana del Tritone"
  },
  {
   "id": "poi-354-intro",
-  "testo": "fontana"
+  "testo": "fontana del 1642-1643"
  },
  {
   "id": "poi-354-scheda",
-  "testo": "Ninfeo degli Specchi, una delle fontane del centro di Roma."
+  "testo": "Quattro delfini reggono una conchiglia aperta, e sopra sta il tritone che soffia nella buccina da cui esce il getto. È la prima fontana romana pensata per essere girata intorno, senza un fondale alle spalle."
  },
  {
   "id": "poi-355-nome",
-  "testo": "Fontana della Madonna dei Monti"
+  "testo": "Fontana delle Api"
  },
  {
   "id": "poi-355-intro",
-  "testo": "fontana"
+  "testo": "fontanella del 1644"
  },
  {
   "id": "poi-355-scheda",
-  "testo": "Fontana della Madonna dei Monti, una delle fontane del centro di Roma."
+  "testo": "Una conchiglia aperta con tre api dei Barberini che bevono sul bordo: era un abbeveratoio per i cavalli, posato all'angolo della strada. Bernini che lavora in piccolo."
  },
  {
   "id": "poi-356-nome",
-  "testo": "Fontana del Mosè"
+  "testo": "Fontana di Santa Maria in Trastevere"
  },
  {
   "id": "poi-356-intro",
-  "testo": "fontana"
+  "testo": "fontana del origini medievali"
  },
  {
   "id": "poi-356-scheda",
-  "testo": "Fontana del Mosè, una delle fontane del centro di Roma."
+  "testo": "È forse la fontana più antica di Roma ancora in funzione: rifatta più volte, da ultimo da Carlo Fontana, con le quattro conchiglie sul bordo della vasca. La piazza le è cresciuta attorno."
  },
  {
   "id": "poi-357-nome",
-  "testo": "La Fontana del Nettuno"
+  "testo": "Marforio"
  },
  {
   "id": "poi-357-intro",
-  "testo": "fontana"
+  "testo": "statua parlante del I sec. d.C."
  },
  {
   "id": "poi-357-scheda",
-  "testo": "La Fontana del Nettuno, una delle fontane del centro di Roma."
+  "testo": "Un dio fluviale colossale sdraiato, oggi nel cortile dei Musei Capitolini. Era la statua che rispondeva a Pasquino: le pasquinate erano dialoghi fra i due."
  },
  {
   "id": "poi-358-nome",
-  "testo": "Santi Vincenzo e Anastasio a Fontana di Trevi"
+  "testo": "Il Babuino"
  },
  {
   "id": "poi-358-intro",
-  "testo": "fontana"
+  "testo": "statua parlante del 1576"
  },
  {
   "id": "poi-358-scheda",
-  "testo": "Santi Vincenzo e Anastasio a Fontana di Trevi, una delle fontane del centro di Roma."
+  "testo": "Un Sileno sdraiato sopra una vasca, così consumato e brutto che i romani lo chiamarono babbuino e diedero il nome alla strada. Terza voce di Roma dopo Pasquino e Marforio."
  },
  {
   "id": "poi-359-nome",
-  "testo": "Fontana di piazza colonna"
+  "testo": "Fontana della Terrina"
  },
  {
   "id": "poi-359-intro",
-  "testo": "fontana"
+  "testo": "fontana del 1590"
  },
  {
   "id": "poi-359-scheda",
-  "testo": "Fontana di piazza colonna, una delle fontane del centro di Roma."
+  "testo": "Una vasca ovale con il coperchio: fu coperta perché ci buttavano dentro i rifiuti, e il coperchio le ha dato il nome di zuppiera. Stava a Campo de' Fiori, fu spostata qui davanti alla Chiesa Nuova."
  },
  {
   "id": "poi-360-nome",
-  "testo": "Fontana di piazza Mastai"
+  "testo": "Fontana dei Tritoni"
  },
  {
   "id": "poi-360-intro",
-  "testo": "fontana"
+  "testo": "fontana del 1715"
  },
  {
   "id": "poi-360-scheda",
-  "testo": "Fontana di piazza Mastai, una delle fontane del centro di Roma."
+  "testo": "Due tritoni inginocchiati che reggono la conchiglia, in piazza Bocca della Verità: è l'ultima fontana romana prima che il barocco finisse."
  },
  {
   "id": "poi-361-nome",
-  "testo": "Fontana degli undici zampilli"
+  "testo": "Fontana del Prigione"
  },
  {
   "id": "poi-361-intro",
-  "testo": "fontana"
+  "testo": "fontana del fine Cinquecento"
  },
  {
   "id": "poi-361-scheda",
-  "testo": "Fontana degli undici zampilli, una delle fontane del centro di Roma."
+  "testo": "Una mostra d'acqua piccola con la statua del prigioniero nella nicchia: è stata smontata e rimontata due volte in punti diversi della città."
  },
  {
   "id": "poi-362-nome",
-  "testo": "Fontana delle Cariatidi"
+  "testo": "Fontana della Botte"
  },
  {
   "id": "poi-362-intro",
-  "testo": "fontana"
+  "testo": "fontanella del 1927"
  },
  {
   "id": "poi-362-scheda",
-  "testo": "Fontana delle Cariatidi, una delle fontane del centro di Roma."
+  "testo": "Una botte di vino fra due misure da osteria: è la fontanella rionale di Trastevere, e dice il mestiere del quartiere."
  },
  {
   "id": "poi-363-nome",
-  "testo": "Fontana di Maderno"
+  "testo": "Fontana della Pigna"
  },
  {
   "id": "poi-363-intro",
-  "testo": "fontana"
+  "testo": "fontanella del 1927"
  },
  {
   "id": "poi-363-scheda",
-  "testo": "Fontana di Maderno, una delle fontane del centro di Roma."
+  "testo": "Una pigna di travertino sopra la vasca: è l'insegna del rione Pigna, che prende il nome dalla pigna di bronzo romana oggi in Vaticano."
  },
  {
   "id": "poi-364-nome",
-  "testo": "Fontana di Bernini"
+  "testo": "Fontana dei Dioscuri"
  },
  {
   "id": "poi-364-intro",
-  "testo": "fontana"
+  "testo": "fontana e obelisco del 1818"
  },
  {
   "id": "poi-364-scheda",
-  "testo": "Fontana di Bernini, una delle fontane del centro di Roma."
+  "testo": "Sulla piazza del Quirinale: l'obelisco del mausoleo di Augusto messo in mezzo ai due colossi di Castore e Polluce con i cavalli, e sotto una vasca di granito presa dal Foro Romano. Tre pezzi antichi diversi montati insieme nell'Ottocento."
  },
  {
   "id": "poi-365-nome",
-  "testo": "Fontana del Tritone di palazzo Margherita"
+  "testo": "Fontana del Porto di Ripetta"
  },
  {
   "id": "poi-365-intro",
-  "testo": "fontana"
+  "testo": "fontana del 1704"
  },
  {
   "id": "poi-365-scheda",
-  "testo": "Fontana del Tritone di palazzo Margherita, una delle fontane del centro di Roma."
+  "testo": "Quello che resta del porto fluviale di Ripetta, smontato quando costruirono i muraglioni del Tevere: la fontana fu rimessa qui vicino, e segna il punto dove le barche scaricavano il vino e la legna."
  },
  {
   "id": "poi-366-nome",
-  "testo": "Fontana di piazza San Simeone"
+  "testo": "Ponte Sisto"
  },
  {
   "id": "poi-366-intro",
-  "testo": "fontana"
+  "testo": "ponte del 1473-1479"
  },
  {
   "id": "poi-366-scheda",
-  "testo": "Fontana di piazza San Simeone, una delle fontane del centro di Roma."
+  "testo": "Quattro arcate su piloni romani riusati, e in mezzo al pilone centrale l'occhialone: un foro circolare che serve a far passare l'acqua quando il fiume cresce, e a dire quando è il momento di scappare."
+ },
+ {
+  "id": "poi-366-dentro",
+  "testo": "L'occhialone: se l'acqua lo tocca, la piena è vicina."
  },
  {
   "id": "poi-367-nome",
-  "testo": "Fontana della Vasca"
+  "testo": "Ponte Rotto"
  },
  {
   "id": "poi-367-intro",
-  "testo": "fontana"
+  "testo": "rudere di ponte del 142 a.C."
  },
  {
   "id": "poi-367-scheda",
-  "testo": "Fontana della Vasca, una delle fontane del centro di Roma."
+  "testo": "Un'arcata sola in mezzo al fiume: è quel che resta del ponte Emilio, il primo ponte di pietra di Roma, portato via dalle piene e ricostruito tante volte finché nel 1598 lo lasciarono andare."
  },
  {
   "id": "poi-368-nome",
-  "testo": "Fontana Martinucci"
+  "testo": "Ponte Fabricio"
  },
  {
   "id": "poi-368-intro",
-  "testo": "fontana"
+  "testo": "ponte del 62 a.C."
  },
  {
   "id": "poi-368-scheda",
-  "testo": "Fontana Martinucci, una delle fontane del centro di Roma."
+  "testo": "Il ponte più antico di Roma ancora in uso, e quasi tutto originale: due grandi arcate di tufo e travertino, con l'arco piccolo al centro del pilone per lo sfogo delle piene. Le erme a quattro teste sui parapetti gli danno l'altro nome, ponte dei Quattro Capi."
  },
  {
   "id": "poi-369-nome",
-  "testo": "Fontana delle Bagnanti"
+  "testo": "Ponte Cestio"
  },
  {
   "id": "poi-369-intro",
-  "testo": "fontana"
+  "testo": "ponte del I sec. a.C."
  },
  {
   "id": "poi-369-scheda",
-  "testo": "Fontana delle Bagnanti, una delle fontane del centro di Roma."
+  "testo": "L'altro ponte dell'Isola, verso Trastevere: ricostruito nell'Ottocento riusando i materiali antichi quando si alzarono i muraglioni."
  },
  {
   "id": "poi-370-nome",
-  "testo": "Fontana della Caserma degli Svizzeri"
+  "testo": "Porta Settimiana"
  },
  {
   "id": "poi-370-intro",
-  "testo": "fontana"
+  "testo": "porta del 1498"
  },
  {
   "id": "poi-370-scheda",
-  "testo": "Fontana della Caserma degli Svizzeri, una delle fontane del centro di Roma."
+  "testo": "La porta che apre su via della Lungara: fu rifatta da Alessandro VI con la merlatura che si vede, su un passaggio delle mura aureliane."
  },
  {
   "id": "poi-371-nome",
-  "testo": "Fontana di piazza del Viminale"
+  "testo": "Villa Borghese"
  },
  {
   "id": "poi-371-intro",
-  "testo": "fontana"
+  "testo": "parco del dal 1605"
  },
  {
   "id": "poi-371-scheda",
-  "testo": "Fontana di piazza del Viminale, una delle fontane del centro di Roma."
+  "testo": "Il parco nato come villa suburbana dei Borghese e diventato pubblico nell'Ottocento: dentro ci sono la Galleria, il laghetto col tempietto di Esculapio e il belvedere del Pincio sopra piazza del Popolo."
  },
  {
   "id": "poi-372-nome",
-  "testo": "Fontana di Corot"
+  "testo": "Il Lungotevere e i muraglioni"
  },
  {
   "id": "poi-372-intro",
-  "testo": "fontana"
+  "testo": "argini del 1876-1926"
  },
  {
   "id": "poi-372-scheda",
-  "testo": "Fontana di Corot, una delle fontane del centro di Roma."
+  "testo": "Dopo la piena del 1870 il Tevere fu chiuso fra muraglioni alti dodici metri: la città perse i porti, i mulini e il rapporto con l'acqua, ma smise di allagarsi. È la ferita e la cura insieme."
+ },
+ {
+  "id": "poi-372-dentro",
+  "testo": "Dall'alto si vedono gli sbocchi delle fogne antiche e, sotto ponte Sisto, i resti delle banchine."
  },
  {
   "id": "poi-373-nome",
-  "testo": "Fontana di Lungotevere Aventino"
+  "testo": "Fontana degli Artisti"
  },
  {
   "id": "poi-373-intro",
@@ -5041,11 +5165,11 @@
  },
  {
   "id": "poi-373-scheda",
-  "testo": "Fontana di Lungotevere Aventino, una delle fontane del centro di Roma."
+  "testo": "Fontana degli Artisti, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-374-nome",
-  "testo": "Fontana di Palazzo Taverna"
+  "testo": "Fontana delle Palle di Cannone"
  },
  {
   "id": "poi-374-intro",
@@ -5053,11 +5177,11 @@
  },
  {
   "id": "poi-374-scheda",
-  "testo": "Fontana di Palazzo Taverna, una delle fontane del centro di Roma."
+  "testo": "Fontana delle Palle di Cannone, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-375-nome",
-  "testo": "Torlonia"
+  "testo": "Font Ludovisi"
  },
  {
   "id": "poi-375-intro",
@@ -5065,11 +5189,11 @@
  },
  {
   "id": "poi-375-scheda",
-  "testo": "Torlonia, una delle fontane del centro di Roma."
+  "testo": "Font Ludovisi, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-376-nome",
-  "testo": "Fermi fountain"
+  "testo": "Fontana del Bottino"
  },
  {
   "id": "poi-376-intro",
@@ -5077,11 +5201,11 @@
  },
  {
   "id": "poi-376-scheda",
-  "testo": "Fermi fountain, una delle fontane del centro di Roma."
+  "testo": "Fontana del Bottino, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-377-nome",
-  "testo": "Giuseppe Gioachino Belli"
+  "testo": "Fontana del Dolmen"
  },
  {
   "id": "poi-377-intro",
@@ -5089,1023 +5213,1023 @@
  },
  {
   "id": "poi-377-scheda",
-  "testo": "Giuseppe Gioachino Belli, una delle fontane del centro di Roma."
+  "testo": "Fontana del Dolmen, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-378-nome",
-  "testo": "Arco di Settimio Severo"
+  "testo": "Fontana Rustica"
  },
  {
   "id": "poi-378-intro",
-  "testo": "arco di trionfo del 203 d.C."
+  "testo": "fontana"
  },
  {
   "id": "poi-378-scheda",
-  "testo": "Tre fornici, quello centrale più grande, con le colonne composite staccate dal muro su alti plinti: sopra, i grandi pannelli a rilievo con le campagne contro i Parti, scolpiti come cronache a più piani. L'iscrizione in alto porta i segni della rasura: il nome di Geta fu cancellato dal fratello Caracalla."
- },
- {
-  "id": "poi-378-dentro",
-  "testo": "I fori delle lettere di bronzo nell'iscrizione: si legge ancora dove c'era il nome cancellato."
+  "testo": "Fontana Rustica, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-379-nome",
-  "testo": "Curia Iulia"
+  "testo": "Fontana della Ciociara"
  },
  {
   "id": "poi-379-intro",
-  "testo": "aula del Senato del rifatta nel 283 d.C."
+  "testo": "fontana"
  },
  {
   "id": "poi-379-scheda",
-  "testo": "La sala del Senato: un'aula rettangolare altissima e spoglia, con tre gradinate per lato e il pavimento in opus sectile originale. Si è conservata perché fu trasformata in chiesa."
- },
- {
-  "id": "poi-379-dentro",
-  "testo": "Il pavimento a tarsie di marmo, quello vero, e le porte di bronzo (quelle qui sono copie: le originali stanno al Laterano)."
+  "testo": "Fontana della Ciociara, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-380-nome",
-  "testo": "Tempio di Saturno"
+  "testo": "Fontana del Tirreno"
  },
  {
   "id": "poi-380-intro",
-  "testo": "tempio romano del 497 a.C., rifatto nel IV sec."
+  "testo": "fontana"
  },
  {
   "id": "poi-380-scheda",
-  "testo": "Otto colonne di granito con la trabeazione: è quello che si vede da piazza del Campidoglio guardando giù. Sotto il podio stava l'erario, la cassa dello Stato romano."
+  "testo": "Fontana del Tirreno, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-381-nome",
-  "testo": "Tempio di Antonino e Faustina"
+  "testo": "Fontana della Galera"
  },
  {
   "id": "poi-381-intro",
-  "testo": "tempio e chiesa del 141 d.C."
+  "testo": "fontana"
  },
  {
   "id": "poi-381-scheda",
-  "testo": "Dieci colonne corinzie di cipollino alte diciassette metri, e dentro, in alto, la facciata barocca della chiesa di San Lorenzo in Miranda: la chiesa fu costruita dentro il tempio al livello raggiunto dall'interro. Sulle colonne si vedono i solchi delle corde di chi tentò di abbatterle."
- },
- {
-  "id": "poi-381-dentro",
-  "testo": "I solchi delle funi sui fusti, a mezza altezza: il tentativo fallito di tirarle giù."
+  "testo": "Fontana della Galera, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-382-nome",
-  "testo": "Casa delle Vestali"
+  "testo": "Fontana di piazza dell'Aracoeli"
  },
  {
   "id": "poi-382-intro",
-  "testo": "casa romana del rifatta nel II sec. d.C."
+  "testo": "fontana"
  },
  {
   "id": "poi-382-scheda",
-  "testo": "Un cortile lungo con le vasche e le statue delle vestali attorno, e sui tre lati gli ambienti su due piani: la casa delle sacerdotesse che custodivano il fuoco di Roma."
+  "testo": "Fontana di piazza dell'Aracoeli, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-383-nome",
-  "testo": "Foro di Cesare"
+  "testo": "Fontana di piazza delle Cinque Scole"
  },
  {
   "id": "poi-383-intro",
-  "testo": "foro del 46 a.C."
+  "testo": "fontana"
  },
  {
   "id": "poi-383-scheda",
-  "testo": "Il primo dei fori imperiali: una piazza porticata con il tempio di Venere Genitrice in fondo, costruita da Cesare comprando e demolendo il quartiere che c'era. Da qui in poi i fori diventano opere di propaganda."
+  "testo": "Fontana di piazza delle Cinque Scole, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-384-nome",
-  "testo": "Basilica Giulia"
+  "testo": "Fontana del Trullo"
  },
  {
   "id": "poi-384-intro",
-  "testo": "basilica civile del 54 a.C."
+  "testo": "fontana"
  },
  {
   "id": "poi-384-scheda",
-  "testo": "Era il tribunale: un'aula enorme a cinque navate, oggi ridotta al piano dei pilastri. Sui gradini si vedono incisi i tabulae lusoriae, i giochi a scacchiera che i romani scavavano nel marmo per passare il tempo."
- },
- {
-  "id": "poi-384-dentro",
-  "testo": "Cerca le griglie incise sui gradini: sono i tavolieri da gioco."
+  "testo": "Fontana del Trullo, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-385-nome",
-  "testo": "Musei Vaticani"
+  "testo": "Ninfeo degli Specchi"
  },
  {
   "id": "poi-385-intro",
-  "testo": "musei del dal 1506"
+  "testo": "fontana"
  },
  {
   "id": "poi-385-scheda",
-  "testo": "Sette chilometri di percorso dentro i palazzi papali: si attraversano cortili, gallerie e scale costruite in cinque secoli. L'ingresso attuale è del 1932, con la scala elicoidale doppia di Giuseppe Momo, due rampe che salgono e scendono senza incontrarsi."
- },
- {
-  "id": "poi-385-dentro",
-  "testo": "La Galleria delle Carte Geografiche, quaranta mappe d'Italia dipinte nel Cinquecento su centoventi metri di volta."
+  "testo": "Ninfeo degli Specchi, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-386-nome",
-  "testo": "Cappella Sistina"
+  "testo": "Fontana della Madonna dei Monti"
  },
  {
   "id": "poi-386-intro",
-  "testo": "cappella del 1475-1481, volta 1508-1512"
+  "testo": "fontana"
  },
  {
   "id": "poi-386-scheda",
-  "testo": "Una scatola rettangolare senza decorazione architettonica, costruita con le proporzioni che la Bibbia dà al tempio di Salomone. Michelangelo ci dipinse sopra un'architettura finta — pilastri, cornici, troni — e dentro quella mise le storie della Genesi."
- },
- {
-  "id": "poi-386-dentro",
-  "testo": "Il Giudizio universale sulla parete d'altare, dipinto trent'anni dopo la volta, con l'autoritratto nella pelle scorticata di san Bartolomeo."
+  "testo": "Fontana della Madonna dei Monti, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-387-nome",
-  "testo": "Stanze di Raffaello"
+  "testo": "Fontana del Mosè"
  },
  {
   "id": "poi-387-intro",
-  "testo": "appartamento dipinto del 1508-1524"
+  "testo": "fontana"
  },
  {
   "id": "poi-387-scheda",
-  "testo": "Quattro stanze dell'appartamento di Giulio II: Raffaello le dipinse in modo che l'architettura dipinta continuasse quella vera. Nella Scuola di Atene le volte a cassettoni sembrano lo sfondamento della parete."
+  "testo": "Fontana del Mosè, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-388-nome",
-  "testo": "Cimitero militare francese"
+  "testo": "La Fontana del Nettuno"
  },
  {
   "id": "poi-388-intro",
-  "testo": "cimitero di guerra del 1944"
+  "testo": "fontana"
  },
  {
   "id": "poi-388-scheda",
-  "testo": "Settantaseimila metri quadrati per i soldati del Corpo di spedizione francese caduti sulla linea invernale: molti venivano dal Nordafrica, e il monumento lo dice: la forma richiama i minareti, e il rivestimento è di piastrelle azzurre. È il pezzo di architettura più inatteso di Venafro."
- },
- {
-  "id": "poi-388-dentro",
-  "testo": "Le piastrelle azzurre e il profilo del monumento, che non somiglia a niente altro qui intorno."
+  "testo": "La Fontana del Nettuno, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-389-nome",
-  "testo": "La Purtella"
+  "testo": "Santi Vincenzo e Anastasio a Fontana di Trevi"
  },
  {
   "id": "poi-389-intro",
-  "testo": "dettaglio di strada"
+  "testo": "fontana"
  },
  {
   "id": "poi-389-scheda",
-  "testo": "Una via interamente coperta, lunga appena cinque metri, che collega via delle Vergini con via Silvano: un passaggio sotto le case, di quelli che nei centri antichi si aprivano quando una famiglia costruiva sopra la strada."
+  "testo": "Santi Vincenzo e Anastasio a Fontana di Trevi, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-390-nome",
-  "testo": "Battistero di Parma"
+  "testo": "Fontana di piazza colonna"
  },
  {
   "id": "poi-390-intro",
-  "testo": "battistero del 1196-1270"
+  "testo": "fontana"
  },
  {
   "id": "poi-390-scheda",
-  "testo": "Un ottagono di marmo rosa di Verona alto trentasei metri, chiuso e compatto fuori, con quattro ordini di logge sovrapposte che alleggeriscono il muro. Benedetto Antelami lo cominciò nel 1196: è il punto esatto in cui il romanico passa al gotico, e si vede nel passaggio dagli archi tondi in basso a quelli acuti in alto."
- },
- {
-  "id": "poi-390-dentro",
-  "testo": "I portali scolpiti dall'Antelami e, dentro, i sedici spicchi della cupola dipinti come un cielo: il ciclo dei mesi e delle stagioni."
+  "testo": "Fontana di piazza colonna, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-391-nome",
-  "testo": "Cattedrale di Santa Maria Assunta"
+  "testo": "Fontana di piazza Mastai"
  },
  {
   "id": "poi-391-intro",
-  "testo": "cattedrale del 1059-1074"
+  "testo": "fontana"
  },
  {
   "id": "poi-391-scheda",
-  "testo": "Romanica, in arenaria, con la facciata a capanna percorsa da tre ordini di logge e il protiro su leoni stilofori. Il campanile gotico, più tardo, non ha mai avuto il gemello previsto dall'altro lato."
- },
- {
-  "id": "poi-391-dentro",
-  "testo": "La cupola affrescata dal Correggio con l'Assunzione: una spirale di corpi che sale verso la luce, dipinta nel 1526. E la Deposizione dell'Antelami, nel transetto."
+  "testo": "Fontana di piazza Mastai, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-392-nome",
-  "testo": "Chiesa di San Giovanni Evangelista"
+  "testo": "Fontana degli undici zampilli"
  },
  {
   "id": "poi-392-intro",
-  "testo": "chiesa e monastero del 1498-1510"
+  "testo": "fontana"
  },
  {
   "id": "poi-392-scheda",
-  "testo": "Dietro il Duomo, la chiesa benedettina con la facciata barocca aggiunta dopo. Dentro c'è l'altra cupola del Correggio, la Visione di san Giovanni a Patmos, e nei catini del coro le prove giovanili del Parmigianino."
- },
- {
-  "id": "poi-392-dentro",
-  "testo": "La spezieria del convento, l'Antica Spezieria di San Giovanni: scaffali, mortai e vasi rimasti come erano, una farmacia del Cinquecento intatta."
+  "testo": "Fontana degli undici zampilli, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-393-nome",
-  "testo": "Basilica di Santa Maria della Steccata"
+  "testo": "Fontana delle Cariatidi"
  },
  {
   "id": "poi-393-intro",
-  "testo": "basilica del 1521-1539"
+  "testo": "fontana"
  },
  {
   "id": "poi-393-scheda",
-  "testo": "Pianta a croce greca con quattro absidi e la cupola al centro: è l'edificio rinascimentale più puro di Parma, costruito sul modello bramantesco. Sotto, la cripta dei duchi Farnese e Borbone."
- },
- {
-  "id": "poi-393-dentro",
-  "testo": "Gli affreschi del Parmigianino sull'arco presbiteriale, con le Vergini sagge e stolte: lavorò così lentamente che finì in tribunale."
+  "testo": "Fontana delle Cariatidi, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-394-nome",
-  "testo": "Camera di San Paolo"
+  "testo": "Fontana di Maderno"
  },
  {
   "id": "poi-394-intro",
-  "testo": "camera dipinta del 1519"
+  "testo": "fontana"
  },
  {
   "id": "poi-394-scheda",
-  "testo": "La stanza della badessa Giovanna da Piacenza, dipinta dal Correggio: la volta a ombrello diventa un pergolato di canne, con sedici ovali che si aprono sul cielo e putti che giocano fra i rami. L'architettura sparisce sotto la pittura."
- },
- {
-  "id": "poi-394-dentro",
-  "testo": "Il camino con Diana cacciatrice e il modo in cui le vele dipinte annullano la volta reale."
+  "testo": "Fontana di Maderno, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-395-nome",
-  "testo": "Complesso della Pilotta"
+  "testo": "Fontana di Bernini"
  },
  {
   "id": "poi-395-intro",
-  "testo": "palazzo del dal 1583"
+  "testo": "fontana"
  },
  {
   "id": "poi-395-scheda",
-  "testo": "Un enorme blocco di mattoni rimasto incompiuto, costruito dai Farnese attorno a cortili aperti: doveva essere la reggia, è rimasto un contenitore. Oggi tiene insieme Galleria Nazionale, Biblioteca Palatina, Museo Archeologico e il Teatro Farnese."
- },
- {
-  "id": "poi-395-dentro",
-  "testo": "La mole grezza senza rivestimento: si legge la costruzione, mattone su mattone."
+  "testo": "Fontana di Bernini, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-396-nome",
-  "testo": "Teatro Farnese"
+  "testo": "Fontana del Tritone di palazzo Margherita"
  },
  {
   "id": "poi-396-intro",
-  "testo": "teatro del 1618"
+  "testo": "fontana"
  },
  {
   "id": "poi-396-scheda",
-  "testo": "Costruito tutto in legno dentro una sala d'armi: gradinate a ferro di cavallo, una scena profondissima e la prima torre scenica con macchine per i cambi a vista. Bombardato nel 1944 e rifatto con i pezzi recuperati, resta a legno nudo, senza dipinture: così si vede come era fatto."
- },
- {
-  "id": "poi-396-dentro",
-  "testo": "La struttura portante e il boccascena: è il nonno di tutti i teatri all'italiana."
+  "testo": "Fontana del Tritone di palazzo Margherita, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-397-nome",
-  "testo": "Teatro Regio"
+  "testo": "Fontana di piazza San Simeone"
  },
  {
   "id": "poi-397-intro",
-  "testo": "teatro d'opera del 1821-1829"
+  "testo": "fontana"
  },
  {
   "id": "poi-397-scheda",
-  "testo": "Facciata neoclassica a dieci lesene e portico a cinque arcate, voluta da Maria Luigia. Dentro, quattro ordini di palchi e il loggione più temuto d'Italia."
+  "testo": "Fontana di piazza San Simeone, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-398-nome",
-  "testo": "Galleria Nazionale"
+  "testo": "Fontana della Vasca"
  },
  {
   "id": "poi-398-intro",
-  "testo": "museo del nella Pilotta"
+  "testo": "fontana"
  },
  {
   "id": "poi-398-scheda",
-  "testo": "Dentro la Pilotta: la raccolta dei Farnese e dei Borbone, da Correggio e Parmigianino ai fiamminghi, allestita fra le strutture di mattoni lasciate a vista."
+  "testo": "Fontana della Vasca, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-399-nome",
-  "testo": "Museo Archeologico Nazionale"
+  "testo": "Fontana Martinucci"
  },
  {
   "id": "poi-399-intro",
-  "testo": "museo del 1760"
+  "testo": "fontana"
  },
  {
   "id": "poi-399-scheda",
-  "testo": "Nato per accogliere i materiali di Veleia, la città romana scavata sui monti piacentini: nacque come museo dei Borbone di Parma."
- },
- {
-  "id": "poi-399-dentro",
-  "testo": "La Tabula Alimentaria di Traiano, la più grande iscrizione bronzea romana conosciuta."
+  "testo": "Fontana Martinucci, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-400-nome",
-  "testo": "Antica Spezieria di San Giovanni"
+  "testo": "Fontana delle Bagnanti"
  },
  {
   "id": "poi-400-intro",
-  "testo": "spezieria del dal XIII sec."
+  "testo": "fontana"
  },
  {
   "id": "poi-400-scheda",
-  "testo": "La farmacia dei benedettini, aperta al pubblico fino all'Ottocento: quattro sale con gli scaffali di noce, i vasi di maiolica e i mortai ancora al loro posto."
+  "testo": "Fontana delle Bagnanti, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-401-nome",
-  "testo": "Palazzo del Governatore"
+  "testo": "Fontana della Caserma degli Svizzeri"
  },
  {
   "id": "poi-401-intro",
-  "testo": "palazzo del facciata del 1760"
+  "testo": "fontana"
  },
  {
   "id": "poi-401-scheda",
-  "testo": "Sulla piazza Garibaldi: la torre con l'orologio e la meridiana, e il fronte neoclassico rifatto dal Petitot, che unificò edifici diversi dietro una sola facciata."
+  "testo": "Fontana della Caserma degli Svizzeri, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-402-nome",
-  "testo": "Parco Ducale"
+  "testo": "Fontana di piazza del Viminale"
  },
  {
   "id": "poi-402-intro",
-  "testo": "parco del 1561"
+  "testo": "fontana"
  },
  {
   "id": "poi-402-scheda",
-  "testo": "Il giardino del palazzo ducale, disegnato all'italiana e poi rifatto alla francese dal Petitot: viali che convergono, il laghetto e il Palazzetto Eucherio Sanvitale."
+  "testo": "Fontana di piazza del Viminale, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-403-nome",
-  "testo": "Ponte romano"
+  "testo": "Fontana di Corot"
  },
  {
   "id": "poi-403-intro",
-  "testo": "resti romani del II sec. a.C."
+  "testo": "fontana"
  },
  {
   "id": "poi-403-scheda",
-  "testo": "Sotto il livello della strada, in una cripta visitabile, ci sono le arcate del ponte romano sulla via Emilia: il torrente Parma allora passava di lì, e poi si è spostato."
+  "testo": "Fontana di Corot, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-404-nome",
-  "testo": "Cittadella"
+  "testo": "Fontana di Lungotevere Aventino"
  },
  {
   "id": "poi-404-intro",
-  "testo": "fortezza del 1591-1596"
+  "testo": "fontana"
  },
  {
   "id": "poi-404-scheda",
-  "testo": "Una fortezza a stella con cinque bastioni, costruita dai Farnese e mai usata per combattere: oggi è il parco dove i parmigiani corrono. Resta il portale monumentale d'ingresso."
+  "testo": "Fontana di Lungotevere Aventino, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-405-nome",
-  "testo": "Casa della Musica"
+  "testo": "Fontana di Palazzo Taverna"
  },
  {
   "id": "poi-405-intro",
-  "testo": "museo del palazzo Cusani"
+  "testo": "fontana"
  },
  {
   "id": "poi-405-scheda",
-  "testo": "Dentro un palazzo cinquecentesco, il museo dell'opera e l'archivio del Teatro Regio: Parma è città di Verdi e di Toscanini, e qui se ne tiene la memoria."
+  "testo": "Fontana di Palazzo Taverna, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-406-nome",
-  "testo": "Castello dei Burattini"
+  "testo": "Torlonia"
  },
  {
   "id": "poi-406-intro",
-  "testo": "museo"
+  "testo": "fontana"
  },
  {
   "id": "poi-406-scheda",
-  "testo": "La collezione di Giordano Ferrari: burattini, marionette, fondali e copioni di una tradizione che a Parma è mestiere serio."
+  "testo": "Torlonia, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-407-nome",
-  "testo": "Chiesa di San Francesco del Prato"
+  "testo": "Fermi fountain"
  },
  {
   "id": "poi-407-intro",
-  "testo": "chiesa del XIII-XIV sec."
+  "testo": "fontana"
  },
  {
   "id": "poi-407-scheda",
-  "testo": "Gotica, a tre navate, con il grande rosone in facciata. Per due secoli fu carcere: le celle erano state costruite dentro le navate, e solo il restauro recente le ha tolte restituendo lo spazio."
- },
- {
-  "id": "poi-407-dentro",
-  "testo": "Il rosone e, nelle murature, i segni delle strutture carcerarie rimosse."
+  "testo": "Fermi fountain, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-408-nome",
-  "testo": "Farmacia Mentana"
+  "testo": "Giuseppe Gioachino Belli"
  },
  {
   "id": "poi-408-intro",
-  "testo": "farmacia"
+  "testo": "fontana"
  },
  {
   "id": "poi-408-scheda",
-  "testo": "Farmacia Mentana."
+  "testo": "Giuseppe Gioachino Belli, una delle fontane del centro di Roma."
  },
  {
   "id": "poi-409-nome",
-  "testo": "Farmacia Nazionale"
+  "testo": "Arco di Settimio Severo"
  },
  {
   "id": "poi-409-intro",
-  "testo": "farmacia"
+  "testo": "arco di trionfo del 203 d.C."
  },
  {
   "id": "poi-409-scheda",
-  "testo": "Farmacia Nazionale."
+  "testo": "Tre fornici, quello centrale più grande, con le colonne composite staccate dal muro su alti plinti: sopra, i grandi pannelli a rilievo con le campagne contro i Parti, scolpiti come cronache a più piani. L'iscrizione in alto porta i segni della rasura: il nome di Geta fu cancellato dal fratello Caracalla."
+ },
+ {
+  "id": "poi-409-dentro",
+  "testo": "I fori delle lettere di bronzo nell'iscrizione: si legge ancora dove c'era il nome cancellato."
  },
  {
   "id": "poi-410-nome",
-  "testo": "Supermercato PENNY"
+  "testo": "Curia Iulia"
  },
  {
   "id": "poi-410-intro",
-  "testo": "supermercato"
+  "testo": "aula del Senato del rifatta nel 283 d.C."
  },
  {
   "id": "poi-410-scheda",
-  "testo": "Supermercato PENNY."
+  "testo": "La sala del Senato: un'aula rettangolare altissima e spoglia, con tre gradinate per lato e il pavimento in opus sectile originale. Si è conservata perché fu trasformata in chiesa."
+ },
+ {
+  "id": "poi-410-dentro",
+  "testo": "Il pavimento a tarsie di marmo, quello vero, e le porte di bronzo (quelle qui sono copie: le originali stanno al Laterano)."
  },
  {
   "id": "poi-411-nome",
-  "testo": "Farmacia Santa Fara"
+  "testo": "Tempio di Saturno"
  },
  {
   "id": "poi-411-intro",
-  "testo": "farmacia"
+  "testo": "tempio romano del 497 a.C., rifatto nel IV sec."
  },
  {
   "id": "poi-411-scheda",
-  "testo": "Farmacia Santa Fara."
+  "testo": "Otto colonne di granito con la trabeazione: è quello che si vede da piazza del Campidoglio guardando giù. Sotto il podio stava l'erario, la cassa dello Stato romano."
  },
  {
   "id": "poi-412-nome",
-  "testo": "Supermercato In's Mercato"
+  "testo": "Tempio di Antonino e Faustina"
  },
  {
   "id": "poi-412-intro",
-  "testo": "supermercato"
+  "testo": "tempio e chiesa del 141 d.C."
  },
  {
   "id": "poi-412-scheda",
-  "testo": "Supermercato In's Mercato."
+  "testo": "Dieci colonne corinzie di cipollino alte diciassette metri, e dentro, in alto, la facciata barocca della chiesa di San Lorenzo in Miranda: la chiesa fu costruita dentro il tempio al livello raggiunto dall'interro. Sulle colonne si vedono i solchi delle corde di chi tentò di abbatterle."
+ },
+ {
+  "id": "poi-412-dentro",
+  "testo": "I solchi delle funi sui fusti, a mezza altezza: il tentativo fallito di tirarle giù."
  },
  {
   "id": "poi-413-nome",
-  "testo": "Fermata via Toscana"
+  "testo": "Casa delle Vestali"
  },
  {
   "id": "poi-413-intro",
-  "testo": "fermata"
+  "testo": "casa romana del rifatta nel II sec. d.C."
  },
  {
   "id": "poi-413-scheda",
-  "testo": "Fermata via Toscana."
+  "testo": "Un cortile lungo con le vasche e le statue delle vestali attorno, e sui tre lati gli ambienti su due piani: la casa delle sacerdotesse che custodivano il fuoco di Roma."
  },
  {
   "id": "poi-414-nome",
-  "testo": "Fermata Barriera Saffi piazzale Allende"
+  "testo": "Foro di Cesare"
  },
  {
   "id": "poi-414-intro",
-  "testo": "fermata"
+  "testo": "foro del 46 a.C."
  },
  {
   "id": "poi-414-scheda",
-  "testo": "Fermata Barriera Saffi piazzale Allende."
+  "testo": "Il primo dei fori imperiali: una piazza porticata con il tempio di Venere Genitrice in fondo, costruita da Cesare comprando e demolendo il quartiere che c'era. Da qui in poi i fori diventano opere di propaganda."
  },
  {
   "id": "poi-415-nome",
-  "testo": "Fermata Viale Mentana Barriera Garibaldi"
+  "testo": "Basilica Giulia"
  },
  {
   "id": "poi-415-intro",
-  "testo": "fermata"
+  "testo": "basilica civile del 54 a.C."
  },
  {
   "id": "poi-415-scheda",
-  "testo": "Fermata Viale Mentana Barriera Garibaldi."
+  "testo": "Era il tribunale: un'aula enorme a cinque navate, oggi ridotta al piano dei pilastri. Sui gradini si vedono incisi i tabulae lusoriae, i giochi a scacchiera che i romani scavavano nel marmo per passare il tempo."
+ },
+ {
+  "id": "poi-415-dentro",
+  "testo": "Cerca le griglie incise sui gradini: sono i tavolieri da gioco."
  },
  {
   "id": "poi-416-nome",
-  "testo": "Supermercato Unes"
+  "testo": "Musei Vaticani"
  },
  {
   "id": "poi-416-intro",
-  "testo": "supermercato"
+  "testo": "musei del dal 1506"
  },
  {
   "id": "poi-416-scheda",
-  "testo": "Supermercato Unes."
+  "testo": "Sette chilometri di percorso dentro i palazzi papali: si attraversano cortili, gallerie e scale costruite in cinque secoli. L'ingresso attuale è del 1932, con la scala elicoidale doppia di Giuseppe Momo, due rampe che salgono e scendono senza incontrarsi."
+ },
+ {
+  "id": "poi-416-dentro",
+  "testo": "La Galleria delle Carte Geografiche, quaranta mappe d'Italia dipinte nel Cinquecento su centoventi metri di volta."
  },
  {
   "id": "poi-417-nome",
-  "testo": "Fermata Viale San Michele"
+  "testo": "Cappella Sistina"
  },
  {
   "id": "poi-417-intro",
-  "testo": "fermata"
+  "testo": "cappella del 1475-1481, volta 1508-1512"
  },
  {
   "id": "poi-417-scheda",
-  "testo": "Fermata Viale San Michele."
+  "testo": "Una scatola rettangolare senza decorazione architettonica, costruita con le proporzioni che la Bibbia dà al tempio di Salomone. Michelangelo ci dipinse sopra un'architettura finta — pilastri, cornici, troni — e dentro quella mise le storie della Genesi."
+ },
+ {
+  "id": "poi-417-dentro",
+  "testo": "Il Giudizio universale sulla parete d'altare, dipinto trent'anni dopo la volta, con l'autoritratto nella pelle scorticata di san Bartolomeo."
  },
  {
   "id": "poi-418-nome",
-  "testo": "Fermata via Trento - Madonnina"
+  "testo": "Stanze di Raffaello"
  },
  {
   "id": "poi-418-intro",
-  "testo": "fermata"
+  "testo": "appartamento dipinto del 1508-1524"
  },
  {
   "id": "poi-418-scheda",
-  "testo": "Fermata via Trento - Madonnina."
+  "testo": "Quattro stanze dell'appartamento di Giulio II: Raffaello le dipinse in modo che l'architettura dipinta continuasse quella vera. Nella Scuola di Atene le volte a cassettoni sembrano lo sfondamento della parete."
  },
  {
   "id": "poi-419-nome",
-  "testo": "Farmacia San Martino"
+  "testo": "Cimitero militare francese"
  },
  {
   "id": "poi-419-intro",
-  "testo": "farmacia"
+  "testo": "cimitero di guerra del 1944"
  },
  {
   "id": "poi-419-scheda",
-  "testo": "Farmacia San Martino."
+  "testo": "Settantaseimila metri quadrati per i soldati del Corpo di spedizione francese caduti sulla linea invernale: molti venivano dal Nordafrica, e il monumento lo dice: la forma richiama i minareti, e il rivestimento è di piastrelle azzurre. È il pezzo di architettura più inatteso di Venafro."
+ },
+ {
+  "id": "poi-419-dentro",
+  "testo": "Le piastrelle azzurre e il profilo del monumento, che non somiglia a niente altro qui intorno."
  },
  {
   "id": "poi-420-nome",
-  "testo": "Supermercato Dìmeglio"
+  "testo": "La Purtella"
  },
  {
   "id": "poi-420-intro",
-  "testo": "supermercato"
+  "testo": "dettaglio di strada"
  },
  {
   "id": "poi-420-scheda",
-  "testo": "Supermercato Dìmeglio."
+  "testo": "Una via interamente coperta, lunga appena cinque metri, che collega via delle Vergini con via Silvano: un passaggio sotto le case, di quelli che nei centri antichi si aprivano quando una famiglia costruiva sopra la strada."
  },
  {
   "id": "poi-421-nome",
-  "testo": "Banca Credem"
+  "testo": "Battistero di Parma"
  },
  {
   "id": "poi-421-intro",
-  "testo": "banca"
+  "testo": "battistero del 1196-1270"
  },
  {
   "id": "poi-421-scheda",
-  "testo": "Banca Credem."
+  "testo": "Un ottagono di marmo rosa di Verona alto trentasei metri, chiuso e compatto fuori, con quattro ordini di logge sovrapposte che alleggeriscono il muro. Benedetto Antelami lo cominciò nel 1196: è il punto esatto in cui il romanico passa al gotico, e si vede nel passaggio dagli archi tondi in basso a quelli acuti in alto."
+ },
+ {
+  "id": "poi-421-dentro",
+  "testo": "I portali scolpiti dall'Antelami e, dentro, i sedici spicchi della cupola dipinti come un cielo: il ciclo dei mesi e delle stagioni."
  },
  {
   "id": "poi-422-nome",
-  "testo": "Fermata via Trento - Stazione"
+  "testo": "Cattedrale di Santa Maria Assunta"
  },
  {
   "id": "poi-422-intro",
-  "testo": "fermata"
+  "testo": "cattedrale del 1059-1074"
  },
  {
   "id": "poi-422-scheda",
-  "testo": "Fermata via Trento - Stazione."
+  "testo": "Romanica, in arenaria, con la facciata a capanna percorsa da tre ordini di logge e il protiro su leoni stilofori. Il campanile gotico, più tardo, non ha mai avuto il gemello previsto dall'altro lato."
+ },
+ {
+  "id": "poi-422-dentro",
+  "testo": "La cupola affrescata dal Correggio con l'Assunzione: una spirale di corpi che sale verso la luce, dipinta nel 1526. E la Deposizione dell'Antelami, nel transetto."
  },
  {
   "id": "poi-423-nome",
-  "testo": "Alimentari Antichi Sapori Campani"
+  "testo": "Chiesa di San Giovanni Evangelista"
  },
  {
   "id": "poi-423-intro",
-  "testo": "alimentari"
+  "testo": "chiesa e monastero del 1498-1510"
  },
  {
   "id": "poi-423-scheda",
-  "testo": "Alimentari Antichi Sapori Campani."
+  "testo": "Dietro il Duomo, la chiesa benedettina con la facciata barocca aggiunta dopo. Dentro c'è l'altra cupola del Correggio, la Visione di san Giovanni a Patmos, e nei catini del coro le prove giovanili del Parmigianino."
+ },
+ {
+  "id": "poi-423-dentro",
+  "testo": "La spezieria del convento, l'Antica Spezieria di San Giovanni: scaffali, mortai e vasi rimasti come erano, una farmacia del Cinquecento intatta."
  },
  {
   "id": "poi-424-nome",
-  "testo": "Farmacia Bottego"
+  "testo": "Basilica di Santa Maria della Steccata"
  },
  {
   "id": "poi-424-intro",
-  "testo": "farmacia"
+  "testo": "basilica del 1521-1539"
  },
  {
   "id": "poi-424-scheda",
-  "testo": "Farmacia Bottego."
+  "testo": "Pianta a croce greca con quattro absidi e la cupola al centro: è l'edificio rinascimentale più puro di Parma, costruito sul modello bramantesco. Sotto, la cripta dei duchi Farnese e Borbone."
+ },
+ {
+  "id": "poi-424-dentro",
+  "testo": "Gli affreschi del Parmigianino sull'arco presbiteriale, con le Vergini sagge e stolte: lavorò così lentamente che finì in tribunale."
  },
  {
   "id": "poi-425-nome",
-  "testo": "Fermata viale Toschi via Bettoli"
+  "testo": "Camera di San Paolo"
  },
  {
   "id": "poi-425-intro",
-  "testo": "fermata"
+  "testo": "camera dipinta del 1519"
  },
  {
   "id": "poi-425-scheda",
-  "testo": "Fermata viale Toschi via Bettoli."
+  "testo": "La stanza della badessa Giovanna da Piacenza, dipinta dal Correggio: la volta a ombrello diventa un pergolato di canne, con sedici ovali che si aprono sul cielo e putti che giocano fra i rami. L'architettura sparisce sotto la pittura."
+ },
+ {
+  "id": "poi-425-dentro",
+  "testo": "Il camino con Diana cacciatrice e il modo in cui le vele dipinte annullano la volta reale."
  },
  {
   "id": "poi-426-nome",
-  "testo": "Panificio Castagnoli"
+  "testo": "Complesso della Pilotta"
  },
  {
   "id": "poi-426-intro",
-  "testo": "panificio"
+  "testo": "palazzo del dal 1583"
  },
  {
   "id": "poi-426-scheda",
-  "testo": "Panificio Castagnoli."
+  "testo": "Un enorme blocco di mattoni rimasto incompiuto, costruito dai Farnese attorno a cortili aperti: doveva essere la reggia, è rimasto un contenitore. Oggi tiene insieme Galleria Nazionale, Biblioteca Palatina, Museo Archeologico e il Teatro Farnese."
+ },
+ {
+  "id": "poi-426-dentro",
+  "testo": "La mole grezza senza rivestimento: si legge la costruzione, mattone su mattone."
  },
  {
   "id": "poi-427-nome",
-  "testo": "Panificio Forno Trieste"
+  "testo": "Teatro Farnese"
  },
  {
   "id": "poi-427-intro",
-  "testo": "panificio"
+  "testo": "teatro del 1618"
  },
  {
   "id": "poi-427-scheda",
-  "testo": "Panificio Forno Trieste."
+  "testo": "Costruito tutto in legno dentro una sala d'armi: gradinate a ferro di cavallo, una scena profondissima e la prima torre scenica con macchine per i cambi a vista. Bombardato nel 1944 e rifatto con i pezzi recuperati, resta a legno nudo, senza dipinture: così si vede come era fatto."
+ },
+ {
+  "id": "poi-427-dentro",
+  "testo": "La struttura portante e il boccascena: è il nonno di tutti i teatri all'italiana."
  },
  {
   "id": "poi-428-nome",
-  "testo": "Fermata Via Piacenza Efsa"
+  "testo": "Teatro Regio"
  },
  {
   "id": "poi-428-intro",
-  "testo": "fermata"
+  "testo": "teatro d'opera del 1821-1829"
  },
  {
   "id": "poi-428-scheda",
-  "testo": "Fermata Via Piacenza Efsa."
+  "testo": "Facciata neoclassica a dieci lesene e portico a cinque arcate, voluta da Maria Luigia. Dentro, quattro ordini di palchi e il loggione più temuto d'Italia."
  },
  {
   "id": "poi-429-nome",
-  "testo": "Banca BPER Banca"
+  "testo": "Galleria Nazionale"
  },
  {
   "id": "poi-429-intro",
-  "testo": "banca"
+  "testo": "museo del nella Pilotta"
  },
  {
   "id": "poi-429-scheda",
-  "testo": "Banca BPER Banca."
+  "testo": "Dentro la Pilotta: la raccolta dei Farnese e dei Borbone, da Correggio e Parmigianino ai fiamminghi, allestita fra le strutture di mattoni lasciate a vista."
  },
  {
   "id": "poi-430-nome",
-  "testo": "Fermata via Trento \"Borsari\""
+  "testo": "Museo Archeologico Nazionale"
  },
  {
   "id": "poi-430-intro",
-  "testo": "fermata"
+  "testo": "museo del 1760"
  },
  {
   "id": "poi-430-scheda",
-  "testo": "Fermata via Trento \"Borsari\"."
+  "testo": "Nato per accogliere i materiali di Veleia, la città romana scavata sui monti piacentini: nacque come museo dei Borbone di Parma."
+ },
+ {
+  "id": "poi-430-dentro",
+  "testo": "La Tabula Alimentaria di Traiano, la più grande iscrizione bronzea romana conosciuta."
  },
  {
   "id": "poi-431-nome",
-  "testo": "Banca Cassa Padana"
+  "testo": "Antica Spezieria di San Giovanni"
  },
  {
   "id": "poi-431-intro",
-  "testo": "banca"
+  "testo": "spezieria del dal XIII sec."
  },
  {
   "id": "poi-431-scheda",
-  "testo": "Banca Cassa Padana."
+  "testo": "La farmacia dei benedettini, aperta al pubblico fino all'Ottocento: quattro sale con gli scaffali di noce, i vasi di maiolica e i mortai ancora al loro posto."
  },
  {
   "id": "poi-432-nome",
-  "testo": "Fermata Strada Garibaldi"
+  "testo": "Palazzo del Governatore"
  },
  {
   "id": "poi-432-intro",
-  "testo": "fermata"
+  "testo": "palazzo del facciata del 1760"
  },
  {
   "id": "poi-432-scheda",
-  "testo": "Fermata Strada Garibaldi."
+  "testo": "Sulla piazza Garibaldi: la torre con l'orologio e la meridiana, e il fronte neoclassico rifatto dal Petitot, che unificò edifici diversi dietro una sola facciata."
  },
  {
   "id": "poi-433-nome",
-  "testo": "Fermata Municipio"
+  "testo": "Parco Ducale"
  },
  {
   "id": "poi-433-intro",
-  "testo": "fermata"
+  "testo": "parco del 1561"
  },
  {
   "id": "poi-433-scheda",
-  "testo": "Fermata Municipio."
+  "testo": "Il giardino del palazzo ducale, disegnato all'italiana e poi rifatto alla francese dal Petitot: viali che convergono, il laghetto e il Palazzetto Eucherio Sanvitale."
  },
  {
   "id": "poi-434-nome",
-  "testo": "Fermata Prefettura"
+  "testo": "Ponte romano"
  },
  {
   "id": "poi-434-intro",
-  "testo": "fermata"
+  "testo": "resti romani del II sec. a.C."
  },
  {
   "id": "poi-434-scheda",
-  "testo": "Fermata Prefettura."
+  "testo": "Sotto il livello della strada, in una cripta visitabile, ci sono le arcate del ponte romano sulla via Emilia: il torrente Parma allora passava di lì, e poi si è spostato."
  },
  {
   "id": "poi-435-nome",
-  "testo": "Fermata Stazione FS"
+  "testo": "Cittadella"
  },
  {
   "id": "poi-435-intro",
-  "testo": "fermata"
+  "testo": "fortezza del 1591-1596"
  },
  {
   "id": "poi-435-scheda",
-  "testo": "Fermata Stazione FS."
+  "testo": "Una fortezza a stella con cinque bastioni, costruita dai Farnese e mai usata per combattere: oggi è il parco dove i parmigiani corrono. Resta il portale monumentale d'ingresso."
  },
  {
   "id": "poi-436-nome",
-  "testo": "Fermata Oratorio dei Rossi"
+  "testo": "Casa della Musica"
  },
  {
   "id": "poi-436-intro",
-  "testo": "fermata"
+  "testo": "museo del palazzo Cusani"
  },
  {
   "id": "poi-436-scheda",
-  "testo": "Fermata Oratorio dei Rossi."
+  "testo": "Dentro un palazzo cinquecentesco, il museo dell'opera e l'archivio del Teatro Regio: Parma è città di Verdi e di Toscanini, e qui se ne tiene la memoria."
  },
  {
   "id": "poi-437-nome",
-  "testo": "Fermata Strada Mazzini"
+  "testo": "Castello dei Burattini"
  },
  {
   "id": "poi-437-intro",
-  "testo": "fermata"
+  "testo": "museo"
  },
  {
   "id": "poi-437-scheda",
-  "testo": "Fermata Strada Mazzini."
+  "testo": "La collezione di Giordano Ferrari: burattini, marionette, fondali e copioni di una tradizione che a Parma è mestiere serio."
  },
  {
   "id": "poi-438-nome",
-  "testo": "Fermata Piazza Corridoni"
+  "testo": "Chiesa di San Francesco del Prato"
  },
  {
   "id": "poi-438-intro",
-  "testo": "fermata"
+  "testo": "chiesa del XIII-XIV sec."
  },
  {
   "id": "poi-438-scheda",
-  "testo": "Fermata Piazza Corridoni."
+  "testo": "Gotica, a tre navate, con il grande rosone in facciata. Per due secoli fu carcere: le celle erano state costruite dentro le navate, e solo il restauro recente le ha tolte restituendo lo spazio."
+ },
+ {
+  "id": "poi-438-dentro",
+  "testo": "Il rosone e, nelle murature, i segni delle strutture carcerarie rimosse."
  },
  {
   "id": "poi-439-nome",
-  "testo": "Fermata Via Bixio"
+  "testo": "Farmacia Mentana"
  },
  {
   "id": "poi-439-intro",
-  "testo": "fermata"
+  "testo": "farmacia"
  },
  {
   "id": "poi-439-scheda",
-  "testo": "Fermata Via Bixio."
+  "testo": "Farmacia Mentana."
  },
  {
   "id": "poi-440-nome",
-  "testo": "Supermercato Conad City"
+  "testo": "Farmacia Nazionale"
  },
  {
   "id": "poi-440-intro",
-  "testo": "supermercato"
+  "testo": "farmacia"
  },
  {
   "id": "poi-440-scheda",
-  "testo": "Supermercato Conad City."
+  "testo": "Farmacia Nazionale."
  },
  {
   "id": "poi-441-nome",
-  "testo": "Farmacia Guareschi"
+  "testo": "Supermercato PENNY"
  },
  {
   "id": "poi-441-intro",
-  "testo": "farmacia"
+  "testo": "supermercato"
  },
  {
   "id": "poi-441-scheda",
-  "testo": "Farmacia Guareschi."
+  "testo": "Supermercato PENNY."
  },
  {
   "id": "poi-442-nome",
-  "testo": "Banca Credit Agricole"
+  "testo": "Farmacia Santa Fara"
  },
  {
   "id": "poi-442-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-442-scheda",
-  "testo": "Banca Credit Agricole."
- },
- {
-  "id": "poi-443-nome",
-  "testo": "Banca Crédit Agricole"
- },
- {
-  "id": "poi-443-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-443-scheda",
-  "testo": "Banca Crédit Agricole."
- },
- {
-  "id": "poi-444-nome",
-  "testo": "Panificio Panetteria dei Borghi"
- },
- {
-  "id": "poi-444-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-444-scheda",
-  "testo": "Panificio Panetteria dei Borghi."
- },
- {
-  "id": "poi-445-nome",
-  "testo": "Macelleria Carne Equina"
- },
- {
-  "id": "poi-445-intro",
-  "testo": "macelleria"
- },
- {
-  "id": "poi-445-scheda",
-  "testo": "Macelleria Carne Equina."
- },
- {
-  "id": "poi-446-nome",
-  "testo": "Panificio Profumo di Pane"
- },
- {
-  "id": "poi-446-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-446-scheda",
-  "testo": "Panificio Profumo di Pane."
- },
- {
-  "id": "poi-447-nome",
-  "testo": "Banca BCC Credito Padano"
- },
- {
-  "id": "poi-447-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-447-scheda",
-  "testo": "Banca BCC Credito Padano."
- },
- {
-  "id": "poi-448-nome",
-  "testo": "Macelleria Spaggiari Arnaldo"
- },
- {
-  "id": "poi-448-intro",
-  "testo": "macelleria"
- },
- {
-  "id": "poi-448-scheda",
-  "testo": "Macelleria Spaggiari Arnaldo."
- },
- {
-  "id": "poi-449-nome",
-  "testo": "Banca Cariparma"
- },
- {
-  "id": "poi-449-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-449-scheda",
-  "testo": "Banca Cariparma."
- },
- {
-  "id": "poi-450-nome",
-  "testo": "Panificio Giacomazzi"
- },
- {
-  "id": "poi-450-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-450-scheda",
-  "testo": "Panificio Giacomazzi."
- },
- {
-  "id": "poi-451-nome",
-  "testo": "Alimentari La Drogheria"
- },
- {
-  "id": "poi-451-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-451-scheda",
-  "testo": "Alimentari La Drogheria."
- },
- {
-  "id": "poi-452-nome",
-  "testo": "Farmacia Allegri"
- },
- {
-  "id": "poi-452-intro",
   "testo": "farmacia"
  },
  {
-  "id": "poi-452-scheda",
-  "testo": "Farmacia Allegri."
+  "id": "poi-442-scheda",
+  "testo": "Farmacia Santa Fara."
  },
  {
-  "id": "poi-453-nome",
-  "testo": "Alimentari da Chicca"
+  "id": "poi-443-nome",
+  "testo": "Supermercato In's Mercato"
  },
  {
-  "id": "poi-453-intro",
-  "testo": "alimentari"
+  "id": "poi-443-intro",
+  "testo": "supermercato"
  },
  {
-  "id": "poi-453-scheda",
-  "testo": "Alimentari da Chicca."
+  "id": "poi-443-scheda",
+  "testo": "Supermercato In's Mercato."
  },
  {
-  "id": "poi-454-nome",
-  "testo": "Banca Popolare di Lodi"
+  "id": "poi-444-nome",
+  "testo": "Fermata via Toscana"
  },
  {
-  "id": "poi-454-intro",
+  "id": "poi-444-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-444-scheda",
+  "testo": "Fermata via Toscana."
+ },
+ {
+  "id": "poi-445-nome",
+  "testo": "Fermata Barriera Saffi piazzale Allende"
+ },
+ {
+  "id": "poi-445-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-445-scheda",
+  "testo": "Fermata Barriera Saffi piazzale Allende."
+ },
+ {
+  "id": "poi-446-nome",
+  "testo": "Fermata Viale Mentana Barriera Garibaldi"
+ },
+ {
+  "id": "poi-446-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-446-scheda",
+  "testo": "Fermata Viale Mentana Barriera Garibaldi."
+ },
+ {
+  "id": "poi-447-nome",
+  "testo": "Supermercato Unes"
+ },
+ {
+  "id": "poi-447-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-447-scheda",
+  "testo": "Supermercato Unes."
+ },
+ {
+  "id": "poi-448-nome",
+  "testo": "Fermata Viale San Michele"
+ },
+ {
+  "id": "poi-448-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-448-scheda",
+  "testo": "Fermata Viale San Michele."
+ },
+ {
+  "id": "poi-449-nome",
+  "testo": "Fermata via Trento - Madonnina"
+ },
+ {
+  "id": "poi-449-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-449-scheda",
+  "testo": "Fermata via Trento - Madonnina."
+ },
+ {
+  "id": "poi-450-nome",
+  "testo": "Farmacia San Martino"
+ },
+ {
+  "id": "poi-450-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-450-scheda",
+  "testo": "Farmacia San Martino."
+ },
+ {
+  "id": "poi-451-nome",
+  "testo": "Supermercato Dìmeglio"
+ },
+ {
+  "id": "poi-451-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-451-scheda",
+  "testo": "Supermercato Dìmeglio."
+ },
+ {
+  "id": "poi-452-nome",
+  "testo": "Banca Credem"
+ },
+ {
+  "id": "poi-452-intro",
   "testo": "banca"
  },
  {
-  "id": "poi-454-scheda",
-  "testo": "Banca Popolare di Lodi."
+  "id": "poi-452-scheda",
+  "testo": "Banca Credem."
  },
  {
-  "id": "poi-455-nome",
-  "testo": "Alimentari MS minimarket"
+  "id": "poi-453-nome",
+  "testo": "Fermata via Trento - Stazione"
  },
  {
-  "id": "poi-455-intro",
+  "id": "poi-453-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-453-scheda",
+  "testo": "Fermata via Trento - Stazione."
+ },
+ {
+  "id": "poi-454-nome",
+  "testo": "Alimentari Antichi Sapori Campani"
+ },
+ {
+  "id": "poi-454-intro",
   "testo": "alimentari"
  },
  {
+  "id": "poi-454-scheda",
+  "testo": "Alimentari Antichi Sapori Campani."
+ },
+ {
+  "id": "poi-455-nome",
+  "testo": "Farmacia Bottego"
+ },
+ {
+  "id": "poi-455-intro",
+  "testo": "farmacia"
+ },
+ {
   "id": "poi-455-scheda",
-  "testo": "Alimentari MS minimarket."
+  "testo": "Farmacia Bottego."
  },
  {
   "id": "poi-456-nome",
-  "testo": "Panificio Dolce Salato"
+  "testo": "Fermata viale Toschi via Bettoli"
  },
  {
   "id": "poi-456-intro",
-  "testo": "panificio"
+  "testo": "fermata"
  },
  {
   "id": "poi-456-scheda",
-  "testo": "Panificio Dolce Salato."
+  "testo": "Fermata viale Toschi via Bettoli."
  },
  {
   "id": "poi-457-nome",
-  "testo": "Panificio Barilla"
+  "testo": "Panificio Castagnoli"
  },
  {
   "id": "poi-457-intro",
@@ -6113,203 +6237,203 @@
  },
  {
   "id": "poi-457-scheda",
-  "testo": "Panificio Barilla."
+  "testo": "Panificio Castagnoli."
  },
  {
   "id": "poi-458-nome",
-  "testo": "Alimentari Panetteria del Correggio"
+  "testo": "Panificio Forno Trieste"
  },
  {
   "id": "poi-458-intro",
-  "testo": "alimentari"
+  "testo": "panificio"
  },
  {
   "id": "poi-458-scheda",
-  "testo": "Alimentari Panetteria del Correggio."
+  "testo": "Panificio Forno Trieste."
  },
  {
   "id": "poi-459-nome",
-  "testo": "Panificio Vicomero"
+  "testo": "Fermata Via Piacenza Efsa"
  },
  {
   "id": "poi-459-intro",
-  "testo": "panificio"
+  "testo": "fermata"
  },
  {
   "id": "poi-459-scheda",
-  "testo": "Panificio Vicomero."
+  "testo": "Fermata Via Piacenza Efsa."
  },
  {
   "id": "poi-460-nome",
-  "testo": "Farmacia Equì"
+  "testo": "Banca BPER Banca"
  },
  {
   "id": "poi-460-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-460-scheda",
-  "testo": "Farmacia Equì."
- },
- {
-  "id": "poi-461-nome",
-  "testo": "Banca Banco BPM"
- },
- {
-  "id": "poi-461-intro",
   "testo": "banca"
  },
  {
+  "id": "poi-460-scheda",
+  "testo": "Banca BPER Banca."
+ },
+ {
+  "id": "poi-461-nome",
+  "testo": "Fermata via Trento \"Borsari\""
+ },
+ {
+  "id": "poi-461-intro",
+  "testo": "fermata"
+ },
+ {
   "id": "poi-461-scheda",
-  "testo": "Banca Banco BPM."
+  "testo": "Fermata via Trento \"Borsari\"."
  },
  {
   "id": "poi-462-nome",
-  "testo": "Macelleria Cattelani"
+  "testo": "Banca Cassa Padana"
  },
  {
   "id": "poi-462-intro",
-  "testo": "macelleria"
+  "testo": "banca"
  },
  {
   "id": "poi-462-scheda",
-  "testo": "Macelleria Cattelani."
+  "testo": "Banca Cassa Padana."
  },
  {
   "id": "poi-463-nome",
-  "testo": "Supermercato Conad"
+  "testo": "Fermata Strada Garibaldi"
  },
  {
   "id": "poi-463-intro",
-  "testo": "supermercato"
+  "testo": "fermata"
  },
  {
   "id": "poi-463-scheda",
-  "testo": "Supermercato Conad."
+  "testo": "Fermata Strada Garibaldi."
  },
  {
   "id": "poi-464-nome",
-  "testo": "Macelleria Olga Macelleria equina"
+  "testo": "Fermata Municipio"
  },
  {
   "id": "poi-464-intro",
-  "testo": "macelleria"
+  "testo": "fermata"
  },
  {
   "id": "poi-464-scheda",
-  "testo": "Macelleria Olga Macelleria equina."
+  "testo": "Fermata Municipio."
  },
  {
   "id": "poi-465-nome",
-  "testo": "Macelleria equina Parizzi"
+  "testo": "Fermata Prefettura"
  },
  {
   "id": "poi-465-intro",
-  "testo": "macelleria"
+  "testo": "fermata"
  },
  {
   "id": "poi-465-scheda",
-  "testo": "Macelleria equina Parizzi."
+  "testo": "Fermata Prefettura."
  },
  {
   "id": "poi-466-nome",
-  "testo": "Alimentari Crai Supermercato"
+  "testo": "Fermata Stazione FS"
  },
  {
   "id": "poi-466-intro",
-  "testo": "alimentari"
+  "testo": "fermata"
  },
  {
   "id": "poi-466-scheda",
-  "testo": "Alimentari Crai Supermercato."
+  "testo": "Fermata Stazione FS."
  },
  {
   "id": "poi-467-nome",
-  "testo": "Panificio Viconero"
+  "testo": "Fermata Oratorio dei Rossi"
  },
  {
   "id": "poi-467-intro",
-  "testo": "panificio"
+  "testo": "fermata"
  },
  {
   "id": "poi-467-scheda",
-  "testo": "Panificio Viconero."
+  "testo": "Fermata Oratorio dei Rossi."
  },
  {
   "id": "poi-468-nome",
-  "testo": "Alimentari BM Gastronomia"
+  "testo": "Fermata Strada Mazzini"
  },
  {
   "id": "poi-468-intro",
-  "testo": "alimentari"
+  "testo": "fermata"
  },
  {
   "id": "poi-468-scheda",
-  "testo": "Alimentari BM Gastronomia."
+  "testo": "Fermata Strada Mazzini."
  },
  {
   "id": "poi-469-nome",
-  "testo": "Alimentari Amici Market"
+  "testo": "Fermata Piazza Corridoni"
  },
  {
   "id": "poi-469-intro",
-  "testo": "alimentari"
+  "testo": "fermata"
  },
  {
   "id": "poi-469-scheda",
-  "testo": "Alimentari Amici Market."
+  "testo": "Fermata Piazza Corridoni."
  },
  {
   "id": "poi-470-nome",
-  "testo": "Panificio Il pane più"
+  "testo": "Fermata Via Bixio"
  },
  {
   "id": "poi-470-intro",
-  "testo": "panificio"
+  "testo": "fermata"
  },
  {
   "id": "poi-470-scheda",
-  "testo": "Panificio Il pane più."
+  "testo": "Fermata Via Bixio."
  },
  {
   "id": "poi-471-nome",
-  "testo": "Panificio Panetteria dei borghi"
+  "testo": "Supermercato Conad City"
  },
  {
   "id": "poi-471-intro",
-  "testo": "panificio"
+  "testo": "supermercato"
  },
  {
   "id": "poi-471-scheda",
-  "testo": "Panificio Panetteria dei borghi."
+  "testo": "Supermercato Conad City."
  },
  {
   "id": "poi-472-nome",
-  "testo": "Alimentari Submarinos"
+  "testo": "Farmacia Guareschi"
  },
  {
   "id": "poi-472-intro",
-  "testo": "alimentari"
+  "testo": "farmacia"
  },
  {
   "id": "poi-472-scheda",
-  "testo": "Alimentari Submarinos."
+  "testo": "Farmacia Guareschi."
  },
  {
   "id": "poi-473-nome",
-  "testo": "Alimentari Da Rihari"
+  "testo": "Banca Credit Agricole"
  },
  {
   "id": "poi-473-intro",
-  "testo": "alimentari"
+  "testo": "banca"
  },
  {
   "id": "poi-473-scheda",
-  "testo": "Alimentari Da Rihari."
+  "testo": "Banca Credit Agricole."
  },
  {
   "id": "poi-474-nome",
-  "testo": "Banca Monte dei Paschi di Siena"
+  "testo": "Banca Crédit Agricole"
  },
  {
   "id": "poi-474-intro",
@@ -6317,35 +6441,35 @@
  },
  {
   "id": "poi-474-scheda",
-  "testo": "Banca Monte dei Paschi di Siena."
+  "testo": "Banca Crédit Agricole."
  },
  {
   "id": "poi-475-nome",
-  "testo": "Macelleria Max Carni"
+  "testo": "Panificio Panetteria dei Borghi"
  },
  {
   "id": "poi-475-intro",
-  "testo": "macelleria"
- },
- {
-  "id": "poi-475-scheda",
-  "testo": "Macelleria Max Carni."
- },
- {
-  "id": "poi-476-nome",
-  "testo": "Panificio Pane di Corniglio"
- },
- {
-  "id": "poi-476-intro",
   "testo": "panificio"
  },
  {
+  "id": "poi-475-scheda",
+  "testo": "Panificio Panetteria dei Borghi."
+ },
+ {
+  "id": "poi-476-nome",
+  "testo": "Macelleria Carne Equina"
+ },
+ {
+  "id": "poi-476-intro",
+  "testo": "macelleria"
+ },
+ {
   "id": "poi-476-scheda",
-  "testo": "Panificio Pane di Corniglio."
+  "testo": "Macelleria Carne Equina."
  },
  {
   "id": "poi-477-nome",
-  "testo": "Panificio Castagnoli"
+  "testo": "Panificio Profumo di Pane"
  },
  {
   "id": "poi-477-intro",
@@ -6353,59 +6477,59 @@
  },
  {
   "id": "poi-477-scheda",
-  "testo": "Panificio Castagnoli."
+  "testo": "Panificio Profumo di Pane."
  },
  {
   "id": "poi-478-nome",
-  "testo": "Farmacia Pirani"
+  "testo": "Banca BCC Credito Padano"
  },
  {
   "id": "poi-478-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-478-scheda",
-  "testo": "Farmacia Pirani."
- },
- {
-  "id": "poi-479-nome",
-  "testo": "Alimentari Carrefour Express"
- },
- {
-  "id": "poi-479-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-479-scheda",
-  "testo": "Alimentari Carrefour Express."
- },
- {
-  "id": "poi-480-nome",
-  "testo": "Panificio Panetteria moderna"
- },
- {
-  "id": "poi-480-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-480-scheda",
-  "testo": "Panificio Panetteria moderna."
- },
- {
-  "id": "poi-481-nome",
-  "testo": "Banca Pitagora finanziamenti"
- },
- {
-  "id": "poi-481-intro",
   "testo": "banca"
  },
  {
+  "id": "poi-478-scheda",
+  "testo": "Banca BCC Credito Padano."
+ },
+ {
+  "id": "poi-479-nome",
+  "testo": "Macelleria Spaggiari Arnaldo"
+ },
+ {
+  "id": "poi-479-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-479-scheda",
+  "testo": "Macelleria Spaggiari Arnaldo."
+ },
+ {
+  "id": "poi-480-nome",
+  "testo": "Banca Cariparma"
+ },
+ {
+  "id": "poi-480-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-480-scheda",
+  "testo": "Banca Cariparma."
+ },
+ {
+  "id": "poi-481-nome",
+  "testo": "Panificio Giacomazzi"
+ },
+ {
+  "id": "poi-481-intro",
+  "testo": "panificio"
+ },
+ {
   "id": "poi-481-scheda",
-  "testo": "Banca Pitagora finanziamenti."
+  "testo": "Panificio Giacomazzi."
  },
  {
   "id": "poi-482-nome",
-  "testo": "Alimentari Mucci Giovanni Drogheria"
+  "testo": "Alimentari La Drogheria"
  },
  {
   "id": "poi-482-intro",
@@ -6413,71 +6537,71 @@
  },
  {
   "id": "poi-482-scheda",
-  "testo": "Alimentari Mucci Giovanni Drogheria."
+  "testo": "Alimentari La Drogheria."
  },
  {
   "id": "poi-483-nome",
-  "testo": "Macelleria La cantina della carne"
+  "testo": "Farmacia Allegri"
  },
  {
   "id": "poi-483-intro",
-  "testo": "macelleria"
+  "testo": "farmacia"
  },
  {
   "id": "poi-483-scheda",
-  "testo": "Macelleria La cantina della carne."
+  "testo": "Farmacia Allegri."
  },
  {
   "id": "poi-484-nome",
-  "testo": "Supermercato Carrefour Express"
+  "testo": "Alimentari da Chicca"
  },
  {
   "id": "poi-484-intro",
-  "testo": "supermercato"
+  "testo": "alimentari"
  },
  {
   "id": "poi-484-scheda",
-  "testo": "Supermercato Carrefour Express."
+  "testo": "Alimentari da Chicca."
  },
  {
   "id": "poi-485-nome",
-  "testo": "Macelleria Entrecote"
+  "testo": "Banca Popolare di Lodi"
  },
  {
   "id": "poi-485-intro",
-  "testo": "macelleria"
+  "testo": "banca"
  },
  {
   "id": "poi-485-scheda",
-  "testo": "Macelleria Entrecote."
+  "testo": "Banca Popolare di Lodi."
  },
  {
   "id": "poi-486-nome",
-  "testo": "Ufficio postale Sailpost - Ag. Parma 2"
+  "testo": "Alimentari MS minimarket"
  },
  {
   "id": "poi-486-intro",
-  "testo": "ufficio postale"
+  "testo": "alimentari"
  },
  {
   "id": "poi-486-scheda",
-  "testo": "Ufficio postale Sailpost - Ag. Parma 2."
+  "testo": "Alimentari MS minimarket."
  },
  {
   "id": "poi-487-nome",
-  "testo": "Ufficio postale Poste"
+  "testo": "Panificio Dolce Salato"
  },
  {
   "id": "poi-487-intro",
-  "testo": "ufficio postale"
+  "testo": "panificio"
  },
  {
   "id": "poi-487-scheda",
-  "testo": "Ufficio postale Poste."
+  "testo": "Panificio Dolce Salato."
  },
  {
   "id": "poi-488-nome",
-  "testo": "Panificio Panetteria Anna"
+  "testo": "Panificio Barilla"
  },
  {
   "id": "poi-488-intro",
@@ -6485,59 +6609,59 @@
  },
  {
   "id": "poi-488-scheda",
-  "testo": "Panificio Panetteria Anna."
+  "testo": "Panificio Barilla."
  },
  {
   "id": "poi-489-nome",
-  "testo": "Banca Cassa di Risparmio di Parma e Piacenza"
+  "testo": "Alimentari Panetteria del Correggio"
  },
  {
   "id": "poi-489-intro",
-  "testo": "banca"
+  "testo": "alimentari"
  },
  {
   "id": "poi-489-scheda",
-  "testo": "Banca Cassa di Risparmio di Parma e Piacenza."
+  "testo": "Alimentari Panetteria del Correggio."
  },
  {
   "id": "poi-490-nome",
-  "testo": "Banca Mediolanum"
+  "testo": "Panificio Vicomero"
  },
  {
   "id": "poi-490-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-490-scheda",
-  "testo": "Banca Mediolanum."
- },
- {
-  "id": "poi-491-nome",
-  "testo": "Panificio Coce"
- },
- {
-  "id": "poi-491-intro",
   "testo": "panificio"
  },
  {
-  "id": "poi-491-scheda",
-  "testo": "Panificio Coce."
+  "id": "poi-490-scheda",
+  "testo": "Panificio Vicomero."
  },
  {
-  "id": "poi-492-nome",
-  "testo": "Farmacia XXII luglio"
+  "id": "poi-491-nome",
+  "testo": "Farmacia Equì"
  },
  {
-  "id": "poi-492-intro",
+  "id": "poi-491-intro",
   "testo": "farmacia"
  },
  {
+  "id": "poi-491-scheda",
+  "testo": "Farmacia Equì."
+ },
+ {
+  "id": "poi-492-nome",
+  "testo": "Banca Banco BPM"
+ },
+ {
+  "id": "poi-492-intro",
+  "testo": "banca"
+ },
+ {
   "id": "poi-492-scheda",
-  "testo": "Farmacia XXII luglio."
+  "testo": "Banca Banco BPM."
  },
  {
   "id": "poi-493-nome",
-  "testo": "Macelleria Bancarella della carne"
+  "testo": "Macelleria Cattelani"
  },
  {
   "id": "poi-493-intro",
@@ -6545,227 +6669,227 @@
  },
  {
   "id": "poi-493-scheda",
-  "testo": "Macelleria Bancarella della carne."
+  "testo": "Macelleria Cattelani."
  },
  {
   "id": "poi-494-nome",
-  "testo": "Panificio Panetteria Polizzotto"
+  "testo": "Supermercato Conad"
  },
  {
   "id": "poi-494-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-494-scheda",
-  "testo": "Panificio Panetteria Polizzotto."
- },
- {
-  "id": "poi-495-nome",
-  "testo": "Alimentari Asia & Africa"
- },
- {
-  "id": "poi-495-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-495-scheda",
-  "testo": "Alimentari Asia & Africa."
- },
- {
-  "id": "poi-496-nome",
-  "testo": "Farmacia Baganza"
- },
- {
-  "id": "poi-496-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-496-scheda",
-  "testo": "Farmacia Baganza."
- },
- {
-  "id": "poi-497-nome",
-  "testo": "Banca Findomestic"
- },
- {
-  "id": "poi-497-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-497-scheda",
-  "testo": "Banca Findomestic."
- },
- {
-  "id": "poi-498-nome",
-  "testo": "Farmacia Corradini"
- },
- {
-  "id": "poi-498-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-498-scheda",
-  "testo": "Farmacia Corradini."
- },
- {
-  "id": "poi-499-nome",
-  "testo": "Banca Intesa Sanpaolo"
- },
- {
-  "id": "poi-499-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-499-scheda",
-  "testo": "Banca Intesa Sanpaolo."
- },
- {
-  "id": "poi-500-nome",
-  "testo": "Banca Reale"
- },
- {
-  "id": "poi-500-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-500-scheda",
-  "testo": "Banca Reale."
- },
- {
-  "id": "poi-501-nome",
-  "testo": "Alimentari Mini Mix"
- },
- {
-  "id": "poi-501-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-501-scheda",
-  "testo": "Alimentari Mini Mix."
- },
- {
-  "id": "poi-502-nome",
-  "testo": "Macelleria da Meryem"
- },
- {
-  "id": "poi-502-intro",
-  "testo": "macelleria"
- },
- {
-  "id": "poi-502-scheda",
-  "testo": "Macelleria da Meryem."
- },
- {
-  "id": "poi-503-nome",
-  "testo": "Farmacia Gibertini"
- },
- {
-  "id": "poi-503-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-503-scheda",
-  "testo": "Farmacia Gibertini."
- },
- {
-  "id": "poi-504-nome",
-  "testo": "Banca UniCredit Bank"
- },
- {
-  "id": "poi-504-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-504-scheda",
-  "testo": "Banca UniCredit Bank."
- },
- {
-  "id": "poi-505-nome",
-  "testo": "Alimentari Hello food store"
- },
- {
-  "id": "poi-505-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-505-scheda",
-  "testo": "Alimentari Hello food store."
- },
- {
-  "id": "poi-506-nome",
-  "testo": "Ufficio postale Poste italiane"
- },
- {
-  "id": "poi-506-intro",
-  "testo": "ufficio postale"
- },
- {
-  "id": "poi-506-scheda",
-  "testo": "Ufficio postale Poste italiane."
- },
- {
-  "id": "poi-507-nome",
-  "testo": "Supermercato Vivo Supermercati"
- },
- {
-  "id": "poi-507-intro",
   "testo": "supermercato"
  },
  {
-  "id": "poi-507-scheda",
-  "testo": "Supermercato Vivo Supermercati."
+  "id": "poi-494-scheda",
+  "testo": "Supermercato Conad."
  },
  {
-  "id": "poi-508-nome",
-  "testo": "Banca Cop Service"
+  "id": "poi-495-nome",
+  "testo": "Macelleria Olga Macelleria equina"
  },
  {
-  "id": "poi-508-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-508-scheda",
-  "testo": "Banca Cop Service."
- },
- {
-  "id": "poi-509-nome",
-  "testo": "Macelleria Beccheria Carducci"
- },
- {
-  "id": "poi-509-intro",
+  "id": "poi-495-intro",
   "testo": "macelleria"
  },
  {
-  "id": "poi-509-scheda",
-  "testo": "Macelleria Beccheria Carducci."
+  "id": "poi-495-scheda",
+  "testo": "Macelleria Olga Macelleria equina."
  },
  {
-  "id": "poi-510-nome",
-  "testo": "Panificio Alinovi Guido"
+  "id": "poi-496-nome",
+  "testo": "Macelleria equina Parizzi"
  },
  {
-  "id": "poi-510-intro",
-  "testo": "panificio"
+  "id": "poi-496-intro",
+  "testo": "macelleria"
  },
  {
-  "id": "poi-510-scheda",
-  "testo": "Panificio Alinovi Guido."
+  "id": "poi-496-scheda",
+  "testo": "Macelleria equina Parizzi."
  },
  {
-  "id": "poi-511-nome",
-  "testo": "Alimentari Latteria"
+  "id": "poi-497-nome",
+  "testo": "Alimentari Crai Supermercato"
  },
  {
-  "id": "poi-511-intro",
+  "id": "poi-497-intro",
   "testo": "alimentari"
  },
  {
+  "id": "poi-497-scheda",
+  "testo": "Alimentari Crai Supermercato."
+ },
+ {
+  "id": "poi-498-nome",
+  "testo": "Panificio Viconero"
+ },
+ {
+  "id": "poi-498-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-498-scheda",
+  "testo": "Panificio Viconero."
+ },
+ {
+  "id": "poi-499-nome",
+  "testo": "Alimentari BM Gastronomia"
+ },
+ {
+  "id": "poi-499-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-499-scheda",
+  "testo": "Alimentari BM Gastronomia."
+ },
+ {
+  "id": "poi-500-nome",
+  "testo": "Alimentari Amici Market"
+ },
+ {
+  "id": "poi-500-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-500-scheda",
+  "testo": "Alimentari Amici Market."
+ },
+ {
+  "id": "poi-501-nome",
+  "testo": "Panificio Il pane più"
+ },
+ {
+  "id": "poi-501-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-501-scheda",
+  "testo": "Panificio Il pane più."
+ },
+ {
+  "id": "poi-502-nome",
+  "testo": "Panificio Panetteria dei borghi"
+ },
+ {
+  "id": "poi-502-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-502-scheda",
+  "testo": "Panificio Panetteria dei borghi."
+ },
+ {
+  "id": "poi-503-nome",
+  "testo": "Alimentari Submarinos"
+ },
+ {
+  "id": "poi-503-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-503-scheda",
+  "testo": "Alimentari Submarinos."
+ },
+ {
+  "id": "poi-504-nome",
+  "testo": "Alimentari Da Rihari"
+ },
+ {
+  "id": "poi-504-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-504-scheda",
+  "testo": "Alimentari Da Rihari."
+ },
+ {
+  "id": "poi-505-nome",
+  "testo": "Banca Monte dei Paschi di Siena"
+ },
+ {
+  "id": "poi-505-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-505-scheda",
+  "testo": "Banca Monte dei Paschi di Siena."
+ },
+ {
+  "id": "poi-506-nome",
+  "testo": "Macelleria Max Carni"
+ },
+ {
+  "id": "poi-506-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-506-scheda",
+  "testo": "Macelleria Max Carni."
+ },
+ {
+  "id": "poi-507-nome",
+  "testo": "Panificio Pane di Corniglio"
+ },
+ {
+  "id": "poi-507-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-507-scheda",
+  "testo": "Panificio Pane di Corniglio."
+ },
+ {
+  "id": "poi-508-nome",
+  "testo": "Panificio Castagnoli"
+ },
+ {
+  "id": "poi-508-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-508-scheda",
+  "testo": "Panificio Castagnoli."
+ },
+ {
+  "id": "poi-509-nome",
+  "testo": "Farmacia Pirani"
+ },
+ {
+  "id": "poi-509-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-509-scheda",
+  "testo": "Farmacia Pirani."
+ },
+ {
+  "id": "poi-510-nome",
+  "testo": "Alimentari Carrefour Express"
+ },
+ {
+  "id": "poi-510-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-510-scheda",
+  "testo": "Alimentari Carrefour Express."
+ },
+ {
+  "id": "poi-511-nome",
+  "testo": "Panificio Panetteria moderna"
+ },
+ {
+  "id": "poi-511-intro",
+  "testo": "panificio"
+ },
+ {
   "id": "poi-511-scheda",
-  "testo": "Alimentari Latteria."
+  "testo": "Panificio Panetteria moderna."
  },
  {
   "id": "poi-512-nome",
-  "testo": "Banca Cassa di risparimo di Ravenna"
+  "testo": "Banca Pitagora finanziamenti"
  },
  {
   "id": "poi-512-intro",
@@ -6773,11 +6897,11 @@
  },
  {
   "id": "poi-512-scheda",
-  "testo": "Banca Cassa di risparimo di Ravenna."
+  "testo": "Banca Pitagora finanziamenti."
  },
  {
   "id": "poi-513-nome",
-  "testo": "Alimentari Salumeria Gianni"
+  "testo": "Alimentari Mucci Giovanni Drogheria"
  },
  {
   "id": "poi-513-intro",
@@ -6785,59 +6909,59 @@
  },
  {
   "id": "poi-513-scheda",
-  "testo": "Alimentari Salumeria Gianni."
+  "testo": "Alimentari Mucci Giovanni Drogheria."
  },
  {
   "id": "poi-514-nome",
-  "testo": "Panificio Ilari"
+  "testo": "Macelleria La cantina della carne"
  },
  {
   "id": "poi-514-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-514-scheda",
-  "testo": "Panificio Ilari."
- },
- {
-  "id": "poi-515-nome",
-  "testo": "Alimentari Minimarket"
- },
- {
-  "id": "poi-515-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-515-scheda",
-  "testo": "Alimentari Minimarket."
- },
- {
-  "id": "poi-516-nome",
-  "testo": "Panificio Al Panificio Centrale"
- },
- {
-  "id": "poi-516-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-516-scheda",
-  "testo": "Panificio Al Panificio Centrale."
- },
- {
-  "id": "poi-517-nome",
-  "testo": "Macelleria La cavalleria"
- },
- {
-  "id": "poi-517-intro",
   "testo": "macelleria"
  },
  {
+  "id": "poi-514-scheda",
+  "testo": "Macelleria La cantina della carne."
+ },
+ {
+  "id": "poi-515-nome",
+  "testo": "Supermercato Carrefour Express"
+ },
+ {
+  "id": "poi-515-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-515-scheda",
+  "testo": "Supermercato Carrefour Express."
+ },
+ {
+  "id": "poi-516-nome",
+  "testo": "Macelleria Entrecote"
+ },
+ {
+  "id": "poi-516-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-516-scheda",
+  "testo": "Macelleria Entrecote."
+ },
+ {
+  "id": "poi-517-nome",
+  "testo": "Ufficio postale Sailpost - Ag. Parma 2"
+ },
+ {
+  "id": "poi-517-intro",
+  "testo": "ufficio postale"
+ },
+ {
   "id": "poi-517-scheda",
-  "testo": "Macelleria La cavalleria."
+  "testo": "Ufficio postale Sailpost - Ag. Parma 2."
  },
  {
   "id": "poi-518-nome",
-  "testo": "Ufficio postale DHL"
+  "testo": "Ufficio postale Poste"
  },
  {
   "id": "poi-518-intro",
@@ -6845,11 +6969,11 @@
  },
  {
   "id": "poi-518-scheda",
-  "testo": "Ufficio postale DHL."
+  "testo": "Ufficio postale Poste."
  },
  {
   "id": "poi-519-nome",
-  "testo": "Panificio Panetteria Chierici"
+  "testo": "Panificio Panetteria Anna"
  },
  {
   "id": "poi-519-intro",
@@ -6857,59 +6981,59 @@
  },
  {
   "id": "poi-519-scheda",
-  "testo": "Panificio Panetteria Chierici."
+  "testo": "Panificio Panetteria Anna."
  },
  {
   "id": "poi-520-nome",
-  "testo": "Farmacia Bixio"
+  "testo": "Banca Cassa di Risparmio di Parma e Piacenza"
  },
  {
   "id": "poi-520-intro",
-  "testo": "farmacia"
+  "testo": "banca"
  },
  {
   "id": "poi-520-scheda",
-  "testo": "Farmacia Bixio."
+  "testo": "Banca Cassa di Risparmio di Parma e Piacenza."
  },
  {
   "id": "poi-521-nome",
-  "testo": "Alimentari Antica drogheria Farini"
+  "testo": "Banca Mediolanum"
  },
  {
   "id": "poi-521-intro",
-  "testo": "alimentari"
+  "testo": "banca"
  },
  {
   "id": "poi-521-scheda",
-  "testo": "Alimentari Antica drogheria Farini."
+  "testo": "Banca Mediolanum."
  },
  {
   "id": "poi-522-nome",
-  "testo": "Farmacia Fornari"
+  "testo": "Panificio Coce"
  },
  {
   "id": "poi-522-intro",
-  "testo": "farmacia"
+  "testo": "panificio"
  },
  {
   "id": "poi-522-scheda",
-  "testo": "Farmacia Fornari."
+  "testo": "Panificio Coce."
  },
  {
   "id": "poi-523-nome",
-  "testo": "Alimentari Malik"
+  "testo": "Farmacia XXII luglio"
  },
  {
   "id": "poi-523-intro",
-  "testo": "alimentari"
+  "testo": "farmacia"
  },
  {
   "id": "poi-523-scheda",
-  "testo": "Alimentari Malik."
+  "testo": "Farmacia XXII luglio."
  },
  {
   "id": "poi-524-nome",
-  "testo": "Macelleria Carne fresca"
+  "testo": "Macelleria Bancarella della carne"
  },
  {
   "id": "poi-524-intro",
@@ -6917,95 +7041,95 @@
  },
  {
   "id": "poi-524-scheda",
-  "testo": "Macelleria Carne fresca."
+  "testo": "Macelleria Bancarella della carne."
  },
  {
   "id": "poi-525-nome",
-  "testo": "Farmacia Pezzena"
+  "testo": "Panificio Panetteria Polizzotto"
  },
  {
   "id": "poi-525-intro",
-  "testo": "farmacia"
+  "testo": "panificio"
  },
  {
   "id": "poi-525-scheda",
-  "testo": "Farmacia Pezzena."
+  "testo": "Panificio Panetteria Polizzotto."
  },
  {
   "id": "poi-526-nome",
-  "testo": "Farmacia Parafarmacia Ducale"
+  "testo": "Alimentari Asia & Africa"
  },
  {
   "id": "poi-526-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-526-scheda",
-  "testo": "Farmacia Parafarmacia Ducale."
- },
- {
-  "id": "poi-527-nome",
-  "testo": "Macelleria La Bottega del Gusto"
- },
- {
-  "id": "poi-527-intro",
-  "testo": "macelleria"
- },
- {
-  "id": "poi-527-scheda",
-  "testo": "Macelleria La Bottega del Gusto."
- },
- {
-  "id": "poi-528-nome",
-  "testo": "Panificio Forno Ducale"
- },
- {
-  "id": "poi-528-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-528-scheda",
-  "testo": "Panificio Forno Ducale."
- },
- {
-  "id": "poi-529-nome",
-  "testo": "Alimentari Super Day"
- },
- {
-  "id": "poi-529-intro",
   "testo": "alimentari"
  },
  {
+  "id": "poi-526-scheda",
+  "testo": "Alimentari Asia & Africa."
+ },
+ {
+  "id": "poi-527-nome",
+  "testo": "Farmacia Baganza"
+ },
+ {
+  "id": "poi-527-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-527-scheda",
+  "testo": "Farmacia Baganza."
+ },
+ {
+  "id": "poi-528-nome",
+  "testo": "Banca Findomestic"
+ },
+ {
+  "id": "poi-528-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-528-scheda",
+  "testo": "Banca Findomestic."
+ },
+ {
+  "id": "poi-529-nome",
+  "testo": "Farmacia Corradini"
+ },
+ {
+  "id": "poi-529-intro",
+  "testo": "farmacia"
+ },
+ {
   "id": "poi-529-scheda",
-  "testo": "Alimentari Super Day."
+  "testo": "Farmacia Corradini."
  },
  {
   "id": "poi-530-nome",
-  "testo": "Panificio centrale"
+  "testo": "Banca Intesa Sanpaolo"
  },
  {
   "id": "poi-530-intro",
-  "testo": "panificio"
+  "testo": "banca"
  },
  {
   "id": "poi-530-scheda",
-  "testo": "Panificio centrale."
+  "testo": "Banca Intesa Sanpaolo."
  },
  {
   "id": "poi-531-nome",
-  "testo": "Panificio Forno D'Azeglio"
+  "testo": "Banca Reale"
  },
  {
   "id": "poi-531-intro",
-  "testo": "panificio"
+  "testo": "banca"
  },
  {
   "id": "poi-531-scheda",
-  "testo": "Panificio Forno D'Azeglio."
+  "testo": "Banca Reale."
  },
  {
   "id": "poi-532-nome",
-  "testo": "Alimentari SPS Market"
+  "testo": "Alimentari Mini Mix"
  },
  {
   "id": "poi-532-intro",
@@ -7013,83 +7137,83 @@
  },
  {
   "id": "poi-532-scheda",
-  "testo": "Alimentari SPS Market."
+  "testo": "Alimentari Mini Mix."
  },
  {
   "id": "poi-533-nome",
-  "testo": "Panificio Antica forneria Ferrari"
+  "testo": "Macelleria da Meryem"
  },
  {
   "id": "poi-533-intro",
-  "testo": "panificio"
- },
- {
-  "id": "poi-533-scheda",
-  "testo": "Panificio Antica forneria Ferrari."
- },
- {
-  "id": "poi-534-nome",
-  "testo": "Alimentari Alimentare Watson"
- },
- {
-  "id": "poi-534-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-534-scheda",
-  "testo": "Alimentari Alimentare Watson."
- },
- {
-  "id": "poi-535-nome",
-  "testo": "Farmacia Parafarmacia"
- },
- {
-  "id": "poi-535-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-535-scheda",
-  "testo": "Farmacia Parafarmacia."
- },
- {
-  "id": "poi-536-nome",
-  "testo": "Macelleria Carne equina"
- },
- {
-  "id": "poi-536-intro",
   "testo": "macelleria"
  },
  {
+  "id": "poi-533-scheda",
+  "testo": "Macelleria da Meryem."
+ },
+ {
+  "id": "poi-534-nome",
+  "testo": "Farmacia Gibertini"
+ },
+ {
+  "id": "poi-534-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-534-scheda",
+  "testo": "Farmacia Gibertini."
+ },
+ {
+  "id": "poi-535-nome",
+  "testo": "Banca UniCredit Bank"
+ },
+ {
+  "id": "poi-535-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-535-scheda",
+  "testo": "Banca UniCredit Bank."
+ },
+ {
+  "id": "poi-536-nome",
+  "testo": "Alimentari Hello food store"
+ },
+ {
+  "id": "poi-536-intro",
+  "testo": "alimentari"
+ },
+ {
   "id": "poi-536-scheda",
-  "testo": "Macelleria Carne equina."
+  "testo": "Alimentari Hello food store."
  },
  {
   "id": "poi-537-nome",
-  "testo": "Banca Carisbo"
+  "testo": "Ufficio postale Poste italiane"
  },
  {
   "id": "poi-537-intro",
-  "testo": "banca"
+  "testo": "ufficio postale"
  },
  {
   "id": "poi-537-scheda",
-  "testo": "Banca Carisbo."
+  "testo": "Ufficio postale Poste italiane."
  },
  {
   "id": "poi-538-nome",
-  "testo": "Banca BNL"
+  "testo": "Supermercato Vivo Supermercati"
  },
  {
   "id": "poi-538-intro",
-  "testo": "banca"
+  "testo": "supermercato"
  },
  {
   "id": "poi-538-scheda",
-  "testo": "Banca BNL."
+  "testo": "Supermercato Vivo Supermercati."
  },
  {
   "id": "poi-539-nome",
-  "testo": "Banca Credemleasing S.p.A"
+  "testo": "Banca Cop Service"
  },
  {
   "id": "poi-539-intro",
@@ -7097,11 +7221,11 @@
  },
  {
   "id": "poi-539-scheda",
-  "testo": "Banca Credemleasing S.p.A."
+  "testo": "Banca Cop Service."
  },
  {
   "id": "poi-540-nome",
-  "testo": "Macelleria Boni"
+  "testo": "Macelleria Beccheria Carducci"
  },
  {
   "id": "poi-540-intro",
@@ -7109,11 +7233,11 @@
  },
  {
   "id": "poi-540-scheda",
-  "testo": "Macelleria Boni."
+  "testo": "Macelleria Beccheria Carducci."
  },
  {
   "id": "poi-541-nome",
-  "testo": "Panificio Sapori Nuovi 2"
+  "testo": "Panificio Alinovi Guido"
  },
  {
   "id": "poi-541-intro",
@@ -7121,347 +7245,347 @@
  },
  {
   "id": "poi-541-scheda",
-  "testo": "Panificio Sapori Nuovi 2."
+  "testo": "Panificio Alinovi Guido."
  },
  {
   "id": "poi-542-nome",
-  "testo": "Banca Popolare di Sondrio"
+  "testo": "Alimentari Latteria"
  },
  {
   "id": "poi-542-intro",
-  "testo": "banca"
+  "testo": "alimentari"
  },
  {
   "id": "poi-542-scheda",
-  "testo": "Banca Popolare di Sondrio."
+  "testo": "Alimentari Latteria."
  },
  {
   "id": "poi-543-nome",
-  "testo": "Fermata Barriera Repubblica"
+  "testo": "Banca Cassa di risparimo di Ravenna"
  },
  {
   "id": "poi-543-intro",
-  "testo": "fermata"
- },
- {
-  "id": "poi-543-scheda",
-  "testo": "Fermata Barriera Repubblica."
- },
- {
-  "id": "poi-544-nome",
-  "testo": "Fermata Via Emilia Est S. Elevata"
- },
- {
-  "id": "poi-544-intro",
-  "testo": "fermata"
- },
- {
-  "id": "poi-544-scheda",
-  "testo": "Fermata Via Emilia Est S. Elevata."
- },
- {
-  "id": "poi-545-nome",
-  "testo": "Stazione Parma"
- },
- {
-  "id": "poi-545-intro",
-  "testo": "stazione"
- },
- {
-  "id": "poi-545-scheda",
-  "testo": "Stazione Parma."
- },
- {
-  "id": "poi-546-nome",
-  "testo": "Fermata v.le Berenini - b.ra Farini"
- },
- {
-  "id": "poi-546-intro",
-  "testo": "fermata"
- },
- {
-  "id": "poi-546-scheda",
-  "testo": "Fermata v.le Berenini - b.ra Farini."
- },
- {
-  "id": "poi-547-nome",
-  "testo": "Fermata v.le Basetti"
- },
- {
-  "id": "poi-547-intro",
-  "testo": "fermata"
- },
- {
-  "id": "poi-547-scheda",
-  "testo": "Fermata v.le Basetti."
- },
- {
-  "id": "poi-548-nome",
-  "testo": "Fermata v.le Toscanini"
- },
- {
-  "id": "poi-548-intro",
-  "testo": "fermata"
- },
- {
-  "id": "poi-548-scheda",
-  "testo": "Fermata v.le Toscanini."
- },
- {
-  "id": "poi-549-nome",
-  "testo": "Fermata chiesa dell'Annunziata"
- },
- {
-  "id": "poi-549-intro",
-  "testo": "fermata"
- },
- {
-  "id": "poi-549-scheda",
-  "testo": "Fermata chiesa dell'Annunziata."
- },
- {
-  "id": "poi-550-nome",
-  "testo": "Macelleria Biànca & Ròssa"
- },
- {
-  "id": "poi-550-intro",
-  "testo": "macelleria"
- },
- {
-  "id": "poi-550-scheda",
-  "testo": "Macelleria Biànca & Ròssa."
- },
- {
-  "id": "poi-551-nome",
-  "testo": "Banca CheBanca!"
- },
- {
-  "id": "poi-551-intro",
   "testo": "banca"
  },
  {
+  "id": "poi-543-scheda",
+  "testo": "Banca Cassa di risparimo di Ravenna."
+ },
+ {
+  "id": "poi-544-nome",
+  "testo": "Alimentari Salumeria Gianni"
+ },
+ {
+  "id": "poi-544-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-544-scheda",
+  "testo": "Alimentari Salumeria Gianni."
+ },
+ {
+  "id": "poi-545-nome",
+  "testo": "Panificio Ilari"
+ },
+ {
+  "id": "poi-545-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-545-scheda",
+  "testo": "Panificio Ilari."
+ },
+ {
+  "id": "poi-546-nome",
+  "testo": "Alimentari Minimarket"
+ },
+ {
+  "id": "poi-546-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-546-scheda",
+  "testo": "Alimentari Minimarket."
+ },
+ {
+  "id": "poi-547-nome",
+  "testo": "Panificio Al Panificio Centrale"
+ },
+ {
+  "id": "poi-547-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-547-scheda",
+  "testo": "Panificio Al Panificio Centrale."
+ },
+ {
+  "id": "poi-548-nome",
+  "testo": "Macelleria La cavalleria"
+ },
+ {
+  "id": "poi-548-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-548-scheda",
+  "testo": "Macelleria La cavalleria."
+ },
+ {
+  "id": "poi-549-nome",
+  "testo": "Ufficio postale DHL"
+ },
+ {
+  "id": "poi-549-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-549-scheda",
+  "testo": "Ufficio postale DHL."
+ },
+ {
+  "id": "poi-550-nome",
+  "testo": "Panificio Panetteria Chierici"
+ },
+ {
+  "id": "poi-550-intro",
+  "testo": "panificio"
+ },
+ {
+  "id": "poi-550-scheda",
+  "testo": "Panificio Panetteria Chierici."
+ },
+ {
+  "id": "poi-551-nome",
+  "testo": "Farmacia Bixio"
+ },
+ {
+  "id": "poi-551-intro",
+  "testo": "farmacia"
+ },
+ {
   "id": "poi-551-scheda",
-  "testo": "Banca CheBanca!."
+  "testo": "Farmacia Bixio."
  },
  {
   "id": "poi-552-nome",
-  "testo": "Fermata v.le Solferino v. Magenta"
+  "testo": "Alimentari Antica drogheria Farini"
  },
  {
   "id": "poi-552-intro",
-  "testo": "fermata"
+  "testo": "alimentari"
  },
  {
   "id": "poi-552-scheda",
-  "testo": "Fermata v.le Solferino v. Magenta."
+  "testo": "Alimentari Antica drogheria Farini."
  },
  {
   "id": "poi-553-nome",
-  "testo": "Fermata v. Rustici (v.le Magenta)"
+  "testo": "Farmacia Fornari"
  },
  {
   "id": "poi-553-intro",
-  "testo": "fermata"
+  "testo": "farmacia"
  },
  {
   "id": "poi-553-scheda",
-  "testo": "Fermata v. Rustici (v.le Magenta)."
+  "testo": "Farmacia Fornari."
  },
  {
   "id": "poi-554-nome",
-  "testo": "Fermata Via Repubblica S. Sepolcro"
+  "testo": "Alimentari Malik"
  },
  {
   "id": "poi-554-intro",
-  "testo": "fermata"
+  "testo": "alimentari"
  },
  {
   "id": "poi-554-scheda",
-  "testo": "Fermata Via Repubblica S. Sepolcro."
+  "testo": "Alimentari Malik."
  },
  {
   "id": "poi-555-nome",
-  "testo": "Fermata Piazza Ghiaia"
+  "testo": "Macelleria Carne fresca"
  },
  {
   "id": "poi-555-intro",
-  "testo": "fermata"
+  "testo": "macelleria"
  },
  {
   "id": "poi-555-scheda",
-  "testo": "Fermata Piazza Ghiaia."
+  "testo": "Macelleria Carne fresca."
  },
  {
   "id": "poi-556-nome",
-  "testo": "Fermata Viale Mentana"
+  "testo": "Farmacia Pezzena"
  },
  {
   "id": "poi-556-intro",
-  "testo": "fermata"
+  "testo": "farmacia"
  },
  {
   "id": "poi-556-scheda",
-  "testo": "Fermata Viale Mentana."
+  "testo": "Farmacia Pezzena."
  },
  {
   "id": "poi-557-nome",
-  "testo": "Fermata Piazzale Sicilia"
+  "testo": "Farmacia Parafarmacia Ducale"
  },
  {
   "id": "poi-557-intro",
-  "testo": "fermata"
+  "testo": "farmacia"
  },
  {
   "id": "poi-557-scheda",
-  "testo": "Fermata Piazzale Sicilia."
+  "testo": "Farmacia Parafarmacia Ducale."
  },
  {
   "id": "poi-558-nome",
-  "testo": "Fermata via Abruzzi"
+  "testo": "Macelleria La Bottega del Gusto"
  },
  {
   "id": "poi-558-intro",
-  "testo": "fermata"
+  "testo": "macelleria"
  },
  {
   "id": "poi-558-scheda",
-  "testo": "Fermata via Abruzzi."
+  "testo": "Macelleria La Bottega del Gusto."
  },
  {
   "id": "poi-559-nome",
-  "testo": "Fermata Via Venezia (Via Verona)"
+  "testo": "Panificio Forno Ducale"
  },
  {
   "id": "poi-559-intro",
-  "testo": "fermata"
+  "testo": "panificio"
  },
  {
   "id": "poi-559-scheda",
-  "testo": "Fermata Via Venezia (Via Verona)."
+  "testo": "Panificio Forno Ducale."
  },
  {
   "id": "poi-560-nome",
-  "testo": "Fermata Via Venezia Via Paradigna"
+  "testo": "Alimentari Super Day"
  },
  {
   "id": "poi-560-intro",
-  "testo": "fermata"
+  "testo": "alimentari"
  },
  {
   "id": "poi-560-scheda",
-  "testo": "Fermata Via Venezia Via Paradigna."
+  "testo": "Alimentari Super Day."
  },
  {
   "id": "poi-561-nome",
-  "testo": "Fermata Via Venezia Madonnina"
+  "testo": "Panificio centrale"
  },
  {
   "id": "poi-561-intro",
-  "testo": "fermata"
+  "testo": "panificio"
  },
  {
   "id": "poi-561-scheda",
-  "testo": "Fermata Via Venezia Madonnina."
+  "testo": "Panificio centrale."
  },
  {
   "id": "poi-562-nome",
-  "testo": "Fermata Ospedale Vecchio"
+  "testo": "Panificio Forno D'Azeglio"
  },
  {
   "id": "poi-562-intro",
-  "testo": "fermata"
+  "testo": "panificio"
  },
  {
   "id": "poi-562-scheda",
-  "testo": "Fermata Ospedale Vecchio."
+  "testo": "Panificio Forno D'Azeglio."
  },
  {
   "id": "poi-563-nome",
-  "testo": "Biblioteca di Economia"
+  "testo": "Alimentari SPS Market"
  },
  {
   "id": "poi-563-intro",
-  "testo": "biblioteca"
+  "testo": "alimentari"
  },
  {
   "id": "poi-563-scheda",
-  "testo": "Biblioteca di Economia."
+  "testo": "Alimentari SPS Market."
  },
  {
   "id": "poi-564-nome",
-  "testo": "Biblioteca di Psicologia"
+  "testo": "Panificio Antica forneria Ferrari"
  },
  {
   "id": "poi-564-intro",
-  "testo": "biblioteca"
+  "testo": "panificio"
  },
  {
   "id": "poi-564-scheda",
-  "testo": "Biblioteca di Psicologia."
+  "testo": "Panificio Antica forneria Ferrari."
  },
  {
   "id": "poi-565-nome",
-  "testo": "Biblioteca centrale di Giurisprudenza dell'Università degli studi di Parma"
+  "testo": "Alimentari Alimentare Watson"
  },
  {
   "id": "poi-565-intro",
-  "testo": "biblioteca"
+  "testo": "alimentari"
  },
  {
   "id": "poi-565-scheda",
-  "testo": "Biblioteca centrale di Giurisprudenza dell'Università degli studi di Parma."
+  "testo": "Alimentari Alimentare Watson."
  },
  {
   "id": "poi-566-nome",
-  "testo": "Biblioteca Umanistica dei Paolotti"
+  "testo": "Farmacia Parafarmacia"
  },
  {
   "id": "poi-566-intro",
-  "testo": "biblioteca"
+  "testo": "farmacia"
  },
  {
   "id": "poi-566-scheda",
-  "testo": "Biblioteca Umanistica dei Paolotti."
+  "testo": "Farmacia Parafarmacia."
  },
  {
   "id": "poi-567-nome",
-  "testo": "Biblioteca di Lingue e letterature straniere Pier Giorgio Negro dell'Università degli studi di Parma"
+  "testo": "Macelleria Carne equina"
  },
  {
   "id": "poi-567-intro",
-  "testo": "biblioteca"
+  "testo": "macelleria"
  },
  {
   "id": "poi-567-scheda",
-  "testo": "Biblioteca di Lingue e letterature straniere Pier Giorgio Negro dell'Università degli studi di Parma."
+  "testo": "Macelleria Carne equina."
  },
  {
   "id": "poi-568-nome",
-  "testo": "Biblioteca delle Arti e dello Spettacolo"
+  "testo": "Banca Carisbo"
  },
  {
   "id": "poi-568-intro",
-  "testo": "biblioteca"
+  "testo": "banca"
  },
  {
   "id": "poi-568-scheda",
-  "testo": "Biblioteca delle Arti e dello Spettacolo."
+  "testo": "Banca Carisbo."
  },
  {
   "id": "poi-569-nome",
-  "testo": "Supermercato Esselunga"
+  "testo": "Banca BNL"
  },
  {
   "id": "poi-569-intro",
-  "testo": "supermercato"
+  "testo": "banca"
  },
  {
   "id": "poi-569-scheda",
-  "testo": "Supermercato Esselunga."
+  "testo": "Banca BNL."
  },
  {
   "id": "poi-570-nome",
-  "testo": "Banca Deutsche Bank"
+  "testo": "Banca Credemleasing S.p.A"
  },
  {
   "id": "poi-570-intro",
@@ -7469,35 +7593,35 @@
  },
  {
   "id": "poi-570-scheda",
-  "testo": "Banca Deutsche Bank."
+  "testo": "Banca Credemleasing S.p.A."
  },
  {
   "id": "poi-571-nome",
-  "testo": "Banca Mediobanca"
+  "testo": "Macelleria Boni"
  },
  {
   "id": "poi-571-intro",
-  "testo": "banca"
+  "testo": "macelleria"
  },
  {
   "id": "poi-571-scheda",
-  "testo": "Banca Mediobanca."
+  "testo": "Macelleria Boni."
  },
  {
   "id": "poi-572-nome",
-  "testo": "Banca IBL Banca"
+  "testo": "Panificio Sapori Nuovi 2"
  },
  {
   "id": "poi-572-intro",
-  "testo": "banca"
+  "testo": "panificio"
  },
  {
   "id": "poi-572-scheda",
-  "testo": "Banca IBL Banca."
+  "testo": "Panificio Sapori Nuovi 2."
  },
  {
   "id": "poi-573-nome",
-  "testo": "Banca Valdabbina"
+  "testo": "Banca Popolare di Sondrio"
  },
  {
   "id": "poi-573-intro",
@@ -7505,479 +7629,455 @@
  },
  {
   "id": "poi-573-scheda",
-  "testo": "Banca Valdabbina."
+  "testo": "Banca Popolare di Sondrio."
  },
  {
   "id": "poi-574-nome",
-  "testo": "Ufficio postale poste italiane"
+  "testo": "Fermata Barriera Repubblica"
  },
  {
   "id": "poi-574-intro",
-  "testo": "ufficio postale"
- },
- {
-  "id": "poi-574-scheda",
-  "testo": "Ufficio postale poste italiane."
- },
- {
-  "id": "poi-575-nome",
-  "testo": "Farmacia Medi-Market"
- },
- {
-  "id": "poi-575-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-575-scheda",
-  "testo": "Farmacia Medi-Market."
- },
- {
-  "id": "poi-576-nome",
-  "testo": "Farmacia Maria Luigia"
- },
- {
-  "id": "poi-576-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-576-scheda",
-  "testo": "Farmacia Maria Luigia."
- },
- {
-  "id": "poi-577-nome",
-  "testo": "Banca Unipol"
- },
- {
-  "id": "poi-577-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-577-scheda",
-  "testo": "Banca Unipol."
- },
- {
-  "id": "poi-578-nome",
-  "testo": "biblioteca Umberto Balestrazzi"
- },
- {
-  "id": "poi-578-intro",
-  "testo": "biblioteca"
- },
- {
-  "id": "poi-578-scheda",
-  "testo": "biblioteca Umberto Balestrazzi."
- },
- {
-  "id": "poi-579-nome",
-  "testo": "Supermercato Carrefour express"
- },
- {
-  "id": "poi-579-intro",
-  "testo": "supermercato"
- },
- {
-  "id": "poi-579-scheda",
-  "testo": "Supermercato Carrefour express."
- },
- {
-  "id": "poi-580-nome",
-  "testo": "Banca Pind Parma"
- },
- {
-  "id": "poi-580-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-580-scheda",
-  "testo": "Banca Pind Parma."
- },
- {
-  "id": "poi-581-nome",
-  "testo": "Biblioteca Guanda"
- },
- {
-  "id": "poi-581-intro",
-  "testo": "biblioteca"
- },
- {
-  "id": "poi-581-scheda",
-  "testo": "Biblioteca Guanda."
- },
- {
-  "id": "poi-582-nome",
-  "testo": "Teatro Regio"
- },
- {
-  "id": "poi-582-intro",
-  "testo": "teatro"
- },
- {
-  "id": "poi-582-scheda",
-  "testo": "Teatro Regio."
- },
- {
-  "id": "poi-583-nome",
-  "testo": "Duomo di Spoleto"
- },
- {
-  "id": "poi-583-intro",
-  "testo": "cattedrale del XII sec., portico del 1491"
- },
- {
-  "id": "poi-583-scheda",
-  "testo": "La facciata romanica è chiusa davanti da un portico rinascimentale a cinque arcate, aggiunto nel 1491: due epoche appoggiate l'una all'altra senza nascondersi. In alto il mosaico dorato del 1207, firmato dal maestro Solsterno, con il Cristo benedicente fra la Vergine e san Giovanni. Il campanile è fatto di pezzi romani di spoglio."
- },
- {
-  "id": "poi-583-dentro",
-  "testo": "L'abside affrescata da Filippo Lippi con le Storie della Vergine, l'ultima opera sua: morì a Spoleto nel 1469 e la tomba è nel transetto, disegnata dal figlio Filippino."
- },
- {
-  "id": "poi-584-nome",
-  "testo": "Rocca Albornoziana"
- },
- {
-  "id": "poi-584-intro",
-  "testo": "fortezza del 1359-1370"
- },
- {
-  "id": "poi-584-scheda",
-  "testo": "La costruì Matteo Gattapone per il cardinale Albornoz: un rettangolo con sei torri attorno a due cortili, quello delle Armi per i soldati e quello d'Onore per il governatore. Dal 1817 al 1982 è stata carcere, e questo l'ha conservata intera."
- },
- {
-  "id": "poi-584-dentro",
-  "testo": "Il Cortile d'Onore con le logge affrescate, e dal camminamento la vista su tutta la valle."
- },
- {
-  "id": "poi-585-nome",
-  "testo": "Ponte delle Torri"
- },
- {
-  "id": "poi-585-intro",
-  "testo": "ponte-acquedotto del XIII-XIV sec."
- },
- {
-  "id": "poi-585-scheda",
-  "testo": "Ottanta metri d'altezza e dieci arcate ogivali a scavalcare il Tessino: è insieme ponte e acquedotto, costruito forse su strutture romane. Attribuito al Gattapone, collega la Rocca al Monteluco. Goethe venne qui e scrisse che era architettura che serve, non che decora."
- },
- {
-  "id": "poi-585-dentro",
-  "testo": "Le due torri alle estremità, da cui prende il nome, e il condotto dell'acqua che corre dentro la struttura."
- },
- {
-  "id": "poi-586-nome",
-  "testo": "Arco di Druso e Germanico"
- },
- {
-  "id": "poi-586-intro",
-  "testo": "arco romano del 23 d.C."
- },
- {
-  "id": "poi-586-scheda",
-  "testo": "L'arco che segnava l'ingresso al foro della Spoletium romana, dedicato ai figli di Tiberio. Il piano antico sta quattro metri sotto quello di oggi: si vede la città che si è alzata su sé stessa."
- },
- {
-  "id": "poi-587-nome",
-  "testo": "Teatro romano"
- },
- {
-  "id": "poi-587-intro",
-  "testo": "teatro romano del I sec. d.C."
- },
- {
-  "id": "poi-587-scheda",
-  "testo": "Riportato alla luce nel Novecento sotto le case: la cavea è stata ricostruita, l'orchestra conserva ancora il pavimento in opus sectile di marmi colorati. Si usa ancora, d'estate, per il Festival."
- },
- {
-  "id": "poi-588-nome",
-  "testo": "Basilica di San Salvatore"
- },
- {
-  "id": "poi-588-intro",
-  "testo": "basilica del IV-V sec."
- },
- {
-  "id": "poi-588-scheda",
-  "testo": "Una delle chiese paleocristiane più antiche rimaste in piedi, patrimonio Unesco fra i Longobardi in Italia. La facciata ha tre portali e tre finestre con cornici scolpite prese da edifici romani, e dentro le colonne di spoglio reggono una trabeazione classica: una chiesa cristiana costruita con il vocabolario dei templi."
- },
- {
-  "id": "poi-588-dentro",
-  "testo": "Il presbiterio con le colonne e la trabeazione antica rimontate, e le cornici di marmo riusate nella facciata."
- },
- {
-  "id": "poi-589-nome",
-  "testo": "Chiesa di Sant'Eufemia"
- },
- {
-  "id": "poi-589-intro",
-  "testo": "chiesa del XII sec."
- },
- {
-  "id": "poi-589-scheda",
-  "testo": "Romanica, dentro il cortile del palazzo arcivescovile: tre navate su colonne diverse l'una dall'altra, tutte di recupero. L'unica cosa rara è il matroneo, la galleria sopra le navate laterali per le donne — in Umbria non ce ne sono altri."
- },
- {
-  "id": "poi-589-dentro",
-  "testo": "Il matroneo, e i capitelli: ognuno è diverso, nessuno è stato fatto per questa chiesa."
- },
- {
-  "id": "poi-590-nome",
-  "testo": "Basilica di San Ponziano"
- },
- {
-  "id": "poi-590-intro",
-  "testo": "basilica del XII sec."
- },
- {
-  "id": "poi-590-scheda",
-  "testo": "Fuori le mura, sul luogo della sepoltura del patrono. La facciata romanica è semplice, con il rosone e due leoni; sotto c'è la cripta, con le colonne romane di spoglio e gli affreschi."
- },
- {
-  "id": "poi-591-nome",
-  "testo": "Casa romana"
- },
- {
-  "id": "poi-591-intro",
-  "testo": "casa romana del I sec. d.C."
- },
- {
-  "id": "poi-591-scheda",
-  "testo": "Una domus con l'atrio tuscanico, l'impluvio di marmo al centro e i pavimenti a mosaico bianco e nero: la casa di una famiglia ricca, forse quella di Vespasia Polla, madre di Vespasiano. Sta sotto il palazzo comunale, cinque metri sotto la strada."
- },
- {
-  "id": "poi-591-dentro",
-  "testo": "I mosaici geometrici e l'impluvio: si cammina sul piano di casa di duemila anni fa."
- },
- {
-  "id": "poi-592-nome",
-  "testo": "Palazzo Comunale"
- },
- {
-  "id": "poi-592-intro",
-  "testo": "palazzo del dal XIII sec."
- },
- {
-  "id": "poi-592-scheda",
-  "testo": "Il municipio, rifatto alla fine del Settecento, con la torre medievale rimasta. Sotto ci sta la casa romana, e dentro la Pinacoteca."
- },
- {
-  "id": "poi-593-nome",
-  "testo": "Anfiteatro romano"
- },
- {
-  "id": "poi-593-intro",
-  "testo": "anfiteatro romano del II sec. d.C."
- },
- {
-  "id": "poi-593-scheda",
-  "testo": "Uno dei più grandi dell'Umbria, inglobato nelle costruzioni successive: le arcate si riconoscono nei muri dei fabbricati militari e del monastero che ci si sono appoggiati sopra."
- },
- {
-  "id": "poi-594-nome",
-  "testo": "Torre dell'Olio"
- },
- {
-  "id": "poi-594-intro",
-  "testo": "torre del XIII sec."
- },
- {
-  "id": "poi-594-scheda",
-  "testo": "Quarantacinque metri, una delle torri gentilizie rimaste: il nome viene dall'olio bollente che si rovesciava dalle caditoie su chi tentava di forzare la porta sottostante, Porta Fuga."
- },
- {
-  "id": "poi-595-nome",
-  "testo": "Teatro Nuovo Gian Carlo Menotti"
- },
- {
-  "id": "poi-595-intro",
-  "testo": "teatro del 1864"
- },
- {
-  "id": "poi-595-scheda",
-  "testo": "Il teatro all'italiana della città, quattro ordini di palchi; dal 1958 è la sala principale del Festival dei Due Mondi, che Menotti fondò qui."
- },
- {
-  "id": "poi-596-nome",
-  "testo": "Stazione Spoleto"
- },
- {
-  "id": "poi-596-intro",
-  "testo": "stazione"
- },
- {
-  "id": "poi-596-scheda",
-  "testo": "Stazione Spoleto."
- },
- {
-  "id": "poi-597-nome",
-  "testo": "Farmacia Premiata farmacia Amici"
- },
- {
-  "id": "poi-597-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-597-scheda",
-  "testo": "Farmacia Premiata farmacia Amici."
- },
- {
-  "id": "poi-598-nome",
-  "testo": "Banca Intesa Sanpaolo"
- },
- {
-  "id": "poi-598-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-598-scheda",
-  "testo": "Banca Intesa Sanpaolo."
- },
- {
-  "id": "poi-599-nome",
-  "testo": "Supermercato Conad"
- },
- {
-  "id": "poi-599-intro",
-  "testo": "supermercato"
- },
- {
-  "id": "poi-599-scheda",
-  "testo": "Supermercato Conad."
- },
- {
-  "id": "poi-600-nome",
-  "testo": "Banca BNL"
- },
- {
-  "id": "poi-600-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-600-scheda",
-  "testo": "Banca BNL."
- },
- {
-  "id": "poi-601-nome",
-  "testo": "Biblioteca comunale Giosuè Carducci"
- },
- {
-  "id": "poi-601-intro",
-  "testo": "biblioteca"
- },
- {
-  "id": "poi-601-scheda",
-  "testo": "Biblioteca comunale Giosuè Carducci."
- },
- {
-  "id": "poi-602-nome",
-  "testo": "Farmacia Betti dr. Vito"
- },
- {
-  "id": "poi-602-intro",
-  "testo": "farmacia"
- },
- {
-  "id": "poi-602-scheda",
-  "testo": "Farmacia Betti dr. Vito."
- },
- {
-  "id": "poi-603-nome",
-  "testo": "Teatro delle 6 Luca Ronconi"
- },
- {
-  "id": "poi-603-intro",
-  "testo": "teatro"
- },
- {
-  "id": "poi-603-scheda",
-  "testo": "Teatro delle 6 Luca Ronconi."
- },
- {
-  "id": "poi-604-nome",
-  "testo": "Teatro Cantiere Oberdan"
- },
- {
-  "id": "poi-604-intro",
-  "testo": "teatro"
- },
- {
-  "id": "poi-604-scheda",
-  "testo": "Teatro Cantiere Oberdan."
- },
- {
-  "id": "poi-605-nome",
-  "testo": "Teatro di Villa Redenta"
- },
- {
-  "id": "poi-605-intro",
-  "testo": "teatro"
- },
- {
-  "id": "poi-605-scheda",
-  "testo": "Teatro di Villa Redenta."
- },
- {
-  "id": "poi-606-nome",
-  "testo": "Fermata Piazza Vittoria"
- },
- {
-  "id": "poi-606-intro",
   "testo": "fermata"
  },
  {
+  "id": "poi-574-scheda",
+  "testo": "Fermata Barriera Repubblica."
+ },
+ {
+  "id": "poi-575-nome",
+  "testo": "Fermata Via Emilia Est S. Elevata"
+ },
+ {
+  "id": "poi-575-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-575-scheda",
+  "testo": "Fermata Via Emilia Est S. Elevata."
+ },
+ {
+  "id": "poi-576-nome",
+  "testo": "Stazione Parma"
+ },
+ {
+  "id": "poi-576-intro",
+  "testo": "stazione"
+ },
+ {
+  "id": "poi-576-scheda",
+  "testo": "Stazione Parma."
+ },
+ {
+  "id": "poi-577-nome",
+  "testo": "Fermata v.le Berenini - b.ra Farini"
+ },
+ {
+  "id": "poi-577-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-577-scheda",
+  "testo": "Fermata v.le Berenini - b.ra Farini."
+ },
+ {
+  "id": "poi-578-nome",
+  "testo": "Fermata v.le Basetti"
+ },
+ {
+  "id": "poi-578-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-578-scheda",
+  "testo": "Fermata v.le Basetti."
+ },
+ {
+  "id": "poi-579-nome",
+  "testo": "Fermata v.le Toscanini"
+ },
+ {
+  "id": "poi-579-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-579-scheda",
+  "testo": "Fermata v.le Toscanini."
+ },
+ {
+  "id": "poi-580-nome",
+  "testo": "Fermata chiesa dell'Annunziata"
+ },
+ {
+  "id": "poi-580-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-580-scheda",
+  "testo": "Fermata chiesa dell'Annunziata."
+ },
+ {
+  "id": "poi-581-nome",
+  "testo": "Macelleria Biànca & Ròssa"
+ },
+ {
+  "id": "poi-581-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-581-scheda",
+  "testo": "Macelleria Biànca & Ròssa."
+ },
+ {
+  "id": "poi-582-nome",
+  "testo": "Banca CheBanca!"
+ },
+ {
+  "id": "poi-582-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-582-scheda",
+  "testo": "Banca CheBanca!."
+ },
+ {
+  "id": "poi-583-nome",
+  "testo": "Fermata v.le Solferino v. Magenta"
+ },
+ {
+  "id": "poi-583-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-583-scheda",
+  "testo": "Fermata v.le Solferino v. Magenta."
+ },
+ {
+  "id": "poi-584-nome",
+  "testo": "Fermata v. Rustici (v.le Magenta)"
+ },
+ {
+  "id": "poi-584-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-584-scheda",
+  "testo": "Fermata v. Rustici (v.le Magenta)."
+ },
+ {
+  "id": "poi-585-nome",
+  "testo": "Fermata Via Repubblica S. Sepolcro"
+ },
+ {
+  "id": "poi-585-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-585-scheda",
+  "testo": "Fermata Via Repubblica S. Sepolcro."
+ },
+ {
+  "id": "poi-586-nome",
+  "testo": "Fermata Piazza Ghiaia"
+ },
+ {
+  "id": "poi-586-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-586-scheda",
+  "testo": "Fermata Piazza Ghiaia."
+ },
+ {
+  "id": "poi-587-nome",
+  "testo": "Fermata Viale Mentana"
+ },
+ {
+  "id": "poi-587-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-587-scheda",
+  "testo": "Fermata Viale Mentana."
+ },
+ {
+  "id": "poi-588-nome",
+  "testo": "Fermata Piazzale Sicilia"
+ },
+ {
+  "id": "poi-588-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-588-scheda",
+  "testo": "Fermata Piazzale Sicilia."
+ },
+ {
+  "id": "poi-589-nome",
+  "testo": "Fermata via Abruzzi"
+ },
+ {
+  "id": "poi-589-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-589-scheda",
+  "testo": "Fermata via Abruzzi."
+ },
+ {
+  "id": "poi-590-nome",
+  "testo": "Fermata Via Venezia (Via Verona)"
+ },
+ {
+  "id": "poi-590-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-590-scheda",
+  "testo": "Fermata Via Venezia (Via Verona)."
+ },
+ {
+  "id": "poi-591-nome",
+  "testo": "Fermata Via Venezia Via Paradigna"
+ },
+ {
+  "id": "poi-591-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-591-scheda",
+  "testo": "Fermata Via Venezia Via Paradigna."
+ },
+ {
+  "id": "poi-592-nome",
+  "testo": "Fermata Via Venezia Madonnina"
+ },
+ {
+  "id": "poi-592-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-592-scheda",
+  "testo": "Fermata Via Venezia Madonnina."
+ },
+ {
+  "id": "poi-593-nome",
+  "testo": "Fermata Ospedale Vecchio"
+ },
+ {
+  "id": "poi-593-intro",
+  "testo": "fermata"
+ },
+ {
+  "id": "poi-593-scheda",
+  "testo": "Fermata Ospedale Vecchio."
+ },
+ {
+  "id": "poi-594-nome",
+  "testo": "Biblioteca di Economia"
+ },
+ {
+  "id": "poi-594-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-594-scheda",
+  "testo": "Biblioteca di Economia."
+ },
+ {
+  "id": "poi-595-nome",
+  "testo": "Biblioteca di Psicologia"
+ },
+ {
+  "id": "poi-595-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-595-scheda",
+  "testo": "Biblioteca di Psicologia."
+ },
+ {
+  "id": "poi-596-nome",
+  "testo": "Biblioteca centrale di Giurisprudenza dell'Università degli studi di Parma"
+ },
+ {
+  "id": "poi-596-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-596-scheda",
+  "testo": "Biblioteca centrale di Giurisprudenza dell'Università degli studi di Parma."
+ },
+ {
+  "id": "poi-597-nome",
+  "testo": "Biblioteca Umanistica dei Paolotti"
+ },
+ {
+  "id": "poi-597-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-597-scheda",
+  "testo": "Biblioteca Umanistica dei Paolotti."
+ },
+ {
+  "id": "poi-598-nome",
+  "testo": "Biblioteca di Lingue e letterature straniere Pier Giorgio Negro dell'Università degli studi di Parma"
+ },
+ {
+  "id": "poi-598-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-598-scheda",
+  "testo": "Biblioteca di Lingue e letterature straniere Pier Giorgio Negro dell'Università degli studi di Parma."
+ },
+ {
+  "id": "poi-599-nome",
+  "testo": "Biblioteca delle Arti e dello Spettacolo"
+ },
+ {
+  "id": "poi-599-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-599-scheda",
+  "testo": "Biblioteca delle Arti e dello Spettacolo."
+ },
+ {
+  "id": "poi-600-nome",
+  "testo": "Supermercato Esselunga"
+ },
+ {
+  "id": "poi-600-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-600-scheda",
+  "testo": "Supermercato Esselunga."
+ },
+ {
+  "id": "poi-601-nome",
+  "testo": "Banca Deutsche Bank"
+ },
+ {
+  "id": "poi-601-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-601-scheda",
+  "testo": "Banca Deutsche Bank."
+ },
+ {
+  "id": "poi-602-nome",
+  "testo": "Banca Mediobanca"
+ },
+ {
+  "id": "poi-602-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-602-scheda",
+  "testo": "Banca Mediobanca."
+ },
+ {
+  "id": "poi-603-nome",
+  "testo": "Banca IBL Banca"
+ },
+ {
+  "id": "poi-603-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-603-scheda",
+  "testo": "Banca IBL Banca."
+ },
+ {
+  "id": "poi-604-nome",
+  "testo": "Banca Valdabbina"
+ },
+ {
+  "id": "poi-604-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-604-scheda",
+  "testo": "Banca Valdabbina."
+ },
+ {
+  "id": "poi-605-nome",
+  "testo": "Ufficio postale poste italiane"
+ },
+ {
+  "id": "poi-605-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-605-scheda",
+  "testo": "Ufficio postale poste italiane."
+ },
+ {
+  "id": "poi-606-nome",
+  "testo": "Farmacia Medi-Market"
+ },
+ {
+  "id": "poi-606-intro",
+  "testo": "farmacia"
+ },
+ {
   "id": "poi-606-scheda",
-  "testo": "Fermata Piazza Vittoria."
+  "testo": "Farmacia Medi-Market."
  },
  {
   "id": "poi-607-nome",
-  "testo": "Alimentari Gennari"
+  "testo": "Farmacia Maria Luigia"
  },
  {
   "id": "poi-607-intro",
-  "testo": "alimentari"
+  "testo": "farmacia"
  },
  {
   "id": "poi-607-scheda",
-  "testo": "Alimentari Gennari."
+  "testo": "Farmacia Maria Luigia."
  },
  {
   "id": "poi-608-nome",
-  "testo": "Alimentari Halal"
- },
- {
-  "id": "poi-608-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-608-scheda",
-  "testo": "Alimentari Halal."
- },
- {
-  "id": "poi-609-nome",
-  "testo": "Banca Crédit Agricole"
- },
- {
-  "id": "poi-609-intro",
-  "testo": "banca"
- },
- {
-  "id": "poi-609-scheda",
-  "testo": "Banca Crédit Agricole."
- },
- {
-  "id": "poi-610-nome",
   "testo": "Banca Unipol"
  },
  {
-  "id": "poi-610-intro",
+  "id": "poi-608-intro",
   "testo": "banca"
  },
  {
-  "id": "poi-610-scheda",
+  "id": "poi-608-scheda",
   "testo": "Banca Unipol."
  },
  {
+  "id": "poi-609-nome",
+  "testo": "biblioteca Umberto Balestrazzi"
+ },
+ {
+  "id": "poi-609-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-609-scheda",
+  "testo": "biblioteca Umberto Balestrazzi."
+ },
+ {
+  "id": "poi-610-nome",
+  "testo": "Supermercato Carrefour express"
+ },
+ {
+  "id": "poi-610-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-610-scheda",
+  "testo": "Supermercato Carrefour express."
+ },
+ {
   "id": "poi-611-nome",
-  "testo": "Banca Bper Banca"
+  "testo": "Banca Pind Parma"
  },
  {
   "id": "poi-611-intro",
@@ -7985,275 +8085,299 @@
  },
  {
   "id": "poi-611-scheda",
-  "testo": "Banca Bper Banca."
+  "testo": "Banca Pind Parma."
  },
  {
   "id": "poi-612-nome",
-  "testo": "Supermercato Despar"
+  "testo": "Biblioteca Guanda"
  },
  {
   "id": "poi-612-intro",
-  "testo": "supermercato"
+  "testo": "biblioteca"
  },
  {
   "id": "poi-612-scheda",
-  "testo": "Supermercato Despar."
+  "testo": "Biblioteca Guanda."
  },
  {
   "id": "poi-613-nome",
-  "testo": "Supermercato Tigre"
+  "testo": "Teatro Regio"
  },
  {
   "id": "poi-613-intro",
-  "testo": "supermercato"
+  "testo": "teatro"
  },
  {
   "id": "poi-613-scheda",
-  "testo": "Supermercato Tigre."
+  "testo": "Teatro Regio."
  },
  {
   "id": "poi-614-nome",
-  "testo": "Supermercato Coop"
+  "testo": "Duomo di Spoleto"
  },
  {
   "id": "poi-614-intro",
-  "testo": "supermercato"
+  "testo": "cattedrale del XII sec., portico del 1491"
  },
  {
   "id": "poi-614-scheda",
-  "testo": "Supermercato Coop."
+  "testo": "La facciata romanica è chiusa davanti da un portico rinascimentale a cinque arcate, aggiunto nel 1491: due epoche appoggiate l'una all'altra senza nascondersi. In alto il mosaico dorato del 1207, firmato dal maestro Solsterno, con il Cristo benedicente fra la Vergine e san Giovanni. Il campanile è fatto di pezzi romani di spoglio."
+ },
+ {
+  "id": "poi-614-dentro",
+  "testo": "L'abside affrescata da Filippo Lippi con le Storie della Vergine, l'ultima opera sua: morì a Spoleto nel 1469 e la tomba è nel transetto, disegnata dal figlio Filippino."
  },
  {
   "id": "poi-615-nome",
-  "testo": "Biblioteca Archivio di Stato"
+  "testo": "Rocca Albornoziana"
  },
  {
   "id": "poi-615-intro",
-  "testo": "biblioteca"
+  "testo": "fortezza del 1359-1370"
  },
  {
   "id": "poi-615-scheda",
-  "testo": "Biblioteca Archivio di Stato."
+  "testo": "La costruì Matteo Gattapone per il cardinale Albornoz: un rettangolo con sei torri attorno a due cortili, quello delle Armi per i soldati e quello d'Onore per il governatore. Dal 1817 al 1982 è stata carcere, e questo l'ha conservata intera."
+ },
+ {
+  "id": "poi-615-dentro",
+  "testo": "Il Cortile d'Onore con le logge affrescate, e dal camminamento la vista su tutta la valle."
  },
  {
   "id": "poi-616-nome",
-  "testo": "Ufficio postale Spoleto 1"
+  "testo": "Ponte delle Torri"
  },
  {
   "id": "poi-616-intro",
-  "testo": "ufficio postale"
+  "testo": "ponte-acquedotto del XIII-XIV sec."
  },
  {
   "id": "poi-616-scheda",
-  "testo": "Ufficio postale Spoleto 1."
+  "testo": "Ottanta metri d'altezza e dieci arcate ogivali a scavalcare il Tessino: è insieme ponte e acquedotto, costruito forse su strutture romane. Attribuito al Gattapone, collega la Rocca al Monteluco. Goethe venne qui e scrisse che era architettura che serve, non che decora."
+ },
+ {
+  "id": "poi-616-dentro",
+  "testo": "Le due torri alle estremità, da cui prende il nome, e il condotto dell'acqua che corre dentro la struttura."
  },
  {
   "id": "poi-617-nome",
-  "testo": "Farmacia comunale 1"
+  "testo": "Arco di Druso e Germanico"
  },
  {
   "id": "poi-617-intro",
-  "testo": "farmacia"
+  "testo": "arco romano del 23 d.C."
  },
  {
   "id": "poi-617-scheda",
-  "testo": "Farmacia comunale 1."
+  "testo": "L'arco che segnava l'ingresso al foro della Spoletium romana, dedicato ai figli di Tiberio. Il piano antico sta quattro metri sotto quello di oggi: si vede la città che si è alzata su sé stessa."
  },
  {
   "id": "poi-618-nome",
-  "testo": "Farmacia Zingarini"
+  "testo": "Teatro romano"
  },
  {
   "id": "poi-618-intro",
-  "testo": "farmacia"
+  "testo": "teatro romano del I sec. d.C."
  },
  {
   "id": "poi-618-scheda",
-  "testo": "Farmacia Zingarini."
+  "testo": "Riportato alla luce nel Novecento sotto le case: la cavea è stata ricostruita, l'orchestra conserva ancora il pavimento in opus sectile di marmi colorati. Si usa ancora, d'estate, per il Festival."
  },
  {
   "id": "poi-619-nome",
-  "testo": "Biblioteca Montagne di libri"
+  "testo": "Basilica di San Salvatore"
  },
  {
   "id": "poi-619-intro",
-  "testo": "biblioteca"
+  "testo": "basilica del IV-V sec."
  },
  {
   "id": "poi-619-scheda",
-  "testo": "Biblioteca Montagne di libri."
+  "testo": "Una delle chiese paleocristiane più antiche rimaste in piedi, patrimonio Unesco fra i Longobardi in Italia. La facciata ha tre portali e tre finestre con cornici scolpite prese da edifici romani, e dentro le colonne di spoglio reggono una trabeazione classica: una chiesa cristiana costruita con il vocabolario dei templi."
+ },
+ {
+  "id": "poi-619-dentro",
+  "testo": "Il presbiterio con le colonne e la trabeazione antica rimontate, e le cornici di marmo riusate nella facciata."
  },
  {
   "id": "poi-620-nome",
-  "testo": "Alimentari I Frutti di Spoleto"
+  "testo": "Chiesa di Sant'Eufemia"
  },
  {
   "id": "poi-620-intro",
-  "testo": "alimentari"
+  "testo": "chiesa del XII sec."
  },
  {
   "id": "poi-620-scheda",
-  "testo": "Alimentari I Frutti di Spoleto."
+  "testo": "Romanica, dentro il cortile del palazzo arcivescovile: tre navate su colonne diverse l'una dall'altra, tutte di recupero. L'unica cosa rara è il matroneo, la galleria sopra le navate laterali per le donne — in Umbria non ce ne sono altri."
+ },
+ {
+  "id": "poi-620-dentro",
+  "testo": "Il matroneo, e i capitelli: ognuno è diverso, nessuno è stato fatto per questa chiesa."
  },
  {
   "id": "poi-621-nome",
-  "testo": "Banca Monte dei Paschi di Siena"
+  "testo": "Basilica di San Ponziano"
  },
  {
   "id": "poi-621-intro",
-  "testo": "banca"
+  "testo": "basilica del XII sec."
  },
  {
   "id": "poi-621-scheda",
-  "testo": "Banca Monte dei Paschi di Siena."
+  "testo": "Fuori le mura, sul luogo della sepoltura del patrono. La facciata romanica è semplice, con il rosone e due leoni; sotto c'è la cripta, con le colonne romane di spoglio e gli affreschi."
  },
  {
   "id": "poi-622-nome",
-  "testo": "Banca di credito cooperativo"
+  "testo": "Casa romana"
  },
  {
   "id": "poi-622-intro",
-  "testo": "banca"
+  "testo": "casa romana del I sec. d.C."
  },
  {
   "id": "poi-622-scheda",
-  "testo": "Banca di credito cooperativo."
+  "testo": "Una domus con l'atrio tuscanico, l'impluvio di marmo al centro e i pavimenti a mosaico bianco e nero: la casa di una famiglia ricca, forse quella di Vespasia Polla, madre di Vespasiano. Sta sotto il palazzo comunale, cinque metri sotto la strada."
+ },
+ {
+  "id": "poi-622-dentro",
+  "testo": "I mosaici geometrici e l'impluvio: si cammina sul piano di casa di duemila anni fa."
  },
  {
   "id": "poi-623-nome",
-  "testo": "Ufficio postale Mail Express"
+  "testo": "Palazzo Comunale"
  },
  {
   "id": "poi-623-intro",
-  "testo": "ufficio postale"
+  "testo": "palazzo del dal XIII sec."
  },
  {
   "id": "poi-623-scheda",
-  "testo": "Ufficio postale Mail Express."
+  "testo": "Il municipio, rifatto alla fine del Settecento, con la torre medievale rimasta. Sotto ci sta la casa romana, e dentro la Pinacoteca."
  },
  {
   "id": "poi-624-nome",
-  "testo": "Biblioteca Carandente"
+  "testo": "Anfiteatro romano"
  },
  {
   "id": "poi-624-intro",
-  "testo": "biblioteca"
+  "testo": "anfiteatro romano del II sec. d.C."
  },
  {
   "id": "poi-624-scheda",
-  "testo": "Biblioteca Carandente."
+  "testo": "Uno dei più grandi dell'Umbria, inglobato nelle costruzioni successive: le arcate si riconoscono nei muri dei fabbricati militari e del monastero che ci si sono appoggiati sopra."
  },
  {
   "id": "poi-625-nome",
-  "testo": "Banca Banco Desio"
+  "testo": "Torre dell'Olio"
  },
  {
   "id": "poi-625-intro",
-  "testo": "banca"
+  "testo": "torre del XIII sec."
  },
  {
   "id": "poi-625-scheda",
-  "testo": "Banca Banco Desio."
+  "testo": "Quarantacinque metri, una delle torri gentilizie rimaste: il nome viene dall'olio bollente che si rovesciava dalle caditoie su chi tentava di forzare la porta sottostante, Porta Fuga."
  },
  {
   "id": "poi-626-nome",
-  "testo": "Biblioteca Opera biblio"
+  "testo": "Teatro Nuovo Gian Carlo Menotti"
  },
  {
   "id": "poi-626-intro",
-  "testo": "biblioteca"
+  "testo": "teatro del 1864"
  },
  {
   "id": "poi-626-scheda",
-  "testo": "Biblioteca Opera biblio."
+  "testo": "Il teatro all'italiana della città, quattro ordini di palchi; dal 1958 è la sala principale del Festival dei Due Mondi, che Menotti fondò qui."
  },
  {
   "id": "poi-627-nome",
-  "testo": "Supermercato MD"
+  "testo": "Stazione Spoleto"
  },
  {
   "id": "poi-627-intro",
-  "testo": "supermercato"
+  "testo": "stazione"
  },
  {
   "id": "poi-627-scheda",
-  "testo": "Supermercato MD."
+  "testo": "Stazione Spoleto."
  },
  {
   "id": "poi-628-nome",
-  "testo": "Teatro Caio Melisso"
+  "testo": "Farmacia Premiata farmacia Amici"
  },
  {
   "id": "poi-628-intro",
-  "testo": "teatro"
- },
- {
-  "id": "poi-628-scheda",
-  "testo": "Teatro Caio Melisso."
- },
- {
-  "id": "poi-629-nome",
-  "testo": "Alimentari Salumeria"
- },
- {
-  "id": "poi-629-intro",
-  "testo": "alimentari"
- },
- {
-  "id": "poi-629-scheda",
-  "testo": "Alimentari Salumeria."
- },
- {
-  "id": "poi-630-nome",
-  "testo": "Farmacia Marchese"
- },
- {
-  "id": "poi-630-intro",
   "testo": "farmacia"
  },
  {
+  "id": "poi-628-scheda",
+  "testo": "Farmacia Premiata farmacia Amici."
+ },
+ {
+  "id": "poi-629-nome",
+  "testo": "Banca Intesa Sanpaolo"
+ },
+ {
+  "id": "poi-629-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-629-scheda",
+  "testo": "Banca Intesa Sanpaolo."
+ },
+ {
+  "id": "poi-630-nome",
+  "testo": "Supermercato Conad"
+ },
+ {
+  "id": "poi-630-intro",
+  "testo": "supermercato"
+ },
+ {
   "id": "poi-630-scheda",
-  "testo": "Farmacia Marchese."
+  "testo": "Supermercato Conad."
  },
  {
   "id": "poi-631-nome",
-  "testo": "Macelleria Burganti"
+  "testo": "Banca BNL"
  },
  {
   "id": "poi-631-intro",
-  "testo": "macelleria"
+  "testo": "banca"
  },
  {
   "id": "poi-631-scheda",
-  "testo": "Macelleria Burganti."
+  "testo": "Banca BNL."
  },
  {
   "id": "poi-632-nome",
-  "testo": "Teatro Auditorium della Stella"
+  "testo": "Biblioteca comunale Giosuè Carducci"
  },
  {
   "id": "poi-632-intro",
-  "testo": "teatro"
+  "testo": "biblioteca"
  },
  {
   "id": "poi-632-scheda",
-  "testo": "Teatro Auditorium della Stella."
+  "testo": "Biblioteca comunale Giosuè Carducci."
  },
  {
   "id": "poi-633-nome",
-  "testo": "Alimentari Ali Market"
+  "testo": "Farmacia Betti dr. Vito"
  },
  {
   "id": "poi-633-intro",
-  "testo": "alimentari"
+  "testo": "farmacia"
  },
  {
   "id": "poi-633-scheda",
-  "testo": "Alimentari Ali Market."
+  "testo": "Farmacia Betti dr. Vito."
  },
  {
   "id": "poi-634-nome",
-  "testo": "Teatro Chiesa di san Simone"
+  "testo": "Teatro delle 6 Luca Ronconi"
  },
  {
   "id": "poi-634-intro",
@@ -8261,222 +8385,594 @@
  },
  {
   "id": "poi-634-scheda",
-  "testo": "Teatro Chiesa di san Simone."
+  "testo": "Teatro delle 6 Luca Ronconi."
  },
  {
   "id": "poi-635-nome",
-  "testo": "Farmacia Scoccianti"
+  "testo": "Teatro Cantiere Oberdan"
  },
  {
   "id": "poi-635-intro",
-  "testo": "farmacia"
+  "testo": "teatro"
  },
  {
   "id": "poi-635-scheda",
-  "testo": "Farmacia Scoccianti."
+  "testo": "Teatro Cantiere Oberdan."
  },
  {
   "id": "poi-636-nome",
-  "testo": "Chiesa di San Pietro extra moenia"
+  "testo": "Teatro di Villa Redenta"
  },
  {
   "id": "poi-636-intro",
-  "testo": "chiesa"
+  "testo": "teatro"
  },
  {
   "id": "poi-636-scheda",
-  "testo": "Chiesa di San Pietro extra moenia, nel centro di Spoleto."
+  "testo": "Teatro di Villa Redenta."
  },
  {
   "id": "poi-637-nome",
-  "testo": "Chiesa di San Domenico"
+  "testo": "Fermata Piazza Vittoria"
  },
  {
   "id": "poi-637-intro",
-  "testo": "chiesa"
+  "testo": "fermata"
  },
  {
   "id": "poi-637-scheda",
-  "testo": "Chiesa di San Domenico, nel centro di Spoleto."
+  "testo": "Fermata Piazza Vittoria."
  },
  {
   "id": "poi-638-nome",
-  "testo": "Basilica di San Gregorio Maggiore"
+  "testo": "Alimentari Gennari"
  },
  {
   "id": "poi-638-intro",
-  "testo": "chiesa"
+  "testo": "alimentari"
  },
  {
   "id": "poi-638-scheda",
-  "testo": "Basilica di San Gregorio Maggiore, nel centro di Spoleto."
+  "testo": "Alimentari Gennari."
  },
  {
   "id": "poi-639-nome",
-  "testo": "Chiesa di San Filippo Neri"
+  "testo": "Alimentari Halal"
  },
  {
   "id": "poi-639-intro",
-  "testo": "chiesa"
+  "testo": "alimentari"
  },
  {
   "id": "poi-639-scheda",
-  "testo": "Chiesa di San Filippo Neri, nel centro di Spoleto."
+  "testo": "Alimentari Halal."
  },
  {
   "id": "poi-640-nome",
-  "testo": "Chiesa Madonna di Loreto"
+  "testo": "Banca Crédit Agricole"
  },
  {
   "id": "poi-640-intro",
-  "testo": "chiesa"
+  "testo": "banca"
  },
  {
   "id": "poi-640-scheda",
-  "testo": "Chiesa Madonna di Loreto, nel centro di Spoleto."
+  "testo": "Banca Crédit Agricole."
  },
  {
   "id": "poi-641-nome",
-  "testo": "San Paolo \"inter vineas\""
+  "testo": "Banca Unipol"
  },
  {
   "id": "poi-641-intro",
-  "testo": "chiesa"
+  "testo": "banca"
  },
  {
   "id": "poi-641-scheda",
-  "testo": "San Paolo \"inter vineas\", nel centro di Spoleto."
+  "testo": "Banca Unipol."
  },
  {
   "id": "poi-642-nome",
-  "testo": "San Giuliano"
+  "testo": "Banca Bper Banca"
  },
  {
   "id": "poi-642-intro",
-  "testo": "chiesa"
+  "testo": "banca"
  },
  {
   "id": "poi-642-scheda",
-  "testo": "San Giuliano, nel centro di Spoleto."
+  "testo": "Banca Bper Banca."
  },
  {
   "id": "poi-643-nome",
-  "testo": "Chiesa di Santa Rita"
+  "testo": "Supermercato Despar"
  },
  {
   "id": "poi-643-intro",
-  "testo": "chiesa"
+  "testo": "supermercato"
  },
  {
   "id": "poi-643-scheda",
-  "testo": "Chiesa di Santa Rita, nel centro di Spoleto."
+  "testo": "Supermercato Despar."
  },
  {
   "id": "poi-644-nome",
-  "testo": "San Giuseppe"
+  "testo": "Supermercato Tigre"
  },
  {
   "id": "poi-644-intro",
-  "testo": "chiesa"
+  "testo": "supermercato"
  },
  {
   "id": "poi-644-scheda",
-  "testo": "San Giuseppe, nel centro di Spoleto."
+  "testo": "Supermercato Tigre."
  },
  {
   "id": "poi-645-nome",
-  "testo": "Santa Maria delle Grazie"
+  "testo": "Supermercato Coop"
  },
  {
   "id": "poi-645-intro",
-  "testo": "chiesa"
+  "testo": "supermercato"
  },
  {
   "id": "poi-645-scheda",
-  "testo": "Santa Maria delle Grazie, nel centro di Spoleto."
+  "testo": "Supermercato Coop."
  },
  {
   "id": "poi-646-nome",
-  "testo": "San Rocco"
+  "testo": "Biblioteca Archivio di Stato"
  },
  {
   "id": "poi-646-intro",
-  "testo": "chiesa"
+  "testo": "biblioteca"
  },
  {
   "id": "poi-646-scheda",
-  "testo": "San Rocco, nel centro di Spoleto."
+  "testo": "Biblioteca Archivio di Stato."
  },
  {
   "id": "poi-647-nome",
-  "testo": "San Giovanni Battista"
+  "testo": "Ufficio postale Spoleto 1"
  },
  {
   "id": "poi-647-intro",
-  "testo": "chiesa"
+  "testo": "ufficio postale"
  },
  {
   "id": "poi-647-scheda",
-  "testo": "San Giovanni Battista, nel centro di Spoleto."
+  "testo": "Ufficio postale Spoleto 1."
  },
  {
   "id": "poi-648-nome",
-  "testo": "Chiesa di Sant'Aló"
+  "testo": "Farmacia comunale 1"
  },
  {
   "id": "poi-648-intro",
-  "testo": "chiesa"
+  "testo": "farmacia"
  },
  {
   "id": "poi-648-scheda",
-  "testo": "Chiesa di Sant'Aló, nel centro di Spoleto."
+  "testo": "Farmacia comunale 1."
  },
  {
   "id": "poi-649-nome",
-  "testo": "Chiesa della Beata vergine Maria immacolata di Lourdes"
+  "testo": "Farmacia Zingarini"
  },
  {
   "id": "poi-649-intro",
-  "testo": "chiesa"
+  "testo": "farmacia"
  },
  {
   "id": "poi-649-scheda",
-  "testo": "Chiesa della Beata vergine Maria immacolata di Lourdes, nel centro di Spoleto."
+  "testo": "Farmacia Zingarini."
  },
  {
   "id": "poi-650-nome",
-  "testo": "Chiesa Cappella di S. Caterina"
+  "testo": "Biblioteca Montagne di libri"
  },
  {
   "id": "poi-650-intro",
-  "testo": "chiesa"
+  "testo": "biblioteca"
  },
  {
   "id": "poi-650-scheda",
-  "testo": "Chiesa Cappella di S. Caterina, nel centro di Spoleto."
+  "testo": "Biblioteca Montagne di libri."
  },
  {
   "id": "poi-651-nome",
-  "testo": "Sant'Omobono"
+  "testo": "Alimentari I Frutti di Spoleto"
  },
  {
   "id": "poi-651-intro",
-  "testo": "chiesa"
+  "testo": "alimentari"
  },
  {
   "id": "poi-651-scheda",
-  "testo": "Sant'Omobono, nel centro di Spoleto."
+  "testo": "Alimentari I Frutti di Spoleto."
  },
  {
   "id": "poi-652-nome",
-  "testo": "Chiesa di Santa Maria delle Grazie"
+  "testo": "Banca Monte dei Paschi di Siena"
  },
  {
   "id": "poi-652-intro",
-  "testo": "chiesa"
+  "testo": "banca"
  },
  {
   "id": "poi-652-scheda",
+  "testo": "Banca Monte dei Paschi di Siena."
+ },
+ {
+  "id": "poi-653-nome",
+  "testo": "Banca di credito cooperativo"
+ },
+ {
+  "id": "poi-653-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-653-scheda",
+  "testo": "Banca di credito cooperativo."
+ },
+ {
+  "id": "poi-654-nome",
+  "testo": "Ufficio postale Mail Express"
+ },
+ {
+  "id": "poi-654-intro",
+  "testo": "ufficio postale"
+ },
+ {
+  "id": "poi-654-scheda",
+  "testo": "Ufficio postale Mail Express."
+ },
+ {
+  "id": "poi-655-nome",
+  "testo": "Biblioteca Carandente"
+ },
+ {
+  "id": "poi-655-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-655-scheda",
+  "testo": "Biblioteca Carandente."
+ },
+ {
+  "id": "poi-656-nome",
+  "testo": "Banca Banco Desio"
+ },
+ {
+  "id": "poi-656-intro",
+  "testo": "banca"
+ },
+ {
+  "id": "poi-656-scheda",
+  "testo": "Banca Banco Desio."
+ },
+ {
+  "id": "poi-657-nome",
+  "testo": "Biblioteca Opera biblio"
+ },
+ {
+  "id": "poi-657-intro",
+  "testo": "biblioteca"
+ },
+ {
+  "id": "poi-657-scheda",
+  "testo": "Biblioteca Opera biblio."
+ },
+ {
+  "id": "poi-658-nome",
+  "testo": "Supermercato MD"
+ },
+ {
+  "id": "poi-658-intro",
+  "testo": "supermercato"
+ },
+ {
+  "id": "poi-658-scheda",
+  "testo": "Supermercato MD."
+ },
+ {
+  "id": "poi-659-nome",
+  "testo": "Teatro Caio Melisso"
+ },
+ {
+  "id": "poi-659-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-659-scheda",
+  "testo": "Teatro Caio Melisso."
+ },
+ {
+  "id": "poi-660-nome",
+  "testo": "Alimentari Salumeria"
+ },
+ {
+  "id": "poi-660-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-660-scheda",
+  "testo": "Alimentari Salumeria."
+ },
+ {
+  "id": "poi-661-nome",
+  "testo": "Farmacia Marchese"
+ },
+ {
+  "id": "poi-661-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-661-scheda",
+  "testo": "Farmacia Marchese."
+ },
+ {
+  "id": "poi-662-nome",
+  "testo": "Macelleria Burganti"
+ },
+ {
+  "id": "poi-662-intro",
+  "testo": "macelleria"
+ },
+ {
+  "id": "poi-662-scheda",
+  "testo": "Macelleria Burganti."
+ },
+ {
+  "id": "poi-663-nome",
+  "testo": "Teatro Auditorium della Stella"
+ },
+ {
+  "id": "poi-663-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-663-scheda",
+  "testo": "Teatro Auditorium della Stella."
+ },
+ {
+  "id": "poi-664-nome",
+  "testo": "Alimentari Ali Market"
+ },
+ {
+  "id": "poi-664-intro",
+  "testo": "alimentari"
+ },
+ {
+  "id": "poi-664-scheda",
+  "testo": "Alimentari Ali Market."
+ },
+ {
+  "id": "poi-665-nome",
+  "testo": "Teatro Chiesa di san Simone"
+ },
+ {
+  "id": "poi-665-intro",
+  "testo": "teatro"
+ },
+ {
+  "id": "poi-665-scheda",
+  "testo": "Teatro Chiesa di san Simone."
+ },
+ {
+  "id": "poi-666-nome",
+  "testo": "Farmacia Scoccianti"
+ },
+ {
+  "id": "poi-666-intro",
+  "testo": "farmacia"
+ },
+ {
+  "id": "poi-666-scheda",
+  "testo": "Farmacia Scoccianti."
+ },
+ {
+  "id": "poi-667-nome",
+  "testo": "Chiesa di San Pietro extra moenia"
+ },
+ {
+  "id": "poi-667-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-667-scheda",
+  "testo": "Chiesa di San Pietro extra moenia, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-668-nome",
+  "testo": "Chiesa di San Domenico"
+ },
+ {
+  "id": "poi-668-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-668-scheda",
+  "testo": "Chiesa di San Domenico, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-669-nome",
+  "testo": "Basilica di San Gregorio Maggiore"
+ },
+ {
+  "id": "poi-669-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-669-scheda",
+  "testo": "Basilica di San Gregorio Maggiore, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-670-nome",
+  "testo": "Chiesa di San Filippo Neri"
+ },
+ {
+  "id": "poi-670-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-670-scheda",
+  "testo": "Chiesa di San Filippo Neri, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-671-nome",
+  "testo": "Chiesa Madonna di Loreto"
+ },
+ {
+  "id": "poi-671-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-671-scheda",
+  "testo": "Chiesa Madonna di Loreto, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-672-nome",
+  "testo": "San Paolo \"inter vineas\""
+ },
+ {
+  "id": "poi-672-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-672-scheda",
+  "testo": "San Paolo \"inter vineas\", nel centro di Spoleto."
+ },
+ {
+  "id": "poi-673-nome",
+  "testo": "San Giuliano"
+ },
+ {
+  "id": "poi-673-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-673-scheda",
+  "testo": "San Giuliano, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-674-nome",
+  "testo": "Chiesa di Santa Rita"
+ },
+ {
+  "id": "poi-674-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-674-scheda",
+  "testo": "Chiesa di Santa Rita, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-675-nome",
+  "testo": "San Giuseppe"
+ },
+ {
+  "id": "poi-675-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-675-scheda",
+  "testo": "San Giuseppe, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-676-nome",
+  "testo": "Santa Maria delle Grazie"
+ },
+ {
+  "id": "poi-676-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-676-scheda",
+  "testo": "Santa Maria delle Grazie, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-677-nome",
+  "testo": "San Rocco"
+ },
+ {
+  "id": "poi-677-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-677-scheda",
+  "testo": "San Rocco, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-678-nome",
+  "testo": "San Giovanni Battista"
+ },
+ {
+  "id": "poi-678-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-678-scheda",
+  "testo": "San Giovanni Battista, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-679-nome",
+  "testo": "Chiesa di Sant'Aló"
+ },
+ {
+  "id": "poi-679-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-679-scheda",
+  "testo": "Chiesa di Sant'Aló, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-680-nome",
+  "testo": "Chiesa della Beata vergine Maria immacolata di Lourdes"
+ },
+ {
+  "id": "poi-680-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-680-scheda",
+  "testo": "Chiesa della Beata vergine Maria immacolata di Lourdes, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-681-nome",
+  "testo": "Chiesa Cappella di S. Caterina"
+ },
+ {
+  "id": "poi-681-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-681-scheda",
+  "testo": "Chiesa Cappella di S. Caterina, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-682-nome",
+  "testo": "Sant'Omobono"
+ },
+ {
+  "id": "poi-682-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-682-scheda",
+  "testo": "Sant'Omobono, nel centro di Spoleto."
+ },
+ {
+  "id": "poi-683-nome",
+  "testo": "Chiesa di Santa Maria delle Grazie"
+ },
+ {
+  "id": "poi-683-intro",
+  "testo": "chiesa"
+ },
+ {
+  "id": "poi-683-scheda",
   "testo": "Chiesa di Santa Maria delle Grazie, nel centro di Spoleto."
  },
  {
@@ -8574,6 +9070,26 @@
  {
   "id": "percorso-napoli-greca",
   "testo": "Napoli — la città sotto: teatro romano, San Lorenzo, Museo"
+ },
+ {
+  "id": "percorso-napoli-caravaggio",
+  "testo": "Napoli — Caravaggio: le due tele rimaste in città"
+ },
+ {
+  "id": "percorso-napoli-decumano",
+  "testo": "Napoli — le chiese del decumano maggiore"
+ },
+ {
+  "id": "percorso-napoli-piazze",
+  "testo": "Napoli — le piazze: da Dante al Plebiscito"
+ },
+ {
+  "id": "percorso-napoli-rinascimento",
+  "testo": "Napoli — il Rinascimento aragonese: Porta Capuana, Carbonara, la Nova"
+ },
+ {
+  "id": "percorso-napoli-sanita",
+  "testo": "Napoli — la Sanità: le scale di Sanfelice e la cupola di maioliche"
  },
  {
   "id": "percorso-roma-foro-boario",
@@ -9042,5 +9558,21 @@
  {
   "id": "frase-voce-attiva",
   "testo": "Modalità voce attiva. Ti annuncio ogni luogo che passi, da che parte e a quanti metri."
+ },
+ {
+  "id": "frase-parto-libero",
+  "testo": "Comincio col cammino libero. Quando vuoi, dimmi: percorsi."
+ },
+ {
+  "id": "frase-bentornato",
+  "testo": "Guida vocale attiva. Ti dico quello che passi, da che parte e a quanti metri."
+ },
+ {
+  "id": "frase-apro-taxi",
+  "testo": "Apro il taxi con la tua posizione. La corsa la confermi tu."
+ },
+ {
+  "id": "frase-chiamo-112",
+  "testo": "Chiamo il 112."
  }
 ]

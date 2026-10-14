@@ -182,6 +182,14 @@
   .porta-voce{background:linear-gradient(180deg,#1A3540 0%,#16272F 100%)}
   .porta-occhi{background:linear-gradient(180deg,#24272C 0%,#1C1F24 100%)}
   .porta-scelta b{letter-spacing:.005em}
+  .grande{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--neon);
+    border:1px solid rgba(91,227,255,.35);border-radius:999px;padding:2px 8px;margin-left:8px;white-space:nowrap}
+  /* il ritorno diretto: un solo bersaglio, grande quanto la schermata */
+  .porta-torna{flex:1 1 auto;min-height:46vh}
+  .porta-cambia{
+    background:none;border:1px solid rgba(255,255,255,.14);color:var(--muted);
+    border-radius:14px;padding:12px 18px;font-size:16px;align-self:center;
+  }
 
 
   /* ---------- aspetto strumentale: pannelli di vetro, luce fredda ---------- */
@@ -366,6 +374,11 @@
     <b>Mostrami la città</b>
     <span>Mappa, schede e percorsi da guardare.</span>
   </button>
+  <button class="porta-scelta porta-voce porta-torna" id="scelta-torna" hidden>
+    <b>Tocca per cominciare</b>
+    <span>Riprendo come l'ultima volta: guida vocale, tutto parlato.</span>
+  </button>
+  <button class="porta-cambia" id="porta-cambia" hidden>Cambia modo</button>
   <div id="porta-modo" hidden>
     <button class="porta-scelta porta-voce" id="scelta-libera">
       <b>Cammino libero</b>
@@ -1285,6 +1298,99 @@
     {n:"Teatro romano di Neapolis",lat:40.85231,lon:14.25652,t:"teatro romano",y:"I sec. d.C.",k:1,v:0,
      d:"Il teatro dove cantò Nerone non è scomparso: è dentro le case di vico Cinquesanti. I muri dei palazzi poggiano sulle gradinate e i corridoi anulari sono diventati cantine e androni; si entra da un portone e ci si trova nella cavea.",
      i:"Gli archi romani che spuntano dentro i cortili, usati come muri di casa."},
+    {n:"Basilica di Santa Chiara",lat:40.84688,lon:14.25287,t:"basilica",y:"1310-1340",k:1,v:0,
+     d:"Gotico angioino portato all'estremo: una navata sola, lunga più di ottanta metri, senza transetto e senza colonne, con i finestroni altissimi e la facciata a capanna preceduta dal portico. Dentro ci fu, dal Settecento, un rivestimento barocco: le bombe del 1943 lo bruciarono, e la ricostruzione del 1953 riportò la chiesa alle pietre nude del Trecento. Il salto si legge ancora nelle pareti.",
+     i:"Il rosone della facciata e il campanile tozzo rimasto incompiuto. Dietro, il chiostro delle Clarisse sistemato da Domenico Antonio Vaccaro nel 1739: pilastri e sedili rivestiti di riggiole dipinte da Donato e Giuseppe Massa, con pergolati, paesaggi e scene di campagna."},
+    {n:"Basilica di San Paolo Maggiore",lat:40.85144,lon:14.25683,t:"basilica",y:"1583-1603",k:1,v:0,
+     d:"La chiesa dei Teatini è costruita sopra il tempio dei Dioscuri, e del tempio restano in piedi due colonne corinzie con i capitelli: stavano nel pronao, e oggi reggono il nulla davanti alla facciata, come due testimoni rimasti sul posto. La scalinata a doppia rampa è di Fra Nuvolo.",
+     i:"Le due colonne romane in facciata e i frammenti della trabeazione. Dentro, la sacrestia affrescata da Francesco Solimena fra il 1689 e il 1690: una delle stanze più belle del barocco napoletano."},
+    {n:"Chiesa di San Gregorio Armeno",lat:40.85018,lon:14.25764,t:"chiesa e monastero",y:"1574-1580",k:1,v:0,
+     d:"Il campanile sta a cavallo della strada: un arco che scavalca il vicolo e porta la torre campanaria, perché il monastero stava di là e la chiesa di qua. Dentro è navata unica con cappelle laterali e un soffitto cassettonato tutto dorato, con le tele di Teodoro d'Errico; le monache seguivano la messa dalle cantorie chiuse da gelosie, senza farsi vedere.",
+     i:"L'arco del campanile sopra la strada dei presepi. Il chiostro con la fontana di marmo e le statue di Cristo e la Samaritana."},
+    {n:"Chiesa dei Girolamini",lat:40.85193,lon:14.25848,t:"chiesa",y:"1592-1619, facciata 1780",k:1,v:0,
+     d:"La facciata in marmo bianco e piperno è di Ferdinando Fuga, e chiude in modo solenne il decumano maggiore. Dentro, tre navate su colonne di granito e un soffitto a cassettoni; la chiesa dei padri Oratoriani teneva accanto una delle biblioteche più grandi del Sud, con gli scaffali di legno a due ordini e il ballatoio.",
+     i:"Il contrasto fra il bianco del marmo e il grigio del piperno nella facciata. Il chiostro degli aranci e la quadreria."},
+    {n:"Santa Maria delle Anime del Purgatorio ad Arco",lat:40.85057,lon:14.2557,t:"chiesa",y:"1616-1638",k:1,v:0,
+     d:"Sul sagrato, sulla balaustrata di piperno, stanno teschi di bronzo lucidati da secoli di mani: è la chiesa del culto delle anime pezzentelle, quelle senza nome. La chiesa di sopra è barocca e ordinata; sotto c'è l'ipogeo, dove i napoletani adottavano un cranio e lo curavano in cambio di grazie.",
+     i:"I teschi di bronzo all'ingresso, e sotto, nell'ipogeo, la capuzzella della Principessa con il velo da sposa."},
+    {n:"Cappella Pontano",lat:40.85015,lon:14.25444,t:"cappella",y:"1492",k:1,v:0,
+     d:"Un tempietto rinascimentale piantato nel mezzo del centro gotico: rettangolo semplice, tetto a due falde, muri lisci di piperno. Giovanni Pontano, l'umanista, la fece costruire per la moglie e per sé, e fece incidere sulle pareti esterne le proprie iscrizioni latine, come se la cappella fosse un libro aperto sulla strada.",
+     i:"Le lapidi con le iscrizioni dettate da Pontano, da leggere stando sul marciapiede. Dentro, il pavimento di maioliche del Quattrocento."},
+    {n:"Santa Maria Maggiore alla Pietrasanta",lat:40.85042,lon:14.25443,t:"chiesa",y:"campanile XI sec., chiesa 1653-1667",k:1,v:0,
+     d:"Il campanile accanto alla chiesa è il più antico di Napoli: mattoni dell'XI secolo con dentro, murati, pezzi di marmo romano presi lì intorno. La chiesa invece è di Cosimo Fanzago, a croce greca con cupola: due architetture lontane seicento anni, una accanto all'altra, che si guardano.",
+     i:"I frammenti romani incastrati nella muratura del campanile, all'altezza degli occhi."},
+    {n:"Chiesa di San Pietro a Majella",lat:40.84952,lon:14.25297,t:"chiesa",y:"fine XIII sec.",k:1,v:0,
+     d:"Gotica e severa, con la facciata di piperno e il campanile a canna quadrata con le bifore: è una delle poche chiese napoletane che ha tenuto l'impianto medievale senza farsi rifare tutta. Accanto, il convento è diventato il Conservatorio: la musica è dentro lo stesso chiostro dal 1826.",
+     i:"Il soffitto della navata con le tele di Mattia Preti dedicate a Celestino V."},
+    {n:"Chiesa di Sant'Anna dei Lombardi",lat:40.84482,lon:14.25052,t:"chiesa",y:"1411, rifatta nel Cinquecento",k:1,v:0,
+     d:"Qui il Rinascimento toscano arriva a Napoli e ci resta: cappelle intere scolpite da Antonio Rossellino e Benedetto da Maiano, la volta a cassettoni della sacrestia vecchia dipinta da Giorgio Vasari nel 1544. È una chiesa che si visita come una galleria di scultura.",
+     i:"Il Compianto sul Cristo morto di Guido Mazzoni, 1492: otto figure di terracotta a grandezza naturale, con i volti ritratti dal vero dei personaggi della corte aragonese."},
+    {n:"Santa Maria Donnaregina Vecchia",lat:40.8545,lon:14.2585,t:"chiesa",y:"1307-1320",k:1,v:0,
+     d:"La chiesa delle clarisse ha due piani: sotto la chiesa pubblica, sopra il coro delle monache, una sala grande quanto la navata, retta da un solaio. Da lassù le monache sentivano la messa senza essere viste, e per questo le pareti del coro furono dipinte tutte.",
+     i:"Il ciclo di affreschi di Pietro Cavallini e bottega, 1308-1309, con il Giudizio universale: pittura romana che arriva a Napoli prima di Giotto. Il sepolcro di Maria d'Ungheria scolpito da Tino di Camaino."},
+    {n:"Chiesa di San Giovanni a Carbonara",lat:40.85612,lon:14.26005,t:"chiesa",y:"1343, scalinata 1707",k:1,v:0,
+     d:"Ci si arriva per una scalinata a doppia rampa curva, disegnata da Ferdinando Sanfelice nel 1707: una scena teatrale davanti a una chiesa gotica. Dentro, dietro l'altare, il monumento funebre di re Ladislao di Durazzo si alza per diciotto metri fino al soffitto, a piani sovrapposti come una facciata.",
+     i:"Il monumento a Ladislao, e dietro, la cappella Caracciolo del Sole: pianta circolare e pavimento di maioliche del Quattrocento."},
+    {n:"Chiesa di Santa Caterina a Formiello",lat:40.85448,lon:14.26481,t:"chiesa",y:"1523-1593",k:1,v:0,
+     d:"La prima chiesa di Napoli con la cupola su tamburo, all'uso romano: fuori dalle mura, vicino a Porta Capuana, la fecero i Domenicani quando il Rinascimento stava sostituendo il gotico. Facciata a due ordini, interno a navata unica con cappelle.",
+     i:"La cupola affrescata da Luigi Garzi e il monumento ai martiri di Otranto."},
+    {n:"Castel Capuano",lat:40.85354,lon:14.26444,t:"castello",y:"1165, tribunale dal 1540",k:1,v:0,
+     d:"Castello normanno all'estremità del decumano maggiore: era la reggia prima del Maschio Angioino. Nel 1540 don Pedro de Toledo ci spostò tutti i tribunali del Regno, e il castello diventò palazzo di giustizia: le finestre furono regolarizzate, le torri smussate, il fossato riempito. Si legge ancora la fortezza sotto il palazzo.",
+     i:"La facciata su piazza Enrico De Nicola e la Sala dei Busti all'interno."},
+    {n:"Porta Capuana",lat:40.8544,lon:14.26543,t:"porta urbana",y:"1484",k:1,v:0,
+     d:"Giuliano da Maiano incastrò un arco di trionfo di marmo bianco fra due torri cilindriche di piperno scuro: le torri si chiamano Onore e Virtù. L'arco è fiorentino, le torri sono aragonesi, e l'accostamento dei due materiali è il modo napoletano di fare il Rinascimento.",
+     i:"Il fregio scolpito sopra l'arco e lo stacco netto fra il marmo chiaro e la pietra scura."},
+    {n:"Santa Maria la Nova",lat:40.84367,lon:14.25297,t:"chiesa",y:"1279, rifatta 1596-1599",k:1,v:0,
+     d:"Facciata rinascimentale a due ordini in piperno e marmo, con le lesene e il timpano: una delle poche a Napoli costruita tutta insieme e rimasta com'era. Dentro, il soffitto a cassettoni dorati con quarantasei tavole dipinte da una squadra di pittori a fine Cinquecento.",
+     i:"Il soffitto a cassettoni e i due chiostri, con il monumento che la tradizione lega al condottiero Vlad III."},
+    {n:"Basilica della Santissima Annunziata Maggiore",lat:40.85114,lon:14.26523,t:"basilica",y:"1760-1782",k:1,v:0,
+     d:"Luigi Vanvitelli e il figlio Carlo rifecero la chiesa dopo l'incendio del 1757: pianta a croce latina, colonne corinzie, cupola alta e luce bianca dappertutto. È il neoclassico che arriva a Napoli prima che il barocco abbia finito di parlare. Accanto c'era la Casa Santa, l'ospedale dei trovatelli.",
+     i:"La ruota degli esposti, il cilindro di legno dove si lasciavano i neonati: sta nell'atrio ed è ancora al suo posto."},
+    {n:"Santa Maria del Carmine Maggiore",lat:40.84677,lon:14.26823,t:"basilica",y:"campanile 1458-1631",k:1,v:0,
+     d:"Il campanile è alto settantacinque metri ed è il più alto della città: base quadrata in piperno, poi ottagono, poi la guglia maiolicata di Fra Nuvolo. Si vede da tutto il porto, e per secoli è stato il punto da cui i marinai riconoscevano Napoli dal mare.",
+     i:"La guglia di maioliche in cima e, dentro, il crocifisso nascosto dietro il tabernacolo sopra l'arco."},
+    {n:"Piazza Dante",lat:40.84902,lon:14.25007,t:"piazza",y:"1757-1765",k:1,v:0,
+     d:"Luigi Vanvitelli la disegnò come Foro Carolino: un emiciclo di pietra a due ordini che abbraccia la piazza, con ventisei statue delle virtù del re sul cornicione. Non è una piazza chiusa ma una quinta teatrale: il lato opposto resta aperto sulla città, e l'emiciclo serve a dare ordine al disordine.",
+     i:"Le ventisei statue sull'attico e il portale centrale con l'orologio, che immette alle scuole."},
+    {n:"Port'Alba",lat:40.8494,lon:14.2518,t:"porta urbana",y:"1625",k:1,v:0,
+     d:"Una porta aperta nelle mura per comodità, non per difesa: la fece il vicerè duca d'Alba perché la gente del Vomero potesse entrare senza fare il giro. Oggi sotto l'arco ci stanno le bancarelle dei libri usati, e il passaggio è diventato una strada coperta di volumi.",
+     i:"La statua di San Gaetano sopra l'arco e i banchi di libri sotto."},
+    {n:"Piazza Bellini",lat:40.84958,lon:14.25212,t:"piazza",y:"mura del IV sec. a.C.",k:1,v:0,
+     d:"Nel mezzo della piazza, dentro uno scavo aperto, stanno i blocchi di tufo delle mura greche di Neapolis, del quarto secolo avanti Cristo: grandi parallelepipedi squadrati, messi a secco uno sull'altro. Intorno, i palazzi del Cinque e Seicento stanno sei metri più in alto: si misura a occhio quanto la città si è alzata.",
+     i:"I blocchi delle mura greche nello scavo al centro, e il torrione di una delle porte."},
+    {n:"Palazzo Zevallos Stigliano",lat:40.83973,lon:14.24861,t:"palazzo",y:"1637-1639",k:1,v:0,
+     d:"Cosimo Fanzago disegnò il portale e la facciata di piperno su via Toledo; dentro, nell'Ottocento, la banca ci costruì una sala a cupola di vetro e ferro. Oggi è una galleria aperta al pubblico, e il percorso finisce in una stanza sola con un quadro.",
+     i:"Il Martirio di sant'Orsola, ultimo dipinto di Caravaggio, finito nel maggio 1610 poche settimane prima di morire: la santa guarda in basso la freccia che le è appena entrata nel petto, e dietro di lei un uomo con la bocca aperta è l'autoritratto del pittore."},
+    {n:"Palazzo dello Spagnolo",lat:40.8568,lon:14.2544,t:"palazzo",y:"1738",k:1,v:0,
+     d:"Nel cortile sta la scala a doppia rampa detta ad ali di falco, di Ferdinando Sanfelice: cinque archi per piano, le rampe che si incrociano e si aprono come due ali, tutta la scala messa in mostra invece che nascosta dentro il muro. Il palazzo è privato ma il cortile si attraversa.",
+     i:"La scala vista dal basso, in asse con il portone: è fatta apposta per essere guardata da lì."},
+    {n:"Basilica di Santa Maria della Sanità",lat:40.85968,lon:14.24893,t:"basilica",y:"1602-1613",k:1,v:0,
+     d:"Fra Nuvolo la costruì a croce greca con cinque navate e una cupola rivestita di maioliche gialle e verdi. L'altare maggiore è rialzato su una doppia scalinata, perché sotto passa la cripta: la chiesa fu messa proprio sopra le catacombe di San Gaudioso, e la scala serve a scendere.",
+     i:"La cupola di riggiole vista dal ponte della Sanità, e sotto, le catacombe con gli affreschi paleocristiani."},
+    {n:"Basilica di Santa Restituta",lat:40.85286,lon:14.25939,t:"basilica paleocristiana",y:"IV sec.",k:1,v:0,
+     d:"Dentro il Duomo, sulla sinistra, si entra in una chiesa più antica di tutto il resto: la basilica paleocristiana del quarto secolo, con le colonne di spoglio. In fondo sta il battistero di San Giovanni in Fonte, il più antico dell'Occidente ancora in piedi: pianta quadrata, cupola, e mosaici del quinto secolo su fondo d'oro.",
+     i:"I mosaici del battistero e lo scavo sotto il pavimento, dove si vedono le case greche e romane."},
+    {n:"Cappella del Tesoro di San Gennaro",lat:40.85236,lon:14.25953,t:"cappella",y:"1608-1646",k:1,v:0,
+     d:"La città se la costruì da sola, con una deputazione di cittadini laici che ancora oggi ne tiene le chiavi. Pianta a croce greca, marmi policromi dappertutto, e una cancellata di bronzo dorato all'ingresso. Il Domenichino dipinse i pennacchi e la volta; la cupola è di Giovanni Lanfranco.",
+     i:"Le cinquantaquattro statue d'argento dei santi patroni, portate fuori solo nelle processioni, e la cancellata di bronzo del 1668."},
+    {n:"Chiesa di San Giorgio Maggiore",lat:40.84971,lon:14.26075,t:"chiesa",y:"IV-V sec., rifatta 1640",k:1,v:0,
+     d:"Cosimo Fanzago la rifece tutta, ma lasciò in piedi l'abside paleocristiana con le tre absidiole e le colonne: oggi quell'abside sta all'ingresso, perché la chiesa fu girata di centottanta gradi. Si entra, cioè, dalla parte che in origine era il fondo.",
+     i:"L'abside del quarto secolo appena dentro il portone, con i capitelli antichi."},
+    {n:"Chiesa dei Santi Apostoli",lat:40.85457,lon:14.26045,t:"chiesa",y:"1610-1649",k:1,v:0,
+     d:"Chiesa dei Teatini, a croce latina con cupola, interamente affrescata da Giovanni Lanfranco fra il 1638 e il 1646: volta, cupola, transetti, tutto dipinto come un cielo unico. È uno dei cicli barocchi più estesi del Sud.",
+     i:"L'altare della cappella Filomarino, disegnato da Francesco Borromini: è l'unica opera sua a Napoli, e si riconosce dal modo in cui i marmi colorati si incastrano senza una linea sprecata."},
+    {n:"Palazzo Orsini di Gravina",lat:40.84524,lon:14.25146,t:"palazzo",y:"1513-1549",k:1,v:0,
+     d:"Facciata rinascimentale in bugnato piatto, con le finestre a edicola e il cornicione: è il palazzo toscano trapiantato a Napoli, costruito quando la città era spagnola e guardava ancora a Roma. Oggi ci sta la facoltà di Architettura.",
+     i:"Il bugnato liscio del piano terra e il portale con lo stemma degli Orsini."},
+    {n:"Chiesa di Sant'Eligio Maggiore",lat:40.84676,lon:14.26448,t:"chiesa",y:"dal 1270",k:1,v:0,
+     d:"La prima chiesa che gli Angioini costruirono a Napoli: gotico francese nudo, archi a sesto acuto, pietra a vista. Accanto, l'arco che scavalca il vicolo porta un orologio del Cinquecento con due campane.",
+     i:"L'arco con l'orologio e la torre, e il portale gotico laterale."},
+    {n:"Palazzo San Giacomo",lat:40.8403,lon:14.25006,t:"palazzo",y:"1816-1825",k:1,v:0,
+     d:"Il palazzo dei ministeri borbonici, oggi municipio: facciata neoclassica lunghissima su piazza, con il bugnato al piano terra e le colonne ioniche sopra. Fu costruito inglobando la chiesa di San Giacomo degli Spagnoli, che resta incastrata dentro e si vede dal lato di via Toledo.",
+     i:"La chiesa cinquecentesca inglobata nel fianco del palazzo, con il sepolcro di don Pedro de Toledo."},
+    {n:"Decumano maggiore, via dei Tribunali",lat:40.85146,lon:14.25873,t:"strada antica",y:"impianto greco, IV sec. a.C.",k:1,v:0,
+     d:"È la strada greca che attraversa la città da ovest a est, dritta da duemilaquattrocento anni. Sopra il tracciato antico si sono accumulati chiese, palazzi e botteghe senza mai spostarlo di un metro: la larghezza è quella di Neapolis, e i vicoli che la tagliano a novanta gradi sono i cardini.",
+     i:"Guardando in su, il modo in cui i palazzi barocchi poggiano sui muri medievali, che poggiano sulle pietre greche."},
 
     /* ------- Roma: fuori dal centro stretto ------- */
     {n:"Basilica di San Paolo fuori le mura",lat:41.8587,lon:12.47678,t:"basilica",y:"IV sec., ricostruita dopo il 1823",k:1,v:0,
@@ -2483,6 +2589,16 @@
      p:[[40.83612, 14.24918], [40.83622, 14.24949], [40.83666, 14.24934], [40.83696, 14.25004], [40.83674, 14.25037], [40.83656, 14.25051], [40.83679, 14.25047], [40.83714, 14.25061], [40.83732, 14.25044], [40.83747, 14.25037], [40.83747, 14.25017], [40.83751, 14.25014], [40.83764, 14.25015], [40.83777, 14.25023], [40.83793, 14.25012], [40.83776, 14.24957], [40.83791, 14.24947], [40.83802, 14.24947], [40.83846, 14.24924], [40.83796, 14.24947], [40.83813, 14.25014], [40.83824, 14.25035], [40.83881, 14.25139], [40.83872, 14.25172], [40.83867, 14.25185], [40.83848, 14.25231], [40.83836, 14.25277], [40.8385, 14.25321]]},
     {id:"napoli-greca",tema:"archeologia",n:"Napoli — la città sotto: teatro romano, San Lorenzo, Museo",
      p:[[40.85235, 14.25684], [40.85187, 14.25702], [40.85106, 14.25748], [40.85118, 14.25789], [40.85099, 14.2573], [40.85051, 14.25588], [40.85029, 14.25524], [40.85143, 14.2546], [40.85164, 14.25354], [40.85133, 14.25257], [40.85127, 14.25184], [40.85226, 14.25173], [40.85281, 14.25165], [40.85315, 14.25152], [40.85327, 14.2516], [40.85343, 14.25173], [40.8535, 14.25161], [40.85333, 14.25131], [40.85339, 14.25128]]},
+    {id:"napoli-caravaggio",tema:"arte",n:"Napoli — Caravaggio: le due tele rimaste in città",
+     p:[[40.85181,14.26035],[40.85265,14.25987],[40.85146,14.25873],[40.84898,14.25427],[40.84756,14.25187],[40.8456,14.2492],[40.83973,14.24861]]},
+    {id:"napoli-decumano",tema:"architettura",n:"Napoli — le chiese del decumano maggiore",
+     p:[[40.8494,14.2518],[40.84952,14.25297],[40.85042,14.25443],[40.85015,14.25444],[40.85057,14.2557],[40.85144,14.25683],[40.85092,14.25804],[40.85193,14.25848],[40.85265,14.25987],[40.85181,14.26035]]},
+    {id:"napoli-piazze",tema:"architettura",n:"Napoli — le piazze: da Dante al Plebiscito",
+     p:[[40.84902,14.25007],[40.84958,14.25212],[40.84898,14.25427],[40.84756,14.25187],[40.8456,14.2492],[40.83851,14.24924],[40.83588,14.24865]]},
+    {id:"napoli-rinascimento",tema:"architettura",n:"Napoli — il Rinascimento aragonese: Porta Capuana, Carbonara, la Nova",
+     p:[[40.8544,14.26543],[40.85354,14.26444],[40.85612,14.26005],[40.85457,14.26045],[40.84482,14.25052],[40.84367,14.25297],[40.84524,14.25146]]},
+    {id:"napoli-sanita",tema:"architettura",n:"Napoli — la Sanità: le scale di Sanfelice e la cupola di maioliche",
+     p:[[40.8568,14.2544],[40.85968,14.24893]]},
     {id:"roma-foro-boario",tema:"archeologia",n:"Roma — il Foro Boario e il Ghetto: i templi, l'Isola, le Tartarughe",
      p:[[41.88873, 12.48095], [41.88903, 12.48099], [41.88951, 12.48098], [41.88956, 12.48092], [41.88928, 12.48124], [41.88918, 12.48149], [41.88894, 12.48208], [41.88865, 12.48252], [41.88838, 12.48291], [41.8883, 12.48305], [41.88836, 12.48325], [41.88873, 12.48349], [41.88944, 12.48364], [41.88948, 12.48359], [41.88944, 12.48338], [41.88929, 12.48299], [41.8894, 12.48294], [41.8894, 12.48334], [41.88948, 12.48358], [41.88947, 12.48361], [41.88893, 12.48353], [41.88855, 12.48346], [41.88825, 12.48314], [41.88835, 12.48296], [41.88847, 12.48277], [41.88891, 12.48213], [41.88915, 12.48157], [41.88925, 12.48131], [41.8896, 12.48109], [41.88962, 12.48089], [41.88957, 12.48073], [41.88984, 12.48079], [41.89074, 12.4804], [41.8908, 12.48033], [41.89095, 12.48027], [41.89106, 12.4803], [41.89112, 12.48022], [41.89113, 12.4802], [41.8911, 12.48023], [41.89102, 12.48031], [41.89087, 12.47969], [41.89086, 12.47944], [41.89085, 12.47937], [41.89084, 12.47931], [41.89081, 12.47926], [41.89064, 12.47932], [41.88957, 12.48007], [41.88911, 12.4802], [41.88921, 12.47819], [41.88924, 12.47813], [41.88938, 12.47787], [41.88941, 12.47774], [41.88942, 12.47763], [41.88954, 12.47723], [41.88963, 12.47712], [41.89005, 12.47728], [41.89041, 12.47742], [41.89043, 12.47739], [41.8906, 12.47684], [41.8906, 12.47682], [41.89049, 12.47687], [41.89024, 12.47768], [41.88996, 12.47848], [41.89003, 12.47847], [41.89014, 12.47822], [41.89001, 12.47852], [41.89015, 12.47791], [41.89035, 12.47738], [41.89059, 12.47681], [41.8906, 12.47683], [41.89043, 12.47738], [41.89042, 12.47741], [41.89026, 12.47736], [41.88965, 12.47708], [41.88974, 12.47675], [41.89, 12.47585], [41.89032, 12.47458], [41.89051, 12.47458], [41.89169, 12.4747], [41.89171, 12.47474], [41.89177, 12.4748], [41.89182, 12.47553], [41.89199, 12.47649], [41.89216, 12.47647], [41.89217, 12.47635], [41.89247, 12.4765], [41.89266, 12.47654], [41.89289, 12.47667], [41.89294, 12.47673], [41.89301, 12.47722], [41.89326, 12.47734], [41.89353, 12.47743], [41.89376, 12.47754], [41.89353, 12.47743], [41.89326, 12.47734], [41.89301, 12.47722], [41.89291, 12.47749], [41.89262, 12.4782], [41.89255, 12.4783], [41.89238, 12.47838], [41.89232, 12.47859], [41.8924, 12.47867], [41.89252, 12.47863]]},
     {id:"roma-via-giulia",tema:"architettura",n:"Roma — via Giulia e il Rinascimento: Cancelleria, Farnese, Falconieri",
@@ -2660,10 +2776,46 @@
     if(S.racconta==='servizi')return p.k!==1;
     return true;
   }
+  /* ---------- quanto conta un luogo ----------
+     Nel centro di Roma la distanza da sola non basta: una chiesa minore a
+     ottanta metri non deve passare davanti al Pantheon che ne dista
+     centocinquanta. Chi cammina vuole sentirsi dire prima le cose grandi. */
+  var GRANDI=[
+    'Colosseo','Foro Romano','Pantheon','Fontana di Trevi','Piazza Navona',
+    "Castel Sant'Angelo",'Piazza del Campidoglio','Scalinata di Trinità dei Monti',
+    'Basilica di San Pietro in Vaticano','Musei Vaticani','Basilica di Santa Maria Maggiore',
+    'Basilica di San Giovanni in Laterano','Palazzo del Quirinale','Vittoriano',
+    'Terme di Caracalla','Galleria Borghese','Villa Borghese','Ara Pacis Augustae',
+    'Mercati di Traiano','Mausoleo di Augusto','Palazzo Farnese','Chiesa del Gesù',
+    'Palazzo Barberini','Basilica di Santa Maria sopra Minerva','Terme di Diocleziano',
+    'Duomo di Napoli','Cappella Sansevero','Chiesa del Gesù Nuovo',
+    'Basilica di San Domenico Maggiore','Basilica di San Lorenzo Maggiore',
+    'Castel Nuovo','Piazza del Plebiscito',
+    'Battistero di Parma','Teatro Farnese',
+    'Duomo di Spoleto','Rocca Albornoziana','Ponte delle Torri','Arco di Druso',
+    'Basilica di Santa Croce','Villa delle Ginestre',
+    'Castello Pandone','Anfiteatro romano',
+    'Chiesa di San Luigi dei Francesi',"Sant'Ivo alla Sapienza",'Fontana delle Tartarughe',
+    'Palazzo Doria Pamphilj','Santa Maria in Cosmedin','Basilica di San Clemente',
+    'Piazza del Popolo','Santa Maria del Popolo','Isola Tiberina','Teatro di Marcello',
+    'Largo di Torre Argentina','Palazzo Madama','Palazzo Chigi','Villa Farnesina',
+    'San Carlo alle Quattro Fontane','Santa Maria della Pace',"Sant'Agnese in Agone",
+    'Basilica di Santa Maria in Trastevere','Basilica di Santa Cecilia in Trastevere',
+    'Tempietto del Bramante'
+  ];
+  function rango(p){
+    if(p._r)return p._r;
+    var n=p.n||'', r=1;
+    for(var i=0;i<GRANDI.length;i++){ if(n.indexOf(GRANDI[i])===0||n.indexOf(GRANDI[i])>=0){ r=3; break; } }
+    if(r===1 && (p.d||'').length>=240 && p.i) r=2;   // scheda piena: roba da guardare
+    p._r=r; return r;
+  }
+  function peso(p){ var r=rango(p); return r===3?1.9:(r===2?1.3:1); }
   function around(){
     return POI.filter(function(p){return !p.f && serveQui(p);}).map(function(p){
       return {p:p,m:dist(S.lat,S.lon,p.lat,p.lon),rel:norm(bear(S.lat,S.lon,p.lat,p.lon)-S.hd)};
-    }).filter(function(o){return o.m<S.radius;}).sort(function(a,b){return a.m-b.m;});
+    }).filter(function(o){return o.m<S.radius;})
+      .sort(function(a,b){ return a.m/peso(a.p) - b.m/peso(b.p); });
   }
 
   function drawStrip(items){
@@ -2760,11 +2912,13 @@
   function drawList(items){
     listEl.textContent='';
     countEl.textContent=items.length+' entro '+S.radius+' m';
-    items.slice(0,8).forEach(function(o){
+    items.slice(0,10).forEach(function(o){
       var d=document.createElement('details');d.className='item'+(o.p.k===3?' t3':'');
       if(o.m<80)d.dataset.close='1';
       var s=document.createElement('summary');
       var nm=document.createElement('span');nm.className='nm';nm.textContent=o.p.n;s.appendChild(nm);
+      if(rango(o.p)===3){ var st=document.createElement('span');st.className='grande';
+        st.textContent='da non perdere'; s.appendChild(st); }
       if(o.p.v){var lb=document.createElement('span');lb.className='lavabadge';lb.textContent='lava';s.appendChild(lb);}
       var dr=document.createElement('span');dr.className='dir';
       dr.textContent=side(o.rel)+' · '+Math.round(o.m)+' m';
@@ -3149,7 +3303,9 @@
      si è girati e quanti metri mancano, e lo si ripete mentre si cammina.
      Chi non vede si orienta così, come con una persona accanto. */
   var METE={
+    'pronto soccorso':['pronto soccorso','primo soccorso','emergenza medica','al pronto soccorso'],
     farmacia:['farmacia','farmacie','parafarmacia'],
+    'posteggio taxi':['posteggio taxi','parcheggio taxi','stazione dei taxi'],
     fermata:['fermata','autobus','bus','pullman'],
     stazione:['stazione','treno'],
     supermercato:['supermercato','spesa','alimentari','market'],
@@ -3158,7 +3314,7 @@
     panificio:['panificio','pane','forno'],
     'ufficio postale':['posta','poste','ufficio postale'],
     banca:['banca','bancomat'],
-    ospedale:['ospedale','pronto soccorso'],
+    ospedale:['ospedale','clinica'],
     municipio:['municipio','comune'],
     distributore:['distributore','benzina','benzinaio'],
     chiesa:['chiesa','messa'],
@@ -3215,12 +3371,131 @@
     }).catch(function(){ dire(['frase-indirizzo-non-trovato'],'Questo indirizzo non l\'ho trovato.'); });
     return true;
   }
+  /* ---------- i servizi che non stanno nei nostri dati ----------
+     Farmacie, fermate, pronto soccorso: non si possono scrivere a mano citta'
+     per citta'. Quando qui non ce n'e', si chiede alla mappa di OpenStreetMap,
+     che li ha per tutta Italia. */
+  var TAG_OSM={
+    'pronto soccorso':'nwr["amenity"="hospital"]["emergency"="yes"]',
+    farmacia:'nwr["amenity"="pharmacy"]',
+    'posteggio taxi':'nwr["amenity"="taxi"]',
+    fermata:'node["highway"="bus_stop"]',
+    stazione:'nwr["railway"="station"]',
+    supermercato:'nwr["shop"="supermarket"]',
+    bar:'nwr["amenity"~"^(cafe|bar)$"]',
+    ristorante:'nwr["amenity"="restaurant"]',
+    panificio:'nwr["shop"="bakery"]',
+    'ufficio postale':'nwr["amenity"="post_office"]',
+    banca:'nwr["amenity"~"^(bank|atm)$"]',
+    ospedale:'nwr["amenity"="hospital"]',
+    municipio:'nwr["amenity"="townhall"]',
+    distributore:'nwr["amenity"="fuel"]',
+    chiesa:'nwr["amenity"="place_of_worship"]',
+    museo:'nwr["tourism"="museum"]'
+  };
+  // Photon risponde in un secondo; Overpass e' piu' preciso ma spesso non risponde
+  var TAG_PHOTON={
+    'pronto soccorso':'amenity:hospital', farmacia:'amenity:pharmacy',
+    'posteggio taxi':'amenity:taxi', fermata:'highway:bus_stop',
+    stazione:'railway:station', supermercato:'shop:supermarket',
+    bar:'amenity:cafe', ristorante:'amenity:restaurant', panificio:'shop:bakery',
+    'ufficio postale':'amenity:post_office', banca:'amenity:bank',
+    ospedale:'amenity:hospital', municipio:'amenity:townhall',
+    distributore:'amenity:fuel', chiesa:'amenity:place_of_worship',
+    museo:'tourism:museum'
+  };
+  function cercaInPhoton(tipo,cb){
+    var tag=TAG_PHOTON[tipo];
+    if(!tag||!window.fetch){cb(null);return;}
+    var u='https://photon.komoot.io/api/?q='+encodeURIComponent(tipo)+
+          '&lat='+S.lat+'&lon='+S.lon+'&limit=10&osm_tag='+encodeURIComponent(tag);
+    var stop=null,orologio=null;
+    try{ stop=new AbortController(); orologio=setTimeout(function(){try{stop.abort();}catch(e){}},7000); }catch(e){}
+    fetch(u,{signal:stop?stop.signal:undefined})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(orologio)clearTimeout(orologio);
+        var mig=null,dmin=Infinity;
+        (d.features||[]).forEach(function(f){
+          var c=f.geometry&&f.geometry.coordinates; if(!c)return;
+          var la=c[1], lo=c[0], dd=dist(S.lat,S.lon,la,lo);
+          if(dd<dmin){
+            dmin=dd;
+            var pr=f.properties||{};
+            var nome=pr.name||pr.street||(tipo.charAt(0).toUpperCase()+tipo.slice(1));
+            mig={n:nome,lat:la,lon:lo,t:tipo,k:0,d:''};
+          }
+        });
+        if(mig&&dmin<4000)cb({p:mig,d:dmin}); else cb(null);
+      })
+      .catch(function(){ if(orologio)clearTimeout(orologio); cb(null); });
+  }
+  var SERVER_OSM=['https://overpass-api.de/api/interpreter',
+                  'https://overpass.kumi.systems/api/interpreter',
+                  'https://overpass.private.coffee/api/interpreter'];
+  function cercaInOSM(tipo,cb){
+    var tag=TAG_OSM[tipo];
+    if(!tag||!S.pronto||!window.fetch){cb(null);return;}
+    var q='[out:json][timeout:12];('+tag+'(around:1800,'+S.lat+','+S.lon+'););out center 20;';
+    var i=0;
+    (function prova(){
+      if(i>=SERVER_OSM.length){cb(null);return;}
+      var url=SERVER_OSM[i++], stop=null, orologio=null;
+      try{ stop=new AbortController(); orologio=setTimeout(function(){try{stop.abort();}catch(e){}},9000); }catch(e){}
+      fetch(url,{method:'POST',body:'data='+encodeURIComponent(q),signal:stop?stop.signal:undefined})
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          if(orologio)clearTimeout(orologio);
+          var mig=null,dmin=Infinity;
+          (d.elements||[]).forEach(function(e){
+            var la=(e.lat!=null)?e.lat:(e.center&&e.center.lat);
+            var lo=(e.lon!=null)?e.lon:(e.center&&e.center.lon);
+            if(la==null||lo==null)return;
+            var dd=dist(S.lat,S.lon,la,lo);
+            if(dd<dmin){
+              dmin=dd;
+              var nome=(e.tags&&(e.tags.name||e.tags.operator))||(tipo.charAt(0).toUpperCase()+tipo.slice(1));
+              mig={n:nome,lat:la,lon:lo,t:tipo,k:0,d:''};
+            }
+          });
+          if(mig)cb({p:mig,d:dmin}); else cb(null);
+        })
+        .catch(function(){ if(orologio)clearTimeout(orologio); prova(); });
+    })();
+  }
+  function chiamaTaxi(){
+    // non si ordina niente al posto suo: si apre l'app del taxi con la posizione
+    // gia' dentro, e la corsa la conferma lui
+    if(!S.pronto){
+      dire(['frase-casa-senza-posizione'],'Prima devo sapere dove sei: premi Avvia.');
+      return true;
+    }
+    dire(['frase-apro-taxi'],'Apro il taxi con la tua posizione. La corsa la confermi tu.');
+    var u='https://m.uber.com/ul/?action=setPickup&pickup[latitude]='+S.lat+
+          '&pickup[longitude]='+S.lon;
+    setTimeout(function(){
+      try{ var w=window.open(u,'_blank'); if(!w)location.href=u; }catch(e){ location.href=u; }
+    },1400);
+    return true;
+  }
   function portamiA(tipo){
     var v=piuVicinoDiTipo(tipo);
     if(!v){
-      dire(['frase-niente-di-questi'],'Qui vicino non ne trovo.');
+      // non e' nei nostri dati: lo chiediamo a OpenStreetMap, che copre tutto
+      dire(['frase-cerco'],"Cerco l'indirizzo, un momento.");
+      cercaInPhoton(tipo,function(r){
+        if(r){ vaiVerso(r); return; }
+        cercaInOSM(tipo,function(r2){
+          if(!r2){ dire(['frase-niente-di-questi'],'Qui vicino non ne trovo.'); return; }
+          vaiVerso(r2);
+        });
+      });
       return true;
     }
+    vaiVerso(v);
+    return true;
+  }
+  function vaiVerso(v){
     meta=v.p; metaUltimo=0; metaUltimaDist=v.d;
     var rel=norm(bear(S.lat,S.lon,meta.lat,meta.lon)-S.hd);
     var sp='Ti porto a '+meta.n+': '+side(rel)+', '+metres(v.d)+'.';
@@ -3229,7 +3504,6 @@
     bodyEl.className='body'; bodyEl.textContent=meta.d||'';
     liveEl.textContent=sp;
     dire(['frase-ti-porto-a',poiId(meta)+'-nome',dirId(rel),metriId(v.d)],sp);
-    return true;
   }
   function guidaVersoMeta(){
     if(!meta)return;
@@ -3348,10 +3622,30 @@
     var t=normalizza(testo);
     if(!t)return false;
     function ha(){ for(var i=0;i<arguments.length;i++){ if(t.indexOf(arguments[i])>=0)return true; } return false; }
+    // finche' la schermata d'ingresso e' aperta si sceglie parlando
+    var pt=el('porta');
+    if(pt && !pt.hidden && typeof window.portaScegli==='function'){
+      if(ha('percorso','percorsi','itinerario','itinerari'))return window.portaScegli('percorso');
+      if(ha('libero','libera','cammino','cammina','vai','comincia','parti','andiamo'))return window.portaScegli('libero');
+    }
     if(ha('approfondisci','dimmi di piu','raccontami','racconta','di piu','spiega')){ deepen(); return true; }
     if(ha('avanti','vai oltre','prossimo','salta','andiamo')){ skipOn(); return true; }
     if(ha('ripeti','come hai detto','non ho capito')){
       if(ultimaFrase)dire(ultimaFrase.ids,ultimaFrase.testo);
+      return true;
+    }
+    if(ha('elenco','elencami','leggimi la lista','cosa c e qui intorno','cosa c e intorno',
+          'che cosa c e intorno','dimmi cosa c e','le chiese qui','cosa posso vedere')){
+      var tutti=around();
+      if(!tutti.length){ dire(['frase-niente-intorno'],'Qui intorno non ho niente da dirti.'); return true; }
+      var ids=[], frasi=[];
+      tutti.slice(0,5).forEach(function(o){
+        ids.push(poiId(o.p)+'-nome', dirId(o.rel), metriId(o.m));
+        frasi.push(o.p.n+', '+side(o.rel)+', '+metres(o.m));
+      });
+      var testo=frasi.join('. ')+'.';
+      liveEl.textContent=testo;
+      dire(ids,testo);
       return true;
     }
     if(ha('dove sono','dove mi trovo','che cosa ho intorno','cosa ho intorno')){
@@ -3372,6 +3666,14 @@
           return portamiA(tipo);
         }
       }
+    }
+    if(ha('taxi','uber','un passaggio','chiamami una macchina','chiamami un taxi')){
+      return chiamaTaxi();
+    }
+    if(ha('ambulanza','chiama il 112','chiama il 118','chiama i soccorsi','numero di emergenza')){
+      dire(['frase-chiamo-112'],'Chiamo il 112.');
+      setTimeout(function(){ try{ location.href='tel:112'; }catch(e){} },1100);
+      return true;
     }
     if(ha('vienimi a prendere','vieni a prendermi','ho bisogno di aiuto','chiama aiuto','mi sono perso',
           'mi sono persa','aiutami','aiuto','sos','emergenza','ho paura','non mi sento sicura','non mi sento sicuro')){
@@ -3587,7 +3889,13 @@
   (function(){
     var porta=el('porta');
     if(!porta)return;
+    var passo=1, attesa=null;
+    function ricorda(k,v){ try{localStorage.setItem(k,v);}catch(e){} }
+    function letto(k){ try{return localStorage.getItem(k);}catch(e){return null;} }
+    var modoSalvato=letto('urbea-modo');
+
     function entra(modoVoce){
+      if(attesa){clearTimeout(attesa);attesa=null;}
       porta.hidden=true;
       audio();
       S.racconta = modoVoce ? 'tutto' : 'cultura';
@@ -3597,17 +3905,66 @@
         if(m&&say&&say.parentNode)say.parentNode.insertBefore(m,say);
         setTimeout(function(){ if(mappa)mappa.invalidateSize(); },200);
       }
-      try{localStorage.setItem('urbea-modo',modoVoce?'voce':'occhi');}catch(e){}
+      ricorda('urbea-modo',modoVoce?'voce':'occhi');
+      ricorda('urbea-cammino',S.libero?'libero':'percorso');
       if(modoVoce&&!S.voice)el('voice').click();
       try{dovesiamo();}catch(e){}
     }
     function secondoPasso(modoVoce){
-      try{localStorage.setItem('urbea-modo',modoVoce?'voce':'occhi');}catch(e){}
+      passo=2;
+      ricorda('urbea-modo',modoVoce?'voce':'occhi');
       audio();
       el('scelta-voce').hidden=true; el('scelta-occhi').hidden=true;
+      var t=el('scelta-torna'), c=el('porta-cambia');
+      if(t)t.hidden=true; if(c)c.hidden=true;
       el('porta-modo').hidden=false;
-      if(modoVoce)dire(['frase-come-cammini'],'Vuoi camminare libero, o seguire un percorso?');
+      if(modoVoce){
+        dire(['frase-come-cammini'],'Vuoi camminare libero, o seguire un percorso?');
+        // si risponde a voce: chi non vede non deve cercare un tasto
+        try{avviaAscolto();}catch(e){}
+        // e se non risponde nessuno, si parte lo stesso: meglio camminare
+        // che restare fermi davanti a una schermata che non si vede
+        attesa=setTimeout(function(){
+          if(porta.hidden)return;
+          S.libero=true; entra(true);
+          dire(['frase-parto-libero'],'Comincio col cammino libero. Quando vuoi, dimmi: percorsi.');
+        },12000);
+      }
     }
+    function riprendi(){
+      S.modoVoce=true;
+      S.libero = (letto('urbea-cammino')!=='percorso');
+      entra(true);
+      dire(['frase-bentornato'],'Guida vocale attiva. Ti dico quello che passi, da che parte e a quanti metri.');
+    }
+    // la porta risponde anche ai comandi a voce
+    window.portaScegli=function(cosa){
+      if(porta.hidden)return false;
+      if(passo===1){ S.modoVoce=true; secondoPasso(true); return true; }
+      if(cosa==='libero'){ S.libero=true; entra(true); return true; }
+      if(cosa==='percorso'){ el('scelta-percorso').click(); return true; }
+      return false;
+    };
+    // chi e' gia' entrato una volta a voce non ricomincia da capo: un tocco
+    // qualunque e riparte com'era
+    if(modoSalvato==='voce'){
+      el('scelta-voce').hidden=true; el('scelta-occhi').hidden=true;
+      var tt=el('scelta-torna'), cc=el('porta-cambia');
+      if(tt){ tt.hidden=false; tt.addEventListener('click',riprendi); }
+      if(cc){ cc.hidden=false; cc.addEventListener('click',function(e){
+        e.stopPropagation();
+        if(tt)tt.hidden=true; cc.hidden=true;
+        el('scelta-voce').hidden=false; el('scelta-occhi').hidden=false;
+        modoSalvato=null;
+      }); }
+    }
+    // un tocco sullo sfondo vale «guidami a voce»: chi non vede tocca a caso
+    porta.addEventListener('click',function(e){
+      if(e.target.closest&&e.target.closest('button,select,a,input'))return;
+      if(modoSalvato==='voce'){ riprendi(); return; }
+      if(passo===1){ S.modoVoce=true; secondoPasso(true); }
+      else { S.libero=true; entra(true); }
+    });
     el('scelta-voce').addEventListener('click',function(){S.modoVoce=true;secondoPasso(true);});
     el('scelta-occhi').addEventListener('click',function(){S.modoVoce=false;secondoPasso(false);});
 
