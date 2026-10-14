@@ -186,6 +186,11 @@
     border:1px solid rgba(91,227,255,.35);border-radius:999px;padding:2px 8px;margin-left:8px;white-space:nowrap}
   /* il ritorno diretto: un solo bersaglio, grande quanto la schermata */
   .porta-torna{flex:1 1 auto;min-height:46vh}
+  .porta-lingua{
+    background:rgba(28,32,38,.72);border:1px solid rgba(255,255,255,.12);
+    color:var(--fg);border-radius:14px;padding:12px 16px;font-size:17px;
+    align-self:center;min-width:180px;text-align:center;margin-top:4px;
+  }
   .porta-cambia{
     background:none;border:1px solid rgba(255,255,255,.14);color:var(--muted);
     border-radius:14px;padding:12px 18px;font-size:16px;align-self:center;
@@ -379,6 +384,7 @@
     <span>Riprendo come l'ultima volta: guida vocale, tutto parlato.</span>
   </button>
   <button class="porta-cambia" id="porta-cambia" hidden>Cambia modo</button>
+  <select id="porta-lingua" class="porta-lingua" aria-label="Lingua / Language"></select>
   <div id="porta-modo" hidden>
     <button class="porta-scelta porta-voce" id="scelta-libera">
       <b>Cammino libero</b>
@@ -403,7 +409,7 @@
   <section class="say">
     <div class="where" id="where">non avviato</div>
     <div class="what" id="what">In attesa</div>
-    <div class="body idle" id="body">Cerco dove sei. Poi ti dico cosa hai intorno: Roma, Napoli, Torre del Greco, Venafro, Parma, Spoleto.</div>
+    <div class="body idle" id="body">Cerco dove sei. Poi ti dico cosa hai intorno, in tutta Italia.</div>
     <div class="choice" id="choice" hidden>
       <button class="btn btn-yes" id="more">Approfondisci</button>
       <button class="btn" id="skip">Vai oltre</button>
@@ -438,7 +444,7 @@
     <div class="list" id="list"></div>
   </section>
 
-  <p class="note">Roma · Napoli · Torre del Greco · Venafro · Parma · Spoleto</p>
+  <p class="note">Roma · Firenze · Venezia · Milano · Torino · Genova · Bologna · Napoli · Parma · Spoleto · Torre del Greco · Venafro</p>
 </main>
 
 <script src="mappa/leaflet.js"></script>
@@ -1391,6 +1397,387 @@
     {n:"Decumano maggiore, via dei Tribunali",lat:40.85146,lon:14.25873,t:"strada antica",y:"impianto greco, IV sec. a.C.",k:1,v:0,
      d:"È la strada greca che attraversa la città da ovest a est, dritta da duemilaquattrocento anni. Sopra il tracciato antico si sono accumulati chiese, palazzi e botteghe senza mai spostarlo di un metro: la larghezza è quella di Neapolis, e i vicoli che la tagliano a novanta gradi sono i cardini.",
      i:"Guardando in su, il modo in cui i palazzi barocchi poggiano sui muri medievali, che poggiano sulle pietre greche."},
+    {n:"Cattedrale di Santa Maria del Fiore",lat:43.77306,lon:11.25694,t:"cattedrale",y:"1296-1436",k:1,v:0,
+     d:"La cupola di Filippo Brunelleschi sta su senza centine: due calotte, una dentro l'altra, con i mattoni messi a spina di pesce perché si reggessero da soli mano a mano che salivano. Nessuno l'aveva mai fatto su una luce di quarantacinque metri, e nessuno sapeva come si facesse: Brunelleschi non lo spiegò nemmeno ai muratori, glielo faceva fare un filare per volta. Il rivestimento di marmi bianchi, verdi e rosa è medievale sui fianchi e ottocentesco in facciata.",
+     i:"Dalla strada, l'occhio della lanterna e le costolature bianche della cupola. Sul fianco sud, la Porta dei Canonici con le cornici gotiche; a destra della facciata, i marmi verdi di Prato che segnano i riquadri."},
+    {n:"Battistero di San Giovanni",lat:43.77306,lon:11.255,t:"battistero",y:"XI-XII sec.",k:1,v:0,
+     d:"Ottagono rivestito di marmo bianco e verde, con le lesene e gli archi ciechi: i fiorentini per secoli l'hanno creduto un tempio romano, e proprio per questo lo presero a modello quando rifecero l'architettura. Dante lo chiamava il suo bel San Giovanni. Le tre porte di bronzo sono di tre secoli diversi.",
+     i:"La Porta del Paradiso di Lorenzo Ghiberti, verso il Duomo: dieci riquadri dorati con la prospettiva scavata nel bronzo, pochi millimetri di spessore che fingono chilometri. Quelle in strada sono copie: gli originali stanno al Museo dell'Opera."},
+    {n:"Campanile di Giotto",lat:43.77281,lon:11.25581,t:"campanile",y:"1334-1359",k:1,v:0,
+     d:"Ottantaquattro metri a pianta quadrata, con le finestre che crescono salendo: una monofora in basso, poi bifore, poi trifore in cima. È un trucco di proporzione, così la torre sembra più leggera man mano che sale. Giotto lo cominciò, Andrea Pisano e Francesco Talenti lo finirono cambiandone il disegno.",
+     i:"Le formelle esagonali alla base, con i mestieri e le arti: anche queste sono copie, ma si leggono bene dalla piazza."},
+    {n:"Palazzo Vecchio",lat:43.76944,lon:11.25611,t:"palazzo pubblico",y:"1299-1314",k:1,v:0,
+     d:"Un blocco di pietraforte con il bugnato rustico e il ballatoio a sporgere, retto da archetti: non è decorazione, è una difesa, serviva a buttare giù roba sugli assedianti. La torre di Arnolfo non sta al centro ma spostata, perché poggia su una torre più vecchia già esistente: il palazzo le è cresciuto attorno.",
+     i:"Il ballatoio sporgente con gli stemmi dipinti sotto gli archetti, e la torre fuori asse, che si nota solo guardando la facciata di fronte."},
+    {n:"Piazza della Signoria",lat:43.76972,lon:11.25556,t:"piazza",y:"dal XIII sec.",k:1,v:0,
+     d:"La piazza non è regolare e non voleva esserlo: nacque abbattendo le case dei Uberti, i ghibellini cacciati, e sul loro terreno fu vietato ricostruire. Per questo ha quella forma a elle che sembra sbagliata. È il salotto politico della città da settecento anni, e ogni statua che ci sta è un messaggio.",
+     i:"La targa rotonda nel lastricato, davanti alla fontana, dove fu bruciato Savonarola il 23 maggio 1498."},
+    {n:"Loggia dei Lanzi",lat:43.7692,lon:11.25566,t:"loggia",y:"1376-1382",k:1,v:0,
+     d:"Tre arcate a tutto sesto larghissime, quando tutti costruivano ancora ad arco acuto: è gotico che sta già diventando Rinascimento, sessant'anni prima di Brunelleschi. Serviva per le cerimonie pubbliche del governo; oggi è una galleria di scultura all'aperto, aperta e gratis.",
+     i:"Il Perseo di Benvenuto Cellini, 1554, fuso in un getto solo; e il Ratto delle Sabine del Giambologna, scolpito da un solo blocco di marmo con tre figure avvitate che obbligano a girarci intorno."},
+    {n:"Palazzo degli Uffizi",lat:43.76833,lon:11.25528,t:"palazzo",y:"1560-1580",k:1,v:0,
+     d:"Giorgio Vasari inventò una strada coperta: due ali lunghissime e strettissime che corrono parallele fino all'Arno e si chiudono con un arco, incorniciando Palazzo Vecchio da una parte e il fiume dall'altra. Non è una piazza né una via: è un corridoio urbano, il primo del genere in Europa.",
+     i:"Mettersi all'estremità verso l'Arno e guardare in su: la fuga delle colonne stringe la prospettiva fino alla torre. È fatto apposta."},
+    {n:"Corridoio Vasariano",lat:43.769,lon:11.25638,t:"passaggio",y:"1565",k:1,v:0,
+     d:"Un chilometro di passaggio sopraelevato che unisce Palazzo Vecchio a Palazzo Pitti, costruito in cinque mesi per il matrimonio di Francesco I. Passa sopra gli Uffizi, scavalca il Lungarno, attraversa il Ponte Vecchio sopra le botteghe e gira perfino attorno a una torre privata, i Mannelli, che si rifiutarono di farlo passare dentro.",
+     i:"Sul Ponte Vecchio, guardare la fila di finestrelle quadrate sopra le botteghe: è il corridoio. E all'estremità sud, la deviazione attorno alla torre dei Mannelli."},
+    {n:"Ponte Vecchio",lat:43.76799,lon:11.25319,t:"ponte",y:"1345",k:1,v:0,
+     d:"Tre arcate ribassate, cioè schiacciate invece che a semicerchio: una soluzione che in Europa non si vedeva dall'antichità e che permette di tenere il piano del ponte basso e dritto. Le botteghe ci stanno sopra dal Trecento; erano macellerie, finché nel 1593 i Medici le sostituirono con gli orafi perché la puzza arrivava al corridoio di sopra.",
+     i:"Al centro, le due aperture sul fiume e il busto di Benvenuto Cellini. Da sotto, sul Lungarno, si vedono le botteghe che sporgono sull'acqua rette da mensole di legno."},
+    {n:"Basilica di Santa Maria Novella",lat:43.7743,lon:11.24937,t:"basilica",y:"1279-1357, facciata 1470",k:1,v:0,
+     d:"La parte bassa è gotica, a marmi bianchi e verdi; la parte alta la disegnò Leon Battista Alberti nel 1470, e per raccordare la navata alta al tetto basso delle laterali inventò le due volute laterali a ricciolo. Da allora mezze chiese d'Europa hanno quelle volute: sono nate qui, per risolvere un problema di geometria.",
+     i:"Le volute e il grande timpano con il sole raggiato. Sulla destra della piazza, i due obelischi su tartarughe di bronzo del Giambologna, che segnavano le curve delle corse di carri."},
+    {n:"Basilica di San Lorenzo",lat:43.775,lon:11.25389,t:"basilica",y:"1419-1470",k:1,v:0,
+     d:"La prima chiesa del Rinascimento: Brunelleschi la fece a colonne corinzie con gli archi a tutto sesto, pietra serena grigia sull'intonaco bianco, e tutto misurato su un modulo che si ripete. La facciata è rimasta nuda, mattoni a vista: Michelangelo ne disegnò una di marmo che non fu mai costruita.",
+     i:"La Sagrestia Vecchia, cubo con la cupola a ombrello: è lo spazio dove il Rinascimento mette per la prima volta d'accordo pianta, alzato e misura."},
+    {n:"Cappelle Medicee",lat:43.7752,lon:11.25312,t:"cappella",y:"1520-1534 e 1604",k:1,v:0,
+     d:"Due stanze opposte. La Sagrestia Nuova è di Michelangelo: pietra serena e marmo bianco, finestre che si restringono salendo per far sembrare la stanza più alta, e le tombe di Giuliano e Lorenzo con il Giorno, la Notte, l'Aurora e il Crepuscolo che scivolano sui sarcofagi. La Cappella dei Principi è l'opposto: ottagono rivestito di pietre dure e marmi scuri, pagato per due secoli.",
+     i:"Nella Sagrestia Nuova, il modo in cui Michelangelo deforma le cornici e le finestre: niente è regolare, e si sente."},
+    {n:"Basilica di Santa Croce",lat:43.76845,lon:11.26274,t:"basilica",y:"dal 1294",k:1,v:0,
+     d:"La più grande chiesa francescana del mondo: navate su pilastri ottagonali, capriate di legno a vista invece delle volte, perché l'ordine voleva povertà e perché il legno costava meno. Il risultato è uno spazio largo e chiaro, fatto per predicare a folle. La facciata di marmo è del 1863.",
+     i:"Dentro, le tombe di Michelangelo, Galileo, Machiavelli e Rossini lungo le pareti. Fuori, sul fianco destro, la Cappella dei Pazzi."},
+    {n:"Cappella dei Pazzi",lat:43.76801,lon:11.26299,t:"cappella",y:"1441-1460",k:1,v:0,
+     d:"In fondo al primo chiostro di Santa Croce: portico con sei colonne e un arco centrale più largo, dentro una sala quadrata con la cupola a dodici spicchi. È Brunelleschi che riduce l'architettura a geometria pura, quadrati e cerchi, grigio e bianco. Si capisce tutta la stanza in un colpo d'occhio, ed è esattamente lo scopo.",
+     i:"I tondi di terracotta invetriata di Luca della Robbia con gli Apostoli, azzurri e bianchi, lungo le pareti."},
+    {n:"Chiesa di Orsanmichele",lat:43.77071,lon:11.25505,t:"chiesa",y:"1337",k:1,v:0,
+     d:"Non sembra una chiesa perché non lo era: era il mercato del grano, una loggia a pilastri con due piani di granai sopra. Poi gli archi furono murati e il piano terra diventò chiesa. Nelle quattordici nicchie esterne le Arti di Firenze misero ciascuna il proprio santo, facendo a gara con gli scultori migliori del tempo.",
+     i:"Le nicchie lungo i quattro lati: il San Giorgio di Donatello, il San Matteo di Ghiberti, i Quattro Santi Coronati di Nanni di Banco. Anche queste in strada sono copie, e si guardano camminando intorno all'edificio."},
+    {n:"Palazzo Medici Riccardi",lat:43.77529,lon:11.25599,t:"palazzo",y:"1444-1484",k:1,v:0,
+     d:"Il modello di tutti i palazzi fiorentini: tre piani che si alleggeriscono salendo, bugnato rustico e sporgente in basso, liscio in cima, e un cornicione aggettante che chiude come il coperchio di una scatola. Michelozzo lo fece per Cosimo de' Medici, che rifiutò il progetto di Brunelleschi perché troppo vistoso.",
+     i:"All'angolo su via de' Gori, le finestre inginocchiate attribuite a Michelangelo, con le volute che poggiano a terra."},
+    {n:"Palazzo Rucellai",lat:43.77128,lon:11.2496,t:"palazzo",y:"1446-1451",k:1,v:0,
+     d:"Leon Battista Alberti applicò alla facciata gli ordini antichi: tre piani di lesene, dorico in basso, poi due varianti corinzie, come al Colosseo. È il primo palazzo in cui il muro viene trattato come una griglia classica invece che come una muraglia. La facciata non fu mai finita: si vede dove si ferma.",
+     i:"Il taglio netto a destra, dove la facciata si interrompe a metà campata. E la loggia dei Rucellai, di fronte, dall'altra parte della strada."},
+    {n:"Palazzo Strozzi",lat:43.7713,lon:11.25239,t:"palazzo",y:"1489-1538",k:1,v:0,
+     d:"L'ultimo e il più grande dei palazzi privati: un parallelepipedo isolato su tutti e quattro i lati, cosa rarissima in una città fitta. Filippo Strozzi comprò e demolì quindici case per averlo libero. Bugnato su tutta l'altezza, cornicione enorme, finito solo su due lati e mezzo.",
+     i:"I ferri originali agli angoli: anelli per le briglie dei cavalli, porta-stendardi, e i lampioni di Niccolò Grosso detto il Caparra."},
+    {n:"Palazzo Davanzati",lat:43.7702,lon:11.25286,t:"palazzo",y:"metà XIV sec.",k:1,v:0,
+     d:"Come si viveva prima del Rinascimento: facciata stretta e alta con i tre grandi archi al piano terra, le buche pontaie per le impalcature, e i ferri per appendere le stoffe nei giorni di festa. Dentro, le stanze dipinte a finti arazzi e il pozzo privato, che serviva tutti i piani.",
+     i:"In alto, la loggia aperta aggiunta nel Quattrocento, e sotto il grande stemma dei Davanzati."},
+    {n:"Piazza della Repubblica",lat:43.77139,lon:11.25389,t:"piazza",y:"1885-1895",k:1,v:0,
+     d:"Qui stava il Foro romano, poi il Mercato Vecchio e il ghetto: fu demolito tutto fra il 1885 e il 1895, quando Firenze era capitale e si volle una piazza all'italiana con l'arco di trionfo. La targa dice che l'antico centro fu restituito a nuova vita; in realtà fu raso al suolo, e la città lo discute ancora.",
+     i:"La Colonna dell'Abbondanza al centro, che segna l'incrocio del cardo e del decumano romani: è l'unico pezzo rimasto dal passato."},
+    {n:"Loggia del Mercato Nuovo",lat:43.77061,lon:11.25345,t:"loggia",y:"1547-1551",k:1,v:0,
+     d:"Loggia cinquecentesca a venti colonne corinzie, costruita per il commercio della seta e dell'oro. Al centro del pavimento c'è un disco di marmo bicromo, la pietra dello scandalo, dove i mercanti falliti venivano esposti al pubblico ludibrio.",
+     i:"Il Porcellino, la fontana col cinghiale di bronzo di Pietro Tacca, 1634: il muso è lucido perché lo toccano tutti."},
+    {n:"Badia Fiorentina",lat:43.77043,lon:11.25772,t:"abbazia",y:"978, rifatta 1627",k:1,v:0,
+     d:"Il campanile è il segno di Firenze medievale: base romanica quadrata, poi la parte gotica esagonale con le bifore e la cuspide. Dante abitava di fronte e sentiva queste campane scandire le ore della città. L'interno fu girato di novanta gradi nel Seicento.",
+     i:"Il chiostro degli Aranci, al primo piano, con il ballatoio a due ordini e gli affreschi sulla vita di san Benedetto."},
+    {n:"Basilica di Santa Trinita",lat:43.77015,lon:11.25072,t:"basilica",y:"XIV sec., facciata 1593",k:1,v:0,
+     d:"Fuori è una facciata tardo-cinquecentesca di Bernardo Buontalenti; dentro è una chiesa gotica rimasta intatta, con le volte a crociera e i pilastri. Il contrasto si sente appena si entra: due secoli di distanza fra la porta e la navata.",
+     i:"La Cappella Sassetti, a destra del presbiterio, con gli affreschi di Domenico Ghirlandaio: dentro le scene sacre ci sono piazza Santa Trinita e piazza della Signoria dipinte come erano nel 1485."},
+    {n:"Ponte Santa Trinita",lat:43.76889,lon:11.25028,t:"ponte",y:"1567-1571, ricostruito 1958",k:1,v:0,
+     d:"Le arcate non sono archi di cerchio: sono curve a catenaria rovesciata, schiacciatissime, e sembrano non toccare l'acqua. Bartolomeo Ammannati le disegnò così su suggerimenti michelangioleschi. I tedeschi lo fecero saltare nel 1944; fu ricostruito com'era, ripescando le pietre dall'Arno.",
+     i:"Guardarlo di profilo dal Ponte Vecchio: la linea dell'arcata è il pezzo di geometria più bello della città."},
+    {n:"Palazzo Pitti",lat:43.76515,lon:11.25001,t:"palazzo",y:"dal 1458, ampliato nel Seicento",k:1,v:0,
+     d:"Una muraglia di bugnato rustico lunga più di duecento metri, senza ordini e senza decorazione: solo pietra sbozzata e finestre. Era un palazzo privato dei Pitti, poi lo comprarono i Medici e lo allargarono tre volte, tenendo sempre lo stesso linguaggio. La piazza in pendenza davanti serve a farlo guardare dal basso.",
+     i:"I tre portoni al centro e il modo in cui i blocchi di pietra diventano più grossi verso il basso."},
+    {n:"Giardino di Boboli",lat:43.7618,lon:11.24661,t:"giardino",y:"dal 1549",k:1,v:0,
+     d:"Il modello del giardino all'italiana: assi che salgono il colle, prospettive chiuse da statue, grotte e un anfiteatro ricavato nella cava da cui uscì la pietra del palazzo. Non è un parco per passeggiare ma una macchina scenica, fatta perché la corte si facesse vedere.",
+     i:"La Grotta del Buontalenti, all'ingresso: finte stalattiti, pastori e animali che sembrano sciogliersi nella roccia."},
+    {n:"Basilica di Santo Spirito",lat:43.76722,lon:11.24778,t:"basilica",y:"dal 1444",k:1,v:0,
+     d:"L'ultima chiesa di Brunelleschi, e la più rigorosa: trentotto cappelle semicircolari girano tutt'intorno senza interruzione, e nel suo progetto dovevano sporgere all'esterno, mostrando la pianta da fuori. Non lo fecero, e la facciata è un muro liscio e nudo. Dentro, la fila di colonne non si ferma mai: gira attorno a tutta la chiesa.",
+     i:"Mettersi in fondo alla navata e guardare il colonnato che prosegue dietro l'altare: non c'è un punto in cui si interrompe."},
+    {n:"Basilica di Santa Maria del Carmine",lat:43.76778,lon:11.24361,t:"basilica",y:"1268, rifatta 1782",k:1,v:0,
+     d:"Fuori è un muro di mattoni grezzo, dentro è tutto settecentesco: l'incendio del 1771 bruciò la chiesa medievale. Si salvò un braccio del transetto, e dentro c'era la cappella che ha cambiato la pittura europea.",
+     i:"La Cappella Brancacci, con gli affreschi di Masaccio e Masolino, 1424-1428: la Cacciata dal Paradiso, dove Adamo ed Eva hanno per la prima volta un corpo vero e un'ombra che cade dalla stessa parte per tutti."},
+    {n:"Spedale degli Innocenti",lat:43.77639,lon:11.26111,t:"ospedale",y:"1419-1427",k:1,v:0,
+     d:"Il portico di Brunelleschi è il punto in cui comincia l'architettura rinascimentale: nove arcate su colonne corinzie, e ogni campata è un cubo perfetto, largo quanto alto quanto profondo. Tutto l'edificio è costruito su quella misura ripetuta. Era il primo brefotrofio d'Europa.",
+     i:"I tondi di Andrea della Robbia negli spazi fra gli archi: i bambini in fasce, bianchi su fondo azzurro. E all'estremità sinistra del portico, la finestra della ruota degli esposti, murata nel 1875."},
+    {n:"Piazza della Santissima Annunziata",lat:43.7764,lon:11.2607,t:"piazza",y:"XV-XVII sec.",k:1,v:0,
+     d:"L'unica piazza rinascimentale di Firenze pensata come un insieme: tre lati con lo stesso portico, perché dopo gli Innocenti anche la chiesa e il palazzo di fronte dovettero adeguarsi al passo di Brunelleschi. Ci vollero duecento anni, ma la piazza è tutta della stessa misura.",
+     i:"Le due fontane di Pietro Tacca con i mostri marini, e la statua equestre di Ferdinando I fusa col bronzo dei cannoni turchi."},
+    {n:"Basilica della Santissima Annunziata",lat:43.7769,lon:11.26128,t:"basilica",y:"1444-1481",k:1,v:0,
+     d:"Dietro il portico, la chiesa dei Serviti ha una tribuna rotonda che Leon Battista Alberti impose contro il parere di tutti: una rotonda antica attaccata a una navata, come il Pantheon messo in fondo a una chiesa. Fu discussa per vent'anni mentre la costruivano.",
+     i:"Il Chiostrino dei Voti, appena entrati, con gli affreschi di Andrea del Sarto e del Pontormo."},
+    {n:"Galleria dell'Accademia",lat:43.77694,lon:11.25889,t:"museo",y:"1784",k:1,v:0,
+     d:"Nata come galleria di studio per gli allievi dell'Accademia, dal 1873 ospita il David, portato qui da piazza della Signoria per proteggerlo. La tribuna in fondo fu costruita apposta: una navata con lucernario che fa cadere la luce dall'alto sulla statua.",
+     i:"Prima della tribuna, i Prigioni di Michelangelo: quattro figure lasciate a metà, che escono dal blocco grezzo. Si vedono i colpi di scalpello."},
+    {n:"Museo nazionale del Bargello",lat:43.7704,lon:11.25801,t:"museo",y:"1255",k:1,v:0,
+     d:"Il più antico palazzo pubblico della città, prima del Palazzo Vecchio: cortile con scalone scoperto, loggiato e stemmi dei podestà sulle pareti. Fu prigione per secoli, e le esecuzioni si facevano nel cortile. Oggi è il museo della scultura fiorentina.",
+     i:"Nel cortile, gli stemmi di pietra dei magistrati; dentro, i due pannelli del concorso del 1401 fra Brunelleschi e Ghiberti per la porta del Battistero, appesi uno accanto all'altro."},
+    {n:"Basilica di San Miniato al Monte",lat:43.75944,lon:11.265,t:"basilica",y:"1013-1207",k:1,v:0,
+     d:"Romanico fiorentino puro: facciata a marmi bianchi e verdi divisa in riquadri geometrici, cinque arcate sotto e un timpano sopra, tutto costruito su rapporti semplici fra quadrati. È il modello che i fiorentini credevano antico e che Alberti studiò per Santa Maria Novella. Sta in cima a una collina e si vede da tutta la città.",
+     i:"Il pavimento intarsiato del 1207 con lo zodiaco, e la cripta con le colonne di spoglio tutte diverse. Dal sagrato, il panorama su Firenze."},
+    {n:"Piazzale Michelangelo",lat:43.76287,lon:11.26492,t:"belvedere",y:"1869",k:1,v:0,
+     d:"Giuseppe Poggi lo costruì quando Firenze era capitale, come terrazza panoramica sul viale dei Colli. Da qui la città si legge tutta in una volta: la cupola, il campanile, la torre di Palazzo Vecchio, i ponti sull'Arno in fila.",
+     i:"La copia in bronzo del David al centro, e la fuga dei ponti verso ovest nelle ore della sera."},
+    {n:"Chiesa di Ognissanti",lat:43.77251,lon:11.24598,t:"chiesa",y:"1251, facciata 1637",k:1,v:0,
+     d:"Facciata barocca con il grande stemma di terracotta robbiana sopra il portale, su una chiesa umiliata di origine duecentesca. Era la chiesa degli Umiliati, i lanaioli che portarono a Firenze la lavorazione della lana: da lì è cominciata la ricchezza della città.",
+     i:"Nel refettorio, il Cenacolo di Domenico Ghirlandaio, 1480. In chiesa, la tomba di Sandro Botticelli e quella della famiglia Vespucci."},
+    {n:"Fortezza da Basso",lat:43.78163,lon:11.24885,t:"fortezza",y:"1534-1537",k:1,v:0,
+     d:"Antonio da Sangallo il Giovane la costruì per Alessandro de' Medici: pianta pentagonale con i bastioni a punta di lancia, muri bassi e inclinati perché le palle di cannone rimbalzassero. Non serviva a difendere Firenze dai nemici, ma i Medici dai fiorentini: le artiglierie puntavano verso la città.",
+     i:"Il bugnato a diamante del bastione verso viale Strozzi, e il mastio centrale."},
+    {n:"Museo Galileo",lat:43.76768,lon:11.25602,t:"museo",y:"palazzo del XI sec.",k:1,v:0,
+     d:"Palazzo Castellani sul Lungarno, uno dei più antichi della città, oggi museo degli strumenti scientifici dei Medici e dei Lorena: astrolabi, sfere armillari, termometri, il primo cannocchiale.",
+     i:"I due telescopi originali di Galileo e la lente con cui scoprì i satelliti di Giove, montata in una cornice d'avorio."},
+    {n:"Biblioteca Medicea Laurenziana",lat:43.77466,lon:11.25454,t:"biblioteca",y:"1525-1571",k:1,v:0,
+     d:"Michelangelo progettò il vestibolo come una stanza che sembra costruita al contrario: le colonne sono incassate nel muro invece che sporgere, le mensole non reggono niente, e la scala di Bartolomeo Ammannati si versa nella stanza come un liquido, con tre rampe che occupano quasi tutto lo spazio. È il manierismo che rompe le regole appena finite di scrivere.",
+     i:"La scala del vestibolo, e il contrasto con la sala di lettura: lunga, bassa, regolarissima, con i banchi di legno originali."},
+    {n:"Museo dell'Opera del Duomo",lat:43.7727,lon:11.25582,t:"museo",y:"1891, rifatto 2015",k:1,v:0,
+     d:"Dietro l'abside della cattedrale, raccoglie gli originali che stavano fuori: le porte del Battistero, le statue del campanile, le cantorie. La sala grande ricostruisce in scala reale la facciata medievale del Duomo, demolita nel 1587, con le statue rimesse al loro posto.",
+     i:"La Porta del Paradiso di Ghiberti restaurata, e la Pietà Bandini di Michelangelo, lasciata incompiuta e in parte spaccata da lui stesso."},
+    {n:"Palazzo Antinori",lat:43.77282,lon:11.25113,t:"palazzo",y:"1461-1469",k:1,v:0,
+     d:"Palazzo quattrocentesco di misura media, attribuito a Giuliano da Maiano: bugnato leggero, finestre centinate in fila regolare, cortile piccolo con il pozzo. È il tipo di palazzo che a Firenze si ripete cento volte, e serve a capire la norma da cui Medici e Strozzi si staccano.",
+     i:"Il cortile con il loggiato su tre lati, visibile dal portone quando è aperto."},
+    {n:"Chiesa di Santa Maria Maggiore",lat:43.77327,lon:11.25307,t:"chiesa",y:"XI sec., rifatta nel XIII",k:1,v:0,
+     d:"Una delle chiese più antiche della città, incastrata fra i palazzi di via Cerretani: fuori si vede solo il fianco romanico e il campanile. Dentro è gotica a tre navate, bassa e scura, molto prima di tutto quello che le sta intorno.",
+     i:"Sul fianco esterno, murata in alto, la testa di pietra chiamata Berta: la leggenda la lega a una fornaia, ma è un frammento romano reimpiegato."},
+    {n:"Casa Buonarroti",lat:43.76985,lon:11.26361,t:"casa museo",y:"XVII sec.",k:1,v:0,
+     d:"Non è la casa dove visse Michelangelo ma quella che il pronipote fece decorare in sua memoria, trasformandola in un museo di famiglia già nel Seicento: stanze dipinte con le imprese dell'artista, mobili e disegni.",
+     i:"I due rilievi giovanili di Michelangelo: la Madonna della Scala, scolpita a quindici anni, e la Battaglia dei Centauri."},
+    {n:"Basilica di San Marco",lat:45.43444,lon:12.33972,t:"basilica",y:"1063-1094",k:1,v:0,
+     d:"Pianta a croce greca con cinque cupole, copiata dalla chiesa dei Santi Apostoli di Costantinopoli: Venezia guardava a oriente, non a Roma. Le cupole che si vedono da fuori non sono quelle vere: sono calotte di legno e piombo montate sopra, più alte, perché dal bacino la chiesa facesse figura. Dentro, ottomila metri quadri di mosaici su fondo d'oro.",
+     i:"In facciata, le colonne e i marmi presi a Costantinopoli nel 1204: nessuna uguale all'altra, perché sono bottino. E i quattro cavalli di bronzo sulla loggia, anche quelli copie: gli originali sono dentro."},
+    {n:"Palazzo Ducale",lat:45.43367,lon:12.34042,t:"palazzo",y:"XIV-XV sec.",k:1,v:0,
+     d:"È costruito al contrario: il pieno sta in alto e il vuoto in basso. Due ordini di logge leggere reggono una muraglia di marmo bianco e rosa a scacchi, che pesa e sembra galleggiare. Nessun altro palazzo gotico d'Europa osa questo, e funziona perché Venezia non doveva difendersi da nessuno: non aveva mura.",
+     i:"L'angolo verso il ponte della Paglia, con il capitello dell'Ubriachezza di Noè; e la Porta della Carta, l'ingresso di marmo traforato fra la basilica e il palazzo."},
+    {n:"Piazza San Marco",lat:45.434,lon:12.338,t:"piazza",y:"IX-XVI sec.",k:1,v:0,
+     d:"Non è un quadrato ma un trapezio: si allarga verso la basilica, e questo fa sembrare la chiesa più vicina e più grande di quanto sia. Jacopo Sansovino sistemò i lati nel Cinquecento; le Procuratie Nuove e Vecchie hanno altezze e ordini diversi e nessuno se ne accorge, perché il disegno è fatto per l'occhio e non per il metro.",
+     i:"Mettersi all'estremità opposta, davanti all'ala napoleonica, e guardare come i due lati convergono."},
+    {n:"Campanile di San Marco",lat:45.43403,lon:12.33903,t:"campanile",y:"1514, ricostruito 1912",k:1,v:0,
+     d:"Novantanove metri di mattoni: una canna piena fino alla cella campanaria, poi la loggia di marmo e la cuspide piramidale con l'angelo. Crollò su se stesso la mattina del 14 luglio 1902, senza fare vittime e senza toccare la basilica. Lo rifecero identico, dov'era e com'era: ci misero dieci anni.",
+     i:"Alla base, la Loggetta di Jacopo Sansovino, piccola e tutta di marmi colorati: fu schiacciata dal crollo e ricomposta pezzo per pezzo."},
+    {n:"Torre dell'Orologio",lat:45.43404,lon:12.33821,t:"torre",y:"1496-1499",k:1,v:0,
+     d:"Il quadrante di smalto blu e oro segna l'ora, la fase lunare e il segno zodiacale: era un orologio astronomico in mezzo a una piazza di commercianti, e serviva anche ai naviganti. Sopra, due figure di bronzo battono le ore su una campana: le chiamano i Mori perché il bronzo si è annerito.",
+     i:"Il leone alato su fondo stellato sotto i Mori, e il passaggio sotto l'arco, da cui comincia la Merceria verso Rialto."},
+    {n:"Ponte di Rialto",lat:45.43801,lon:12.33564,t:"ponte",y:"1588-1591",k:1,v:0,
+     d:"Un'arcata sola di ventotto metri, in pietra d'Istria, su un terreno di fango: Antonio da Ponte piantò dodicimila pali sotto ciascuna spalla, disposti a ventaglio per spingere contro la spinta dell'arco. Il concorso l'avevano tentato Palladio e Michelangelo con progetti a più arcate, e persero. Sopra, due file di botteghe e tre passaggi.",
+     i:"Dalla riva, l'arco ribassato che tocca l'acqua con un'inclinazione quasi impossibile; e sotto le botteghe, la scalinata centrale che si allarga verso il colmo."},
+    {n:"Canal Grande",lat:45.44222,lon:12.32639,t:"canale",y:"antico letto fluviale",k:1,v:0,
+     d:"Quasi quattro chilometri a esse: segue un antico ramo di fiume, non una scelta urbanistica. Su di esso le famiglie si costruirono i palazzi con la facciata di rappresentanza sull'acqua e l'ingresso di servizio sulla calle dietro. Il risultato è una strada dove tutte le case mostrano il lato migliore, per sei secoli di seguito.",
+     i:"Il tipo veneziano: portego centrale con la polifora al centro della facciata e stanze cieche ai lati. Una volta visto, si riconosce in ogni palazzo del canale."},
+    {n:"Ca' d'Oro",lat:45.44056,lon:12.33389,t:"palazzo",y:"1421-1440",k:1,v:0,
+     d:"Il gotico veneziano al suo massimo: due logge traforate sovrapposte, con gli archi inflessi e i quadrilobi, e la parte piena spostata tutta a destra, così la facciata è volutamente asimmetrica. Si chiamava d'Oro perché le decorazioni erano dorate a foglia, con oltremare e cinabro: dall'acqua doveva brillare.",
+     i:"La loggia del primo piano e il modo in cui il traforo di pietra si assottiglia fino a sembrare merletto."},
+    {n:"Basilica di Santa Maria della Salute",lat:45.43057,lon:12.33473,t:"basilica",y:"1631-1687",k:1,v:0,
+     d:"Baldassarre Longhena la fece ottagona, con la cupola retta da sedici grandi volute a chiocciola che scaricano la spinta sui contrafforti: quelle volute, che chiamano orecchioni, sono la soluzione strutturale e insieme il motivo per cui la chiesa si riconosce da due chilometri. Fu costruita per voto, dopo la peste che uccise un veneziano su tre.",
+     i:"Le statue sulle volute, e la posizione: la chiesa sta sulla punta della Dogana, e chiude l'imbocco del Canal Grande come un tappo scenografico."},
+    {n:"Basilica di Santa Maria Gloriosa dei Frari",lat:45.43693,lon:12.32649,t:"basilica",y:"1250-1443",k:1,v:0,
+     d:"Mattoni nudi fuori, dentro un'aula gotica altissima con le travi di legno che legano i pilastri da una parte all'altra: senza quelle catene gli archi si aprirebbero. È la chiesa dei francescani, costruita grande per predicare, e il coro dei frati sta in mezzo alla navata, chiuso dal suo recinto di marmo.",
+     i:"L'Assunta di Tiziano sull'altare maggiore, dipinta per essere vista attraverso l'apertura del coro: il rosso della Madonna è il punto in cui finisce la prospettiva della chiesa."},
+    {n:"Basilica dei Santi Giovanni e Paolo",lat:45.43922,lon:12.3424,t:"basilica",y:"1333-1430",k:1,v:0,
+     d:"La chiesa dei domenicani, gemella dei Frari e grande quanto quella: il pantheon dei dogi, con venticinque sepolture monumentali lungo le pareti. La facciata è rimasta a mattoni, con i sarcofagi gotici incastrati in alto a sinistra: le tombe stanno fuori, sulla strada.",
+     i:"Davanti alla chiesa, il monumento equestre a Bartolomeo Colleoni del Verrocchio: il cavallo ha tre zampe a terra e una alzata, e il condottiero si solleva sulle staffe con la torsione del busto."},
+    {n:"Chiesa di Santa Maria dei Miracoli",lat:45.43943,lon:12.3392,t:"chiesa",y:"1481-1489",k:1,v:0,
+     d:"Pietro Lombardo rivestì di marmi colorati una scatola rettangolare, dentro e fuori: lastre di porfido, serpentino e pavonazzetto incastrate come un mobile intarsiato. Non ci sono navate né colonne: una sala sola con il soffitto a botte e il presbiterio rialzato su una scalinata. È architettura trattata come oreficeria.",
+     i:"Il fianco sul canale: la facciata non si vede mai per intero, e il marmo si legge insieme al riflesso dell'acqua."},
+    {n:"Basilica di San Giorgio Maggiore",lat:45.4293,lon:12.3433,t:"basilica",y:"1566-1610",k:1,v:0,
+     d:"Andrea Palladio risolse il problema di mettere un tempio antico davanti a una chiesa a tre navate sovrapponendo due fronti: uno alto e stretto per la navata centrale, uno basso e largo per le laterali, incastrati l'uno nell'altro. Pietra d'Istria bianchissima, sull'isola di fronte a San Marco, in modo che chiuda la veduta dal molo.",
+     i:"Guardarla dalla Piazzetta, dall'altra parte del bacino: è messa lì per quello. Dentro, l'Ultima Cena di Tintoretto nel presbiterio."},
+    {n:"Gallerie dell'Accademia",lat:45.43108,lon:12.32814,t:"museo",y:"1807, negli edifici del XV-XVIII sec.",k:1,v:0,
+     d:"Stanno nella chiesa di Santa Maria della Carità, nel convento palladiano e nella Scuola Grande: tre edifici diversi cuciti insieme. La sala dell'ex Scuola conserva il soffitto a cassettoni dorati del Quattrocento.",
+     i:"La Tempesta di Giorgione e l'Uomo vitruviano di Leonardo, che si espone raramente perché la carta non regge la luce."},
+    {n:"Ponte dell'Accademia",lat:45.43166,lon:12.32899,t:"ponte",y:"1933, rifatto 1985",k:1,v:0,
+     d:"Doveva essere provvisorio: una struttura di legno montata in trentasette giorni al posto di un ponte di ferro ottocentesco che non piaceva. Il provvisorio dura da novant'anni; nel 1985 fu rifatto uguale, con l'anima d'acciaio sotto il legno.",
+     i:"Dal colmo, la veduta del Canal Grande verso la Salute: è il punto da cui è fotografata la città."},
+    {n:"Ca' Rezzonico",lat:45.43409,lon:12.32435,t:"palazzo",y:"1649-1758",k:1,v:0,
+     d:"Cominciato da Baldassarre Longhena e finito un secolo dopo da Giorgio Massari, che tenne il disegno barocco del primo: colonne binate, finestre incorniciate e profonde, chiaroscuro forte sull'acqua. Oggi è il museo del Settecento veneziano, con le stanze arredate.",
+     i:"Il salone da ballo a doppia altezza, l'unico del genere in un palazzo veneziano, e il soffitto dipinto da Giambattista Tiepolo."},
+    {n:"Ca' Pesaro",lat:45.441,lon:12.33146,t:"palazzo",y:"1659-1710",k:1,v:0,
+     d:"Il barocco di Longhena portato al massimo: bugnato a punta di diamante al piano terra, poi due ordini di colonne con le finestre ad arco molto incavate. La facciata sul canale è quasi scolpita, non costruita: cambia faccia con il sole della giornata.",
+     i:"Il piano terra a diamanti, che si vede meglio arrivando dall'acqua con la luce bassa."},
+    {n:"Fondaco dei Tedeschi",lat:45.43824,lon:12.33673,t:"edificio commerciale",y:"1505-1508",k:1,v:0,
+     d:"La casa-magazzino dei mercanti tedeschi: un quadrato attorno a un cortile coperto, con il porticato sull'acqua per scaricare le merci direttamente dalle barche. La facciata era affrescata da Giorgione e Tiziano: il salino l'ha mangiata, ne restano frammenti staccati.",
+     i:"Il porticato a cinque archi sul Canal Grande, accanto al ponte di Rialto."},
+    {n:"Chiesa di San Giacomo di Rialto",lat:45.43847,lon:12.33547,t:"chiesa",y:"impianto antico, rifatta nel 1601",k:1,v:0,
+     d:"La chiesa dei mercanti, nel mezzo del mercato: piccola, a croce greca, con il portico gotico di legno sulla facciata, uno dei pochi rimasti in città. Sopra, l'orologio con il quadrante a ventiquattro ore, che ai mercanti serviva più della messa.",
+     i:"Il portico di legno e l'iscrizione sull'abside che intima mercanti onesti, pesi giusti e patti leali."},
+    {n:"Ghetto di Venezia",lat:45.44528,lon:12.32639,t:"quartiere",y:"dal 1516",k:1,v:0,
+     d:"Il primo ghetto d'Europa, e la parola viene da qui: geto era la fonderia che stava in quest'isola. Chiusi dentro e obbligati a starci, gli ebrei non potevano allargarsi e costruirono in altezza: le case del campo arrivano a sette e otto piani, con soffitti bassissimi. Si vede dal numero di finestre in fila sulla stessa facciata.",
+     i:"Le cinque sinagoghe, riconoscibili dall'esterno solo per le cinque finestre in fila del piano delle scole, e i resti dei cardini dei portoni che venivano chiusi di notte."},
+    {n:"Chiesa della Madonna dell'Orto",lat:45.44634,lon:12.33247,t:"chiesa",y:"metà XIV sec.",k:1,v:0,
+     d:"Gotico veneziano in mattoni con il coronamento a edicole e il portale di marmo: la facciata è divisa in tre da lesene, e le due laterali hanno le finestrelle cieche. Era la chiesa di Jacopo Tintoretto, che abitava a pochi passi ed è sepolto qui.",
+     i:"Dentro, le due tele enormi del Tintoretto ai lati del presbiterio, alte quattordici metri, dipinte gratis per la sua parrocchia."},
+    {n:"Scuola Grande di San Rocco",lat:45.43706,lon:12.32629,t:"scuola",y:"1515-1549",k:1,v:0,
+     d:"Le Scuole erano confraternite laiche di mutuo soccorso, e facevano a gara a costruire la sede più bella. Questa ha la facciata a due ordini di colonne e marmi, e dentro un ciclo che Jacopo Tintoretto dipinse in ventitré anni: oltre sessanta teleri su soffitti e pareti, tutti suoi.",
+     i:"La Crocifissione nella Sala dell'Albergo, che occupa una parete intera: Tintoretto la vinse presentando il quadro già finito invece del bozzetto, contro il regolamento del concorso."},
+    {n:"Gran Teatro La Fenice",lat:45.4337,lon:12.3339,t:"teatro",y:"1792, ricostruito 1837 e 2003",k:1,v:0,
+     d:"Il nome era un augurio e si è avverato due volte: bruciato nel 1836 e rifatto in un anno, bruciato di nuovo nel 1996 per un incendio doloso e ricostruito com'era nel 2003, lavorando su fotografie e disegni. La facciata neoclassica dà su un campiello stretto: il teatro si raggiunge solo a piedi o in barca.",
+     i:"La sala a cinque ordini di palchi, oro e stucchi su fondo azzurro-verde, rifatta identica."},
+    {n:"Ponte dei Sospiri",lat:45.43406,lon:12.34086,t:"ponte",y:"1600-1603",k:1,v:0,
+     d:"Un passaggio chiuso di pietra d'Istria fra il Palazzo Ducale e le prigioni nuove, con le finestrelle a traforo di pietra: serviva a portare i condannati dalle sale di giudizio alle celle senza passare per la strada. Il nome romantico è ottocentesco, di Byron; i sospiri erano quelli dei prigionieri che vedevano la laguna per l'ultima volta.",
+     i:"Si guarda dal ponte della Paglia, sulla riva degli Schiavoni: le due facce del ponte sono decorate diversamente."},
+    {n:"Chiesa di San Zaccaria",lat:45.43472,lon:12.34333,t:"chiesa",y:"1444-1515",k:1,v:0,
+     d:"La facciata racconta un cambio di epoca a metà costruzione: sotto è gotica, con le cornici acute, sopra è rinascimentale, a ordini di colonne e con il grande timpano curvo, perché Mauro Codussi prese il cantiere e cambiò linguaggio senza buttare giù quel che c'era.",
+     i:"La Pala di Giovanni Bellini, 1505, sul secondo altare a sinistra: la finta architettura dipinta continua quella vera della cappella."},
+    {n:"Chiesa di San Salvador",lat:45.4366,lon:12.3365,t:"chiesa",y:"1507-1534",k:1,v:0,
+     d:"Dentro è una sequenza di tre cubi, ciascuno con la sua cupola, infilati uno dietro l'altro: una pianta rinascimentale rigorosissima, poco visibile perché la chiesa sta schiacciata fra le botteghe della Mercerie. La facciata barocca di marmo è del 1663.",
+     i:"Alzare gli occhi alle tre cupole in fila, che non si sospettano affatto dalla strada."},
+    {n:"Ca' Vendramin Calergi",lat:45.44222,lon:12.32972,t:"palazzo",y:"1481-1509",k:1,v:0,
+     d:"Mauro Codussi portò il Rinascimento sul Canal Grande: per la prima volta un palazzo veneziano usa le colonne classiche e gli archi a tutto sesto al posto del traforo gotico, tenendo però la polifora centrale della tradizione locale. Richard Wagner ci morì nel 1883.",
+     i:"Le bifore con la colonnina e l'oculo nel timpano, e il motto scolpito in facciata: non nobis Domine."},
+    {n:"Chiesa di San Francesco della Vigna",lat:45.4381,lon:12.3486,t:"chiesa",y:"1534-1554, facciata 1562",k:1,v:0,
+     d:"Jacopo Sansovino la costruì su un impianto di proporzioni musicali, calcolate da frate Francesco Zorzi: larghezze e altezze stanno fra loro come gli intervalli dell'armonia. La facciata, aggiunta da Andrea Palladio, è il primo esempio dei due frontoni incastrati che poi userà a San Giorgio.",
+     i:"La facciata palladiana e, dentro, il chiostro dove si entra liberamente."},
+    {n:"Fondaco dei Turchi",lat:45.442,lon:12.32868,t:"palazzo",y:"XIII sec., rifatto 1869",k:1,v:0,
+     d:"L'unico palazzo veneto-bizantino rimasto riconoscibile sul Canal Grande: portico continuo al piano terra, loggia continua sopra, archi a ferro di cavallo e due torrette ai lati. Il restauro ottocentesco lo rifece pesantemente, ma la forma è quella delle case-fondaco più antiche della città.",
+     i:"Gli archi rialzati e i patere di marmo circolari murati sopra, pezzi bizantini reimpiegati."},
+    {n:"Monumento ai Tetrarchi",lat:45.43417,lon:12.33972,t:"scultura",y:"IV sec.",k:1,v:0,
+     d:"Un gruppo di porfido rosso incastrato all'angolo della basilica, verso la Porta della Carta: quattro imperatori abbracciati a due a due, con gli occhi grandi e le forme squadrate della scultura tardoantica. Fu portato da Costantinopoli nel 1204 come bottino. A un piede manca un pezzo, ed è conservato a Istanbul.",
+     i:"Il punto in cui lo spigolo del muro taglia il gruppo: si tocca con la mano, sta all'altezza della spalla."},
+    {n:"Chiesa di San Michele in Isola",lat:45.44694,lon:12.34722,t:"chiesa",y:"1469-1478",k:1,v:0,
+     d:"La prima chiesa rinascimentale di Venezia, di Mauro Codussi: facciata di pietra d'Istria bianca, divisa in tre da lesene, con il timpano semicircolare al centro e due quarti di cerchio ai lati. Sta sull'isola del cimitero, e si vede bianchissima dal fondamenta Nove.",
+     i:"Il bugnato liscio e il coronamento curvo, che poi sarà copiato in tutta la laguna."},
+    {n:"Duomo di Milano",lat:45.46397,lon:9.19058,t:"cattedrale",y:"1386-1813",k:1,v:0,
+     d:"Gotico internazionale costruito in marmo di Candoglia per cinque secoli, con maestranze francesi, tedesche e lombarde che si davano il cambio. Le cinque navate reggono su cinquantadue pilastri altissimi; fuori, centotrentacinque guglie e più di tremila statue trasformano il tetto in una selva di pietra. La facciata fu finita da Napoleone, in uno stile che tenta di accordarsi al gotico senza esserlo.",
+     i:"Il tetto si cammina: da lassù si vedono gli archi rampanti e la Madonnina dorata sulla guglia maggiore, a centootto metri. In facciata, le porte di bronzo del Novecento con le storie di sant'Ambrogio."},
+    {n:"Piazza del Duomo",lat:45.46417,lon:9.19,t:"piazza",y:"1865-1873",k:1,v:0,
+     d:"Giuseppe Mengoni la fece demolendo l'isolato medievale davanti alla cattedrale e la chiuse con due portici uguali, a creare una cornice regolare per una chiesa che regolare non è. Morì cadendo dall'impalcatura della Galleria pochi giorni prima dell'inaugurazione.",
+     i:"Il basamento della statua di Vittorio Emanuele II e, verso nord, l'arco d'ingresso della Galleria, messo esattamente in asse col transetto del Duomo."},
+    {n:"Galleria Vittorio Emanuele II",lat:45.46547,lon:9.1897,t:"galleria",y:"1865-1877",k:1,v:0,
+     d:"Due bracci a croce latina coperti di ferro e vetro, con la cupola di trentasette metri all'incrocio: è l'architettura industriale che si traveste da palazzo, con le facciate interne trattate come vie vere. Fu il modello dei passages europei e, un secolo dopo, dei centri commerciali.",
+     i:"Il mosaico del toro nel pavimento sotto la cupola, consumato dal tacco di chi ci gira sopra, e le quattro lunette con le allegorie dei continenti."},
+    {n:"Teatro alla Scala",lat:45.4675,lon:9.18917,t:"teatro",y:"1776-1778",k:1,v:0,
+     d:"Giuseppe Piermarini lo costruì sulle rovine della chiesa di Santa Maria alla Scala, da cui il nome. Fuori è un edificio sobrio quasi anonimo, con un portico per le carrozze: tutto il lusso sta dentro, nella sala a ferro di cavallo con sei ordini di palchi, pensata perché il suono torni al centro.",
+     i:"La facciata modesta su una piazza piccola: a Milano l'opera non si ostenta fuori. Dentro, il lampadario a trecentosessantadue lampadine."},
+    {n:"Castello Sforzesco",lat:45.471,lon:9.17969,t:"castello",y:"1450-1466",k:1,v:0,
+     d:"Quadrato di duecento metri di lato, con le torri rotonde agli spigoli e il torrione del Filarete al centro della fronte. Francesco Sforza lo ricostruì sui resti del castello visconteo distrutto dalla Repubblica Ambrosiana: una fortezza che guarda la città, non il nemico esterno. Alle fortificazioni lavorarono Bramante e Leonardo.",
+     i:"La Sala delle Asse, dipinta da Leonardo con un pergolato di gelsi che copre volta e pareti; e la Pietà Rondanini di Michelangelo, l'ultima, lasciata non finita."},
+    {n:"Basilica di Sant'Ambrogio",lat:45.4625,lon:9.17583,t:"basilica",y:"379-386, rifatta nell'XI sec.",k:1,v:0,
+     d:"Il modello del romanico lombardo: quadriportico davanti, due campanili diversi per altezza e secolo, facciata a capanna con le logge che digradano. Dentro, le volte a crociera costolonate sono fra le prime d'Europa, e le navate laterali hanno il matroneo sopra. Tutto in mattoni, senza marmo: è architettura fatta con quello che c'era in pianura.",
+     i:"Il quadriportico, dove si entra liberamente; il pulpito romanico sopra il sarcofago paleocristiano; e il ciborio d'oro sull'altare."},
+    {n:"Basilica di San Lorenzo Maggiore",lat:45.45806,lon:9.18212,t:"basilica",y:"IV sec.",k:1,v:0,
+     d:"Pianta centrale a quadrifoglio con quattro torri agli angoli: una soluzione tardoantica che a Milano, capitale dell'Impero, si poteva permettere. Davanti, sedici colonne corinzie romane in fila, prese da un edificio del II secolo e rimontate qui: è il colonnato antico più grande rimasto in piedi nel Nord Italia.",
+     i:"Le colonne e la piazza che fanno: ci si siede sotto. Dietro la basilica, la cappella di Sant'Aquilino con i mosaici del IV secolo."},
+    {n:"Chiesa di Santa Maria delle Grazie",lat:45.46601,lon:9.17041,t:"chiesa",y:"1469-1490, tribuna 1492-1497",k:1,v:0,
+     d:"La navata è gotica lombarda in mattoni; poi Ludovico il Moro chiamò Bramante, che attaccò in fondo una tribuna enorme a pianta centrale, con la cupola su tamburo sedici volte più ampia del resto. Si vede il salto da fuori, girando l'abside: due architetture incollate, l'una medievale e l'altra romana.",
+     i:"Il tiburio di Bramante visto dal retro, con le gallerie di archetti; e nel refettorio accanto, l'Ultima Cena di Leonardo, dipinta a secco sul muro e per questo in rovina da subito."},
+    {n:"Chiesa di Santa Maria presso San Satiro",lat:45.46261,lon:9.18803,t:"chiesa",y:"1476-1482",k:1,v:0,
+     d:"Dietro l'altare non c'è spazio: passava una strada. Bramante dipinse e modellò in stucco un coro che non esiste, profondo meno di un metro, costruito in prospettiva perché da fondo navata sembri profondo nove. È il più famoso inganno ottico dell'architettura italiana, e si scopre solo spostandosi di lato.",
+     i:"Camminare verso l'altare restando sul fianco: il finto coro si schiaccia sotto gli occhi."},
+    {n:"Pinacoteca di Brera",lat:45.47196,lon:9.18782,t:"museo",y:"1776, nel palazzo del XVII sec.",k:1,v:0,
+     d:"Sta nel palazzo gesuitico di Francesco Maria Richini, attorno a un cortile a due ordini di arcate. Nacque come raccolta di studio per l'Accademia; Napoleone la riempì con le opere requisite alle chiese di mezza Italia.",
+     i:"Nel cortile, il Napoleone come Marte pacificatore di Antonio Canova, nudo e in bronzo. Dentro, il Cristo morto del Mantegna, in scorcio dai piedi."},
+    {n:"Torre Velasca",lat:45.46,lon:9.19056,t:"grattacielo",y:"1956-1958",k:1,v:0,
+     d:"Centosei metri che si allargano verso l'alto, retti da puntoni di cemento a vista: la forma viene dalle torri medievali lombarde, ma il motivo è pratico, perché i piani alti dovevano essere abitazioni e servivano più larghi. Lo studio BBPR la progettò in una Milano appena uscita dalle macerie, e divise la critica per cinquant'anni.",
+     i:"I puntoni inclinati sotto l'aggetto: si vedono da lontano e sono la ragione per cui la torre non assomiglia a nient'altro."},
+    {n:"Palazzo Reale di Milano",lat:45.46305,lon:9.19115,t:"palazzo",y:"rifatto 1769-1778",k:1,v:0,
+     d:"Piermarini lo rifece in forme neoclassiche sobrie, con la facciata arretrata rispetto al Duomo a formare una piazzetta. I bombardamenti del 1943 lo svuotarono: la Sala delle Cariatidi è rimasta com'era dopo l'incendio, con gli stucchi anneriti, e non è stata restaurata per scelta.",
+     i:"La Sala delle Cariatidi: la rovina lasciata visibile è la cosa più forte del palazzo."},
+    {n:"Chiesa di San Bernardino alle Ossa",lat:45.46255,lon:9.19561,t:"chiesa",y:"1269, ossario rifatto 1695",k:1,v:0,
+     d:"Accanto alla chiesa c'è una cappella piccola dove le pareti sono rivestite di ossa umane disposte a decorazione: teschi negli oculi, femori a formare cornici e croci. Venivano dal cimitero dell'ospedale vicino, troppo pieno. Il soffitto è affrescato con un cielo chiaro, e il contrasto è il senso di tutta la stanza.",
+     i:"La cappella dell'ossario, a destra appena entrati: si entra liberamente."},
+    {n:"Biblioteca Ambrosiana",lat:45.46348,lon:9.18579,t:"biblioteca e museo",y:"1609",k:1,v:0,
+     d:"La prima biblioteca d'Europa aperta al pubblico: il cardinale Federico Borromeo la volle con i libri su scaffali a vista invece che incatenati ai banchi, e chiunque sapesse leggere poteva entrare. Accanto, la pinacoteca nacque come museo di studio per gli artisti.",
+     i:"Il Codice Atlantico di Leonardo, la Canestra di frutta di Caravaggio e il cartone della Scuola di Atene di Raffaello, grande quanto l'affresco vaticano."},
+    {n:"Mole Antonelliana",lat:45.06898,lon:7.69324,t:"edificio monumentale",y:"1863-1889",k:1,v:0,
+     d:"Alessandro Antonelli la tirò su in muratura, senza acciaio: centosessantasette metri di mattoni e pietra, la costruzione in muratura più alta mai realizzata. Doveva essere una sinagoga; la comunità ebraica si ritirò quando i costi e l'altezza crebbero senza controllo, e la comprò il Comune. La cupola a pianta quadrata regge su una struttura sottilissima, rinforzata in cemento dopo che una tromba d'aria nel 1953 abbatté la guglia.",
+     i:"L'ascensore di vetro che sale nel vuoto interno fino al tempietto, a ottantacinque metri: si vede la struttura da dentro."},
+    {n:"Duomo di Torino",lat:45.07332,lon:7.68544,t:"cattedrale",y:"1491-1498",k:1,v:0,
+     d:"L'unica chiesa rinascimentale di Torino, in marmo bianco, con la facciata a tre portali e il campanile romanico accanto, più vecchio di un secolo. Dietro il presbiterio, attaccata, c'è la cappella che custodiva la Sindone.",
+     i:"La facciata bianca e il campanile di mattoni uno accanto all'altra: due epoche e due materiali che non si parlano."},
+    {n:"Cappella della Sacra Sindone",lat:45.0732,lon:7.68588,t:"cappella",y:"1668-1694",k:1,v:0,
+     d:"Guarino Guarini costruì una cupola che non è una cupola: trentasei archi sovrapposti a esagoni sfalsati, ciascuno appoggiato sui due sottostanti, che salendo si restringono fino a un occhio di luce. Guardata da sotto sembra un alveare che si allontana all'infinito. L'incendio del 1997 la devastò; la riaprirono nel 2018 dopo vent'anni di restauro, rimontando i marmi neri pezzo per pezzo.",
+     i:"Mettersi sotto il centro e guardare in alto: la geometria si legge solo da lì."},
+    {n:"Palazzo Reale di Torino",lat:45.07283,lon:7.68633,t:"palazzo",y:"dal 1646",k:1,v:0,
+     d:"Fuori è una facciata piatta e severa, quasi una caserma: i Savoia non volevano mostrare ricchezza verso la piazza. Dentro c'è la scala delle Forbici di Filippo Juvarra, due rampe che si incrociano sotto una volta retta da pochissimi punti, e un'enfilade di sale che attraversa tutto il palazzo in linea retta.",
+     i:"La cancellata con i Dioscuri davanti alla piazzetta Reale, e, dentro, l'Armeria Reale nella galleria lunga sessanta metri."},
+    {n:"Palazzo Madama",lat:45.07094,lon:7.68578,t:"palazzo",y:"porta romana, facciata 1718-1721",k:1,v:0,
+     d:"Un edificio che è quattro edifici: la porta romana con le due torri, il castello medievale degli Acaja attorno, il rifacimento quattrocentesco e infine la facciata barocca che Juvarra appoggiò davanti come una quinta di teatro, lasciando il retro medievale com'era. Girandoci intorno si attraversano duemila anni in cento metri.",
+     i:"Guardare prima la facciata bianca di Juvarra e poi passare sul retro, dove spuntano i mattoni e le torri romane."},
+    {n:"Piazza Castello",lat:45.0708,lon:7.6858,t:"piazza",y:"dal 1584",k:1,v:0,
+     d:"Il centro di tutto il disegno sabaudo: una piazza rettangolare con i portici continui su tre lati e Palazzo Madama isolato al centro, da cui partono le quattro strade principali della città. L'impianto è militare, a scacchiera, e viene direttamente dal castrum romano.",
+     i:"I portici, che a Torino sono diciotto chilometri in tutto: furono costruiti perché la corte potesse attraversare la città senza bagnarsi."},
+    {n:"Palazzo Carignano",lat:45.06901,lon:7.68559,t:"palazzo",y:"1679-1685",k:1,v:0,
+     d:"Guarini modellò la facciata in mattoni come se fosse creta: il corpo centrale si curva avanti e indietro con una doppia sinuosità, e il cotto è lavorato a disegni dentro le fasce. Nessuna pietra, nessun marmo: solo mattone, che in Piemonte era il materiale del posto. Qui nacque Vittorio Emanuele II e si riunì il primo Parlamento italiano.",
+     i:"Il movimento ondulato della facciata, che si legge mettendosi di sbieco; e la doppia scala ellittica nell'atrio."},
+    {n:"Piazza San Carlo",lat:45.0677,lon:7.68257,t:"piazza",y:"1642-1650",k:1,v:0,
+     d:"Il salotto di Torino: rettangolo chiuso dai portici, con le due chiese gemelle di San Carlo e Santa Cristina che fanno da fondale e sembrano identiche ma non lo sono — la facciata di Santa Cristina è di Juvarra, l'altra è di due secoli dopo, copiata per simmetria.",
+     i:"Il monumento equestre a Emanuele Filiberto, il Caval ëd Brons, con il duca che rinfodera la spada dopo la battaglia."},
+    {n:"Chiesa di San Lorenzo",lat:45.07211,lon:7.68483,t:"chiesa",y:"1668-1687",k:1,v:0,
+     d:"Dalla piazza non si vede: non ha facciata, perché i Savoia non vollero che rompesse la cortina uniforme di Piazza Castello. Dentro, Guarini costruì una pianta centrale che è un ottagono con i lati curvi, e sopra una cupola fatta di otto archi intrecciati che lasciano vedere il cielo fra l'uno e l'altro.",
+     i:"La cupola vista da sotto: la struttura è tutta a vista, non c'è una superficie piena."},
+    {n:"Museo Egizio di Torino",lat:45.06833,lon:7.68444,t:"museo",y:"1824",k:1,v:0,
+     d:"Il più antico museo egizio del mondo e, per quantità, il secondo dopo il Cairo. Sta nel Collegio dei Nobili, palazzo seicentesco di Guarini. La raccolta nacque dagli acquisti di Carlo Felice e dagli scavi italiani del Novecento.",
+     i:"La statua di Ramesse II e la tomba intatta di Kha e Merit, trovata nel 1906 con dentro tutto il corredo, mobili compresi."},
+    {n:"Porta Palatina",lat:45.075,lon:7.6847,t:"porta romana",y:"I sec. a.C.",k:1,v:0,
+     d:"La porta nord della Julia Augusta Taurinorum: due torri poligonali a sedici lati e, in mezzo, quattro aperture, due per i carri e due per i pedoni. Sopra, due ordini di finestre ad arco in cortina di mattoni. È una delle porte romane meglio conservate d'Europa, e sta ancora in asse con la via che passava dentro.",
+     i:"Il paramento di mattoni delle torri, che si legge filare per filare, e il basolato della strada antica davanti."},
+    {n:"Basilica del Corpus Domini",lat:45.07278,lon:7.68278,t:"basilica",y:"1607-1671",k:1,v:0,
+     d:"Costruita sul punto dove, nel 1453, secondo la tradizione un'ostia si sollevò in aria davanti alla folla. Facciata sobria, interno a navata unica con marmi policromi: è la chiesa che i torinesi considerano il centro religioso della città, più del Duomo.",
+     i:"La balaustra di marmo che recinta il punto esatto del miracolo, nel pavimento."},
+    {n:"Santuario della Consolata",lat:45.0768,lon:7.67911,t:"santuario",y:"X sec., rifatto 1678-1703",k:1,v:0,
+     d:"Guarini impostò un ovale, Juvarra aggiunse il presbiterio: due dei più grandi architetti del barocco su una chiesa che ne conserva anche il campanile romanico dell'anno Mille. Il risultato è una sequenza di spazi curvi infilati uno nell'altro, difficilissimi da leggere in pianta e chiarissimi camminandoci dentro.",
+     i:"Il campanile romanico, rimasto in piedi fra le aggiunte barocche; e le pareti coperte di ex voto dipinti."},
+    {n:"Chiesa della Gran Madre di Dio",lat:45.0622,lon:7.6991,t:"chiesa",y:"1818-1831",k:1,v:0,
+     d:"Un Pantheon messo in fondo al ponte, dall'altra parte del Po: pronao con sei colonne corinzie, timpano e cupola emisferica. Fu costruita per il ritorno dei Savoia dopo Napoleone, ed è piazzata in asse con via Po, perché chi attraversa il ponte la veda crescere davanti.",
+     i:"La scalinata e le due statue laterali, la Fede e la Religione: la leggenda torinese dice che la Fede indichi dove è nascosto il Graal."},
+    {n:"Cattedrale di San Lorenzo",lat:44.40766,lon:8.93135,t:"cattedrale",y:"1098-XIV sec.",k:1,v:0,
+     d:"Facciata a fasce bianche e nere alternate, con i tre portali gotici strombati e due torri diverse: quella di destra è finita, quella di sinistra no. Le fasce bicrome erano un privilegio: a Genova solo le famiglie autorizzate potevano usarle in facciata, e la cattedrale naturalmente poteva.",
+     i:"Dentro la navata destra, una granata inglese caduta nel 1941 e mai esplosa, lasciata lì dov'è arrivata. E i leoni di marmo ottocenteschi ai piedi della scalinata."},
+    {n:"Via Giuseppe Garibaldi, le Strade Nuove",lat:44.41111,lon:8.93278,t:"strada monumentale",y:"1558-1583",k:1,v:0,
+     d:"Una strada aperta apposta perché le famiglie nobili ci costruissero i palazzi in fila, tutti della stessa altezza e con lo stesso passo: la prima lottizzazione di lusso d'Europa, decisa dalla Repubblica e iscritta nei Rolli, l'elenco pubblico dei palazzi obbligati a ospitare i capi di Stato in visita. Larga poco, i palazzi altissimi: la via è un canyon di facciate affrescate.",
+     i:"Gli atri in salita con gli scaloni che si vedono dalla strada attraverso i portoni aperti: a Genova il palazzo si mostra dall'ingresso, perché non c'è spazio per i cortili."},
+    {n:"Palazzo Rosso",lat:44.41125,lon:8.93212,t:"palazzo",y:"1671-1677",k:1,v:0,
+     d:"Intonaco rosso, come il nome, e una pianta su due piani nobili sovrapposti, uno per ciascuno dei due fratelli Brignole-Sale. Le sale del secondo piano hanno le volte affrescate con le stagioni e i pianeti da Gregorio De Ferrari e Domenico Piola.",
+     i:"I ritratti di Anton van Dyck della famiglia Brignole-Sale, dipinti quando il pittore stava a Genova."},
+    {n:"Palazzo Doria-Tursi",lat:44.41133,lon:8.93281,t:"palazzo",y:"1565-1579",k:1,v:0,
+     d:"Il più grande dei palazzi di via Garibaldi, oggi municipio: facciata arretrata rispetto alla strada per far posto a una terrazza, con le logge laterali e la pietra rosa di Finale. Lo scalone centrale sale dritto dal cortile verso la luce.",
+     i:"Il violino Cannone di Niccolò Paganini, conservato in una sala al primo piano e suonato una volta l'anno."},
+    {n:"Palazzo Ducale",lat:44.40752,lon:8.93326,t:"palazzo pubblico",y:"XIII sec., rifatto 1778-1783",k:1,v:0,
+     d:"La sede dei dogi genovesi, rifatta in forme neoclassiche da Simone Cantoni dopo l'incendio del 1777: facciata a bugnato con il portico, due cortili in fila e lo scalone monumentale. Dietro l'intonaco restano la torre medievale e le carceri, che si visitano.",
+     i:"La Torre Grimaldina, la prigione dove stettero Jacopo Ruffini e Niccolò Paganini, con i graffiti dei prigionieri sui muri."},
+    {n:"Porta Soprana",lat:44.40557,lon:8.93447,t:"porta urbana",y:"1155",k:1,v:0,
+     d:"Due torri cilindriche altissime con l'arco a sesto acuto in mezzo, costruite in fretta quando si temeva l'arrivo del Barbarossa: sulla pietra c'è ancora l'iscrizione che avverte i nemici di tenersi alla larga. È il pezzo più intero delle mura del Dodicesimo secolo.",
+     i:"Sotto le torri, la casa che la tradizione dice di Cristoforo Colombo, e il chiostro di Sant'Andrea rimontato accanto."},
+    {n:"Chiesa di San Donato",lat:44.40572,lon:8.93157,t:"chiesa",y:"XII sec.",k:1,v:0,
+     d:"Romanico genovese intatto: facciata a capanna con il portale a colonnine e, soprattutto, il campanile ottagonale a due ordini di bifore, uno dei più belli della Liguria. Dentro, le colonne sono di spoglio, romane, tutte diverse fra loro.",
+     i:"Il campanile visto dal vico sotto: si restringe salendo, e le bifore si fanno più fitte."},
+    {n:"Chiesa del Gesù e dei Santi Ambrogio e Andrea",lat:44.40668,lon:8.9333,t:"chiesa",y:"1589-1606",k:1,v:0,
+     d:"Il barocco gesuitico portato a Genova: navata unica con cappelle, cupola e tutte le superfici coperte di marmi, stucchi dorati e affreschi, senza un centimetro lasciato nudo. Fuori, la facciata è rimasta semplice e non finita.",
+     i:"Due Rubens: la Circoncisione sull'altare maggiore e il Miracolo di sant'Ignazio, dipinti per questa chiesa e ancora al loro posto."},
+    {n:"Basilica di Santa Maria delle Vigne",lat:44.40955,lon:8.9315,t:"basilica",y:"X sec., campanile XII",k:1,v:0,
+     d:"Nel cuore dei caruggi, quasi invisibile finché non ci si arriva addosso: il campanile romanico a bifore è dell'XI-XII secolo, la chiesa dentro fu rifatta in barocco. Accanto resta un chiostro medievale con le colonnine binate.",
+     i:"Il campanile, che si vede dai vicoli solo alzando gli occhi fra le case, e il chiostro sul fianco."},
+    {n:"Palazzo San Giorgio",lat:44.40919,lon:8.92886,t:"palazzo",y:"1260, ampliato 1571",k:1,v:0,
+     d:"Sede del Banco di San Giorgio, una delle prime banche del mondo: la parte verso il porto è medievale, quella verso il mare è cinquecentesca e tutta affrescata a finte architetture e statue. Marco Polo ci fu prigioniero e lì dettò il Milione.",
+     i:"La facciata dipinta sul lato del porto, rifatta nel 1912 ricopiando i disegni antichi."},
+    {n:"Basilica della Santissima Annunziata del Vastato",lat:44.41417,lon:8.92833,t:"basilica",y:"1520-1620",k:1,v:0,
+     d:"Fuori, un pronao neoclassico a sei colonne aggiunto nell'Ottocento; dentro, tre navate su colonne binate con ogni superficie coperta d'oro e marmi: lo pagarono i Lomellini, e il contrasto fra la sobrietà esterna e l'abbondanza interna è il modo genovese di mostrare i soldi senza farlo in strada.",
+     i:"La volta affrescata e il luccichio dell'oro appena si apre la porta: è un effetto cercato."},
+    {n:"Palazzo Reale di Genova",lat:44.41491,lon:8.92616,t:"palazzo",y:"1643-1655",k:1,v:0,
+     d:"Costruito dai Balbi, poi dei Durazzo e infine dei Savoia: il palazzo scende verso il mare su più livelli, con il giardino pensile e la terrazza che guarda il porto. La Galleria degli Specchi imita quella di Versailles in scala genovese.",
+     i:"La terrazza sul mare, alla fine del percorso, con il pavimento di ciottoli bianchi e neri a disegno."},
+    {n:"Piazza De Ferrari",lat:44.40726,lon:8.93405,t:"piazza",y:"fine XIX sec.",k:1,v:0,
+     d:"Il punto dove la città medievale finisce e comincia quella ottocentesca: da un lato i caruggi stretti, dall'altro i palazzi delle banche e il teatro. La fontana di bronzo al centro è del 1936.",
+     i:"Il pronao del Teatro Carlo Felice, unico pezzo rimasto del teatro ottocentesco bombardato, con addosso la torre scenica moderna di Aldo Rossi."},
+    {n:"Basilica di San Petronio",lat:44.49338,lon:11.34328,t:"basilica",y:"dal 1390",k:1,v:0,
+     d:"Doveva essere più grande di San Pietro, e il papa fermò i lavori: la facciata è ancora a metà, marmo bianco e rosa in basso e mattoni nudi in alto, e il transetto non fu mai costruito. Il taglio si vede anche dall'esterno, sul fianco, dove le murature si interrompono a mezz'aria. È la chiesa gotica più grande costruita in mattoni.",
+     i:"Il portale centrale di Jacopo della Quercia, con le storie della Genesi; e dentro, la meridiana di Giovanni Cassini, sessantasei metri di linea di ottone nel pavimento, la più lunga del mondo."},
+    {n:"Piazza Maggiore",lat:44.49373,lon:11.34306,t:"piazza",y:"dal 1200",k:1,v:0,
+     d:"Quattro lati e quattro poteri, uno per parte: il Comune con Palazzo d'Accursio, il mercato con il Palazzo dei Banchi, la giustizia con il Podestà, la Chiesa con San Petronio. Il centro è rialzato di un gradino rispetto al piano: lo chiamano il Crescentone, ed è il pezzo di pietra su cui i bolognesi si siedono.",
+     i:"Il Palazzo dei Banchi del Vignola: è solo una facciata, costruita per nascondere le botteghe disordinate dietro. Una quinta teatrale, niente di più."},
+    {n:"Fontana del Nettuno",lat:44.49422,lon:11.34265,t:"fontana",y:"1563-1566",k:1,v:0,
+     d:"Il Giambologna fuse il bronzo per il papa, che voleva mostrare chi comandava dopo aver preso Bologna. Il dio alza il braccio con il gesto del comando; le sirene alla base spremono l'acqua dai seni, e la cosa fece discutere già allora.",
+     i:"Mettersi all'angolo nord-est della vasca e guardare la statua di profilo: da quel punto preciso il pollice del Nettuno cambia di significato. È uno scherzo che i bolognesi insegnano ai forestieri."},
+    {n:"Torre degli Asinelli e Garisenda",lat:44.49246,lon:11.35124,t:"torri",y:"1109-1119",k:1,v:0,
+     d:"Di cento torri medievali ne restano una ventina, e queste due sono le più alte: l'Asinelli novantasette metri, la Garisenda quarantotto, tagliata già nel Trecento perché pendeva troppo. Le famiglie le costruivano per prestigio e difesa, con il basamento in pietra e la canna in mattoni che si assottiglia salendo.",
+     i:"La pendenza della Garisenda si vede meglio da via Rizzoli: Dante la cita nell'Inferno, descrivendo l'effetto di guardarla dal basso quando passa una nuvola."},
+    {n:"Basilica di Santo Stefano, le Sette Chiese",lat:44.4922,lon:11.34865,t:"complesso di chiese",y:"V-XIII sec.",k:1,v:0,
+     d:"Non una chiesa ma un gruppo di edifici cresciuti uno addosso all'altro per otto secoli: il Santo Sepolcro ottagonale che imita quello di Gerusalemme, il Crocifisso longobardo, il cortile di Pilato, il chiostro a due ordini. Si passa da un'epoca all'altra attraversando una porta.",
+     i:"Nel cortile di Pilato, la vasca di pietra longobarda dell'VIII secolo; e nel chiostro, i capitelli romanici con i telamoni che reggono gli archi."},
+    {n:"Basilica di San Domenico",lat:44.4895,lon:11.3445,t:"basilica",y:"1221-1243",k:1,v:0,
+     d:"Qui è sepolto san Domenico, e la sua arca è un cantiere durato tre secoli: Nicola Pisano e bottega fecero il sarcofago con i rilievi, Niccolò dell'Arca la cimasa, e il giovane Michelangelo, a vent'anni, scolpì l'angelo reggicandelabro di destra e il San Petronio.",
+     i:"I due angeli ai lati dell'arca: quello di sinistra è di Niccolò dell'Arca, quello di destra di Michelangelo. Si vede la differenza senza bisogno che te lo dicano."},
+    {n:"Palazzo dell'Archiginnasio",lat:44.49198,lon:11.34342,t:"palazzo",y:"1562-1563",k:1,v:0,
+     d:"La prima sede unica dell'Università, costruita per togliere le lezioni dalle case private: un lungo portico a trenta arcate, un cortile a due ordini e le pareti coperte da settemila stemmi dipinti e scolpiti degli studenti che si laurearono qui.",
+     i:"Il Teatro Anatomico, tutto in abete, con il tavolo di marmo al centro e le statue degli Spellati che reggono il baldacchino: bombardato nel 1944 e rimontato con i pezzi originali recuperati."},
+    {n:"Cattedrale di San Pietro",lat:44.49565,lon:11.34292,t:"cattedrale",y:"X sec., rifatta 1575-1605",k:1,v:0,
+     d:"La vera cattedrale di Bologna, che i forestieri scambiano per una chiesa qualsiasi perché San Petronio è più grande: navata unica barocca altissima, con la volta a botte. Il campanile è il più alto della città dopo gli Asinelli e conserva la Nonna, una campana di oltre tre tonnellate.",
+     i:"Nella cripta, i due leoni stilofori romanici rimasti dal portale medievale; e il Compianto in terracotta di Alfonso Lombardi."},
+    {n:"Santuario di Santa Maria della Vita",lat:44.49335,lon:11.34461,t:"santuario",y:"XIII sec., rifatto nel Seicento",k:1,v:0,
+     d:"Chiesa stretta fra le botteghe del mercato, con la cupola ellittica di Giuseppe Antonio Torri che da fuori quasi non si vede. Dentro, in una cappella a destra, c'è il gruppo di terracotta che è la scultura più violenta del Quattrocento italiano.",
+     i:"Il Compianto sul Cristo morto di Niccolò dell'Arca, 1463: sei figure a grandezza naturale, con le vesti e i capelli spinti all'indietro dal vento della corsa e le bocche spalancate a urlare."},
+    {n:"Palazzo d'Accursio",lat:44.49394,lon:11.3424,t:"palazzo pubblico",y:"XIII-XV sec.",k:1,v:0,
+     d:"Il municipio è fatto di case comprate e unite una dopo l'altra, e si vede: la facciata cambia materiale e finestre ogni venti metri. La rampa interna di Donato Bramante sale a cordonata, senza gradini, perché i cavalli arrivassero al piano nobile.",
+     i:"Sopra il portale, la Madonna di terracotta di Niccolò dell'Arca; e l'orologio con le due torri a fianco."},
+    {n:"Basilica di San Giacomo Maggiore",lat:44.49545,lon:11.34895,t:"basilica",y:"1267-1343",k:1,v:0,
+     d:"Fuori, lungo via Zamboni, corre un portico rinascimentale a trentasei arcate su colonne di marmo: fu costruito per i Bentivoglio, che abitavano di fronte. Dentro, navata unica gotica con il soffitto a capriate, poi coperto.",
+     i:"La Cappella Bentivoglio, con la pala di Lorenzo Costa e la tomba di Anton Galeazzo scolpita da Jacopo della Quercia."},
+    {n:"Portici di Bologna",lat:44.4938,lon:11.3435,t:"portici",y:"dal XII sec.",k:1,v:0,
+     d:"Quaranta chilometri in città, tutti nati da un abuso: nel Medioevo le case si allargavano sporgendo sopra la strada su mensole di legno, e il Comune invece di proibirlo lo regolò, imponendo che sotto restasse il passaggio pubblico alto almeno sette piedi, quanto un uomo a cavallo. Patrimonio UNESCO dal 2021.",
+     i:"In Strada Maggiore, Casa Isolani: tre mensole di quercia alte nove metri, del Duecento, rimaste di legno come erano tutte all'inizio."},
 
     /* ------- Roma: fuori dal centro stretto ------- */
     {n:"Basilica di San Paolo fuori le mura",lat:41.8587,lon:12.47678,t:"basilica",y:"IV sec., ricostruita dopo il 1823",k:1,v:0,
@@ -2589,6 +2976,54 @@
      p:[[40.83612, 14.24918], [40.83622, 14.24949], [40.83666, 14.24934], [40.83696, 14.25004], [40.83674, 14.25037], [40.83656, 14.25051], [40.83679, 14.25047], [40.83714, 14.25061], [40.83732, 14.25044], [40.83747, 14.25037], [40.83747, 14.25017], [40.83751, 14.25014], [40.83764, 14.25015], [40.83777, 14.25023], [40.83793, 14.25012], [40.83776, 14.24957], [40.83791, 14.24947], [40.83802, 14.24947], [40.83846, 14.24924], [40.83796, 14.24947], [40.83813, 14.25014], [40.83824, 14.25035], [40.83881, 14.25139], [40.83872, 14.25172], [40.83867, 14.25185], [40.83848, 14.25231], [40.83836, 14.25277], [40.8385, 14.25321]]},
     {id:"napoli-greca",tema:"archeologia",n:"Napoli — la città sotto: teatro romano, San Lorenzo, Museo",
      p:[[40.85235, 14.25684], [40.85187, 14.25702], [40.85106, 14.25748], [40.85118, 14.25789], [40.85099, 14.2573], [40.85051, 14.25588], [40.85029, 14.25524], [40.85143, 14.2546], [40.85164, 14.25354], [40.85133, 14.25257], [40.85127, 14.25184], [40.85226, 14.25173], [40.85281, 14.25165], [40.85315, 14.25152], [40.85327, 14.2516], [40.85343, 14.25173], [40.8535, 14.25161], [40.85333, 14.25131], [40.85339, 14.25128]]},
+    {id:"genova-rolli",tema:"architettura",n:"Genova — le Strade Nuove e i palazzi dei Rolli",
+     p:[[44.41491,8.92616],[44.41417,8.92833],[44.41154,8.93182],[44.41125,8.93212],[44.41133,8.93281]]},
+    {id:"genova-caruggi",tema:"architettura",n:"Genova — i caruggi: dalla cattedrale a Porta Soprana",
+     p:[[44.40919,8.92886],[44.40955,8.9315],[44.40766,8.93135],[44.40668,8.9333],[44.40572,8.93157],[44.40557,8.93447]]},
+    {id:"bologna-maggiore",tema:"architettura",n:"Bologna — piazza Maggiore e le due torri",
+     p:[[44.49394,11.3424],[44.49422,11.34265],[44.49373,11.34306],[44.49338,11.34328],[44.49335,11.34461],[44.49246,11.35124]]},
+    {id:"bologna-portici",tema:"architettura",n:"Bologna — sotto i portici: Santo Stefano, San Giacomo, l'Archiginnasio",
+     p:[[44.49198,11.34342],[44.4922,11.34865],[44.49545,11.34895],[44.49565,11.34292]]},
+    {id:"bologna-domenico",tema:"arte",n:"Bologna — la terracotta che urla: San Domenico e la Vita",
+     p:[[44.4895,11.3445],[44.49335,11.34461],[44.49394,11.3424]]},
+    {id:"milano-duomo",tema:"architettura",n:"Milano — dal Duomo alla Scala, per la Galleria",
+     p:[[45.46417,9.19],[45.46397,9.19058],[45.46305,9.19115],[45.46547,9.1897],[45.4675,9.18917]]},
+    {id:"milano-antica",tema:"archeologia",n:"Milano — la capitale romana: San Lorenzo e Sant'Ambrogio",
+     p:[[45.45806,9.18212],[45.4625,9.17583],[45.46601,9.17041]]},
+    {id:"milano-bramante",tema:"architettura",n:"Milano — Bramante: il finto coro e la tribuna delle Grazie",
+     p:[[45.46261,9.18803],[45.46348,9.18579],[45.46601,9.17041]]},
+    {id:"milano-brera",tema:"arte",n:"Milano — Brera e il Castello",
+     p:[[45.4675,9.18917],[45.47196,9.18782],[45.471,9.17969]]},
+    {id:"torino-castello",tema:"architettura",n:"Torino — piazza Castello: Madama, il Reale, il Duomo",
+     p:[[45.0708,7.6858],[45.07094,7.68578],[45.07283,7.68633],[45.07332,7.68544],[45.0732,7.68588],[45.075,7.6847]]},
+    {id:"torino-guarini",tema:"architettura",n:"Torino — Guarini: le cupole che non si reggono",
+     p:[[45.07211,7.68483],[45.0732,7.68588],[45.06901,7.68559],[45.0768,7.67911]]},
+    {id:"torino-po",tema:"architettura",n:"Torino — da piazza San Carlo al Po: la Mole e la Gran Madre",
+     p:[[45.0677,7.68257],[45.06833,7.68444],[45.06901,7.68559],[45.06898,7.69324],[45.0622,7.6991]]},
+    {id:"venezia-marco",tema:"architettura",n:"Venezia — piazza San Marco: la basilica, il palazzo, i Mori",
+     p:[[45.434,12.338],[45.43404,12.33821],[45.43444,12.33972],[45.43417,12.33972],[45.43367,12.34042],[45.43406,12.34086]]},
+    {id:"venezia-canal",tema:"architettura",n:"Venezia — i palazzi del Canal Grande: dalla Ca' d'Oro a Rialto",
+     p:[[45.44222,12.32972],[45.442,12.32868],[45.441,12.33146],[45.44056,12.33389],[45.43965,12.33584],[45.43824,12.33673],[45.43801,12.33564]]},
+    {id:"venezia-gotico",tema:"arte",n:"Venezia — le due grandi chiese dei frati: Frari e San Zanipolo",
+     p:[[45.43693,12.32649],[45.43706,12.32629],[45.4366,12.3365],[45.43943,12.3392],[45.43922,12.3424],[45.4392,12.3414]]},
+    {id:"venezia-rinascimento",tema:"architettura",n:"Venezia — Codussi e Palladio: la pietra bianca",
+     p:[[45.43472,12.34333],[45.4381,12.3486],[45.44222,12.32972],[45.44694,12.34722],[45.4293,12.3433]]},
+    {id:"venezia-dorsoduro",tema:"arte",n:"Venezia — Dorsoduro: Accademia, Salute, la punta della Dogana",
+     p:[[45.43409,12.32435],[45.43166,12.32899],[45.43108,12.32814],[45.43082,12.33154],[45.43057,12.33473]]},
+    {id:"venezia-ghetto",tema:"storia",n:"Venezia — il Ghetto e Cannaregio: le case alte e la Madonna dell'Orto",
+     p:[[45.44128,12.32221],[45.44528,12.32639],[45.44634,12.33247]]},
+    {id:"firenze-duomo",tema:"architettura",n:"Firenze — la piazza del Duomo: cupola, campanile, battistero",
+     p:[[43.77306,11.255],[43.77306,11.25694],[43.77281,11.25581],[43.7727,11.25582],[43.77327,11.25307]]},
+    {id:"firenze-signoria",tema:"architettura",n:"Firenze — dalla Signoria agli Uffizi e al Ponte Vecchio",
+     p:[[43.77071,11.25505],[43.76972,11.25556],[43.76944,11.25611],[43.7692,11.25566],[43.76833,11.25528],[43.76768,11.25602],[43.76799,11.25319]]},
+    {id:"firenze-brunelleschi",tema:"architettura",n:"Firenze — Brunelleschi: dove comincia il Rinascimento",
+     p:[[43.77639,11.26111],[43.775,11.25389],[43.77466,11.25454],[43.77306,11.25694],[43.76801,11.26299],[43.76722,11.24778]]},
+    {id:"firenze-palazzi",tema:"architettura",n:"Firenze — i palazzi del Quattrocento: Medici, Strozzi, Rucellai",
+     p:[[43.77529,11.25599],[43.77282,11.25113],[43.77128,11.2496],[43.7713,11.25239],[43.7702,11.25286],[43.77061,11.25345]]},
+    {id:"firenze-oltrarno",tema:"arte",n:"Firenze — Oltrarno: Pitti, Santo Spirito, il Carmine",
+     p:[[43.76889,11.25028],[43.76515,11.25001],[43.7618,11.24661],[43.76722,11.24778],[43.76778,11.24361]]},
+    {id:"firenze-colline",tema:"architettura",n:"Firenze — su per il colle: San Miniato e il piazzale",
+     p:[[43.76845,11.26274],[43.76287,11.26492],[43.75944,11.265]]},
     {id:"napoli-caravaggio",tema:"arte",n:"Napoli — Caravaggio: le due tele rimaste in città",
      p:[[40.85181,14.26035],[40.85265,14.25987],[40.85146,14.25873],[40.84898,14.25427],[40.84756,14.25187],[40.8456,14.2492],[40.83973,14.24861]]},
     {id:"napoli-decumano",tema:"architettura",n:"Napoli — le chiese del decumano maggiore",
@@ -2689,13 +3124,117 @@
     });
   }
 
-  function speak(text){
+
+  /* ---------- le lingue ----------
+     La voce incisa e' italiana e resta italiana: incidere tutto in quattordici
+     lingue farebbe due gigabyte. In lingua straniera parla la voce del
+     telefono, che ogni iPhone e ogni Android ha gia' dentro. Le schede scritte
+     a mano restano in italiano finche' non sono tradotte: in quel caso le
+     legge comunque la voce italiana, perche' una voce inglese che legge
+     l'italiano non si capisce. */
+  var LINGUE=[
+    {c:'it',n:'Italiano'},{c:'en',n:'English'},{c:'de',n:'Deutsch'},
+    {c:'fr',n:'Français'},{c:'es',n:'Español'},{c:'nl',n:'Nederlands'},
+    {c:'pt',n:'Português'},{c:'pl',n:'Polski'},{c:'zh',n:'中文'},
+    {c:'ja',n:'日本語'},{c:'ru',n:'Русский'},{c:'sv',n:'Svenska'},
+    {c:'ko',n:'한국어'},{c:'ar',n:'العربية'},{c:'he',n:'עברית'}
+  ];
+  var LINGUA='it', L=null;
+
+  function T(chiave,predefinito){
+    if(!L||!L.frasi)return predefinito;
+    return L.frasi[chiave]||predefinito;
+  }
+  function U(chiave,predefinito){
+    if(!L||!L.ui)return predefinito;
+    return L.ui[chiave]||predefinito;
+  }
+  function vesteLingua(){
+    if(!L)return;
+    document.documentElement.lang=LINGUA;
+    document.documentElement.dir = L.rtl ? 'rtl' : 'ltr';
+    var mette=function(id,testo){ var e=el(id); if(e&&testo)e.textContent=testo; };
+    var dentro=function(sel,testo){ var e=document.querySelector(sel); if(e&&testo)e.textContent=testo; };
+    dentro('.porta-testa .claim', U('claim',null));
+    dentro('header .claim', U('claim',null));
+    dentro('#scelta-voce b', U('voce',null));   dentro('#scelta-voce span', U('voce_sub',null));
+    dentro('#scelta-occhi b', U('occhi',null)); dentro('#scelta-occhi span', U('occhi_sub',null));
+    dentro('#scelta-libera b', U('libera',null)); dentro('#scelta-libera span', U('libera_sub',null));
+    dentro('#scelta-percorso b', U('percorso',null)); dentro('#scelta-percorso span', U('percorso_sub',null));
+    dentro('#scelta-torna b', U('torna',null)); dentro('#scelta-torna span', U('torna_sub',null));
+    mette('porta-cambia', U('cambia',null));
+    mette('porta-via', U('comincia',null));
+    mette('start', U('avvia',null));  mette('voice', U('modo_voce',null));
+    mette('sim', U('simula',null));   mette('vai-casa', '🏠 '+U('casa','Portami a casa'));
+    mette('segna-casa', U('segna_casa',null)); mette('sos', '🆘 '+U('sos','Vienimi a prendere'));
+    mette('chi-chiamare', U('chi',null)); mette('install', U('installa',null));
+    mette('more', U('approfondisci',null)); mette('skip', U('oltre',null));
+    var p=el('parla'); if(p&&L.ui.parla)p.textContent='🎙 '+L.ui.parla;
+    dentro('.eyebrow span', U('intorno',null));
+    var b=el('body'); if(b&&b.classList.contains('idle')&&L.ui.attesa)b.textContent=L.ui.attesa;
+  }
+  function caricaLingua(cod,quando){
+    if(cod==='it'){ LINGUA='it'; L=null;
+      document.documentElement.lang='it'; document.documentElement.dir='ltr';
+      try{localStorage.setItem('urbea-lingua','it');}catch(e){}
+      if(quando)quando(); return; }
+    fetch('lingue/'+cod+'.json')
+      .then(function(r){return r.json();})
+      .then(function(d){
+        L=d; LINGUA=cod;
+        try{localStorage.setItem('urbea-lingua',cod);}catch(e){}
+        vesteLingua();
+        if(quando)quando();
+      })
+      .catch(function(){ if(quando)quando(); });
+  }
+
+  // il testo di un annuncio, ricostruito nella lingua scelta a partire dalle
+  // stesse tessere che compongono la voce incisa
+  function inLingua(ids,testoItaliano){
+    if(!L)return {t:testoItaliano,italiano:true};
+    var pezzi=[], italiano=false;
+    for(var i=0;i<ids.length;i++){
+      var id=ids[i];
+      if(id.indexOf('frase-')===0){
+        pezzi.push(T(id.slice(6), '')); continue;
+      }
+      if(id.indexOf('dir-')===0){
+        var d=id.slice(4);
+        if(d.indexOf('destra')>=0)      pezzi.push(T('a-destra','a destra'));
+        else if(d.indexOf('sinistra')>=0)pezzi.push(T('a-sinistra','a sinistra'));
+        else if(d.indexOf('spalle')>=0) pezzi.push(T('dietro','dietro'));
+        else                             pezzi.push(T('davanti','davanti'));
+        continue;
+      }
+      if(id.indexOf('m-')===0){
+        var m=id.slice(2);
+        pezzi.push(m==='passi' ? T('pochi-passi','a pochi passi') : (m+' '+T('metri','metri')));
+        continue;
+      }
+      if(id.indexOf('poi-')===0){
+        var n=parseInt(id.slice(4),10)-1, p=POI[n];
+        if(!p)continue;
+        if(/-nome$/.test(id)){ pezzi.push(p.n); continue; }
+        if(/-scheda$/.test(id)){ pezzi.push(p.d||''); italiano=true; continue; }
+        if(/-dentro$/.test(id)){ pezzi.push(p.i||''); italiano=true; continue; }
+      }
+    }
+    var t=pezzi.filter(function(x){return x;}).join('. ');
+    return {t:t||testoItaliano, italiano:italiano};
+  }
+
+  function speak(text,forzaItaliano){
     try{
       if(!window.speechSynthesis)return;
       window.speechSynthesis.cancel();
       var u=new SpeechSynthesisUtterance(text);
-      u.lang='it-IT'; u.rate=0.98;
-      var vs=window.speechSynthesis.getVoices().filter(function(v){return /it[-_]IT/i.test(v.lang);});
+      var cod=(L&&!forzaItaliano)?L.cod:'it-IT';
+      u.lang=cod; u.rate=0.98;
+      var radice=cod.split('-')[0];
+      var vs=window.speechSynthesis.getVoices().filter(function(v){
+        return new RegExp('^'+radice,'i').test(v.lang.replace('_','-'));
+      });
       if(vs.length)u.voice=vs[0];
       window.speechSynthesis.speak(u);
     }catch(e){}
@@ -2747,6 +3286,17 @@
   function dire(ids,testo,urgente){
     if(staParlando && !urgente){ inCoda={ids:ids,testo:testo}; return; }
     ultimaFrase={ids:ids,testo:testo};
+    if(LINGUA!=='it'){
+      var tr=inLingua(ids,testo);
+      staParlando=true;
+      liveEl.textContent=tr.t;
+      speak(tr.t, tr.italiano);
+      setTimeout(function(){
+        staParlando=false;
+        if(inCoda){ var c=inCoda; inCoda=null; dire(c.ids,c.testo); }
+      }, Math.min(16000, 1200+tr.t.length*55));
+      return;
+    }
     staParlando=true;
     try{
       if(window.speechSynthesis)window.speechSynthesis.cancel();
@@ -3330,7 +3880,13 @@
     {id:'torre',  n:'Torre del Greco', lat:40.78700,lon:14.36830},
     {id:'venafro',n:'Venafro',         lat:41.48600,lon:14.04500},
     {id:'parma',  n:'Parma',           lat:44.80320,lon:10.32900},
-    {id:'spoleto',n:'Spoleto',         lat:42.73450,lon:12.73800}
+    {id:'spoleto',n:'Spoleto',         lat:42.73450,lon:12.73800},
+    {id:'firenze',n:'Firenze',         lat:43.77140,lon:11.25470},
+    {id:'venezia',n:'Venezia',         lat:45.43400,lon:12.33800},
+    {id:'milano', n:'Milano',          lat:45.46420,lon:9.19000},
+    {id:'torino', n:'Torino',          lat:45.07080,lon:7.68580},
+    {id:'genova', n:'Genova',          lat:44.40760,lon:8.93300},
+    {id:'bologna',n:'Bologna',         lat:44.49370,lon:11.34310}
   ];
 
   function lunghezzaPercorso(r){
@@ -3768,16 +4324,26 @@
   function eseguiComando(testo){
     var t=normalizza(testo);
     if(!t)return false;
-    function ha(){ for(var i=0;i<arguments.length;i++){ if(t.indexOf(arguments[i])>=0)return true; } return false; }
+    function ha(){
+      for(var i=0;i<arguments.length;i++){ if(t.indexOf(arguments[i])>=0)return true; }
+      return false;
+    }
+    // nella lingua scelta valgono anche le parole di quella lingua
+    function haL(chiave){
+      if(!L||!L.comandi||!L.comandi[chiave])return false;
+      var p=L.comandi[chiave];
+      for(var i=0;i<p.length;i++){ if(t.indexOf(normalizza(p[i]))>=0)return true; }
+      return false;
+    }
     // finche' la schermata d'ingresso e' aperta si sceglie parlando
     var pt=el('porta');
     if(pt && !pt.hidden && typeof window.portaScegli==='function'){
-      if(ha('percorso','percorsi','itinerario','itinerari'))return window.portaScegli('percorso');
-      if(ha('libero','libera','cammino','cammina','vai','comincia','parti','andiamo'))return window.portaScegli('libero');
+      if(ha('percorso','percorsi','itinerario','itinerari')||haL('percorso'))return window.portaScegli('percorso');
+      if(ha('libero','libera','cammino','cammina','vai','comincia','parti','andiamo')||haL('libero'))return window.portaScegli('libero');
     }
-    if(ha('approfondisci','dimmi di piu','raccontami','racconta','di piu','spiega')){ deepen(); return true; }
-    if(ha('avanti','vai oltre','prossimo','salta','andiamo')){ skipOn(); return true; }
-    if(ha('ripeti','come hai detto','non ho capito')){
+    if(ha('approfondisci','dimmi di piu','raccontami','racconta','di piu','spiega')||haL('approfondisci')){ deepen(); return true; }
+    if(ha('avanti','vai oltre','prossimo','salta','andiamo')||haL('avanti')){ skipOn(); return true; }
+    if(ha('ripeti','come hai detto','non ho capito')||haL('ripeti')){
       if(ultimaFrase)dire(ultimaFrase.ids,ultimaFrase.testo);
       return true;
     }
@@ -3802,7 +4368,7 @@
       });
       return true;
     }
-    if(ha('dove sono','dove mi trovo','che cosa ho intorno','cosa ho intorno')){
+    if(ha('dove sono','dove mi trovo','che cosa ho intorno','cosa ho intorno')||haL('dove')){
       stradaDiQui(function(via){ if(via)statusEl.textContent='sei in '+via; });
       var vicini=around();
       if(!vicini.length){ dire(['frase-niente-intorno'],'Qui intorno non ho niente da dirti.'); return true; }
@@ -3822,7 +4388,7 @@
         }
       }
     }
-    if(ha('taxi','uber','un passaggio','chiamami una macchina','chiamami un taxi')){
+    if(ha('taxi','uber','un passaggio','chiamami una macchina','chiamami un taxi')||haL('taxi')){
       return chiamaTaxi();
     }
     if(ha('ambulanza','chiama il 112','chiama il 118','chiama i soccorsi','numero di emergenza')){
@@ -3843,7 +4409,7 @@
       dire(['frase-nessun-numero'],'Non ho un numero da chiamare: va registrato prima.');
       return true;
     }
-    if(ha('portami a casa','voglio andare a casa','andiamo a casa','casa mia','torniamo a casa','voglio tornare a casa')){
+    if(ha('portami a casa','voglio andare a casa','andiamo a casa','casa mia','torniamo a casa','voglio tornare a casa')||haL('casa')){
       return portamiACasa();
     }
     if(ha('segna casa','questa e casa','casa e qui','registra casa')){
@@ -3935,7 +4501,7 @@
     if(ascolto)return true;
     try{
       ascolto=new R();
-      ascolto.lang='it-IT'; ascolto.continuous=true; ascolto.interimResults=false; ascolto.maxAlternatives=3;
+      ascolto.lang=(L&&L.cod)?L.cod:'it-IT'; ascolto.continuous=true; ascolto.interimResults=false; ascolto.maxAlternatives=3;
       ascolto.onresult=function(e){
         if(staParlando)return;            // non si ascolta mentre si parla
         for(var i=e.resultIndex;i<e.results.length;i++){
@@ -4100,6 +4666,30 @@
       if(cosa==='percorso'){ el('scelta-percorso').click(); return true; }
       return false;
     };
+    // la lingua: quella salvata, se no quella del telefono, se no italiano
+    (function(){
+      var sel=el('porta-lingua');
+      if(!sel)return;
+      LINGUE.forEach(function(x){
+        var o=document.createElement('option');
+        o.value=x.c; o.textContent=x.n; sel.appendChild(o);
+      });
+      var scelta=null;
+      try{scelta=localStorage.getItem('urbea-lingua');}catch(e){}
+      if(!scelta){
+        var dal=(navigator.language||'it').slice(0,2).toLowerCase();
+        if(LINGUE.some(function(x){return x.c===dal;}))scelta=dal;
+      }
+      scelta=scelta||'it';
+      sel.value=scelta;
+      if(scelta!=='it')caricaLingua(scelta);
+      sel.addEventListener('change',function(e){
+        e.stopPropagation();
+        caricaLingua(sel.value);
+      });
+      sel.addEventListener('click',function(e){ e.stopPropagation(); });
+    })();
+
     // chi e' gia' entrato una volta a voce non ricomincia da capo: un tocco
     // qualunque e riparte com'era
     if(modoSalvato==='voce'){
