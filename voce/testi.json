@@ -15108,6 +15108,10 @@
   "testo": "Chiamo il 112."
  },
  {
+  "id": "frase-scelte-aiuto",
+  "testo": "Dì: chiama, per il 112. Commissariato. Pronto soccorso. Farmacia. Portami a casa. Oppure: mi hanno rubato il portafoglio."
+ },
+ {
   "id": "frase-derubato",
   "testo": "Mi dispiace. Dì chiama per il 112, oppure commissariato e ti ci porto. Per bloccare le carte chiama la tua banca: il numero è dietro la carta, e se non ce l'hai, il numero verde del tuo circuito."
  },

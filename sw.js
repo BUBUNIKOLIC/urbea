@@ -1,5 +1,5 @@
 /* Urbea — service worker: la città resta nel telefono */
-const CACHE = 'yourbea-v21';
+const CACHE = 'yourbea-v22';
 const ASSETS = [
   './',
   './index.html',

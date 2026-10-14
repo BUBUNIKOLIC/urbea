@@ -4542,6 +4542,20 @@
   (function(){
     var b=el('aiuto-subito'), pan=el('pannello-aiuto');
     if(!b||!pan)return;
+    // si apre anche dicendo «aiuto»: e allora legge le scelte ad alta voce
+    window.apriAiuto=function(parlando){
+      apri();
+      mostraContatto();
+      if(parlando){
+        setTimeout(function(){
+          var scelte='Dì: chiama, per il 112. Commissariato. Pronto soccorso. Farmacia. '+
+                     'Portami a casa. Oppure: mi hanno rubato il portafoglio.';
+          liveEl.textContent=scelte;
+          dire(['frase-scelte-aiuto'],scelte,true);
+        }, 2200);
+      }
+      return true;
+    };
     function apri(){
       pan.hidden=false;
       var d=el('dove-sei'); if(d)d.textContent='cerco dove sei…';
@@ -4569,6 +4583,7 @@
     var ba=el('avvisa-contatto');
     if(ba)ba.addEventListener('click',function(){ pan.hidden=true; vienimiAPrendere(); });
     el('chiudi-aiuto').addEventListener('click',function(){ pan.hidden=true; });
+    window.chiudiAiuto=function(){ pan.hidden=true; return true; };
     el('chiama-112').addEventListener('click',function(){
       dire(['frase-chiamo-112'],'Chiamo il 112.',true);
       setTimeout(function(){ try{ location.href='tel:112'; }catch(e){} },900);
@@ -5662,6 +5677,10 @@
       if(ultimaFrase)dire(ultimaFrase.ids,ultimaFrase.testo);
       return true;
     }
+    if(ha('chiudi','annulla','lascia perdere','niente')&&typeof window.chiudiAiuto==='function'){
+      var pa=el('pannello-aiuto');
+      if(pa&&!pa.hidden){ window.chiudiAiuto(); dire(['frase-lascio-perdere'],'Va bene, lascio perdere.'); return true; }
+    }
     if(ha('ancora','di piu','dimmi ancora','continua','vai avanti col racconto','approfondisci ancora')){
       if(window.ancoraDiPiu())return true;
     }
@@ -5738,6 +5757,12 @@
       dire(['frase-chiamo-112'],'Chiamo il 112.');
       setTimeout(function(){ try{ location.href='tel:112'; }catch(e){} },1100);
       return true;
+    }
+    // «aiuto» apre il pannello e legge le scelte; l'SOS vero resta sotto
+    if(ha('aiuto','emergenza','soccorso','ho bisogno')&&
+       !ha('vienimi','vieni a prendermi','mi sono perso','mi sono persa')&&
+       typeof window.apriAiuto==='function'){
+      return window.apriAiuto(true);
     }
     if(ha('vienimi a prendere','vieni a prendermi','ho bisogno di aiuto','chiama aiuto','mi sono perso',
           'mi sono persa','aiutami','aiuto','sos','emergenza','ho paura','non mi sento sicura','non mi sento sicuro')){
