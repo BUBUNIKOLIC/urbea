@@ -15,7 +15,7 @@ incidi() {
   vecchio=$(cat "$out/.testi/$id.txt" 2>/dev/null || true)
   if [ -f "$out/$id.m4a" ] && [ "$vecchio" = "$voce|$testo" ]; then exit 0; fi
   say -v "$voce" -o "$out/$id.aiff" "$testo" || exit 0
-  ffmpeg -v error -y -i "$out/$id.aiff" -c:a aac -b:a 64k "$out/$id.m4a" || exit 0
+  ffmpeg -v error -y -i "$out/$id.aiff" -c:a aac -b:a 40k -ac 1 "$out/$id.m4a" || exit 0
   rm -f "$out/$id.aiff"
   printf '%s' "$voce|$testo" > "$out/.testi/$id.txt"
   printf '.'
