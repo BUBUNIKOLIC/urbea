@@ -88,6 +88,7 @@ for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
  ['bentornato', 'Guida vocale attiva. Ti dico quello che passi, da che parte e a quanti metri.'],
  ['apro-taxi', 'Apro il taxi con la tua posizione. La corsa la confermi tu.'],
  ['chiamo-112', 'Chiamo il 112.'],
+ ['derubato', "Mi dispiace. Dì chiama per il 112, oppure commissariato e ti ci porto. Per bloccare le carte chiama la tua banca: il numero è dietro la carta, e se non ce l'hai, il numero verde del tuo circuito."],
  ['da-qui-passa', 'Da qui passa un percorso. Dì percorso, se vuoi seguirlo.'],
  ['tutto-detto', 'Di questo ti ho detto tutto.']
 ].forEach(([k, t]) => agg('frase-' + k, t));

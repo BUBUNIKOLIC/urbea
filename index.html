@@ -5166,6 +5166,7 @@
   var METE={
     'pronto soccorso':['pronto soccorso','primo soccorso','emergenza medica','al pronto soccorso'],
     farmacia:['farmacia','farmacie','parafarmacia'],
+    'commissariato':['commissariato','polizia','carabinieri','questura','denuncia'],
     'posteggio taxi':['posteggio taxi','parcheggio taxi','stazione dei taxi'],
     fermata:['fermata','autobus','bus','pullman'],
     stazione:['stazione','treno'],
@@ -5239,6 +5240,7 @@
   var TAG_OSM={
     'pronto soccorso':'nwr["amenity"="hospital"]["emergency"="yes"]',
     farmacia:'nwr["amenity"="pharmacy"]',
+    commissariato:'nwr["amenity"="police"]',
     'posteggio taxi':'nwr["amenity"="taxi"]',
     fermata:'node["highway"="bus_stop"]',
     stazione:'nwr["railway"="station"]',
@@ -5323,6 +5325,33 @@
         })
         .catch(function(){ if(orologio)clearTimeout(orologio); prova(); });
     })();
+  }
+  /* ---------- furto o scippo ----------
+     Tre cose in ordine: dove sei esattamente (da dire a chiunque, anche a chi
+     ti aiuta per strada), il 112 — che quando lo chiami manda da solo la tua
+     posizione alla centrale, perché l'AML è obbligatorio su tutti gli
+     smartphone europei dal 2022 — e il commissariato più vicino. */
+  function derubato(){
+    whatEl.textContent='Furto';
+    whereEl.textContent='cosa fare adesso';
+    bodyEl.className='body';
+    var base='Dì chiama: il 112 riceve la tua posizione da solo. Oppure dì commissariato '+
+             'e ti ci porto. Per le carte, il numero sta dietro la carta.';
+    bodyEl.textContent=base; liveEl.textContent=base;
+    dire(['frase-derubato'],base,true);
+    // e intanto si cerca l'indirizzo esatto: serve per dirlo al telefono
+    stradaDiQui(function(via){
+      if(!via)return;
+      var dove='Sei in '+via+'.';
+      bodyEl.textContent=dove+' '+base;
+      liveEl.textContent=dove;
+      setTimeout(function(){ speak(dove, true); }, 600);
+    });
+    // se c'è un contatto registrato, gli si manda la posizione
+    if(typeof soccorso!=='undefined' && soccorso && soccorso.tel){
+      setTimeout(function(){ try{ vienimiAPrendere(); }catch(e){} }, 1500);
+    }
+    return true;
   }
   function chiamaTaxi(){
     // non si ordina niente al posto suo: si apre l'app del taxi con la posizione
@@ -5567,6 +5596,12 @@
           return portamiA(tipo);
         }
       }
+    }
+    // furto o scippo: in dieci secondi deve sapere cosa fare
+    if(ha('mi hanno rubato','mi hanno derubato','mi hanno scippato','furto','borseggio',
+          'mi hanno rubato il portafoglio','ho perso il portafoglio','mi hanno rubato la borsa',
+          'rubato il telefono','scippo')){
+      return derubato();
     }
     if(ha('taxi','uber','un passaggio','chiamami una macchina','chiamami un taxi')||haL('taxi')){
       return chiamaTaxi();
