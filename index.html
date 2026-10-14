@@ -3098,7 +3098,8 @@
             return Math.abs(pp.lat-x.lat)<0.0008 && Math.abs(pp.lon-x.lon)<0.0008;
           });
           if(doppio)return;
-          POI.push({n:x.n,lat:x.lat,lon:x.lon,t:x.t||'luogo',y:'',k:1,v:0,w:1,d:'',i:''});
+          POI.push({n:x.n,lat:x.lat,lon:x.lon,t:x.t||'luogo',y:'',k:1,v:0,w:1,
+                    d:x.d||'',i:''});
           aggiunti++;
         });
         statusEl.textContent=r.n+': '+aggiunti+' luoghi in più';
