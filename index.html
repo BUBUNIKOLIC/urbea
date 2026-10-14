@@ -296,7 +296,7 @@
   /* i comandi: tre in basso sempre a portata, gli altri in un cassetto */
   .controls{
     position:fixed;left:0;right:0;bottom:0;z-index:40;
-    display:grid;grid-template-columns:1fr auto auto;gap:10px;
+    display:grid;grid-template-columns:1fr auto auto auto;gap:9px;
     padding:12px 16px calc(12px + env(safe-area-inset-bottom,0));
     background:linear-gradient(180deg, rgba(7,10,14,0) 0%, rgba(7,10,14,.92) 38%);
     backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
@@ -330,6 +330,33 @@
   body[data-voice="1"] .say .body{font-size:19px}
   body[data-voice="1"] .btn-go{padding:21px;font-size:20px}
   body[data-voice="1"] .btn-tondo{width:66px;height:66px;font-size:24px}
+
+
+  /* l'aiuto: sempre a portata, riconoscibile al tatto e al colore */
+  .btn-aiuto{background:linear-gradient(180deg,#E0564A,#B3372C);border:none;color:#fff;
+    box-shadow:0 10px 26px rgba(224,86,74,.3)}
+  .pannello-aiuto{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;flex-direction:column;gap:10px;
+    padding:20px 16px calc(100px + env(safe-area-inset-bottom,0));
+    background:linear-gradient(180deg, rgba(26,12,12,.97), rgba(10,6,6,.99));
+    border-top:2px solid rgba(224,86,74,.5);border-radius:22px 22px 0 0;
+    box-shadow:0 -22px 54px rgba(0,0,0,.65);
+  }
+  .pannello-aiuto h3{font-family:"Playfair Display",Georgia,serif;font-size:24px;margin:0}
+  .pannello-aiuto .dove-sei{font-family:"IBM Plex Mono",monospace;font-size:14px;
+    color:#F0C9C4;margin:0 0 4px;line-height:1.4}
+  .pannello-aiuto .btn{margin:0;border-radius:14px;padding:17px 14px;font-size:17px;text-align:left}
+  .btn-emergenza{background:linear-gradient(180deg,#E0564A,#B3372C);border:none;color:#fff;
+    font-weight:700;font-size:19px}
+  .btn-contatto{background:linear-gradient(180deg,#3FA7BF,#2B7F93);border:none;color:#04161B;
+    font-weight:600}
+  .riga-indirizzo{display:grid;grid-template-columns:1fr auto;gap:8px}
+  .riga-indirizzo input{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:var(--fg);
+    border-radius:14px;padding:16px 14px;font-size:17px;font-family:inherit;min-width:0}
+  .riga-indirizzo input::placeholder{color:#9AA3AD}
+  .btn-vai{width:58px;padding:0;font-size:22px;background:linear-gradient(180deg,#6FD3E6,#3FA7BF);
+    color:#04161B;border:none;border-radius:14px}
 
   /* ---------- aspetto strumentale: pannelli di vetro, luce fredda ---------- */
   :root{ --neon:#5BE3FF; --neon-soft:rgba(91,227,255,.16); --vetro:rgba(28,32,38,.72); }
@@ -570,7 +597,27 @@
   <section class="controls">
     <button class="btn btn-go" id="start">Avvia</button>
     <button class="btn btn-tondo btn-parla" id="parla" hidden aria-label="Parla: dimmi un comando">🎙</button>
+    <button class="btn btn-tondo btn-aiuto" id="aiuto-subito" aria-label="Aiuto: polizia, furto, soccorso">🆘</button>
     <button class="btn btn-tondo btn-altro" id="altro" aria-expanded="false" aria-controls="cassetto" aria-label="Altri comandi">⋯</button>
+  </section>
+
+  <section class="pannello-aiuto" id="pannello-aiuto" hidden aria-label="Aiuto immediato">
+    <h3>Aiuto</h3>
+    <p class="dove-sei" id="dove-sei">cerco dove sei…</p>
+    <button class="btn btn-emergenza" id="chiama-112">📞 Chiama il 112 — soccorsi</button>
+    <button class="btn btn-contatto" id="chiama-contatto" hidden>📱 Chiama <span id="nome-contatto">il contatto</span></button>
+    <button class="btn" id="avvisa-contatto" hidden>📍 Manda la mia posizione</button>
+    <button class="btn" id="vai-polizia">🚓 Commissariato più vicino</button>
+    <button class="btn" id="vai-ps">🏥 Pronto soccorso più vicino</button>
+    <button class="btn" id="vai-farmacia">💊 Farmacia più vicina</button>
+    <button class="btn" id="vai-casa-2">🏠 Portami a casa</button>
+    <div class="riga-indirizzo">
+      <input id="indirizzo" type="text" inputmode="text" autocomplete="street-address"
+             placeholder="Scrivi un indirizzo o un albergo" aria-label="Indirizzo dove vuoi andare">
+      <button class="btn btn-vai" id="vai-indirizzo" aria-label="Portami a questo indirizzo">→</button>
+    </div>
+    <button class="btn" id="furto-qui">👛 Mi hanno rubato il portafoglio</button>
+    <button class="btn" id="chiudi-aiuto">Chiudi</button>
   </section>
 
   <div class="status" id="status">in attesa</div>
@@ -4487,6 +4534,72 @@
   }
 
 
+
+  /* ---------- il tasto dell'aiuto ----------
+     Deve funzionare al primo tocco e senza leggere: il 112 riceve la
+     posizione da solo (AML, obbligatorio sugli smartphone europei dal 2022),
+     e intanto l'app dice ad alta voce via e civico. */
+  (function(){
+    var b=el('aiuto-subito'), pan=el('pannello-aiuto');
+    if(!b||!pan)return;
+    function apri(){
+      pan.hidden=false;
+      var d=el('dove-sei'); if(d)d.textContent='cerco dove sei…';
+      stradaDiQui(function(via){
+        var testo = via ? ('Sei in '+via+'.') : 'La strada non la so dire.';
+        if(d)d.textContent=testo;
+        speak(testo, true);
+      });
+    }
+    b.addEventListener('click',function(){ audio(); apri(); mostraContatto(); });
+    // il contatto registrato: chiamarlo o mandargli dove sei
+    function mostraContatto(){
+      var ok = (typeof soccorso!=='undefined' && soccorso && soccorso.tel);
+      var bc=el('chiama-contatto'), ba=el('avvisa-contatto'), nm=el('nome-contatto');
+      if(bc)bc.hidden=!ok;
+      if(ba)ba.hidden=!ok;
+      if(ok&&nm)nm.textContent=soccorso.nome||'il contatto';
+    }
+    var bc=el('chiama-contatto');
+    if(bc)bc.addEventListener('click',function(){
+      if(typeof soccorso==='undefined'||!soccorso||!soccorso.tel)return;
+      dire(['frase-chiamo'],'Chiamo adesso.',true);
+      setTimeout(function(){ try{ location.href='tel:'+soccorso.tel; }catch(e){} },800);
+    });
+    var ba=el('avvisa-contatto');
+    if(ba)ba.addEventListener('click',function(){ pan.hidden=true; vienimiAPrendere(); });
+    el('chiudi-aiuto').addEventListener('click',function(){ pan.hidden=true; });
+    el('chiama-112').addEventListener('click',function(){
+      dire(['frase-chiamo-112'],'Chiamo il 112.',true);
+      setTimeout(function(){ try{ location.href='tel:112'; }catch(e){} },900);
+    });
+    el('vai-polizia').addEventListener('click',function(){
+      pan.hidden=true; portamiA('commissariato');
+    });
+    el('vai-ps').addEventListener('click',function(){
+      pan.hidden=true; portamiA('pronto soccorso');
+    });
+    el('vai-farmacia').addEventListener('click',function(){
+      pan.hidden=true; portamiA('farmacia');
+    });
+    el('vai-casa-2').addEventListener('click',function(){
+      pan.hidden=true; portamiACasa();
+    });
+    function vaiAScritto(){
+      var c=el('indirizzo'); if(!c)return;
+      var t=(c.value||'').trim();
+      if(t.length<4)return;
+      pan.hidden=true;
+      portamiAIndirizzo(t);
+    }
+    var bi=el('vai-indirizzo'); if(bi)bi.addEventListener('click',vaiAScritto);
+    var ci=el('indirizzo');
+    if(ci)ci.addEventListener('keydown',function(e){ if(e.key==='Enter')vaiAScritto(); });
+    el('furto-qui').addEventListener('click',function(){
+      pan.hidden=true; derubato();
+    });
+  })();
+
   /* ---------- la bussola e il cassetto dei comandi ---------- */
   (function(){
     var b=el('altro'), c=el('cassetto');
@@ -5224,6 +5337,20 @@
       return true;
     }
     dire(['frase-cerco'],'Cerco l\'indirizzo, un momento.');
+    // prima Photon: Nominatim rifiuta molte richieste
+    var up='https://photon.komoot.io/api/?q='+encodeURIComponent(testo)+
+           '&lat='+S.lat+'&lon='+S.lon+'&limit=1';
+    fetch(up).then(function(r){return r.json();}).then(function(d){
+      var f=(d.features||[])[0];
+      if(f&&f.geometry&&f.geometry.coordinates){
+        var pr=f.properties||{};
+        var nome=[pr.name,pr.street,pr.city].filter(Boolean).slice(0,2).join(', ')||testo;
+        portamiAlPunto(f.geometry.coordinates[1], f.geometry.coordinates[0], nome);
+        return;
+      }
+      cercaConNominatim();
+    }).catch(function(){ cercaConNominatim(); });
+    function cercaConNominatim(){
     var url='https://nominatim.openstreetmap.org/search?format=json&limit=1&accept-language=it'
       +'&q='+encodeURIComponent(testo)
       +'&viewbox='+(S.lon-0.08)+','+(S.lat+0.06)+','+(S.lon+0.08)+','+(S.lat-0.06)+'&bounded=1';
@@ -5231,6 +5358,7 @@
       if(!j||!j.length){ dire(['frase-indirizzo-non-trovato'],'Questo indirizzo non l\'ho trovato.'); return; }
       portamiAlPunto(parseFloat(j[0].lat),parseFloat(j[0].lon),j[0].display_name.split(',').slice(0,2).join(', '));
     }).catch(function(){ dire(['frase-indirizzo-non-trovato'],'Questo indirizzo non l\'ho trovato.'); });
+    }
     return true;
   }
   /* ---------- i servizi che non stanno nei nostri dati ----------
