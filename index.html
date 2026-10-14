@@ -197,6 +197,138 @@
   }
 
 
+
+  /* ---------- veste nuova: profondità, gerarchia, meno rumore ---------- */
+  :root{
+    --oro:#C9A227; --oro-chiaro:#E7C65A; --neon:#5BE3FF;
+    --fondo-1:#070A0E; --fondo-2:#0D1218; --vetro:rgba(22,27,34,.78);
+    --bordo-vetro:rgba(255,255,255,.08); --bordo-luce:rgba(91,227,255,.22);
+  }
+  body{
+    background:
+      radial-gradient(1100px 700px at 50% -15%, rgba(91,227,255,.10) 0%, transparent 55%),
+      radial-gradient(900px 600px at 90% 10%, rgba(201,162,39,.07) 0%, transparent 50%),
+      linear-gradient(180deg, var(--fondo-2) 0%, var(--fondo-1) 100%);
+    background-attachment:fixed;
+  }
+  .app{gap:14px;padding-bottom:calc(120px + env(safe-area-inset-bottom,0))}
+
+  /* intestazione: marchio a sinistra, dove sei a destra */
+  header{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+    padding:6px 2px 2px;border-bottom:1px solid rgba(255,255,255,.05)}
+  .wordmark{font-size:27px;letter-spacing:.015em;text-shadow:0 0 24px rgba(91,227,255,.22)}
+  .claim{font-size:8.5px;letter-spacing:.18em;opacity:.5;text-align:right;white-space:nowrap}
+  @media (max-width:380px){ header .claim{display:none} }
+  .choice{display:grid;grid-template-columns:1fr 1fr}
+
+  /* la scheda che parla: è il centro dell'app */
+  .say{
+    position:relative;border-radius:22px;padding:20px 20px 18px;gap:8px;min-height:0;
+    background:linear-gradient(165deg, rgba(34,41,51,.92) 0%, rgba(17,21,27,.92) 100%);
+    border:1px solid var(--bordo-vetro);
+    box-shadow:0 0 0 1px rgba(91,227,255,.07) inset, 0 20px 50px rgba(0,0,0,.55);
+  }
+  .say::before{height:1px;background:linear-gradient(90deg,transparent,var(--neon),transparent);opacity:.5}
+  .say .where{
+    display:inline-flex;align-items:center;gap:7px;align-self:flex-start;
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--oro-chiaro);
+    background:rgba(201,162,39,.10);border:1px solid rgba(201,162,39,.28);
+    border-radius:999px;padding:5px 12px;text-shadow:none;
+  }
+  .say .what{font-size:29px;line-height:1.12;margin:2px 0 0;letter-spacing:.004em}
+  .say .body{font-size:16px;line-height:1.5;color:#CFD3D8}
+  .say .body.idle{color:#8A929C}
+
+  /* i due tasti della scelta: solo quando servono, e distinti */
+  .choice{gap:10px;margin-top:12px}
+  .choice .btn{border-radius:14px;padding:15px 12px;font-size:16px}
+  .btn-yes{background:linear-gradient(180deg,var(--oro-chiaro),var(--oro));color:#1A1407;
+    border:none;font-weight:600;box-shadow:0 10px 26px rgba(201,162,39,.22)}
+
+  /* la bussola: dove guardare, in grande */
+  .bussola{
+    position:absolute;top:16px;right:16px;width:62px;height:62px;border-radius:50%;
+    border:1px solid rgba(91,227,255,.25);background:rgba(10,14,19,.75);
+    display:grid;place-items:center;box-shadow:0 0 22px rgba(91,227,255,.12) inset;
+  }
+  .bussola .ago{font-size:26px;line-height:1;color:var(--neon);
+    text-shadow:0 0 14px rgba(91,227,255,.5);transition:transform .35s ease-out}
+  .bussola .metri{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);
+    font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);white-space:nowrap}
+  .say.con-bussola{padding-right:92px}
+
+  /* la mappa: compare quando c'è qualcosa da mostrare */
+  #mappa{height:52vh;min-height:360px;max-height:560px;border-radius:20px;
+    border:1px solid var(--bordo-luce);box-shadow:0 18px 44px rgba(0,0,0,.5)}
+  #mappa.vuota{display:none}
+
+  /* la striscia di quello che hai davanti */
+  .strip{height:60px;border-radius:16px;border:1px solid var(--bordo-vetro);
+    background:linear-gradient(180deg, rgba(14,17,21,.9), rgba(10,13,16,.9))}
+
+  /* l'elenco: schede con la distanza in evidenza */
+  h2.eyebrow{letter-spacing:.2em;font-size:10px;margin:14px 0 2px;opacity:.75}
+  .list{gap:9px}
+  details.item{
+    border-radius:16px;border:1px solid var(--bordo-vetro);
+    background:linear-gradient(170deg, rgba(31,37,46,.85), rgba(19,23,29,.85));
+    box-shadow:0 10px 26px rgba(0,0,0,.35);
+  }
+  details.item>summary{padding:14px 16px;gap:12px;align-items:center}
+  .nm{font-size:16.5px;font-weight:600;line-height:1.25}
+  .dir{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:#9AA3AD;
+    background:rgba(255,255,255,.04);border:1px solid var(--bordo-vetro);
+    border-radius:10px;padding:5px 9px;text-align:right;min-width:86px}
+  .item[data-close="1"]{border-color:rgba(201,162,39,.4);box-shadow:0 0 0 1px rgba(201,162,39,.16) inset,0 10px 26px rgba(0,0,0,.35)}
+  .eti{background:rgba(10,13,18,.9);border:1px solid rgba(255,255,255,.12);color:#E8E7E3;
+    border-radius:8px;padding:3px 7px;font-size:11px;box-shadow:none}
+  .eti::before{display:none}
+  .eti-grande{border-color:rgba(201,162,39,.5);color:#F0D98A;font-weight:600;
+    font-family:"Playfair Display",Georgia,serif;font-size:12.5px}
+  .grande{font-size:9.5px;letter-spacing:.1em;color:#0F1216;background:linear-gradient(180deg,var(--oro-chiaro),var(--oro));
+    border:none;border-radius:999px;padding:3px 9px;font-weight:700}
+  .inside{border-left:3px solid var(--oro);background:rgba(201,162,39,.06)}
+  .inside b{color:var(--oro-chiaro)}
+
+  /* i comandi: tre in basso sempre a portata, gli altri in un cassetto */
+  .controls{
+    position:fixed;left:0;right:0;bottom:0;z-index:40;
+    display:grid;grid-template-columns:1fr auto auto;gap:10px;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom,0));
+    background:linear-gradient(180deg, rgba(7,10,14,0) 0%, rgba(7,10,14,.92) 38%);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  }
+  .controls .btn{margin:0}
+  .btn-go{border-radius:16px;padding:17px;font-size:18px;font-weight:600;
+    background:linear-gradient(180deg,#6FD3E6,#3FA7BF);color:#04161B;border:none;
+    box-shadow:0 12px 30px rgba(79,175,196,.28)}
+  .btn-tondo{width:58px;height:58px;border-radius:50%;padding:0;font-size:21px;display:grid;place-items:center}
+  .btn-parla{background:linear-gradient(180deg, rgba(91,227,255,.18), rgba(91,227,255,.06));
+    border:1px solid rgba(91,227,255,.35)}
+  .btn-parla.ascolta{background:linear-gradient(180deg,#5BE3FF,#2FA8C4);color:#04161B;border:none;
+    animation:respira 1.2s ease-in-out infinite}
+  @keyframes respira{0%,100%{box-shadow:0 0 0 0 rgba(91,227,255,.45)}50%{box-shadow:0 0 0 12px rgba(91,227,255,0)}}
+  .btn-altro{background:rgba(255,255,255,.05);border:1px solid var(--bordo-vetro)}
+  /* il cassetto con il resto dei comandi */
+  .cassetto{
+    position:fixed;left:0;right:0;bottom:0;z-index:50;
+    display:none;grid-template-columns:1fr 1fr;gap:10px;
+    padding:18px 16px calc(96px + env(safe-area-inset-bottom,0));
+    background:linear-gradient(180deg, rgba(10,13,18,.96), rgba(7,10,14,.99));
+    border-top:1px solid var(--bordo-luce);border-radius:22px 22px 0 0;
+    box-shadow:0 -20px 50px rgba(0,0,0,.6);
+  }
+  .cassetto.aperto{display:grid}
+  .cassetto .btn{margin:0;border-radius:14px;padding:16px 12px;font-size:16px}
+  .cassetto select{grid-column:1/-1}
+
+  /* in modalità voce: tutto più grande, niente fronzoli */
+  body[data-voice="1"] .say .what{font-size:34px}
+  body[data-voice="1"] .say .body{font-size:19px}
+  body[data-voice="1"] .btn-go{padding:21px;font-size:20px}
+  body[data-voice="1"] .btn-tondo{width:66px;height:66px;font-size:24px}
+
   /* ---------- aspetto strumentale: pannelli di vetro, luce fredda ---------- */
   :root{ --neon:#5BE3FF; --neon-soft:rgba(91,227,255,.16); --vetro:rgba(28,32,38,.72); }
   body{
@@ -406,7 +538,11 @@
     <div class="claim">La bellezza intorno a te</div>
   </header>
 
-  <section class="say">
+  <section class="say" id="say">
+    <div class="bussola" id="bussola" hidden aria-hidden="true">
+      <div class="ago" id="ago">▲</div>
+      <div class="metri" id="metri"></div>
+    </div>
     <div class="where" id="where">non avviato</div>
     <div class="what" id="what">In attesa</div>
     <div class="body idle" id="body">Cerco dove sei. Poi ti dico cosa hai intorno, in tutta Italia.</div>
@@ -418,22 +554,26 @@
 
   <div class="sr" id="live" role="status" aria-live="polite"></div>
 
-  <section class="controls">
-    <button class="btn btn-install" id="install" hidden>Metti l'icona sul telefono</button>
-    <button class="btn btn-go" id="start">Avvia</button>
+  <section class="cassetto" id="cassetto" aria-label="Altri comandi">
     <button class="btn" id="voice" aria-pressed="false">Modalità voce</button>
-    <button class="btn" id="sim" aria-pressed="false">Simula</button>
     <button class="btn" id="testo-piu" aria-label="Ingrandisci il testo">A+</button>
-    <button class="btn btn-parla" id="parla" hidden aria-label="Parla: dimmi un comando">🎙 Parla</button>
     <button class="btn btn-casa" id="vai-casa" hidden>🏠 Portami a casa</button>
     <button class="btn" id="segna-casa">Segna casa qui</button>
     <button class="btn btn-sos" id="sos">🆘 Vienimi a prendere</button>
     <button class="btn" id="chi-chiamare">Chi chiamare</button>
+    <button class="btn" id="sim" aria-pressed="false">Simula</button>
+    <button class="btn btn-install" id="install" hidden>Metti l'icona sul telefono</button>
+  </section>
+
+  <section class="controls">
+    <button class="btn btn-go" id="start">Avvia</button>
+    <button class="btn btn-tondo btn-parla" id="parla" hidden aria-label="Parla: dimmi un comando">🎙</button>
+    <button class="btn btn-tondo btn-altro" id="altro" aria-expanded="false" aria-controls="cassetto" aria-label="Altri comandi">⋯</button>
   </section>
 
   <div class="status" id="status">in attesa</div>
 
-  <div id="mappa" aria-label="Mappa: strade, edifici e servizi intorno a te"></div>
+  <div id="mappa" class="vuota" aria-label="Mappa: strade, edifici e servizi intorno a te"></div>
   <canvas id="plan" hidden aria-hidden="true"></canvas>
   <div class="strip" id="strip"><div class="ahead"></div></div>
 
@@ -3897,20 +4037,20 @@
     {c:'ja',n:'日本語'},{c:'ru',n:'Русский'},{c:'sv',n:'Svenska'},
     {c:'ko',n:'한국어'},{c:'ar',n:'العربية'},{c:'he',n:'עברית'}
   ];
-  var LINGUA='it', L=null;
+  var LINGUA='it', LING=null;
 
   function T(chiave,predefinito){
-    if(!L||!L.frasi)return predefinito;
-    return L.frasi[chiave]||predefinito;
+    if(!LING||!LING.frasi)return predefinito;
+    return LING.frasi[chiave]||predefinito;
   }
   function U(chiave,predefinito){
-    if(!L||!L.ui)return predefinito;
-    return L.ui[chiave]||predefinito;
+    if(!LING||!LING.ui)return predefinito;
+    return LING.ui[chiave]||predefinito;
   }
   function vesteLingua(){
-    if(!L)return;
+    if(!LING)return;
     document.documentElement.lang=LINGUA;
-    document.documentElement.dir = L.rtl ? 'rtl' : 'ltr';
+    document.documentElement.dir = LING.rtl ? 'rtl' : 'ltr';
     var mette=function(id,testo){ var e=el(id); if(e&&testo)e.textContent=testo; };
     var dentro=function(sel,testo){ var e=document.querySelector(sel); if(e&&testo)e.textContent=testo; };
     dentro('.porta-testa .claim', U('claim',null));
@@ -3927,19 +4067,19 @@
     mette('segna-casa', U('segna_casa',null)); mette('sos', '🆘 '+U('sos','Vienimi a prendere'));
     mette('chi-chiamare', U('chi',null)); mette('install', U('installa',null));
     mette('more', U('approfondisci',null)); mette('skip', U('oltre',null));
-    var p=el('parla'); if(p&&L.ui.parla)p.textContent='🎙 '+L.ui.parla;
+    var p=el('parla'); if(p&&LING.ui.parla)p.textContent='🎙 '+LING.ui.parla;
     dentro('.eyebrow span', U('intorno',null));
-    var b=el('body'); if(b&&b.classList.contains('idle')&&L.ui.attesa)b.textContent=L.ui.attesa;
+    var b=el('body'); if(b&&b.classList.contains('idle')&&LING.ui.attesa)b.textContent=LING.ui.attesa;
   }
   function caricaLingua(cod,quando){
-    if(cod==='it'){ LINGUA='it'; L=null;
+    if(cod==='it'){ LINGUA='it'; LING=null;
       document.documentElement.lang='it'; document.documentElement.dir='ltr';
       try{localStorage.setItem('urbea-lingua','it');}catch(e){}
       if(quando)quando(); return; }
     fetch('lingue/'+cod+'.json')
       .then(function(r){return r.json();})
       .then(function(d){
-        L=d; LINGUA=cod;
+        LING=d; LINGUA=cod;
         try{localStorage.setItem('urbea-lingua',cod);}catch(e){}
         vesteLingua();
         if(quando)quando();
@@ -3950,7 +4090,7 @@
   // il testo di un annuncio, ricostruito nella lingua scelta a partire dalle
   // stesse tessere che compongono la voce incisa
   function inLingua(ids,testoItaliano){
-    if(!L)return {t:testoItaliano,italiano:true};
+    if(!LING)return {t:testoItaliano,italiano:true};
     var pezzi=[], italiano=false;
     for(var i=0;i<ids.length;i++){
       var id=ids[i];
@@ -3987,7 +4127,7 @@
       if(!window.speechSynthesis)return;
       window.speechSynthesis.cancel();
       var u=new SpeechSynthesisUtterance(text);
-      var cod=(L&&!forzaItaliano)?L.cod:'it-IT';
+      var cod=(LING&&!forzaItaliano)?LING.cod:'it-IT';
       u.lang=cod; u.rate=0.98;
       var radice=cod.split('-')[0];
       var vs=window.speechSynthesis.getVoices().filter(function(v){
@@ -4316,6 +4456,28 @@
     });
   }
 
+
+  /* ---------- la bussola e il cassetto dei comandi ---------- */
+  (function(){
+    var b=el('altro'), c=el('cassetto');
+    if(b&&c){
+      b.addEventListener('click',function(){
+        var aperto=c.classList.toggle('aperto');
+        b.setAttribute('aria-expanded', aperto?'true':'false');
+        b.textContent = aperto ? '×' : '⋯';
+      });
+    }
+  })();
+  // la freccia punta al luogo di cui si sta parlando
+  function puntaBussola(rel, metri){
+    var bus=el('bussola'), ago=el('ago'), mt=el('metri');
+    if(!bus||!ago)return;
+    if(rel===null||rel===undefined){ bus.hidden=true; el('say').classList.remove('con-bussola'); return; }
+    bus.hidden=false; el('say').classList.add('con-bussola');
+    ago.style.transform='rotate('+Math.round(rel)+'deg)';
+    if(mt)mt.textContent = metri!=null ? (metri<25?'vicino':Math.round(metri/10)*10+' m') : '';
+  }
+
   /* ---------- annuncio breve, poi la scelta ---------- */
   var pending=null, pendingTimer=0;
   var choiceEl=el('choice');
@@ -4477,6 +4639,7 @@
 
     var head=(versoAffidabile()?side(o.rel):cardinale(o.p.lat,o.p.lon))+', '+metres(o.m);
     whereEl.textContent=head;
+    puntaBussola(versoAffidabile()?o.rel:null, o.m);
     whatEl.textContent=o.p.n;
     bodyEl.className='body idle';
     bodyEl.textContent=o.p.t+(o.p.y?' · '+o.p.y:'')+' — vuoi saperne di più?';
@@ -5283,8 +5446,8 @@
     }
     // nella lingua scelta valgono anche le parole di quella lingua
     function haL(chiave){
-      if(!L||!L.comandi||!L.comandi[chiave])return false;
-      var p=L.comandi[chiave];
+      if(!LING||!LING.comandi||!LING.comandi[chiave])return false;
+      var p=LING.comandi[chiave];
       for(var i=0;i<p.length;i++){ if(t.indexOf(normalizza(p[i]))>=0)return true; }
       return false;
     }
@@ -5476,7 +5639,7 @@
     if(ascolto)return true;
     try{
       ascolto=new R();
-      ascolto.lang=(L&&L.cod)?L.cod:'it-IT'; ascolto.continuous=true; ascolto.interimResults=false; ascolto.maxAlternatives=3;
+      ascolto.lang=(LING&&LING.cod)?LING.cod:'it-IT'; ascolto.continuous=true; ascolto.interimResults=false; ascolto.maxAlternatives=3;
       ascolto.onresult=function(e){
         if(staParlando)return;            // non si ascolta mentre si parla
         for(var i=e.resultIndex;i<e.results.length;i++){
@@ -5509,7 +5672,8 @@
   /* ---------- la mappa vera: strade ed edifici da OpenStreetMap ---------- */
   var mappa=null, segno=null, alone=null, tracciato=null, segni=[], seguiMappa=true;
   function avviaMappa(){
-    if(mappa||typeof L==='undefined')return;
+    if(mappa||!window.L)return;
+    var mm=el('mappa'); if(mm)mm.classList.remove('vuota');
     // finché non si sa dove sei, la mappa sta larga: non si parte da una città a caso
     mappa=L.map('mappa',{zoomControl:true,attributionControl:true});
     mappa.attributionControl.setPrefix('');
@@ -5548,9 +5712,20 @@
       var d=dist(S.lat,S.lon,p.lat,p.lon);
       var bene=(p.k===1||p.f||p.y);
       if(d>(bene?5000:900))return;
-      var m=L.circleMarker([p.lat,p.lon],{radius:bene?(p.y?6:5):4,weight:1.5,color:'#0E1013',
-        fillColor:coloreDi(p),fillOpacity:bene?.95:.7}).addTo(mappa);
-      m.bindTooltip(p.n,{direction:'top',className:'eti'});
+      var r=rango(p);
+      var m=L.circleMarker([p.lat,p.lon],{
+        radius: r===3?8:(r===2?6:(bene?5:4)),
+        weight: r===3?2:1.5,
+        color: r===3?'#F0D98A':'#0E1013',
+        fillColor: r===3?'#C9A227':coloreDi(p),
+        fillOpacity: bene?.95:.7
+      }).addTo(mappa);
+      // i grandi portano il nome scritto sulla mappa, gli altri solo al tocco
+      if(r===3 && d<1500){
+        m.bindTooltip(p.n,{permanent:true,direction:'top',className:'eti eti-grande'});
+      } else {
+        m.bindTooltip(p.n,{direction:'top',className:'eti'});
+      }
       m.bindPopup('<b>'+p.n+'</b><br>'+(p.t||'')+(p.y?' · '+p.y:'')+'<br>'+(p.d||'').slice(0,180));
       segni.push(m);
     });
@@ -5565,6 +5740,8 @@
     segno.setLatLng([S.lat,S.lon]);
     if(alone)alone.setLatLng([S.lat,S.lon]);
     if(!seguiMappa)return;
+    // camminando si sta vicini: da lontano non si capisce dove si è
+    if(mappa.getZoom()<16){ mappa.setView([S.lat,S.lon],17,{animate:false}); disegnaMappa(); return; }
     var c=mappa.getCenter();
     // un salto lungo (cambio di città) non si fa scorrendo: si ricentra e basta
     if(dist(S.lat,S.lon,c.lat,c.lng)>500){mappa.setView([S.lat,S.lon],mappa.getZoom(),{animate:false});disegnaMappa();}
@@ -5575,7 +5752,11 @@
   if('serviceWorker' in navigator){
     window.addEventListener('load',function(){
       navigator.serviceWorker.register('sw.js').catch(function(){});
-    try{avviaMappa();}catch(e){}
+    });
+  }
+  // la mappa si costruisce appena la pagina è pronta
+  if(document.readyState==='complete'){ try{avviaMappa();}catch(e){console.error('mappa:',e);} }
+  else window.addEventListener('load',function(){ try{avviaMappa();}catch(e){console.error('mappa:',e);} });
 
 
   /* ---------- la schermata d'ingresso: si sceglie il modo ----------
@@ -5756,8 +5937,6 @@
     window.addEventListener('appinstalled',function(){ invito=null; bott.hidden=true; });
     if(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches)bott.hidden=true;
   })();
-    });
-  }
 
   render();
 })();
