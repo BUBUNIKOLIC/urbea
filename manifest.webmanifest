@@ -1,32 +1,32 @@
 {
-  "name": "Yourbea — tu al centro, un museo intorno",
-  "short_name": "Yourbea",
-  "description": "Italia: tu al centro, un museo intorno a te. Cammini e la città si racconta: cosa ammirare, da che parte, a quanti metri.",
-  "lang": "it",
-  "start_url": "./index.html",
-  "scope": "./",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#15161A",
-  "theme_color": "#15161A",
-  "icons": [
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ]
+ "name": "Yourbea — la bellezza intorno a te",
+ "short_name": "Yourbea",
+ "description": "Italia: la bellezza intorno a te a te. Cammini e la città si racconta: cosa ammirare, da che parte, a quanti metri.",
+ "lang": "it",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#15161A",
+ "theme_color": "#15161A",
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icons/icon-maskable.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
 }
