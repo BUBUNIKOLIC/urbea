@@ -32,6 +32,7 @@ POI.forEach((p, n) => {
   agg(b + '-intro', (p.t || '') + (p.y ? ' del ' + p.y : ''));
   agg(b + '-scheda', p.d);
   agg(b + '-dentro', p.i);
+  agg(b + '-ancora', p.a);
 });
 ROUTES.forEach((r) => agg('percorso-' + r.id, r.n));
 
@@ -86,7 +87,9 @@ for (let m = 10; m <= 500; m += 10) agg('m-' + m, 'a ' + m + ' metri');
  ['parto-libero', 'Comincio col cammino libero. Quando vuoi, dimmi: percorsi.'],
  ['bentornato', 'Guida vocale attiva. Ti dico quello che passi, da che parte e a quanti metri.'],
  ['apro-taxi', 'Apro il taxi con la tua posizione. La corsa la confermi tu.'],
- ['chiamo-112', 'Chiamo il 112.']
+ ['chiamo-112', 'Chiamo il 112.'],
+ ['da-qui-passa', 'Da qui passa un percorso. Dì percorso, se vuoi seguirlo.'],
+ ['tutto-detto', 'Di questo ti ho detto tutto.']
 ].forEach(([k, t]) => agg('frase-' + k, t));
 
 fs.writeFileSync(path.join(__dirname, 'testi.json'), JSON.stringify(clip, null, 1), 'utf8');
