@@ -281,11 +281,13 @@
     background:rgba(255,255,255,.04);border:1px solid var(--bordo-vetro);
     border-radius:10px;padding:5px 9px;text-align:right;min-width:86px}
   .item[data-close="1"]{border-color:rgba(201,162,39,.4);box-shadow:0 0 0 1px rgba(201,162,39,.16) inset,0 10px 26px rgba(0,0,0,.35)}
-  .eti{background:rgba(10,13,18,.9);border:1px solid rgba(255,255,255,.12);color:#E8E7E3;
-    border-radius:8px;padding:3px 7px;font-size:11px;box-shadow:none}
+  .eti{background:rgba(10,13,18,.82);border:1px solid rgba(255,255,255,.1);color:#E8E7E3;
+    border-radius:6px;padding:2px 5px;font-size:9.5px;box-shadow:none}
   .eti::before{display:none}
-  .eti-grande{border-color:rgba(201,162,39,.5);color:#F0D98A;font-weight:600;
-    font-family:"Playfair Display",Georgia,serif;font-size:12.5px}
+  .eti-grande{border-color:rgba(201,162,39,.45);color:#F0D98A;font-weight:600;
+    font-family:"Playfair Display",Georgia,serif;font-size:10px;padding:2px 6px;
+    background:rgba(10,13,18,.75);max-width:140px;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis}
   .grande{font-size:9.5px;letter-spacing:.1em;color:#0F1216;background:linear-gradient(180deg,var(--oro-chiaro),var(--oro));
     border:none;border-radius:999px;padding:3px 9px;font-weight:700}
   .inside{border-left:3px solid var(--oro);background:rgba(201,162,39,.06)}
@@ -5706,6 +5708,7 @@
   function disegnaMappa(){
     if(!mappa)return;
     segni.forEach(function(m){mappa.removeLayer(m);});segni=[];
+    var etichettati=0;
     POI.forEach(function(p){
       // sulla mappa ci stanno tutte le emergenze della città in cui sei:
       // i monumenti fino a cinque chilometri, i servizi solo se vicini
@@ -5714,15 +5717,19 @@
       if(d>(bene?5000:900))return;
       var r=rango(p);
       var m=L.circleMarker([p.lat,p.lon],{
-        radius: r===3?8:(r===2?6:(bene?5:4)),
-        weight: r===3?2:1.5,
+        radius: r===3?6:(r===2?4.5:(bene?3.5:3)),
+        weight: r===3?1.5:1,
         color: r===3?'#F0D98A':'#0E1013',
         fillColor: r===3?'#C9A227':coloreDi(p),
         fillOpacity: bene?.95:.7
       }).addTo(mappa);
-      // i grandi portano il nome scritto sulla mappa, gli altri solo al tocco
-      if(r===3 && d<1500){
-        m.bindTooltip(p.n,{permanent:true,direction:'top',className:'eti eti-grande'});
+      // i grandi portano il nome scritto sulla mappa, ma solo quelli vicini
+      // e con il nome accorciato: se no la mappa si riempie di scritte
+      if(r===3 && d<500 && etichettati<8){
+        var corto=p.n.replace(/^(Basilica|Cattedrale|Chiesa|Palazzo|Piazza|Museo|Complesso|Santuario|Battistero|Cappella) (di |del |della |dei |delle |d')?/i,'');
+        if(corto.length>20)corto=corto.slice(0,19).replace(/[ ,.]+$/,'')+'…';
+        m.bindTooltip(corto,{permanent:true,direction:'top',className:'eti eti-grande'});
+        etichettati++;
       } else {
         m.bindTooltip(p.n,{direction:'top',className:'eti'});
       }
