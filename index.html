@@ -18,5 +18,22 @@
     <p><a href="https://bubunikolic.github.io/yourbea/">bubunikolic.github.io/yourbea</a></p>
   </div>
   <script>location.replace('https://bubunikolic.github.io/yourbea/');</script>
+<script>
+/* chi arriva qui con la vecchia copia ancora installata la butta via:
+   senza questo, il telefono continuerebbe a servirsi da solo */
+(function(){
+  try{
+    if(navigator.serviceWorker && navigator.serviceWorker.getRegistrations){
+      navigator.serviceWorker.getRegistrations().then(function(rr){
+        rr.forEach(function(r){ try{ r.unregister(); }catch(e){} });
+      });
+    }
+    if(window.caches && caches.keys){
+      caches.keys().then(function(k){ k.forEach(function(n){ try{ caches.delete(n); }catch(e){} }); });
+    }
+  }catch(e){}
+  setTimeout(function(){ location.replace('https://bubunikolic.github.io/yourbea/'); }, 900);
+})();
+</script>
 </body>
 </html>
