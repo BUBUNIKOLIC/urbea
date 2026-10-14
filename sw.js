@@ -1,5 +1,5 @@
 /* Urbea — service worker: la città resta nel telefono */
-const CACHE = 'yourbea-v10';
+const CACHE = 'yourbea-v11';
 const ASSETS = [
   './',
   './index.html',
@@ -11,7 +11,9 @@ const ASSETS = [
   './mappa/leaflet.js',
   './mappa/leaflet.css',
   './mappa/images/marker-icon.png',
-  './mappa/images/marker-shadow.png'
+  './mappa/images/marker-shadow.png',
+  './luoghi/campania.json',
+  './luoghi/molise.json'
 ];
 
 // la voce incisa: si scarica in sottofondo, senza far aspettare l'avvio

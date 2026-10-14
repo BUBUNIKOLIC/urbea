@@ -2812,7 +2812,10 @@
   }
   function peso(p){ var r=rango(p); return r===3?1.9:(r===2?1.3:1); }
   function around(){
-    return POI.filter(function(p){return !p.f && serveQui(p);}).map(function(p){
+    var dl=0.008;   // ~900 m: si scartano subito i lontani senza calcolare niente
+    return POI.filter(function(p){
+      return !p.f && Math.abs(p.lat-S.lat)<dl && Math.abs(p.lon-S.lon)<dl && serveQui(p);
+    }).map(function(p){
       return {p:p,m:dist(S.lat,S.lon,p.lat,p.lon),rel:norm(bear(S.lat,S.lon,p.lat,p.lon)-S.hd)};
     }).filter(function(o){return o.m<S.radius;})
       .sort(function(a,b){ return a.m/peso(a.p) - b.m/peso(b.p); });
@@ -3013,6 +3016,15 @@
     clearTimeout(pendingTimer);
     choiceEl.hidden=true;
     bodyEl.className='body';
+    if(o.p.w && !o.p.d){                       // luogo preso da Wikipedia
+      bodyEl.textContent='Un momento, cerco…';
+      schedaWikipedia(o.p,function(testo){
+        bodyEl.textContent=testo; liveEl.textContent=testo;
+        if(S.voice)speak(testo);
+      });
+      pending=null;
+      return;
+    }
     bodyEl.textContent=o.p.d + (o.p.i ? '  Cosa vedere: '+o.p.i : '');
     var sp=o.p.d + (o.p.i ? ' Cosa vedere: '+o.p.i : '');
     liveEl.textContent=sp;
@@ -3055,6 +3067,130 @@
     drawList(items);
     if(meta){guidaVersoMeta();}else{narrate(items);mostraAttesa(items);}}
 
+
+
+  /* ---------- le regioni scaricate ----------
+     Campania e Molise stanno dentro l'app, presi da Wikidata: nome, tipo e
+     posizione di chiese, castelli, palazzi, musei e siti archeologici, comune
+     per comune. Servono senza rete, dove Wikipedia non si puo' chiamare.
+     La scheda scritta resta solo nelle citta' che abbiamo fatto a mano. */
+  var REGIONI=[
+    {f:'campania',n:'Campania',la1:39.95,la2:41.52,lo1:13.70,lo2:15.80},
+    {f:'molise',  n:'Molise',  la1:41.35,la2:42.10,lo1:13.95,lo2:15.15}
+  ];
+  var regioneCaricata=null;
+  function caricaRegione(){
+    if(!S.pronto||!window.fetch)return;
+    var r=null;
+    for(var i=0;i<REGIONI.length;i++){
+      var x=REGIONI[i];
+      if(S.lat>=x.la1&&S.lat<=x.la2&&S.lon>=x.lo1&&S.lon<=x.lo2){ r=x; break; }
+    }
+    if(!r||regioneCaricata===r.f)return;
+    regioneCaricata=r.f;
+    fetch('luoghi/'+r.f+'.json')
+      .then(function(q){return q.json();})
+      .then(function(elenco){
+        var aggiunti=0;
+        elenco.forEach(function(x){
+          // doppio di un luogo scritto a mano? quello scritto vince
+          var doppio=POI.some(function(pp){
+            return Math.abs(pp.lat-x.lat)<0.0008 && Math.abs(pp.lon-x.lon)<0.0008;
+          });
+          if(doppio)return;
+          POI.push({n:x.n,lat:x.lat,lon:x.lon,t:x.t||'luogo',y:'',k:1,v:0,w:1,d:'',i:''});
+          aggiunti++;
+        });
+        statusEl.textContent=r.n+': '+aggiunti+' luoghi in più';
+        try{render();}catch(e){}
+      })
+      .catch(function(){ regioneCaricata=null; });
+  }
+
+  /* ---------- fuori dalle citta' raccontate: il resto d'Italia ----------
+     Per chi non vede, «qui la guida non arriva» non e' una risposta: deve
+     sapere dove sta e cosa ha intorno in qualunque paese. Dove non abbiamo
+     schede scritte a mano, i luoghi si chiedono a Wikipedia (che ha nome,
+     posizione e distanza per tutta Italia) e la strada a Photon. Le schede
+     scritte restano la differenza; questo e' il pavimento sotto. */
+  var dintorniPresi={}, dintorniInCorso=false, stradaOra='', stradaPresa=0;
+
+  function cella(la,lo){ return la.toFixed(3)+','+lo.toFixed(3); }   // ~100 metri
+
+  function caricaDintorni(quando){
+    if(dintorniInCorso||!S.pronto||!window.fetch)return;
+    var c=cella(S.lat,S.lon);
+    if(dintorniPresi[c])return;
+    dintorniPresi[c]=1; dintorniInCorso=true;
+    var u='https://it.wikipedia.org/w/api.php?action=query&list=geosearch'+
+          '&gscoord='+S.lat+'%7C'+S.lon+'&gsradius=1500&gslimit=30&format=json&origin=*';
+    var stop=null,orologio=null;
+    try{ stop=new AbortController(); orologio=setTimeout(function(){try{stop.abort();}catch(e){}},8000); }catch(e){}
+    fetch(u,{signal:stop?stop.signal:undefined})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(orologio)clearTimeout(orologio);
+        dintorniInCorso=false;
+        var elenco=(d.query&&d.query.geosearch)||[];
+        var aggiunti=0;
+        elenco.forEach(function(x){
+          if(/^(Stazione meteorologica|Elenco|Lista)/i.test(x.title))return;
+          // se un luogo nostro sta a meno di 60 metri, e' lo stesso: non si raddoppia
+          var doppio=POI.some(function(p){ return dist(p.lat,p.lon,x.lat,x.lon)<60; });
+          if(doppio)return;
+          POI.push({n:x.title,lat:x.lat,lon:x.lon,t:'luogo',y:'',k:1,v:0,w:1,
+                    d:'',i:''});
+          aggiunti++;
+        });
+        if(aggiunti){ try{render();}catch(e){} }
+        if(quando)quando(aggiunti);
+      })
+      .catch(function(){ if(orologio)clearTimeout(orologio); dintorniInCorso=false; if(quando)quando(0); });
+  }
+
+  // la scheda di un luogo preso da Wikipedia si scarica solo quando la chiede
+  function schedaWikipedia(p,quando){
+    if(p.d){quando(p.d);return;}
+    var u='https://it.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=1&explaintext=1'+
+          '&redirects=1&titles='+encodeURIComponent(p.n)+'&format=json&origin=*';
+    var stop=null,orologio=null;
+    try{ stop=new AbortController(); orologio=setTimeout(function(){try{stop.abort();}catch(e){}},8000); }catch(e){}
+    fetch(u,{signal:stop?stop.signal:undefined})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(orologio)clearTimeout(orologio);
+        var pag=d.query&&d.query.pages, testo='';
+        for(var k in pag){ if(pag[k].extract){ testo=pag[k].extract; break; } }
+        testo=testo.split('\n')[0];
+        if(testo.length>700)testo=testo.slice(0,700).replace(/\s+\S*$/,'')+'…';
+        p.d=testo||'Di questo luogo non ho una scheda.';
+        quando(p.d);
+      })
+      .catch(function(){ if(orologio)clearTimeout(orologio);
+        quando('Di questo luogo non ho una scheda.'); });
+  }
+
+  // in che strada sei: serve a chi non vede piu' di ogni altra cosa
+  function stradaDiQui(quando){
+    if(!S.pronto||!window.fetch){quando('');return;}
+    if(stradaOra && Date.now()-stradaPresa<60000){quando(stradaOra);return;}
+    var u='https://photon.komoot.io/reverse?lat='+S.lat+'&lon='+S.lon+'&limit=1';
+    var stop=null,orologio=null;
+    try{ stop=new AbortController(); orologio=setTimeout(function(){try{stop.abort();}catch(e){}},6000); }catch(e){}
+    fetch(u,{signal:stop?stop.signal:undefined})
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(orologio)clearTimeout(orologio);
+        var pr=(d.features&&d.features[0]&&d.features[0].properties)||{};
+        var via=pr.street||pr.name||'';
+        var dove=pr.city||pr.county||pr.district||'';
+        stradaOra = via ? (via + (dove?', '+dove:'')) : dove;
+        stradaPresa=Date.now();
+        quando(stradaOra);
+      })
+      .catch(function(){ if(orologio)clearTimeout(orologio); quando(''); });
+  }
+
   /* ---------- posizione reale ---------- */
   var watchId=null,wakeLock=null;
   function startLive(){
@@ -3079,6 +3215,9 @@
         S.ultimaPos={lat:S.lat,lon:S.lon};
       }
       statusEl.textContent='posizione attiva · precisione '+Math.round(S.acc||0)+' m';
+      // dove non abbiamo schede, i luoghi arrivano da Wikipedia mano a mano
+      caricaRegione();
+      if(around().length<4)caricaDintorni();
       if(mappa&&!seguiMappa===false){} 
       if(mappa&&mappa.getZoom()<14){ mappa.setView([S.lat,S.lon],16,{animate:false}); disegnaMappa(); }
       render();
@@ -3268,6 +3407,7 @@
     navigator.geolocation.getCurrentPosition(function(pos){
       S.lat=pos.coords.latitude; S.lon=pos.coords.longitude;
       S.acc=pos.coords.accuracy||null; S.pronto=true;
+      caricaRegione();
       var v=percorsoPiuVicino();
       if(v.r){ S.route=v.r; S.seg=0; S.frac=0; }
       ordinaPercorsi();
@@ -3277,14 +3417,20 @@
       var citta=CITTA.map(function(c){return {c:c,d:dist(S.lat,S.lon,c.lat,c.lon)};})
                      .sort(function(a,b){return a.d-b.d;})[0];
       if(citta.d>12000){
-        S.pronto=false;
-        var fuori='Qui la guida non arriva ancora: per ora racconta Roma, Napoli, Torre del Greco e Venafro. '+
-                  'La più vicina è '+citta.c.n+', a '+inCifre(citta.d)+'.';
-        statusEl.textContent='zona non coperta — la più vicina è '+citta.c.n+', a '+Math.round(citta.d/1000)+' km';
-        liveEl.textContent=fuori;
-        if(S.voice)dire(['frase-non-coperta'],fuori);
-        chiediCitta();
-        render();
+        // qui non abbiamo schede scritte, ma la guida funziona lo stesso:
+        // i luoghi li chiede a Wikipedia e i servizi a OpenStreetMap
+        statusEl.textContent='fuori dalle città raccontate — cerco cosa hai intorno';
+        stradaDiQui(function(via){
+          caricaDintorni(function(quanti){
+            var dove = via ? ('Sei in '+via+'. ') : '';
+            var testo = quanti
+              ? dove+'Qui non ho schede scritte a mano, ma ti dico lo stesso i luoghi che passi, e farmacie, fermate e negozi.'
+              : dove+'Qui intorno non trovo luoghi da raccontare. Farmacie, fermate e negozi te li trovo lo stesso: chiedimeli.';
+            liveEl.textContent=testo;
+            if(S.voice)speak(testo);
+            render();
+          });
+        });
         return;
       }
       statusEl.textContent = v.d<1500
@@ -3648,7 +3794,15 @@
       dire(ids,testo);
       return true;
     }
+    if(ha('in che strada','che strada e questa','che via e questa','come si chiama questa strada')){
+      stradaDiQui(function(via){
+        var testo = via ? ('Sei in '+via+'.') : 'La strada non la so dire.';
+        liveEl.textContent=testo; speak(testo);
+      });
+      return true;
+    }
     if(ha('dove sono','dove mi trovo','che cosa ho intorno','cosa ho intorno')){
+      stradaDiQui(function(via){ if(via)statusEl.textContent='sei in '+via; });
       var vicini=around();
       if(!vicini.length){ dire(['frase-niente-intorno'],'Qui intorno non ho niente da dirti.'); return true; }
       var o=vicini[0];
